@@ -1,0 +1,153 @@
+{
+  "url": "https://agrohydrolatest.vercel.app",
+  "checked_at_utc": "2026-09-28T18:44:23.911410+00:00",
+  "checks": [
+    {
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "seconds": 1.0,
+      "bytes": 696
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 1.16,
+      "bytes": 86
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "status": 200,
+      "seconds": 0.47,
+      "bytes": 18334
+    },
+    {
+      "method": "GET",
+      "path": "/api/sources",
+      "status": 200,
+      "seconds": 0.5,
+      "bytes": 39820
+    },
+    {
+      "method": "GET",
+      "path": "/api/benchmarks",
+      "status": 200,
+      "seconds": 0.55,
+      "bytes": 249421
+    },
+    {
+      "method": "GET",
+      "path": "/api/north-context",
+      "status": 200,
+      "seconds": 0.38,
+      "bytes": 15261
+    },
+    {
+      "method": "GET",
+      "path": "/api/north-evidence",
+      "status": 200,
+      "seconds": 0.39,
+      "bytes": 17682
+    },
+    {
+      "method": "GET",
+      "path": "/api/north/status",
+      "status": 200,
+      "seconds": 0.41,
+      "bytes": 1539
+    },
+    {
+      "method": "GET",
+      "path": "/api/north/validation/readiness",
+      "status": 200,
+      "seconds": 0.31,
+      "bytes": 5143
+    },
+    {
+      "method": "GET",
+      "path": "/api/planning-context?region_id=konya",
+      "status": 200,
+      "seconds": 0.59,
+      "bytes": 50918
+    },
+    {
+      "method": "POST",
+      "path": "/api/simulate",
+      "status": 200,
+      "seconds": 0.77,
+      "bytes": 34038
+    },
+    {
+      "method": "POST",
+      "path": "/api/decision-report/turkiye",
+      "status": 200,
+      "seconds": 0.98,
+      "bytes": 37214,
+      "pages": 2
+    },
+    {
+      "method": "GET",
+      "path": "/api/planning-context?region_id=gediz_manisa",
+      "status": 200,
+      "seconds": 0.42,
+      "bytes": 47522
+    },
+    {
+      "method": "POST",
+      "path": "/api/simulate",
+      "status": 200,
+      "seconds": 0.33,
+      "bytes": 28839
+    },
+    {
+      "method": "POST",
+      "path": "/api/north/plan",
+      "status": 200,
+      "seconds": 5.0,
+      "bytes": 337976
+    },
+    {
+      "method": "POST",
+      "path": "/api/north/reference",
+      "status": 200,
+      "seconds": 3.41,
+      "bytes": 43675
+    },
+    {
+      "method": "POST",
+      "path": "/api/north/report",
+      "status": 200,
+      "seconds": 0.38,
+      "bytes": 39906,
+      "pages": 2
+    },
+    {
+      "method": "POST",
+      "path": "/api/north/freeze",
+      "status": 409,
+      "seconds": 0.19,
+      "bytes": 195
+    }
+  ],
+  "north_totals": {
+    "area_m2": 100.0,
+    "production_kg": 4204.367499999999,
+    "water_m3": 14.204993129910406,
+    "heat_kwh_th": 1625.815958272696,
+    "electricity_kwh": 117605.44550602968,
+    "equivalent_electricity_kwh": 119231.26146430237,
+    "stored_water_m3": 14.204993129910408,
+    "desalinated_m3": 0.0,
+    "freshwater_m3": 0.0,
+    "treatment_electricity_kwh": 0.0,
+    "treatment_heat_kwh_th": 0.0,
+    "protein_kg": 75.11620999999998,
+    "food_energy_kcal": 958341.5249999999,
+    "composition_covered_production_kg": 4204.367499999999,
+    "complete_composition_coverage": true,
+    "selected_production_output": 4204.367499999999
+  },
+  "passed": true
+}

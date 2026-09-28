@@ -1,0 +1,12 @@
+28 Eylül 2026 · Chrome masaüstü · https://agrohydrolatest.vercel.app
+Canlı arayüz CUA erişilebilirlik ağacı ve ekran görüntüsü ile incelendi.
+Türkiye açılışı: Konya kaynaklı mevcut deseni; otomatik öneri yok.
+Su sınırı −%20 seçildi; EN UYGUN DESENİ HESAPLA tıklandı.
+Sonuç: ÖNERİ HAZIR; başlangıca göre %20 su azalması; %14,1 atanmayan alan;
+buğday %61,3, arpa %14. Sonuç ve su sınırı görsel olarak doğru gösterildi.
+Kuzey: 2026 hesap yüklendi; 2051 seçilip Simülasyonu çalıştır tıklandı.
+Sonuç: 2051 SSP245 100 m²; 14,2 m³/yıl, depolanan yağış/kar %100;
+hidroponik %94,6 / sera %5,4; enerji 119.231 kWh/yıl elektrik eşdeğeri.
+Kaynak/ürün kartları ve kısa aylık grafik masaüstü ekranda incelendi.
+Mobil test yapılmadı; sekiz adımlı Jüri akışı bu tur bütünüyle tekrarlanmadı.
+API/PDF ayrı doğrulaması: api-smoke.json. PDF dört sayfa PNG'ye render edilip incelendi.

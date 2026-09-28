@@ -1,3 +1,36 @@
+TESLİM 033 — GITHUB YÜKLEMESİ VE VERCEL CANLI YAYIN
+28 Eylül 2026 · AgroHydro / Desenden Dengeye
+
+GÜNCEL DURUM
+Kullanıcının verdiği boş GitHub deposuna proje yüklendi; main dalı Vercel projesine bağlandı. Çalışan üretim adresi https://agrohydrolatest.vercel.app . GitHub: https://github.com/NestaLoda/agrohydrolatest . Vercel proje paneli: https://vercel.com/bahaozlem5-8104s-projects/agrohydrolatest . Sonraki main gönderimleri otomatik dağıtım başlatır. Yerel uygulama çalıştırma yöntemi korunur. Bu tur yeni bilimsel veri/gerçek saha ölçümü üretilmedi.
+
+BU TUR DEĞİŞENLER / KARARLAR
+React/Vite arayüzü CDN'de, mevcut FastAPI motoru /api üzerinden Python 3.12 işlevinde çalışır. vercel.json, .vercelignore, .python-version, api/index.py ve pyproject.toml dağıtım tanımları eklendi. requirements.txt üretim bağımlılıklarına ayrıldı; veri edinme/test ekleri requirements-dev.txt içinde, önceki requirements.lock.txt korundu. Noto Sans fontları ve lisansı paketlendi; PDF üretimi artık Windows font dizinine bağımlı değil. .gitattributes bilimsel SHA-256 kontrolleri için kaynak/veri dosyalarının baytlarını ve satır sonlarını korur. Gizli ortam dosyaları, yerel veritabanları, bağımlılık klasörleri, geçici hava önbelleği ve saha kayıtları sürüm kontrolüne alınmaz.
+
+ÇEVRİMİÇİ / YEREL KAYIT SINIRI
+Türkiye/Kuzey hesapları, iklim karşılaştırması, raporlar ve arayüz çevrimiçi çalışır. Vercel geçici disk kullandığından hesap önbelleği ve SQLite çalışma metadata'sı geçici alana yönlendirildi; bunlar kalıcı araştırma kaydı değildir. PWN yükleme, PRE dondurma ve gözlem/pilot karşılaştırması gibi kalıcı kanıt gerektiren yazma uçları bulutta 409 ve açık Türkçe açıklama verir; kullanıcı yerel uygulamaya yönlendirilir. Yerel kalıcı kayıt akışı korunur. Kalıcı, paylaşımlı çevrimiçi saha arşivi istenirse ayrıca kalıcı depolama ve erişim tasarımı gerekir; mevcut yayın bunu sağlıyor iddiasında değildir.
+
+DOĞRULAMA — 28 EYLÜL 2026
+Tam backend test paketi düzeltmelerden sonra 581/581 geçti; tek mevcut Starlette/AnyIO kullanımdan kalkma uyarısı kaldı. TypeScript/Vite üretim build'i yerelde ve Vercel Linux derlemesinde başarılı: 80 modül. Vercel üretim dağıtımı Ready; uygulama kodu commit'i 8ce12b6. İlk başarısız derleme pyproject.toml paket tanımı eklenerek giderildi. Kaynak/veri için seçilmiş dört kritik dosyanın Git içeriği yerel baytlarla aynı doğrulandı.
+Canlı HTTPS alanında 18 uç/işlem kontrolü geçti: ana sayfa, health, kaynaklar, iklim/kanıt, Konya ve Gediz bağlamı/optimizasyonu, Türkiye PDF, Kuzey 2051 planı/2026 referansı/PDF ve kalıcı kayıt için beklenen 409. İki PDF de 2 sayfa; dört sayfa render edilip Türkçe metin ve yerleşim görsel incelendi. Chrome masaüstünde açılışta Türkiye mevcut deseni, kullanıcının düğmesiyle su sınırı −%20 hesabı ve Kuzey 2026→2051 yeniden hesabı doğrulandı; iki ana sonuç ekranı görsel incelendi. Mobil test yapılmadı. Jüri Modu'nun sekiz adımının tamamı bu tur tarayıcıda tekrar edilmedi; önceki tam Jüri testi 25 Eylül/030'a aittir.
+
+KAYNAK / SİMÜLASYON / ÖLÇÜM AYRIMI
+2051 SSP245, 100 m² dengeli senaryosunda canlı API 14,204993 m³/yıl yeni su, aynı miktarda depolanan yağış/kar tahsisi, 0 deniz arıtma tahsisi, 4204,3675 kg/yıl model hasadı ve 119231,2615 kWh/yıl elektrik eşdeğeri verdi. Bunlar mevcut kaynak ve varsayımlarla model hesabıdır; saha doğrulaması veya fiziksel üretim değildir. İklim/ürün/su/enerji katsayıları değiştirilmedi. PWN, izinli numune ve kontrollü deney için daha önce kayıtlı bilimsel bağımlılıklar sürüyor.
+
+DOSYALAR / KANITLAR
+docs/DEPLOYMENT.md; scripts/deployment_smoke.py; tests/test_cloud_runtime.py; docs/verification/deployment-033/api-smoke.json, turkiye.pdf, north.pdf, desktop-qa.txt; backend/runtime.py; backend/app.py, current_weather.py, north_planning.py, decision_pdf.py; backend/fonts/; dağıtım/bağımlılık/Git ayarları; README.md; docs/BUILD_STATUS.md ve bu kümülatif teslim dosyası.
+
+AÇIK BAĞIMLILIK / SONRAKİ SOMUT ADIM
+GitHub ve Vercel yayın işi tamamlandı. Kullanım: canlı adresi açıp Türkiye veya Kuzey senaryosunu hesaplat. Gerçek PWN/PRE–POST kaydı için yerel uygulamayı kullan. Çalışma sırasında başka sunum üretimi presentation/imagegen altında yeni dosyalar yazıyordu; bu devam eden dosyalar değiştirilmedi ve son yayın commit'ine eklenmedi. İlk yükleme anındaki proje/sunum sürümü depoda bulunur. Bu dosyayı ana sohbete tek başına yüklemek veya içeriğini yapıştırmak yeterlidir; başka sohbete otomatik mesaj gönderilmedi.
+
+KISA GEÇMİŞ
+033: GitHub + Vercel canlı yayın, bulut uyumluluğu, 581 test ve canlı hesap/PDF doğrulaması.
+032: 17 ayrı PNG sunum paketi; uygulama motoru değişmedi.
+030: Kuzey su/üretim kararı, saha/pilot anlatısı ve tam Jüri doğrulaması.
+
+---
+ÖNCEKİ TESLİMLER TARİHSELDİR; GÜNCEL YAYIN VE TEST DURUMU YUKARIDADIR.
+
 TESLİM 032 — 17 AYRI SUNUM GÖRSELİ / PNG SERİSİ TAMAMLANDI
 28 Eylül 2026 · Aynı mevcut AgroHydro projesi
 

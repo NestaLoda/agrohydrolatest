@@ -1,3 +1,14 @@
+TESLİM 033 — GITHUB / VERCEL YAYINI · 28 EYLÜL 2026
+
+Üretim: https://agrohydrolatest.vercel.app · Depo: https://github.com/NestaLoda/agrohydrolatest . main otomatik Vercel dağıtımına bağlı. Python 3.12 API + Vite statik arayüz dağıtımı Ready; uygulama commit'i 8ce12b6. Ayrıntılı operasyon kaydı docs/DEPLOYMENT.md, kümülatif teslim docs/ANA_CHAT_TESLIM.txt.
+
+Bilimsel veri ve katsayılar değiştirilmedi. Geçici hesap önbelleği ve SQLite metadata bulutta geçici diske yönlendirildi. Kalıcı PWN/PRE/POST/pilot kayıt uçları bu ortamda açık 409 ile yerel uygulamaya yönlendirilir; sahte kalıcılık iddiası yok. Yerel kayıt korunur. PDF'de Windows Arial bağımlılığı lisanslı/paketlenmiş Noto Sans ile değiştirildi. Git bayt dönüşümü kapatıldı; kritik kaynak/veri baytları karşılaştırıldı.
+
+28 Eylül son doğrulaması: 581/581 backend testi, yerel ve Linux Vercel üretim build'i (80 modül), canlı alanda 18 HTTP kontrolü geçti. Türkiye/Kuzey PDF'leri 2'şer sayfa, dört sayfa görsel incelendi. Chrome masaüstü Türkiye su sınırı −%20 hesabı ve Kuzey 2026→2051 akışı geçti. Mobil test yapılmadı; tam sekiz adımlı Jüri testi bu tur tekrarlanmadı. Canlı 2051 model sonucu 14,204993 m³ yeni su, 4204,3675 kg hasat, 119231,2615 kWh elektrik eşdeğeri: koşullu simülasyon, yeni gerçek ölçüm değil. Kanıtlar docs/verification/deployment-033/.
+
+---
+ÖNCEKİ TESLİMLER TARİHSELDİR; SON UYGULAMA DOĞRULAMASI YUKARIDADIR.
+
 TESLİM 032 — 17 AYRI 1920×1080 PNG SUNUM GÖRSELİ / 28 EYLÜL 2026
 
 Son master promptuyla bütün 17 PNG tamamlandı; PDF/PPTX oluşturulmadı. 031’in kapak-onay/yedek slayt akışı tarihseldir ve artık geçerli değildir. Güncel sunum kaynak/kanıt kaydı presentation/PRESENTATION_MANIFEST.md; görüntüler presentation/slides/slide_01.png–slide_17.png; yalnız bu PNG’lerin paketi presentation/AgroHydro_17_Slayt_PNG.zip. Üretim bilimsel motoru değiştirmeyen SVG/HTML→PNG katmanındadır.
