@@ -1,0 +1,42 @@
+{
+  "version": "2.0",
+  "date": "2026-09-28",
+  "output": "17 separate PNG images; no PPTX/PDF creation",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "aspectRatio": "16:9"
+  },
+  "palette": {
+    "petrol": "#083C3C",
+    "offWhite": "#F3F5EF",
+    "ink": "#133F3D",
+    "mint": "#B9EDCA",
+    "production": "#238567",
+    "water": "#269EBA",
+    "energy": "#DDA84D",
+    "uncertainty": "#607774"
+  },
+  "typography": {
+    "family": "Arial",
+    "coverTitlePx": 132,
+    "slideTitlePx": 58,
+    "bodyPx": [
+      27,
+      44
+    ],
+    "sourcePx": 22
+  },
+  "layout": {
+    "marginX": 96,
+    "headerRuleY": 267,
+    "footerRuleY": 986
+  },
+  "rules": [
+    "Latest master authorizes all 17 pages sequentially without per-page approval.",
+    "Turkish text is deterministic native SVG rendered to PNG.",
+    "Scientific figures use documented data, no invented measurements.",
+    "Schematics and generated environmental imagery are labeled.",
+    "No scientific engine or application edits."
+  ]
+}

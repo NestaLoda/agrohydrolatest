@@ -1,0 +1,7 @@
+Hocam merhaba, su yönetimi projemiz için PWN v0.1 isimli küçük bir ölçüm cihazı yapmak istiyoruz. Görselini, malzemelerini ve yapım tarifini ekte gönderiyorum.
+
+Suya elle indireceğimiz 3D baskı başlıkta bir iletkenlik probu ve sıcaklık probu olacak. Başlığı taşıyan ipin hareketini yukarıda encoderlı tekerle ölçeceğiz. ESP32, EC ölçüm kartı ve SD kart suyun dışında bir kutuda duracak; sensör verileri ve mesafe birlikte kaydedilecek.
+
+3D yazıcımız var. Sizden ihtiyacımız; parçaların ölçülüp başlık/mekanizmanın tasarlanması, elektronik bağlantıların kurulması ve sensörleri okuyup SD'ye kaydeden yazılımın gerçek kartta çalıştırılması. Önce cihazı ortaya çıkaracağız; ayrıntılı su deneyini biz sonra yapacağız. Görsel bir konsept, hazır CAD değil; kartta çalışan firmware de henüz hazırlanmadı.
+
+ZIP içinde ilk olarak 00_ONCE_BUNU_OKU.txt ve 01_CIHAZ_GORSELI.png dosyalarına bakabilirsiniz. Elektronik, firmware ve mekanik işlerinin hangilerini üstlenebilirsiniz; elinizde hangi malzemeler var ve ilk çalışan montaj için yaklaşık süre/maliyet ne olur, bize söyler misiniz?

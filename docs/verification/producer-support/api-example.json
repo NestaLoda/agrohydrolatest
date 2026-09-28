@@ -1,0 +1,238 @@
+{
+  "input": {
+    "currency": "TRY",
+    "production_kg": 1000.0,
+    "loss_pct": 10.0,
+    "buyer_capacity_kg": 800.0,
+    "price_per_kg": 50.0,
+    "operating_cost": 30000.0,
+    "capital_cost": 40000.0,
+    "equipment_discount_pct": 15.0,
+    "annualization_years": 5.0,
+    "annual_program_fee": 1000.0
+  },
+  "period": "year",
+  "period_label": "Bir yıllık senaryo",
+  "classification": "USER_SCENARIO",
+  "contracts_verified": false,
+  "investment_recommendation": false,
+  "optimizer_output": false,
+  "baseline": {
+    "production_kg": 1000.0,
+    "lost_kg": 100.0,
+    "marketable_kg": 900.0,
+    "saleable_kg": 800.0,
+    "unsold_kg": 100.0,
+    "price_per_kg": 50.0,
+    "operating_cost": 30000.0,
+    "annual_program_fee": 0.0,
+    "equipment_discount": 0.0,
+    "net_capital_cost": 40000.0,
+    "revenue": 40000.0,
+    "operating_balance": 10000.0,
+    "annualized_capital": 8000.0,
+    "annual_total_cost": 38000.0,
+    "scenario_balance": 2000.0,
+    "break_even_price": 47.5,
+    "break_even_sales_kg": 760.0,
+    "break_even_feasible": true,
+    "break_even_status": "WITHIN_SCENARIO_CAPACITY"
+  },
+  "supported": {
+    "production_kg": 1000.0,
+    "lost_kg": 100.0,
+    "marketable_kg": 900.0,
+    "saleable_kg": 800.0,
+    "unsold_kg": 100.0,
+    "price_per_kg": 50.0,
+    "operating_cost": 30000.0,
+    "annual_program_fee": 1000.0,
+    "equipment_discount": 6000.0,
+    "net_capital_cost": 34000.0,
+    "revenue": 40000.0,
+    "operating_balance": 9000.0,
+    "annualized_capital": 6800.0,
+    "annual_total_cost": 37800.0,
+    "scenario_balance": 2200.0,
+    "break_even_price": 47.25,
+    "break_even_sales_kg": 756.0,
+    "break_even_feasible": true,
+    "break_even_status": "WITHIN_SCENARIO_CAPACITY"
+  },
+  "support_effect": {
+    "one_time_equipment_discount": 6000.0,
+    "annualized_discount": 1200.0,
+    "annual_fee": 1000.0,
+    "annual_balance_change": 200.0,
+    "comparison_basis": "Aynı üretim, kayıp, alıcı kapasitesi ve fiyat; yalnız indirim ve program bedeli değişir."
+  },
+  "stress_scenarios": [
+    {
+      "id": "production_down_20",
+      "label": "Üretim %20 azalırsa",
+      "changes": {
+        "production_pct": -20,
+        "price_pct": 0,
+        "operating_cost_pct": 0
+      },
+      "result": {
+        "production_kg": 800.0,
+        "lost_kg": 80.0,
+        "marketable_kg": 720.0,
+        "saleable_kg": 720.0,
+        "unsold_kg": 0.0,
+        "price_per_kg": 50.0,
+        "operating_cost": 30000.0,
+        "annual_program_fee": 1000.0,
+        "equipment_discount": 6000.0,
+        "net_capital_cost": 34000.0,
+        "revenue": 36000.0,
+        "operating_balance": 5000.0,
+        "annualized_capital": 6800.0,
+        "annual_total_cost": 37800.0,
+        "scenario_balance": -1800.0,
+        "break_even_price": 52.5,
+        "break_even_sales_kg": 756.0,
+        "break_even_feasible": false,
+        "break_even_status": "EXCEEDS_SCENARIO_CAPACITY"
+      }
+    },
+    {
+      "id": "price_down_20",
+      "label": "Satış fiyatı %20 azalırsa",
+      "changes": {
+        "production_pct": 0,
+        "price_pct": -20,
+        "operating_cost_pct": 0
+      },
+      "result": {
+        "production_kg": 1000.0,
+        "lost_kg": 100.0,
+        "marketable_kg": 900.0,
+        "saleable_kg": 800.0,
+        "unsold_kg": 100.0,
+        "price_per_kg": 40.0,
+        "operating_cost": 30000.0,
+        "annual_program_fee": 1000.0,
+        "equipment_discount": 6000.0,
+        "net_capital_cost": 34000.0,
+        "revenue": 32000.0,
+        "operating_balance": 1000.0,
+        "annualized_capital": 6800.0,
+        "annual_total_cost": 37800.0,
+        "scenario_balance": -5800.0,
+        "break_even_price": 47.25,
+        "break_even_sales_kg": 945.0,
+        "break_even_feasible": false,
+        "break_even_status": "EXCEEDS_SCENARIO_CAPACITY"
+      }
+    },
+    {
+      "id": "operating_cost_up_20",
+      "label": "İşletme gideri %20 artarsa",
+      "changes": {
+        "production_pct": 0,
+        "price_pct": 0,
+        "operating_cost_pct": 20
+      },
+      "result": {
+        "production_kg": 1000.0,
+        "lost_kg": 100.0,
+        "marketable_kg": 900.0,
+        "saleable_kg": 800.0,
+        "unsold_kg": 100.0,
+        "price_per_kg": 50.0,
+        "operating_cost": 36000.0,
+        "annual_program_fee": 1000.0,
+        "equipment_discount": 6000.0,
+        "net_capital_cost": 34000.0,
+        "revenue": 40000.0,
+        "operating_balance": 3000.0,
+        "annualized_capital": 6800.0,
+        "annual_total_cost": 43800.0,
+        "scenario_balance": -3800.0,
+        "break_even_price": 54.75,
+        "break_even_sales_kg": 876.0,
+        "break_even_feasible": false,
+        "break_even_status": "EXCEEDS_SCENARIO_CAPACITY"
+      }
+    },
+    {
+      "id": "combined",
+      "label": "Üç olumsuz koşul birlikte",
+      "changes": {
+        "production_pct": -20,
+        "price_pct": -20,
+        "operating_cost_pct": 20
+      },
+      "result": {
+        "production_kg": 800.0,
+        "lost_kg": 80.0,
+        "marketable_kg": 720.0,
+        "saleable_kg": 720.0,
+        "unsold_kg": 0.0,
+        "price_per_kg": 40.0,
+        "operating_cost": 36000.0,
+        "annual_program_fee": 1000.0,
+        "equipment_discount": 6000.0,
+        "net_capital_cost": 34000.0,
+        "revenue": 28800.0,
+        "operating_balance": -8200.0,
+        "annualized_capital": 6800.0,
+        "annual_total_cost": 43800.0,
+        "scenario_balance": -15000.0,
+        "break_even_price": 60.833333333333336,
+        "break_even_sales_kg": 1095.0,
+        "break_even_feasible": false,
+        "break_even_status": "EXCEEDS_SCENARIO_CAPACITY"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "code": "MATCH_BUYER_CAPACITY",
+      "severity": "warning",
+      "title": "Üretimi alıcı kapasitesiyle eşleştir.",
+      "detail": "Bu senaryoda pazarlanabilir ürünün tamamı alıcı kapasitesine sığmıyor. Ek alıcı ve saklama olanağını doğrula; doğrulanmayan ürünü satılmış sayma."
+    },
+    {
+      "code": "VERIFY_LOSSES",
+      "severity": "info",
+      "title": "Kayıpları pilotta ölç.",
+      "detail": "Hasat, kalite reddi ve depolama kayıplarını ayrı kaydet; girilen kayıp oranını gerçek üretim verisiyle güncelle."
+    },
+    {
+      "code": "VALIDATE_POSITIVE_BALANCE",
+      "severity": "info",
+      "title": "Olumlu hesabı pilot ve yazılı koşullarla doğrula.",
+      "detail": "Sıfır veya pozitif senaryo bakiyesi yatırım onayı değildir. Üretim miktarı, ödeme vadesi, kalite kabulü ve giderleri doğrulamadan büyütme."
+    },
+    {
+      "code": "STRESS_VULNERABILITY",
+      "severity": "warning",
+      "title": "Olumsuz koşullara karşı dayanıklılığı test et.",
+      "detail": "Birleşik stres denemesinde bakiye negatife dönüyor. Bu deneme bir olasılık veya gelecek tahmini değildir."
+    }
+  ],
+  "labels": {
+    "saleable_kg": "Alıcı kapasitesi içinde satılabileceği varsayılan ürün",
+    "marketable_kg": "Kayıp sonrası ürün",
+    "unsold_kg": "Alıcı kapasitesini aşan ürün",
+    "scenario_balance": "Yıllık senaryo bakiyesi",
+    "operating_balance": "İşletme bakiyesi",
+    "annualized_capital": "Ekipman bedelinin bu yıla düşen payı",
+    "break_even_price": "Giderleri karşılayan satış fiyatı",
+    "break_even_sales_kg": "Giderleri karşılayan satış miktarı"
+  },
+  "scope": "Bir ürün veya aynı fiyatla değerlendirilen tek parti için yıllık hesap. Gerçek satış, kâr, sigorta veya gelir garantisi değildir.",
+  "limitations": [
+    "Bütün miktarlar, fiyatlar ve maliyetler kullanıcı senaryosudur; alıcı veya destek taahhüdü doğrulanmaz.",
+    "Aynı para birimi ve bir yıllık kapsam kullanılır. Vergi, kredi faizi, enflasyon, ödeme gecikmesi ve artık değer modellenmez.",
+    "Ekipman bedeli seçilen yıllara eşit bölünür; bu muhasebe amortismanı veya nakit akışı değildir.",
+    "İşletme gideri toplam yıllık tutardır. Başabaş miktarı hesaplanırken ek üretimin marjinal maliyeti modellenmez.",
+    "Destek karşılaştırması yalnız indirim ve program bedelini değiştirir; destek sayesinde daha fazla ürün satıldığı varsayılmaz.",
+    "Stres denemeleri duyarlılık hesabıdır; olasılık, iklim tahmini veya sigorta teminatı değildir.",
+    "Alıcı kapasitesi bir üst sınırdır; senaryoda bu sınıra kadar satış varsayılması alım sözleşmesi değildir."
+  ],
+  "verified_at": "2026-09-23T11:51:37.898902+00:00"
+}

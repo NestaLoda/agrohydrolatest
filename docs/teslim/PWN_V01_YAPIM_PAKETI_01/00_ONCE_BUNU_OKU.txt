@@ -1,0 +1,80 @@
+PWN v0.1 — YAPACAK KİŞİ İÇİN İŞ TARİFİ
+22 Eylül 2026 | Yapım talebi ve tasarım hedefi; yapılmış cihaz raporu değildir.
+
+ÖNCE BUNU OKUYUN
+
+İstenen ürün, suya elle indirilen iki sensörlü başlık + yukarıda ip hareketini ölçen mekanizma + kuru elektronik kayıt kutusudur. İlk hedefimiz bu cihazı çalışır bir bütün olarak ortaya çıkarmak. Ayrıntılı tabakalı su deneyini ekip daha sonra yürütecek.
+
+Paket içeriği:
+00_ONCE_BUNU_OKU.txt — bu iş tarifi.
+01_CIHAZ_GORSELI.png — dört panelli tasarım konsepti.
+02_TAM_MALZEME_LISTESI.txt — ana parçalar, sarf, mekanik ve araçlar; bağlantılı kaynaklar.
+03_FIRMWARE_VE_KAYIT.txt — elektronik/yazılım yapan kişi için kayıt gereksinimi.
+04_GONDERILECEK_MESAJ.txt — kısa iletişim metni.
+
+Görsel yapay olarak üretilmiş bir konsepttir; ölçülü CAD, montaj şeması veya birebir ürün fotoğrafı değildir. Elinizdeki gerçek parçaları ölçerek aynı işlevi sağlayacak gövde ve bağlantılar tasarlanacak. Üç boyutlu yazıcı erişimimiz var. Diğer malzemelerin okul envanterinde bulunup bulunmadığı henüz bilinmiyor.
+
+1. NE YAPILACAK?
+
+A) SUYA GİREN BAŞLIK
+- DFRobot DFR0300 K1 EC probu ve üç telli suya uygun DS18B20 aynı 3D baskı taşıyıcıda sabitlenecek.
+- Ölçüm uçlarına su ulaşmalı; açık kafes/sökülebilir kelepçe düzeni kullanılacak.
+- Üstte taşıyıcı ip bağlantısı, sensör kabloları için gerilimden kurtarma/tutucu olacak.
+- Yükü ayrı ip taşıyacak; prob kablosundan asılmayacak.
+- Başlığın içinde ESP32/batarya/SD olmayacak. Aktif EC yüzeyine montaj elemanı değmeyecek.
+- Gerçek prob çapı, boyu ve kablo çıkışı ölçülmeden baskı boyutları kesinleştirilmeyecek.
+
+B) MESAFE MEKANİZMASI
+- Stand veya sağlam kenara bağlanan bir braket yapılacak.
+- 600 darbeli NPN optik encoder, sabit çaplı oluklu ölçüm tekerine bağlanacak.
+- İpi teker üzerinde tutan baskı/kılavuz bulunacak. Hareket elle yapılacak; motor gerekmiyor.
+- Sensör kabloları ölçüm tekerinden geçmeyecek. İp kayması ve kablo takılması kontrol edilecek.
+- Derinlik, kontrollü düşey kullanımda yüzey sıfırı ve prob ölçüm merkezi tanımıyla türetilecek.
+- Çok katlı bir makaraya biriken ipin değişen çapından mesafe hesaplanmayacak.
+
+C) KURU KAYIT KUTUSU
+- ESP32, DFR0300 ölçüm kartı, giriş gerilim uyarlaması, microSD modülü ve bağlantılar kapaklı kutuda sabitlenecek.
+- Kabloların çekilmesini önleyen geçişler, çıkarılabilir servis kapağı ve etiketli bağlantılar olacak.
+- USB güç ve bilgisayar bağlantısı olacak. Kart yalnız tek güç yolundan beslenecek.
+- Isı, iletkenlik sinyali, encoder sayısı ve geçen süre SD'ye kaydedilecek; aynı anda seri portta durum okunabilecek.
+- İlk sürümde LCD, GPS, basınç sensörü, pH, motorlu vinç ve kablosuz haberleşme gerekmiyor.
+
+2. KİMDEN NE BEKLİYORUZ?
+
+Elektronik/bilişim yapan kişi: kart ve modül uyumunu kontrol etmek, sağlam bağlantıları kurmak, sensör/encoder okuma ve SD kayıt firmware'ini geliştirip gerçek kartta çalıştırmak.
+
+CAD/3D baskı/mekanik yapan kişi: gerçek parçaları ölçmek, başlık/teker/kılavuz/braket/kutu montajını tasarlamak, basmak ve birleştirmek. Yalnız baskı yapabiliyorsanız elektronik/firmware işini ayrıca ayırmamız gerekecek.
+
+Proje ekibi: 3D yazıcı erişimi, malzeme temini koordinasyonu, bilimsel deney ve karar destek uygulaması. Mevcut uygulamada PWN CSV içe alma akışı var. Ancak bu cihazın firmware'i ve canlı seri grafik bağlantısı tamamlanmış değildir. Kaydedilecek dosya biçimi 03 numaralı ekte tariflidir.
+
+3. BAĞLAMADAN ÖNCE ÜÇ ÜRÜN KONTROLÜ
+
+- EC: DFR0300 K1 TAM KİT olacak. Prob, ölçüm kartı, BNC kablo ve PH2.0 sinyal kablosu birlikte olmalı. 1413 µS/cm ve 12,88 mS/cm standartları kutuda kullanılabilir durumda var mı kontrol edilmeli. Sıfırdan EC elektrotu ve AC sürücü tasarlamıyoruz.
+- ESP32/SD: seçilen ESP-32S 30 pin kartın gerçek GPIO/besleme düzeni ve SD modülünün besleme/lojik seviyeleri kontrol edilmeli. Eski DevKitC veya Arduino UNO şeması birebir kopyalanmamalı.
+- Encoder/mekanik: önerilen E38S6G5-600BG24N 5–24 V beslemeli NPN açık kolektördür. Tasarımda 5 V besleme, A/B için 3,3 V pull-up kullanılacak; gerçek ürün çıkışı doğrulanmalı. Mil, delik ve braket boyu elde ölçülmeli.
+
+DFR0300 çıkışı 0–3,4 V olduğundan ESP32 analog girişine kontrolsüz doğrudan bağlanmaz. Önerilen başlangıç OUT–10k–ADC–20k–GND bölücüsüdür; %1 dirençlerle üst çıkış yaklaşık 2,27 V olur. Bu yalnız tasarım hesabıdır. Gerçek gerilimler ve ADC aralığı ölçülerek doğrulanmalı; firmware bölücü oranını geri hesaba katmalı. Harici ADC şart değildir.
+
+Teknik kaynaklar:
+https://wiki.dfrobot.com/dfr0300/
+https://wiki.dfrobot.com/dfr0300/docs/20349
+https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html
+https://www.robotistan.com/doner-encoder-600d
+
+4. TESLİMDE NE GÖRMEK İSTİYORUZ?
+
+- Birleştirilmiş sensör başlığı, çalışan ip/encoder mekanizması ve kapaklı kayıt kutusu.
+- Sensörler bağlıyken sıcaklık ve EC ham sinyalinin okunması; kalibrasyon uygulanırsa kullanılan standart ve katsayıların kaydı.
+- İpi aşağı/yukarı hareket ettirince doğru yönde sayım; cetvelle mesafe kontrolü.
+- START/STOP ile SD üzerinde gerçek dosya oluşması ve dosyanın bilgisayarda yeniden açılması.
+- Kısa suya daldırmada sensör yanıtının alınması. Bu cihazın temel işlev kontrolüdür; ayrıntılı deney kampanyası bu işin önkoşulu değildir.
+- Kaynak CAD dosyaları + STL, firmware kaynak kodu ve kullanılan kütüphane/sürüm listesi.
+- Gerçek bağlantıların GPIO/hat tablosu veya şeması, montaj fotoğrafı, bir gerçek örnek CSV ve kısa kullanım notu.
+
+Henüz kartta derlenmiş firmware, üretilmiş CAD veya gerçek ölçüm kaydı teslim etmiş değiliz. Bu paket bunları üretmek için iş tarifidir. Ölçülmemiş kesin hassasiyet ve Arktik dayanımı sözü istenmiyor.
+
+5. BİZE İLK GERİ DÖNÜŞTE YAZMANIZ YETERLİ
+
+“Elektronik / firmware / mekanik işlerinin hangilerini yapabiliyorum; elimde hangi parçalar var; nelerin temin edilmesi gerekiyor; ilk çalışan montaj için tahmini süre ve varsa işçilik maliyeti.”
+
+Sonra aynı tasarımla parçaları ölçüp yapım sırasına geçeceğiz. Hazır olmayan malzeme veya firmware varmış gibi takvim sözü verilmez.

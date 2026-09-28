@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ssp245",
+    "url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2035.nc?var=tasmax&north=78.25&west=15.5&east=15.75&south=78.0&horizStride=1&time_start=2035-01-01T12%3A00%3A00Z&time_end=2035-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+    "requested_variable": "tasmax",
+    "year": 2035,
+    "requested_at": "2026-09-22",
+    "production_input": false,
+    "status": "request_failed",
+    "error": "HTTP Error 404: "
+  },
+  {
+    "id": "ssp585",
+    "url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/tasmax/tasmax_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2035.nc?var=tasmax&north=78.25&west=15.5&east=15.75&south=78.0&horizStride=1&time_start=2035-01-01T12%3A00%3A00Z&time_end=2035-12-31T12%3A00%3A00Z&accept=netcdf3&addLatLon=true",
+    "requested_variable": "tasmax",
+    "year": 2035,
+    "requested_at": "2026-09-22",
+    "production_input": false,
+    "status": "request_failed",
+    "error": "HTTP Error 404: "
+  }
+]

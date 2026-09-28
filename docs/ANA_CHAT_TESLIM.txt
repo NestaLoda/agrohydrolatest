@@ -1,0 +1,501 @@
+TESLİM 032 — 17 AYRI SUNUM GÖRSELİ / PNG SERİSİ TAMAMLANDI
+28 Eylül 2026 · Aynı mevcut AgroHydro projesi
+
+GÜNCEL TESLİM
+Kullanıcının son master promptuna göre 17 slaytın tamamı sırayla ve ayrı ayrı 1920×1080 PNG üretildi. Güncel dosyalar presentation/slides/slide_01.png–slide_17.png. presentation/AgroHydro_17_Slayt_PNG.zip yalnız bu 17 PNG’yi içerir. Bu tur PDF/PPTX veya birleşik sunum dosyası üretilmedi. 031’in tek tek onay, 2560×1440 ve 3 yedek slayt akışı son talimatla geçersizdir; aşağıdaki 031 yalnız tarihseldir. Önceki tek-slayt PPTX çalışma dosyası teslim paketine dahil değildir.
+
+AKIŞ / TASARIM
+Konya su baskısı → gerçek tarihsel pilot → Türkiye transfer haritası → iklimsel kuzeye kayış → yetişebilir/sürdürülebilir üretilebilir ayrımı → su yönetimi zinciri → araştırma sorusu → gerçek uygulama ekranı → gerçek 2051 motor sonucu → model/saha → PWN → fiziksel numune → kontrollü hidroponik deney → araştırma zinciri → ekip → kapanış. Tahmini konuşma akışı 8 dakika 30 saniye. Koyu teal, mint, kırık beyaz; su mavi, üretim yeşil, enerji amber. Metinler Türkçe native SVG’den PNG’ye işlendi. Gerçek uygulama ekranı 25 Eylül kaydı; prototip/deney çizimleri şematik etiketli; çevre montajı temsili. Logo/portre/ölçüm uydurulmadı.
+
+KAYNAK / HESAP / PLAN / ÖLÇÜM AYRIMI
+Konya yaklaşık %8,7 sonucu özgün rapordaki göreli baskı azalmasıdır; m³ tasarrufu değildir. Türkiye haritası Natural Earth geometrisidir, işaretler havza sınırı değil bölge bağlamıdır. Xu vd. 2026 makalesindeki ≈331/739 km, 1980–2010’dan 2071–2100’a SSP1–2.6/SSP5–8.5 iklimsel kuzey sınırı kaymasıdır; gerçekleşmiş tarımsal göç değildir.
+2051 SSP245 dengeli/taze ürün, 100 m² senaryosu bu tur mevcut motorla yeniden hesaplandı; request/result JSON saklandı. Yeni su 14,205 m³/yıl, aylık plan tahsisi yağış/kar deposundan, deniz arıtma tahsisi 0. Günlük model tekrarında Mayıs 1,168 m³ yedek ihtiyacı ayrı gösterildi; boş depo başlangıcının etkisi var. Hidroponik %94,6 / sera %5,4 alan payı; 4204 kg/yıl analoğa dayalı model hasadı; 119,2 MWh/yıl elektrik eşdeğeri. Enerji üst sınırı tanımlı değil; sayılar koşullu plan, doğrulanmış tesis değil. Karasal tahsis/PWN temsil ilişkisi ve saha gereksinimleri korunur.
+PWN v0.1 prensibi ve Arktik hedefi ayrı; numune ayrı örnekleme ve uzman paneli gerekir. Gerçek kontrollü deney ölçümü bulunmadığı için “Henüz ölçülmedi” yazıldı. Yeniden oluşturulmuş deney suyu fiziksel Arktik numunesi sayılmaz. Ekip rolleri/başarıları kullanıcı beyanıdır. Ayrıntılı kaynaklar presentation/PRESENTATION_MANIFEST.md içindedir.
+
+BU TUR DOĞRULAMA — 28 EYLÜL 2026
+17/17 PNG 1920×1080 ve okunabilir dosya; 17/17 SVG metin taşma/örtüşme kontrolü geçti; tüm slaytlar görsel incelendi. UTF-8/Türkçe kontrolü, gerçek sonuç su kapanışı, ürün/yöntem alan toplamı, kritik dönem anlamı, ölçüm yok etiketi, tarihsel Konya yüzde hesabı ve ZIP içeriği kontrolleri geçti. presentation/.build/final_verification.json ve png_qa.json kayıtları var. Uygulama/bilimsel motor/veri katsayıları/PRE-POST dosyaları değiştirilmedi. Backend test paketi ve uygulama build’i yeniden çalıştırılmadı; önceki 579/579 ve build sonuçları 25 Eylül 2026 teslim 030’a aittir.
+
+DEĞİŞEN DOSYALAR
+presentation/slides/slide_01.png–slide_17.png; editable/slide_01.svg/html–slide_17.svg/html; STYLE_TOKENS.json; PRESENTATION_MANIFEST.md; notes/slide_01.md; assets/turkey_naturalearth.geojson, slide_10_request.json, slide_10_result.json; .build/build_slides_png.mjs, calculate_slide_scenario.py, validate_package.py, finalize_delivery.py ve QA kayıtları; AgroHydro_17_Slayt_PNG.zip; docs/BUILD_STATUS.md ve bu dosya.
+
+AÇIK GERÇEK BAĞIMLILIKLAR
+Gerçek Arktik profili/izinli numune/laboratuvar paneli ve kontrollü üretim deneyi ileride yapılacak araştırmadır; bu görseller tamamlandı iddiası içermez. Yerel tahsis, zemin ve enerji uygulama kanıtları önceki bilimsel sınırlarıyla durur. Sunum görsel üretim görevi tamamlandı; yeni uygulama özelliği eklenmedi.
+
+---
+TARİHSEL TESLİM 031 — AŞAĞIDAKİ ESKİ SUNUM İŞ AKIŞI 032 İLE DEĞİŞTİRİLMİŞTİR:
+
+TESLİM 031 — ARKTİK MÜLAKAT SUNUMU / AYRI GÖRSEL SLAYT 01
+28 Eylül 2026 · Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+
+GÜNCEL SUNUM DURUMU
+Kullanıcının yeni master sunum talimatıyla 17 ana + 3 yedek slaytın kaynak ve onay manifesti, ortak renk/ölçü/font sistemi ve gerçek/temsili/eksik görsel envanteri oluşturuldu. Kullanıcının “HER SAYFAYI AYRI AYRI GÖRSEL OLARAK ÜRET” düzeltmesiyle her slayt ayrı PNG olarak hazırlanıp tek tek gösterilecek. Bu tur yalnız Slayt 01, DESENDEN DENGEYE, üretildi. Slayt 02 ve devamı üretilmedi; DEVAM gelmeden sonraki slayda geçilmeyecek. Ana hedef 8 dakika 30 saniyelik anlatım; tam PPTX/PDF bütün slaytlar onaylandıktan sonra birleştirilecek. Şimdiki slide_01.pptx yalnız düzenlenebilir tek slaytlık çalışma kaynağıdır, tamamlanmış ana sunum değildir.
+
+SLAYT 01 / KAYNAK VE GÖRSEL
+2560×1440 kapak, Konya → Türkiye → Kuzey/Arktik araştırma sürekliliğini başlık/alt başlık ve kısa akışla gösterir. AgroHydro, Ferit Bora Akman, Cem Ural, Ali Baha Demir ve Kartal Bilim ve Sanat Merkezi bilgileri yeni kullanıcı talimatına dayanır; ekip adları eski sunum kapağıyla da eşleşir. Sayısal model sonucu veya fiziksel ölçüm içermez. Tarım–Kuzey arka planı built-in image_gen ile üretilmiş temsili çevre montajıdır; gerçek Konya/Longyearbyen/TASE fotoğrafı değildir. Türkçe metin görsel modeline yazdırılmadı: SVG/HTML ve 16 native PowerPoint metin nesnesi olarak ayrı düzenlenebilir. Doğrulanmış ekip/kurum logo dosyası bulunmadığından logo çizilmedi; alan boş, kurum adı düz metin. Üretim promptu varlık klasöründe kayıtlıdır.
+
+İNCELEME / SINIRLAR
+AGENTS, güncel 030 ANA/BUILD, kaynak/mimari/TASE/mülakat/model/saha/PWN/araştırmacı belgeleri; özgün 20 sayfalık Konya raporu, eski 36 sayfalık sunum metni ve kapağı; güncel Türkiye/Kuzey doğrulama görselleri; ilgili jüri preset/kod/donanım/PWN metadata yapısı incelendi. Konya tarihsel yaklaşık %8,7, dört üründeki modellenmiş göreli sulama baskısıdır; m³ tasarrufu değildir. Güncel Kuzey ana kıyası 2026 model yılı, Longyearbyen bağlamıdır. PWN konsept resmi gerçek cihaz fotoğrafı sayılmaz; depodaki profil sentetiktir. Doğrulanmış gerçek PWN/tank/Arktik veya pilot fotoğraf/ölçüm kaydı bulunmadı. Hocanın düzeneği kullanıcı beyanı, uyarlama/deney gelecek planıdır. Bunlar sonraki slaytlarda doğru statüyle anlatılacak. Xu vd. makalesi ve senaryo sonuçları ilgili slayt üretilirken yeniden doğrulanacak; kapakta bilimsel sayı yok.
+
+DOSYALAR / DOĞRULAMA — 28 EYLÜL 2026
+presentation/PRESENTATION_MANIFEST.md, STYLE_TOKENS.json; assets/slide_01_environment_concept.png ve slide_01_environment_prompt.txt; slides/slide_01.png; editable/slide_01.svg, slide_01.html, slide_01.layout.json, slide_01.pptx; notes/slide_01.md; .build altında kaynak inceleme/üretim scriptleri ve özel QA kayıtları. Bu tur PNG 2560×1440, Türkçe başlık/isim doğruluğu, SVG metin geometrisinde sıfır taşma/örtüşme, PPTX 16 düzenlenebilir metin nesnesi, paket bütünlüğü, slayt boyutu, Arial font kaydı ve Artifact Tool yeniden içe alma kontrolleri geçti. PNG ve native slayt renderı görsel incelendi. PowerPoint uygulamasında açılıp test edildi iddiası yok. Uygulama/bilimsel motor/veri/PRE-POST dosyaları değiştirilmedi; backend testleri veya uygulama build'i bu tur yeniden çalıştırılmadı. Son uygulama doğrulaması 25 Eylül 2026 tarihli 030'da 579/579 test ve masaüstü/Jüri/PDF akışıdır.
+
+AÇIK BAĞIMLILIK / SONRAKİ SOMUT ADIM
+Kapak kullanıcı değerlendirmesini bekliyor. Revizyon gelirse yalnız 01 düzeltilir; DEVAM gelirse 02 üretilir. Onaylı kurum/ekip logosu, gerçek prototip/düzenek/ekip fotoğrafı ve onaylı Konya harita asseti henüz bulunmadı; uydurulmaz. Kaynaklı veri, simülasyon, kullanıcı beyanı ve gelecekte yapılacak saha/deney ayrımı manifestte kayıtlı. Mevcut çalışan uygulamanın ayrıntılı bilimsel durumu aşağıdaki 030 ve docs/BUILD_STATUS.md içinde korunuyor.
+
+---
+ÖNCEKİ TESLİM / MEVCUT UYGULAMANIN SON DOĞRULANAN DURUMU:
+
+TESLİM 030 — KUZEY SU + ÜRETİM KARARI / SAHA VE DENEY ANLATIMI SON DÜZENLEME
+25 Eylül 2026 · Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan uygulama: http://127.0.0.1:8011/#north · JÜRİ MODU üst düğmede
+
+GÜNCEL DURUM
+Kuzey ana sonucunun başlığı “Geleceğin üretim ve su yönetimi planı”. Seçilen model yılı, SSP ve m² planlama koşulu yanında görünür. İlk masaüstü görünümünde su yönetimi ve önerilen ürün/yöntem planı yan yana yer alır; sol senaryo paneli ve tek ortak optimizasyon korunur. Su özeti yıllık dışarıdan gerekli yeni suyu, gerçekten tahsis edilen depo-yağış/kar / yerel tatlı su / arıtılmış deniz katkılarını m³ ve paylarıyla, aylık yeni su talebi ile aynı aylardaki kaynak kullanımını birlikte gösterir. Toplama girişi, depodan kullanılan su ve stok birbirine karıştırılmaz. İç devridaim ikinci bağımsız kaynak olarak eklenmez. Kritik ay, en yüksek talep veya nihai karşılanmamış su değil; mevcut günlük tekrar hesabında çatı/depo sonrası en yüksek aylık ortalama yedek su gereğidir. Kısa su eylemleri yalnız mevcut plan/kısıt sonucuna bağlıdır; Neden? ayrıntısı açılır. Depo kapasitesi kullanıcının seçtiği tasarım koşuludur, hesaplanmış minimum değildir.
+
+Ürün paneli her ürün için alan payı, m², kg/yıl, yöntem ve mevcut allocation kaydından toplanan m³/yıl yeni suyu gösterir. Kaynak tahsisi yalnız tesis toplamında olduğundan ürünlere sahte tatlı/deniz suyu payı yazılmaz. Yöntem yüzdeleri alan payıdır; elektrik eşdeğeri ayrı etiketlidir. 2026→seçilen yıl farkı sonuçların hemen altında kalır; ürün karışımı değişmiyorsa aynı gösterilir.
+
+SAHA / KONTROLLÜ DENEY DURUMU
+Saha Güncellemesi içinde PWN adı ve amacı tanımlandı. Mevcut v0.1 için kayıt/profil analiz yazılımı vardır; depodaki örnek sentetik etiketlidir, fiziksel tank deneyi veya Arktik ölçümü doğrulanmış bir kayıt yoktur. Arktik sürümünde deniz sıcaklığı/iletkenliği/basıncı, uygun tuzluluk/derinlik hesabı, UTC/konum ve kalite kaydı hedeftir; sensör, doğruluk, derinlik ve numune paneli kilitlenmedi. Fiziksel numune PWN'den ayrı örneklemedir. Şimdiki model/literatür ve açık kaynak suyu senaryosu → ölçülebilir PWN/numune bilgisi → yalnız eşleşen kaynak/arıtma girdileri bağı görünür; PWN karasal yıllık suyu, geleceğin havasını veya hasadı doğrudan ölçmez. Deniz suyu kullanılmayan planda PWN'nin üretim kararını kesin değiştireceği söylenmez. Longyearbyen model hücresi kesin TASE istasyonu değildir.
+
+“Kontrollü üretim deneyi” tabında hocanın mevcut topraksız düzeneğini uyarlama planı ve aynı yıl/alan bağlamında modelin yeni su, elektrik, ayrı ısı, hasat değerleri karşısında “Henüz ölçülmedi” sütunu vardır. Doğrudan karşılaştırma için pilot ürün/alan/süre/yöntem/su hazırlama koşullarının eşleşmesi ve beklentinin önceden dondurulması gerekir. Yeniden oluşturulmuş deney suyu Arktik fiziksel numunesi diye adlandırılmaz; gerçek numune/pilot veya otomatik katsayı güncellemesi uydurulmaz. Ana Kuzey ekranına eski uzun üç aşamalı saha anlatısı geri gelmedi.
+
+JÜRİ / PDF / KORUNANLAR
+Mevcut 99 saniyelik Jüri Modu yeni birleşik Kuzey sonucunu vurgular; su gereği, kaynağı ve kritik ayı API'den okur. Saha adımı PWN, ayrı numune ve kontrollü deneyi farklı katkılar olarak anlatır. Kuzey karar PDF'si aynı sonuçla yeni başlığı, yalnız kullanılan su kaynaklarını, doğru kritik ay tanımını ve dürüst araştırma devamını kullanır; ayrı PDF sistemi kurulmadı. Türkiye ekranı, Kuzey iklim verisi/yıl/SSP, optimizer hedef ve kısıtları, depo/arıtma/enerji hesapları, kaynak/provenans ve PRE/POST kuralları değişmedi. Sayısal sonuç için katsayı veya veri değiştirilmedi.
+
+DOSYALAR / DOĞRULAMA — 25 EYLÜL 2026
+Arayüz: frontend/src/workspaces/NorthSimulation.tsx, NorthWaterStrategy.tsx, NorthConsole.tsx, NorthFieldPanels.tsx, Pwn.tsx, NorthValidationDesk.tsx, north-decision-pass.css; frontend/src/JuryDemo.tsx, juryDemoPreset.ts, jury-demo.css. Rapor: backend/decision_pdf.py. Test: tests/test_decision_reports.py, scripts/north_final_smoke.cjs, scripts/jury_demo_smoke.cjs. Güncel jüri notu: docs/JURY_DEMO_029.md. Üretim derlemesi geçti (80 modül). Tam backend paketi bu tur yeniden çalıştı: 579/579 test geçti; mevcut tek Starlette/AnyIO kullanımdan kalkma uyarısı. Chrome masaüstü 1280×720 ve 1440×900 gerçek Kuzey akışı: kaynak ve ürün su toplamları hesapla kapandı, aylık kaynak/talep eşleşti, kritik tanım okundu, 2051'de arıtım sıfırken kaynak olarak görünmedi, saha ve pilotun ölçülmedi durumu ve PDF indirmesi geçti. Jüri Modu sekiz adım, yıl yeniden hesabı, API kesintisi ve önceki oturumun korunmasıyla yeniden geçti. Görseller: docs/verification/north-final-030/ (iki ana ekran, 2051 arıtımsız plan, su ayrıntısı ve aylık grafik, saha, pilot, iki PDF sayfası ve browser-qa.json) ile docs/verification/jury-demo-029/. Mobil test yapılmadı.
+
+GERÇEK AÇIKLAR / SONRAKİ ADIM
+Yerel karasal su/depo/zemin/enerji tahsisi, eşleşmiş izinli PWN profil ve fiziksel numune, laboratuvar paneli, kontrollü deneyin gerçek su/enerji/hasat kaydı henüz yoktur. Bunlar mevcut simülasyonun ölçümü gibi gösterilmez. Bu ürün düzenlemesi kapandı; sonraki kullanım mülakat/jüri gösterimidir. Ayrıntılı bilimsel kayıt docs/BUILD_STATUS.md içindedir.
+
+---
+ÖNCEKİ TESLİMLER (tarihsel; güncel ekran, prototip durumu ve testler yukarıdadır):
+
+TESLİM 029 — JÜRİ MODU / GERÇEK HESAPLA REHBERLİ ÖNİZLEME
+23 Eylül 2026 · Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan uygulama: http://127.0.0.1:8011/#turkiye ve #north · Üstte JÜRİ MODU
+
+GÜNCEL DURUM
+Mevcut uygulamanın üzerine, ayrı site veya yeni bilimsel motor kurmadan 8 adımlı/99 saniyelik jüri önizlemesi eklendi. Başlat/Önceki/Sonraki/Otomatik oynat-durdur/Çık ve sol-sağ ok/Escape çalışır. Konya mevcut deseninden su −%20 senaryosuna; aynı Türkiye optimizerı ile Gediz/Manisa'ya; 2026 model yılı karşısında 2051 Kuzey planına; saha girdileri, kontrollü üretim devamı ve proje zincirine geçer. Önizleme Türkiye'de mevcut /api/simulate, Kuzey'de /api/north/plan ve /api/north/reference uçlarını çağırır. Yıl düğmeleri 2026, 2036, 2051, 2076 için aynı hesapları yeniden çalıştırır. Sonuç değişmezse değişmiş gibi gösterilmez. Sayılar sabit sunum metninden değil API yanıtından gelir. Normal ekran Jüri Modu boyunca saklı ve canlı kalır; çıkınca önceki mod, bölge, senaryo/elle ayar, yıl/amaç ve hesaplanmış sonuç korunur. Hesap hatasında kısa hata, yeniden dene ve çıkış vardır.
+
+KAYNAK / HESAP / PLAN / GERÇEK GÖZLEM AYRIMI
+Konya ve Gediz mevcut desenleri kaynaklı bölge bağlamıdır; öneriler mevcut modelin koşullu optimizer çıktısıdır. Su −%20 hazır senaryodur; yüzde/m³ ölçülmüş tasarruf ya da kâr değildir. Kuzey 2026, gözlenmiş bugünkü hava değil CMIP6 model yılı; 2051/SSP245/100 m²/dengeli amaç mevcut veri ve açık mühendislik koşullarıyla hesaplanır. PWN Arktik sürümü, izinli numune, PRE→POST ve kontrollü üretim kartları gelecek araştırma planıdır. Demo hiçbir gerçek PWN gözlemi, numune, hidroponik pilot sonucu veya PRE kayıt üretmez; bilimsel motor, veri, provenans ve hesaplar değiştirilmedi.
+
+DOSYALAR / AYRINTI
+Yeni frontend/src/juryDemoPreset.ts (tüm demo parametreleri/süreleri), frontend/src/JuryDemo.tsx, frontend/src/jury-demo.css ve scripts/jury_demo_smoke.cjs. Değişen frontend/src/App.tsx ve workspaces/NorthConsole.tsx (yalnız demo isteği ve hesap callback bağlama). Tam sıra, presetler, sözlü sunum notu ve görseller: docs/JURY_DEMO_029.md; ekran görüntüleri ve tarayıcı kaydı: docs/verification/jury-demo-029/. Bilimsel durumun ayrıntısı docs/BUILD_STATUS.md.
+
+DOĞRULAMA — 23 EYLÜL 2026
+TypeScript/Vite üretim derlemesi geçti (78 modül). Tam backend paketi yeniden çalıştı: 578/578 geçti; mevcut tek Starlette/AnyIO kullanımdan kalkma uyarısı. 1440×900 Chrome masaüstü testi tüm sekiz adımı ve her ana aşamanın ekran görüntüsünü; Konya/Gediz/Kuzey gerçek API çağrılarını; +50 yıl yeniden hesabını; 9 saniyelik otomatik geçişi; ok tuşlarını; normal Türkiye/Kuzey sonucunun birebir korunmasını; kasıtlı 503 durumunda güvenli durma/çıkmayı; PRE dosyalarının hash ile değişmediğini; saha yazma uçlarının çağrılmadığını; dış ağa bağımlılık, tarayıcı hatası ve yatay taşma olmadığını doğruladı. Mobil test yapılmadı (kullanıcı tercihi). İstemci API hatası için otomatik yeniden dene/çık akışı mevcut; hesap yoksa sonraki adım kapalıdır.
+
+AÇIK BAĞIMLILIK / SONRAKİ SOMUT ADIM
+Jüri akışı hazır. Sözlü anlatımda PWN v0.1'in bugün fiziksel durum olduğunu; Arktik deniz sürümü/numune paneli ve izinlerin uzmanla netleşeceğini; PWN'nin karasal su miktarı veya gelecekteki hasadı doğrudan ölçmediğini; gerçek saha ve daha sonraki pilot ölçümünün aynı modelde ancak desteklenen girdileri güncelleyebileceğini söyle. Sunum öncesi 8011 yerel sunucunun açık olduğunu ve sekiz adımı bir kez çalıştırdığını kontrol et.
+
+---
+ÖNCEKİ TESLİMLER (tarihsel; güncel jüri özelliği ve test sonucu yukarıdadır):
+
+TESLİM 028 — ÜST GEZİNME DÜĞMELERİ TEK TASARIM
+23 Eylül 2026 · Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan uygulama: http://127.0.0.1:8011/#north ve #turkiye
+
+GÜNCEL DURUM
+Bugün/Türkiye, Gelecek/Kuzey, Tarım Güvencesi ve Saha Güncellemesi üst düğmeleri aynı 38 px yükseklik, eşit yerleşim, köşe, kenarlık, yazı ağırlığı ve çizgi ikonlarla tasarlandı. Etkin düğme açık yeşil zemin/alt vurgu kullanır; Tarım Güvencesi Kuzey'in yanında kalır. Kuzey saha paneli açılıp kapanırken etkin üst düğme artık doğru değişir. Simülasyon hesapları, veri ve PDF değişmedi. Bir önceki 027 sadeleştirmesi korunur: üç aşamalı saha açıklaması ana Kuzey ekranında yoktur.
+
+DOSYALAR / DOĞRULAMA
+frontend/src/App.tsx, frontend/src/workspaces/NorthConsole.tsx, frontend/src/decision-refinement.css. 23 Eylül 2026: TypeScript/Vite üretim derlemesi geçti (75 modül). 1280×800 masaüstü tarayıcıda dört düğmenin eşit tasarımı görsel incelendi; Türkiye/Kuzey/Tarım Güvencesi/Saha etkin durumları ve Saha kapanışı erişilebilirlik ağacında doğrulandı. Telefon testi yapılmadı. Backend/veri değişmedi; son 578 backend testi 23 Eylül 2026 tarihli önceki teslim sonucudur, bu tur yeniden çalıştırılmadı.
+
+AÇIK BAĞIMLILIK / SONRAKİ SOMUT ADIM
+Üst gezinme görsel işi tamam. Kuzey önerilerinin saha doğruluğu için izinli PWN/su numunesi, karasal su-depo araştırması ve kontrollü üretim pilotunda gerçek su/enerji/hasat ölçümü gerekir. Bunlar mevcut simülasyon verisi gibi gösterilmez. Ayrıntılı bilimsel durum docs/BUILD_STATUS.md içindedir.
+
+---
+ÖNCEKİ TESLİMLER (tarihsel):
+
+TESLİM 027 — KUZEY ANA EKRANINDA SAHA ZİNCİRİ SADELEŞTİRMESİ
+23 Eylül 2026 · Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan uygulama: http://127.0.0.1:8011/#north
+
+GÜNCEL DURUM
+Kullanıcının isteğiyle Kuzey ana ekranındaki “01 Bilgisayarda / 02 TASE-su numunesi / 03 Üretim pilotu” üçlü açıklama bölümü ve “Saha test planı” düğmesi kaldırıldı. Su yönetimi kararının ardından önerilen ürün/yöntem dağılımı gelir. Bu saha adımları jüri sunumunda sözlü anlatılacak. Bilimsel hesap, veri, PDF raporu ve ayrı saha/gözlem ayrıntıları değiştirilmedi; PWN'nin ölçebileceği sınırlar korunuyor. TESLİM 026'daki bu bölümün ekranda bulunduğunu söyleyen ifadeler artık tarihsel kayıttır.
+
+DEĞİŞEN DOSYALAR / DOĞRULAMA
+frontend/src/workspaces/NorthSimulation.tsx, NorthConsole.tsx, decision-refinement.css. 23 Eylül 2026: TypeScript/Vite üretim derlemesi başarılı (75 modül); 8011 Kuzey masaüstü tarayıcı erişilebilirlik ağacında üçlü bölüm ve düğme yok, su kararı ve ürün dağılımı yerinde. Backend/veri değişmedi; önceki 578 backend testi bu tur yeniden çalıştırılmadı. Telefon testi yapılmadı.
+
+AÇIK BAĞIMLILIK / SONRAKİ SOMUT ADIM
+Gerçek kaynak suyu kullanılabilirliği, karasal su/depo erişimi ve üretim yöntemi için TASE'de izinli gözlem/numune ile daha sonra kontrollü pilot ölçümü gerekir. Bunlar henüz ölçülmüş gibi sunulmuyor; model yalnız desteklenen girdilerle güncellenecek. Ayrıntılı bilimsel durum docs/BUILD_STATUS.md içindedir.
+
+---
+ÖNCEKİ TESLİM (tarihsel arayüz anlatımı ve 23 Eylül 2026 doğrulamaları):
+
+TESLİM 026 — KARAR VERİCİ RAPORLARI / 2026 KUZEY REFERANSI / SU VE SAHA AKIŞI
+23 Eylül 2026 · Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan güncel uygulama: http://127.0.0.1:8011/#north ve #turkiye
+
+GÜNCEL ÜRÜN DURUMU
+Üst çubuktaki Türkiye, Kuzey, Tarım Güvencesi, Saha ve kanıt/kaydet düğmeleri aynı yükseklik, kenarlık ve etkin durum dilini kullanır. Haritanın denizi arka plandan ayrıldı; bölge işaretinin üzerine gelince ad etiketi görünür. Kuzey haritası Svalbard'ı daha geniş açıdan açar. İşaretli NASA hücresi hâlâ tarla, havza veya sefer rotası değildir.
+
+Türkiye'de seçili beş bölgenin kaynaklı MEVCUT ürün deseni sol panelin başında kısa renkli dağılım olarak, aşağıda tüm ürün paylarıyla açık görünür. Elle düzenleme ayrı ve isteğe bağlı kalır. Konya, Seyhan/Adana, Gediz/Manisa, GAP/Harran–Şanlıurfa, Trakya/Edirne için hesap sonrası “Karar raporunu indir · PDF” vardır; önceki Türkiye destek planı çağrısı bu karar akışından kaldırıldı. PDF aynı senaryo isteğini sunucuda aynı optimizer ile yeniden hesaplar; mevcut→önerilen ürün payları, alan eylemleri, modellenmiş su gereği, kısıtlar, kaynak ve doğrulama sınırları çıkar. Bu sayı gerçek ölçülmüş su tasarrufu/kâr değildir. Trakya'da çeltik su katsayısı eksik olduğundan rapor yalnız suyu hesaplanabilen alt kapsam için hacim ve yüzde verir, toplam bölge suyu diye sunmaz.
+
+Kuzey'de ana değişim karşılaştırmasının seçim menüsü kaldırıldı. Kullanıcının seçtiği yıl, aynı üç CMIP6 modelinin 2026 model yılına karşı, aynı SSP ve mühendislik koşullarıyla hesaplanır. 2026 seçiliyken sahte yüzde farkı verilmez. 2026 ölçülmüş güncel hava veya bugünkü tarım değildir; koşullu model yılıdır. Tarihsel/yakın dönem veri katmanları ayrıntılı veri çalışmalarında kalır, ana karşılaştırmanın referansı değildir.
+
+Kuzey ana su kararında yıllık yeni su, depolanan yağış/kar, arıtılmış deniz suyu ve kritik ay m³ ile görünür. Hemen altında “bilgisayarda hesaplandı → TASE PWN/izinli numune → kontrollü tarım pilotu” test zinciri ve saha test planına geçiş bulunur. Önceki günlük konuşma üslubundaki üretim denemesi uyarısı profesyonel uygulama koşuluna çevrildi. Kuzey PDF'si aylık su görseli, ürün/yöntem oranları, enerji, karasal su ile PWN'nin ölçebileceği sınır ve post-TASE aynı motor ilkesini içerir. Tarım Güvencesi ilk ekranında hizmet ayrıntıları kapalı; işletme hesabı temel dört girdiyi gösterir, fire/kurulum/indirim/hizmet bedeli gelişmiş bölümde açık varsayım olarak durur. Bu program gerçek poliçe, alım sözleşmesi veya gelir garantisi değildir.
+
+KAYNAK / HESAP / GERÇEK ÖLÇÜM AYRIMI
+Kaynaklı: mevcut resmî bölge ürün alanları, Türkiye iklim verisi ve Kuzey CMIP6 günlük kaynak paketi/ürün literatürü. Hesap: Türkiye bölgesel optimizasyonu ve Kuzey ürün×yöntem×sezon/su/enerji planı. Varsayım: Kuzey 100 m² örneği, depo/arıtma ve üretim katsayıları; Tarım Güvencesi mali girdileri. Gerçek yeni saha ölçümü: bu teslimde yok. PWN deniz suyu sıcaklık/tuzluluk profili için; karasal yıllık tatlı su, gelecekteki hava ve hasadı doğrudan ölçmez. İzinli su numunesinin kullanılabilirlik/arıtma paneli ile kar/yağış-depo erişimi ve kontrollü üretim pilotu uzman/saha doğrulaması gerektirir.
+
+DOSYALAR / ÇIKTILAR
+backend/decision_pdf.py; backend/app.py ve north_api.py PDF uçları; backend/north_timeline.py 2026 referansı. frontend/src/components/DecisionReportButton.tsx ve decision-report.css; frontend/src/decision-refinement.css; ScenarioLab.tsx, NorthSimulation.tsx, NorthWaterStrategy.tsx, NorthConsole.tsx, RegionGlobePicker.tsx/CSS, ProducerPlan.tsx, ProducerSupport.tsx, Simulation.tsx, App.tsx. PDF bağımlılıkları requirements.txt / requirements.lock.txt. Örnekler: output/pdf/konya-karar-raporu-ornek.pdf ve output/pdf/kuzey-2026-karar-raporu-ornek.pdf. Ayrıntı: docs/BUILD_STATUS.md.
+
+DOĞRULAMA — 23 EYLÜL 2026
+Tam backend paketinde 578 test geçti; tek mevcut Starlette/AnyIO kullanımdan kalkma uyarısı, hata yok. TypeScript/Vite üretim derlemesi başarılı (75 modül). Beş Türkiye bölgesinin varsayılan koşullu sonucundan ve Kuzey 2026/2036/2051 yılından PDF üretildi; her biri 2 sayfa. Konya/Kuzey örnekleri Poppler ile PNG'ye çevrilip sayfa düzeni, yazı, grafik ve kırpılma açısından görsel incelendi. Masaüstü tarayıcıda Türkiye hesap→PDF ve Kuzey→PDF gerçek indirmesi, 2036→2026 değişim karşılaştırması, su/saha panelleri, sade Tarım Güvencesi girişi, harita rengi ve geniş Kuzey açısı doğrulandı. Telefon testi yapılmadı. Sunucu 8011 güncel kodla yeniden başlatıldı; kullanıcı sekmesi Kuzey ana ekranında açık.
+
+AÇIK BAĞIMLILIK / SONRAKİ SOMUT ADIM
+Bilgisayarda mevcut kaynak ve açık senaryo sınırlarıyla rapor ve karar hesapları tamam. Gerçek güvenilirlik için TASE'de izinli/kalibrasyonlu PWN profilini ve uygun su numunesini almak, karasal su/kar-depo erişimini ayrıca saha/hidrolojiyle doğrulamak, ardından arıtılmış/koşullandırılmış kaynak suyuyla kontrollü tarım pilotunda gerçek su, enerji ve hasat kaydetmek gerekiyor. Bunlar yapılmış gibi gösterilmiyor; gözlem desteklediği girdilerle aynı motor PRE→POST tekrar çalıştırılacak.
+
+---
+ÖNCEKİ TESLİMLER (tarihsel; güncel arayüz, 2026 referansı ve test durumu yukarıdadır):
+
+TESLİM 025 — TÜRKİYE BÖLGE SEÇİMİ VE KUZEY HEDEF HARİTASI
+23 Eylül 2026 · Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan uygulama: http://127.0.0.1:8011/#north ve #turkiye
+
+GÜNCEL DURUM
+Üst çubuktaki uzun bölge listesi küçük dünya simgeli düğme oldu. Türkiye'de Konya, Seyhan/Adana, Gediz/Manisa, GAP/Harran–Şanlıurfa ve Trakya/Edirne kaynak noktaları `data/sites.json` koordinatlarıyla haritada yer alır. Harita işaretine veya altındaki bölge adına basınca mevcut bölge seçim akışı çalışır; aktif ürün deseni ve iklim bağlamı o bölgenin kaydından yüklenir. Harita yalnız açılınca görünür; Dünya/Bölge düğmeleri küre ve yakın seçim haritası arasında geçer. Ana simülasyon ekranını uzatmaz. Noktalar havza/idari sınır değildir.
+
+Kuzey haritası Longyearbyen araştırma konumunu (78,22°K; 15,65°D) ve hesapta kullanılan NASA iklim model hücresi merkezini (78,125°K; 15,625°D; yaklaşık 0,25°) ayrı gösterir. Hücre ayak izi taranan veri kapsamıdır; tarla, su havzası, saha gözlemi veya TASE rotası değildir. Kuzey modeli halen tek Longyearbyen konumunda hesap yapar; başka bölgenin iklim verisi varmış gibi seçime açılmadı.
+
+KOD / VERİ / BİLİMSEL DURUM
+Yeni frontend/src/components/RegionGlobePicker.tsx ve region-globe-picker.css. Değişen App.tsx ve ui.tsx. Çevrimdışı mevcut Natural Earth `land.geojson` / MapLibre kullanılır; yeni dış veri indirilmedi. Türkiye ve Kuzey hesap motorları, mevcut desen ve veri paketleri değişmedi. Özellik raporu: docs/REGION_GLOBE_025.md. Ana bilimsel durum: docs/BUILD_STATUS.md. Kaynak hücre ile Longyearbyen noktasının ayrımı modelin gerçek coğrafi kanıt sınırını korur.
+
+DOĞRULAMA — BU TESLİM
+TypeScript/Vite üretim derlemesi başarılı (72 modül). Masaüstü 1280×720: beş Türkiye işareti; Gediz işareti → Gediz/Manisa planlama bağlamı; GAP adı → Harran/Şanlıurfa planlama bağlamı; Seyhan harita işareti → Adana planlama bağlamı; Kuzey'de Longyearbyen ve kaynak hücre işaretleri, her iki modda Dünya/Bölge geçişi doğrulandı. 1280 px'de yatay taşma ve tarayıcı konsol hatası yok. Mobil testi kullanıcı tercihi gereği yapılmadı. Kanıt: docs/verification/region-globe-025/ (bölge ve küre görselleri, browser-qa.json, build.log).
+Önceki backend 574 testinin son çalışması 23 Eylül 2026 16:11:33 +03 (TESLİM 024). Bu tur backend ve veri değişmedi; test yeniden çalıştırılmadı ve yeni test sonucu sayılmıyor.
+
+AÇIK BAĞIMLILIK / SONRAKİ SOMUT ADIM
+Yeni Kuzey bölgesi seçimi için her konumun günlük kaynak iklim dizileri, karasal su/zemin/enerji ve ürün katsayılarıyla ayrı bilimsel paket gerekir. Bu paket olmadan haritada yeni hesap noktası açılmayacak. TASE PWN/izinli numune ve pilot ölçümleri daha önce tanımlanan uzman/laboratuvar koşullarına bağlıdır; bu tur saha ölçümü yapılmadı.
+
+KISA GEÇMİŞ
+025: Küçük harita ile Türkiye bölge seçimi, Kuzey kaynak hücresi taraması.
+024: Yıl bazlı Kuzey hesabı, su kaydırıcıları, alan girişi, model anlatımı; 574 test.
+023: Tarım Güvencesi program taslağı ve model sonucuyla bağlantı.
+
+ÖNCEKİ KÜMÜLATİF KAYIT — AŞAĞIDAKİ 024 VE DAHA ESKİ DURUMLAR TARİHSELDİR
+
+TESLİM 024 — YIL BAZLI KUZEY SİMÜLASYONU / SU KONTROLLERİ
+23 Eylül 2026 · Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan uygulama: http://127.0.0.1:8011/#north
+
+GÜNCEL DURUM
+Kullanıcının son isteği tamamlandı. Su toplama alanı, depo kapasitesi ve ayrılabilen tatlı su artık kaydırıcıdır. Kaynak senaryosu değişikliği MANUAL OVERRIDE olarak görünür; kaynakların gerçek önerilen payını aynı optimizer hesaplar. Planlama ölçeğine 1–10.000 m² sayı girişi eklendi; 100 m² / 1.000 m² / 1 ha hızlı düğmeleri korundu. Alan başına toplama/depo alanla birlikte ölçeklenir; mutlak tatlı su tahsisi kendiliğinden artırılmaz.
+
+Tarım Güvencesi üst menüde Gelecek/Kuzey'in yanında bağlı dal olarak gösterilir. “Nasıl üretelim?” → “Üretim yöntemi dağılımı”; ürün başlığı “Önerilen ürün dağılımı”. Açılış yılı mevcut yıldır (2026); kullanıcı 2026–2100 arasında yıl yazar. Şu an / +10 / +25 yıl düğmeleri hız sağlar. Eski yakın/tarihsel dönemler ana yıl seçiminden çıkarıldı; referans/dönem ayrıntısında korunur. Boş/geçersiz yıl veya alan yeni hesap ve eski öneriden destek aktarımını engeller. Sonuçlar yalnız simülasyon düğmesiyle güncellenir; ilk açılış hesabı otomatik yapılır.
+
+YILIN GERÇEK HESABA BAĞLANTISI
+NASA NEX-GDDP-CMIP6 üç model, iki SSP. Eksik 2061–2080 için 480 resmi kaynak NCSS dosyası indirildi/doğrulandı. Ayrı 2026–2100 paketi: 150 yıl/senaryo bağlamı, 450 model-yıl günlük dizi, 1.800 ham kaynak kaydı. Eski dönem ve ERA5 manifestleri değiştirilmedi. target_year girilince doğrudan o yılın günlük sıcaklık, yağış, ışınımı; yetişme dönemi/aday ön elemesi, su toplama, enerji katsayıları ve günlük su sınaması hesaplanır. Artık yıllar korunur. Yıllar arasında interpolasyon ve ürün payını doğru orantıyla artırma yok. Aynı ürün × yöntem × mevsim optimizerı yeniden çözülür. Hash/provenans ve PRE kayıt kapsamı korunur.
+
+Ana değişim özeti yalnız iki referans + seçilen yılı hesaplayan /api/north/reference kullanır. Bütün dönemleri hesaplayan /timeline ayrıntı isteğinde çalışır. Bu, her yıl değişiminde gereksiz beş dönem hesabını azaltır.
+
+KANIT / HESAP / VARSAYIM AYRIMI
+Kaynaklı: NASA iklim modeli verileri ve yayınlardaki ürün/üretim katsayıları. Hesap: üretim dağılımı, aylık su dengesi, arıtma, enerji, duyarlılık. Kullanıcı senaryosu: alan ve kaynak/tesis ayarları. Gerçek ölçüm: bu tur yeni PWN/numune/pilot ölçümü yapılmadı. Uzman onayı alınmış gibi gösterilmedi.
+
+Seçilen model yılı gerçekleşecek havanın tahmini değildir. 2026 da model senaryosudur, canlı hava değildir. Güncel referans ERA5 2015–2025 yeniden analizidir; veri ürünleri/hücre farkı gelecekle karşılaştırmaya etki eder. Ürün verimi EDEN kontrollü üretim analoğudur; yerel doğrulanmış gelecek verimi değildir. Varsayılan %95 çıktı koruma / %5 ürün alan güvencesi açık planlama politikasıdır. Tek yıllık su taraması boş depo ve sıfır kar stoku ile başlar; önceki yıldan kar devri temsil edilmez. Açılır açıklamada gösterilir. Uzun vadeli tesis kararı için çok yıllık dayanıklılık ve yerel doğrulama gerekir.
+
+GERÇEK ÖRNEK
+Aynı 100 m² / SSP245 / dengeli amaçta 2037: 14,132 m³ yeni su, 9,685 m³ depodan, 4,446 m³ arıtmadan. 2072: 14,251 m³ yeni su, tamamı depodan. Bu iki hesapta ürün karışımı değişmedi. Isı gereği 2.258,9 → 1.546,6 kWh ısı iken elektrik eşdeğeri 119.260,5 → 119.700,0 kWh oldu; diğer işletme kalemleri de hesaba girer. Sonuçlar annual-comparison.json içinde, gerçek saha verisi değil hesap çıktısıdır.
+
+DOSYALAR
+Backend: north_climate.py, north_contracts.py, north_planning.py, north_timeline.py, north_api.py; scripts/ingest_north_annual_climate.py; yıllık kaynak paketi data/north/rebuild_climate/annual/; yıllık/timeline testleri ve kompakt test fixture imzaları.
+Frontend: App.tsx, workspaces/NorthConsole.tsx, NorthSimulation.tsx, NorthDecisionStory.tsx, NorthWaterStrategy.tsx, north-console.css, components/ProducerRecommendation.tsx ve üretim derlemesi.
+Anlatım: docs/MODEL_NASIL_CALISIYOR.md. Uygulama/kanıt raporu: docs/NORTH_YEAR_CONTROLS_024.md. Güncel ana bilimsel kayıt: docs/BUILD_STATUS.md.
+
+DOĞRULAMA — BU TESLİM
+574 test geçti; 0 hata/başarısız/atlanan. Son tam koşu başlangıcı 23 Eylül 2026 16:11:33 +03, süre 41,35 sn. Bir mevcut AnyIO kullanımdan kalkma uyarısı. İlk yıllık 23 test ve odak referans testleri de kayıtlı. TypeScript/Vite son üretim derlemesi başarılı (70 modül).
+Masaüstü 1280×720: 2026 açılışı, 2037 / 1.250 m² sayı girişi ve depo kaydırıcısı, 2072 yıllık sonuç, 2037 bağlamının Tarım Güvencesi'ne taşınması, boş yıl/alan engeli, header bağlantısı, kaynak değişikliği işareti ve güncel referans özeti doğrulandı. Sayfa yatay/dikey taşması yok; sol panel ve sağ canvas bağımsız kayıyor. Tarayıcı konsol hatası yok. Mobil testi yapılmadı.
+Kanıt: docs/verification/north-year-controls/ — full-tests.xml/log, annual-tests.xml, reference-tests.xml/log, annual-comparison.json, browser-qa.json, desktop-final.png, water-sliders.png, build.log.
+
+SONRAKİ SOMUT ADIM / SAHA
+PC tarafındaki bu paket tamamlandı. Uzmanla yerel ürün/üretim katsayıları ve kar-depo başlangıç koşullarını değerlendirmek; su tahsisi/zemin/enerji kapasitesini doğrulamak gerekir. İzinli TASE ölçümünde PWN sıcaklık/tuzluluk/derinlik ve kalite kaydı; fiziksel numunede karar sorusuna göre uzman/laboratuvarla kararlaştırılan kullanılabilirlik/arıtma paneli gerekir. Numune sayısı/paneli sabitlenmedi. PWN geleceğin yıllık karasal tatlı suyunu veya ürün verimini ölçmez. Uygun arıtma/koşullandırma sonrası pilotta gerçek su/enerji/hasat ölçülür; desteklenen girdilerle AYNI motor yeniden çalıştırılır. Tarım Güvencesi gerçek poliçe, kazanç garantisi, kredi/banka veya yapılmış satış değildir; önceki 023 program taslağı sınırları korunur.
+
+KISA GEÇMİŞ
+024: Yıl bazlı kaynak iklim, su kaydırıcıları, alan girişi, header dalı, model anlatımı; 574 test.
+023: Simülasyondan Tarım Güvencesi destek taslağına ve model hasadından mali hesaba bağlantı.
+022: Program araştırması, bağımsız destek hesabı, Ferit metinleri.
+021: Kaynaklı ERA5, üretim amacı, depo/enerji tasarımı ve numune/pilot akışı.
+
+ÖNCEKİ KÜMÜLATİF KAYIT — AŞAĞIDAKİ DURUMLAR TARİHSELDİR; GÜNCEL YIL AKIŞI VE TEST DURUMU 024 ÜST BÖLÜMÜDÜR
+
+TESLİM 023 — TARIM GÜVENCESİ / SİMÜLASYONLA BAĞLI DESTEK PLANI
+Aynı proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Adres: http://127.0.0.1:8011/#north
+
+# TESLİM 023 — Tarım Güvencesi simülasyon sonucuna bağlandı
+
+23 Eylül 2026. Kullanıcının son isteği: gençlere hidroponik/yeni tarımı tanıtmak; ekipman, dönemlik teknik destek, üreticiden ürün alımı ve dağıtım fikrini karar desteğinde göstermek. Kredi/banka hizmeti ve fide geliştirme kapsam dışı. Sağlık sigortası benzetmesindeki sürekli ilişki ve dönemlik hizmet fikri, gerçek poliçe/gelir garantisiyle karıştırılmadan korunuyor.
+
+**Uygulanan:** Üst çubuk adı Tarım Güvencesi oldu. Kuzey'in tamamlanmış üretim sonucuna kısa öneri eklendi. Yıl, planlama alanı, hidroponik/sera payları ve seçilen ürünün yıllık model hasadı aynı sonuçtan gelir. Ayarlar değiştiğinde veya hesap sürerken eski öneriden destek açma kapatılır; tamamlanan yeni sonuçla tekrar açılır. Üretim kurulamıyorsa Kuzey öneri çağrısı da üretilmez.
+
+Yeni Destek planım bölümünde katılım amacı ve eğitim, kurulum, teknik takip, alım/dağıtım, risk kapsamı seçilir. Bu taslak indirilebilir; gerçek üyelik/ödeme/sözleşme oluşturmaz. On iki ay hesap karşılaştırma dönemidir. Seçilen hizmetlerin fiyat etkisi uydurulmaz; bedel ve indirim ayrı girilir.
+
+Kullanıcı önerilmiş ürünü seçince yalnız o ürünün model hasadı destek hesabına aktarılır; karışık ürünlere tek fiyat gizlice uygulanmaz. Fiyat/giderler boş kalır. Sonuç ihracında orijinal model bağlamı/isteği/provenansı, bağlı ürün, seçilen hizmetler ve miktarın elle değiştirilip değiştirilmediği korunur. Miktar 6 ondalıkla aktarılır; 1e-6 toleransında değişim kontrol edilir. Kullanıcı miktarı değiştirince görünür açıklama çıkar. Öğretici örnek yükleme veya temizleme bağlı ürün ve hizmet seçimini hesap kaydından kaldırır.
+
+Türkiye'de çağrı ancak hesaplanmış optimized sonuçtan sonra görünür. Mevcut bölgesel desen hesabından hidroponik uygunluk sonucu çıkarılmaz; genel pilot/üretici desteği açılır. Bilimsel iklim/su/ürün optimizerı değişmedi; program desteği verimi veya iklimi otomatik artırmaz. Yeni bir benimsenme artışı yüzdesi hesaplanmadı; bunun için gerçek katılım/pilot/işletme verisi gerekir.
+
+**Dosyalar:** yeni frontend/src/components/ProducerRecommendation.tsx, ProducerPlan.tsx; değişen ProducerSupport.tsx, producer-support.css, App.tsx, workspaces/NorthConsole.tsx, NorthSimulation.tsx, Simulation.tsx. Yeni docs/TARIM_GUVENCESI_JURI_ANLATIMI.md; mevcut Ferit metni ve program mantığına güncel ek. Backend ve kaynak veri bu tur değişmedi.
+
+**Bu tur doğrulama:** TypeScript/Vite üretim derlemesi başarılı (70 modül). Masaüstü 1280×720: 2050 önerisi → Marul → 47,6 kg/yıl model aktarımı; diğer mali alanlar boş. Açık test varsayımlarıyla hesap 400 TL desteksiz / 360 TL destekli yıllık denge verdi; program bedelinin indirim faydasını aşması gizlenmedi. 2050→2030 seçiminde eski plan çağrısı devre dışı kaldı; yeni hesapla 2030 bağlamı açıldı. Türkiye'de hesap öncesi çağrı yok, hesap sonrası genel destek çağrısı var. Yeni mobil testi yapılmadı. Kanıt: docs/verification/producer-integration/.
+
+**Önceki test:** 548 backend testi 23 Eylül 2026 14:50:39 +03 başlangıçlı TESLİM022 çalıştırmasında geçmişti. Backend değişmediği için bu tur yeniden çalıştırılmadı; yeni test sonucu gibi sunulmaz.
+
+**Jüri cümlesi:** “Gelecekte ne üretilebileceğini hesaplıyoruz; Tarım Güvencesi ile bu önerinin eğitim, ekipman, teknik destek ve alıcı bağlantısıyla uygulanabilmesini planlıyoruz. Model varsayımlarını saha ve pilotla, ekonomik uygulanabilirliği gerçek teklif ve işletme kayıtlarıyla sınayacağız.”
+
+**Dışarıda kalan gerçek işler:** izinli PWN/numune ve laboratuvar, yerel su/enerji/zemin koşulları, kontrollü tarım pilotu, eğitim uygulaması, yazılı ekipman/servis teklifleri, alıcı kalite/fiyat/ödeme koşulları ve yetkili sigorta tarafıyla kapsam. Kredi/banka ürünü kurulmayacak. Sonraki somut adım bu kanıtları gerçek pilot protokolü ve Ferit'in görüşme/teklif çalışmasıyla toplamak.
+
+
+KISA GEÇMİŞ
+023: Simülasyondan destek taslağına ve model hasadından mali hesaba bağlantı.
+022: Program araştırması, bağımsız destek hesabı, Ferit metinleri, 548 backend test.
+021: Beş bilimsel/PC geliştirmesi; kaynaklı ERA5, amaç, depo/enerji, numune/pilot akışı.
+
+ÖNCEKİ KÜMÜLATİF KAYIT — güncel özellik adı ve akışı 023 üst bölümündedir
+
+TESLİM 022 — ÜRETİCİ DESTEĞİ / PAZARA ERİŞİM / FERİT SUNUM METİNLERİ
+Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan adres: http://127.0.0.1:8011/#north · Türkiye ve Kuzey üst çubuk: Üreticiye geçiş
+
+# Üreticiye geçiş — uygulanan devam modeli
+
+23 Eylül 2026 · TESLİM 022
+
+Ferit Bora'nın kullanıcı tarafından iletilen fikri, **Desenden Dengeye Üretici Destek ve Pazara Erişim Programı** olarak araştırıldı ve projeye eklendi. Sürekli teknik destek, karşılaştırılabilir ekipman teklifleri/indirim, alıcı bağlantısı ve uygun sigorta kapsamına erişim ayrı sorumluluklardır. Mevcut bir sigorta, gelir garantisi, ortaklık veya alım taahhüdü oluşturulmadı. Fikrin katkı sahibi ve tarihi araştırma notunda korunur.
+
+## Uygulanan yazılım
+
+Türkiye ve Kuzey ekranlarının bağlam çubuğunda **Üreticiye geçiş** düğmesi var. Ana bilimsel simülasyon uzatılmadan açılan panelde üç bölüm bulunuyor: nasıl işler, destek simülasyonu, yaygınlaştırma planı. Hesap formu ve sonuç ayrı kayar; masaüstü kullanım doğrulandı, telefon testi yapılmadı.
+
+Yeni `POST /api/producer-support/scenario` yıllık tek ürün/aynı fiyatlı ürün grubu için kullanıcı girdileriyle hesap yapar. Kayıp sonrası ürün alıcı kapasitesiyle sınırlanır; fazlası satılmış sayılmaz. Yıllık gelir, işletme gideri, kurulum bedelinin yıllık payı, ekipman indirimi ve hizmet bedeli ayrıdır. Destekli/desteksiz karşılaştırmada aynı miktar, fiyat ve alıcı kapasitesi korunur. Desteğin verimi yükselttiği veya yeni müşteri yarattığı varsayılmaz.
+
+Başabaş fiyatı/miktarı, alıcısı planlanmamış ürün, dört stres durumu ve somut eylemler hesaplanır. Üretim −%20, fiyat −%20, işletme gideri +%20 ve birleşik stres olasılık değildir. Negatif denge kırmızı, pozitif denge yeşil; olumlu sonuç yatırım onayı değildir. Vergi, kredi/finansman, enflasyon, tahsilat zamanı ve paranın zaman değeri modellenmez. Kurulum tutarını yıllara yaymak ilk yatırım nakdini ortadan kaldırmaz.
+
+Form başlangıçta boştur. Açıkça yüklenen öğretici örnek varsayımsal olarak etiketlenir. Boş, negatif, geçersiz ve sonlu olmayan girdiler reddedilir. Girdi değişince eski sonuç işaretlenir ve güncel sonuç indirme kapatılır. Girdiler, kaynak notu ve sonuç JSON indirilebilir; panel kapatıldığında geçici form sıfırlanır. Belge inceleme, imzalı sözleşme doğrulama, üretici hesabı veya kalıcı ticari kayıt sistemi henüz uygulanmadı. Tüm sonuçlarda USER_SCENARIO, contracts_verified=false, investment_recommendation=false vardır.
+
+Bilimsel optimizer ve üretim desenleri bu katmandan bağımsızdır. Kuzey modelindeki kg, satış geliri olarak otomatik aktarılmadı. Su/enerji/ürün hesabı, PRE–POST sınırları ve kaynaklı veriler korundu.
+
+## Araştırma ve metinler
+
+- `docs/URETICI_DESTEK_MODELI.md`: resmî kaynaklı kapsam, program ve para akışı, alım/dağıtımın finansman ve stok yükü, üretici hakları, pilot ölçütleri.
+- `docs/FERIT_SUNUM_VE_CALISMA_METINLERI.md`: 30 ve 90 saniyelik anlatım, beş slayt ve konuşma notları, proje paragrafı, kısa uygulama metinleri, Ferit'in çalışma çıktıları, tedarikçi/alıcı/sigortacı soruları, jüri yanıtları.
+- `data/producer_support/research/manifest.json`: 23 Eylül 2026'da indirilen dört resmî kaynak, URL, UTC, yerel ham dosya ve SHA-256. TARSİM 2026 sera şartları, gelir koruma sayfası, Bakanlık tip sözleşme sayfası ve SEDDK kuruluş listesi arşivlendi. Bunlar gerçek ortaklık/uygunluk kanıtı değildir.
+
+TARSİM sera şartlarında teminatlı risk → teknik donanım hasarı → ürün kaybı bağlantısı ile genel arıza/iş durması istisnaları ayrıdır. Mevcut gelir koruma sayfası buğday, arpa ve çavdarı tanımlar. Türkiye mevzuatı Arktik tesise otomatik uygulanmaz. İşbirliği ve teminat ancak yetkili tarafların yazılı değerlendirmesiyle somutlaşabilir. Araştırma notlarında doğrudan resmî bağlantılar vardır.
+
+## Doğrulama — 23 Eylül 2026
+
+Tam backend paketi: **548 test, 0 hata, 0 başarısız, 0 atlanan**; 65,353 saniye, başlangıç 14:50:39 +03. Bunun 90 testi yeni hesap/validasyon/stres paketi. TypeScript ve Vite üretim derlemesi başarılı. Mevcut Starlette/AnyIO deprecated-alias uyarısı test hatası değildir.
+
+Canlı API öğretici örneğinde 1.000 kg hasat, %10 kayıp, 800 kg alıcı kapasitesi, 50 TL/kg, 30.000 TL işletme, 40.000 TL kurulum, %15 indirim, 5 yıl ve 1.000 TL/yıl hizmet ile destek olmadan 2.000 TL, destekle 2.200 TL yıllık denge; 100 kg alıcısı planlanmamış ürün; birleşik streste −15.000 TL bulundu. Bunlar tamamen varsayımsal yazılım kontrol sayılarıdır. Hizmet 10.000 TL olunca denge −6.800 TL ve program bedeli uyarısı görüldü. Boş API kaydı 422 ile reddedildi.
+
+Masaüstü 1280×720: Kuzey/Türkiye girişleri, panel sekmeleri, örnek hesabı, negatif sonuç, stres grafikleri, değişen girdide eski sonuç uyarısı ve Escape ile kapatma denetlendi. Kanıtlar: `docs/verification/producer-support/` içindeki test XML/log, build log, API JSON, ekran görüntüleri ve browser-qa.json. Gerçek ölçüm/teklif/kontrat oluşturulmadı; dışarıya mesaj gönderilmedi.
+
+## Fiziksel ve dış bağımlılıklar
+
+PWN kalibrasyonu ve izinli TASE ölçümü/numunesi; kullanım amacına uygun uzman laboratuvar paneli; yerel yağış/kar toplama, su erişimi, zemin ve enerji koşulları; kontrollü üretimde gerçek su/enerji/satılabilir hasat. Bunlar saha/pilot kanıtı gerektirir. Sefer tek başına 2050 iklimini, yıllık karasal suyu veya üretici kazancını doğrulamaz.
+
+Yaygınlaştırma için ayrıca yazılı ekipman teklifleri, gerçek alıcı ihtiyacı, ödeme ve kalite şartları, yetkili sigorta yanıtı ve işletme finansmanı gerekir. İlk somut adım: Ferit'in metin dosyasındaki teklif–alıcı–sigorta çalışma paketini gerçek bilgilerle doldurmak; üretim pilotunun kapsamını ölçümden önce kesinleştirmek. Sonuçlar uygunsa küçük ölçekli uygulama, ardından kanıta dayalı yaygınlaştırma.
+
+
+KISA TESLİM GEÇMİŞİ
+022: Üretici destek devam modeli, hesap, kaynak araştırması, Ferit metinleri; 548 test doğrulandı.
+021: ERA5 yakın dönem, üretim amacı, günlük depo, enerji/güç ve gerçek numune/pilot kayıt akışı.
+
+ÖNCEKİ BİLİMSEL TEMEL — 021
+Aşağıdaki bölümlerin tarihli ölçüm sınırları geçerlidir. Son yazılım doğrulaması üstteki 022 kaydıdır.
+
+TESLİM 021 — BEŞ PC GELİŞTİRMESİ / SAHAYA HAZIR DOĞRULAMA AKIŞI
+23 Eylül 2026. Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim; .git yok.
+Çalışan adres: http://127.0.0.1:8011/#north
+
+GÜNCEL İSTEK VE SONUÇ
+Kullanıcı beş iyileştirmeyi uygulamamızı, bilgisayarda yapılabilecek işleri tamamlamamızı ve fiziksel/saha işlerini ayırmamızı istedi. Güncel veri edinildi; üretim amacı, depo/enerji ve doğrulama kodu uygulandı ve test edildi. Sonraki bölüm paketleri ve sınırlarını tek başına açıklar. Kendi saha ölçümümüz veya üretim pilotu yapılmış sayılmaz.
+
+KORUNAN ARAŞTIRMA VE VARLIKLAR
+Konya → Türkiye → geleceğin üretim ve su yönetimi → PRE → TASE kanıtı → aynı motorla POST → kontrollü pilot tek araştırmadır. PWN saha aracı, sera/hidroponik pilot doğrulama ortamıdır.
+NASA v2 üç GCM (ACCESS-CM2, MPI-ESM1-2-HR, MRI-ESM2-0), 1995–2014/2021–2040/2041–2060/2081–2100, SSP245/585 ve ham/provenans korunuyor:1680NetCDF,153399model-gün,613596değer. Buna yeni ERA5 katmanı eklendi. EDEN ISS2018 altı kontrollü ürünün nicel analoğudur. Arpa/patates/buğday iklim araştırma adaylarıdır; yerel zemin/verim doğrulanmadan açık tarla alanı verilmez. MOSJ/zemin kanıtları korunur. Gerçek TOPAZ profili, parsel/enerji/su tahsisi, kendi PWN profili ve pilot ölçümü hâlâ beklenir.
+Türkiye bu tur değişmedi: Konya, Seyhan/Adana, Gediz/Manisa, GAP/Şanlıurfa, Trakya/Edirne. Kaynaklı2024tarım/2024–2025hava; canlı2026ekiliş iddiası yok. Ana su yüzdesi kaynak başlangıcına göre, ürün değişiminin ek etkisi ayrıca. Tarihsel%8,7 göreli su baskısıdır, ölçülmüş m³ değildir.
+Koyu yeşil bağımsız sol panel, açık karar alanı, su→ürün/yöntem→kanıt sırası korunur. Kontrollerden sonra düğmeyle simülasyon; yalnız Kuzey ilk varsayılanında otomatik hesap. Ayrıntılar açılır. Son masaüstü890×898, dış sayfa taşması yok. Telefon testi yapılmadı.
+
+# Bilgisayar tarafındaki beş geliştirme
+
+23 Eylül 2026 · TESLİM021. Bu dosya uygulanmış yazılımı, kaynaklı veriyi, koşullu hesabı ve henüz yapılmamış fiziksel işleri ayırır.
+
+## 1. Yakın dönem ve gelecek
+
+2015–2025 için 4.018 eksiksiz ERA5 günlük Tmin/Tmax/yağış/kısa dalga radyasyonu kaydı edinildi. Open-Meteo üzerinden kaynak URL, UTC, ham dosya ve SHA-256 arşivlendi; 1995–2025'in 11.323 günü aynı sağlayıcıyla tarihsel kontrol için tutuldu. ERA5 yeniden analizdir; kendi istasyonumuz veya gerçek ekiliş değildir. On bir yıllık yakın dönem, 30 yıllık iklim normali diye adlandırılmaz.
+
+Aynı ürün–yöntem–sezon motorunda yeni `recent` dönemi çalışır. Ana kıyas yakın dönem → seçilen gelecektir. Tarihsel NASA 1995–2014 seçeneği aynı model ailesinde kıyas için korunur. Alan, amaç, üretim analoğu ve altyapı eşit tutulur.
+
+Kritik sınır: NASA ve ERA5 aynı tarihsel dönemde bile farklıdır. NASA tarihsel hücresi ERA5'e göre yaklaşık 1,65°C daha soğuk ve yıllık kısa dalga radyasyonu yaklaşık 1.274 MJ/m² daha yüksektir. Yakın ERA5 → gelecek NASA farkı yalnız ısınmaya atfedilemez; veri ailesi/hücre etkisini de taşır. Arayüz bunu söyler. Otomatik, doğrulanmamış bir bias düzeltmesi uygulanmadı. Bu ayrım seferin iklim projeksiyonunu bütünüyle doğrulayabileceği anlamına gelmez.
+
+Kaynak: [Open-Meteo tarihsel hava API](https://open-meteo.com/en/docs/historical-weather-api). Tam kayıt `data/north/rebuild_climate/recent_reference/README.md` ve manifesttedir.
+
+## 2. Ürün seçiminin açık amacı
+
+Kullanıcı artık taze ürün miktarı, bitkisel protein veya besin enerjisi hedefi seçebilir. Altı ürünün ham yenebilir besin bileşimi Norveç Matvaretabellen resmî API'sinden kaynak kimlikleriyle arşivlendi. Bir kg yenebilir ürün için 100 g katsayısı onla çarpılır; protein gramı/kg dönüşümü ayrı açıktır. Yenebilir kısım ikinci kez düşülmez.
+
+Aynı LP önce seçilen çıktının en yüksek değerini bulur; %95'ini koruyarak su–enerji uçları arasındaki en büyük normalize kaybı azaltır. Varsayılan her etkin ürüne %5 alan politikası korunur ve ayarlanabilir. Gizli besin ağırlıkları, keyfî fiyat/talep veya önceden verilen ürün miktarları yoktur. Kaynak önceliği modları seçilen amaçla bulunan dengeli planın ürün miktarlarını korur.
+
+Gerçek varsayılan 2050/SSP245/100 m² hesabında taze ürün hedefi alabaşa %75 alan, protein ve besin enerjisi hedefleri rokaya %75 alan verir; diğer beş ürün %5'er tabandadır. Bu, hedefin kararı gerçekten değiştirdiğini gösterir; bir ürünün evrensel üstünlüğünü kanıtlamaz. Ham protein, sindirilebilir protein değildir; besin enerjisi kcal, tesis elektriği kWh değildir. Bu bir dengeli diyet, yerel pazar talebi veya kâr optimizasyonu değildir. Ekonomi için yerel güvenilir fiyat/işletme maliyeti/talep hâlâ gerekir.
+
+Kaynak: [Matvaretabellen API](https://www.matvaretabellen.no/en/api/). `data/north/food_composition.json`, ham API ve üretim betiği yeniden üretilebilir kayıt olarak tutulur. Besin dosyası ve yeni motor modülü PRE sürüm hash'ine dahil edildi; eski PRE yeni motorla sessizce çalıştırılmaz.
+
+## 3. Günlük su, depo ve yedek hesabı
+
+Mevcut yağış/kar erimesi–çatı toplama hesabının gerçek günlük sırası kullanılır. Hesaplanmış ürün/yöntem planı sabitken, sınanan kaydın döngüsel işletiminde yağış/kar ile talebi karşılayacak en küçük depo sequent-peak kümülatif açık hesabıyla bulunur. Dönem sonu/başı birlikte işlenir. Toplam toplama talebi karşılamıyorsa sonuç `None`: hiçbir sonlu depo su yaratmaz.
+
+Bu depo hesabı ilk doldurmayı dışlar; ilk dönem boş depo sonucu eski günlük güvenlik analizinde ayrıca kalır. Belediye suyunun yıllık toplamı keyfî günlere dağıtılmaz. Mevcut depo için %100, %75 ve %50 toplama stresleri; ortalama/en yüksek yıllık yedek, yoğun gün ve aralıksız yedek gün sayısı hesaplanır. Yüzdeler gerçekleşme olasılığı değildir. Arıtma debisi veya yerel su tahsisi doğrulanmış sayılmaz.
+
+Varsayılan 2050 taze ürün planında seçilen depo 10 m³, üç kaydın tamamı için hesaplanan döngüsel depo yaklaşık 10,865 m³; seçilen depoyla en yoğun gündeki yedek 46,6 L/gündür. Sonuç değişen üretim hedefi/koşulla tekrar hesaplanır. Çatı, kar birikimi, don, toplama verimi, kalite kayıpları ve parsel erişimi yerel ölçüm/uzmanlık gerektirir. Bu sonuç bir tesis uygulama projesi veya garanti değildir.
+
+## 4. Enerji tüketimi ve güç
+
+Üretim elektriği artık ışık, pompa, fan, nem alma ve soğutma olarak aynı fiziksel hesaptan ayrılır. Isı/COP ve arıtma elektriğiyle toplam kapanışı denetlenir. Varsayılan plan: ışık 70.232; pompa157; fan1.602; nem alma22.303; soğutma23.179; ısı elektrik karşılığı1.896; arıtma0,375 kWh/yıl. Yuvarlanmamış toplam119.368,894 kWh/yıl.
+
+Aylık işletim grafiği ve en yoğun ay eklenmiştir. Günlük hava verisinden yeniden kurulan saatlik ısı/elektrik azamileri hesaplanır; seçili seçeneklerin ayrı azamileri toplanarak ihtiyatlı işletim güç taraması verilir. Varsayılan yaklaşık25,8 kW. Bu gerçek eşzamanlı pik ölçümü değildir. Arıtma çalışma debisi/saatleri, başlangıç akımı, yedekleme, boş tesis don koruması ve bağlantı koşulları ayrıca tasarlanmalıdır. Aylık grafik RO ön ısıtmasının dağılımını içermez; yıllık toplam içerir.
+
+Yıllık enerji sınırı LP'de sert kısıttır. Yeni beyan edilen elektrik gücü alanı ayrıca tarama yapar; gücü aşabilecek tasarım için uyarı üretir, henüz LP güç kısıtı değildir. Yerel sağlayıcı kapasitesi otomatik keşfedilmiş veya onaylanmış sayılmaz.
+
+## 5. Numune ve kontrollü pilot
+
+`Saha + üretim testi → Ölçüm kayıtları` alanında karar bağlantılı saha listesi ve boş CSV/JSON şemaları indirilebilir. Numune girişi kaynak türü, zaman/konum, izin/teslim zinciri, kalibrasyon, yöntem, ölçüm belirsizliği ve uzman tarafından kaynaklı kullanım sınırlarını içerir. Birim uyuşmazlığı, eksik ölçüm ve sınırı kesen belirsizlik ayrı sonuç verir. Kontrolleri geçmek tüm tarımsal uygunluk/içilebilirlik onayı değildir.
+
+Pilot beklentisi ölçümden önce değişmez hash'li kayıtla dondurulur. Gerçek gözlem aynı alan/süre/protokol/su kaynağı/arıtma kapsamıyla karşılaştırılır. Yeni su, elektrik, ayrı ısı ve taze hasat farkları ve kg başına yoğunluklar hesaplanır. Eksik/gelecekte/sentetik gözlem reddedilir. Yeniden oluşturulmuş kaynak suyu gerçek fiziksel pilotta kullanılabilir; Arktik'ten alınmış su diye sunulmaz. Kalite kabulü gönderenin belge beyanıdır; yazılım bağımsız laboratuvar değildir.
+
+Numune/pilot incelemesi otomatik katsayı değiştirmez. Mevcut PWN PRE/POST yolu yalnız eşleşmiş kaynak T/S ve desteklenen arıtma girdilerini aynı motorda günceller. Gelecek iklim, karasal su, zemin ve verim buradan değişmez. Numune paneli, adet/derinlik/hacim ve kontrol/tekrar sayısı uzmanlarca belirlenir.
+
+## Sunumda söyleyeceğimiz
+
+“Bilgisayarda geleceğin iklim ve kaynak koşullarını simüle ederek hangi üretim sistemini ve su stratejisini kurmamız gerektiğini hesaplıyoruz. Sonra bu kararı etkileyen belirsizlikleri belirliyoruz. Seferin gerçek zaman ve konumundaki suyu modelin ne kadar doğru temsil ettiğini ve o kaynak suyunun kullanım/arıtma özelliklerini sınamak için sahada ölçüm yapıp izinli numune almamız gerekiyor. Bu kanıtları destekledikleri girdilere işleyip aynı motoru tekrar çalıştıracağız. Desenin değişmemesi de geçerli bir sonuçtur.”
+
+Yerel zemin, bütün yıl karasal su ve enerji tahsisi ayrıca araştırılacaktır; deniz profili bunların yerine geçmez. Longyearbyen bir araştırma/hesap bağlamıdır, teyit edilmiş sefer istasyonu değildir. Sefer rotası ve gözlemin üretim senaryosundaki kaynakla bağı belgelenmeden doğrudan aktarım yapılmaz. Pilotun kendisi sefer sonrası başka uygun kontrollü ortamda yapılabilir; bütün gelecek tarımı seferde yetiştirme vaadi yoktur.
+
+## Sahada / fiziksel çalışmada kalanlar
+
+1. Gerçek sefer istasyonu/rota/izin ve numune laboratuvar protokolünü kesinleştirmek.
+2. Uygun aralıkta kalibre C/T/p cihazıyla UTC/konum/QC içeren gerçek profil; bağımsız referansla kontrol. Mevcut düşük aralıklı TDS PoC deniz CTD'si değildir.
+3. Kaynağı ayrı kayıtlı izinli su örneklerini analiz etmek; tuzluluk ve karar sorusuyla gerekçeli kimya. Deniz örneği kar/yağış suyunu temsil etmez.
+4. Ayrı yerel çalışma ile toplama/depo/erişim/tahsis, zemin ve enerji kapasitesini doğrulamak.
+5. Arıtılmış/koşullandırılmış örnek veya açıkça yeniden oluşturulmuş suyla kontrollü üretim pilotu; gerçek su, enerji, bitki ve arıza kayıtları.
+
+Yazılım hazırlığı bu fiziksel işleri yapılmış saymaz. Test ve API kayıtları `docs/verification/north-completion/`, ayrıntılı saha protokolü `docs/NORTH_VALIDATION_WORKFLOW.md` içindedir.
+
+
+DOĞRULAMA — BU TUR ÇALIŞTIRILAN
+Tam backend: 2026-09-23T11:15:37.082017+03:00; 75.983s; 458 test geçti;0hata/başarısız/atlanan. Gerçek NASA/ERA5,LP/su kapanışı,besin amaçları,depo,güç,PRE/POST,numune/pilot sınırları test edildi. Sentetik fixture gerçek gözlem diye saklanmadı. Starlette/AnyIO deprecation uyarısı test başarısızlığı değildir.
+TypeScript+Vite üretim derlemesi başarılı;frontend/dist güncel. API:2026-09-23T08:21:27.073852+00:00;3üretim hedefi,5dönem,boş plan,düşük güç beyanı,doğrulama endpoint'leri ve eksik numune422 reddi geçti.
+Gerçek masaüstü:yakın/tarihsel referans,protein hedefinde roka,ERA5 yakın dönem,depo/enerji/güç,besin çıktıları,ölçüm kayıt masası ve boşJSONreddi görüldü. Son konsol boş;varsayılan2050/taze ürüne dönüldü. Mobil test yok. Önceki018'in23frontend testi ayrı yeniden çalıştırılmadı;eski tarihiyle kalır.
+Kanıtlar docs/verification/north-completion/: backend-tests.xml/log,build.log,api-summary.json,plan-*.json,timeline.json,browser-qa.json ve ekran görüntüleri. scripts/verify_north_completion.py gerçekAPI denetimini tekrar eder.
+
+DOSYALAR
+Backend güncellenen: north_climate,north_timeline,north_contracts,north_optimizer,north_planning,north_resources,north_api,north_field,app. Yeni:north_production_purpose.py,north_infrastructure.py,north_validation.py.
+Frontend:NorthConsole,NorthSimulation,NorthDecisionStory,NorthEnergyExplanation,north-console.css,dist. Yeni:NorthInfrastructure,NorthProductionPurpose,NorthValidationDesk.tsx.
+Veri:recent_reference,food_composition,validation_templates. Betikler:ingest_north_recent_reference,build_north_food_composition,verify_north_completion.py. Geçici düzenleme betikleri kaldırıldı. Ayrıntılı yeni belgeler:NORTH_PC_COMPLETION_021 veNORTH_VALIDATION_WORKFLOW.
+
+SONRAKİ SOMUT ADIM
+İzinli sefer istasyonu/rota,laboratuvar protokolü ve gözlemle üretim su kaynağının bağı netleşince ölçümden önce güncel model beklentili PRE hazırlanmalı. Yerel tahsis/enerji/zemin ve gerçek fiziksel pilot ayrıca yapılmalı. Bunlar bilgisayarda sayı üretilerek tamamlanamaz. Kaynaklı yerel ekonomi/talep,veri ailelerinin karşılaştırılabilirliği ve ayrıntılı arıtma/güç ekipmanı tasarımı da açık araştırmalardır.
+
+KISA TESLİM GEÇMİŞİ
+021:güncel yeniden analiz,besin amaçları,günlük depo/güç ve ölçüm kayıt altyapısı.
+020:sabit tarihsel referans,su örneği ve enerji anlatımı;tam önceki dosya docs/archive/ANA_CHAT_TESLIM_020_before_five_packages_2026_09_23.txt.
+019:su yönetimi öncelikli ekran;018:simülasyon etkileşimi;017:çeşitlilik/karar anlatımı;016:üretim-su motoru;015veöncesi:Türkiye akışı. Eski testler arşiv veBUILD geçmişinde tarihlidir. AşağıdakiPWNtedarik notları byte-for-byte korundu;son tarihli not kendi alanında geçerlidir.
+
+
+PWN TEDARİK / FİZİKSEL İLERLEME — TARİHLİ EKLER
+PWN TEDARİK EKİ — 22 EYLÜL 2026
+Kullanıcının Kartal'dan alabileceği DFR0300 ve Direnc.net alternatifleri araştırıldı. Güncel kaynaklı dosya: docs/PWN_KARTAL_TEDARIK.md.
+DFR0300: Gümrük Sepeti Dudullu 5.500 TL, sayfada sıfır/stok 1/mağazadan teslim; tam kit içeriği teyit edilecek. Direnc.net aynı DFR0300 K1 8.124,83 TL, sepete ekle. Robotistan'da doğrulanmış DFR0300 sayfası bulunamadı; TDS/pH muadil sayılmadı.
+Direnc güncel resmî adresi Yukarı Dudullu Eser Sokak 7/A Ümraniye; eski Maltepe adresi kullanılmayacak. Elden teslim telefonla teyitsiz. Robotistan Başakşehir için internetten sipariş/ödeme ve Ofisten Teslim Al seçeneği var.
+Direnc ESP32-WROOM32D 377,76; DS18B20 58,12 (stok teyidi); SD modülü 29,06; breadboard 55,21; iki jumper paketi ayrı ayrı 49,40 TL. Bu altı kalem toplamı 618,95 TL, hesap; tüm cihaz bedeli değil. Direnc encoder kategoride tükendi; önceki Robotistan seçeneği korundu.
+ÖNEMLİ FİYAT DÜZELTMESİ: Önceki Emes 1.950 TL EC ilanıyla aynı sitenin 8.900 TL kit ilanı arasında açıklanmamış fark var. Eski 3.423,50 TL ana parça toplamı kesin bütçe değildir. docs/PWN_V01_LINKLI_ALISVERIS.md başına güncelleme eklendi; eski PDF yeniden üretilmedi, fiyatları yeni tedarik dosyasıyla birlikte okunmalı.
+Doğrulama: web satıcı fiyat/adres/teslimat sayfaları araştırıldı; telefonla stok ayırtılmadı, satın alma yapılmadı. Elektriksel/fiziksel test yapılmadı; yukarıdaki yazılım testleri bu tedarik işi kapsamında yeniden çalıştırılmadı.
+Sonraki somut adım: DFR0300 tam kit içeriği ve elden teslimi satıcıya teyit ettirip ana parçaları tedarik etmek; usta gerçek kart/kablo/mil ölçülerine göre montajı eşleştirecek.
+
+PWN DİRENC AĞIRLIKLI SEPET — 22 EYLÜL 2026
+Kullanıcı Direnc.net’te alınabilenlerin oradan alınacağı senaryoyu seçti. Güncel satın alma listesi docs/PWN_DIRENC_SEPETI.md ve .txt. DFR0300 dahil 7 ana Direnc kalemi 8.743,78 TL; Robotistan encoder ve yeni 16 GB kart eklenince 9.726,11 TL ara toplam. Küçük elektronik, USB, sarf, mekanik, olası kalibrasyon eksiği ve kargo hariç; tüm cihaz fiyatı değil. Adetli küçük parça ve atölye tamamlama listesi dosyada.
+Önceki tedarik dosyasındaki Gümrük Sepeti önceliği artık seçili senaryo değil; alternatif kaynak olarak kalır. Bu iş önceki aynı gün kaynak kontrollerinin listelenmesi ve toplam hesabıdır; yeniden web stok sorgusu, sipariş, donanım veya yazılım testi yapılmadı.
+Sonraki adım: Direnc’te DFR0300 kit içeriğini, DS18B20 stoğunu ve elden teslimi teyit edip listeyi yapacak kişiye iletmek.
+
+PWN BÜTÇE REVİZYONU — 22 EYLÜL 2026
+En yeni kullanıcı kısıtı: yaklaşık 4.000 TL yalnız sensör/kart/algılayıcılara; mekanik ve montaj okulda. Önceki DFR0300’lı 9.726,11 TL ara toplamlı Direnc sepeti artık güncel öneri değildir.
+Yeni öneri dosyası: docs/PWN_4000TL_ANA_PARCA_PLANI.md. Direnc analog TDS probu+kartı 261,53 TL ve ADS1115 309,77 TL bu tur webden doğrulandı. ESP32, DS18B20, SD modülü/bellek, encoder ile ana toplam 2.018,57 TL; bu kalemlerin diğer fiyatları aynı gün önceki kontrolden. İsteğe bağlı pH 1.046,12 TL (stok/prob içeriği teyitsiz), eklenirse 3.064,69 TL; ilk öneri pH olmadan temel profili çalıştırmak. Mekanik/sarf/kargo/kalibrasyon hariç.
+Bilimsel kapsam açıkça daraltıldı: düşük tuzluluklu kontrollü su kolonunda sıcaklık/derinlik ve iletkenliğe dayalı TDS sensör sinyali. DFR0300 muadili, deniz suyu EC’si veya salinite cihazı olarak sunulmaz. Ham voltaj kaydı, aralık/sıcaklık/standartla doğrulama öncelikli; EC birimi ancak kalibrasyonla. Eski 12,88 mS/cm kalibrasyon standardı yeni aralığa otomatik taşınmaz. Eski “TDS almayın” genellemesi düzeltildi: daraltılmış PoC için kullanılabilir.
+Satın alma, fiziksel ölçüm ve kod değişikliği yok; uygulama testleri yeniden çalıştırılmadı. Sonraki adım: kutu içeriği/stok kontrolü ve okulda düşük aralıklı sensör yanıtının fiziksel doğrulaması.
+
+PWN ENCODER ÇIKARILDI — 22 EYLÜL 2026 SON DÜZELTME
+Kullanıcı 600 TL encoderin çıkarılmasını ve derinliğin okulda başka yöntemle çözülmesini istedi. Yöntem henüz tanımlı değil. docs/PWN_4000TL_ANA_PARCA_PLANI.md güncellendi: altı ana parça 1.410,26 TL; opsiyonel pH dahil 2.456,38 TL. Önceki encoderli toplamlar tarihsel kaldı. Mekanik okulda.
+DFRobot SEN0244 için canlı Robot Sepeti sayfası 1.198,66 TL ve 7–12 iş günü tedarik gösteriyor. Ucuz TDS yerine SEN0244 olursa 2.347,39 TL; pH ile 3.393,51 TL. Dokümantasyon avantajı; aralık/doğruluk iyileşmesi iddiası yok. Kısa takvim nedeniyle önerilen hemen kurulabilir yol yerel TDS ile başlamak. Stok/kutu içeriği ve pH entegrasyonu teyit gerektirir. Sipariş, kod veya fiziksel test yapılmadı.
+
+## Güncel öncelik — iletkenlik, pH sepet dışında
+
+22 Eylül 2026: Kullanıcı TDS/EC sensöründe en çok 1.000 TL, tercihen Direnc; pH'a 1.000 TL harcamak istemiyor. Encoder ve pH güncel öneri sepetinden çıkarıldı. Önceki pH'lı toplamlar yalnız alternatif hesaplarıdır.
+
+Yeni bulunan seçenek: DFRobot SEN0244, E-komponent'te KDV dahil 829,55 TL. https://www.e-komponent.com/dfrobot-sen0244-gravity-analog-tds-sensor-meter-for-arduino . Canlı sayfa 140 adet YURT DIŞI stok, 7–10 iş günü ve tahmini kargoya teslim 1–6 Ekim 2026 gösteriyor. Bu elden/yerel stok değildir. Üretici kitinde prob bulunur; satıcı teknik tablosu Board(s), Cable(s) dediği için prob dahil tam SEN0244 kutusu teyit edilmeli. SEN0244 üretici dokümantasyonu avantajıdır, yayınlanmış aralığı/doğruluğu ucuz seçeneğe göre daha iyi değildir (0–1000 ppm, ±%10 tam ölçek). Direnc'te 1.000 TL altında doğrulanmış daha yüksek performanslı EC/TDS kitine ulaşılamadı.
+
+Bu 829,55 TL kit mevcut 261,53 TL TDS yerine alınırsa altı ana parça 1.978,28 TL. İkisi birlikte alınmaz. Hızlı temin gerekirse mevcut yerel TDS'li altı parça 1.410,26 TL korunur.
+
+pH yerine ilgili ek işlev önerisi: DS3231 gerçek zaman saati, Direnc 174,35 TL: https://www.direnc.net/arduino-i2c-ds3231-real-time-clock-rtc-modulu . İnternetsiz tarih/saat kaydı için; yeni su parametresi ölçmez. Stok gösterimi üst/alt sayfada tutarsız, teyit gerekli. Uygun yedek pil ve modülün şarj devresi uyumu usta tarafından seçilecek; pil dahil varsayılmaz. SEN0244 + temel parçalar + RTC = 2.152,63 TL; yerel ucuz TDS + temel parçalar + RTC = 1.584,61 TL. Kargo/kalibrasyon/pil hariç. ADS1115 16 bit olması sensörü 16 bit doğrulukta yapmaz. Kalan bütçe yeni gereksiz kanal yerine EC standardı/referans doğrulamasına önceliklendirilecek. Gerçek su ölçümü/satın alma yok.
+
+SON PWN SEPETİ TEKLEŞTİRİLDİ — 22 EYLÜL 2026
+Güncel doğrudan paylaşılabilir dosya: docs/PWN_SON_ALISVERIS.txt. Seçilen hızlı temin yönü: Direnc TDS + ESP32 + DS18B20 + ADS1115 + SD modülü ve Robotistan 16 GB kart; 1.410,26 TL. DS3231 koşullu ek, dahil olursa 1.584,61 TL. Önceki SEN0244/pH/encoder sepetleri güncel alım listesi değil. Kalibrasyon/pil/kargo hariç; okul sarfı ve henüz tanımlanmamış haricî derinlik yöntemi dosyada ayrıldı. Fiyatlar son konuşmadaki kaynak kontrollerinden; bu tur tekrar sorgu, sipariş, fiziksel veya yazılım testi yapılmadı. Sonraki adım: bu listeyi ustaya verip stok/kutu içeriğini ve okulun sağlayacağı kalibrasyon/bağlantı malzemelerini tamamlamak.
+
+DİRENC BELLEK VE TAMAMLAMA — 22 EYLÜL 2026
+Güncel tek alım dosyası docs/PWN_SON_ALISVERIS.txt. Direnc SanDisk Ultra 16 GB microSDHC canlı sayfa 1.046,12 TL KDV dahil/sepete ekle; https://www.direnc.net/sandisk-ultra-16gb-80mb . Önceki Robotistan belleğine göre 672,10 TL pahalı. Tam Direnc altı parça 2.082,36 TL; RTC dahil 2.256,71 TL. Mevcut bellekle sırasıyla 1.036,24 / 1.210,59 TL. Diğer fiyatlar bu tur yenilenmedi. Kalibrasyon/pil/kargo/sarf hariç.
+Mantıklı ekler okul stoğundan 1 kayıt butonu, 2 durum LED'i/dirençleri; USB veri/güç ve gerektiğinde kart okuyucu, pull-up/header/RTC pili kontrolü dosyaya eklendi. Yeni su sensörü yok. Kod veya fiziksel doğrulama yapılmadı, sipariş yok. Sonraki adım ustanın okul stoklarını eşleştirip gerçek sepeti tamamlaması.
+
+HOCA LİSTESİ BAĞLANTILARI — 22 EYLÜL 2026
+Yeni dosya docs/HOCA_LISTESI_IKI_MAGAZA.txt: hocanın 12 kalemi için Direnc/Robotistan bağlantıları. M10 ve Atlas EC doğrulanamadı; M8N ayrı alternatif olarak etiketlendi. Su basıncı adayı derinlik için seçilmedi. Bu araştırma alım kararı değil; encoder yeniden eklenmedi. Pi mevcutsa yeniden alım yok; Pi kayıt kartıyla ayrı SD modülü gerekmeyebilir. Fiyat/stokların hepsi bu tur yeniden kontrol edilmedi, fiziksel/yazılım testi yok. Sonraki adım hocayla Pi adaptör/kart mevcudunu ve gerçekten alınacak alt kümeyi eşleştirmek.
+
+HOCA LİSTESİ FİYATLANDIRILDI — 22 EYLÜL 2026
+İki mağazanın ürün fiyatları yeniden webden kontrol edilip docs/HOCA_LISTESI_IKI_MAGAZA.txt dosyasına eklendi. Robotistan ADS1115 133,79 TL, bellek 374,02 TL; Direnc karşılıkları 309,77 ve 1.046,12 TL. Robotistan RTC 204,55 TL fakat tükendi; Direnc M8N 813,65 TL stok yok. Tam tablo kaynak ürün bağlantılarıyla dosyada. Bu karşılaştırma, yeni satın alma kararı değil. Fiziksel/yazılım testleri yapılmadı; sonraki adım okul stoğuna göre alınacak alt kümeyi seçmek.
+
+Pİ MEVCUT — 23 EYLÜL 2026
+Kullanıcı Pi mevcut, adaptör/depolama muhtemelen mevcut dedi. Güncel alım docs/PWN_SON_ALISVERIS.txt olarak yeniden sadeleştirildi: TDS 261,53 + Robotistan ADS1115 133,79 + Direnc DS18B20 58,12 = 453,44 TL; opsiyonel Direnc RTC 174,35 ile 627,79 TL. Son kontrol fiyatları, yeniden sorgulanmadı. Pi/ESP32/ayrı SPI SD modülü/yeni bellek-adaptör mevcutlar uygunsa alınmayacak. Adaptör ve kart kesin kullanıcı teyidi değil; okulda kontrol edilecek. Kalibrasyon/pil/kargo/sarf hariç. Kod, fiziksel test ve sipariş yok. Sonraki adım okul mevcudunu kontrol edip üç temel sensör/kartı temin etmek.
+
+KULLANICI SON PARÇA SEÇİMİ — 23 EYLÜL 2026
+GPS ve encoder kullanıcı isteğiyle yeniden listeye eklendi. ADS1115, DS18B20 ve stokta olmayan DS3231 yazıldı. Pi/breadboard/jumper/depolama mevcut; su basıncı yok. docs/PWN_SON_ALISVERIS.txt güncel: Robotistan GPS M8N 720,10 + encoder 608,31 + ADS1115 133,79 + DS18B20 75,52 = 1.537,72 TL; stokta olmayan RTC 204,55 dahil 1.742,27 TL. M8N, M10 değildir. TDS son mesajda geçmedi, önceki aday olarak ayrı korundu: 261,53 TL; dahil olursa RTC ile 2.003,80 TL. Fiyatlar önceki kontrollerden; tekrar web/cihaz testi ve sipariş yok. Sonraki adım bu listeyle stok ve montaj uyumunu tamamlamak.
+
+İLETKENLİK ANA LİSTEYE EKLENDİ — 23 EYLÜL 2026
+Kullanıcı isteğiyle Direnc TDS probu+ölçüm kartı 261,53 TL ana alıma eklendi. Güncel liste: GPS M8N, 600 darbe encoder, ADS1115, DS18B20, TDS ve stokta olmayan DS3231 RTC. RTC hariç 1.799,25 TL; RTC dahil 2.003,80 TL. docs/PWN_SON_ALISVERIS.txt güncellendi. Önceki fiyatlar kullanıldı; yeni fiyat sorgusu, sipariş veya fiziksel test yok. Kalibrasyon/kargo/pil hariç; TDS düşük aralıklı PoC, deniz suyu EC/CTD değildir.
+
+HOCANIN FİZİKSEL GÖSTERİM PLANI — 23 EYLÜL 2026
+Kaynak: kullanıcının aktardığı İlkay Hoca mesajları; yapılmış iş/ölçüm değildir.
+Öneriler: PET şişelerden dikey su kolonu; suya tuzlu çözelti ekleyerek gerçek sensör yanıtı gösterme; GPS için dışarıda gösterim; mevcut powerbank kullanımı; gerçek parça boyutlarıyla CAD/3D baskı; başlangıçta eldeki Lego tank dişlileri; kurumda 3 yazıcıyla yaklaşık 24 saat baskı beklentisi. Yazıcı/dişli mevcudu hoca beyanı, 24 saat süre tahmini.
+Uygulama ayrımları: Başlangıç suyu otomatik sıfır tuzluluk kabul edilmeyecek, başlangıç sensör değeri kaydedilecek. TDS 0–1000 ppm aralığı aşılmadan küçük adımlarla seyreltilmiş tuz çözeltisi kullanılacak; fazla konsantre tuz sensörü doyurabilir. Karıştırılmış suya tuz ekleme zamana bağlı tepki gösterimidir, tek başına derinlikle değişen tabaka/haloklin kanıtı değildir. Derinlik ayrıca cetvel/işaretli ip ile encoder karşılaştırılarak gösterilebilir; su kolonu kendi başına derinliği ölçmez. PET birleşimleri su dolu sızdırmazlık/sağlamlık kontrolünden geçecek, kuru elektronik ayrı tutulacak.
+GPS açık gökyüzünde yeni ve geçerli konum/tarih-saat verisiyle gösterilecek; kapalı ortamda hiç veri üretemez genellemesi yerine uydu kilidi/konum geçerliliği kontrol edilecek. Geçersiz veya eski konum güncel ölçüm sayılmayacak.
+Powerbank: mevcut olan kullanılabilir ancak herhangi biri garanti değil; Raspberry Pi 4 için uygun USB-C 5 V/3 A besleme (resmî öneri 5,1 V/3 A) ve kablo kontrol edilecek. Okulda önce masa adaptörüyle test, sonra powerbank ile sensör/kayıt açıkken düşük voltaj veya yeniden başlama kontrolü. Yeni powerbank satın alımı henüz gerekmiyor, mevcut cihazın uygunluğu açık bağımlılık.
+Kaynak: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/ ; sensör aralığı önceki Direnc TDS ürün kaydından.
+CAD baskısı için önce gerçek parça/kablo/konnektör boyutları ölçülecek. Önce tek kritik montaj parçasının uyumu, ardından yazıcılara dağıtılmış baskı önerilir. Lego dişli geçici mekanizma, derinlik doğruluğu kalibrasyonla belirlenecek.
+Kod/cihaz ölçümü/satın alma yapılmadı. Sonraki somut adım: parça ve güç kontrolü, masaüstü sensör okuması, gerçek ölçülere göre gövde baskısı ve iki ayrı demo (tuz ekleme tepkisi / derinlik ve dışarıda GPS).
+
+DİRENC ALTI PARÇA KONTROLÜ — 23 EYLÜL 2026
+Kullanıcının son altı kalemlik listesi Direnc.net ürün sayfalarında yeniden kontrol edildi. TDS 261,53 TL, ADS1115 309,77 TL ve su geçirmez DS18B20 58,12 TL sayfalarda ana ürün bölümünde “Sepete Ekle” gösteriyor. GPS için NEO-M8N modülü 813,65 TL fakat sayfada açıkça “Stokta Yok” yazıyor; Robotistan'daki kartla birebir aynı form faktörü değil. 600 darbeli E6B2-CWZ6C encoder 678,04 TL ve DS3231 RTC 174,35 TL sayfaları var, fakat ana ürün bölümünde “Sepete Ekle” yok; alt sayfa şablonundaki buton stok kanıtı sayılmadı. Bunların alınabilirliği mağazadan teyit edilmeli. Robotistan'a göre ADS1115 ve encoder Direnc'te pahalı, DS18B20 daha ucuz. TDS ürün aralığı 0–1000 ppm olduğundan yoğun tuzlu/deniz suyu ölçüm cihazı olarak sunulmayacak. Kaynaklar: https://www.direnc.net/arduino-tds-sivi-iletkenlik-ve-kalite-sensoru ; https://www.direnc.net/neo-m8n-arduino-gps-shield ; https://www.direnc.net/rotary-encoder-e6b2-cwz6c-600-pulse ; https://www.direnc.net/ads1115-16-bit-i2c-4-kanal-modul ; https://www.direnc.net/ds18b20-sicaklik-sensoru-su-gecirmez ; https://www.direnc.net/arduino-i2c-ds3231-real-time-clock-rtc-modulu . Bu kontrol sipariş veya fiziksel stok teyidi değildir; ölçüm/test yapılmadı. Sonraki adım: stok belirsiz iki kalemi telefonla/mağazadan teyit edip, GPS'i stoklu satıcıdan almak.
+
+YAKIN MAĞAZADAN TESLİM ARAŞTIRMASI — 23 EYLÜL 2026
+Kullanıcı altı parçanın Kartal/Maltepe/Kadıköy yakınında kesin mağaza teslimini istedi. Web araştırmasında bu altı parçanın tamamını yakın bir noktada mevcut ve bugün teslim edilebilir olarak doğrulayan kaynak bulunamadı. ÖNEMLİ ADRES DÜZELTMESİ: Direnc arama önbelleği Maltepe/Zümrütevler gösterse de bugün açılan güncel resmî iletişim sayfası Yukarı Dudullu, Eser Sokak No:7/A, Ümraniye ve 0850 450 47 47 gösteriyor: https://www.direnc.net/iletisim . Eski Maltepe adresine kullanıcı yönlendirilmeyecek. Güncel Direnc ödeme/teslimat sayfası mağazadan teslimi açıkça doğrulamıyor; 1–3 iş günü kargo hazırlığını anlatıyor: https://www.direnc.net/odeme-ve-teslimat . Bu yüzden fiziksel teslim seçeneği ve aynı gün hazır olma telefonda/sipariş adımında teyit edilmeli. Yakın alternatif Robot Meraklısı Kadıköy Sahrayı Cedit'te adres/telefon yayımlıyor ancak istenen altı parça ve mağazadan teslim doğrulanmadı: https://robotmeraklisi.com/shop/ . REQASMART Maltepe'de mağazadan teslimi resmen sunuyor fakat bu altı parçanın mevcut olduğu bulunmadı: https://www.reqasmart.com/sayfa/kargo-ve-teslimat . Robotistan ofisten teslimi açıkça sunuyor fakat Başakşehir'de; online ödeme ve sipariş önkoşulu var: https://www.robotistan.com/kargo-ve-teslimat ; https://www.robotistan.com/iletisim . Robotparca.com gibi Kadıköy diye görünen fakat açık mağaza adresi/gerçekçi fiyat ve stok doğrulaması bulunmayan siteler alım tavsiyesine dahil edilmeyecek. Sonraki somut adım: yakınlık zorunluysa Direnc'e teslim noktası ve üç sepete eklenebilen parça için aynı gün mağaza stoğunu telefonla sormak; altı parçanın tümü zorunluysa satıcıdan yazılı stok/teslim onayı almadan yola çıkmamak. Sipariş veya telefon teyidi yapılmadı.
+ 
+SEPETTEKİ SEN0546 SICAKLIK/NEM SENSÖRÜ — 23 EYLÜL 2026
+Kullanıcı Direnc sepetini paylaştı: 2 adet TDS (523,06 TL KDV dahil), 1 adet DFRobot SEN0546 I2C paslanmaz sıcaklık/nem sensörü (802,02 TL KDV dahil), 1 adet ADS1115 (309,77 TL KDV dahil); sepet 1.634,85 TL kargo ücretsiz. SEN0546 üretici tanımında 0–100% bağıl nem ve hava/çevre sıcaklığı sensörü; suya daldırılabilir/IP dereceli olduğu belirtilmiyor. Paslanmaz çelik gövde su geçirmezlik kanıtı değildir. Su kolonunun sıcaklığı için uygun diye alınmamalı. Kaynaklar: https://www.direnc.net/i2c-paslanmaz-sicaklik-ve-nem-sensoru-kablolu ; https://wiki.dfrobot.com/sen0546/ . Kullanıcı beyanı: Direnc'teki önceki DS18B20 stokta kalmamış. Satıcı sayfası buna karşın 58,12 TL/sepete ekle gösteriyor; canlı sepet kullanıcının güncel stok gözlemi öncelikli. Alternatif: Robotistan su geçirmez DS18B20 75,52 TL ve sepete ekle gösteriyor: https://www.robotistan.com/su-gecirmez-ds18b20-dijital-isi-sensoru . SEN0546 çıkarılıp bu alınırsa ürün toplamı 908,35 TL, farklı mağaza kargo koşulları hariç. 2 TDS alınabilir, ancak her biri 0–1000 ppm; deney tuz yoğunluğu bu aralıkta tutulmalı. Sipariş verilmedi, fiziksel ölçüm yapılmadı.
+ 
+İKİ SEPET GÖRSEL KONTROLÜ — 23 EYLÜL 2026
+Kaynak: kullanıcının bu tur paylaştığı iki sepet ekran görüntüsü. Direnc sepetinde 2 adet Arduino TDS prob+ölçüm kartı ve 1 adet ADS1115 var; önceki yanlış SEN0546 sıcaklık/nem sensörü çıkarılmış. Robotistan sepetinde 1 adet su geçirmez DS18B20 var (75,52 TL). Görsellerde görünen ürünler PWN laboratuvar PoC'inin iki TDS kanalı + su sıcaklığı için işlevsel ana sensör alt kümesidir; bunlar tek başına GPS, encoder/derinlik, RTC veya mekanik/güç düzenini karşılamaz. KDV dahil ürün hesapları önceki güncel sayfa fiyatlarına göre: 2×261,53 + 309,77 + 75,52 = 908,35 TL; iki mağazanın olası kargosu hariç. DS18B20 için 4,7 kΩ veri hattı pull-up direnci okul stoğunda kontrol edilmeli. İki TDS kartının iki analog çıkışı ADS1115'in iki ayrı kanalına bağlanabilir; Raspberry Pi ile çalışmak için ADS1115'in I2C bağlantısı ve 3,3 V seviye sınırı kurulumda kontrol edilecek. Sepet görüntüsü satın alma/teslim kanıtı değildir; henüz fiziksel ölçüm veya yazılım testi raporlanmadı.
+ 
+ROBOTİSTAN SEPETİNE EK ÖNERİ — 23 EYLÜL 2026
+Kullanıcının mevcut sepetinde su geçirmez DS18B20 var. Güncel Robotistan ürün sayfaları: GPS GY-GPSV3 NEO-8M/M8N 720,10 TL sepete ekle (https://www.robotistan.com/ublox-gy-gpsv3-neo-8m-m8n-antenli-gps-modulu), 600 darbe NPN açık kollektör encoder 608,31 TL sepete ekle (https://www.robotistan.com/doner-encoder-600d), 4,7 kΩ direnç 0,24 TL sepete ekle (https://www.robotistan.com/14w-4k7-direnc-paketi-10-adet). Önceki Exa önbelleğinde encoder stok yok deniyordu fakat bugün açılan ürün sayfasında sepete ekle gösteriyor; gerçek stok ödeme aşamasında teyit edilmeli. Seçilen GPS dışarıda konum/zaman gösterimi, encoder seçilen mekanik sarma düzeninde göreli derinlik göstergesi içindir. DS18B20 için 4,7 kΩ pull-up gerekir; okulda yoksa eklenmeli. Mevcut Robotistan DS18B20 (75,52) + GPS + encoder + direnç = 1.404,17 TL ürün toplamı, kargo hariç. RTC stok dışı ve bu kısa demo için zorunlu değil; Pi depolaması/adaptör, jumper/breadboard ve powerbank mevcut kullanıcı/okul koşullarına göre yeniden alınmayacak. Encoder 5–24 V beslemeli NPN çıkışlı olduğundan Pi 3,3 V GPIO'ya doğrudan 5 V verilmemeli; bağlantı yetkin kişiyle doğrulanacak. Sipariş/test yapılmadı.
+ 
+PWN EK ÖLÇÜM ÖNERİSİ — 23 EYLÜL 2026
+Kullanıcı Robotistan'dan ilave ölçüm sensörü sordu. Bilimsel öncelik: ikinci su geçirmez DS18B20 (Robotistan ürün kodu 13104, güncel sayfa 75,52 TL), böylece iki TDS/iletkenlik kanalının bulunduğu iki seviyede eşzamanlı su sıcaklığı da ölçülür. Bu yeni tür parametre eklemez; iki noktalı TDS+sıcaklık profili ve sıcaklık etkisini değerlendirme imkânı verir. Kaynak: https://www.robotistan.com/su-gecirmez-ds18b20-dijital-isi-sensoru . Robotistan'da uygun ve stoklu bulanıklık sensörü doğrulanamadı; pH, çözünmüş oksijen, su seviye/akış veya toprak nemi bu ilk dikey su kolonu deneyinin temel sorusuna maliyet/kanıt açısından öncelikli değil. TDS deniz tuzluluğunu veya gerçek CTD kalitesinde iletkenlik ölçümünü sağlamaz. İkinci DS18B20 opsiyonel ama anlamlı; toplam Robotistan sepetine +75,52 TL. Sipariş/deney yapılmadı.
+
+DS18B20 BAĞLANTI NETLEŞTİRMESİ — 23 EYLÜL 2026
+Mini DS18B20 Sıcaklık Sensörü Kartı, mevcut su geçirmez DS18B20 probunu çalıştırmak için gereken yardımcı kart değildir; kartın üzerinde ayrı bir DS18B20 sensörü ve direnç bağlantıları bulunur. Bu nedenle PWN su sıcaklığı probu için sepete eklenmeyecek. Su geçirmez prob Raspberry Pi GPIO'ya veri/güç/toprak üzerinden bağlanır; veri ile 3,3 V arasına 4,7 kΩ pull-up direnç gerekir (okulda varsa ayrıca satın almak gerekmez). İkinci sıcaklık noktası istenirse ikinci su geçirmez prob alınır. Kaynaklar: https://www.robotistan.com/mini-ds18b20-sicaklik-sensoru-karti ; https://www.robotistan.com/su-gecirmez-ds18b20-dijital-isi-sensoru . Bağlantı ve ölçüm henüz fiziksel olarak doğrulanmadı.
+
+PWN EK PARÇA ÖNCELİĞİ — 23 EYLÜL 2026
+Ek sensör satın alma önceliği düşük. Mevcut Direnc TDS modülünün resmî ürün aralığı 0–1000 ppm ve doğruluğu ±%10 F.S. (25 °C); bu nedenle yoğun tuz/deniz suyu ile test edilmemeli, düşük derişimli kontrollü çözelti hazırlanmalı. Bilimsel kanıtı en çok güçlendiren ek ihtiyaç uygun referans/kalibrasyon çözeltisi ve mümkünse ödünç alınacak bağımsız EC/TDS metre ile karşılaştırmadır. Robotistan'daki 4,7 kΩ direnç paketi su geçirmez DS18B20 bağlantısı için gerekebilir; okulda varsa ayrıca satın alınmaz: https://www.robotistan.com/14w-4k7-direnc-paketi-10-adet . İkinci su geçirmez DS18B20 üst-alt eşzamanlı ölçüm için opsiyonel, ilk sürümün çalışması için zorunlu değildir. Bulanıklık veya pH sensörü, mevcut berrak su+tuz kolonunda temel soruya ek kanıt vermeyeceği için önerilmez. Kaynaklar: https://www.direnc.net/arduino-tds-sivi-iletkenlik-ve-kalite-sensoru ; https://wiki.dfrobot.com/sen0244 . Direnc modülü DFRobot ürününe benzer görünse de kalibrasyon yazılımı/donanım eşdeğerliği fiziksel testle doğrulanmadı; DFRobot dokümanı genel teknik dayanak olarak kullanıldı. Yeni alışveriş veya fiziksel test yapılmadı.
+
+RASPBERRY PI 3 / 16 GB MICROSD KARARI — 25 EYLÜL 2026
+PWN v0.1'in TDS/ADS1115, DS18B20, GPS, encoder ve yerel veri kaydı görevleri için mevcut Raspberry Pi 3 (özellikle 3 B/B+) kapasite olarak yeterlidir; yeni Pi satın alınması gerekmiyor. Raspberry Pi resmî donanım listesinde Pi 3 B/B+ 40-pin GPIO ve microSD yuvası vardır. Raspberry Pi OS Lite için resmî minimum öneri 8 GB olduğundan 16 GB kart yeterlidir. Robotistan ürün kodu 23657 microSD 16 GB Class 10/U1 ve Pi uyumlu olarak listeleniyor; 25 Eylül kontrolünde fiyat 374,29 TL, sayfada Sepete Ekle vardı; gerçek stok/sipariş teyidi yapılmadı. Mevcut çalışan/boş microSD varsa tekrar satın almaya gerek yok. Markası sadece China olduğu için kritik saha verisi bakımından bilinen markalı kart ve harici yedek kopya daha güvenilir tercih; marka kalitesi bu üründe doğrulanmış değil. Pi 3 B/B+ için resmî güç kaynağı önerisi 5 V/2,5 A; powerbank çıkışı kontrol edilmeli. Kaynaklar: https://www.raspberrypi.com/documentation/computers/getting-started.html ; https://www.raspberrypi.com/documentation/computers/raspberry-pi.html ; https://www.robotistan.com/micro-sd-kart-16gb . Fiziksel kurulum/test henüz doğrulanmadı.

@@ -1,0 +1,44 @@
+[
+  {
+    "site_id": "konya",
+    "name": "Konya",
+    "latitude": 37.87,
+    "longitude": 32.49,
+    "role": "historical_pilot_comparison"
+  },
+  {
+    "site_id": "seyhan_adana",
+    "name": "Seyhan / Adana",
+    "latitude": 37.0,
+    "longitude": 35.32,
+    "role": "transfer_demonstration"
+  },
+  {
+    "site_id": "gediz_manisa",
+    "name": "Gediz / Manisa",
+    "latitude": 38.61,
+    "longitude": 27.43,
+    "role": "transfer_demonstration"
+  },
+  {
+    "site_id": "gap_sanliurfa",
+    "name": "GAP / Harran–Şanlıurfa",
+    "latitude": 36.87,
+    "longitude": 39.03,
+    "role": "transfer_demonstration"
+  },
+  {
+    "site_id": "trakya_edirne",
+    "name": "Trakya / Edirne",
+    "latitude": 41.68,
+    "longitude": 26.56,
+    "role": "transfer_demonstration"
+  },
+  {
+    "site_id": "longyearbyen",
+    "name": "Longyearbyen",
+    "latitude": 78.22,
+    "longitude": 15.65,
+    "role": "northern_controlled_production_context"
+  }
+]

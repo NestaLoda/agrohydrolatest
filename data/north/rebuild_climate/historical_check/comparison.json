@@ -1,0 +1,35 @@
+{
+  "days": 7305,
+  "mean_temperature_c": -5.764154688569473,
+  "monthly_temperature_c": {
+    "1": -13.458548387096773,
+    "2": -14.16628318584071,
+    "3": -14.31975806451613,
+    "4": -10.62375,
+    "5": -3.2158064516129037,
+    "6": 2.2275833333333335,
+    "7": 6.44024193548387,
+    "8": 5.196774193548387,
+    "9": 0.4873333333333335,
+    "10": -6.19024193548387,
+    "11": -9.672,
+    "12": -12.444112903225808
+  },
+  "mean_annual_gdd5_degree_days": 85.89,
+  "source_grid_and_elevation": {
+    "latitude": 78.2,
+    "longitude": 15.600006,
+    "elevation": 7.0
+  },
+  "source_sha256": "77c3a2b14b3be21cf5d0799d5329afced14129a28dc8df2704bfcac208ad7ae0",
+  "status": "validated_reanalysis_comparison_only",
+  "projection_adjustment_applied": false,
+  "limitations": [
+    "Different grid/height selection and bias-reference datasets; difference is not measured forecast error.",
+    "Reanalysis is not an independent weather-station observation.",
+    "No future climate values are corrected or replaced using this comparison."
+  ],
+  "nasa_historical_mean_temperature_c": -7.929442673205391,
+  "nasa_minus_reanalysis_temperature_c": -2.165287984635918,
+  "nasa_context_sha256": "597b2b1169dd795dabde4b9807216f268a3e9bd5bafd459b7e9026f2a2a77c03"
+}

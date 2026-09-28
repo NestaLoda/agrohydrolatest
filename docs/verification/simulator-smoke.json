@@ -1,0 +1,133 @@
+{
+  "verified_at": "2026-09-22T13:51:24.089Z",
+  "version": "0.3.0",
+  "checks": [
+    {
+      "test": "Official Konya baseline loads and fractional default budget submits",
+      "passed": true,
+      "run_id": "cc2a996b04a0d6552f879f3b"
+    },
+    {
+      "test": "Twenty-percent water scenario changes crop hectares and preserves minimum production",
+      "passed": true,
+      "water_m3": 4845911096.007888,
+      "crops": [
+        {
+          "id": "wheat",
+          "ha": 298343.3
+        },
+        {
+          "id": "barley",
+          "ha": 355914.7752265358
+        },
+        {
+          "id": "maize_grain",
+          "ha": 185505.4
+        },
+        {
+          "id": "sugar_beet",
+          "ha": 101947.30000000002
+        },
+        {
+          "id": "potato",
+          "ha": 10801
+        }
+      ]
+    },
+    {
+      "test": "ET0 changes water demand through the shared crop-water calculation",
+      "passed": true
+    },
+    {
+      "test": "User can add a crop and edit yield; unknown suitability stays excluded and official baseline stays unchanged",
+      "passed": true
+    },
+    {
+      "test": "Explicit user suitability and yield activate added crop in optimized pattern",
+      "passed": true
+    },
+    {
+      "test": "Second official region produces a different constrained crop pattern",
+      "passed": true
+    },
+    {
+      "test": "Unknown northern climate and soil do not become a feasible field plan",
+      "passed": true
+    },
+    {
+      "test": "Explicit northern scenario solves barley, potato and hydroponic lettuce in native ha and m2 units",
+      "passed": true,
+      "water_m3": 3686.6666666666665,
+      "energy_kwh": 38084.48717948718
+    },
+    {
+      "test": "Shared scenario and result persist in decision workspace",
+      "passed": true
+    },
+    {
+      "test": "Matched simulated water observation reruns the same portfolio engine; 10 to 5 C crosses fixed energy constraint",
+      "passed": true,
+      "before": "conditional",
+      "after": "infeasible"
+    },
+    {
+      "test": "Time mismatch prevents field-derived pattern update",
+      "passed": true
+    },
+    {
+      "test": "Existing PWN example, import, raw preservation and navigation persistence work",
+      "passed": true,
+      "sha256": "f6463c431aba25c02bb83471418548d605eed9964600eb6cbda1bf8ac227b4f2"
+    },
+    {
+      "test": "Evidence drawer remains keyboard accessible",
+      "passed": true
+    }
+  ],
+  "screens": [
+    {
+      "workspace": "simulation",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "workspace": "pattern",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "workspace": "pwn",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "workspace": "evidence",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "workspace": "simulation",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "pattern",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "pwn",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "evidence",
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "blocked_external_requests": [],
+  "passed": true
+}

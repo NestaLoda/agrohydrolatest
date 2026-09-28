@@ -1,0 +1,41 @@
+import type {ProducerContext} from '../components/ProducerRecommendation'
+import DecisionReportButton from '../components/DecisionReportButton'
+import LivePattern from '../components/LivePattern'
+import { useState } from 'react'
+import type { Overview, Transfer, JsonRecord } from '../api'
+import type { PlanningSession } from '../planning'
+import ScenarioEditor, { type EditScenario } from '../components/ScenarioLab'
+import DecisionCanvas from '../components/DecisionCanvas'
+import AnalysisData from '../components/AnalysisData'
+import AutomaticNorth from '../components/AutomaticNorth'
+import { Badge, Card, Empty, Notice, number, obj, str, list, SourceLink } from '../ui'
+import Turkiye from './Turkiye'
+
+export default function Simulation({onProducer,session,overview,benchmarks,northContext,northEvidence,onEdit,onReset,onRun,busy,error,loading=false,onResearch,automaticNorth,automaticBusy,automaticError}:{onProducer:(context?:ProducerContext)=>void;session:PlanningSession|null;overview:Overview|null;benchmarks:Transfer|null;northContext:JsonRecord|null;northEvidence:JsonRecord|null;onEdit:EditScenario;onReset:()=>void;onRun:()=>void;busy:boolean;error:string;loading?:boolean;onResearch:()=>void;automaticNorth:JsonRecord|null;automaticBusy:boolean;automaticError:string}){
+  const [subtab,setSubtab]=useState('simulator'),[benchmarkFocus,setBenchmarkFocus]=useState('konya')
+  if(!session)return <Card title="Bölgesel planlama verisi"><Empty>{loading?'Ürün adayları, kaynaklı başlangıç deseni ve senaryo varsayımları yükleniyor…':error||'Planlama bağlamı henüz hazır değil.'}</Empty></Card>
+  const {scenario,context,result,submitted}=session
+  const stale=!!result&&JSON.stringify(scenario)!==JSON.stringify(submitted)
+  const north=scenario.mode==='north',baseline=obj(northContext?.baseline),future=obj(northContext?.future)
+  const resultScenario=result&&submitted?submitted:scenario
+  return <>
+    <div className="simulation-layout lab-layout"><aside><ScenarioEditor key={scenario.region_id} context={context} scenario={scenario} automaticNorth={automaticNorth} onEdit={onEdit} onReset={onReset} onRun={onRun} busy={busy}/></aside><section className="simulation-results analysis-canvas" aria-label="Desen ve analiz sonuçları">
+    <div className="workspace-tabs canvas-tabs"><button aria-pressed={subtab==='simulator'} onClick={()=>setSubtab('simulator')}>Simülasyon</button><button aria-pressed={subtab==='data'} onClick={()=>setSubtab('data')}>Veriler / grafikler</button><button aria-pressed={subtab==='comparison'} onClick={()=>setSubtab('comparison')}>Bölge karşılaştırması</button>{north&&<button aria-pressed={subtab==='climate'} onClick={()=>setSubtab('climate')}>Kuzey veri zinciri</button>}</div>
+    {error&&<Notice warn>{error}</Notice>}{stale&&<Notice warn>{north?'Girdiler değişti. Görünen sonuç önceki çalıştırmaya ait; yeni desen için hesapla.':'Canlı seçim güncel. Aşağıdaki öneri son simülasyona ait; yenilemek için simülasyonu çalıştırın.'}</Notice>}
+    {!north&&subtab==='simulator'&&<LivePattern key={scenario.region_id} context={context} scenario={scenario} result={result} busy={busy} onRun={onRun}/>}
+    {subtab==='data'?<AnalysisData context={context} scenario={resultScenario} result={result} northContext={northContext}/>:subtab==='comparison'?<Turkiye data={benchmarks} sites={overview?.sites||[]} focus={benchmarkFocus} setFocus={setBenchmarkFocus}/>:subtab==='climate'?<>
+    <NorthEvidence context={northContext} review={northEvidence}/><Card title="Kaynaklı gelecek iklim göstergeleri"><p className="small muted">{str(northContext?.model)||'EC_Earth3P_HR'} · {str(northContext?.scenario)||'tek model bağlamı'}. Kara iklimi kaynak suyu sıcaklığı veya tarımsal uygunluk doğrulaması değildir. Tek yıllık SSP çıktılarıyla uzun dönem senaryo sıralaması yapılmaz.</p><div className="table-scroll"><table><thead><tr><th>Gösterge</th><th>{str(baseline.period)}</th><th>{str(future.period)}</th></tr></thead><tbody>{[{name:'Tmin/Tmax orta değerinin ortalaması · °C',key:'mean_annual_temperature_c'},{name:'GDD · taban 5°C',key:'mean_annual_gdd5_degree_days'},{name:'Don olmayan süre · gün',key:'mean_annual_frost_free_run_days'},{name:'Yağış · mm/yıl',key:'mean_annual_precipitation_mm'}].map(r=><tr key={r.key}><th>{r.name}</th><td>{number(baseline[r.key])}</td><td>{number(future[r.key])}</td></tr>)}</tbody></table></div><details><summary>Kaynak ve sınırlar</summary><pre>{JSON.stringify(northContext,null,2)}</pre></details></Card><Card title="Dış literatür: kuzeye iklimsel sınır değişimi"><p className="small muted">{overview?.future.period} · {overview?.future.scenarios.map(s=>`${s.label}: ${number(s.northward_shift_km,0)} km`).join(' / ')}. Bizim yerel optimum sınır hesabımız değildir.</p><SourceLink url={overview?.future.source_url}>Xu vd. 2026</SourceLink></Card></>:<>
+    <DecisionCanvas stale={stale} context={context} scenario={resultScenario} result={result} automatic={result?.input_resolution?obj(result.input_resolution.analysis):automaticNorth} onResearch={onResearch}/>
+    {!north&&result?.optimized&&submitted&&<DecisionReportButton kind="turkiye" request={submitted} disabled={stale||busy}/>}
+    {north&&<details className="automatic-diagnostic"><summary>İklim göstergeleri ve kaynaklı ürün ön taraması</summary><AutomaticNorth data={automaticNorth} busy={automaticBusy} error={automaticError}/></details>}</>}
+    </section></div></>
+}
+
+function NorthEvidence({context,review}:{context:JsonRecord|null;review:JsonRecord|null}){
+  return <Card title="Sefer öncesi karar zinciri · hangi bilgi eksik?"><p className="small">Kar / buz / yağışın varlığı → mevsiminde erişilebilir, kullanılabilir su miktarı anlamına gelmez. Yer, dönem, depolama, kalite ve enerji birlikte değerlendirilir.</p><div className="readiness-grid">
+  <article><Badge>DIŞ İKLİM MODELİ</Badge><strong>Gelecek kara iklimi</strong><p>{str(obj(context?.future).period)||'2030–2049'} · GDD, don olmayan pencere, yağış. Yerel ürün filtresi ve gelecek ET₀ eksik.</p></article>
+  <article><Badge kind="USER_SCENARIO">HİDROLOJİ VERİSİ GEREKLİ</Badge><strong>Karasal su güvenliği</strong><p>Kar erimesi, akış, mevsimsel tahsis, depolama ve mevcut kullanımlar. Girilen m³ senaryodur; PWN yıllık miktarı ölçmez.</p></article>
+  <article><Badge kind="USER_SCENARIO">YEREL VERİ GEREKLİ</Badge><strong>Zemin ve altyapı</strong><p>Toprak, permafrost / aktif tabaka, kullanılabilir alan, sera ısı/ışık ve enerji sınırları.</p></article>
+  <article><Badge kind="PLANNED_ARCTIC_OBSERVATION">SAHA GÖZLEMİ GEREKLİ</Badge><strong>Deniz kaynak suyu</strong><p>Model / literatür beklentisi → aynı konum / zaman / derinlikte PWN ve izinli numune → desteklenen kaynak / arıtma girdisi.</p></article>
+  </div><p className="small muted">Saha güncellemesinde aynı motor ve üretim hedefleri korunur. Bugün desteklenen parametre: eşleştirilmiş deniz kaynak sıcaklığı. Tuzluluk/kimya etkisi ve sayısal güven kalibrasyonu henüz bağlı değil.</p>{review&&<><details><summary>Araştırılan kuzey adayları · kaynak ve eksikler</summary><p className="small muted">İlk araştırma portföyü arpa, patates ve marul. Yerel parametreleri doğrulanmış otomatik ürün önerisi henüz yok. Diğer adaylar veri tamamlanana kadar varsayılan optimizasyona eklenmedi.</p><div className="table-scroll"><table><thead><tr><th>Aday</th><th>Kanıt / dönem</th><th>Verim dayanağı</th><th>Eksik yerel veri</th></tr></thead><tbody>{list(review.candidates).map(c=><tr key={str(c.id)}><th>{str(c.name_tr)}<small>{str(c.selection_status)}</small></th><td className="wrap-cell">{str(c.evidence)}<small>{str(c.growing_season)}</small></td><td className="wrap-cell">{str(c.yield_basis)}</td><td className="wrap-cell">{Array.isArray(c.missing)?c.missing.join(' · '):''}</td></tr>)}</tbody></table></div></details><details><summary>Veri katmanları ve birincil kaynaklar</summary><pre>{JSON.stringify({reviewed_at:review.reviewed_at,layers:review.layers,sources:review.sources},null,2)}</pre></details></>}</Card>
+}

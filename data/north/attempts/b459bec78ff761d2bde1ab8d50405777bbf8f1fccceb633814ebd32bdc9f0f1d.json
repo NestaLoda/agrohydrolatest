@@ -1,0 +1,6 @@
+{
+  "accessed_at_utc": "2026-09-22T11:29:04.034396+00:00",
+  "url": "https://climate-api.open-meteo.com/v1/climate?latitude=78.22&longitude=15.65&start_date=1995-01-01&end_date=2014-12-31&models=EC_Earth3P_HR&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum&disable_bias_correction=false&cell_selection=land&temperature_unit=celsius&precipitation_unit=mm",
+  "status": "failed",
+  "error": "Tmin exceeds Tmax"
+}

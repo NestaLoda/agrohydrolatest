@@ -1,0 +1,2 @@
+# Provenance hashes cover exact source and dataset bytes; never normalize them.
+* -text

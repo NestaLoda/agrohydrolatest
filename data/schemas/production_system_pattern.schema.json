@@ -1,0 +1,71 @@
+{
+  "additionalProperties": false,
+  "description": "One allocation in the first single-crop, aggregate-period implementation.",
+  "properties": {
+    "crop": {
+      "const": "lettuce",
+      "default": "lettuce",
+      "title": "Crop",
+      "type": "string"
+    },
+    "production_method": {
+      "enum": [
+        "open_field",
+        "hydroponics"
+      ],
+      "title": "Production Method",
+      "type": "string"
+    },
+    "water_source": {
+      "enum": [
+        "freshwater",
+        "desalinated_seawater"
+      ],
+      "title": "Water Source",
+      "type": "string"
+    },
+    "production_kg": {
+      "minimum": 0,
+      "title": "Production Kg",
+      "type": "number"
+    },
+    "production_share_fraction": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Production Share Fraction",
+      "type": "number"
+    },
+    "timing": {
+      "const": "aggregate_period_unspecified",
+      "default": "aggregate_period_unspecified",
+      "title": "Timing",
+      "type": "string"
+    },
+    "water_m3": {
+      "minimum": 0,
+      "title": "Water M3",
+      "type": "number"
+    },
+    "energy_kwh": {
+      "minimum": 0,
+      "title": "Energy Kwh",
+      "type": "number"
+    },
+    "classification": {
+      "const": "SIMULATION / EXPLANATORY",
+      "default": "SIMULATION / EXPLANATORY",
+      "title": "Classification",
+      "type": "string"
+    }
+  },
+  "required": [
+    "production_method",
+    "water_source",
+    "production_kg",
+    "production_share_fraction",
+    "water_m3",
+    "energy_kwh"
+  ],
+  "title": "ProductionSystemPattern",
+  "type": "object"
+}

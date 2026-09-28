@@ -1,0 +1,1 @@
+freeze_id,started_at_utc,ended_at_utc,area_m2,measurement_boundary,protocol_record,calibration_record,source_water_record,treatment_record,new_water_m3,electricity_kwh,heat_kwh_th,harvested_fresh_mass_kg,evidence_record_id,evidence_sha256,quality_reviewer,quality,classification,deviations

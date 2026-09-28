@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-09-22T23:52:27.706318+03:00",
+  "command": "npm.cmd --prefix frontend run build",
+  "exit_code": 0,
+  "typescript": "passed",
+  "vite": "passed",
+  "js": "index-ufTivSyg.js",
+  "css": "index-B9qT4VD6.css",
+  "artifact_last_written": "2026-09-22T23:48:26.647478+03:00",
+  "frontend_tests": 23,
+  "test_failures": 0,
+  "browser_checks": 9,
+  "browser_failures": 0,
+  "backend_suite_rerun": false,
+  "backend_last_full_suite": "2026-09-22T23:09:26.0122324+03:00 (199 passed, delivery 014)"
+}

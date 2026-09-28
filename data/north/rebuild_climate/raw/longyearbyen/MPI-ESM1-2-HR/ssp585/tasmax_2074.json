@@ -1,0 +1,33 @@
+{
+  "site_id": "longyearbyen",
+  "model": "MPI-ESM1-2-HR",
+  "scenario": "ssp585",
+  "variable": "tasmax",
+  "year": 2074,
+  "url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2074_v2.0.nc?var=tasmax&north=78.125&south=78.125&west=15.625&east=15.625&time_start=2074-01-01T00%3A00%3A00Z&time_end=2074-12-31T23%3A59%3A59Z&accept=netcdf3&addLatLon=true",
+  "catalog_path": "AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2074_v2.0.nc",
+  "accessed_at_utc": "2026-09-23T13:02:28.947885+00:00",
+  "sha256": "b72c8e5846d7a3f952575a403de34a6a65c267d4adc99584f81d718ba33f88b4",
+  "local_path": "data/north/rebuild_climate/raw/longyearbyen/MPI-ESM1-2-HR/ssp585/tasmax_2074.nc",
+  "bytes": 7824,
+  "day_count": 365,
+  "units": "K",
+  "grid": {
+    "latitude": 78.125,
+    "longitude": 15.625
+  },
+  "attributes": {
+    "version": "2.0",
+    "variant_label": "r1i1p1f1",
+    "cmip6_source_id": "MPI-ESM1-2-HR",
+    "cmip6_institution_id": "MPI-M",
+    "cmip6_license": "CC-BY-SA 4.0",
+    "source": "BCSD",
+    "creation_date": "Sat Nov 16 15:50:28 PST 2024",
+    "tracking_id": "9923b717-6304-495c-b85b-b246d7e66e81",
+    "resolution_id": "0.25 degree",
+    "calendar": "proleptic_gregorian"
+  },
+  "classification": "SOURCED_CLIMATE_MODEL",
+  "previous_failed_attempts": []
+}

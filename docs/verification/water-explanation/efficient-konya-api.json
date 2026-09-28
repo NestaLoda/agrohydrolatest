@@ -1,0 +1,1490 @@
+{
+  "time": "2026-09-22T23:46:59.872876+03:00",
+  "baseline_m3": 8807758055.521233,
+  "before_optimization_m3": 7771551225.45991,
+  "after_optimization_m3": 7136882570.639888,
+  "settings_saving_pct": 11.764705882352954,
+  "pattern_saving_pct": 8.166563359201994,
+  "total_saving_pct": 18.97049708164883,
+  "stages": [
+    100,
+    88.23529411764704,
+    81.02950291835117
+  ],
+  "run_id": "f6670dcbb7c1e10585b2b565",
+  "request": {
+    "north_input_policy": "explicit_scenario",
+    "quantity_basis": "demand",
+    "resource_priority_fraction": 0.8,
+    "planning_objective": "regional_water",
+    "mode": "turkiye",
+    "region_id": "konya",
+    "period_label": "2024 tarımsal desen / 2024–2025 tamamlanmış hava referansı",
+    "climate_basis": "era5_2024_2025",
+    "climate_context_id": null,
+    "climate_scenario_label": "Verimli sulama · Sulama verimi +10 puan · varsayımsal senaryo",
+    "rainfall_factor": 1.0,
+    "temperature_delta_c": 0.0,
+    "et0_factor": 1.0,
+    "land_area_ha": 1252478.0,
+    "min_cultivated_fraction": 0.0,
+    "soil_capacity_mm": 60.0,
+    "initial_storage_mm": 30.0,
+    "irrigation_efficiency": 0.85,
+    "energy_budget_kwh": null,
+    "greenhouse_capacity_m2": 0.0,
+    "hydroponics_capacity_m2": 0.0,
+    "seawater_temperature_c": 10.0,
+    "water_sources": [
+      {
+        "source_id": "freshwater",
+        "capacity_m3": 8807758055.521233,
+        "enabled": true,
+        "quality_suitable": true,
+        "energy_kwh_m3": 0.0
+      },
+      {
+        "source_id": "stored_water",
+        "capacity_m3": 0.0,
+        "enabled": false,
+        "quality_suitable": true,
+        "energy_kwh_m3": 0.0
+      },
+      {
+        "source_id": "reuse",
+        "capacity_m3": 0.0,
+        "enabled": false,
+        "quality_suitable": null,
+        "energy_kwh_m3": null
+      },
+      {
+        "source_id": "desalinated_seawater",
+        "capacity_m3": 0.0,
+        "enabled": false,
+        "quality_suitable": true,
+        "energy_kwh_m3": null
+      }
+    ],
+    "crops": [
+      {
+        "crop_id": "wheat",
+        "enabled": true,
+        "current_area_ha": 637882.8,
+        "yield_kg_ha": 2860.3059997855403,
+        "season_start": "2024-11-01",
+        "stage_days": null,
+        "min_share": 0.0,
+        "max_share": 1.0,
+        "min_production_kg": 912270000.0,
+        "target_production_kg": 1824540000.0,
+        "priority": 1.0,
+        "climate_suitable": true,
+        "soil_suitable": true,
+        "methods": [
+          "open_field"
+        ],
+        "field_energy_kwh_ha": null,
+        "controlled_yield_kg_m2": null,
+        "controlled_water_m3_kg": null,
+        "controlled_energy_kwh_kg": null,
+        "manual_net_irrigation_mm": null
+      },
+      {
+        "crop_id": "barley",
+        "enabled": true,
+        "current_area_ha": 351752.2,
+        "yield_kg_ha": 2535.6117175670825,
+        "season_start": "2025-03-15",
+        "stage_days": null,
+        "min_share": 0.0,
+        "max_share": 1.0,
+        "min_production_kg": 445953499.99999994,
+        "target_production_kg": 891906999.9999999,
+        "priority": 1.0,
+        "climate_suitable": true,
+        "soil_suitable": true,
+        "methods": [
+          "open_field"
+        ],
+        "field_energy_kwh_ha": null,
+        "controlled_yield_kg_m2": null,
+        "controlled_water_m3_kg": null,
+        "controlled_energy_kwh_kg": null,
+        "manual_net_irrigation_mm": null
+      },
+      {
+        "crop_id": "maize_grain",
+        "enabled": true,
+        "current_area_ha": 158993.9,
+        "yield_kg_ha": 12652.86907233548,
+        "season_start": "2025-04-15",
+        "stage_days": null,
+        "min_share": 0.0,
+        "max_share": 1.0,
+        "min_production_kg": 1005864500.0,
+        "target_production_kg": 2011729000.0,
+        "priority": 1.0,
+        "climate_suitable": true,
+        "soil_suitable": true,
+        "methods": [
+          "open_field"
+        ],
+        "field_energy_kwh_ha": null,
+        "controlled_yield_kg_m2": null,
+        "controlled_water_m3_kg": null,
+        "controlled_energy_kwh_kg": null,
+        "manual_net_irrigation_mm": null
+      },
+      {
+        "crop_id": "sugar_beet",
+        "enabled": true,
+        "current_area_ha": 85064.2,
+        "yield_kg_ha": 81959.6140326953,
+        "season_start": "2025-05-01",
+        "stage_days": null,
+        "min_share": 0.0,
+        "max_share": 1.0,
+        "min_production_kg": 3485914500.0,
+        "target_production_kg": 6971829000.0,
+        "priority": 1.0,
+        "climate_suitable": true,
+        "soil_suitable": true,
+        "methods": [
+          "open_field"
+        ],
+        "field_energy_kwh_ha": null,
+        "controlled_yield_kg_m2": null,
+        "controlled_water_m3_kg": null,
+        "controlled_energy_kwh_kg": null,
+        "manual_net_irrigation_mm": null
+      },
+      {
+        "crop_id": "potato",
+        "enabled": true,
+        "current_area_ha": 18784.9,
+        "yield_kg_ha": 40123.55668648755,
+        "season_start": "2025-05-01",
+        "stage_days": null,
+        "min_share": 0.0,
+        "max_share": 1.0,
+        "min_production_kg": 376858500.0,
+        "target_production_kg": 753717000.0,
+        "priority": 1.0,
+        "climate_suitable": true,
+        "soil_suitable": true,
+        "methods": [
+          "open_field"
+        ],
+        "field_energy_kwh_ha": null,
+        "controlled_yield_kg_m2": null,
+        "controlled_water_m3_kg": null,
+        "controlled_energy_kwh_kg": null,
+        "manual_net_irrigation_mm": null
+      }
+    ],
+    "overrides": []
+  },
+  "result": {
+    "status": "conditional",
+    "classification": "SIMULATION_EXPLANATORY",
+    "model_version": "0.5.0",
+    "input_resolution": null,
+    "objective": {
+      "mode": "regional_water",
+      "quantity_basis": "cultivated_area",
+      "resource_priority_fraction": null,
+      "stages": [
+        "max_cultivated_area",
+        "min_water"
+      ],
+      "normalization_kg": {
+        "wheat": 1824540000.0,
+        "barley": 891906999.9999999,
+        "maize_grain": 2011729000.0,
+        "sugar_beet": 6971829000.0,
+        "potato": 753717000.0
+      },
+      "priority_weights": {
+        "wheat": 1.0,
+        "barley": 1.0,
+        "maize_grain": 1.0,
+        "sugar_beet": 1.0,
+        "potato": 1.0
+      },
+      "balanced_floor": null,
+      "minima_policy": "Declared production minima retained.",
+      "normalization_basis": "Area first, water second; historical production is not a cap.",
+      "label": "Ekili alanı koru, suyu azalt"
+    },
+    "baseline": {
+      "crops": [
+        {
+          "crop_id": "wheat",
+          "name_tr": "Buğday",
+          "area_ha": 637882.8,
+          "production_kg": 1824540000.0,
+          "water_m3": 3311555573.650914
+        },
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "area_ha": 351752.2,
+          "production_kg": 891906999.9999999,
+          "water_m3": 2161002864.1092753
+        },
+        {
+          "crop_id": "maize_grain",
+          "name_tr": "Dane mısır",
+          "area_ha": 158993.9,
+          "production_kg": 2011729000.0,
+          "water_m3": 1333880532.1952534
+        },
+        {
+          "crop_id": "sugar_beet",
+          "name_tr": "Şeker pancarı",
+          "area_ha": 85064.2,
+          "production_kg": 6971829000.0,
+          "water_m3": 810878811.1925215
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "area_ha": 18784.9,
+          "production_kg": 753717000.0,
+          "water_m3": 154233444.31194726
+        }
+      ],
+      "totals": {
+        "open_field_area_ha": 1252478.0,
+        "water_m3": 7771551225.45991,
+        "energy_kwh": null,
+        "available_water_m3": 8807758055.521233,
+        "water_deficit_m3": 0
+      },
+      "classification": "SIMULATION_EXPLANATORY",
+      "note": "Alan/üretim kaydı ile modellenmiş su gereksinimi ayrı kanıttır; enerji yalnız beyan edilen üretim katsayısını içerir."
+    },
+    "current": {
+      "crops": [
+        {
+          "crop_id": "wheat",
+          "name_tr": "Buğday",
+          "area_ha": 637882.8,
+          "production_kg": 1824540000.0,
+          "water_m3": 3311555573.650914
+        },
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "area_ha": 351752.2,
+          "production_kg": 891906999.9999999,
+          "water_m3": 2161002864.1092753
+        },
+        {
+          "crop_id": "maize_grain",
+          "name_tr": "Dane mısır",
+          "area_ha": 158993.9,
+          "production_kg": 2011729000.0,
+          "water_m3": 1333880532.1952534
+        },
+        {
+          "crop_id": "sugar_beet",
+          "name_tr": "Şeker pancarı",
+          "area_ha": 85064.2,
+          "production_kg": 6971829000.0,
+          "water_m3": 810878811.1925215
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "area_ha": 18784.9,
+          "production_kg": 753717000.0,
+          "water_m3": 154233444.31194726
+        }
+      ],
+      "totals": {
+        "open_field_area_ha": 1252478.0,
+        "water_m3": 7771551225.45991,
+        "energy_kwh": null,
+        "available_water_m3": 8807758055.521233,
+        "water_deficit_m3": 0
+      },
+      "classification": "SIMULATION_EXPLANATORY",
+      "note": "Alan/üretim kaydı ile modellenmiş su gereksinimi ayrı kanıttır; enerji yalnız beyan edilen üretim katsayısını içerir."
+    },
+    "optimized": {
+      "crops": [
+        {
+          "crop_id": "wheat",
+          "name_tr": "Buğday",
+          "area_ha": 945180.3874752199,
+          "area_share_pct": 75.4648295199772,
+          "production_kg": 2703505133.174993,
+          "current_area_ha": 637882.8,
+          "delta_area_ha": 307297.58747521986,
+          "target_production_kg": 1824540000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Ekili alanı koruyup su gereğini azaltan çözümde alan arttı.",
+          "reasons": [
+            "Hesaplanan brüt su gereksinimi 5191.5 m³/ha; verim girdisi 2860.3059997855403 kg/ha.",
+            "Önce ekili alan korundu, sonra su minimize edildi. Mevcut üretim hedef tavanı değildir; minimum üretim kısıtları korunur."
+          ]
+        },
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "area_ha": 175876.09999999998,
+          "area_share_pct": 14.042250642326652,
+          "production_kg": 445953499.9999999,
+          "current_area_ha": 351752.2,
+          "delta_area_ha": -175876.10000000003,
+          "target_production_kg": 891906999.9999999,
+          "target_achievement_fraction": 0.49999999999999994,
+          "summary_reason": "Ekili alanı koruyup su gereğini azaltan çözümde alan azaldı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 4.45953e+08 kg; daha aşağı indirilemez.",
+            "Hesaplanan brüt su gereksinimi 6143.5 m³/ha; verim girdisi 2535.6117175670825 kg/ha.",
+            "Önce ekili alan korundu, sonra su minimize edildi. Mevcut üretim hedef tavanı değildir; minimum üretim kısıtları korunur."
+          ]
+        },
+        {
+          "crop_id": "maize_grain",
+          "name_tr": "Dane mısır",
+          "area_ha": 79496.95000000001,
+          "area_share_pct": 6.34717336352415,
+          "production_kg": 1005864500.0000001,
+          "current_area_ha": 158993.9,
+          "delta_area_ha": -79496.94999999998,
+          "target_production_kg": 2011729000.0,
+          "target_achievement_fraction": 0.5000000000000001,
+          "summary_reason": "Ekili alanı koruyup su gereğini azaltan çözümde alan azaldı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 1.00586e+09 kg; daha aşağı indirilemez.",
+            "Hesaplanan brüt su gereksinimi 8389.5 m³/ha; verim girdisi 12652.86907233548 kg/ha.",
+            "Önce ekili alan korundu, sonra su minimize edildi. Mevcut üretim hedef tavanı değildir; minimum üretim kısıtları korunur."
+          ]
+        },
+        {
+          "crop_id": "sugar_beet",
+          "name_tr": "Şeker pancarı",
+          "area_ha": 42532.100000000006,
+          "area_share_pct": 3.395836094526212,
+          "production_kg": 3485914500.0000005,
+          "current_area_ha": 85064.2,
+          "delta_area_ha": -42532.09999999999,
+          "target_production_kg": 6971829000.0,
+          "target_achievement_fraction": 0.5000000000000001,
+          "summary_reason": "Ekili alanı koruyup su gereğini azaltan çözümde alan azaldı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 3.48591e+09 kg; daha aşağı indirilemez.",
+            "Hesaplanan brüt su gereksinimi 9532.6 m³/ha; verim girdisi 81959.6140326953 kg/ha.",
+            "Önce ekili alan korundu, sonra su minimize edildi. Mevcut üretim hedef tavanı değildir; minimum üretim kısıtları korunur."
+          ]
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "area_ha": 9392.45,
+          "area_share_pct": 0.7499093796457902,
+          "production_kg": 376858500.0,
+          "current_area_ha": 18784.9,
+          "delta_area_ha": -9392.45,
+          "target_production_kg": 753717000.0,
+          "target_achievement_fraction": 0.5,
+          "summary_reason": "Ekili alanı koruyup su gereğini azaltan çözümde alan azaldı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 3.76858e+08 kg; daha aşağı indirilemez.",
+            "Hesaplanan brüt su gereksinimi 8210.5 m³/ha; verim girdisi 40123.55668648755 kg/ha.",
+            "Önce ekili alan korundu, sonra su minimize edildi. Mevcut üretim hedef tavanı değildir; minimum üretim kısıtları korunur."
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "crop_id": "wheat",
+          "name_tr": "Buğday",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 945180.3874752199,
+          "area_ha": 945180.3874752199,
+          "production_kg": 2703505133.174993,
+          "water_m3": 4906884744.735389,
+          "energy_kwh": null,
+          "season_start": "2024-11-01",
+          "season_end": "2025-06-28"
+        },
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 175876.09999999998,
+          "area_ha": 175876.09999999998,
+          "production_kg": 445953499.9999999,
+          "water_m3": 1080501432.0546377,
+          "energy_kwh": null,
+          "season_start": "2025-03-15",
+          "season_end": "2025-07-27"
+        },
+        {
+          "crop_id": "maize_grain",
+          "name_tr": "Dane mısır",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 79496.95000000001,
+          "area_ha": 79496.95000000001,
+          "production_kg": 1005864500.0000001,
+          "water_m3": 666940266.0976268,
+          "energy_kwh": null,
+          "season_start": "2025-04-15",
+          "season_end": "2025-09-11"
+        },
+        {
+          "crop_id": "sugar_beet",
+          "name_tr": "Şeker pancarı",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 42532.100000000006,
+          "area_ha": 42532.100000000006,
+          "production_kg": 3485914500.0000005,
+          "water_m3": 405439405.5962608,
+          "energy_kwh": null,
+          "season_start": "2025-05-01",
+          "season_end": "2025-10-07"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 9392.45,
+          "area_ha": 9392.45,
+          "production_kg": 376858500.0,
+          "water_m3": 77116722.15597363,
+          "energy_kwh": null,
+          "season_start": "2025-05-01",
+          "season_end": "2025-09-07"
+        }
+      ],
+      "totals": {
+        "open_field_area_ha": 1252477.9874752199,
+        "greenhouse_area_m2": 0,
+        "hydroponics_area_m2": 0,
+        "water_m3": 7136882570.639888,
+        "energy_kwh": null,
+        "unallocated_land_ha": 0.012524780118837953
+      },
+      "water_sources": [
+        {
+          "source_id": "freshwater",
+          "used_m3": 7136882570.639888,
+          "capacity_m3": 8807758055.521233,
+          "share_pct": 100.0
+        },
+        {
+          "source_id": "stored_water",
+          "used_m3": 0,
+          "capacity_m3": 0,
+          "share_pct": 0.0
+        },
+        {
+          "source_id": "reuse",
+          "used_m3": 0,
+          "capacity_m3": 0,
+          "share_pct": 0.0
+        },
+        {
+          "source_id": "desalinated_seawater",
+          "used_m3": 0,
+          "capacity_m3": 0,
+          "share_pct": 0.0
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "land",
+        "label": "Açık tarla alanı",
+        "unit": "ha",
+        "sense": "max",
+        "used": 1252477.9874752199,
+        "capacity": 1252478.0,
+        "slack": 0.012524780118837953,
+        "binding": true
+      },
+      {
+        "id": "min_land",
+        "label": "En az ekilen alan",
+        "unit": "ha",
+        "sense": "min",
+        "used": 1252477.9874752199,
+        "capacity": 0.0,
+        "slack": 1252477.9874752199,
+        "binding": false
+      },
+      {
+        "id": "greenhouse",
+        "label": "greenhouse yetiştirme yüzeyi",
+        "unit": "m²",
+        "sense": "max",
+        "used": 0.0,
+        "capacity": 0.0,
+        "slack": 0.0,
+        "binding": true
+      },
+      {
+        "id": "hydroponics",
+        "label": "hydroponics yetiştirme yüzeyi",
+        "unit": "m²",
+        "sense": "max",
+        "used": 0.0,
+        "capacity": 0.0,
+        "slack": 0.0,
+        "binding": true
+      },
+      {
+        "id": "water_freshwater",
+        "label": "Yerel tatlı su",
+        "unit": "m³",
+        "sense": "max",
+        "used": 7136882570.639888,
+        "capacity": 8807758055.521233,
+        "slack": 1670875484.8813448,
+        "binding": false
+      },
+      {
+        "id": "water_stored_water",
+        "label": "Depolanmış yağmur/erime suyu",
+        "unit": "m³",
+        "sense": "max",
+        "used": 0.0,
+        "capacity": 0.0,
+        "slack": 0.0,
+        "binding": true
+      },
+      {
+        "id": "water_reuse",
+        "label": "Yeniden kullanım",
+        "unit": "m³",
+        "sense": "max",
+        "used": 0.0,
+        "capacity": 0.0,
+        "slack": 0.0,
+        "binding": true
+      },
+      {
+        "id": "water_desalinated_seawater",
+        "label": "Arıtılmış deniz suyu",
+        "unit": "m³",
+        "sense": "max",
+        "used": 0.0,
+        "capacity": 0.0,
+        "slack": 0.0,
+        "binding": true
+      },
+      {
+        "id": "crop_min_area_wheat",
+        "label": "Buğday minimum alan",
+        "unit": "ha",
+        "sense": "min",
+        "used": 945180.3874752199,
+        "capacity": 0.0,
+        "slack": 945180.3874752199,
+        "binding": false
+      },
+      {
+        "id": "crop_max_area_wheat",
+        "label": "Buğday maksimum alan",
+        "unit": "ha",
+        "sense": "max",
+        "used": 945180.3874752199,
+        "capacity": 1252478.0,
+        "slack": 307297.6125247801,
+        "binding": false
+      },
+      {
+        "id": "crop_min_output_wheat",
+        "label": "Buğday minimum üretim",
+        "unit": "kg",
+        "sense": "min",
+        "used": 2703505133.174993,
+        "capacity": 912270000.0,
+        "slack": 1791235133.174993,
+        "binding": false
+      },
+      {
+        "id": "crop_min_area_barley",
+        "label": "Arpa minimum alan",
+        "unit": "ha",
+        "sense": "min",
+        "used": 175876.09999999998,
+        "capacity": 0.0,
+        "slack": 175876.09999999998,
+        "binding": false
+      },
+      {
+        "id": "crop_max_area_barley",
+        "label": "Arpa maksimum alan",
+        "unit": "ha",
+        "sense": "max",
+        "used": 175876.09999999998,
+        "capacity": 1252478.0,
+        "slack": 1076601.9,
+        "binding": false
+      },
+      {
+        "id": "crop_min_output_barley",
+        "label": "Arpa minimum üretim",
+        "unit": "kg",
+        "sense": "min",
+        "used": 445953499.9999999,
+        "capacity": 445953499.99999994,
+        "slack": -5.960464477539063e-08,
+        "binding": true
+      },
+      {
+        "id": "crop_min_area_maize_grain",
+        "label": "Dane mısır minimum alan",
+        "unit": "ha",
+        "sense": "min",
+        "used": 79496.95000000001,
+        "capacity": 0.0,
+        "slack": 79496.95000000001,
+        "binding": false
+      },
+      {
+        "id": "crop_max_area_maize_grain",
+        "label": "Dane mısır maksimum alan",
+        "unit": "ha",
+        "sense": "max",
+        "used": 79496.95000000001,
+        "capacity": 1252478.0,
+        "slack": 1172981.05,
+        "binding": false
+      },
+      {
+        "id": "crop_min_output_maize_grain",
+        "label": "Dane mısır minimum üretim",
+        "unit": "kg",
+        "sense": "min",
+        "used": 1005864500.0000001,
+        "capacity": 1005864500.0,
+        "slack": 1.1920928955078125e-07,
+        "binding": true
+      },
+      {
+        "id": "crop_min_area_sugar_beet",
+        "label": "Şeker pancarı minimum alan",
+        "unit": "ha",
+        "sense": "min",
+        "used": 42532.100000000006,
+        "capacity": 0.0,
+        "slack": 42532.100000000006,
+        "binding": false
+      },
+      {
+        "id": "crop_max_area_sugar_beet",
+        "label": "Şeker pancarı maksimum alan",
+        "unit": "ha",
+        "sense": "max",
+        "used": 42532.100000000006,
+        "capacity": 1252478.0,
+        "slack": 1209945.9,
+        "binding": false
+      },
+      {
+        "id": "crop_min_output_sugar_beet",
+        "label": "Şeker pancarı minimum üretim",
+        "unit": "kg",
+        "sense": "min",
+        "used": 3485914500.0000005,
+        "capacity": 3485914500.0,
+        "slack": 4.76837158203125e-07,
+        "binding": true
+      },
+      {
+        "id": "crop_min_area_potato",
+        "label": "Patates minimum alan",
+        "unit": "ha",
+        "sense": "min",
+        "used": 9392.45,
+        "capacity": 0.0,
+        "slack": 9392.45,
+        "binding": false
+      },
+      {
+        "id": "crop_max_area_potato",
+        "label": "Patates maksimum alan",
+        "unit": "ha",
+        "sense": "max",
+        "used": 9392.45,
+        "capacity": 1252478.0,
+        "slack": 1243085.55,
+        "binding": false
+      },
+      {
+        "id": "crop_min_output_potato",
+        "label": "Patates minimum üretim",
+        "unit": "kg",
+        "sense": "min",
+        "used": 376858500.0,
+        "capacity": 376858500.0,
+        "slack": 0.0,
+        "binding": true
+      }
+    ],
+    "crop_water": [
+      {
+        "crop_id": "wheat",
+        "season_start": "2024-11-01",
+        "season_end": "2025-06-28",
+        "stage_days": [
+          30,
+          140,
+          40,
+          30
+        ],
+        "classification": "SIMULATION_EXPLANATORY",
+        "irrigation_efficiency": 0.85,
+        "temperature_delta_c": 0.0,
+        "temperature_scenario": {
+          "temperature_delta_c": 0.0,
+          "classification": "SOURCE_ET0_UNCHANGED",
+          "method": "SOURCE_ET0_UNCHANGED",
+          "applied": false,
+          "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+          "source_equation": 52,
+          "formula": "ET0_scenario = ET0_source × max(Tmean + delta_C + 17.8, 0) / (Tmean + 17.8); Tmean = (Tmin + Tmax) / 2",
+          "ratio_is_project_scenario_derivation": true,
+          "locally_validated": false,
+          "limitations": [
+            "FAO-56 Denklem 52 sıcaklık teriminden türetilen oran kaynak ET0 üzerine uygulanır; tam Penman–Monteith yeniden hesabı veya kalibre edilmiş iklim projeksiyonu değildir.",
+            "Günlük Tmin ve Tmax aynı farkla kayar; gün içi sıcaklık aralığı ve dünya dışı radyasyon sabit varsayılır. Nem, rüzgâr ve radyasyon değişimi hesaplanmaz.",
+            "Ürün verimi, gelişim takvimi, Kc, don/ısı hasarı ve kar erimesi bu sıcaklık senaryosuyla değiştirilmez; yerel duyarlılık doğrulaması gereklidir."
+          ],
+          "factor_min": 1.0,
+          "factor_max": 1.0,
+          "factor_mean": 1.0,
+          "clamped_numerator_days": 0,
+          "additional_manual_et0_factor": 1.0
+        },
+        "status": "conditional",
+        "net_irrigation_mm": 441.27577003224997,
+        "gross_water_m3_ha": 5191.479647438235,
+        "etc_mm": 685.37577003225,
+        "rainfall_mm": 214.1,
+        "retained_rainfall_mm": 214.1,
+        "initial_storage_mm": 30.0,
+        "final_storage_mm": 0.0,
+        "drainage_mm": 0.0,
+        "source": "ERA5 + FAO56 + USER_SCENARIO",
+        "dataset_id": "open_meteo_era5_konya_2024_2025_83aec22d823b",
+        "kc_source": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "reason": "ETc=Kc×ET0; yağış/depo sonrası karşılanmamış ET, zamanında tamamlama varsayımıyla net sulama gereksinimi. Randımanla brüt çekime çevrilir; verim-su tepki modeli değil."
+      },
+      {
+        "crop_id": "barley",
+        "season_start": "2025-03-15",
+        "season_end": "2025-07-27",
+        "stage_days": [
+          20,
+          25,
+          60,
+          30
+        ],
+        "classification": "SIMULATION_EXPLANATORY",
+        "irrigation_efficiency": 0.85,
+        "temperature_delta_c": 0.0,
+        "temperature_scenario": {
+          "temperature_delta_c": 0.0,
+          "classification": "SOURCE_ET0_UNCHANGED",
+          "method": "SOURCE_ET0_UNCHANGED",
+          "applied": false,
+          "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+          "source_equation": 52,
+          "formula": "ET0_scenario = ET0_source × max(Tmean + delta_C + 17.8, 0) / (Tmean + 17.8); Tmean = (Tmin + Tmax) / 2",
+          "ratio_is_project_scenario_derivation": true,
+          "locally_validated": false,
+          "limitations": [
+            "FAO-56 Denklem 52 sıcaklık teriminden türetilen oran kaynak ET0 üzerine uygulanır; tam Penman–Monteith yeniden hesabı veya kalibre edilmiş iklim projeksiyonu değildir.",
+            "Günlük Tmin ve Tmax aynı farkla kayar; gün içi sıcaklık aralığı ve dünya dışı radyasyon sabit varsayılır. Nem, rüzgâr ve radyasyon değişimi hesaplanmaz.",
+            "Ürün verimi, gelişim takvimi, Kc, don/ısı hasarı ve kar erimesi bu sıcaklık senaryosuyla değiştirilmez; yerel duyarlılık doğrulaması gereklidir."
+          ],
+          "factor_min": 1.0,
+          "factor_max": 1.0,
+          "factor_mean": 1.0,
+          "clamped_numerator_days": 0,
+          "additional_manual_et0_factor": 1.0
+        },
+        "status": "conditional",
+        "net_irrigation_mm": 522.2006954022986,
+        "gross_water_m3_ha": 6143.537592968219,
+        "etc_mm": 658.3006954022987,
+        "rainfall_mm": 106.1,
+        "retained_rainfall_mm": 106.1,
+        "initial_storage_mm": 30.0,
+        "final_storage_mm": 0.0,
+        "drainage_mm": 0.0,
+        "source": "ERA5 + FAO56 + USER_SCENARIO",
+        "dataset_id": "open_meteo_era5_konya_2024_2025_83aec22d823b",
+        "kc_source": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "reason": "ETc=Kc×ET0; yağış/depo sonrası karşılanmamış ET, zamanında tamamlama varsayımıyla net sulama gereksinimi. Randımanla brüt çekime çevrilir; verim-su tepki modeli değil."
+      },
+      {
+        "crop_id": "maize_grain",
+        "season_start": "2025-04-15",
+        "season_end": "2025-09-11",
+        "stage_days": [
+          30,
+          40,
+          50,
+          30
+        ],
+        "classification": "SIMULATION_EXPLANATORY",
+        "irrigation_efficiency": 0.85,
+        "temperature_delta_c": 0.0,
+        "temperature_scenario": {
+          "temperature_delta_c": 0.0,
+          "classification": "SOURCE_ET0_UNCHANGED",
+          "method": "SOURCE_ET0_UNCHANGED",
+          "applied": false,
+          "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+          "source_equation": 52,
+          "formula": "ET0_scenario = ET0_source × max(Tmean + delta_C + 17.8, 0) / (Tmean + 17.8); Tmean = (Tmin + Tmax) / 2",
+          "ratio_is_project_scenario_derivation": true,
+          "locally_validated": false,
+          "limitations": [
+            "FAO-56 Denklem 52 sıcaklık teriminden türetilen oran kaynak ET0 üzerine uygulanır; tam Penman–Monteith yeniden hesabı veya kalibre edilmiş iklim projeksiyonu değildir.",
+            "Günlük Tmin ve Tmax aynı farkla kayar; gün içi sıcaklık aralığı ve dünya dışı radyasyon sabit varsayılır. Nem, rüzgâr ve radyasyon değişimi hesaplanmaz.",
+            "Ürün verimi, gelişim takvimi, Kc, don/ısı hasarı ve kar erimesi bu sıcaklık senaryosuyla değiştirilmez; yerel duyarlılık doğrulaması gereklidir."
+          ],
+          "factor_min": 1.0,
+          "factor_max": 1.0,
+          "factor_mean": 1.0,
+          "clamped_numerator_days": 0,
+          "additional_manual_et0_factor": 1.0
+        },
+        "status": "conditional",
+        "net_irrigation_mm": 713.1081458885941,
+        "gross_water_m3_ha": 8389.507598689343,
+        "etc_mm": 812.7081458885941,
+        "rainfall_mm": 69.6,
+        "retained_rainfall_mm": 69.6,
+        "initial_storage_mm": 30.0,
+        "final_storage_mm": 0.0,
+        "drainage_mm": 0.0,
+        "source": "ERA5 + FAO56 + USER_SCENARIO",
+        "dataset_id": "open_meteo_era5_konya_2024_2025_83aec22d823b",
+        "kc_source": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "reason": "ETc=Kc×ET0; yağış/depo sonrası karşılanmamış ET, zamanında tamamlama varsayımıyla net sulama gereksinimi. Randımanla brüt çekime çevrilir; verim-su tepki modeli değil."
+      },
+      {
+        "crop_id": "sugar_beet",
+        "season_start": "2025-05-01",
+        "season_end": "2025-10-07",
+        "stage_days": [
+          25,
+          35,
+          50,
+          50
+        ],
+        "classification": "SIMULATION_EXPLANATORY",
+        "irrigation_efficiency": 0.85,
+        "temperature_delta_c": 0.0,
+        "temperature_scenario": {
+          "temperature_delta_c": 0.0,
+          "classification": "SOURCE_ET0_UNCHANGED",
+          "method": "SOURCE_ET0_UNCHANGED",
+          "applied": false,
+          "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+          "source_equation": 52,
+          "formula": "ET0_scenario = ET0_source × max(Tmean + delta_C + 17.8, 0) / (Tmean + 17.8); Tmean = (Tmin + Tmax) / 2",
+          "ratio_is_project_scenario_derivation": true,
+          "locally_validated": false,
+          "limitations": [
+            "FAO-56 Denklem 52 sıcaklık teriminden türetilen oran kaynak ET0 üzerine uygulanır; tam Penman–Monteith yeniden hesabı veya kalibre edilmiş iklim projeksiyonu değildir.",
+            "Günlük Tmin ve Tmax aynı farkla kayar; gün içi sıcaklık aralığı ve dünya dışı radyasyon sabit varsayılır. Nem, rüzgâr ve radyasyon değişimi hesaplanmaz.",
+            "Ürün verimi, gelişim takvimi, Kc, don/ısı hasarı ve kar erimesi bu sıcaklık senaryosuyla değiştirilmez; yerel duyarlılık doğrulaması gereklidir."
+          ],
+          "factor_min": 1.0,
+          "factor_max": 1.0,
+          "factor_mean": 1.0,
+          "clamped_numerator_days": 0,
+          "additional_manual_et0_factor": 1.0
+        },
+        "status": "conditional",
+        "net_irrigation_mm": 810.2668214285719,
+        "gross_water_m3_ha": 9532.55084033614,
+        "etc_mm": 904.1668214285714,
+        "rainfall_mm": 63.9,
+        "retained_rainfall_mm": 63.9,
+        "initial_storage_mm": 30.0,
+        "final_storage_mm": 0.0,
+        "drainage_mm": 0.0,
+        "source": "ERA5 + FAO56 + USER_SCENARIO",
+        "dataset_id": "open_meteo_era5_konya_2024_2025_83aec22d823b",
+        "kc_source": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "reason": "ETc=Kc×ET0; yağış/depo sonrası karşılanmamış ET, zamanında tamamlama varsayımıyla net sulama gereksinimi. Randımanla brüt çekime çevrilir; verim-su tepki modeli değil."
+      },
+      {
+        "crop_id": "potato",
+        "season_start": "2025-05-01",
+        "season_end": "2025-09-07",
+        "stage_days": [
+          25,
+          30,
+          45,
+          30
+        ],
+        "classification": "SIMULATION_EXPLANATORY",
+        "irrigation_efficiency": 0.85,
+        "temperature_delta_c": 0.0,
+        "temperature_scenario": {
+          "temperature_delta_c": 0.0,
+          "classification": "SOURCE_ET0_UNCHANGED",
+          "method": "SOURCE_ET0_UNCHANGED",
+          "applied": false,
+          "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+          "source_equation": 52,
+          "formula": "ET0_scenario = ET0_source × max(Tmean + delta_C + 17.8, 0) / (Tmean + 17.8); Tmean = (Tmin + Tmax) / 2",
+          "ratio_is_project_scenario_derivation": true,
+          "locally_validated": false,
+          "limitations": [
+            "FAO-56 Denklem 52 sıcaklık teriminden türetilen oran kaynak ET0 üzerine uygulanır; tam Penman–Monteith yeniden hesabı veya kalibre edilmiş iklim projeksiyonu değildir.",
+            "Günlük Tmin ve Tmax aynı farkla kayar; gün içi sıcaklık aralığı ve dünya dışı radyasyon sabit varsayılır. Nem, rüzgâr ve radyasyon değişimi hesaplanmaz.",
+            "Ürün verimi, gelişim takvimi, Kc, don/ısı hasarı ve kar erimesi bu sıcaklık senaryosuyla değiştirilmez; yerel duyarlılık doğrulaması gereklidir."
+          ],
+          "factor_min": 1.0,
+          "factor_max": 1.0,
+          "factor_mean": 1.0,
+          "clamped_numerator_days": 0,
+          "additional_manual_et0_factor": 1.0
+        },
+        "status": "conditional",
+        "net_irrigation_mm": 697.8926034482757,
+        "gross_water_m3_ha": 8210.501217038538,
+        "etc_mm": 784.7926034482758,
+        "rainfall_mm": 56.9,
+        "retained_rainfall_mm": 56.9,
+        "initial_storage_mm": 30.0,
+        "final_storage_mm": 0.0,
+        "drainage_mm": 0.0,
+        "source": "ERA5 + FAO56 + USER_SCENARIO",
+        "dataset_id": "open_meteo_era5_konya_2024_2025_83aec22d823b",
+        "kc_source": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "reason": "ETc=Kc×ET0; yağış/depo sonrası karşılanmamış ET, zamanında tamamlama varsayımıyla net sulama gereksinimi. Randımanla brüt çekime çevrilir; verim-su tepki modeli değil."
+      }
+    ],
+    "excluded_options": [
+      {
+        "crop_id": "wheat",
+        "method": "open_field",
+        "source": "stored_water",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "wheat",
+        "method": "open_field",
+        "source": "reuse",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "wheat",
+        "method": "open_field",
+        "source": "desalinated_seawater",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "barley",
+        "method": "open_field",
+        "source": "stored_water",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "barley",
+        "method": "open_field",
+        "source": "reuse",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "barley",
+        "method": "open_field",
+        "source": "desalinated_seawater",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "maize_grain",
+        "method": "open_field",
+        "source": "stored_water",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "maize_grain",
+        "method": "open_field",
+        "source": "reuse",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "maize_grain",
+        "method": "open_field",
+        "source": "desalinated_seawater",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "sugar_beet",
+        "method": "open_field",
+        "source": "stored_water",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "sugar_beet",
+        "method": "open_field",
+        "source": "reuse",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "sugar_beet",
+        "method": "open_field",
+        "source": "desalinated_seawater",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "potato",
+        "method": "open_field",
+        "source": "stored_water",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "potato",
+        "method": "open_field",
+        "source": "reuse",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      },
+      {
+        "crop_id": "potato",
+        "method": "open_field",
+        "source": "desalinated_seawater",
+        "reason": "Su kaynağı kapalı veya kapasitesi sıfır."
+      }
+    ],
+    "explanations": [
+      "Açık sıralı amaç: max_cultivated_area → min_water.",
+      "Bölgesel amaç: beyan edilen ürün alt sınırlarında ekili alanı en yükseğe çıkar, aynı alan için suyu en aza indir. Mevcut desen öneriye tavan değildir.",
+      "Türkiye bölgesel amaçta mevcut üretim tavan değildir; önce ekili alan, sonra en az su. Ürün minimumları korunur.",
+      "Uygulanabilir plan bulundu."
+    ],
+    "limitations": [
+      "ETc/depo hesabı ürün su gereksinimi senaryosudur; yerel sulama/verim validasyonu değildir.",
+      "FAO-56 Denklem 52 sıcaklık teriminden türetilen oran kaynak ET0 üzerine uygulanır; tam Penman–Monteith yeniden hesabı veya kalibre edilmiş iklim projeksiyonu değildir.",
+      "Günlük Tmin ve Tmax aynı farkla kayar; gün içi sıcaklık aralığı ve dünya dışı radyasyon sabit varsayılır. Nem, rüzgâr ve radyasyon değişimi hesaplanmaz.",
+      "Ürün verimi, gelişim takvimi, Kc, don/ısı hasarı ve kar erimesi bu sıcaklık senaryosuyla değiştirilmez; yerel duyarlılık doğrulaması gereklidir.",
+      "Açık tarla ha, kontrollü üretim m² yetiştirme yüzeyi ve ürün kg ayrı tutulur. Tek ortak alan/pay yüzdesi yok.",
+      "Kc/takvim FAO örneği; kar erimesi, yeraltı suyu, çeltik ek suyu ve çiftlik tahsisi kendiliğinden modellenmez.",
+      "Verim sabit katsayıdır; su stresi altında gerçekleşecek verimi tahmin etmez. Plan gereken sulamanın zamanında sağlandığını varsayar.",
+      "Kontrollü üretim enerji/alan/su katsayıları açık senaryo veya literatür aktarımıdır; Arktik ısıtma/ışık kalibrasyonu değildir.",
+      "Kaynak kalitesinin uygunluğu ve depolanmış/yeniden kullanılan hacimler senaryodur; gerçek hidrolojik arz değildir.",
+      "Bütçe doluluğu bağlayıcılığı gösterir; tek başına kaynak artışının nedensel faydasını kanıtlamaz."
+    ],
+    "solver": {
+      "name": "SciPy HiGHS",
+      "objective": "regional_water",
+      "target_score": 1.0,
+      "success": true
+    },
+    "request": {
+      "north_input_policy": "explicit_scenario",
+      "quantity_basis": "demand",
+      "resource_priority_fraction": 0.8,
+      "planning_objective": "regional_water",
+      "mode": "turkiye",
+      "region_id": "konya",
+      "period_label": "2024 tarımsal desen / 2024–2025 tamamlanmış hava referansı",
+      "climate_basis": "era5_2024_2025",
+      "climate_context_id": null,
+      "climate_scenario_label": "Verimli sulama · Sulama verimi +10 puan · varsayımsal senaryo",
+      "rainfall_factor": 1.0,
+      "temperature_delta_c": 0.0,
+      "et0_factor": 1.0,
+      "land_area_ha": 1252478.0,
+      "min_cultivated_fraction": 0.0,
+      "soil_capacity_mm": 60.0,
+      "initial_storage_mm": 30.0,
+      "irrigation_efficiency": 0.85,
+      "energy_budget_kwh": null,
+      "greenhouse_capacity_m2": 0.0,
+      "hydroponics_capacity_m2": 0.0,
+      "seawater_temperature_c": 10.0,
+      "water_sources": [
+        {
+          "source_id": "freshwater",
+          "capacity_m3": 8807758055.521233,
+          "enabled": true,
+          "quality_suitable": true,
+          "energy_kwh_m3": 0.0
+        },
+        {
+          "source_id": "stored_water",
+          "capacity_m3": 0.0,
+          "enabled": false,
+          "quality_suitable": true,
+          "energy_kwh_m3": 0.0
+        },
+        {
+          "source_id": "reuse",
+          "capacity_m3": 0.0,
+          "enabled": false,
+          "quality_suitable": null,
+          "energy_kwh_m3": null
+        },
+        {
+          "source_id": "desalinated_seawater",
+          "capacity_m3": 0.0,
+          "enabled": false,
+          "quality_suitable": true,
+          "energy_kwh_m3": null
+        }
+      ],
+      "crops": [
+        {
+          "crop_id": "wheat",
+          "enabled": true,
+          "current_area_ha": 637882.8,
+          "yield_kg_ha": 2860.3059997855403,
+          "season_start": "2024-11-01",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 912270000.0,
+          "target_production_kg": 1824540000.0,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        },
+        {
+          "crop_id": "barley",
+          "enabled": true,
+          "current_area_ha": 351752.2,
+          "yield_kg_ha": 2535.6117175670825,
+          "season_start": "2025-03-15",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 445953499.99999994,
+          "target_production_kg": 891906999.9999999,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        },
+        {
+          "crop_id": "maize_grain",
+          "enabled": true,
+          "current_area_ha": 158993.9,
+          "yield_kg_ha": 12652.86907233548,
+          "season_start": "2025-04-15",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 1005864500.0,
+          "target_production_kg": 2011729000.0,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        },
+        {
+          "crop_id": "sugar_beet",
+          "enabled": true,
+          "current_area_ha": 85064.2,
+          "yield_kg_ha": 81959.6140326953,
+          "season_start": "2025-05-01",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 3485914500.0,
+          "target_production_kg": 6971829000.0,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        },
+        {
+          "crop_id": "potato",
+          "enabled": true,
+          "current_area_ha": 18784.9,
+          "yield_kg_ha": 40123.55668648755,
+          "season_start": "2025-05-01",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 376858500.0,
+          "target_production_kg": 753717000.0,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        }
+      ],
+      "overrides": []
+    },
+    "effective_request": {
+      "north_input_policy": "explicit_scenario",
+      "quantity_basis": "demand",
+      "resource_priority_fraction": 0.8,
+      "planning_objective": "regional_water",
+      "mode": "turkiye",
+      "region_id": "konya",
+      "period_label": "2024 tarımsal desen / 2024–2025 tamamlanmış hava referansı",
+      "climate_basis": "era5_2024_2025",
+      "climate_context_id": null,
+      "climate_scenario_label": "Verimli sulama · Sulama verimi +10 puan · varsayımsal senaryo",
+      "rainfall_factor": 1.0,
+      "temperature_delta_c": 0.0,
+      "et0_factor": 1.0,
+      "land_area_ha": 1252478.0,
+      "min_cultivated_fraction": 0.0,
+      "soil_capacity_mm": 60.0,
+      "initial_storage_mm": 30.0,
+      "irrigation_efficiency": 0.85,
+      "energy_budget_kwh": null,
+      "greenhouse_capacity_m2": 0.0,
+      "hydroponics_capacity_m2": 0.0,
+      "seawater_temperature_c": 10.0,
+      "water_sources": [
+        {
+          "source_id": "freshwater",
+          "capacity_m3": 8807758055.521233,
+          "enabled": true,
+          "quality_suitable": true,
+          "energy_kwh_m3": 0.0
+        },
+        {
+          "source_id": "stored_water",
+          "capacity_m3": 0.0,
+          "enabled": false,
+          "quality_suitable": true,
+          "energy_kwh_m3": 0.0
+        },
+        {
+          "source_id": "reuse",
+          "capacity_m3": 0.0,
+          "enabled": false,
+          "quality_suitable": null,
+          "energy_kwh_m3": null
+        },
+        {
+          "source_id": "desalinated_seawater",
+          "capacity_m3": 0.0,
+          "enabled": false,
+          "quality_suitable": true,
+          "energy_kwh_m3": null
+        }
+      ],
+      "crops": [
+        {
+          "crop_id": "wheat",
+          "enabled": true,
+          "current_area_ha": 637882.8,
+          "yield_kg_ha": 2860.3059997855403,
+          "season_start": "2024-11-01",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 912270000.0,
+          "target_production_kg": 1824540000.0,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        },
+        {
+          "crop_id": "barley",
+          "enabled": true,
+          "current_area_ha": 351752.2,
+          "yield_kg_ha": 2535.6117175670825,
+          "season_start": "2025-03-15",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 445953499.99999994,
+          "target_production_kg": 891906999.9999999,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        },
+        {
+          "crop_id": "maize_grain",
+          "enabled": true,
+          "current_area_ha": 158993.9,
+          "yield_kg_ha": 12652.86907233548,
+          "season_start": "2025-04-15",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 1005864500.0,
+          "target_production_kg": 2011729000.0,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        },
+        {
+          "crop_id": "sugar_beet",
+          "enabled": true,
+          "current_area_ha": 85064.2,
+          "yield_kg_ha": 81959.6140326953,
+          "season_start": "2025-05-01",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 3485914500.0,
+          "target_production_kg": 6971829000.0,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        },
+        {
+          "crop_id": "potato",
+          "enabled": true,
+          "current_area_ha": 18784.9,
+          "yield_kg_ha": 40123.55668648755,
+          "season_start": "2025-05-01",
+          "stage_days": null,
+          "min_share": 0.0,
+          "max_share": 1.0,
+          "min_production_kg": 376858500.0,
+          "target_production_kg": 753717000.0,
+          "priority": 1.0,
+          "climate_suitable": true,
+          "soil_suitable": true,
+          "methods": [
+            "open_field"
+          ],
+          "field_energy_kwh_ha": null,
+          "controlled_yield_kg_m2": null,
+          "controlled_water_m3_kg": null,
+          "controlled_energy_kwh_kg": null,
+          "manual_net_irrigation_mm": null
+        }
+      ],
+      "overrides": []
+    },
+    "provenance": {
+      "input_classification": "USER_SCENARIO",
+      "regional_source_classification": "OFFICIAL_STATISTICS",
+      "baseline_sources": [
+        {
+          "id": "konya_2026_502357209e57",
+          "url": "https://konya.tarimorman.gov.tr/Belgeler/kitap/%C4%B0l_Tar%C4%B1m_ve_Orman_Ocak_26_4DonemV2.pdf",
+          "title": "Konya Tarımı — Ocak 2026",
+          "year": 2026,
+          "data_year": 2024,
+          "page": "PDF/basılı s.11–12, Tablo4, 2024 sütunları",
+          "access_date": "2026-09-22",
+          "local_path": "data/agriculture/raw/konya_2026_502357209e5742d35b5c7b9fbdc11ee9d9fad3cfd931d81aa96166d64eef9f3b.pdf",
+          "sha256": "502357209e5742d35b5c7b9fbdc11ee9d9fad3cfd931d81aa96166d64eef9f3b",
+          "publisher": "Konya İl Tarım ve Orman Müdürlüğü",
+          "license": "Resmî kamuya açık belge; açık yeniden dağıtım lisansı doğrulanmadı. Kaynak arşivi araştırma ve atıf içindir."
+        }
+      ],
+      "temperature_scenario": {
+        "temperature_delta_c": 0.0,
+        "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+        "source_equation": 52,
+        "method": "SOURCE_ET0_UNCHANGED",
+        "classification": "SOURCE_ET0_UNCHANGED",
+        "locally_validated": false
+      },
+      "data_hashes": {
+        "data/agriculture/crops.json": "2425e6be64faf0a92e6f54f3ca1ce604ea1047b8cf334ae3a8e9a5ccc9c8d892",
+        "data/agriculture/region_baselines.json": "bd0a488d4a353bbd92d145e20d06cb23e22b5e69cbc179f9fc712ecfa88eab80",
+        "data/literature_parameters.json": "ab4ef85adae83f8b6e398150224537d0f87e6fd407b30f1ab63ca59a3600ba81"
+      },
+      "planning_objective": "regional_water",
+      "climate_datasets": [
+        {
+          "id": "open_meteo_era5_konya_2024_2025_83aec22d823b",
+          "sha256": "83aec22d823b19801e2538d8711693abbd6745c0e8d34ad7a98c1d303c67fda6"
+        }
+      ],
+      "climate_context_id": null,
+      "climate_context_integrity": null,
+      "climate_context_role": "Evidence context only; not applied to crop suitability, ET0 or marine water temperature",
+      "north_resolution_hashes": null,
+      "overrides": [],
+      "code_sha256": "128b7731696c5e2280fd417bce2158766ce9236c0f35edc2eda90870d44955cd"
+    },
+    "run_id": "f6670dcbb7c1e10585b2b565"
+  }
+}

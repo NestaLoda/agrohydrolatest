@@ -1,0 +1,956 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en">
+
+<head>
+
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<meta charset="utf-8" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta content="width=device-width, user-scalable=yes" name="viewport" />
+	<meta name="google-site-verification" content="FVo6uvvLILRc6afEhhg2TzqMGvFvLQVpmfn6N9EwEDA" />	<title>
+	Calculating Greenhouse Heating Requirements | Purdue University Controlled Environment Agriculture (NEMALI Lab)	</title>
+	<link href="https://www.purdue.edu/purdue/images/favicon.ico" rel="shortcut icon">
+	<link href="https://www.purdue.edu/purdue/images/icon-iphone.png" rel="apple-touch-icon" sizes="76x76">
+	<link href="https://www.purdue.edu/purdue/images/icon-ipad.png" rel="apple-touch-icon" sizes="76x76">
+	<link href="https://www.purdue.edu/purdue/images/icon-iphone-retina.png" rel="apple-touch-icon" sizes="120x120">
+	<link href="https://www.purdue.edu/purdue/images/icon-ipad-retina.png" rel="apple-touch-icon" sizes="152x152">
+	<!-- <script async="true" src="https://www.purdue.edu/purdue/globals/js/modernizr-1.5.min.js" type="text/javascript"></script> -->
+	<!-- Bootstrap core CSS -->
+	<link href="https://www.purdue.edu/hla/sites/cea/wp-content/themes/child_theme/style.css" rel="stylesheet">
+			<title>Calculating Greenhouse Heating Requirements &#8211; Controlled Environment Agriculture (NEMALI Lab)</title>
+<meta name='robots' content='max-image-preview:large' />
+<script type="application/ld+json">
+		{
+    "@context": "https://schema.org/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/"
+    },
+    "@type": "NewsArticle",
+    "headline": "Calculating Greenhouse Heating Requirements",
+    "image": [
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-150x150.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-300x147.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-768x376.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-1024x501.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-200x268.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-600x338.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-160x120.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-250x122.jpg",
+        "https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-272x182.jpg"
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Controlled Environment Agriculture (NEMALI Lab)",
+        "logo": {
+            "@type": "ImageObject",
+            "url": [
+                "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-H-Full-RGB.png",
+                "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-V-Full-RGB.png"
+            ]
+        },
+        "sameAs": [
+            "https://www.facebook.com/groups/1414360305240872/"
+        ],
+        "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "Purdue University",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "West Lafayette",
+                "addressRegion": "IN",
+                "postalCode": "47907",
+                "streetAddress": "610 Purdue Mall",
+                "addressCountry": "USA"
+            },
+            "logo": [
+                "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-H-Full-RGB.png",
+                "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-V-Full-RGB.png"
+            ],
+            "url": "https://www.purdue.edu/",
+            "sameAs": [
+                "https://www.facebook.com/PurdueUniversity",
+                "https://twitter.com/lifeatpurdue",
+                "https://www.youtube.com/user/PurdueUniversity",
+                "https://www.instagram.com/lifeatpurdue/",
+                "https://www.linkedin.com/school/purdue-university/"
+            ]
+        }
+    },
+    "copyrightHolder": {
+        "@type": "Organization",
+        "name": "Controlled Environment Agriculture (NEMALI Lab)",
+        "logo": {
+            "@type": "ImageObject",
+            "url": [
+                "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-H-Full-RGB.png",
+                "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-V-Full-RGB.png"
+            ]
+        },
+        "sameAs": [
+            "https://www.facebook.com/groups/1414360305240872/"
+        ],
+        "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "Purdue University",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "West Lafayette",
+                "addressRegion": "IN",
+                "postalCode": "47907",
+                "streetAddress": "610 Purdue Mall",
+                "addressCountry": "USA"
+            },
+            "logo": [
+                "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-H-Full-RGB.png",
+                "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-V-Full-RGB.png"
+            ],
+            "url": "https://www.purdue.edu/",
+            "sameAs": [
+                "https://www.facebook.com/PurdueUniversity",
+                "https://twitter.com/lifeatpurdue",
+                "https://www.youtube.com/user/PurdueUniversity",
+                "https://www.instagram.com/lifeatpurdue/",
+                "https://www.linkedin.com/school/purdue-university/"
+            ]
+        }
+    },
+    "author": [
+        {
+            "@type": "Person",
+            "familyName": "Nemali",
+            "givenName": "Krishna",
+            "name": "Krishna Nemali",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Controlled Environment Agriculture (NEMALI Lab)",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": [
+                        "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-H-Full-RGB.png",
+                        "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-V-Full-RGB.png"
+                    ]
+                },
+                "sameAs": [
+                    "https://www.facebook.com/groups/1414360305240872/"
+                ],
+                "parentOrganization": {
+                    "@type": "EducationalOrganization",
+                    "name": "Purdue University",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "West Lafayette",
+                        "addressRegion": "IN",
+                        "postalCode": "47907",
+                        "streetAddress": "610 Purdue Mall",
+                        "addressCountry": "USA"
+                    },
+                    "logo": [
+                        "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-H-Full-RGB.png",
+                        "https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/img/PU-V-Full-RGB.png"
+                    ],
+                    "url": "https://www.purdue.edu/",
+                    "sameAs": [
+                        "https://www.facebook.com/PurdueUniversity",
+                        "https://twitter.com/lifeatpurdue",
+                        "https://www.youtube.com/user/PurdueUniversity",
+                        "https://www.instagram.com/lifeatpurdue/",
+                        "https://www.linkedin.com/school/purdue-university/"
+                    ]
+                }
+            }
+        }
+    ],
+    "description": "Alex Miller\u2020 and Krishna Nemali\u2020\u2020 \u2020 Graduate student, Horticulture and Landscape Architecture, Purdue University \u2020\u2020 For correspondence: knemali@purdue.edu &nbsp; Winters in the mid-west are generally harsh. The daily average temperature during winter months (Nov. to Feb) in Indiana is 33.6 oF. This temperature is significantly lower than the optimal growth temperature (65 to 75 oF)...Read more about Calculating Greenhouse Heating Requirements[Read More]",
+    "articleBody": "Alex Miller\u2020 and Krishna Nemali\u2020\u2020\r\n\r\n\u2020 Graduate student, Horticulture and Landscape Architecture, Purdue University \r\n\r\n\u2020\u2020 For correspondence: knemali@purdue.edu\r\n\r\n&nbsp;\r\n\r\nWinters in the mid-west are generally harsh. The daily average temperature during winter months (Nov. to Feb) in Indiana is 33.6 oF. This temperature is significantly lower than the optimal growth temperature (65 to 75 oF) for many crops. Thus, heating is essential to grow crops during winter in Indiana greenhouses. In this article we describe how to determine heating requirements for a greenhouse.\r\n\r\nA common method of heating greenhouses involves maintaining air temperature at a target level for the crop. To calculate heat requirement (Q, BTU/hr) for maintaining a target air temperature inside a greenhouse, we need to know the (i) temperature difference or \u0394T between inside and outside air, (ii) surface area or A of the greenhouse and (iii) overall heat transfer co-efficient or U of the greenhouse covering material. U-value indicates BTU/hr of heat lost through the material in the form of conduction and radiation from an area of one ft2 for every oF difference in temperature between inside and outside air (approximate value). From this information, heat needed to maintain desired temperature inside the greenhouse is calculated as follows:\r\n\r\nQ = U x A x \u0394T\u00a0\r\n\r\nExamples of surface area calculations for a Quonset and A-frame greenhouses is shown in Fig. 1 below:\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\nFigure 1. Greenhouse structures used in Table 1 for heating calculations\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\nIn the above formula, \u03c0 is 3.14, A, B, C, D and E are dimensions (see Fig. 1) of the structure.\r\n\r\nWe can calculate heating requirement (BTU/hr) for A-frame and Quonset structures shown in Fig. 1 when an air temperature of 70 oF is maintained for 16 h (light period) and a temperature of 60 oF is maintained for 8 h (dark period) or daily average air temperature of 66.6 oF {[(70 \u00d7 16 h) + (60 \u00d7 8 h)]/24} is maintained. Let\u2019s assume outside air temperature is 30 oF during the 24 h period. We will also assume that the A-frame greenhouse is covered with double polycarbonate sheet and Quonset greenhouse is covered with a double polythene sheet. U-values for double polycarbonate and double polyethylene sheets are 0.55 and 0.70 BTU/hr ft2 oF, respectively (U-value is approx. 1.2 for single polythene sheet). In both cases, let\u2019s assume that propane is used as fuel to heat the air.\r\n\r\nThe heating requirements for maintaining A-frame and Quonset greenhouses (Fig. 1) at 66.6 oF when outside air temperature is 30 oF is 135878 and 170860 BTU/hr, respectively (Table 1). Daily cost of maintaining A-frame and Quonset greenhouse at the target temperature is $89.60 and 112.65, respectively. Higher cost of heating in the Quonset greenhouse is attributed to lower U-value of double polythene compared to double polycarbonate. The lower value in double polythene is due to higher radiative heat loss through material as long wave infrared rays. However, the cost can be lowered in a Quonset greenhouse by adding an infrared (IR) blocker to the polythene material, which will lower the U-value to 0.5 from 0.7.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\nTable 1. Heating calculations for maintaining the greenhouse shown in Fig. 1 at 60 and 70 \u00b0F\r\n\r\n\r\n\r\n&nbsp;",
+    "wordCount": 499,
+    "datePublished": "2019-03-13",
+    "keywords": "11 Controlled Environment Agriculture"
+}</script>
+		<link rel='dns-prefetch' href='//use.typekit.net' />
+<link rel="alternate" type="application/rss+xml" title="Controlled Environment Agriculture (NEMALI Lab) &raquo; Feed" href="https://www.purdue.edu/hla/sites/cea/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Controlled Environment Agriculture (NEMALI Lab) &raquo; Comments Feed" href="https://www.purdue.edu/hla/sites/cea/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.purdue.edu/hla/sites/cea/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.purdue.edu%2Fhla%2Fsites%2Fcea%2Farticle%2Fcalculating-greenhouse-heating-requirements%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.purdue.edu/hla/sites/cea/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.purdue.edu%2Fhla%2Fsites%2Fcea%2Farticle%2Fcalculating-greenhouse-heating-requirements%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='pu-extpub-style-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/themes/ag-2020/includes/css/extpub-addons.css?ver=7.1' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 19.5px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36.5px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 22px;--wp--preset--font-size--huge: 49.5px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='events-manager-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/css/events-manager.min.css?ver=7.4.0.1' media='all' />
+<style id="events-manager-inline-css">
+body .em { --font-family : inherit; --font-weight : inherit; --font-size : 1em; --line-height : inherit; }
+/*# sourceURL=events-manager-inline-css */
+</style>
+<link rel='stylesheet' id='wpa-style-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/plugins/wp-accessibility/css/wpa-style.css?ver=2.3.5' media='all' />
+<style id="wpa-style-inline-css">
+:root { --admin-bar-top : 7px; }
+/*# sourceURL=wpa-style-inline-css */
+</style>
+<link rel='stylesheet' id='ag-newsletter-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/public/css/ag-newsletter-public.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.6' media='all' />
+<link rel='stylesheet' id='responsive-lightbox-swipebox-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/plugins/responsive-lightbox/assets/swipebox/swipebox.min.css?ver=1.5.2' media='all' />
+<link rel='stylesheet' id='issuem_style-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/plugins/issuem/css/issuem.css?ver=2.9.1' media='all' />
+<link rel='stylesheet' id='jquery-issuem-flexslider-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/plugins/issuem/css/flexslider.css?ver=2.9.1' media='all' />
+<link rel='stylesheet' id='bootstrap-css-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/themes/ag-2020/assets/dist/css/bootstrap.min.css?ver=1774378297' media='all' />
+<link rel='stylesheet' id='purdue-2019-fonts-css' href='https://use.typekit.net/ghc8hdz.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='purdue2020-style-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/themes/ag-2020/style-pu2020.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='font_awesome_v5-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/themes/ag-2020/includes/css/all.min.css?ver=5.6.3' media='all' />
+<link rel='stylesheet' id='font_awesome_shims-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/themes/ag-2020/includes/css/v4-shims.min.css?ver=4.0' media='all' />
+<link rel='stylesheet' id='united-sans-font-css' href='https://www.purdue.edu/purdue/fonts/united-sans/united-sans.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='style-css-css' href='https://www.purdue.edu/hla/sites/cea/wp-content/themes/ag-2020/style.css?ver=7.1' media='all' />
+<script id="jquery-core-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-mouse-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/mouse.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-sortable-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/sortable.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-datepicker-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-datepicker-js-after">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+//# sourceURL=jquery-ui-datepicker-js-after
+</script>
+<script id="jquery-ui-resizable-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/resizable.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-draggable-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/draggable.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-controlgroup-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/controlgroup.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-checkboxradio-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/checkboxradio.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-button-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/button.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-dialog-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/ui/dialog.min.js?ver=1.14.2"></script>
+<script id="events-manager-js-extra">
+var EM = {"ajaxurl":"https://www.purdue.edu/hla/sites/cea/wp-admin/admin-ajax.php","locationajaxurl":"https://www.purdue.edu/hla/sites/cea/wp-admin/admin-ajax.php?action=locations_search","firstDay":"1","locale":"en","dateFormat":"yy-mm-dd","ui_css":"https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/css/jquery-ui/build.min.css","show24hours":"0","is_ssl":"1","autocomplete_limit":"10","calendar":{"breakpoints":{"small":560,"medium":908,"large":false},"month_format":"M Y"},"phone":"","datepicker":{"format":"m/d/Y"},"search":{"breakpoints":{"small":650,"medium":850,"full":false}},"url":"https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager","assets":{"input.em-uploader":{"js":{"em-uploader":{"url":"https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/js/em-uploader.js?v=7.4.0.1","event":"em_uploader_ready"}}},".em-event-editor":{"js":{"event-editor":{"url":"https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/js/events-manager-event-editor.js?v=7.4.0.1","event":"em_event_editor_ready"}},"css":{"event-editor":"https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/css/events-manager-event-editor.min.css?v=7.4.0.1"}},".em-recurrence-sets, .em-timezone":{"js":{"luxon":{"url":"luxon/luxon.js?v=7.4.0.1","event":"em_luxon_ready"}}},".em-booking-form, #em-booking-form, .em-booking-recurring, .em-event-booking-form":{"js":{"em-bookings":{"url":"https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/js/bookingsform.js?v=7.4.0.1","event":"em_booking_form_js_loaded"}}},"#em-opt-archetypes":{"js":{"archetypes":"https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/js/admin-archetype-editor.js?v=7.4.0.1","archetypes_ms":"https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/js/admin-archetypes.js?v=7.4.0.1","qs":"qs/qs.js?v=7.4.0.1"}}},"cached":"1","bookingInProgress":"Please wait while the booking is being submitted.","tickets_save":"Save Ticket","bookingajaxurl":"https://www.purdue.edu/hla/sites/cea/wp-admin/admin-ajax.php","bookings_export_save":"Export Bookings","bookings_settings_save":"Save Settings","booking_delete":"Are you sure you want to delete?","booking_offset":"30","bookings":{"submit_button":{"text":{"default":"Send your booking","free":"Send your booking","payment":"Send your booking","processing":"Processing ..."}},"update_listener":""},"bb_full":"Sold Out","bb_book":"Book Now","bb_booking":"Booking...","bb_booked":"Booking Submitted","bb_error":"Booking Error. Try again?","bb_cancel":"Cancel","bb_canceling":"Canceling...","bb_cancelled":"Cancelled","bb_cancel_error":"Cancellation Error. Try again?","txt_search":"Search","txt_searching":"Searching...","txt_loading":"Loading..."};
+//# sourceURL=events-manager-js-extra
+</script>
+<script id="events-manager-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/events-manager/includes/js/events-manager.js?ver=7.4.0.1"></script>
+<script id="jquery-columnizer-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/public//js/jquery.columnizer.min.js?ver=1.0.0"></script>
+<script id="ag-newsletter-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/ag-newsletter/public/js/ag-newsletter-public.js?ver=1.0.0"></script>
+<script id="dompurify-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/responsive-lightbox/assets/dompurify/purify.min.js?ver=3.3.1"></script>
+<script id="responsive-lightbox-sanitizer-js-before">
+window.RLG = window.RLG || {}; window.RLG.sanitizeAllowedHosts = ["youtube.com","www.youtube.com","youtu.be","vimeo.com","player.vimeo.com"];
+//# sourceURL=responsive-lightbox-sanitizer-js-before
+</script>
+<script id="responsive-lightbox-sanitizer-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/responsive-lightbox/js/sanitizer.js?ver=2.7.8"></script>
+<script id="responsive-lightbox-swipebox-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/responsive-lightbox/assets/swipebox/jquery.swipebox.min.js?ver=1.5.2"></script>
+<script id="underscore-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
+<script id="responsive-lightbox-infinite-scroll-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=4.0.1"></script>
+<script id="responsive-lightbox-js-before">
+var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activeGalleries":true,"animation":true,"hideCloseButtonOnMobile":false,"removeBarsOnMobile":false,"hideBars":true,"hideBarsDelay":5000,"videoMaxWidth":1080,"useSVG":true,"loopAtEnd":false,"woocommerce_gallery":false,"ajaxurl":"https:\/\/www.purdue.edu\/hla\/sites\/cea\/wp-admin\/admin-ajax.php","nonce":"0cf278cacb","preview":false,"postId":2429,"scriptExtension":false};
+
+//# sourceURL=responsive-lightbox-js-before
+</script>
+<script id="responsive-lightbox-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.7.8"></script>
+<script id="jquery-newsbox-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/themes/ag-2020/includes/js/jquery.bootstrap.newsbox.min.js?ver=1.0.1"></script>
+<link rel="https://api.w.org/" href="https://www.purdue.edu/hla/sites/cea/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.purdue.edu/hla/sites/cea/wp-json/wp/v2/article/2429" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.purdue.edu/hla/sites/cea/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1" />
+<link rel="canonical" href="https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/" />
+<link rel='shortlink' href='https://www.purdue.edu/hla/sites/cea/?p=2429' />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setDomainName', 'www.purdue.edu']);
+_gaq.push(['_cookiePathCopy', '/hla/sites/cea']);
+_gaq.push(['_setAccount', 'UA-65954849-3']);
+_gaq.push(['_trackPageview']);
+// Purdue Tracking
+_gaq.push(['b._setDomainName', 'www.purdue.edu']);
+_gaq.push(['b._setAccount', 'UA-2785081-1']);
+_gaq.push(['b._trackPageview']);
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0P25HNNFV4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0P25HNNFV4');
+</script>
+				<!-- start custom ag css style -->
+		<style>
+			.test {
+}
+
+		</style>
+		<!-- end custom ag css style -->
+
+    <!-- START - Open Graph and Twitter Card Tags 3.4.0 -->
+     <!-- Facebook Open Graph -->
+      <meta property="og:locale" content="en_US"/>
+      <meta property="og:site_name" content="Controlled Environment Agriculture (NEMALI Lab)"/>
+      <meta property="og:title" content="Calculating Greenhouse Heating Requirements"/>
+      <meta property="og:url" content="https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/"/>
+      <meta property="og:type" content="article"/>
+      <meta property="og:description" content="Alex Miller† and Krishna Nemali††
+
+† Graduate student, Horticulture and Landscape Architecture, Purdue University 
+
+†† For correspondence: knemali@purdue.edu
+
+ 
+
+Winters in the mid-west are generally harsh. The daily average temperature during winter months (Nov. to Feb) in Indiana is 33.6 o"/>
+     <!-- Google+ / Schema.org -->
+      <meta itemprop="name" content="Calculating Greenhouse Heating Requirements"/>
+      <meta itemprop="headline" content="Calculating Greenhouse Heating Requirements"/>
+      <meta itemprop="description" content="Alex Miller† and Krishna Nemali††
+
+† Graduate student, Horticulture and Landscape Architecture, Purdue University 
+
+†† For correspondence: knemali@purdue.edu
+
+ 
+
+Winters in the mid-west are generally harsh. The daily average temperature during winter months (Nov. to Feb) in Indiana is 33.6 o"/>
+      <meta itemprop="author" content="Krishna Nemali"/>
+      <!--<meta itemprop="publisher" content="Controlled Environment Agriculture (NEMALI Lab)"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value. -->
+     <!-- Twitter Cards -->
+      <meta name="twitter:title" content="Calculating Greenhouse Heating Requirements"/>
+      <meta name="twitter:url" content="https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/"/>
+      <meta name="twitter:description" content="Alex Miller† and Krishna Nemali††
+
+† Graduate student, Horticulture and Landscape Architecture, Purdue University 
+
+†† For correspondence: knemali@purdue.edu
+
+ 
+
+Winters in the mid-west are generally harsh. The daily average temperature during winter months (Nov. to Feb) in Indiana is 33.6 o"/>
+      <meta name="twitter:card" content="summary_large_image"/>
+     <!-- SEO -->
+     <!-- Misc. tags -->
+     <!-- is_singular -->
+    <!-- END - Open Graph and Twitter Card Tags 3.4.0 -->
+        
+    </head>
+<!-- start-body -->
+
+<body style="">
+	<div class="navbar navbar-inverse goldbar" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+		<button class="navbar-toggle" data-target=".gold" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+		</div>
+		<div class="collapse navbar-collapse gold">
+		<ul class="nav navbar-nav navbar-right search">
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-search fa-lg"></i><span class="sr-only">Search</span></a>
+			<ul class="dropdown-menu">
+				<li>
+				<form role="search">
+					<div id="purduecse" class="form-group google-search-form">
+					<script>
+						(function() {
+						var cx = '017690826183710227054:mjxnqnpskjk';
+						var gcse = document.createElement('script');
+						gcse.type = 'text/javascript';
+						gcse.async = true;
+						gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+						var s = document.getElementsByTagName('script')[0];
+						s.parentNode.insertBefore(gcse, s);
+						})();
+					</script>
+					<gcse:searchbox-only id="cse-search-form" gname="purduesearch" resultsUrl="https://www.purdue.edu/purdue/search.php" queryParameterName="q">
+						Loading
+					</gcse:searchbox-only>
+					<small>Purdue system wide search</small>
+					</div>
+				</form>
+				</li>
+			</ul>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav information">
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Find Info For <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<p class="hide">Find Info For</p>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/academics/index.php">Academics</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/admissions/index.php">Admissions</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/current_students/index.php">Current Students</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/athletics/index.php">Athletics</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/about/index.php">About</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/careers/index.php">Careers</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/prospective_students/index.php">Prospective Students</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/research/index.php">Research and Partnerships</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/purdue/commercialization/index.php">Entrepreneurship and Commercialization</a></li>
+				<li><a class="findInfoLink" href="https://www.purdue.edu/engagement/">Office of Engagement</a></li>
+			</ul>
+			</li>
+		</ul>
+		<!-- start gold menu function -->
+		<ul id="quicklinks" class="nav navbar-nav right quicklinks"><li style="list-style: none; display: inline"><p class="hide">Quick Links</p></li><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a title="Horticulture &amp; Landscape Architecture" href="https://ag.purdue.edu/department/hla">Horticulture &amp; Landscape Architecture</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a title="College of Agriculture" href="https://ag.purdue.edu">College of Agriculture</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a title="Purdue Extension" href="https://extension.purdue.edu">Purdue Extension</a></li>
+</ul>		<!-- end gold meu function -->
+		</div>
+		<!--/.nav-collapse -->
+	</div>
+	</div>
+	<div class="top">
+	<div class="container">
+		<div class="row">
+		<div class="logo col-lg-3 col-md-4 col-sm-4 col-xs-12">
+			<a class="svgLinkContainer" href="https://www.purdue.edu" onclick="trackOutboundLink('Logo: Purdue University','https://www.purdue.edu'); return false;">
+			<object alt="Purdue University" title="Purdue University" class="svgContainer" data="https://www.purdue.edu/purdue/images/PU-H.svg" tabindex="-1" type="image/svg+xml">
+				<img alt="Purdue University" src="https://www.purdue.edu/purdue/images/PU-H.png">
+			</object>
+			</a>
+		</div>
+		<div class="department col-lg-9 col-md-8 col-sm-8 col-xs-12">
+			<a role="navigation" aria-label="Home Page" href="https://www.purdue.edu/hla/sites/cea">Controlled Environment Agriculture (NEMALI Lab)</a>
+						<a class="tagline" href="https://www.purdue.edu/hla/sites/cea" role="navigation" aria-label="Home Page">Department of Horticulture &amp; Landscape Architecture</a>
+			
+		</div>
+		</div>
+	</div>
+	</div>
+	<nav class="navbar mainnav-bar" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+			<span class="sr-only">Toggle main navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			Main Menu
+		</button>
+		</div>
+		<script>
+		jQuery(function() {
+			jQuery("li.menu-search-icon > a").html('<i class="fa fa-search" tabindex="-1" aria-hidden="true"></i>');
+			jQuery("li.menu-search-icon > a").prop('title', 'Search this Site');
+		});
+		</script>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<!-- Site Navigation Menu -->
+		<div id="mainnav" class="collapse navbar-collapse whitebar"><ul id="menu-primary-nav" class="nav navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-17"><a title="Home" href="https://www.purdue.edu/hla/sites/cea/">Home</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1874 dropdown"><a title="Extension" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Extension <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu" >
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2603"><a title="Extension Programs" href="https://www.purdue.edu/hla/sites/cea/extension-programs/">Extension Programs</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2266"><a title="Extension Publications" href="https://www.purdue.edu/hla/sites/cea/home/extension/peer-reviewed-extension-publications/">Extension Publications</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1877"><a title="Extension Presentations" href="https://www.purdue.edu/hla/sites/cea/home/extension/extension-publications/">Extension Presentations</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3119"><a title="APTUS" href="https://www.purdue.edu/hla/sites/cea/home/aptus/">APTUS</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1663" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1663"><a title="Archive" href="https://www.purdue.edu/hla/sites/cea/archive/">Archive</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2459" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2459 dropdown"><a title="Research" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Research <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu" >
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2565"><a title="Research Projects" href="https://www.purdue.edu/hla/sites/cea/2555-2/">Research Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a title="Research Publications" href="https://www.purdue.edu/hla/sites/cea/publications/">Research Publications</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3245"><a title="Equipment, Sensors, and Growth Facilities" href="https://www.purdue.edu/hla/sites/cea/equipment-sensors-and-growth-facilities/">Equipment, Sensors, and Growth Facilities</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2458"><a title="LA Estimated" href="https://www.purdue.edu/hla/sites/cea/la-estimated/">LA Estimated</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a title="Teaching" href="https://www.purdue.edu/hla/sites/cea/teaching/">Teaching</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2111"><a title="Grants" href="https://www.purdue.edu/hla/sites/cea/grants/">Grants</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1884"><a title="Lab Members" href="https://www.purdue.edu/hla/sites/cea/home/people/">Lab Members</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a title="Events" href="https://www.purdue.edu/hla/sites/cea/news-and-events/">Events</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1725"><a title="International Programs" href="https://www.purdue.edu/hla/sites/cea/jobsassistantships/">International Programs</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a title="Contact Us" href="https://www.purdue.edu/hla/sites/cea/contact-us/">Contact Us</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2508" class="menu-search-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-2508"><a title="Search" href="https://www.purdue.edu/hla/sites/cea/search/">Search</a></li>
+</ul></div>		<!--/.nav-collapse -->
+	</div>
+	</nav>
+	<!-- end-header --><!-- single-article.php plugin-templates -->
+	<div class="breadcrumb-container hidden-print">
+		<div class="container">
+			<div class="row">
+				<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+					<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Controlled Environment Agriculture (NEMALI Lab)." href="https://www.purdue.edu/hla/sites/cea" class="home"><span property="name"> <i class="fa fa-home" aria-hidden="true"></i> Home </span></a><meta property="position" content="1"></span><span class="divider" aria-hidden="true"> &gt; </span><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Articles." href="https://www.purdue.edu/hla/sites/cea/article/" class="archive post-article-archive"><span property="name">Articles</span></a><meta property="position" content="2"></span><span class="divider" aria-hidden="true"> &gt; </span><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the 11 Issue archives." href="https://www.purdue.edu/hla/sites/cea/issue/11/" class="taxonomy issuem_issue"><span property="name">11</span></a><meta property="position" content="3"></span><span class="divider" aria-hidden="true"> &gt; </span><span property="itemListElement" typeof="ListItem"><span property="name">Calculating Greenhouse Heating Requirements</span><meta property="position" content="4"></span>				</div>
+			</div>
+		</div>
+	</div>
+<div class="container">
+				<div class="row">
+
+
+				<div class="maincontent col-sm-12">
+					
+					
+					<article itemscope itemtype="https://schema.org/Article" id="post-2429" class="post-2429 article type-article status-publish format-standard hentry issuem_issue-61 issuem_issue_categories-controlled-environment-agriculture">
+						<header class="entry-header">
+							<h1 class="entry-title single-page-title">
+								<span itemprop="headline">Calculating Greenhouse Heating Requirements</span>
+															</h1>
+
+							<div class="entry-meta">
+								<div class="content-meta">
+									<time itemprop="datePublished" content="2019-03-13" datetime="2019-03-13">March 13, 2019</time><span role="navigation" style="padding-left:.25rem;" aria-label="Related Issues"><span aria-hidden="true">- </span>Included in Issue: <i class='fa fa-bookmark' aria-hidden='true'></i> <a href="https://www.purdue.edu/hla/sites/cea/issue/11/" rel="tag">11</a><br/></span>
+																													<div class="author-byline" role="navigation" aria-label="Article Authors"><span aria-hidden="true">By: </span><span itemprop="author"><a href="https://www.purdue.edu/hla/sites/cea/author/knemali/" title="Posts by Krishna Nemali" class="author url fn" rel="author">Krishna Nemali</a></span></div>							
+																	</div><!-- .content-meta -->
+		
+
+							</div><!-- .entry-meta -->
+						</header><!-- .entry-header -->
+
+						<div itemprop="articleBody" class="entry-content">
+									<p>Alex Miller<sup>†</sup> and Krishna Nemali<sup>††</sup></p>
+<p><sup>†</sup> <em>Graduate student, Horticulture and Landscape Architecture, Purdue University </em></p>
+<p><sup>†† </sup><em>For correspondence: knemali@purdue.edu</em></p>
+<p>&nbsp;</p>
+<p>Winters in the mid-west are generally harsh. The daily average temperature during winter months (Nov. to Feb) in Indiana is 33.6 <sup>o</sup>F. This temperature is significantly lower than the optimal growth temperature (65 to 75 <sup>o</sup>F) for many crops. Thus, heating is essential to grow crops during winter in Indiana greenhouses. In this article we describe how to determine heating requirements for a greenhouse.</p>
+<p>A common method of heating greenhouses involves maintaining air temperature at a target level for the crop. To calculate heat requirement (<strong>Q</strong>, BTU/hr) for maintaining a target air temperature inside a greenhouse, we need to know the (i) temperature difference or <strong>ΔT</strong> between inside and outside air, (ii) surface area or <strong>A</strong> of the greenhouse and (iii) overall heat transfer co-efficient or <strong>U</strong> of the greenhouse covering material. U-value indicates BTU/hr of heat lost through the material in the form of conduction and radiation from an area of one ft<sup>2</sup> for every <sup>o</sup>F difference in temperature between inside and outside air (approximate value). From this information, heat needed to maintain desired temperature inside the greenhouse is calculated as follows:</p>
+<p><span style="font-size: 18pt">Q = U x A x <strong>ΔT</strong> </span></p>
+<p>Examples of surface area calculations for a Quonset and A-frame greenhouses is shown in Fig. 1 below:</p>
+<p><img fetchpriority="high" decoding="async" class="alignleft size-full wp-image-2430" src="https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae.jpg" alt="" width="1918" height="939" srcset="https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae.jpg 1918w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-300x147.jpg 300w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-768x376.jpg 768w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-1024x501.jpg 1024w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-480x235.jpg 480w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/formulae-250x122.jpg 250w" sizes="(max-width: 1918px) 100vw, 1918px" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt"><strong>Figure 1.</strong> Greenhouse structures used in Table 1 for heating calculations</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>In the above formula, π is 3.14, A, B, C, D and E are dimensions (see Fig. 1) of the structure.</p>
+<p>We can calculate heating requirement (BTU/hr) for A-frame and Quonset structures shown in Fig. 1 when an air temperature of 70 <sup>o</sup>F is maintained for 16 h (light period) and a temperature of 60 <sup>o</sup>F is maintained for 8 h (dark period) or daily average air temperature of 66.6 <sup>o</sup>F {[(70 × 16 h) + (60 × 8 h)]/24} is maintained. Let’s assume outside air temperature is 30 <sup>o</sup>F during the 24 h period. We will also assume that the A-frame greenhouse is covered with double polycarbonate sheet and Quonset greenhouse is covered with a double polythene sheet. U-values for double polycarbonate and double polyethylene sheets are 0.55 and 0.70 BTU/hr ft<sup>2</sup> <sup>o</sup>F, respectively (U-value is approx. 1.2 for single polythene sheet). In both cases, let’s assume that propane is used as fuel to heat the air.</p>
+<p>The heating requirements for maintaining A-frame and Quonset greenhouses (Fig. 1) at 66.6 <sup>o</sup>F when outside air temperature is 30 <sup>o</sup>F is 135878 and 170860 BTU/hr, respectively (Table 1). Daily cost of maintaining A-frame and Quonset greenhouse at the target temperature is $89.60 and 112.65, respectively. Higher cost of heating in the Quonset greenhouse is attributed to lower U-value of double polythene compared to double polycarbonate. The lower value in double polythene is due to higher radiative heat loss through material as long wave infrared rays. However, the cost can be lowered in a Quonset greenhouse by adding an infrared (IR) blocker to the polythene material, which will lower the U-value to 0.5 from 0.7.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt"><strong>Table 1.</strong> Heating calculations for maintaining the greenhouse shown in Fig. 1 at 60 and 70 °F</span></p>
+<p><img decoding="async" class="alignleft size-full wp-image-2431" src="https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/Table-1.jpg" alt="" width="1750" height="429" srcset="https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/Table-1.jpg 1750w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/Table-1-300x74.jpg 300w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/Table-1-768x188.jpg 768w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/Table-1-1024x251.jpg 1024w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/Table-1-652x160.jpg 652w, https://www.purdue.edu/hla/sites/cea/wp-content/uploads/sites/15/2019/03/Table-1-250x61.jpg 250w" sizes="(max-width: 1750px) 100vw, 1750px" /></p>
+<p>&nbsp;</p>
+
+						</div><!-- .entry-content -->
+						<div class="clearfix"></div>
+						<div class="row hidden-print">
+																<div class="clearfix"></div>
+							<div class="col-sm-10 article-tags hidden-print">
+
+
+
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12 article-tags">
+										<!-- pu_display_tax_filter --><div class="tax-group-archive issuem_issue_categories-tax-list"><div class="tax-group-label"><i class="fa fa-folder plant-tags" title="Article Categories" aria-hidden="true"></i>&nbsp;Article Categories:</div><div class="tax-group-item-list"><ul itemprop="keywords">	<li class="cat-item cat-item-50"><a href="https://www.purdue.edu/hla/sites/cea/article-categories/controlled-environment-agriculture/">Controlled Environment Agriculture</a>
+</li>
+</ul></div></div>
+									</div><!-- .all tags list column -->
+								</div><!-- .all tags row -->
+
+							</div><!-- .all tags list column -->
+
+							<!-- <div class="col-sm-2 hidden-print">
+		  
+				<h6>Share This Article</h6>
+				<div class="addthis_sharing_toolbox"></div>
+		</div> -->
+
+						</div><!-- .all tags row -->
+
+
+								
+								
+
+					</article><!-- #post-2429 -->
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="disclaimer">It is the policy of the Purdue University that all persons have equal opportunity and access to its educational programs, services, activities, and facilities without regard to race, religion, color, sex, age, national origin or ancestry, marital status, parental status, sexual orientation, disability or status as a veteran. Purdue is an Affirmative Action Institution. </p>
+				</div>
+			</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row panel-group" id="accordion">
+							<div class="panel">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<div class="desktopHeader hidden-xs">Purdue Sites</div>
+							<a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#footerone">Purdue Sites <i class="fa fa-plus right"></i><i class="fa fa-minus right"></i></a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse" id="footerone">
+						<div class="panel-body">
+							<ul><li><a href="http://www.purdue.edu">Purdue Homepage</a></li>
+<li><a href="http://www.purdue.edu/newsroom/purduetoday/">Purdue Today</a></li>
+<li><a href="https://www.purdue.edu/directory/">Campus Directory</a></li>
+<li><a href="http://extension.purdue.edu">Extension</a></li>
+<li><a href="https://www.purdue.edu/campus_map/index.html">Campus Map</a></li>
+</ul>						</div>
+					</div>
+				</div>
+											<div class="panel">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<div class="desktopHeader hidden-xs">College of Ag Sites</div>
+							<a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#footertwo">College of Ag Sites <i class="fa fa-plus right"></i><i class="fa fa-minus right"></i></a>
+					</div>
+					</div>
+					<div class="panel-collapse collapse" id="footertwo">
+						<div class="panel-body">
+							<ul><li><a href="https://ag.purdue.edu/directory">Ag Directory</a></li>
+<li><a href="https://ag.purdue.edu/events/index.html">College of Ag Calendar</a></li>
+<li><a href="https://edustore.purdue.edu/">Education Store</a></li>
+<li><a href="https://ag.purdue.edu/department/arge/index.html">Ag Research @ Purdue</a></li>
+<li><a href="https://ag.purdue.edu/news/">Recent Purdue Ag News</a></li>
+</ul>						</div>
+					</div>
+				</div>
+											<div class="panel">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<div class="desktopHeader hidden-xs">Department Links</div>
+							<a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#footerthree">Department Links <i class="fa fa-plus right"></i><i class="fa fa-minus right"></i></a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse" id="footerthree">
+						<div class="panel-body">
+							<ul><li><a href="https://ag.purdue.edu/department/hla">Department Home</a></li>
+<li><a href="https://ag.purdue.edu/department/hla/hla-job-board/index.html">HLA Jobs Board</a></li>
+<li><a href="https://www.facebook.com/groups/1414360305240872/">IFGA</a></li>
+<li><a href="https://ag.purdue.edu/department/hla/directory.html#/?departments=18">Department Directory</a></li>
+<li><a href="https://ag.purdue.edu/department/hla/Extension">Horticulture Extension</a></li>
+</ul>						</div>
+					</div>
+				</div>
+				
+							<div class="panel">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<div class="desktopHeader hidden-xs">Site Links</div>
+							<a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#footerfour">Site Links <i class="fa fa-plus right"></i><i class="fa fa-minus right"></i></a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse" id="footerfour">
+						<div class="panel-body">
+							<ul><li><a href="https://www.purdue.edu/hla/sites/cea/news-and-events/">Upcoming Events</a></li>
+<li><a href="https://www.purdue.edu/hla/sites/cea/teaching/">Teaching</a></li>
+<li><a href="https://www.purdue.edu/hla/sites/cea/research-areas/">Research Areas</a></li>
+<li><a href="https://www.purdue.edu/hla/sites/cea/contact-us/">Contact Us</a></li>
+</ul>						</div>
+					</div>
+				</div>
+				
+			<div class="motto col-lg-4 col-md-4 col-sm-4">
+				<div class="rightContainer">
+					<div class="taglineContainer">
+						<div class="tagline">
+							<svg class="horizontal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 249.7 45.3" style="enable-background:new 0 0 249.7 45.3;" xml:space="preserve">
+								<style type="text/css">
+									.st0 {
+										fill: #FFFFFF;
+									}
+
+									.st1 {
+										fill: #CFB991;
+									}
+
+									.st2 {
+										fill: #9D9795;
+									}
+								</style>
+								<title>Purdue University Logo</title>
+								<g>
+									<path class="st0" d="M97.4,3.8L94.6,3V1h10.9c7.1,0,9.7,2.3,9.7,7.6c0,5-2.9,7.6-8.5,7.6h-4.4v8l2.8,0.8V27H94.5v-1.9l2.9-0.8V3.8z
+										M102.3,3.8v10.1l5.2-0.4c1.3-0.6,2.6-1.4,2.6-4.6c0-2.5-0.1-5.1-4.9-5.1L102.3,3.8z"></path>
+									<path class="st0" d="M155.8,16h-3.5v8.4l2.8,0.8V27h-10.7v-1.9l2.9-0.8V3.8L144.5,3V1h11.4c6.8,0,9.2,2.4,9.2,7
+										c0,3.6-1.4,5.4-4.6,6.7l4.8,9.4l3.1,1V27h-7.2L155.8,16z M152.3,3.8v9.9l5.3-0.4c1.7-0.8,2.5-2.2,2.5-4.9c0-2.9-0.9-4.7-3.9-4.7
+										L152.3,3.8z"></path>
+									<path class="st0" d="M170.6,25.2l2.8-0.8V3.8L170.6,3V1h12.6c7.1,0,11.3,4.3,11.3,12.7c0,9.5-4.3,13.3-11.8,13.3h-12.1V25.2z
+										M178.4,3.8v20.6h3.7c2.6,0,7-0.4,7-9.8c0-7.4-1.3-10.8-7-10.8L178.4,3.8z"></path>
+									<path class="st0" d="M105.5,40.6c0,3.2-1.8,4.3-4.8,4.3s-4.8-1.8-4.8-4.3v-6.3l-1.4-0.4v-1.2h5.5v1.2l-1.3,0.4v6.3
+										c0,1.6,0.6,2.5,2.4,2.5c0.9,0,2.4-0.3,2.4-2.6v-6.3l-1.4-0.4v-1.2h4.8v1.2l-1.4,0.4L105.5,40.6z"></path>
+									<path class="st0" d="M115.1,37.3v5.8l1.3,0.4v1.2h-4.7v-1.2l1.4-0.4v-8.3l-0.6-0.7l-0.8-0.3v-1.3h3.1l5.9,7.4v-5.8l-1.4-0.4v-1.2
+										h4.7v1.2l-1.4,0.4v10.5h-1.6L115.1,37.3z"></path>
+									<path class="st0" d="M134.1,43.2l1.4,0.4v1.2h-5.6v-1.2l1.4-0.4v-8.9l-1.4-0.4v-1.2h5.6v1.2l-1.4,0.4V43.2z"></path>
+									<path class="st0" d="M209,43.2l1.4,0.4v1.2h-5.6v-1.2l1.4-0.4v-8.9l-1.4-0.4v-1.2h5.6v1.2l-1.4,0.4L209,43.2z"></path>
+									<path class="st0" d="M148.2,44.7h-2.6l-3.8-10.5l-1.4-0.4v-1.2h5.9v1.2l-1.4,0.4l2.6,7.5l2.6-7.5l-1.4-0.4v-1.2h4.8v1.2l-1.4,0.4
+										L148.2,44.7z"></path>
+									<path class="st0" d="M159.2,34.3l-1.4-0.4v-1.2h9.5l0.1,3.7H166l-0.7-2.1h-3.2v3.4h3.1v1.7h-3.1v3.8h3.2l1-2.1h1.5l-0.2,3.7h-9.7
+										v-1.2l1.4-0.3V34.3z"></path>
+									<path class="st0" d="M179.1,39.8h-1v3.4l1.4,0.4v1.2h-5.6v-1.2l1.4-0.4v-8.9l-1.4-0.4v-1.2h5.5c3.4,0,4.4,1.3,4.4,3.4
+										c0,1.3-0.3,2.6-2,3.2l2,3.9l1.7,0.5v1.1h-4.1L179.1,39.8z M178.1,34.3v4.2l1.9-0.2c0.6-0.5,1-1.3,1-2.1c0-1.2-0.3-2-1.6-2H178.1z"></path>
+									<path class="st0" d="M190.4,41h1.7l0.4,1.7c0.8,0.5,1.7,0.7,2.6,0.7c0.1,0,0.3,0,0.4,0c0.5-0.3,0.7-0.9,0.8-1.5
+										c0-2.8-5.8-1.6-5.8-5.7c0-1.9,1.7-3.7,4.6-3.7c1.1,0,2.3,0.3,3.3,0.8v3.2h-1.6l-0.6-2c-0.6-0.2-1.3-0.4-2-0.4c-0.1,0-0.2,0-0.3,0
+										c-0.5,0.3-0.8,0.8-0.8,1.4c0,2.4,5.7,1.6,5.7,5.6c0,2.2-2,3.8-4.6,3.8c-1.3,0-2.6-0.4-3.7-1.1L190.4,41z"></path>
+									<path class="st0" d="M220,34.3h-1.6l-0.7,2.1h-1.5v-3.8h10.6v3.8h-1.5l-0.7-2.1h-1.7v8.9l1.4,0.4v1.2h-5.6v-1.2l1.4-0.4V34.3z"></path>
+									<path class="st0" d="M236.2,40.1l-3.2-5.8l-1.4-0.4v-1.2h5.9v1.2l-1.4,0.4l2,3.9l2-3.9l-1.4-0.4v-1.2h4.8v1.2l-1.4,0.4l-3.2,5.8
+										v3.1l1.4,0.4v1.2h-5.6v-1.2l1.4-0.4V40.1z"></path>
+									<polygon class="st0" points="241.4,19.5 239.5,24.3 231.4,24.3 231.4,15 236,15 236.6,17.6 238.6,17.6 238.6,9.7 236.6,9.7 
+										236,12.3 231.4,12.3 231.4,3.8 239.2,3.8 240.6,8.8 243.5,8.8 243.3,1 223.6,1 223.6,3 226.4,3.8 226.4,24.4 223.5,25.2 223.5,27 
+										243.7,27 244.1,19.5 	"></polygon>
+									<path class="st0" d="M139.5,18.1c0,6.6-3.2,9.3-9.6,9.3c-5.9,0-10.2-2.4-10.2-8.7V3.8L116.8,3V1h10.6v2l-2.8,0.8v14.9
+										c0,3.8,1.7,5.4,5.9,5.4c2.9,0,5.5-1.7,5.5-5.7V3.8L133.1,3V1h9.2v2l-2.8,0.8V18.1z"></path>
+									<path class="st0" d="M218.5,18.1c0,6.6-3.2,9.3-9.6,9.3c-5.9,0-10.3-2.4-10.3-8.7V3.8L195.8,3V1h10.6v2l-2.8,0.8v14.9
+										c0,3.8,1.7,5.4,5.9,5.4c2.9,0,5.5-1.7,5.5-5.7V3.8L212.2,3V1h9.2v2l-2.8,0.8V18.1z"></path>
+									<path class="st1" d="M44.4,44.8L50,31.6h9.3c13.4,0,18.5-5.5,22.1-13.8c1.3-3.1,3.5-8.2,0.6-12.6c-2.9-4.4-9-4.8-13.3-4.8H19.3
+										l-7,16.3h8.9l-5,11.7h-9l-7,16.4H44.4z"></path>
+									<path class="st2" d="M79.4,6.9c-1.6-2.4-5-3.5-10.8-3.5H21.3L17,13.7h8.9l-7.5,17.7h-9L5,41.7h37.4l4.4-10.3h-9.1l1.2-2.9h20.4
+										c13.1,0,16.6-5.6,19.3-12C80,13.2,81.3,9.7,79.4,6.9 M45.3,13.7h15c2.1,0,1.8,1,1.5,1.7c-0.8,1.8-2.6,2.9-4.8,2.9H43.3L45.3,13.7z"></path>
+									<path d="M68.7,5H22.4l-3,7.1h8.9L19.4,33h-9l-3,7.1h34l3-7.1h-9.1l2.6-6h21.4c12.3,0,15.4-5.2,17.8-11S81,5,68.7,5 M57,19.9H41
+										l3.3-7.7h16c2.8,0,4,1.5,2.9,3.9C62.2,18.4,59.8,19.9,57,19.9"></path>
+									<path class="st0" d="M246.9,44.7c-1.4,0-2.6-1.2-2.6-2.6c0-1.4,1.2-2.6,2.6-2.6c1.4,0,2.6,1.2,2.6,2.6c0,0,0,0,0,0
+										C249.5,43.5,248.3,44.7,246.9,44.7z M246.9,40.1c-1.1,0-2.1,0.9-2.1,2.1c0,1.1,0.9,2.1,2.1,2.1c1.1,0,2.1-0.9,2.1-2.1
+										C249,41,248,40.1,246.9,40.1L246.9,40.1z"></path>
+									<path class="st0" d="M246.6,42.3v1h-0.5v-2.4h1.1c0.5,0,0.8,0.3,0.8,0.7c0,0.2-0.1,0.5-0.4,0.6c0.1,0,0.3,0.2,0.3,0.6v0.1
+										c0,0.2,0,0.3,0,0.5h-0.5c0-0.2-0.1-0.4,0-0.5v0c0-0.3-0.1-0.4-0.5-0.4L246.6,42.3z M246.6,41.9h0.4c0.3,0,0.4-0.1,0.4-0.3
+										s-0.1-0.3-0.4-0.3h-0.4V41.9z"></path>
+								</g>
+							</svg>
+							<svg class="vertical" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 203.8 132" style="enable-background:new 0 0 203.8 132;" xml:space="preserve">
+								<style type="text/css">
+									.v-st0 {
+										fill: #CFB991;
+									}
+
+									.v-st1 {
+										fill: #9D9795;
+									}
+
+									.v-st2 {
+										fill: #FFFFFF;
+									}
+								</style>
+								<title>Purdue University Logo</title>
+								<g>
+									<path class="v-st0" d="M102.5,58.7l7.3-17.3H122c17.6,0,24.3-7.2,28.9-18.1c1.7-4,4.6-10.7,0.8-16.5S140,0.5,134.3,0.5H69.7
+										l-9.1,21.4h11.7l-6.5,15.3H54l-9.1,21.4L102.5,58.7z"></path>
+									<path class="v-st1" d="M148.4,9.1c-2.1-3.1-6.5-4.6-14.1-4.6h-62L66.5,18h11.7l-9.9,23.2H56.6l-5.7,13.5h49l5.7-13.5H93.8l1.6-3.8
+										H122c17.1,0,21.7-7.4,25.3-15.7C149.2,17.3,150.8,12.7,148.4,9.1 M103.7,18h19.6c2.7,0,2.3,1.4,1.9,2.2c-1,2.3-3.4,3.8-6.3,3.8
+										h-17.8L103.7,18z"></path>
+									<path d="M134.3,6.6H73.6l-4,9.4h11.7L69.7,43.3H58l-4,9.4h44.5l4-9.4H90.6l3.4-7.9h28.1c16.1,0,20.1-6.8,23.4-14.4
+										S150.4,6.5,134.3,6.6 M118.9,26H98l4.3-10.1h21c3.7,0,5.2,1.9,3.9,5.1S122.6,26,118.9,26"></path>
+									<path class="v-st2" d="M4,78l-3.7-1.1v-2.6h14.3c9.3,0,12.8,3,12.8,10c0,6.6-3.8,10-11.1,10h-5.8v10.6l3.7,1.1v2.5h-14v-2.5l3.8-1.1
+										V78z M10.5,77.9v13.2l6.8-0.5c1.7-0.8,3.4-1.8,3.4-6.1c0-3.2-0.1-6.6-6.4-6.6L10.5,77.9z"></path>
+									<path class="v-st2" d="M80.7,93.9H76v11l3.7,1.1v2.5h-14v-2.5l3.8-1.1V78l-3.7-1.1v-2.6h14.9c8.9,0,12.1,3.1,12.1,9.2
+										c0,4.7-1.8,7.1-6,8.8l6.3,12.3l4.1,1.3v2.5h-9.5L80.7,93.9z M76,77.9v13l6.9-0.5c2.2-1.1,3.2-2.8,3.2-6.4c0-3.8-1.2-6.1-5.1-6.1
+										L76,77.9z"></path>
+									<path class="v-st2" d="M100,105.9l3.7-1V78l-3.7-1.1v-2.6h16.5c9.3,0,14.8,5.6,14.8,16.7c0,12.5-5.6,17.4-15.5,17.4H100V105.9z
+										M110.2,77.9v27h4.9c3.4,0,9.1-0.5,9.1-12.9c0-9.7-1.7-14.1-9.1-14.1L110.2,77.9z"></path>
+									<path class="v-st2" d="M14.7,126.2c0,4.1-2.4,5.7-6.3,5.7s-6.3-2.3-6.3-5.7v-8.3l-1.8-0.6v-1.6h7.3v1.6l-1.8,0.6v8.3
+										c0,2.1,0.8,3.3,3.2,3.3c1.1,0,3.1-0.4,3.1-3.4v-8.2l-1.8-0.6v-1.6h6.2v1.6l-1.8,0.5V126.2z"></path>
+									<path class="v-st2" d="M27.2,121.9v7.6L29,130v1.6h-6.1V130l1.8-0.5v-10.8l-0.8-1l-1.1-0.3v-1.7h4l7.7,9.7v-7.6l-1.8-0.5v-1.6h6.1
+										v1.6l-1.8,0.5v13.8h-2.1L27.2,121.9z"></path>
+									<path class="v-st2" d="M52.2,129.5L54,130v1.6h-7.3V130l1.8-0.5v-11.7l-1.8-0.5v-1.6H54v1.6l-1.8,0.5L52.2,129.5z"></path>
+									<path class="v-st2" d="M150.4,129.5l1.8,0.5v1.6h-7.3V130l1.8-0.5v-11.7l-1.8-0.5v-1.6h7.3v1.6l-1.8,0.5V129.5z"></path>
+									<path class="v-st2" d="M70.6,131.6h-3.4l-5-13.7l-1.8-0.6v-1.6h7.7v1.6l-1.8,0.6l3.3,9.8l3.4-9.8l-1.8-0.6v-1.6h6.2v1.6l-1.8,0.6
+										L70.6,131.6z"></path>
+									<path class="v-st2" d="M85.1,117.8l-1.8-0.5v-1.6h12.5l0.1,4.9h-2l-1-2.8h-4.1v4.5h4.1v2.3h-4.1v5H93l1.3-2.8h1.9l-0.3,4.8H83.3V130
+										l1.8-0.4V117.8z"></path>
+									<path class="v-st2" d="M111.1,125.1h-1.4v4.4l1.8,0.5v1.6h-7.3V130l1.8-0.5v-11.7l-1.8-0.5v-1.6h7.2c4.4,0,5.8,1.7,5.8,4.4
+										c0,1.8-0.4,3.4-2.6,4.2l2.5,5.2l2.2,0.7v1.5h-5.4L111.1,125.1z M109.8,117.8v5.6l2.5-0.2c0.8-0.7,1.3-1.7,1.2-2.8
+										c0-1.6-0.4-2.6-2-2.6H109.8z"></path>
+									<path class="v-st2" d="M126,126.7h2.2l0.5,2.2c1,0.6,2.2,0.9,3.3,0.9c0.2,0,0.3,0,0.5,0c0.6-0.4,1-1.2,1-1.9c0-3.7-7.6-2.1-7.6-7.5
+										c0-2.5,2.3-4.9,6-4.9c1.5,0,3,0.4,4.3,1.1v4.2h-2.1l-0.8-2.7c-0.8-0.3-1.7-0.5-2.6-0.5c-0.1,0-0.3,0-0.4,0c-0.6,0.4-1,1.1-1,1.9
+										c0,3.2,7.5,2,7.5,7.4c0,2.9-2.6,4.9-6.1,4.9c-1.7,0-3.4-0.5-4.8-1.4L126,126.7z"></path>
+									<path class="v-st2" d="M164.7,117.9h-2.1l-0.9,2.8h-2v-5h13.8v5h-1.9l-0.9-2.8h-2.2v11.6l1.8,0.5v1.6h-7.3V130l1.8-0.5V117.9z"></path>
+									<path class="v-st2" d="M186,125.5l-4.2-7.6l-1.8-0.6v-1.6h7.7v1.6l-1.8,0.6l2.6,5.2l2.6-5.2l-1.8-0.6v-1.6h6.3v1.6l-1.8,0.6l-4.2,7.6
+										v4.1l1.8,0.5v1.6h-7.3V130l1.8-0.5L186,125.5z"></path>
+									<polygon class="v-st2" points="192.7,98.5 190.3,104.9 179.6,104.9 179.6,92.6 185.7,92.6 186.4,96 189.1,96 189.1,85.7 186.4,85.7 
+										185.7,89 179.6,89 179.6,77.9 189.8,77.9 191.8,84.5 195.5,84.5 195.2,74.3 169.4,74.3 169.4,76.9 173.1,78 173.1,104.9 
+										169.4,105.9 169.4,108.4 195.7,108.4 196.3,98.5 	"></polygon>
+									<path class="v-st2" d="M59.2,96.7c0,8.7-4.1,12.2-12.6,12.2c-7.8,0-13.4-3.1-13.4-11.3V78l-3.7-1.1v-2.6h13.9v2.6L39.6,78v19.6
+										c0,4.9,2.3,7.1,7.7,7.1c3.7,0,7.2-2.2,7.2-7.5V78l-3.7-1.1v-2.6h12v2.6L59.2,78V96.7z"></path>
+									<path class="v-st2" d="M162.8,96.7c0,8.7-4.1,12.2-12.6,12.2c-7.8,0-13.4-3.1-13.4-11.3V78l-3.7-1.1v-2.6h13.9v2.6l-3.7,1.1v19.6
+										c0,4.9,2.3,7.1,7.7,7.1c3.7,0,7.2-2.2,7.2-7.5V78l-3.7-1.1v-2.6h12v2.6l-3.7,1.1V96.7z"></path>
+									<path class="v-st2" d="M200,131.5c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4c1.9,0,3.4,1.5,3.4,3.4l0,0
+										C203.4,130,201.9,131.5,200,131.5z M200,125.4c-1.5,0-2.7,1.2-2.7,2.7s1.2,2.7,2.7,2.7c1.5,0,2.7-1.2,2.7-2.7l0,0
+										C202.7,126.7,201.5,125.4,200,125.4L200,125.4L200,125.4z"></path>
+									<path class="v-st2" d="M199.6,128.5v1.3h-0.7v-3.2h1.4c0.7,0,1.1,0.4,1.1,0.9c0,0.3-0.2,0.6-0.5,0.7c0.2,0.1,0.4,0.2,0.4,0.8v0.2
+										c0,0.2,0,0.4,0,0.6h-0.7c-0.1-0.2-0.1-0.5-0.1-0.7v0c0-0.3-0.1-0.5-0.6-0.5L199.6,128.5z M199.6,127.9h0.6c0.4,0,0.5-0.1,0.5-0.4
+										c0-0.2-0.2-0.4-0.5-0.4h-0.6L199.6,127.9z"></path>
+								</g>
+							</svg>
+
+						</div><!-- tagline -->
+					</div><!-- taglinecontainer -->
+
+					<div id="menu-social-media-links" class="menu-social-media-container"><li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a href="https://www.facebook.com/groups/1414360305240872/"><span class="fa fa-facebook"></span></a></li>
+</div>				</div><!-- rightcontainer -->
+			</div><!-- motto -->
+		</div><!-- accordion -->
+	</div><!-- container -->
+</div><!-- footer -->
+
+<div class="bottom hidden-print">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<p>Page last modified: March 13, 2019</p>
+				Controlled Environment Agriculture (NEMALI Lab) - 					<a href="https://www.google.com/maps/place/Horticulture+%26+Landscape+Architecture/@40.4217757,-86.916562,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x8812e2b06693f291:0x84d37184d8598920!2sHorticulture+%26+Landscape+Architecture!3b1!8m2!3d40.4217716!4d-86.9143733!3m4!1s0x8812e2b06693f291:0x84d37184d8598920!8m2!3d40.4217716!4d-86.9143733">
+					
+					Horticulture &amp; Landscape Architecture, 625 Agriculture Mall, West Lafayette, IN 47907										</a>
+				
+				<p><a href="https://www.purdue.edu/purdue/disclaimer.php">&copy; 2026 Purdue University</a><span aria-hidden="true"> | </span><a href="https://www.purdue.edu/purdue/ea_eou_statement.php">An equal access/equal opportunity university</a><span aria-hidden="true"> | </span><a href="https://www.purdue.edu/securepurdue/security-programs/copyright-policies/reporting-alleged-copyright-infringement.php">Copyright Complaints</a><span aria-hidden="true"> | </span>Maintained by <a href="https://www.purdue.edu/hla/sites/cea">Controlled Environment Agriculture (NEMALI Lab)</a></p>
+				<p>If you have trouble accessing this page because of a disability, please contact Controlled Environment Agriculture (NEMALI Lab) at <a href="mailto:knemali@purdue.edu?subject=Message to Webmaster of http://www.purdue.edu/hla/sites/cea">knemali@purdue.edu</a><span aria-hidden="true"> | </span><a href="https://www.purdue.edu/disabilityresources/">Accessibility Resources</a> </p>
+			</div>
+		</div>
+	</div>
+</div>
+<button onclick="topFunction()" id="topBtn" tabindex="-1" aria-hidden="true" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+
+		jQuery(".link-type-icon").tooltip({
+			trigger: "hover",
+			placement: "top"
+		});
+		resizeFooter();
+		jQuery(window).resize(resizeFooter);
+		// add aria-hidden to all links inside the social links container
+		jQuery('#menu-social-media-links').find('a').attr({
+			'aria-hidden': 'true',
+			'tabindex': '-1'
+		});
+		jQuery('a').each(function() {
+			var $a = jQuery(this);
+			var text = jQuery.trim($a.text());
+			var hasAriaLabel = $a.attr('aria-label') && jQuery.trim($a.attr('aria-label')) !== '';
+			var hasTitle = $a.attr('title') && jQuery.trim($a.attr('title')) !== '';
+			var hasImgWithAlt = $a.find('img[alt]').filter(function() {
+				return jQuery.trim(jQuery(this).attr('alt')) !== '';
+			}).length > 0;
+
+			if (text === '' && !hasAriaLabel && !hasTitle && !hasImgWithAlt) {
+				$a.attr({
+					'aria-hidden': 'true',
+					'tabindex': '-1'
+				});
+			}
+		});
+
+	});
+
+	function resizeFooter() {
+		if (jQuery(window).width() >= 767) {
+			var headerboxes = jQuery('.footer .panel .desktopHeader');
+			var headermaxHeight = Math.max.apply(Math, headerboxes.map(function() {
+				return jQuery(this).height();
+			}).get());
+			headerboxes.height(headermaxHeight);
+			var boxes = jQuery('.footer .panel');
+			var maxHeight = Math.max.apply(Math, boxes.map(function() {
+				return jQuery(this).height();
+			}).get());
+			boxes.height(maxHeight);
+			jQuery('.footer .panel').height(maxHeight);
+			jQuery(".footer .rightContainer").css("padding-top", headermaxHeight / 2);
+		} else {
+			jQuery('.footer .panel .desktopHeader').css({
+				"height": ""
+			});
+			jQuery('.footer .panel').css({
+				"height": ""
+			});
+			jQuery(".footer .rightContainer").css({
+				"padding-top": ""
+			});
+		}
+
+	}
+	// Scroll to top bottun
+	//Get the button:
+	mybutton = document.getElementById("topBtn");
+
+	// When the user scrolls down 500px from the top of the document, show the button
+	window.onscroll = function() {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/hla/sites/cea/*"},{"not":{"href_matches":["/hla/sites/cea/wp-*.php","/hla/sites/cea/wp-admin/*","/hla/sites/cea/wp-content/uploads/sites/15/*","/hla/sites/cea/wp-content/*","/hla/sites/cea/wp-content/plugins/*","/hla/sites/cea/wp-content/themes/child_theme/*","/hla/sites/cea/wp-content/themes/ag-2020/*","/hla/sites/cea/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<script type="text/javascript">
+			(function() {
+				let targetObjectName = 'EM';
+				if ( typeof window[targetObjectName] === 'object' && window[targetObjectName] !== null ) {
+					Object.assign( window[targetObjectName], []);
+				} else {
+					console.warn( 'Could not merge extra data: window.' + targetObjectName + ' not found or not an object.' );
+				}
+			})();
+		</script>
+		<script id="imagesloaded-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/imagesloaded.min.js?ver=5.0.0"></script>
+<script id="masonry-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/masonry.min.js?ver=4.2.2"></script>
+<script id="jquery-masonry-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b"></script>
+<script id="wp-hooks-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://www.purdue.edu/hla/sites/cea/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.6"></script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.purdue.edu\/hla\/sites\/cea\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.6"></script>
+<script id="jquery-issuem-flexslider-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/issuem/js/jquery.flexslider-min.js?ver=2.9.1"></script>
+<script id="bootstrap-js-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/themes/ag-2020/assets/dist/js/bootstrap.min.js?ver=1774378298"></script>
+<script id="wp-accessibility-js-extra">
+var wpa = {"skiplinks":{"enabled":false,"output":""},"target":"","tabindex":"","underline":{"enabled":false,"target":"a"},"videos":"","dir":"ltr","viewport":"1","lang":"en-US","titles":"1","labels":"1","wpalabels":{"s":"Search","author":"Name","email":"Email","url":"Website","comment":"Comment"},"alt":"","altSelector":".hentry img[alt]:not([alt=\"\"]), .comment-content img[alt]:not([alt=\"\"]), #content img[alt]:not([alt=\"\"]),.entry-content img[alt]:not([alt=\"\"])","current":"","errors":"","tracking":"","ajaxurl":"https://www.purdue.edu/hla/sites/cea/wp-admin/admin-ajax.php","security":"18342a6aba","action":"wpa_stats_action","url":"https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/","post_id":"2429","continue":"","pause":"Pause video","play":"Play video","restUrl":"https://www.purdue.edu/hla/sites/cea/wp-json/wp/v2/media","ldType":"button","ldHome":"https://www.purdue.edu/hla/sites/cea","ldText":"\u003Cspan class=\"dashicons dashicons-media-text\" aria-hidden=\"true\"\u003E\u003C/span\u003E\u003Cspan class=\"screen-reader\"\u003ELong Description\u003C/span\u003E"};
+//# sourceURL=wp-accessibility-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="wp-accessibility-js" src="https://www.purdue.edu/hla/sites/cea/wp-content/plugins/wp-accessibility/js/wp-accessibility.min.js?ver=2.3.5"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.purdue.edu/hla/sites/cea/wp-includes/js/wp-emoji-release.min.js?ver=7.1"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://www.purdue.edu/hla/sites/cea/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body>
+
+</html>
+
+<!-- Dynamic page generated in 0.781 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2026-09-17 09:37:10 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

@@ -1,0 +1,33 @@
+{
+  "site_id": "longyearbyen",
+  "model": "MRI-ESM2-0",
+  "scenario": "historical",
+  "variable": "tasmin",
+  "year": 2011,
+  "url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2011_v2.0.nc?var=tasmin&north=78.125&south=78.125&west=15.625&east=15.625&time_start=2011-01-01T00%3A00%3A00Z&time_end=2011-12-31T23%3A59%3A59Z&accept=netcdf3&addLatLon=true",
+  "catalog_path": "AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2011_v2.0.nc",
+  "accessed_at_utc": "2026-09-22T21:31:31.921013+00:00",
+  "sha256": "6658be3c90ea760c1211ad13d6faf60b5221be9aebede61621c3afb272baa500",
+  "local_path": "data/north/rebuild_climate/raw/longyearbyen/MRI-ESM2-0/historical/tasmin_2011.nc",
+  "bytes": 7108,
+  "day_count": 365,
+  "units": "K",
+  "grid": {
+    "latitude": 78.125,
+    "longitude": 15.625
+  },
+  "attributes": {
+    "version": "2.0",
+    "variant_label": "r1i1p1f1",
+    "cmip6_source_id": "MRI-ESM2-0",
+    "cmip6_institution_id": "MRI",
+    "cmip6_license": "CC-BY-SA 4.0",
+    "source": "BCSD",
+    "creation_date": "Sat Nov 16 19:14:47 PST 2024",
+    "tracking_id": "41fc533f-21e1-46b7-a2f3-45331e19687a",
+    "resolution_id": "0.25 degree",
+    "calendar": "proleptic_gregorian"
+  },
+  "classification": "SOURCED_CLIMATE_MODEL",
+  "previous_failed_attempts": []
+}

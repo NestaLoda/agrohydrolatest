@@ -1,0 +1,45 @@
+{
+  "verified_at": "2026-09-22T16:00:54.511Z",
+  "version": "0.5.1",
+  "checks": [
+    {
+      "test": "Konya automatically loads sourced context and calculates five-crop pattern before any user interaction",
+      "passed": true,
+      "run_id": "fd9749fc47b46597dcd4d0e6"
+    },
+    {
+      "test": "Automatic start preserves explicit water -20% scenario rerun",
+      "passed": true
+    },
+    {
+      "test": "Selecting Şanlıurfa automatically calculates its official four-crop baseline without manual inputs",
+      "passed": true
+    },
+    {
+      "test": "Future North automatically derives climate indicators and three candidate diagnostics while distinguishing missing full-production inputs",
+      "passed": true,
+      "records": 7305,
+      "production_input_applied": false
+    },
+    {
+      "test": "Selecting SSP245 and SSP585 recomputes different indicators from verified daily data",
+      "passed": true,
+      "ssp245_gdd5": 41.188368600000004,
+      "ssp585_gdd5": 18.535751,
+      "ssp245_precipitation": 590.662240236,
+      "ssp585_precipitation": 679.9996871335
+    },
+    {
+      "test": "Automatic diagnosis does not fabricate local yield, water allocation or claim optimizer coefficients are connected",
+      "passed": true
+    },
+    {
+      "test": "Explicit engineering scenario remains behind collapsed advanced section and is not promoted to sourced production",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "http_errors": [],
+  "external_requests": [],
+  "passed": true
+}

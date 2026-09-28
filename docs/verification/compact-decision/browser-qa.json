@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-09-22T19:20:47.394Z",
+  "desktopOnly": true,
+  "checks": [
+    {
+      "check": "main canvas substantially shorter with charts and closed detail tables",
+      "pass": true,
+      "before": {
+        "canvasHeight": 794,
+        "contentHeight": 2677,
+        "viewport": 1330
+      },
+      "after": {
+        "advice": " Karar desteğiHESAPLANAN DESENDesen değişiminden 719.291.142 m³ (%8,2) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.ÖneriBuğday +24,5 puan; Arpa −14 puan; 1.252.478 ha ekim.Neden?Üretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 5.884, Arpa 6.963 m³/ha; Arpa üretim alt sınırında.DikkatArpa üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın.",
+        "canvasHeight": 794,
+        "charts": [
+          "Ürün payları",
+          "Ürünlere göre su"
+        ],
+        "contentHeight": 881,
+        "openTables": 0,
+        "viewport": 1330
+      }
+    },
+    {
+      "check": "live edits keep decision advice marked as previous run",
+      "pass": true,
+      "evidence": "Karar desteği\nÖNCEKİ KOŞU · yeniden simüle edin\n\nDesen değişiminden 719.291.142 m³ (%8,2) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nBuğday +24,5 puan; Arpa −14 puan; 1.252.478 ha ekim.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 5.884, Arpa 6.963 m³/ha; Arpa üretim alt sınırında.\nDikkat\nArpa üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+    },
+    {
+      "check": "rerun updates actual decision advice and production tradeoff",
+      "pass": true
+    },
+    {
+      "check": "zero available water gives a concrete missing-source reason and no invented plan",
+      "pass": true,
+      "evidence": "Karar desteği\nSİMÜLASYON\n\nMiktar önerisi için hesap girdileri tamamlanmalı.\n\nÖneri\nGeçerli çözüm olmadan yeni ürün miktarı önerilmiyor.\nHesap koşulu\nEksik veya uygun bulunmayan ürün / kaynak girdileri öneriyi durduruyor.\nSonraki adım\nÖnce kontrol edin: Su kaynağı kapalı veya kapasitesi sıfır."
+    },
+    {
+      "check": "infeasible low-water case explains binding decision without relaxing constraints",
+      "pass": true,
+      "evidence": "Karar desteği\nSİMÜLASYON\n\nBu koşullarda uygulanabilir ürün deseni bulunamadı.\n\nÖneri\nGeçerli çözüm olmadan yeni ürün miktarı önerilmiyor.\nHesap koşulu\nÜretim / alan alt sınırları, izin verilen seçenekler ve kaynaklar birlikte sağlanamıyor; sınırlar otomatik gevşetilmedi.\nSonraki adım\nÖnce kontrol edin: Su kaynağı kapalı veya kapasitesi sıfır."
+    },
+    {
+      "check": "Trakya advice labels known-water subtotal and held rice",
+      "pass": true,
+      "evidence": "Karar desteği\nHESAPLANAN DESEN\n\nBilinen ürünlerde 223.878.010 m³ (%16,4) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nBuğday +20,6 puan; Ayçiçeği −19,6 puan; 323.328 ha ekim.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 3.327, Ayçiçeği 6.754 m³/ha; Ayçiçeği üretim alt sınırında.\nDikkat\nÇeltik alanı sabit; toplam su verisi eksik; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+    },
+    {
+      "check": "regional recommendation reasons derive from each region, partial badge retained",
+      "pass": true,
+      "evidence": [
+        {
+          "region": "seyhan_adana",
+          "advice": "Karar desteği\nHESAPLANAN DESEN\n\nDesen değişiminden 178.113.196 m³ (%9) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nBuğday +28,4 puan; Dane mısır −13,5 puan; 294.433 ha ekim.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 5.495, Dane mısır 7.967 m³/ha; Dane mısır üretim alt sınırında.\nDikkat\nDane mısır üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+        },
+        {
+          "region": "gediz_manisa",
+          "advice": "Karar desteği\nHESAPLANAN DESEN\n\nDesen değişiminden 135.337.246 m³ (%14,8) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nBuğday +22,6 puan; Arpa −12,6 puan; 141.483 ha ekim.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 4.569, Arpa 7.157 m³/ha; Arpa üretim alt sınırında.\nDikkat\nArpa üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+        },
+        {
+          "region": "gap_sanliurfa",
+          "advice": "Karar desteği\nHESAPLANAN DESEN\n\nDesen değişiminden 861.660.755 m³ (%8,7) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nBuğday +28,6 puan; Pamuk −12,4 puan; 790.896 ha ekim.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 10.346, Pamuk 16.960 m³/ha; Pamuk üretim alt sınırında.\nDikkat\nPamuk üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+        },
+        {
+          "region": "trakya_edirne",
+          "advice": "Karar desteği\nKISMİ ÖNERİ\n\nBilinen ürünlerde 223.878.010 m³ (%16,4) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nBuğday +20,6 puan; Ayçiçeği −19,6 puan; 323.328 ha ekim.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 3.327, Ayçiçeği 6.754 m³/ha; Ayçiçeği üretim alt sınırında.\nDikkat\nÇeltik alanı sabit; toplam su verisi eksik; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+        }
+      ]
+    },
+    {
+      "check": "full graph tab retains analysis without repeating fields or opening tables",
+      "pass": true,
+      "evidence": {
+        "charts": 2,
+        "fields": 0,
+        "openTables": 0
+      }
+    },
+    {
+      "check": "ideal scenario advice reflects its 80 percent production floor, no fixed 50 percent claim",
+      "pass": true,
+      "evidence": "Karar desteği\nHESAPLANAN DESEN\n\nDesen değişiminden 227.144.606 m³ (%3,3) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nBuğday +9,8 puan; Arpa −5,6 puan; 1.252.478 ha ekim.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 4.645, Arpa 5.497 m³/ha; Arpa üretim alt sınırında.\nDikkat\nArpa üretimi %20 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+    },
+    {
+      "check": "no browser console errors",
+      "pass": true,
+      "evidence": []
+    }
+  ]
+}

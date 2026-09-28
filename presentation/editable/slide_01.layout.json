@@ -1,0 +1,27 @@
+{
+  "slideNumber": 1,
+  "width": 2560,
+  "height": 1440,
+  "backgroundAsset": "../assets/slide_01_environment_concept.png",
+  "backgroundClassification": "GENERATED_DECORATIVE_CONCEPT_NOT_FIELD_PHOTOGRAPH",
+  "text": [
+    {"id":"brand", "text":"AgroHydro", "x":152, "y":124, "width":570, "height":60, "size":44, "weight":700, "color":"#B9F6D0"},
+    {"id":"context", "text":"ARKTİK MÜLAKAT SUNUMU", "x":1830, "y":134, "width":578, "height":36, "size":24, "weight":400, "color":"#F3F7F2", "align":"right"},
+    {"id":"title-first", "text":"DESENDEN", "x":146, "y":330, "width":1170, "height":154, "size":128, "weight":700, "color":"#F3F7F2"},
+    {"id":"title-second", "text":"DENGEYE", "x":146, "y":474, "width":1170, "height":154, "size":128, "weight":700, "color":"#B9F6D0"},
+    {"id":"subtitle-first", "text":"Konya’dan Türkiye’ye,", "x":152, "y":665, "width":1190, "height":58, "size":42, "weight":400, "color":"#F3F7F2"},
+    {"id":"subtitle-second", "text":"Türkiye’den geleceğin Kuzey üretimine.", "x":152, "y":720, "width":1210, "height":58, "size":42, "weight":400, "color":"#F3F7F2"},
+    {"id":"flow-konya", "text":"KONYA", "x":152, "y":832, "width":170, "height":47, "size":31, "weight":700, "color":"#B9F6D0"},
+    {"id":"flow-arrow-one", "text":"→", "x":332, "y":826, "width":65, "height":52, "size":39, "weight":400, "color":"#F3F7F2"},
+    {"id":"flow-turkey", "text":"TÜRKİYE", "x":435, "y":832, "width":217, "height":47, "size":31, "weight":700, "color":"#F3F7F2"},
+    {"id":"flow-arrow-two", "text":"→", "x":665, "y":826, "width":65, "height":52, "size":39, "weight":400, "color":"#F3F7F2"},
+    {"id":"flow-north", "text":"KUZEY / ARKTİK", "x":768, "y":832, "width":445, "height":47, "size":31, "weight":700, "color":"#62CDE0"},
+    {"id":"team-ferit", "text":"Ferit Bora Akman", "x":152, "y":1235, "width":337, "height":50, "size":32, "weight":400, "color":"#F3F7F2"},
+    {"id":"team-cem", "text":"Cem Ural", "x":546, "y":1235, "width":224, "height":50, "size":32, "weight":400, "color":"#F3F7F2"},
+    {"id":"team-baha", "text":"Ali Baha Demir", "x":813, "y":1235, "width":367, "height":50, "size":32, "weight":400, "color":"#F3F7F2"},
+    {"id":"institution", "text":"Kartal Bilim ve Sanat Merkezi", "x":152, "y":1311, "width":1190, "height":43, "size":29, "weight":400, "color":"#C9DAD6"},
+    {"id":"page", "text":"01", "x":2335, "y":1311, "width":73, "height":43, "size":29, "weight":400, "color":"#C9DAD6", "align":"right"}
+  ],
+  "reservedLogoArea": {"x":2070, "y":50, "width":338, "height":50, "state":"EMPTY_NO_VERIFIED_LOGO"},
+  "speakerNotePath": "../notes/slide_01.md"
+}

@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-09-23T07:54:45.350Z",
+  "checks": [
+    {
+      "check": "Fixed dated reference on initial load",
+      "at": "2026-09-23T07:50:38.973Z",
+      "text": "Referans iklime göre ne değişti?\n1995–2014 → 2050\nÜrün oranları aynı kaldı.\nTopraksız üretim %95,2 → %94,7\nYeni su ihtiyacı %0,6 arttı.\nEnerji gereği aynı düzeyde.\nAynı alan, amaç ve altyapı; yalnız iklim değişiyor. Referans 1995–2014 model iklimidir, bugünkü ekiliş ölçümü değildir. Enerji: seçilen ısıtma verimiyle elektrik eşdeğeri."
+    },
+    {
+      "check": "2050→2090 and 2030→2090 produce identical fixed-reference comparison",
+      "passed": true,
+      "text": "Referans iklime göre ne değişti?\n1995–2014 → 2090\nÜrün oranları aynı kaldı.\nTopraksız üretim %95,2 → %94,4\nYeni su ihtiyacı %1 arttı.\nEnerji gereği aynı düzeyde.\nAynı alan, amaç ve altyapı; yalnız iklim değişiyor. Referans 1995–2014 model iklimidir, bugünkü ekiliş ölçümü değildir. Enerji: seçilen ısıtma verimiyle elektrik eşdeğeri."
+    },
+    {
+      "check": "Energy categories and units explained",
+      "at": "2026-09-23T07:52:26.511Z",
+      "text": "Enerji neden gerekiyor?\nBu planda en büyük enerji kalemi üretim ortamını çalıştırmak. Hesabı aç\n119.446\nkWh / yıl · model hesabı\n\nKapalı üretimde suyu tekrar kullanabiliriz; bunun için ışık, pompalar ve ortam kontrolü çalışır. Model, su ihtiyacını azaltırken gereken enerjiyi de hesaba katar.\n\nÜretimi çalıştır\n117.880 kWh/yıl\n\nBitki ışıkları, su dolaşımı, havalandırma, nem alma ve soğutma.\n\nGereken ısıyı sağla\n1.566,2 kWh/yıl\n\nSistemin 1.566 kWh ısı ihtiyacının, seçilen ısıtma verimiyle elektrik karşılığı.\n\nDeniz suyunu arıt\n0 kWh/yıl\n\nPlanın kullandığı deniz suyundan tuzu ayırmak için gereken elektrik.\n\nToplam nasıl hesaplandı? Üretim elektriği + arıtma elektriği + ısı ihtiyacı ÷ ısıtma verimi (COP 1). Isı ve arıtma yukarıdaki toplamın içindedir; bir kez sayılır. COP 1, modelde 1 kWh elektrikle 1 kWh ısı sağlandığı varsayımıdır. Soğuk kaynak suyunu ısıtmak gerekiyorsa o ısı da hesaba dahildir.\n\nKarar: Ölçeği büyütmeden önce bu yıllık enerji ihtiyacını karşılayacak kaynağı ve en yoğun dönemde gereken gücü doğrula. Soldaki “Enerji önceliği” ile ürün miktarını ne kadar koruyacağını seçip su–enerji dengesini yeniden sına.\n\n1 kWh, 1 kW gücündeki bir cihazın 1 saatlik enerji kullanımıdır. Buradaki değer seçilen dönemin ortalama yıllık ihtiyacıdır; elektrik faturası, kurulu güç veya yerelde hazır enerji kapasitesi değildir. Işık ve pompa payları bu sonuçta ayrı raporlanmadığı için ayrı yüzdeler gösterilmiyor."
+    },
+    {
+      "check": "field_sample_text",
+      "text": "MODEL → GÖZLEM → AYNI KARAR MOTORU\nAraştırma hedefleri\nPRE / POST karşılaştırması\nÜretim pilotu\nKararın ihtiyaç duyduğu saha kanıtı\n\nPWN projenin saha aracıdır. Günümüz su kolonunu model beklentisiyle karşılaştırır; gelecek iklimini veya yıllık karasal su miktarını ölçmez.\n\nHangi belirsizlik kararı etkiliyor?\nDUYARLI\nAktarılan ürün verimi\nEDEN ISS gözlenen min–maks; güven aralığı değil · sınananlarda en çok 73.91 m² alan, %34.7 hasat, %2.99 elektrik eşdeğeri ve 0.01 m³ arıtılmış su farkı.\nKanıt / ölçüm bağı\nBaşka veri gerekir\nDUYARLI\nYapı / kontrollü su-enerji parametreleri\nKaynaklı fizik ve açık mühendislik aralıkları · sınananlarda en çok 0.39 m² alan, %0.0 hasat, %42.16 elektrik eşdeğeri ve 10.11 m³ arıtılmış su farkı.\nKanıt / ölçüm bağı\nBaşka veri gerekir\nDUYARLI\nGelecek iklimi\n3 ayrı iklim modeli · sınananlarda en çok 0.29 m² alan, %0.0 hasat, %0.06 elektrik eşdeğeri ve 3.02 m³ arıtılmış su farkı.\nKanıt / ölçüm bağı\nBaşka veri gerekir\nDUYARLI\nToplama / kullanılabilir yağış\nToplanabilir su ×0,5–1,5; mühendislik stres testi · sınananlarda en çok 0.00 m² alan, %0.0 hasat, %0.01 elektrik eşdeğeri ve 2.66 m³ arıtılmış su farkı.\nKanıt / ölçüm bağı\nBaşka veri gerekir\nSINANAN ARALIKTA SABİT\nDeniz kaynak sıcaklığı\nKaynak senaryosu -1.0–8.0 °C; yerel ölçüm değil · sınananlarda en çok 0.00 m² alan, %0.0 hasat, %0.00 elektrik eşdeğeri ve 0.00 m³ arıtılmış su farkı.\nKanıt / ölçüm bağı\nPWN: ölçülebilir\nSINANAN ARALIKTA SABİT\nDeniz kaynak tuzluluğu\nKaynak senaryosu 25.0–37.0 g/kg; yerel ölçüm değil · sınananlarda en çok 0.00 m² alan, %0.0 hasat, %0.00 elektrik eşdeğeri ve 0.00 m³ arıtılmış su farkı.\nKanıt / ölçüm bağı\nPWN: ölçülebilir\nEK ARAŞTIRMA\nMevsimsel karasal tatlı su tahsisi\nVarsayılan tahsis 0 bir koruma politikasıdır. Isdammen hacmi tarımsal tahsis sayılmaz; havza, depolama, diğer kullanımlar ve altyapı gerekir.\nKanıt / ölçüm bağı\nBaşka veri gerekir\nEK ARAŞTIRMA\nParsel toprağı / permafrost / yapı zemini\nAçık tarla planına alan verilmedi. MOSJ çevresel gözlemi, parsel uygunluğu veya geleceğin zemin onayı değildir.\nKanıt / ölçüm bağı\nBaşka veri gerekir\nEK ARAŞTIRMA\nKaynak suyu kimyası / ön arıtma\nİzinli fiziksel örnek ve uzman onaylı panel gerekir. İyonlar, kirlenme ve membran uyumu yalnız tuzlulukla çözülmez.\nKanıt / ölçüm bağı\nNumune · izinle\n“Karar korundu” yalnız sınanan aralık için geçerlidir. Profilin karar üzerinde etkisi olmayabilir; enerji gereği yine değişebilir.\nA / Su kolonu\n\nİletkenlik/tuzluluk, sıcaklık, basınç/derinlik, UTC, konum ve kalibrasyon. Beklentiyi ölçümden önce dondur.\n\nB / Fiziksel örnek\n\nİzin ve erişime göre deniz, tatlı su veya kar/erime suyu örneği: kaynağı ayrı kaydet; tuzluluk ve üretimde kullanılabilirliği incele. Gerekli kimya, örnek sayısı ve derinlik uzman/laboratuvarla belirlenir. Deniz örneği kar suyunu temsil etmez.\n\nC / Karar etkisi\n\nYalnız desteklenen kaynak suyu girdilerini güncelle. Aynı motoru çalıştır; değişiklik çıkmaması da geçerli sonuçtur."
+    }
+  ],
+  "dimensions": {
+    "canvasHeight": 904,
+    "canvasScroll": 1266,
+    "height": 1000,
+    "scrollHeight": 1000,
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  "consoleErrors": [],
+  "mobileTested": false
+}

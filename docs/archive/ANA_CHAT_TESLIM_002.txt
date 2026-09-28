@@ -1,0 +1,178 @@
+ANA SOHBETE TESLİM — 2204-D → TÜRKİYE → FUTURE NORTH / TASE-VII
+Teslim: 002 | Güncelleme: 22 Eylül 2026, 15:11 Türkiye saati | Yazılım: 0.2.0
+Çalışma alanı: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+
+Bu dosya ana sohbete tek başına yüklenebilir veya içeriği yapıştırılabilir. Güncel durumu ve önceki teslimlerin geçerli sonuçlarını birleştirir. Ayrıntılı tamamlanma kaydı docs/BUILD_STATUS.md'dir. Buradaki yerel dosya yollarına başka bir sohbetin erişebildiği varsayılmaz. Kaynaklı veri, kullanıcı beyanı, hesap, plan ve gerçek ölçüm ayrı tutulur.
+
+1. BU İŞ PAKETİNİN AMACI VE SONUCU
+
+Kullanıcının PRODUCT + SCIENCE REFOCUS talimatıyla mevcut yeni uygulama geliştirildi. Bilimsel mimari korunuyor; proje yeniden başlatılmadı. Sekiz adımlı sunum akışı, beş çalışma alanlı araştırma/karar dashboard'una dönüştürüldü. Arayüz, veri ve hesap kontrolleri tamamlandı; yerel gösterim hazır.
+
+Ana çalışma alanı Kuzey üretim kararıdır. Türkiye karşılaştırması beş bölgeye çıktı. PWN cihaz/gözlem destek modülü; ana proje kimliği su yönetimi ve sürdürülebilir üretimdir. Eski Konya yazılımı bu yeni uygulamanın codebase'i değildir. Konya raporu bilimsel predecessor olarak korunur.
+
+Bu tur gerçek veri de genişledi: altı noktada 4.380 günlük ERA5 kaydı ve Longyearbyen için 14.610 günlük dış iklim modeli çıktısı yerelde saklanıyor. Yeni kısıt açıklamaları, karşılaştırma hesapları ve saha eşleştirme API'si çalışıyor. 99 backend/veri/API testi geçti. Gerçek tank veya Arktik ölçümü hâlâ yok.
+
+2. DEĞİŞMEYEN BİLİMSEL HİKÂYE
+
+Ana soru: İklim değişikliğiyle kuzeye kayan üretim potansiyelinin ne kadarı su ve enerji açısından uygulanabilir; hangi üretim sistemi bunu mümkün kılar?
+
+Konya pilotu → Türkiye transferi → gelecekte kuzeye değişen iklimsel uygunluk → su güvenliği → üretim sistemi deseni → Arktik saha gözlemi → uygun veriyle kalibrasyon → sürdürülebilir üretim sınırı.
+
+Karar birimi ürün + üretim yöntemi + su kaynağı + dönem + su/enerji koşulları. İklimsel uygunluk, sürdürülebilir üretim uygunluğuyla aynı değildir. Deniz kolonundaki freshwater sinyali, doğrudan tarımsal sulama suyu veya karasal yıllık arz sayılmaz.
+
+PWN araştırmanın gözlem katmanıdır. v0.1 kontrollü tank prensip gösterimi; research-grade CTD değildir. Arctic v1 seçilme ve uzman geri bildirimiyle geliştirilecek. Analiz paneli, sefer istasyonu ve örnek sayısı kilitlenmedi. Görüşülmemiş araştırmacı danışman yazılmadı.
+
+U6 IMPLEMENTATION UNLOCK kodlama iznini verdi. U7 PRODUCT REFOCUS ürün/UX önceliğini belirliyor. Geçmiş TXT fikirleri araştırma günlüğüdür; güncel kullanıcı talimatının önüne geçmez. Kararlaştırılmış bilimsel yön gereksiz yere yeniden tartışılmıyor.
+
+3. ÜRÜN DENETİMİ VE YENİ MİMARİ
+
+Önceki sorun: sekiz ayrı adım, büyük sayfa başlıkları, doğrusal sonraki-adım akışı, sonuçtan ayrı girdiler. Harita daha çok anlatı bağlamıydı. Kısıtların ve alternatif kararların yan yana incelenmesi zayıftı. Bu, kullanıcı değerlendirmesi ve mevcut kod/ekran incelemesine dayanan ürün denetimidir; istatistiksel kullanıcı araştırması değildir.
+
+Yeni beş alan:
+- #north — varsayılan Kuzey karar alanı. Üretim kararı, ölçümün karar etkisi ve iklim bağlamı alt panelleri.
+- #turkiye — beş bölgenin ortak varsayımlarla karşılaştırılması; bölge seçimi, harita, matris, iklim grafiği, bütçe kontrolü.
+- #pwn — CSV içe aktarımı, kalite, profil, klasik gradient, Arctic v1 protokol konsepti.
+- #evidence — kaynaklar, veri sınıfları, provenans ve yöntem sınırları.
+- #pilot — Konya'nın kısa bilimsel kökeni ve rapor bağlantısı.
+
+Kalıcı yan gezinme, bölge/SSP bağlamı, son kuzey karar özeti ve kanıt çekmecesi. Girdi değiştiğinde eski hesap işaretlenir. Karar sabitlenerek sonraki hesapla karşılaştırılır. Çalışma alanları arasında gezinirken yüklenen PWN ve karar girdileri korunur.
+
+Üstteki SSP seçimi Xu vd. dış literatür bağlamıdır; tek modelden indirilen yerel kuzey projeksiyonunu değiştirmez. Sayısal su/enerji bütçeleri kullanıcı senaryosudur; ölçülmüş yerel tahsis diye sunulmaz.
+
+A–G teslim ayrıntısı: docs/PRODUCT_REFOCUS.md.
+
+4. TÜRKİYE BENCHMARK SETİ VE VERİSİ
+
+Seçilen beş nokta:
+1) Konya — eski pilotla süreklilik; iç havza/yeraltı suyu bağlamı.
+2) Seyhan–Adana — ilk transfer; Aşağı Seyhan buğday ve sektörel su kullanımı.
+3) Gediz–Manisa — Batı Türkiye tahıl üretimi ve kuraklıkta sektörel paylaşım.
+4) GAP–Harran/Şanlıurfa — Güneydoğu sulama/drenaj altyapısı ve farklı atmosferik talep.
+5) Trakya–Edirne — kuzeybatıda kışlık buğday ve farklı sıcaklık/yağış serisi.
+
+Seçim gerekçeleri Bakanlık/il müdürlükleri, DSİ ve GAPTAEM kaynaklarıyla kaydedildi. Bunlar güncel çekilebilir su miktarı veya verim kalibrasyonu sağlamaz. Beş nokta ülkenin istatistiksel örneklemi değildir. Havza/il adları bağlam etiketidir; geometrik havza ortalaması işlenmedi.
+
+Kaynak: Open-Meteo Archive API, models=era5, 2022-01-01–2023-12-31, günlük UTC; Tmin, Tmax, yağış, ET0. Her noktada 730 gün. Beş Türkiye noktası 3.650 kayıt; ayrı kuzey bağlamı Longyearbyen ile toplam 4.380. Dört değişkende eksik yok. Talep koordinatı ile gerçek model hücresi metadata'da ayrı. Reanaliz, istasyon ölçümü ve uzun dönem iklim normali değildir.
+
+2023 yıllık yağış / ET0 (mm): Konya 368,70 / 1.342,66; Seyhan 668,90 / 1.449,40; Gediz 988,60 / 1.273,79; Harran 332,80 / 1.842,57; Edirne 473,70 / 1.237,75. Bunlar iklim girdisidir; doğrudan sulama açığı değildir.
+
+Ortak karşılaştırma: 1 ha, kış buğdayı, 1 Kasım 2022 başlangıç, FAO örnek 240 günlük takvim; 30/140/40/30 günlük aşamalar, ortak Kc; varsayılan depo 60 mm, başlangıç 30 mm. Kullanıcı ortak depo ve bütçeyi değiştirebilir. Net bütçe karşılaştırması max(referans ET açığı−net bütçe,0) hesabıdır; sulama zamanlaması/verim modeli değildir.
+
+Yerel gerçek fenoloji, çeşit, toprak su tutma kapasitesi, sulama uygulaması/randımanı, su hakkı ve bağımsız verim verileri sonraki doğrulama gereksinimidir. Longyearbyen Türkiye buğday matrisine katılmaz.
+
+Kaynak ve veri planı: docs/TURKIYE_BENCHMARKS.md, data/benchmark_context.json, data/manifest.json, docs/DATA_ACCESS_LOG.md.
+
+5. KUZEY İKLİM VERİSİ — ARTIK GERÇEK BİR PAKET VAR
+
+Open-Meteo Climate API / EC_Earth3P_HR. Tek CMIP6 HighResMIP modeli; API seçilebilir SSP sağlamıyor. Sağlayıcı zorlamayı RCP8.5'e yakın diye tanımlıyor. SSP, ensemble üyesi ve özgün sürüm bilinmeyen metadata alanları null; uydurulmadı. İki dönemde bias correction kapalı.
+
+Dönemler: 1995–2014 ve 2030–2049. Her biri 7.305, toplam 14.610 günlük satır. Üç değişkende eksik yok. İstenen Longyearbyen noktası 78,22/15,65; dönen hücre 78,046875/15,8203125.
+
+Dönem ortalamaları:
+- GDD5: 17,93 → 48,1425 °C·gün/yıl.
+- En uzun kesintisiz Tmin>0 penceresi: 39,55 → 69,70 gün/yıl.
+- Yağış: 496,305 → 571,845 mm/yıl.
+
+Bu, dış model çıktısından hesapladığımız göstergedir; kendi iklim modelimiz veya doğrulanmış marul uygunluğu değildir. Tek hücre/model bütün kuzeyi doğrulamaz. Yağış çekilebilir su sayılmaz; hava sıcaklığı deniz suyu sıcaklığına dönüştürülmez.
+
+Veri kalite incelemesi iki problemi yakaladı: bias correction açık ilk tarihsel cevapta 108 gün Tmin>Tmax; ilk gelecek isteğinde 2050'nin 365 günü null. Değerler düzeltilmiş gibi yapılmadı. İlk çıktılar saklandı; iki tam 20 yıl için gelecek dönem 2030–2049'a açıkça değiştirildi. Çalışan gösterim gerçek dönemleri kullanır.
+
+Xu vd. 2026'nın SSP1-2.6/SSP5-8.5 altında 2071–2100 için 331/739 km ortalama kuzeye iklim sınırı değişimi ayrı DIŞ LİTERATÜR sonucudur. Yedi ürünün geniş coğrafi sonucu, yerel modelimiz veya gerçekleşmiş tarım göçü değildir.
+
+Minimum zincir: iklimsel bağlam → zemin/permafrost → güvenilir su → kaynak kalite/arıtma → üretim yöntemi → enerji → koşullu üretim deseni. Zemin, yerel su ve Arktik enerji/verim eksikleri görünür. Tam coğrafi sustainable production frontier haritası henüz hesaplanmaz.
+
+Kaynaklar ve sonraki dar veri işi: docs/NORTH_DATA_PLAN.md, data/north/summary.json, annual_metrics.csv, daily.csv; scripts/ingest_north.py.
+
+6. ÇALIŞAN KARAR VE SAHA BAĞLANTISI
+
+SciPy/HiGHS aynı marul kg hedefinde su/enerji/üretim kapasitesi kısıtlarını uygular. Açık tarla ve hidroponik × tatlı su/arıtılmış deniz suyu. Barbosa 2015 Arizona karşılaştırmasından aktarılmış katsayılar: açık tarla 250 L/kg ve 1.100 kJ/kg; hidroponik 20 L/kg ve 25 kWh/kg. Arktik ısıtma/ışık hesabı değildir.
+
+Yeni: her kısıtın kullanımı, kalan kapasitesi, bağlayıcılığı; tercih ve elenme nedenleri; bütçe hedefi karşılamıyorsa maksimum desteklenebilen kg. Bilinmeyen zemin/iklim uygun kabul edilmez. Desteklenmeyen arıtma koşulunda enerji sıfır yazılmaz. İki amaç çözümü tam Pareto eğrisi sayılmaz.
+
+Kaynak suyu sıcaklık hesabı tek RO çalışmasının 5–18°C aralığında açıklayıcı interpolasyon. Tuzluluğun enerji etkisi sayısallaştırılmadı. ±%15 senaryo payı güven aralığı değildir; daha soğuk su için veri yetersiz.
+
+Saha paneli: model beklentisi → konum/UTC/derinlik/sıcaklık türü eşleştirmesi → residual → kaynak suyu arıtma etkisi → önce/sonra karar. Konum/zaman/derinlik veya değişken tanımı uyuşmazsa karar güncellenmez.
+
+Gösterim: 1.000 kg marul, 10 m³ tatlı su, 10 m³ arıtılmış su; 10°C kaynakta yaklaşık 25.103,94 kWh, 5°C kaynakta 25.120,75 kWh. 25.110 kWh bütçede ilk durum koşullu, ikinci durum yetersizdir. Eşik özellikle gösterim için seçildi; gözlenmiş Arktik tasarrufu değildir. Daha geniş bütçede enerji değişip karar aynı kalabilir.
+
+Arayüzdeki eşleştirme açık SİMÜLASYON. Gerçek dış profil API yolu kayıtlı dış veri kimliği, satır, kaynak URL'si, ham hash, kalite OK, GPS/UTC, basınçtan derinlik ve açık in_situ sıcaklık tanımı ister. Tank/simülasyon deniz gözlemi kabul edilmez. Deniz modeli dosyası henüz otomatik alınmıyor; gerçek profil yolunda beklenti ve model URL'si açık kullanıcı beyanıdır. Eşleştirme toleransları uzmanla kesinleşecek. Tek çift otomatik kalibrasyon veya güven yüzdesi üretmez.
+
+Arktik gerekliliğinin yeri: hava/iklim verisi, hedef su kolonunun o anki C/T/p profilinin yerine geçmez. Gözlem yalnız temsil ilişkisi gösterilen ilgili kaynak suyu alt hesabına taşınabilir; deniz profili karasal yıllık su arzını doğrulamaz.
+
+7. PWN VE DİĞER ÖNCEKİ TESLİMLER
+
+Yazılım hazır: CSV yükleme, ham kayıt, kaynak türü/birim/kalite/zaman/derinlik kontrolleri, profil, klasik median/gradient ile geçiş adayı, örnekleme önerisi. 61 satırlık örnek profil simülasyondur. Kalibrasyonsuz ham sinyal EC/tuzluluk diye çevrilmez. Tank encoder mesafesi ile denizde gerçek basınç derinliği ayrıdır.
+
+Fiziksel PWN yapılmadı; tank/Arktik gerçek verisi, derlenmiş firmware, gerçek CAD yok. docs/PWN_TEACHER_BRIEF_TR.md (22 bölüm), hardware/pwn-v0.1 altında 9 belge ve 24 kalem BOM hazır. Arctic v1 altında 6 mühendislik belgesi hazır; reference CTD/sensör/deniz konuşlandırma ve numune paneli uzman geri bildirimine bağlı.
+
+AI eğitilmedi. Gradient ve LP klasik yöntemdir. Residual learning için eşleşmiş gerçek çiftler ve bağımsız değerlendirme gerekir.
+
+Önceki çalışmada tam 8.659 satırlık TXT, orijinal rapor, final sunum, motivasyon formu, 2027 çağrı ve Ulusal Kutup Bilim Stratejisi incelendi. İlk 19 bilimsel/stratejik belge ve iki anlatı görseli korunuyor. Geçmiş terk edilmiş fikirler docs/DECISIONS.md'de. Bu tur bütün eski dosyalar yeniden okunmuş gibi iddia edilmiyor; mevcut kayıt ve uygulama üzerinden devam edildi.
+
+Konya eski rapor sonucu: 15.702.550 → 14.338.276 göreli baskı endeksi, yaklaşık %8,688 model azalması. Ölçülmüş m³ tasarrufu değil. Buğday, arpa, dane mısır, şeker pancarı geçmiş pilotun ürünleri.
+
+Çağrı tasarımı: Barents Denizi, tamamen deniz üstü, yaklaşık 20–40 gün, hava/buz/lojistiğe bağlı rota; kara çalışmasına bağımlılık yok. Longyearbyen kesin sefer uğrağı sayılmıyor. Araştırmacı tek sayfa hazır ama gönderilmedi. Kimse danışman olarak kabul etmiş sayılmıyor.
+
+Ali Baha'nın 2204-D birinciliği ekibi ve 2204-C ikinciliği geçmişi kullanıcı beyanı/ekip anlatısı olarak korunur. 2204-D baştan Arktik için yapılmış denmez. Üç kişisel motivasyon formu tamamlanmış değil; gerçek kişisel roller bekleniyor. Önceki plan kaydındaki mülakat 30 Eylül 2026; formun kesin son teslim saati ayrıca doğrulanmalı, iç hedef 27 Eylül.
+
+8. DOĞRULAMA — SON ÇALIŞTIRILAN TARİH 22 EYLÜL 2026
+
+- 99 backend/veri/API testi geçti. Bir bağımlılık kullanımdan kaldırma uyarısı; başarısızlık yok.
+- Veri alt kümesindeki 11 test, 4.380 satır CSV/Parquet tam eşitliğini ve ham kaynak ilişkisini doğruladı.
+- 22 dış profil testi geçici UNIT_FIXTURE verileriyle çalıştı. Bunlar gerçek saha ölçümü değil.
+- React/TypeScript/Vite v0.2.0 üretim derlemesi geçti.
+- 22 Eylül 2026 15:10 Türkiye saati: 9 tarayıcı etkileşim kontrolü geçti. Beş çalışma alanı 1440 px masaüstü ve 390 px mobilde taşmadan açıldı; mobil tablolar kendi içinde kaydırılıyor.
+- Kontroller: varsayılan kuzey alanı; hesap/bağlayıcı kısıt/eski-sonuç uyarısı/sabitlenmiş karşılaştırma; gerçek kuzey model dönemleri; eşleşen simülasyon çiftinin karar eşiği etkisi; zaman uyumsuzluğunun güncellemeyi engellemesi; beş bölge/alt küme bütçe karşılaştırması; PWN örnek ve CSV kaynak kaydı/gezinmede korunması; korunmuş girdiler ve imkânsız bütçede plan üretilmemesi; kanıt çekmecesi/Escape.
+- Sayfa hatası, başarısız HTTP yanıtı ve dış HTTP(S) isteği sıfır. Yayın bağlantılarını dışarıda açmak çevrimdışı test kapsamında değil.
+- Yeni makine okunur kayıt docs/verification/dashboard-smoke.json; ekranlar dashboard-north.png, dashboard-turkiye.png, dashboard-field.png, dashboard-pwn.png ve dashboard-mobile.png. Kanıt başlıklarındaki ve mobil tablodaki taşmalar düzeltilip tekrar doğrulandı.
+- Önceki 55 test ve sekiz ekran tarayıcı kaydı yalnız v0.1 tarihçesidir; docs/verification/browser-smoke.json korunur. Yeni arayüzün doğrulaması bunun yerine yazılmaz.
+
+9. DOSYALAR VE TEKNİK YAPI
+
+React/TypeScript/Vite, yerel MapLibre/Natural Earth haritası, SVG grafikler. FastAPI/Python, pandas/NumPy, SciPy/HiGHS, Parquet/CSV, SQLite provenans. Çekirdek gösterim bulut hesabı/anahtar istemez. Ham SHA256 ve değiştirilemez kaynak sürümleri; parametre/kod hash'li karar kimliği.
+
+Bu turun ana değişiklikleri:
+- frontend/src/App.tsx, styles.css, api.ts, ui.tsx, ResearchMap.tsx; workspaces/North.tsx, Turkiye.tsx, Pwn.tsx, Evidence.tsx, Pilot.tsx.
+- backend/contracts.py, repository.py, optimizer.py, app.py, pwn.py; yeni field.py.
+- scripts/ingest_north.py ve dashboard_smoke.cjs.
+- data/sites.json, manifest.json, raw/metadata/processed; benchmark_context.json; north/ altındaki ham/sürüm/özet/veriler.
+- tests/test_dashboard.py, test_north.py, test_field_observation.py; veri/API testleri.
+- docs/PRODUCT_REFOCUS.md, TURKIYE_BENCHMARKS.md, NORTH_DATA_PLAN.md; BUILD_STATUS, SOURCE_OF_TRUTH, DECISIONS, DATA_REQUIREMENTS, MODEL_METHODS, DATA_ACCESS_LOG, EVIDENCE_MAP, IMPLEMENTATION_ROADMAP, DEMO_PLAN, README ve bu teslim.
+
+Önceki önemli belgeler korunur: SCIENTIFIC_ARCHITECTURE, OPEN_QUESTIONS, PWN_SPEC_V0.1, PWN_ARCTIC_V1_CONCEPT, TASE_ALIGNMENT, INTERVIEW_STORY, THREE_LETTERS_STORY, JURY_QA, ARCTIC_FIELD_PLAN, PWN_VALIDATION_PLAN, PWN_TEACHER_BRIEF_TR, RESEARCHER_ONE_PAGER_TR; hardware/pwn-v0.1 ve hardware/pwn-arctic-v1.
+
+10. AÇIK BAĞIMLILIKLAR VE SONRAKİ SOMUT ADIM
+
+Öğretmenlerle kart + sıcaklık probu + encoder + iletkenlik ön devresi + kolon kurulumu. Kart/devre netleşince uygun firmware; ardından homojen kontrol ve tabakalı su deneyinin ilk gerçek CSV'si. Yazılımda bu verinin gireceği profil yolu hazır.
+
+Kuzey veri çalışmasının sonraki dar adımı, metadata'sı tam bir deniz modeli profili alıp referans gözlemle eşleştirmek. Yerel su tahsisi/toprak/permafrost, Arktik üretim enerji/verim ve 5°C altı arıtma verisi açık. TASE profili ile varsayımsal su alma noktasının temsil bağı ayrıca kurulmalı. Tüm bilimsel projenin bittiği iddia edilmiyor.
+
+11. ÇALIŞTIRMA VE AKTARIM
+
+Yerel adres http://127.0.0.1:8000/ ; başlatma .\scripts\start.ps1 ; kurulum README.md. İleride sunucunun açık kalacağı varsayılmamalı. İnternete yayın yapılmadı.
+
+Her anlamlı iş sonunda docs/ANA_CHAT_TESLIM.txt güncellenir. Dosya başka bir sohbette tek başına anlaşılmalıdır. Kullanıcı ana sohbete yükler veya yapıştırır. Başka sohbete kendiliğinden mesaj gönderilmez.
+
+12. KAYNAK İZİ
+
+Dosya gerçekleri: orijinal rapor/sunum, TXT, çağrı/strateji ve güncel kullanıcı talimatları. Ürün/uygulama gerçekleri: repository, tests, BUILD_STATUS, verification kayıtları. Hesaplar: MODEL_METHODS; dış veriler: DATA_ACCESS_LOG, TURKIYE_BENCHMARKS ve NORTH_DATA_PLAN; iddia sınırları EVIDENCE_MAP.
+
+Başlıca dış kaynaklar:
+- ERA5 erişim: https://open-meteo.com/en/docs/historical-weather-api
+- ERA5: https://doi.org/10.24381/cds.adbb2d47
+- Kuzey model erişim/atıf: https://open-meteo.com/en/docs/climate-api
+- EC-Earth3P-HR veri: https://doi.org/10.22033/ESGF/CMIP6.2323
+- Model makalesi: https://gmd.copernicus.org/articles/13/3507/2020/
+- FAO56: https://www.fao.org/4/X0490E/x0490e0b.htm
+- Xu vd. 2026: https://www.nature.com/articles/s43247-026-03702-w
+- Barbosa vd. 2015: https://pmc.ncbi.nlm.nih.gov/articles/PMC4483736/
+- RO deneyi: https://doi.org/10.1016/j.dwt.2025.101157
+- TEOS-10: https://teos-10.org/pubs/gsw/html/gsw_contents.html
+- Deniz modeli sonraki veri yolu: https://data.marine.copernicus.eu/product/ARCTIC_MULTIYEAR_PHY_002_003/description
+- 2027 çağrısı: https://tubitak.gov.tr/sites/default/files/2026-06/kutup_arastirmalari_cagri_metni_2027_0.pdf
+
+Resmî bölge kaynaklarının tek tek URL, tarih ve desteklediği dar iddia: docs/TURKIYE_BENCHMARKS.md ve data/benchmark_context.json. Kaynak planlarındaki eski tarihler güncel su tahsisi gibi kullanılmadı.
+
+TESLİM GEÇMİŞİ
+001 — 22 Eylül 2026, 14:15: Önceki belge, ilk v0.1 yazılım/veri/hardware doküman paketi ve 55 test/sekiz ekran kayıtları tek teslimde toplandı. Teslim tercihi AGENTS.md'ye kaydedildi.
+002 — 22 Eylül 2026: U7 ürün refocus; beş alanlı dashboard, beş Türkiye benchmark'ı, gerçek yerel kuzey model paketi, kısıt açıklamaları, saha eşleştirme ve genişletilmiş doğrulama. Önceki bilimsel yön ve fiziksel iş paketleri korundu.

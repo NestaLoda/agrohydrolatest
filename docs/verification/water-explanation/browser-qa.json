@@ -1,0 +1,45 @@
+{
+  "time": "2026-09-22T20:50:06.975Z",
+  "desktopOnly": true,
+  "checks": [
+    {
+      "check": "Source opening, plain water-limit label, no automatic recommendation",
+      "passed": true
+    },
+    {
+      "check": "Efficient irrigation preview 11.8% and 75 to 85 efficiency",
+      "passed": true
+    },
+    {
+      "check": "Total 19%, extra 8.2%, 100/88.2/81 same-source comparison",
+      "passed": true,
+      "text": "Başlangıç\n100\nHesap öncesi seçim\n88,2\nÖnerilen desen\n81\nBaşlangıçta gereken su = 100 · model hesabı"
+    },
+    {
+      "check": "Live/recommended toggle retains source denominator",
+      "passed": true
+    },
+    {
+      "check": "80% water-limit scenario warns of 25% excess and uses plain language",
+      "passed": true
+    },
+    {
+      "check": "Previous recommendation retains frozen 85% efficiency, total saving, and neutral gauge",
+      "passed": true
+    },
+    {
+      "check": "Trakya three-stage comparison explicitly excludes rice and remains neutral",
+      "passed": true,
+      "text": "Ürün deseni simülasyonu\nMODEL ÖNERİSİ\nİklim senaryosu ΔT 0°C · yağış %0\nCanlı seçim\nHesaplanan öneri\n\nİklim başlangıçtakiyle aynı. Sulama verimi: %75 → %85.\n\nMevcut\nÜrünlerin alan payı\nBuğday\n%43,7\nAyçiçeği\n%39,2\n%15\nEkili alan\n%100\nHesaplanan öneri\nÜrünlerin alan payı\nBuğday\n%64,3\nAyçiçeği\n%19,6\n%15\nEkili alan\n%100\nBuğday\n%64,3\nAyçiçeği\n%19,6\nÇeltik\n%15\nArpa\n%1,1\nBAŞLANGICA GÖRE TOPLAM SU DEĞİŞİMİ · Çeltik hariç\n%26,3 daha az su gerekiyor\nBaşlangıçtaki ürünler ve sulama koşullarına göre toplam değişim.\nÜrün dağılımı değişiminden ayrıca %16,4 daha az su. İklim ve sulama verimi aynı.\nBaşlangıç\n100\nHesap öncesi seçim\n88,2\nÖnerilen desen\n73,7\nBaşlangıçta gereken su = 100 · model hesabı\nÇeltik için ayrı su hesabı gerekir; bu karşılaştırma diğer ürünleri kapsar.\n%100 sınırı\n%73,7\nÇeltik hariç\n%0\n%200\nSu sınırı kullanımı\nSu hesabını aç · miktarlar ve ürün katkıları"
+    },
+    {
+      "check": "Detailed water limit definition and irrigation/production efficiency distinction",
+      "passed": true
+    },
+    {
+      "check": "Browser console has no errors",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

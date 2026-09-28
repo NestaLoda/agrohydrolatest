@@ -1,0 +1,21 @@
+{
+  "completed_at_local": "2026-09-23T02:49:46.253167+03:00",
+  "change": "Water-first future agriculture decisions; climate as automatic input layer",
+  "build": "TypeScript + Vite passed",
+  "browser_qa": "browser-qa.json",
+  "desktop": {
+    "width": 1440,
+    "height": 1000,
+    "outer_scroll_height": 1000,
+    "canvas_height": 904,
+    "canvas_scroll_height": 1084
+  },
+  "console_errors": [],
+  "mobile_tested": false,
+  "backend_changed": false,
+  "backend_rerun": false,
+  "frontend_unit_tests_rerun": false,
+  "last_backend_passed": 399,
+  "last_backend_run": "2026-09-23T02:10:02.737453+03:00",
+  "last_frontend_tests": "018, 23 passed; existing Turkey regression suite"
+}

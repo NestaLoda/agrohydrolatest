@@ -1,0 +1,184 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Chapter 2 - FAO Penman-Monteith equation</title>
+<link REL="stylesheet" TYPE="text/css" HREF="fao.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><a NAME="TopOfPage"></a>
+<p align="center">
+<a href="x0490e05.htm#TopOfPage"><img src="back.gif" width="43" height="35" alt="Previous Page" border="0"></a>
+<a href="x0490e00.htm#Contents"><img src="toc.gif" width="43" height="35" alt="Table of Contents" border="0"></a>
+<a href="x0490e07.htm#TopOfPage"><img src="next.gif" width="43" height="35" alt="Next Page" border="0"></a>
+<hr>
+<H1><a name="chapter 2   fao penman monteith equation">Chapter 2 - FAO Penman-Monteith 
+  equation</a></H1>
+<hr>
+<p><a href="x0490e06.htm#need for a standard eto method">Need for a standard ET<sub>o</sub> 
+  method</a><br>
+  <a href="x0490e06.htm#formulation of the penman monteith equation">Formulation of 
+  the Penman-Monteith equation</a><br>
+  <a href="x0490e06.htm#reference surface">Reference surface</a><br>
+  <a href="x0490e06.htm#fao penman monteith equation">FAO Penman-Monteith equation</a></p>
+<hr>
+<p>This chapter introduces the user to the need to standardize one method to compute reference evapotranspiration (ET<SUB>o</SUB>) from meteorological data. The FAO Penman-Monteith method is recommended as the sole ET<SUB>o</SUB> method for determining reference evapotranspiration. The method, its derivation, the required meteorological data and the corresponding definition of the reference surface are described in this chapter.<H2><a name="need for a standard eto method">Need for a standard ET<sub>o</sub> method</a></H2>
+<p>A large number of more or less empirical methods have been developed over the last 50 years by numerous scientists and specialists worldwide to estimate evapotranspiration from different climatic variables. Relationships were often subject to rigorous local calibrations and proved to have limited global validity. Testing the accuracy of the methods under a new set of conditions is laborious, time-consuming and costly, and yet evapotranspiration data are frequently needed at short notice for project planning or irrigation scheduling design. To meet this need, guidelines were developed and published in the FAO Irrigation and Drainage Paper No. 24 'Crop water requirements'. To accommodate users with different data availability, four methods were presented to calculate the reference crop evapotranspiration (ET<SUB>o</SUB>): the Blaney-Criddle, radiation, modified Penman and pan evaporation methods. The modified Penman method was considered to offer the best results with minimum possible error in relation to a living grass reference crop. It was expected that the pan method would give acceptable estimates, depending on the location of the pan. The radiation method was suggested for areas where available climatic data include measured air temperature and sunshine, cloudiness or radiation, but not measured wind speed and air humidity. Finally, the publication proposed the use of the Blaney-Criddle method for areas where available climatic data cover air temperature data only.
+<p>These climatic methods to calculate ET<SUB>o</SUB> were all calibrated for ten-day or monthly calculations, not for daily or hourly calculations. The Blaney-Criddle method was recommended for periods of one month or longer. For the pan method it was suggested that calculations should be done for periods of ten days or longer. Users have not always respected these conditions and calculations have often been done on daily time steps.
+<p>Advances in research and the more accurate assessment of crop water use have revealed weaknesses in the methodologies. Numerous researchers analysed the performance of the four methods for different locations. Although the results of such analyses could have been influenced by site or measurement conditions or by bias in weather data collection, it became evident that the proposed methods do not behave the same way in different locations around the world. Deviations from computed to observed values were often found to exceed ranges indicated by FAO. The modified Penman was frequently found to overestimate ET<SUB>o</SUB>, even by up to 20% for low evaporative conditions. The other FAO recommended equations showed variable adherence to the reference crop evapotranspiration standard of grass.
+<p>To evaluate the performance of these and other estimation procedures under different climatological conditions, a major study was undertaken under the auspices of the Committee on Irrigation Water Requirements of the American Society of Civil Engineers (ASCE). The ASCE study analysed the performance of 20 different methods, using detailed procedures to assess the validity of the methods compared to a set of carefully screened lysimeter data from 11 locations with variable climatic conditions. The study proved very revealing and showed the widely varying performance of the methods under different climatic conditions. In a parallel study commissioned by the European Community, a consortium of European research institutes evaluated the performance of various evapotranspiration methods using data from different lysimeter studies in Europe.
+<p>The studies confirm the overestimation of the modified Penman introduced in FAO Irrigation and Drainage Paper No. 24, and the variable performance of the different methods depending on their adaptation to local conditions. The comparative studies may be summarized as follows:
+<p><blockquote><font FACE="Symbol">&#183;</font> The Penman methods may require local calibration of the wind function to achieve satisfactory results.
+<p><font FACE="Symbol">&#183;</font> The radiation methods show good results in humid climates where the aerodynamic term is relatively small, but performance in arid conditions is erratic and tends to underestimate evapotranspiration.
+<p><font FACE="Symbol">&#183;</font> Temperature methods remain empirical and require local calibration in order to achieve satisfactory results. A possible exception is the 1985 Hargreaves' method which has shown reasonable ET<SUB>o</SUB> results with a global validity.
+<p><font FACE="Symbol">&#183;</font> Pan evapotranspiration methods clearly reflect the shortcomings of predicting crop evapotranspiration from open water evaporation. The methods are susceptible to the microclimatic conditions under which the pans are operating and the rigour of station maintenance. Their performance proves erratic.
+<p><font FACE="Symbol">&#183;</font> The relatively accurate and consistent performance of the Penman-Monteith approach in both arid and humid climates has been indicated in both the ASCE and European studies.</blockquote>
+<p>The analysis of the performance of the various calculation methods reveals the need for formulating a standard method for the computation of ET<SUB>o</SUB>. The FAO Penman-Monteith method is recommended as the sole standard method. It is a method with strong likelihood of correctly predicting ET<SUB>o</SUB> in a wide range of locations and climates and has provision for application in data-short situations. The use of older FAO or other reference ET methods is no longer encouraged.
+<H2><a name="formulation of the penman monteith equation">Formulation of the Penman-Monteith 
+  equation</a></H2>
+<hr>
+<blockquote>
+  <p> <a href="x0490e06.htm#penman monteith equation">Penman-Monteith equation</a><br>
+    <a href="x0490e06.htm#aerodynamic resistance (ra)">Aerodynamic resistance (r<sub>a</sub>)</a><br>
+    <a href="x0490e06.htm#(bulk) surface resistance (rs)">(Bulk) surface resistance 
+    (r<sub>s</sub>)</a></p>
+</blockquote>
+<hr>
+<p><H3><a name="penman monteith equation">Penman-Monteith equation</a></H3>
+<p>In 1948, Penman combined the energy balance with the mass transfer method and derived an equation to compute the evaporation from an open water surface from standard climatological records of sunshine, temperature, humidity and wind speed. This so-called combination method was further developed by many researchers and extended to cropped surfaces by introducing resistance factors.
+<p>The resistance nomenclature distinguishes between aerodynamic resistance and surface resistance factors (Figure 7). The surface resistance parameters are often combined into one parameter, the 'bulk' surface resistance parameter which operates in series with the aerodynamic resistance. The surface resistance, r<SUB>s</SUB>, describes the resistance of vapour flow through stomata openings, total leaf area and soil surface. The aerodynamic resistance, r<SUB>a</SUB>, describes the resistance from the vegetation upward and involves friction from air flowing over vegetative surfaces. Although the exchange process in a vegetation layer is too complex to be fully described by the two resistance factors, good correlations can be obtained between measured and calculated evapotranspiration rates, especially for a uniform grass reference surface.
+<p><a href="x0490e07.jpg"><b><B>FIGURE 7. Simplified representation of the (bulk) surface and aerodynamic resistances for water vapour flow</B></b></a>
+<p>The Penman-Monteith form of the combination equation is:
+<p>
+<blockquote><SUB><IMG SRC="x0490e00.gif" align="absmiddle"></SUB> (3)</blockquote>
+<p>where R<SUB>n</SUB> is the net radiation, G is the soil heat flux, (e<SUB>s</SUB> - e<SUB>a</SUB>) represents the vapour pressure deficit of the air, <font FACE="Symbol">&#114;</font> <SUB>a</SUB> is the mean air density at constant pressure, c<SUB>p</SUB> is the specific heat of the air, <font FACE="Symbol">&#68;</font> represents the slope of the saturation vapour pressure temperature relationship, <font FACE="Symbol">&#103;</font> is the psychrometric constant, and r<SUB>s</SUB> and r<SUB>a</SUB> are the (bulk) surface and aerodynamic resistances. The parameters of the equation are defined in Chapter 3.
+<p>The Penman-Monteith approach as formulated above includes all parameters that govern energy exchange and corresponding latent heat flux (evapotranspiration) from uniform expanses of vegetation. Most of the parameters are measured or can be readily calculated from weather data. The equation can be utilized for the direct calculation of any crop evapotranspiration as the surface and aerodynamic resistances are crop specific.<H3><a name="aerodynamic resistance (ra)">Aerodynamic resistance (r<sub>a</sub>)</a></H3>
+<p>The transfer of heat and water vapour from the evaporating surface into the air above the canopy is determined by the aerodynamic resistance:
+<p>
+<blockquote><SUB><IMG SRC="x0490e01.gif" align="absmiddle"></SUB> (4)</blockquote>
+<p>where
+<p><blockquote>r<SUB>a</SUB> aerodynamic resistance [s m<SUP>-1</SUP>],<BR>z<SUB>m</SUB> height of wind measurements [m],<BR>z<SUB>h</SUB> height of humidity measurements [m],<BR>d zero plane displacement height [m],<BR>z<SUB>om</SUB> roughness length governing momentum transfer [m],<BR>z<SUB>oh</SUB> roughness length governing transfer of heat and vapour [m],<BR>k von Karman's constant, 0.41 [-],<BR>u<SUB>z</SUB> wind speed at height z [m s<SUP>-1</SUP>].</blockquote>
+<p>The equation is restricted for neutral stability conditions, i.e., where temperature, atmospheric pressure, and wind velocity distributions follow nearly adiabatic conditions (no heat exchange). The application of the equation for short time periods (hourly or less) may require the inclusion of corrections for stability. However, when predicting ET<SUB>o</SUB> in the well-watered reference surface, heat exchanged is small, and therefore stability correction is normally not required.
+<p>Many studies have explored the nature of the wind regime in plant canopies. Zero displacement heights and roughness lengths have to be considered when the surface is covered by vegetation. The factors depend upon the crop height and architecture. Several empirical equations for the estimate of d, z<SUB>om</SUB> and z<SUB>oh</SUB> have been developed. The derivation of the aerodynamic resistance for the grass reference surface is presented in Box 4.<H3><a name="(bulk) surface resistance (rs)">(Bulk) surface resistance (r<sub>s</sub>)</a></H3>
+<p>The 'bulk' surface resistance describes the resistance of vapour flow through the transpiring crop and evaporating soil surface. Where the vegetation does not completely cover the soil, the resistance factor should indeed include the effects of the evaporation from the soil surface. If the crop is not transpiring at a potential rate, the resistance depends also on the water status of the vegetation. An acceptable approximation to a much more complex relation of the surface resistance of dense full cover vegetation is:
+<p><TABLE BORDER>
+  <TR VALIGN="TOP"> 
+    <TD COLSPAN=1 ROWSPAN=1 VALIGN=TOP> 
+      <p><B>BOX 4. The aerodynamic resistance for a grass reference surface</B> 
+      <p>For a wide range of crops the zero plane displacement height, d [m], 
+        and the roughness length governing momentum transfer, z<SUB>om</SUB> [m], 
+        can be estimated from the crop height h [m] by the following equations: 
+      <p><B>d = 2/3 h</B><BR>
+        <B>z</B><SUB><B>om</B></SUB><B> = 0.123 h</B> </p>
+      <p>The roughness length governing transfer of heat and vapour, z<SUB>oh</SUB> 
+        [m], can be approximated by: 
+      <p><B>z</B><SUB><B>oh</B></SUB><B> = 0.1 z</B><SUB><B>om</B></SUB> </p>
+      <p>Assuming a constant crop height of 0.12 m and a standardized height for 
+        wind speed, temperature and humidity at 2 m (z<SUB>m</SUB> = z<SUB>h</SUB> 
+        = 2 m), the aerodynamic resistance r<SUB>a</SUB> [s m<SUP>-1</SUP>] for 
+        the grass reference surface becomes (Eq. 4): 
+      <p><SUB><IMG SRC="x0490e02.gif"></SUB> </p>
+      <p>where u<SUB>2</SUB> is the wind speed [m s<SUP>-1</SUP>] at 2 m.
+    </TD>
+  </TR></TABLE>
+<p>
+<blockquote><SUB><IMG SRC="x0490e03.gif" align="absmiddle"></SUB> (5)</blockquote>
+<p>where
+<p><blockquote>r<SUB>s</SUB> (bulk) surface resistance [s m<SUP>-1</SUP>],<BR>r<SUB>l</SUB> bulk stomatal resistance of the well-illuminated leaf [s m<SUP>-1</SUP>],<BR>LAI<SUB>active</SUB> active (sunlit) leaf area index [m<SUP>2</SUP> (leaf area) m<SUP>-2</SUP> (soil surface)].</blockquote>
+<p>The Leaf Area Index (LAI), a dimensionless quantity, is the leaf area (upper side only) per unit area of soil below it. It is expressed as m<SUP>2</SUP> leaf area per m<SUP>2</SUP> ground area. The active LAI is the index of the leaf area that actively contributes to the surface heat and vapour transfer. It is generally the upper, sunlit portion of a dense canopy. The LAI values for various crops differ widely but values of 3-5 are common for many mature crops. For a given crop, green LAI changes throughout the season and normally reaches its maximum before or at flowering (Figure 8). LAI further depends on the plant density and the crop variety.
+<p>The bulk stomatal resistance, r<SUB>l</SUB>, is the average resistance of an individual leaf. This resistance is crop specific and differs among crop varieties and crop management. It usually increases as the crop ages and begins to ripen. There is, however, a lack of consolidated information on changes in r<SUB>l</SUB> over time for the different crops. The information available in the literature on stomatal conductance or resistance is often oriented toward physiological or ecophysiological studies.
+<p align="center"><b><B>FIGURE 8. Typical presentation of the variation in the active (green) Leaf Area Index over the growing season for a maize crop</B></b><p align="center"><img src="x0490e62.gif">
+<p>The stomatal resistance, r<SUB>l</SUB>, is influenced by climate and by water availability. However, influences vary from one crop to another and different varieties can be affected differently. The resistance increases when the crop is water stressed and the soil water availability limits crop evapotranspiration. Some studies indicate that stomatal resistance is influenced to some extent by radiation intensity, temperature, and vapour pressure deficit. The derivation of the surface resistance for the grass reference surface is presented in Box 5.
+<p><TABLE BORDER>
+  <TR VALIGN="TOP"> 
+    <TD COLSPAN=1 ROWSPAN=1 VALIGN=TOP> 
+      <p><B>BOX 5. The (bulk) surface resistance for a grass reference crop</B> 
+      <p>A general equation for LAI<SUB>active</SUB> is: 
+      <p><B>LAI</B><SUB><B>active</B></SUB><B> = 0.5 LAI</B> </p>
+      <p>which takes into consideration the fact that generally only the upper 
+        half of dense clipped grass is actively contributing to the surface heat 
+        and vapour transfer. For clipped grass a general equation for LAI is: 
+      <p><B>LAI = 24 h</B> </p>
+      <p>where h is the crop height [m]. 
+      <p>The stomatal resistance, r<SUB>l</SUB>, of a single leaf has a value 
+        of about 100 s m<SUP>-1</SUP> under well-watered conditions. By assuming 
+        a crop height of 0.12 m, the surface resistance, r<SUB>s</SUB> [s m<SUP>-1</SUP>], 
+        for the grass reference surface becomes (Eq. 5): 
+      <p><SUB><IMG SRC="x0490e04.gif"></SUB></p>
+    </TD>
+  </TR></TABLE>
+<p><H2><a name="reference surface">Reference surface</a></H2>
+<p>To obviate the need to define unique evaporation parameters for each crop and stage of growth, the concept of a reference surface was introduced. Evapotranspiration rates of the various crops are related to the evapotranspiration rate from the reference surface (ET<SUB>o</SUB>) by means of crop coefficients.
+<p>In the past, an open water surface has been proposed as a reference surface. However, the differences in aerodynamic, vegetation control and radiation characteristics present a strong challenge in relating ET to measurements of free water evaporation. Relating ET<SUB>o</SUB> to a specific crop has the advantage of incorporating the biological and physical processes involved in ET from cropped surfaces.
+<p>Grass, together with alfalfa, is a well-studied crop regarding its aerodynamic and surface characteristics and is accepted worldwide as a reference surface. Because the resistance to diffusion of vapour strongly depends on crop height, ground cover, LAI and soil moisture conditions, the characteristics of the reference crop should be well defined and fixed. Changes in crop height result in variations in the roughness and LAI. Consequently, the associated canopy and aerodynamic resistances will vary appreciably with time. Moreover, water stress and the degree of ground cover have an effect on the resistances and also on the albedo.
+<p>To avoid problems of local calibration which would require demanding and expensive studies, a hypothetical grass reference has been selected. Difficulties with a living grass reference result from the fact that the grass variety and morphology can significantly affect the evapotranspiration rate, especially during peak water use. Large differences may exist between warm-season and cool-season grass types. Cool-season grasses have a lower degree of stomatal control and hence higher rates of evapotranspiration. It may be difficult to grow cool-season grasses in some arid, tropical climates.
+<p>The FAO Expert Consultation on Revision of FAO Methodologies for Crop Water Requirements accepted the following unambiguous definition for the reference surface:
+<p><blockquote><B>&quot;A hypothetical reference crop with an assumed crop height of 0.12 m, a fixed surface resistance of 70 s m</b><SUP><B>-1</B></SUP><B> and an albedo of 0.23.&quot;</b></blockquote>
+<p>The reference surface closely resembles an extensive surface of green grass of uniform height, actively growing, completely shading the ground and with adequate water. The requirements that the grass surface should be extensive and uniform result from the assumption that all fluxes are one-dimensional upwards.
+<p>The FAO Penman-Monteith method is selected as the method by which the evapotranspiration of this reference surface (ET<SUB>o</SUB>) can be unambiguously determined, and as the method which provides consistent ET<SUB>o</SUB> values in all regions and climates.
+<H2><a name="fao penman monteith equation">FAO Penman-Monteith equation</a></H2>
+<hr>
+<blockquote>
+  <p><a href="x0490e06.htm#equation">Equation</a><br>
+    <a href="x0490e06.htm#data">Data</a><br>
+    <a href="x0490e06.htm#missing climatic data">Missing climatic data</a> </p>
+</blockquote>
+<hr>
+<p><H3><a name="equation">Equation</a></H3>
+<p>A consultation of experts and researchers was organized by FAO in May 1990, in collaboration with the International Commission for Irrigation and Drainage and with the World Meteorological Organization, to review the FAO methodologies on crop water requirements and to advise on the revision and update of procedures.
+<p align="center"><b><B>FIGURE 9. Characteristics of the hypothetical reference crop</B></b><p align="center"><img src="x0490e63.gif">
+<p>The panel of experts recommended the adoption of the Penman-Monteith combination method as a new standard for reference evapotranspiration and advised on procedures for calculation of the various parameters. By defining the reference crop as a hypothetical crop with an assumed height of 0.12 m having a surface resistance of 70 s m<SUP>-1</SUP> and an albedo of 0.23, closely resembling the evaporation of an extension surface of green grass of uniform height, actively growing and adequately watered, the FAO Penman-Monteith method was developed. The method overcomes shortcomings of the previous FAO Penman method and provides values more consistent with actual crop water use data worldwide.
+<p>From the original Penman-Monteith equation (Equation 3) and the equations of the aerodynamic (Equation 4) and surface resistance (Equation 5), the FAO Penman-Monteith method to estimate ET<SUB>o</SUB> can be derived (Box 6):
+<p>
+<blockquote><SUB><IMG SRC="x0490e05.gif" align="absmiddle"></SUB> (6)</blockquote>
+<p>where
+<p><blockquote>ET<SUB>o</SUB> reference evapotranspiration [mm day<SUP>-1</SUP>],<BR>R<SUB>n</SUB> net radiation at the crop surface [MJ m<SUP>-2</SUP> day<SUP>-1</SUP>],<BR>G soil heat flux density [MJ m<SUP>-2</SUP> day<SUP>-1</SUP>],<BR>T mean daily air temperature at 2 m height [&#176;C],<BR>u<SUB>2</SUB> wind speed at 2 m height [m s<SUP>-1</SUP>],<BR>e<SUB>s</SUB> saturation vapour pressure [kPa],<BR>e<SUB>a</SUB> actual vapour pressure [kPa],<BR>e<SUB>s</SUB> - e<SUB>a</SUB> saturation vapour pressure deficit [kPa],<BR><font FACE="Symbol">&#68;</font> slope vapour pressure curve [kPa &#176;C<SUP>-1</SUP>],<BR><font FACE="Symbol">&#103;</font> psychrometric constant [kPa &#176;C<SUP>-1</SUP>].</blockquote>
+<p>The reference evapotranspiration, ET<SUB>o</SUB>, provides a standard to which:
+<p><blockquote><font FACE="Symbol">&#183;</font> evapotranspiration at different periods of the year or in other regions can be compared;<BR><font FACE="Symbol">&#183;</font> evapotranspiration of other crops can be related.</blockquote>
+<p>The equation uses standard climatological records of solar radiation (sunshine), air temperature, humidity and wind speed. To ensure the integrity of computations, the weather measurements should be made at 2 m (or converted to that height) above an extensive surface of green grass, shading the ground and not short of water.
+<p>No weather-based evapotranspiration equation can be expected to predict evapotranspiration perfectly under every climatic situation due to simplification in formulation and errors in data measurement. It is probable that precision instruments under excellent environmental and biological management conditions will show the FAO Penman-Monteith equation to deviate at times from true measurements of grass ET<SUB>o</SUB>. However, the Expert Consultation agreed to use the hypothetical reference definition of the FAO Penman-Monteith equation as the definition for grass ET<SUB>o</SUB> when deriving and expressing crop coefficients.
+<p>It is important, when comparing the FAO Penman-Monteith equation to ET<SUB>o</SUB> measurements, that the full Penman-Monteith equation (Equation 3) and associated equations for r<SUB>a</SUB> and r<SUB>s</SUB> (Equations 4 and 5) be used to enable accounting for variation in ET due to variation in height of the grass measured. Variations in measurement height can significantly change LAI, d and z<SUB>om</SUB> and the corresponding ET<SUB>o</SUB> measurement and predicted value. When evaluating results, it should be noted that local environmental and management factors, such as watering frequency, also affect ET<SUB>o</SUB> observations.
+<p>The FAO Penman-Monteith equation is a close, simple representation of the physical and physiological factors governing the evapotranspiration process. By using the FAO Penman-Monteith definition for ET<SUB>o</SUB>, one may calculate crop coefficients at research sites by relating the measured crop evapotranspiration (ET<SUB>c</SUB>) with the calculated ET<SUB>o</SUB>, i.e., K<SUB>c</SUB> = ET<SUB>c</SUB>/ET<SUB>o</SUB>. In the crop coefficient approach, differences in the crop canopy and aerodynamic resistance relative to the hypothetical reference crop are accounted for within the crop coefficient. The K<SUB>c</SUB> factor serves as an aggregation of the physical and physiological differences between crops and the reference definition.<H3><a name="data">Data</a></H3>
+<p>Apart from the site location, the FAO Penman-Monteith equation requires air temperature, humidity, radiation and wind speed data for daily, weekly, ten-day or monthly calculations. The computation of all data required for the calculation of the reference evapotranspiration is given in Chapter 3. It is important to verify the units in which the weather data are reported. Factors to convert common units to the standard unit are presented in Annex I.
+<p><B><I>Location</I></B>
+<p>Altitude above sea level (m) and latitude (degrees north or south) of the location should be specified. These data are needed to adjust some weather parameters for the local average value of atmospheric pressure (a function of the site elevation above mean sea level) and to compute extraterrestrial radiation (R<SUB>a</SUB>) and, in some cases, daylight hours (N). In the calculation procedures for R<SUB>a</SUB> and N, the latitude is expressed in radian (i.e., decimal degrees times <font FACE="Symbol">&#112;</font> /180).
+<p><TABLE BORDER><TR VALIGN="TOP"><TD COLSPAN=1 ROWSPAN=1 VALIGN=TOP>
+<p><B>BOX 6. Derivation of the FAO Penman-Monteith equation for the hypothetical grass reference crop</B>
+<p>With standardized height for wind speed, temperature and humidity measurements at 2 m (z<SUB>m</SUB> = z<SUB>h</SUB> = 2 m) and the crop height h = 0.12 m, the aerodynamic and surface resistances become (Boxes 4 &amp; 5):
+<p>r<SUB>a</SUB> = 208/u<SUB>2</SUB> s m<SUP>-1</SUP>, (with u<SUB>2</SUB> wind speed at 2 m height)<BR>r<SUB>s</SUB> = 70 s m<SUP>-1</SUP><BR> (1 + r<SUB>s</SUB>/r<SUB>a</SUB>) = (1 + 0.34 u<SUB>2</SUB>)</TD></TR><TR VALIGN="TOP"><TD COLSPAN=1 ROWSPAN=1 VALIGN=TOP>
+<p>R<SUB>n</SUB> and G is energy available per unit area and expressed in MJ m<SUP>-2</SUP> day<SUP>-1</SUP>. To convert the energy units for radiation to equivalent water depths (mm) the latent heat of vaporization, <font FACE="Symbol">&#108;</font> is used as a conversion factor (Chapter 1). The conversion from energy values to equivalent depths of water or vice versa is given by (Eq. 20):
+<p><SUB><IMG SRC="x0490e06.gif"></SUB></TD></TR><TR VALIGN="TOP"><TD COLSPAN=1 ROWSPAN=1 VALIGN=TOP>
+<p>By substituting c<SUB>p</SUB> with a rearrangement of Eq. 8:
+<p><SUB><IMG SRC="x0490e07.gif"></SUB>
+<p>and considering the ideal gas law for <font FACE="Symbol">&#114;</font> a:
+<p><SUB><IMG SRC="x0490e08.gif"></SUB>
+<p>where T<SUB>Kv</SUB> the virtual temperature, may be substituted by:
+<p>T<SUB>Kv</SUB> = 1.01(T+273)
+<p>results in:
+<p><SUB><IMG SRC="x0490e09.gif"></SUB> [MJ m<SUP>-2</SUP> &#176;C<SUP>-1</SUP> day<SUP>-1</SUP>]
+<p>where
+<p>c<SUB>p</SUB> specific heat at constant pressure [MJ kg<SUP>-1</SUP> &#176;C<SUP>-1</SUP>],<BR><font FACE="Symbol">&#114;</font> <SUB>a</SUB> mean air density at constant pressure [kg m<SUP>-3</SUP>],<BR>r<SUB>a</SUB> aerodynamic resistance [s m<SUP>-1</SUP>],<BR><font FACE="Symbol">&#103;</font> psychrometric constant [kPa &#176;C<SUP>-1</SUP>],<BR><font FACE="Symbol">&#101;</font> ratio molecular weight of water vapour/dry air = 0.622,<BR><font FACE="Symbol">&#108;</font> latent heat of vaporization [MJ kg<SUP>-1</SUP>],<BR>u<SUB>2</SUB> wind speed at 2 m [m s<SUP>-1</SUP>],<BR>R specific gas constant = 0.287 kJ kg<SUP>-1</SUP> K<SUP>-1</SUP>,<BR>T air temperature [&#176;C],<BR>P atmospheric pressure [kPa],
+<p><SUB><IMG SRC="x0490e0a.gif"></SUB> [MJ m<SUP>-2</SUP> &#176;C<SUP>-1</SUP> day<SUP>-1</SUP>]
+<p>or, when divided by <font FACE="Symbol">&#108;</font> (<font FACE="Symbol">&#108;</font> = 2.45),
+<p><SUB><IMG SRC="x0490e0b.gif"></SUB> [mm &#176;C<SUP>-1</SUP> day<SUP>-1</SUP>]</TD></TR></TABLE>
+<p>A positive value is used for the northern hemisphere and a negative value for the southern hemisphere.
+<p><B><I>Temperature</I></B>
+<p>The (average) daily maximum and minimum air temperatures in degrees Celsius (&#176;C) are required. Where only (average) mean daily temperatures are available, the calculations can still be executed but some underestimation of ET<SUB>o</SUB> will probably occur due to the non-linearity of the saturation vapour pressure - temperature relationship (Figure 11). Using mean air temperature instead of maximum and minimum air temperatures yields a lower saturation vapour pressure e<SUB>s</SUB>, and hence a lower vapour pressure difference (e<SUB>s</SUB> - e<SUB>a</SUB>)<I>,</I> and a lower reference evapotranspiration estimate.
+<p><B><I>Humidity</I></B>
+<p>The (average) daily actual vapour pressure, e<SUB>a</SUB>, in kilopascals (kPa) is required. The actual vapour pressure, where not available, can be derived from maximum and minimum relative humidity (%), psychrometric data (dry and wet bulb temperatures in &#176;C) or dewpoint temperature (&#176;C) according to the procedures outlined in Chapter 3.
+<p><B><I>Radiation</I></B>
+<p>The (average) daily net radiation expressed in megajoules per square metre per day (MJ m<SUP>-2</SUP> day<SUP>-1</SUP>) is required. These data are not commonly available but can be derived from the (average) shortwave radiation measured with a pyranometer or from the (average) daily actual duration of bright sunshine (hours per day) measured with a (Campbell-Stokes) sunshine recorder. The calculation procedures are outlined in Chapter 3.
+<p><B><I>Wind speed</I></B>
+<p>The (average) daily wind speed in metres per second (m s<SUP>-1</SUP>) measured at 2 m above the ground level is required. It is important to verify the height at which wind speed is measured, as wind speeds measured at different heights above the soil surface differ. The calculation procedure to adjust wind speed to the standard height of 2 m is presented in Chapter 3.<H3><a name="missing climatic data">Missing climatic data</a></H3>
+<p>Situations might occur where data for some weather variables are missing. The use of an alternative ET<SUB>o</SUB> calculation procedure, requiring only limited meteorological parameters, should generally be avoided. It is recommended that one calculate ET<SUB>o</SUB> using the standard FAO Penman-Monteith method after resolving the specific problem of the missing data. Procedures for estimating missing climatic data are outlined in Chapter 3. Differences between ET<SUB>o</SUB> values obtained with the FAO Penman-Monteith equation with, on the one hand, a limited data set and, on the other hand, a full data set, are expected to be smaller than or of similar magnitude to the differences resulting from the use of an alternative ET<SUB>o</SUB> equation.
+<p>Even where the data set contains only maximum and minimum air temperature it is still possible to obtain reasonable estimates of ten-day or monthly ET<SUB>o</SUB> with the FAO Penman-Monteith equation. As outlined in Chapter 3, radiation data can be derived from the air temperature difference, or, along with wind speed and humidity data, can be imported from a nearby weather station. Humidity data can also be estimated from daily minimum air temperature. After evaluating the validity of the use of data from another station, ten-day or monthly estimates of ET<SUB>o</SUB> can be calculated.
+<p>The procedures for estimating missing data should be validated at the regional level. This can be done for weather stations with full data sets by comparing ET<SUB>o</SUB> calculated with full and with limited data sets. The ratio should be close to one. Where the ratio deviates significantly from one, the ratio can be used as a correction factor for estimates made with the limited data set. Where the standard error of estimate exceeds 20% of the mean ET<SUB>o</SUB>, a sensitivity analysis should be performed to determine causes (and limits) for the method utilized to import the missing data. A validation should be completed for each month and variable, for the monthly as well as for the daily estimates.
+<p><hr>
+<p align="center">
+<a href="x0490e05.htm#TopOfPage"><img src="back.gif" width="43" height="35" alt="Previous Page" border="0"></a>
+<a href="#TopOfPage"><img src="top.gif" width="43" height="35" alt="Top of Page" border="0"></a>
+<a href="x0490e07.htm#TopOfPage"><img src="next.gif" width="43" height="35" alt="Next Page" border="0"></a>
+</p>
+</body>
+</html>

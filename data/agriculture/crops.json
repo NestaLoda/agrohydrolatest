@@ -1,0 +1,1022 @@
+{
+  "schema_version": "1.0",
+  "updated_on": "2026-09-22",
+  "classification": "CURATED_EXTERNAL_CROP_KNOWLEDGE",
+  "scope": "Nine crop candidates; literature examples separated from regional observations and user scenarios. Null means unresolved.",
+  "north_candidate_crop_ids": [
+    "barley",
+    "potato",
+    "lettuce"
+  ],
+  "north_candidate_status": "Research portfolio, not automatically climate/soil/water suitable",
+  "crops": [
+    {
+      "crop_id": "wheat",
+      "name_tr": "Buğday",
+      "name_en": "Wheat",
+      "crop_group": "cereal",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          30,
+          140,
+          40,
+          30
+        ],
+        "total_days": 240,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean winter wheat",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          11
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean winter wheat",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 0.7,
+        "mid": 1.15,
+        "end": 0.25,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {
+          "initial": [
+            0.4,
+            0.7
+          ],
+          "end": [
+            0.25,
+            0.4
+          ]
+        },
+        "selection_notes": "Winter wheat non-frozen-soil initial selected; frozen-soil alternative 0.4. End lower endpoint selected; higher end is hand harvest. Not a locally verified soil-freeze choice.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "Mediterranean winter wheat",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "Winter wheat non-frozen-soil initial selected; frozen-soil alternative 0.4. End lower endpoint selected; higher end is hand harvest. Not a locally verified soil-freeze choice."
+      ]
+    },
+    {
+      "crop_id": "barley",
+      "name_tr": "Arpa",
+      "name_en": "Barley",
+      "crop_group": "cereal",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          20,
+          25,
+          60,
+          30
+        ],
+        "total_days": 135,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "35–45 degree latitude spring example; shared barley/oats/wheat row",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          3,
+          4
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "35–45 degree latitude spring example; shared barley/oats/wheat row",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 0.3,
+        "mid": 1.15,
+        "end": 0.25,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {},
+        "selection_notes": "Initial inherited from cereal category. Spring example cannot silently define autumn-sown Turkish barley or Arctic phenology.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "35–45 degree latitude spring example; shared barley/oats/wheat row",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        },
+        {
+          "geography": "Holt, Tromsø, northern Norway",
+          "year": 2015,
+          "classification": "EXTERNAL_RESEARCH_PRECEDENT",
+          "source_url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:6d62207da575143870ec872879187d5be7b39e32/Malting%20Rapport%202016.pdf",
+          "locator": "PDF page 3, Introduction and Table 1",
+          "supports": "Seven barley varieties grown for quality/malting evaluation; threshed sample mass is not hectare yield."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        },
+        {
+          "source_id": "NIBIO_BARLEY2016",
+          "source_url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:6d62207da575143870ec872879187d5be7b39e32/Malting%20Rapport%202016.pdf",
+          "title": "Northern Cereals malting report 2016",
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "Initial inherited from cereal category. Spring example cannot silently define autumn-sown Turkish barley or Arctic phenology."
+      ]
+    },
+    {
+      "crop_id": "maize_grain",
+      "name_tr": "Dane mısır",
+      "name_en": "Grain maize",
+      "crop_group": "cereal",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          30,
+          40,
+          50,
+          30
+        ],
+        "total_days": 150,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Spain spring/summer; California",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          4
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Spain spring/summer; California",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 0.3,
+        "mid": 1.2,
+        "end": 0.35,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {
+          "end": [
+            0.35,
+            0.6
+          ]
+        },
+        "selection_notes": "Initial inherited from cereal category. End 0.35 is dry-grain harvest; 0.60 is high grain moisture harvest. Not sweet maize or silage.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "Spain spring/summer; California",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "Initial inherited from cereal category. End 0.35 is dry-grain harvest; 0.60 is high grain moisture harvest. Not sweet maize or silage."
+      ]
+    },
+    {
+      "crop_id": "sugar_beet",
+      "name_tr": "Şeker pancarı",
+      "name_en": "Sugar beet",
+      "crop_group": "root_crop",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          25,
+          35,
+          50,
+          50
+        ],
+        "total_days": 160,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean May example",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          5
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean May example",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 0.35,
+        "mid": 1.2,
+        "end": 0.7,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {
+          "end": [
+            0.7,
+            1
+          ]
+        },
+        "selection_notes": "End 0.70 assumes no irrigation in last month; significant rain/irrigation can raise it toward 1.0. Source footnote 5.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "Mediterranean May example",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "End 0.70 assumes no irrigation in last month; significant rain/irrigation can raise it toward 1.0. Source footnote 5."
+      ]
+    },
+    {
+      "crop_id": "cotton",
+      "name_tr": "Pamuk",
+      "name_en": "Cotton",
+      "crop_group": "fibre_crop",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          30,
+          50,
+          60,
+          55
+        ],
+        "total_days": 195,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Egypt; Pakistan; California",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          3,
+          4,
+          5
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Egypt; Pakistan; California",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 0.35,
+        "mid": 1.2,
+        "end": 0.5,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {
+          "mid": [
+            1.15,
+            1.2
+          ],
+          "end": [
+            0.5,
+            0.7
+          ]
+        },
+        "selection_notes": "Initial inherited from fibre category. Mid upper endpoint and end lower endpoint explicitly selected from source ranges, not universal constants.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "Egypt; Pakistan; California",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "Initial inherited from fibre category. Mid upper endpoint and end lower endpoint explicitly selected from source ranges, not universal constants."
+      ]
+    },
+    {
+      "crop_id": "sunflower",
+      "name_tr": "Ayçiçeği",
+      "name_en": "Sunflower",
+      "crop_group": "oilseed",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          25,
+          35,
+          45,
+          25
+        ],
+        "total_days": 130,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean; California",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          4,
+          5
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean; California",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 0.35,
+        "mid": 1.15,
+        "end": 0.35,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {
+          "mid": [
+            1,
+            1.15
+          ]
+        },
+        "selection_notes": "Initial inherited from oil-crop category. Upper mid selected; lower mid is for rainfed, less dense plant populations.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "Mediterranean; California",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "Initial inherited from oil-crop category. Upper mid selected; lower mid is for rainfed, less dense plant populations."
+      ]
+    },
+    {
+      "crop_id": "rice",
+      "name_tr": "Çeltik",
+      "name_en": "Rice (paddy)",
+      "crop_group": "cereal",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          30,
+          30,
+          60,
+          30
+        ],
+        "total_days": 150,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean May example; shared tropics/Mediterranean row",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          5
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean May example; shared tropics/Mediterranean row",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 1.05,
+        "mid": 1.2,
+        "end": 0.6,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {
+          "end": [
+            0.6,
+            0.9
+          ]
+        },
+        "selection_notes": "End lower endpoint explicitly selected. ETc excludes land preparation, pond establishment, seepage/percolation and drainage; not full paddy irrigation demand.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "Mediterranean May example; shared tropics/Mediterranean row",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "End lower endpoint explicitly selected. ETc excludes land preparation, pond establishment, seepage/percolation and drainage; not full paddy irrigation demand."
+      ]
+    },
+    {
+      "crop_id": "potato",
+      "name_tr": "Patates",
+      "name_en": "Potato",
+      "crop_group": "tuber",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          25,
+          30,
+          45,
+          30
+        ],
+        "total_days": 130,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Continental climate May example",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          5
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Continental climate May example",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 0.5,
+        "mid": 1.15,
+        "end": 0.75,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {
+          "end": [
+            0.4,
+            0.75
+          ]
+        },
+        "selection_notes": "Initial inherited from roots/tubers. End 0.75 standard; about 0.40 for long-season potatoes with vine kill. Not a calibrated northern cultivar.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "Continental climate May example",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        },
+        {
+          "geography": "Tromsø, Norway, 69.7 N",
+          "year": 2020,
+          "classification": "EXTERNAL_CONTROLLED_EXPERIMENT",
+          "source_url": "https://doi.org/10.1007/s11540-025-09854-0",
+          "supports": "Gullauge/Mandel temperature response under natural 24-h photoperiod; not Longyearbyen open-field yield."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        },
+        {
+          "source_id": "MOLMANN_JOHANSEN2025",
+          "source_url": "https://doi.org/10.1007/s11540-025-09854-0",
+          "title": "Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "Initial inherited from roots/tubers. End 0.75 standard; about 0.40 for long-season potatoes with vine kill. Not a calibrated northern cultivar."
+      ]
+    },
+    {
+      "crop_id": "lettuce",
+      "name_tr": "Marul",
+      "name_en": "Lettuce",
+      "crop_group": "leafy_vegetable",
+      "variety_scope": null,
+      "growing_period": {
+        "stage_days": [
+          20,
+          30,
+          15,
+          10
+        ],
+        "total_days": 75,
+        "stage_order": [
+          "initial",
+          "development",
+          "mid",
+          "late"
+        ],
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean April open-field example",
+        "locally_validated": false
+      },
+      "planting_window": {
+        "months": [
+          4
+        ],
+        "day": null,
+        "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "11",
+        "region_scope": "Mediterranean April open-field example",
+        "local_recommendation": false
+      },
+      "harvest_window": null,
+      "kc": {
+        "initial": 0.7,
+        "mid": 1,
+        "end": 0.95,
+        "development": "linear interpolation",
+        "late": "linear interpolation",
+        "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+        "table": "12",
+        "units": "dimensionless",
+        "classification": "EXTERNAL_LITERATURE_PARAMETER",
+        "source_ranges": {},
+        "selection_notes": "Initial inherited from small-vegetable category. Open-field Kc/calendar do not describe hydroponic recirculation or Arctic greenhouse energy.",
+        "method_scope": [
+          "open_field"
+        ]
+      },
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement": null,
+        "temperature_limits": null,
+        "frost_sensitivity": null
+      },
+      "soil_constraints": [],
+      "salinity_sensitivity": null,
+      "yield_basis": [
+        {
+          "method": "open_field",
+          "value": 3.9,
+          "sd": 0.21,
+          "unit": "kg/m2/year",
+          "geographic_scope": "Yuma, Arizona, USA",
+          "classification": "EXTERNAL_LITERATURE_MODEL_RESULT",
+          "source_url": "https://doi.org/10.3390/ijerph120606879",
+          "table": "1",
+          "locally_validated": false,
+          "use": "Contextual method comparison; not default northern yield or kg/ha per single season."
+        },
+        {
+          "method": "hydroponics",
+          "value": 41,
+          "sd": 6.1,
+          "unit": "kg/m2/year",
+          "geographic_scope": "Yuma, Arizona, USA",
+          "classification": "EXTERNAL_LITERATURE_MODEL_RESULT",
+          "source_url": "https://doi.org/10.3390/ijerph120606879",
+          "table": "1",
+          "locally_validated": false,
+          "use": "Contextual method comparison; not default northern yield or kg/ha per single season."
+        }
+      ],
+      "production_unit": {
+        "mass": "kg",
+        "area": "ha",
+        "period": "one declared cultivation cycle; annual totals require explicit cycle accounting"
+      },
+      "compatible_methods": [
+        "open_field",
+        "greenhouse",
+        "hydroponics"
+      ],
+      "geographic_evidence": [
+        {
+          "geography": "Mediterranean April open-field example",
+          "classification": "EXTERNAL_LITERATURE_EXAMPLE",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "supports": "Reference calendar and Kc water calculation; not a regional current crop pattern."
+        },
+        {
+          "geography": "Alaska northern greenhouse research",
+          "classification": "EXTERNAL_CONTROLLED_EXPERIMENT",
+          "source_url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf",
+          "locator": "PDF pages 24–25, Hydroponic lettuce",
+          "supports": "Nevada lettuce tested in recirculating NFT; method precedent, not Arctic annual resource intensity."
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FAO56_CH6",
+          "title": "FAO Irrigation and Drainage Paper 56, Chapter 6 Tables 11 and 12",
+          "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "year": 1998,
+          "accessed_on": "2026-09-22"
+        },
+        {
+          "source_id": "UAF_AES2007",
+          "source_url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf",
+          "title": "Agricultural and Forestry Experiment Station 2007 research report, MP 2008-07",
+          "accessed_on": "2026-09-22"
+        },
+        {
+          "source_id": "BARBOSA2015",
+          "source_url": "https://doi.org/10.3390/ijerph120606879",
+          "title": "Comparison of Land, Water, and Energy Requirements of Lettuce Grown Using Hydroponic vs. Conventional Agricultural Methods",
+          "accessed_on": "2026-09-22"
+        }
+      ],
+      "limitations": [
+        "FAO-56 Table 11 stage lengths/planting months are regional examples, not universal/local observed calendars. Local start date/cultivar remain scenario inputs until sourced.",
+        "Table 12 single Kc describes standard non-stressed conditions; wetting frequency, wind/humidity and management may require adjustment. ETc is not measured withdrawal or realized yield.",
+        "No universal GDD, frost, soil, salinity, yield or energy value is inferred from an empty field.",
+        "Edited parameters and transferred calendar choices must visibly retain USER SCENARIO labeling; missing values are not zero or a passed suitability test.",
+        "Initial inherited from small-vegetable category. Open-field Kc/calendar do not describe hydroponic recirculation or Arctic greenhouse energy."
+      ],
+      "resource_intensity_basis": [
+        {
+          "method": "open_field",
+          "water_m3_per_kg": 0.25,
+          "energy_kwh_per_kg": 0.3055555555555556,
+          "source_url": "https://doi.org/10.3390/ijerph120606879",
+          "table": "1",
+          "classification": "EXTERNAL_LITERATURE_MODEL_RESULT",
+          "geographic_scope": "Yuma, Arizona, USA",
+          "accounting_period": "annual totals divided by annual production; do not divide again by 365",
+          "not_northern_default": true
+        },
+        {
+          "method": "hydroponics",
+          "water_m3_per_kg": 0.02,
+          "energy_kwh_per_kg": 25,
+          "source_url": "https://doi.org/10.3390/ijerph120606879",
+          "table": "1",
+          "classification": "EXTERNAL_LITERATURE_MODEL_RESULT",
+          "geographic_scope": "Yuma, Arizona, USA",
+          "accounting_period": "annual totals divided by annual production; do not divide again by 365",
+          "not_northern_default": true
+        }
+      ]
+    }
+  ]
+}

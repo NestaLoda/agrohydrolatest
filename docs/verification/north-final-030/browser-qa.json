@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "viewport": "1280x720",
+      "new_water_m3": 14.137837626570061,
+      "source_sum_m3": 14.137837626570063,
+      "crop_water_sum_m3": 14.137837626570061,
+      "critical_month": "Mayıs",
+      "critical_basis": "MAX_MODEL_CLIMATOLOGICAL_MONTH_FROM_DAILY_REPLAY",
+      "desalination_m3": 3.5981034080588454,
+      "overflow": false
+    },
+    {
+      "viewport": "1440x900",
+      "new_water_m3": 14.137837626570061,
+      "source_sum_m3": 14.137837626570063,
+      "crop_water_sum_m3": 14.137837626570061,
+      "critical_month": "Mayıs",
+      "critical_basis": "MAX_MODEL_CLIMATOLOGICAL_MONTH_FROM_DAILY_REPLAY",
+      "desalination_m3": 3.5981034080588454,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

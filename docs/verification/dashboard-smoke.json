@@ -1,0 +1,100 @@
+{
+  "verified_at": "2026-09-22T12:10:22.552Z",
+  "version": "0.2.0",
+  "screens": [
+    {
+      "workspace": "north",
+      "title": "Kuzey üretim karar alanı",
+      "overflow": false
+    },
+    {
+      "workspace": "turkiye",
+      "title": "Türkiye karşılaştırma alanı",
+      "overflow": false
+    },
+    {
+      "workspace": "pwn",
+      "title": "PWN saha gözlem katmanı",
+      "overflow": false
+    },
+    {
+      "workspace": "evidence",
+      "title": "Kanıt ve veri kaydı",
+      "overflow": false
+    },
+    {
+      "workspace": "pilot",
+      "title": "Konya pilotu",
+      "overflow": false
+    }
+  ],
+  "mobile": [
+    {
+      "workspace": "north",
+      "overflow": false
+    },
+    {
+      "workspace": "turkiye",
+      "overflow": false
+    },
+    {
+      "workspace": "pwn",
+      "overflow": false
+    },
+    {
+      "workspace": "evidence",
+      "overflow": false
+    },
+    {
+      "workspace": "pilot",
+      "overflow": false
+    }
+  ],
+  "checks": [
+    {
+      "test": "Default workspace is northern decision support",
+      "passed": true
+    },
+    {
+      "test": "Calculate, binding constraints, stale warning, snapshot and changed allocation",
+      "passed": true,
+      "before_kwh": 25120.75,
+      "after_kwh": 25000
+    },
+    {
+      "test": "Northern model periods and separate literature context visible",
+      "passed": true
+    },
+    {
+      "test": "Matched simulated field pair changes conditional feasibility at explicit threshold",
+      "passed": true,
+      "before": "conditional",
+      "after": "unsuitable",
+      "classification": "SIMULATION / EXPLANATORY"
+    },
+    {
+      "test": "Time mismatch blocks observation-derived decision update",
+      "passed": true
+    },
+    {
+      "test": "Five-region common-budget comparison and selectable subset",
+      "passed": true
+    },
+    {
+      "test": "PWN example, CSV provenance and profile persistence across navigation",
+      "passed": true,
+      "sha256": "f6463c431aba25c02bb83471418548d605eed9964600eb6cbda1bf8ac227b4f2"
+    },
+    {
+      "test": "Global inputs and snapshot persist; impossible budget never invents production",
+      "passed": true
+    },
+    {
+      "test": "Evidence drawer opens and closes with Escape",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "blocked_external_requests": []
+}

@@ -1,0 +1,2127 @@
+============================================================
+FUTURE NORTH / ARCTIC — COMPLETE REBUILD CONTRACT
+============================================================
+
+You are working inside the EXISTING project/repository.
+
+This instruction defines the final intended architecture of the
+FUTURE NORTH / ARCTIC side of the project.
+
+Do NOT treat this as a small UI revision.
+
+You must:
+
+1. understand the existing project,
+2. research the missing scientific components,
+3. improve the scientific model,
+4. connect the data correctly,
+5. rebuild the Future North product experience,
+6. implement it,
+7. test it,
+8. leave clear provenance/documentation.
+
+DO NOT stop after writing a plan.
+
+The final output must be a working, visually polished,
+scientifically defensible decision-support experience.
+
+============================================================
+0. FIRST — UNDERSTAND THE EXISTING PROJECT
+============================================================
+
+Before changing code:
+
+Inspect the entire repository.
+
+Read the CURRENT versions of all relevant files, especially:
+
+- PROJECT_SOURCE_OF_TRUTH
+- SCIENTIFIC_ARCHITECTURE
+- EVIDENCE_MAP
+- FUTURE_PRODUCTION_MODEL
+- DATA_REQUIREMENTS
+- TASE_ALIGNMENT
+- ARCTIC_FIELD_PLAN
+- PWN_SPEC_V0.1
+- PWN_ARCTIC_V1_CONCEPT
+- PWN_VALIDATION_PLAN
+- RESEARCHER_OUTREACH
+- INTERVIEW_STORY
+- DEMO_PLAN
+- DECISIONS
+- BUILD_STATUS
+- latest ANA_CHAT_TESLIM
+
+Also inspect:
+
+- current datasets,
+- data acquisition scripts,
+- optimization engine,
+- APIs,
+- current Turkey implementation,
+- Future North implementation,
+- tests,
+- hardware/PWN work.
+
+Do NOT understand the project only from documentation.
+
+Inspect the real code.
+
+Preserve scientifically useful:
+- data,
+- provenance,
+- tested calculations,
+- reusable optimization code,
+- existing research,
+- PWN infrastructure.
+
+Do NOT preserve bad UX/product decisions merely because
+they are already implemented.
+
+The current Future North screen is a NEGATIVE BASELINE.
+
+Its problems include:
+
+- too many manually entered assumptions,
+- arbitrary-looking water/energy budgets,
+- user manually choosing the answer,
+- only a few preselected crops,
+- empty “DATA NEEDED” outputs,
+- weak visualization,
+- generic admin/SaaS appearance,
+- PWN/TASE appearing as an attachment rather than a natural research step,
+- no strong feeling that we are planning FUTURE agriculture.
+
+Fix these at the conceptual level.
+
+============================================================
+1. PROJECT EVOLUTION — NEVER LOSE THIS
+============================================================
+
+This is ONE research line.
+
+KONYA
+→
+TÜRKİYE
+→
+FUTURE NORTH
+→
+ARCTIC FIELD RESEARCH
+→
+FIELD-INFORMED MODEL
+→
+CONTROLLED AGRICULTURAL VALIDATION.
+
+Original Konya question:
+
+“Under water/climate pressure,
+how should the existing crop pattern change?”
+
+It was:
+
+CURRENT CROP PATTERN
+→
+SCENARIO
+→
+OPTIMIZATION
+→
+RECOMMENDED CROP PATTERN.
+
+The original ~8.7% result belongs to a
+relative modeled water-pressure index.
+
+It must never be presented as measured m³ water savings.
+
+Türkiye extends the same logic to several agricultural regions.
+
+Future North is the next scientific generation.
+
+The question becomes:
+
+“Under future climate and water conditions,
+what should the production system look like?”
+
+This evolves:
+
+CROP PATTERN
+
+into:
+
+PRODUCTION SYSTEM PATTERN.
+
+============================================================
+2. THE CENTRAL FUTURE NORTH QUESTION
+============================================================
+
+The primary question is:
+
+“Değişen iklim ve su koşulları altında,
+geleceğin kuzey bölgelerinde
+hangi ürünlerden ne kadar,
+hangi yöntemle,
+hangi dönemde
+ve hangi su kaynağı kullanılarak üretim yapılmalı?”
+
+The product is NOT primarily a climate dashboard.
+
+The product is NOT merely a crop-suitability viewer.
+
+The product is NOT a PWN interface.
+
+The product is:
+
+FUTURE AGRICULTURE
++
+WATER MANAGEMENT
+DECISION SUPPORT.
+
+Target users include:
+
+- agricultural planners,
+- water managers,
+- researchers,
+- local/regional decision makers,
+- public planning institutions.
+
+The system should turn climate and resource information
+into a DECISION.
+
+============================================================
+3. THE MAIN SCIENTIFIC IDEA
+============================================================
+
+Always preserve this distinction:
+
+CLIMATIC SUITABILITY
+!=
+SUSTAINABLE PRODUCTION SUITABILITY.
+
+Climate warming may make certain crops climatically possible
+farther north.
+
+That does NOT automatically mean:
+
+- soil is suitable,
+- permafrost allows cultivation,
+- enough usable water exists,
+- water exists during the production season,
+- infrastructure exists,
+- energy demand is sustainable,
+- open-field cultivation is appropriate.
+
+Therefore the system must progressively filter:
+
+CLIMATE POSSIBILITY
+
+→ SOIL / PERMAFROST
+
+→ WATER SECURITY
+
+→ PRODUCTION METHOD
+
+→ ENERGY / INFRASTRUCTURE
+
+→ PRODUCTION SYSTEM DECISION.
+
+The visual/scientific message should be:
+
+“Yetişebilmesi, sürdürülebilir olduğu anlamına gelmez.”
+
+============================================================
+4. FUTURE TIME IS THE MAIN USER INTERACTION
+============================================================
+
+Do NOT make the Future North experience begin with
+20 sliders and numeric inputs.
+
+The primary interaction should feel like opening
+a FUTURE PLANNING SCENARIO.
+
+For example:
+
+TODAY
+10 YIL SONRA
+20 YIL SONRA
+30 YIL SONRA
+
+or scientifically preferable calendar equivalents.
+
+Research and choose a defensible implementation.
+
+IMPORTANT:
+
+Do NOT model “10 years later” by simply adding
+an arbitrary temperature delta.
+
+Use actual climate projections.
+
+A future horizon displayed as one year in the UI
+should internally use an appropriate multi-year climate window
+rather than one isolated weather year.
+
+Research what time windows are scientifically appropriate
+for climate-impact analysis.
+
+Document the mapping:
+
+UI HORIZON
+→
+CLIMATE PERIOD
+→
+SSP
+→
+GCM ENSEMBLE.
+
+Do not silently use one GCM as “the future.”
+
+Use a multi-model approach wherever feasible.
+
+============================================================
+5. RESEARCH THE FUTURE CLIMATE PROPERLY
+============================================================
+
+Research and implement an appropriate future climate layer.
+
+Start from authoritative candidates such as:
+
+- NASA NEX-GDDP-CMIP6,
+- relevant CMIP6 datasets,
+- ERA5-Land for historical baseline,
+- CARRA/CARRA2 where useful for Arctic regional context.
+
+Verify:
+
+- current version,
+- temporal coverage,
+- spatial resolution,
+- variables,
+- scenarios,
+- limitations.
+
+Candidate variables include:
+
+- daily/min/max temperature,
+- precipitation,
+- growing degree days,
+- frost-free / growing-season indicators,
+- heat/cold thresholds,
+- evapotranspiration inputs where defensible,
+- snow-related variables where appropriate.
+
+Use an ensemble or defensible model subset.
+
+The system must communicate scenario uncertainty.
+
+Never call a future projection
+an observed future value.
+
+============================================================
+6. RESEARCH THE NORTHWARD AGRICULTURE EVIDENCE
+============================================================
+
+Use the 2026 Communications Earth & Environment paper:
+
+“Northern permafrost represents a limit on the northward shift
+of climatically feasible agricultural frontiers under future warming”
+
+as an important starting reference.
+
+Verify its methods and exact results yourself.
+
+Do NOT simply copy its final map.
+
+Use it as evidence that:
+
+- climatic suitability can shift northward,
+- crop-specific responses differ,
+- multiple GCMs matter,
+- permafrost can remain a major constraint.
+
+Research additional high-latitude agriculture literature.
+
+Do not claim:
+
+“agriculture will move to the North Pole.”
+
+Use:
+
+“climatic suitability for some crops may expand northward
+under specific future scenarios.”
+
+============================================================
+7. CROP CANDIDATE ENGINE
+============================================================
+
+STOP hardcoding:
+
+BARLEY
+POTATO
+LETTUCE
+
+as if they are the final answer.
+
+They can remain initial evidence-backed candidates,
+but the system must select candidate crops itself.
+
+Build/research a crop evidence catalogue containing,
+where data support it:
+
+- temperature requirements,
+- GDD requirements,
+- growing-season requirements,
+- frost sensitivity,
+- relevant water demand,
+- crop coefficient / ET methodology,
+- photoperiod sensitivity where relevant,
+- soil constraints,
+- production-method compatibility,
+- yield ranges,
+- uncertainty / evidence grade.
+
+Start with crops relevant to high latitudes,
+including but not necessarily limited to:
+
+- barley,
+- potato,
+- wheat,
+- suitable leafy vegetables,
+- other evidence-backed candidates.
+
+The candidate pipeline should be:
+
+CROP DATABASE
+
+→ CLIMATE FILTER
+
+→ GROWING-SEASON / FROST FILTER
+
+→ SOIL / PERMAFROST FILTER
+
+→ WATER FEASIBILITY
+
+→ METHOD COMPATIBILITY
+
+→ CANDIDATE PORTFOLIO.
+
+The user may inspect/disable candidates,
+but should NOT manually construct the answer.
+
+============================================================
+8. SOIL + PERMAFROST MUST BECOME REAL DATA LAYERS
+============================================================
+
+Research and integrate appropriate sources.
+
+Starting candidates include:
+
+- ESA Permafrost CCI,
+- SoilGrids,
+- suitable land-cover/topography products,
+- peer-reviewed local data where available.
+
+At minimum investigate:
+
+- permafrost extent,
+- active-layer thickness,
+- ground temperature,
+- soil properties relevant to crops/drainage,
+- ground constraints.
+
+The system must distinguish:
+
+OPEN-FIELD FEASIBILITY
+
+from:
+
+CONTROLLED-ENVIRONMENT FEASIBILITY.
+
+A site unsuitable for open-field farming
+may still support an engineered controlled-production system.
+
+Do NOT make permafrost a generic red badge.
+
+Make it part of the actual method decision.
+
+============================================================
+9. WATER MANAGEMENT IS A CORE OUTPUT
+============================================================
+
+This project came from WATER MANAGEMENT.
+
+Future North must retain that identity.
+
+The system must not only answer:
+
+“What can grow?”
+
+It must answer:
+
+“How should water be managed
+for the recommended future production system?”
+
+Always distinguish:
+
+PHYSICAL WATER PRESENCE
+
+from:
+
+RELIABLE USABLE PRODUCTION WATER.
+
+Possible water sources can include,
+only where locally relevant:
+
+- local freshwater,
+- precipitation / snowmelt storage,
+- runoff-derived accessible water,
+- stored water,
+- reuse / recirculation,
+- treated seawater.
+
+The general chain is:
+
+PHYSICAL WATER
+
+→ SEASONAL AVAILABILITY
+
+→ ACCESS
+
+→ STORAGE
+
+→ QUALITY
+
+→ TREATMENT / CONDITIONING
+
+→ ENERGY
+
+→ USABLE PRODUCTION WATER
+
+→ ALLOCATION TO PRODUCTION.
+
+============================================================
+10. TERRESTRIAL WATER SECURITY
+============================================================
+
+Do NOT use marine PWN measurements
+as terrestrial agricultural water supply.
+
+Research terrestrial water security separately.
+
+Potential evidence classes:
+
+- precipitation,
+- snowfall / snowmelt,
+- runoff,
+- lake/reservoir/storage,
+- soil moisture,
+- ET,
+- seasonal timing,
+- infrastructure,
+- competing/environmental use.
+
+Research appropriate sources, including:
+
+- ERA5-Land / relevant reanalysis,
+- NVE where the location is within its useful coverage,
+- local official studies,
+- peer-reviewed hydrological studies.
+
+Longyearbyen / Svalbard can be a useful
+research-rich northern planning context.
+
+Research the current SINTEF / UNIS / UiB work
+on Longyearbyen water security and Isdammen.
+
+However:
+
+DO NOT misuse a drinking-water study
+as direct agricultural water availability.
+
+Use each source only for the quantity/process
+it actually supports.
+
+============================================================
+11. MARINE / COASTAL SOURCE-WATER LAYER
+============================================================
+
+For coastal production scenarios,
+treated seawater may be evaluated as ONE possible source.
+
+It is NOT automatically recommended.
+
+Research:
+
+- Copernicus Marine Arctic physical products,
+- TOPAZ or another defensible Arctic product,
+- temperature/salinity profiles,
+- vertical structure,
+- temporal/spatial resolution,
+- quality documentation.
+
+Do not use a surface pixel as a vertical profile.
+
+Do not use a monthly mean
+as if it were an instantaneous CTD cast.
+
+Build a proper provenance object
+for every model profile.
+
+============================================================
+12. DESALINATION / CONDITIONING MODEL
+============================================================
+
+The existing link:
+
+marine temperature
+→ simple RO energy change
+
+is too narrow for the final research model.
+
+Research a more defensible treatment model.
+
+Consider, where scientifically justified:
+
+- salinity,
+- temperature,
+- recovery,
+- pressure,
+- pretreatment,
+- relevant source-water chemistry,
+- energy,
+- concentrate/brine implications.
+
+Do NOT invent precision.
+
+Use sourced ranges / physics
+and expose uncertainty.
+
+Desalination should compete with other water sources.
+
+It must not be automatically selected
+simply because seawater exists.
+
+============================================================
+13. CONTROLLED PRODUCTION / HYDROPONICS
+============================================================
+
+Controlled production is NOT a separate project.
+
+It is one possible decision produced by the optimizer.
+
+Methods may include:
+
+- open field,
+- greenhouse,
+- hydroponics,
+- other controlled-environment production
+  only if evidence supports inclusion.
+
+Research:
+
+- high-latitude greenhouse production,
+- hydroponic water use,
+- closed-loop/recirculating systems,
+- heating demand,
+- lighting demand,
+- pump/system energy,
+- local daylight/seasonality,
+- cold-climate greenhouse studies,
+- relevant Arctic/sub-Arctic experiments.
+
+Review useful analogues such as:
+
+- high-latitude Alaska research,
+- EDEN ISS / extreme-environment controlled agriculture,
+- relevant northern greenhouse studies.
+
+But do NOT transfer a value from Antarctica/Alaska/etc.
+to Svalbard without recording the transfer limitation.
+
+IMPORTANT TERMINOLOGY:
+
+Hydroponics is NOT “waterless agriculture.”
+
+Use:
+
+- soilless agriculture,
+- hydroponic production,
+- controlled production,
+- water-efficient / recirculating production.
+
+============================================================
+14. LOCAL CONTROLLED-ENVIRONMENT ENERGY MODEL
+============================================================
+
+Do NOT use one generic external number such as:
+
+“hydroponics = X kWh/kg”
+
+and pretend it is local Arctic energy demand.
+
+Where feasible, construct a transparent
+physics-informed local energy model.
+
+Consider:
+
+- external air temperature,
+- target internal temperature,
+- envelope heat loss,
+- ventilation/infiltration assumptions,
+- daylight availability,
+- artificial lighting,
+- photoperiod,
+- pumps,
+- dehumidification where relevant,
+- production period.
+
+Use literature ranges and uncertainty.
+
+The result can be a RANGE.
+
+The key is:
+
+“Does the production decision remain the same
+across a defensible range?”
+
+============================================================
+15. DO NOT MAKE THE USER INVENT WATER / ENERGY BUDGETS
+============================================================
+
+The current Future North UX asks the user
+to manually enter arbitrary-looking values.
+
+STOP.
+
+The system should automatically construct
+a baseline planning case from research.
+
+The user should primarily select:
+
+- location / planning context,
+- future horizon,
+- future climate scenario if exposed,
+- optionally the planning objective.
+
+Scientific parameters should be auto-populated.
+
+Advanced users may override a value.
+
+When overridden:
+
+mark it clearly as:
+
+MANUAL OVERRIDE.
+
+Never silently replace sourced data.
+
+============================================================
+16. DEFINE A DEFENSIBLE PLANNING BASIS
+============================================================
+
+An optimizer cannot output meaningful absolute quantities
+without a planning basis.
+
+Do NOT solve this by inventing:
+
+“3 ha”
+“400 m²”
+“40,000 kWh”
+“3000 kg barley”
+
+as hidden demo constants.
+
+Research and select a defensible planning frame.
+
+Possible frames include:
+
+A. LOCAL FOOD-SUPPORT PLANNING
+based on population / demand / food-basket evidence.
+
+B. RESOURCE-CAPACITY PLANNING
+based on defensible available land / water / infrastructure.
+
+C. NORMALIZED REFERENCE PLANNING
+when absolute local scale cannot yet be defended.
+
+Investigate which is strongest for the initial northern case.
+
+Document the choice.
+
+If a demand basket is used:
+
+- source it,
+- explain it,
+- do not turn nutrition preferences into hidden weights.
+
+If absolute quantities cannot be scientifically justified,
+show normalized outputs honestly instead of inventing numbers.
+
+But the final product should make a serious attempt
+to produce actionable amounts where evidence allows.
+
+============================================================
+17. THE OPTIMIZER SHOULD MAKE THE PRODUCTION DECISION
+============================================================
+
+The user should NOT say:
+
+“I want 3000 kg barley,
+10000 kg potato,
+1000 kg lettuce.”
+
+That gives the optimizer much of the answer.
+
+Decision variables should represent combinations like:
+
+x[crop, production_method, water_source, season]
+
+and, where needed:
+
+- area,
+- controlled-production capacity,
+- production amount,
+- water allocation.
+
+Possible constraints:
+
+- climate feasibility,
+- crop season,
+- land/open-field capacity,
+- soil/permafrost feasibility,
+- freshwater availability,
+- stored water,
+- reuse capacity,
+- treated seawater capacity,
+- energy,
+- production infrastructure,
+- agronomic limits,
+- demand / production goals.
+
+============================================================
+18. OBJECTIVES — NO HIDDEN MAGIC WEIGHTS
+============================================================
+
+The system should make the decision,
+but normative planning goals must remain explicit.
+
+Research and implement a transparent approach.
+
+Prefer:
+
+- constrained optimization,
+- lexicographic optimization,
+- Pareto alternatives,
+
+over arbitrary hidden score weights.
+
+A default could be:
+
+BALANCED PLAN
+
+with optional comparison alternatives:
+
+WATER-SECURE
+ENERGY-SECURE
+HIGHER-PRODUCTION
+
+or other scientifically justified names.
+
+The main user does NOT need to tune weights.
+
+The system calculates the plan.
+
+Advanced evidence/model views can explain the objective.
+
+============================================================
+19. FUTURE NORTH'S PRIMARY OUTPUT
+============================================================
+
+The main result is:
+
+FUTURE PRODUCTION SYSTEM PATTERN.
+
+It should answer:
+
+- WHICH CROPS?
+- HOW MUCH?
+- WHICH AREA/CAPACITY?
+- WHICH PRODUCTION METHOD?
+- WHICH SEASON?
+- WHICH WATER SOURCE?
+- HOW MUCH WATER?
+- HOW MUCH ENERGY?
+- WHAT IS THE LIMITING FACTOR?
+- WHY DID THE MODEL CHOOSE THIS?
+
+Do NOT stop at:
+
+“BARLEY — SUITABLE.”
+
+That is not the product.
+
+============================================================
+20. DECISION-MAKER LANGUAGE
+============================================================
+
+The system should translate model results
+into conditional actionable recommendations.
+
+Example STRUCTURE only:
+
+2055 PLAN
+
+INCREASE / ENABLE
+- production option A
+
+LIMIT / REDUCE
+- resource-intensive option B
+
+PRODUCTION METHOD
+- option C should move toward controlled production
+
+WATER STRATEGY
+- prioritize source A for use X
+- increase recirculation/storage
+- use source B only as backup
+
+INFRASTRUCTURE
+- storage / greenhouse / treatment capacity needed
+
+WHY?
+- solver-derived explanation.
+
+Do NOT hardcode these recommendations.
+
+They must come from actual calculation.
+
+Always phrase them as:
+
+“Bu senaryo ve kısıtlar altında modelin önerisi...”
+
+not:
+
+“This is guaranteed to happen.”
+
+============================================================
+21. CRITICAL — DATA NEEDED IS NOT THE MAIN OUTPUT
+============================================================
+
+The old implementation misunderstood scientific honesty.
+
+Scientific honesty does NOT mean:
+
+“If one local number is unknown,
+show DATA NEEDED and refuse to calculate.”
+
+Use this evidence hierarchy:
+
+1. LOCAL DIRECT OBSERVATION
+2. LOCAL / OFFICIAL DATA
+3. REGIONAL AUTHORITATIVE DATA
+4. PEER-REVIEWED ANALOGUE
+5. PHYSICS-BASED MODEL
+6. SOURCED PLAUSIBLE RANGE
+7. UNKNOWN
+
+For uncertain parameters:
+
+- research the best available evidence,
+- establish a defensible range where possible,
+- store provenance,
+- store transfer limitations,
+- run sensitivity analysis.
+
+Only show a pure UNKNOWN
+when no defensible estimate/range exists.
+
+============================================================
+22. TURN UNCERTAINTY INTO RESEARCH
+============================================================
+
+For every important uncertain parameter,
+calculate whether uncertainty actually changes the decision.
+
+Classify results such as:
+
+ROBUST
+The same decision survives the plausible range.
+
+SENSITIVE
+The recommendation changes past a threshold.
+
+UNRESOLVED
+Current evidence is insufficient to produce
+a defensible conclusion for that component.
+
+Do NOT fill the main screen
+with uncertainty labels.
+
+Use them to explain
+decision reliability and research priorities.
+
+============================================================
+23. VALUE OF INFORMATION / DECISION SENSITIVITY
+============================================================
+
+After calculating the PRE-TASE future plan,
+ask:
+
+“Which uncertain inputs can actually change this decision?”
+
+Rank variables by DECISION IMPACT.
+
+Then ask:
+
+“Which of these can TASE physically observe?”
+
+This is how the project naturally explains
+why Arctic field research matters.
+
+Do not write a marketing panel saying:
+
+“WHY WE NEED TO GO TO THE ARCTIC.”
+
+The scientific need should emerge from the analysis.
+
+============================================================
+24. PRE-TASE MODEL
+============================================================
+
+Before the expedition,
+the system MUST already produce a result.
+
+This is critical.
+
+TASE data are NOT required
+for the Future North system to function.
+
+Using existing evidence,
+calculate:
+
+PRE-TASE
+FUTURE PRODUCTION + WATER-MANAGEMENT PLAN.
+
+Every important input receives a provenance state such as:
+
+OBSERVED
+SOURCED
+MODELLED
+TRANSFERRED
+ASSUMED/RANGE
+FIELD-TESTABLE.
+
+The PRE-TASE plan is our HYPOTHESIS / INITIAL DECISION.
+
+============================================================
+25. WHY WE STILL NEED ARCTIC FIELD RESEARCH
+============================================================
+
+The purpose of TASE is NOT:
+
+“We have no data, therefore we cannot calculate.”
+
+The purpose is:
+
+“We have produced a future decision from the best available evidence.
+Now we need to test decision-critical physical assumptions
+that can only be evaluated properly with real field observations.”
+
+This distinction is essential.
+
+A computer model can produce a future scenario.
+
+It cannot manufacture a new
+same-location / same-time physical Arctic observation.
+
+============================================================
+26. MODEL-TODAY VS OBSERVATION-TODAY
+============================================================
+
+We cannot travel to 2055 and measure the future.
+
+Therefore field validation must be scientifically framed correctly.
+
+Use:
+
+MODEL_TODAY
+vs
+OBSERVATION_TODAY.
+
+For an expedition station:
+
+1. freeze the corresponding model/reanalysis expectation,
+2. perform the real field observation,
+3. compare model vs observation,
+4. quantify mismatch / bias / uncertainty,
+5. update only scientifically valid components,
+6. propagate that knowledge into future scenarios.
+
+Do NOT say:
+
+“a 2027 CTD cast validates 2055 climate.”
+
+It does not.
+
+Instead:
+
+it evaluates the current-state representation
+of part of the physical model/data chain
+used in future planning.
+
+============================================================
+27. PWN'S ROLE
+============================================================
+
+PWN = POLAR WATER NODE.
+
+PWN is NOT the main project.
+
+PWN is the FIELD OBSERVATION INSTRUMENT
+inside the future agriculture/water-management research program.
+
+Arctic v1 target variables,
+subject to expert validation:
+
+- conductivity / salinity,
+- temperature,
+- pressure / depth,
+- UTC,
+- position,
+- calibration / quality metadata.
+
+Possibly additional variables
+only if they answer a real scientific question.
+
+============================================================
+28. ARCTIC FIELD PACKAGE A — WATER COLUMN
+============================================================
+
+At appropriate expedition stations:
+
+BEFORE CAST:
+
+freeze:
+
+- model,
+- product/version,
+- grid cell,
+- model time,
+- expected profile,
+- run/scenario ID.
+
+FIELD:
+
+PWN profile.
+
+Where possible:
+
+reference CTD comparison.
+
+AFTER:
+
+MODELLED PROFILE
+vs
+OBSERVED PROFILE.
+
+Research questions include:
+
+- profile mismatch,
+- thermocline/halocline representation,
+- gradients,
+- repeatability,
+- uncertainty.
+
+Do not cherry-pick casts.
+
+============================================================
+29. ARCTIC FIELD PACKAGE B — PHYSICAL WATER SAMPLES
+============================================================
+
+Where operationally/scientifically permitted,
+collect physical water samples.
+
+Final:
+
+- depth,
+- number of samples,
+- bottle type,
+- preservation,
+- laboratory,
+- analytical panel
+
+must be agreed with relevant experts.
+
+Do NOT invent the final protocol now.
+
+Candidate scientific purposes:
+
+A. SOURCE / HYDROLOGICAL CHARACTERIZATION
+
+Possible candidates:
+- δ18O
+- δ2H
+- supporting parameters if justified.
+
+B. SOURCE-WATER / TREATMENT CHARACTERIZATION
+
+Possible candidates:
+- EC/salinity
+- Na
+- Cl
+- Ca
+- Mg
+- boron
+- alkalinity
+- other parameters only if decision-relevant.
+
+Do NOT build a giant chemistry panel.
+
+Every analysis must answer:
+
+“What model/production/water-management decision
+will this measurement improve?”
+
+============================================================
+30. ARCTIC FIELD PACKAGE C — DECISION IMPACT
+============================================================
+
+After field/lab data become available:
+
+update ONLY variables
+that the observations scientifically support.
+
+Then run:
+
+THE SAME OPTIMIZER.
+
+Compare:
+
+PRE-TASE
+vs
+POST-OBSERVATION.
+
+Measure changes in:
+
+- crop portfolio,
+- crop shares,
+- production method,
+- water-source allocation,
+- required storage,
+- reuse,
+- treatment need,
+- energy demand,
+- feasibility,
+- binding constraints,
+- uncertainty.
+
+Valid outcomes include:
+
+- the production pattern changes,
+- only water allocation changes,
+- only method changes,
+- a previously viable option becomes infeasible,
+- the same decision remains optimal,
+- field observation has negligible decision impact.
+
+NO CHANGE is a scientifically valid result.
+
+============================================================
+31. TERRESTRIAL WATER VS PWN — NEVER CONFUSE THEM
+============================================================
+
+PWN does NOT directly measure:
+
+- annual terrestrial freshwater availability,
+- future precipitation,
+- future crop yield,
+- future runoff,
+- permafrost suitability,
+- entire agricultural water security.
+
+Those require separate datasets/models.
+
+PWN contributes to:
+
+A.
+marine water-column model/observation evaluation.
+
+B.
+source-water characterization
+where a coastal water source is a relevant production option.
+
+Never interpret:
+
+low-salinity marine water
+
+as:
+
+“irrigation freshwater.”
+
+============================================================
+32. CONTROLLED-PRODUCTION VALIDATION
+============================================================
+
+If the optimizer recommends
+greenhouse/hydroponic/controlled production,
+create a real experimental continuation.
+
+This is the THIRD validation layer:
+
+MODEL
+
+→ FIELD WATER OBSERVATION
+
+→ CONTROLLED AGRICULTURAL EXPERIMENT.
+
+The strongest default plan is POST-EXPEDITION,
+under controlled laboratory/growth conditions.
+
+If expedition logistics/expert approval later support
+a small shipboard experiment,
+that can remain an optional extension.
+
+Do NOT make shipboard plant growth
+a requirement for success.
+
+============================================================
+33. POST-EXPEDITION SOURCE-WATER EXPERIMENT
+============================================================
+
+Where legally/logistically/scientifically appropriate:
+
+ARCTIC SOURCE-WATER SAMPLE
+
+→ characterize
+
+→ appropriate treatment / conditioning
+
+→ nutrient solution
+
+→ controlled hydroponic experiment.
+
+If direct use/transport of the sample is not appropriate:
+
+use:
+
+RECONSTRUCTED / SYNTHETIC ARCTIC SOURCE WATER
+
+based on measured chemistry.
+
+Clearly label it as reconstructed.
+
+Possible endpoints:
+
+- new water input,
+- recirculation/reuse,
+- treatment requirement,
+- treatment energy,
+- EC,
+- nutrient solution stability,
+- growth rate,
+- biomass,
+- yield proxy,
+- water-use efficiency.
+
+Use controls and replicates.
+
+This tests:
+
+SOURCE WATER
+→ TREATMENT
+→ CONTROLLED PRODUCTION COMPATIBILITY.
+
+It does NOT validate all future Arctic agriculture.
+
+============================================================
+34. THE RESEARCH HAS THREE TESTS
+============================================================
+
+The project should be understandable as:
+
+TEST 1
+Does the physical water model represent
+the real present Arctic water column?
+
+MODEL
+vs
+PWN / reference observation.
+
+TEST 2
+Does field-observed source-water information
+change the future production/water-management decision?
+
+PRE-TASE
+vs
+POST-OBSERVATION optimizer.
+
+TEST 3
+Does the recommended controlled-production pathway
+perform as expected physically?
+
+MODEL
+vs
+hydroponic/greenhouse experiment.
+
+This changes the project from:
+
+“A simulation website”
+
+into:
+
+MODEL
+→ FIELD RESEARCH
+→ EXPERIMENTAL VALIDATION.
+
+============================================================
+35. FUTURE NORTH MAIN SCREEN — PRODUCT EXPERIENCE
+============================================================
+
+DO NOT design an admin dashboard.
+
+DO NOT design a generic SaaS form.
+
+DO NOT call the main experience a dashboard.
+
+Design a:
+
+SCIENTIFIC DECISION-SUPPORT SIMULATOR
+/
+RESEARCH FIELD CONSOLE.
+
+Desktop first.
+
+The main screen should immediately communicate:
+
+“WE ARE LOOKING AT A FUTURE AGRICULTURAL PLAN.”
+
+============================================================
+36. MAIN FUTURE NORTH INFORMATION ARCHITECTURE
+============================================================
+
+The first viewport should contain roughly:
+
+A. FUTURE HORIZON
+
+TODAY
+10 YEARS
+20 YEARS
+30 YEARS
+
+or the researched scientific equivalents.
+
+B. SHORT FUTURE CONTEXT
+
+For the selected horizon show:
+
+- climate direction/change,
+- growing-season change,
+- water-security direction,
+- relevant soil/permafrost constraint,
+- number of candidate production options.
+
+Do not show 25 metrics.
+
+C. RECOMMENDED FUTURE PRODUCTION PATTERN
+
+This is the HERO result.
+
+D. WATER MANAGEMENT PLAN
+
+Visible and directly connected to production.
+
+E. KEY CONSTRAINT / DECISION EXPLANATION.
+
+============================================================
+37. HERO RESULT VISUAL
+============================================================
+
+Create a strong visual representation of:
+
+FUTURE PRODUCTION SYSTEM PATTERN.
+
+It should communicate:
+
+CROP
+→ AMOUNT / AREA / CAPACITY
+→ METHOD
+→ WATER SOURCE
+→ SEASON.
+
+Possible visual structure:
+
+crop bars / production blocks
++
+method chips
++
+water-source connection
++
+resource totals.
+
+Do not make it look like a spreadsheet.
+
+Do not show empty lines when data are uncertain.
+
+============================================================
+38. WATER ALLOCATION VISUAL
+============================================================
+
+Water must visually feel
+like part of the agricultural decision.
+
+Create a clear visual such as:
+
+SOURCE
+
+Local freshwater
+Stored precipitation/snowmelt
+Reuse
+Treated seawater where relevant
+
+↓
+
+ALLOCATION
+
+Open field
+Greenhouse
+Hydroponics
+Reserve / environmental constraint where modeled
+
+↓
+
+PRODUCTION.
+
+A compact Sankey/alluvial/flow visualization
+may be appropriate if implemented cleanly.
+
+The goal is:
+
+one glance should show
+WHERE WATER COMES FROM
+and
+WHERE IT GOES.
+
+============================================================
+39. FUTURE EVOLUTION VISUAL
+============================================================
+
+Create one high-value timeline visual:
+
+TODAY
+→
+NEAR FUTURE
+→
+MID FUTURE
+→
+LATER FUTURE.
+
+Allow the decision maker to see:
+
+- candidate crop changes,
+- production-method changes,
+- water allocation changes,
+- binding-constraint changes.
+
+Transition should animate subtly
+when switching horizons.
+
+This should make climate-driven agricultural change
+visually intuitive.
+
+============================================================
+40. CLIMATE FRONTIER VS SUSTAINABLE PRODUCTION FRONTIER
+============================================================
+
+Research and implement
+a secondary map/visual where appropriate.
+
+Show the conceptual difference between:
+
+CLIMATE-SUITABLE POTENTIAL
+
+and
+
+RESOURCE-CONSTRAINED
+SUSTAINABLE PRODUCTION POTENTIAL.
+
+Do NOT invent a scientifically universal geographic boundary.
+
+“Sustainable Production Frontier”
+must remain conditional on:
+
+- scenario,
+- crop,
+- method,
+- water,
+- energy,
+- soil/permafrost,
+- evidence.
+
+If spatial data are not yet adequate
+for a credible map at the chosen local scale,
+do not fake polygons.
+
+Use a scientifically honest alternative visualization.
+
+============================================================
+41. WHY DID THE MODEL CHOOSE THIS?
+============================================================
+
+Every major production decision should be explainable.
+
+For example:
+
+WHY HYDROPONIC?
+
+- open-field season remains limiting,
+- water reuse improves freshwater demand,
+- energy remains within the scenario constraint.
+
+WHY NOT CROP X?
+
+- water demand becomes binding,
+- growing-season threshold not met,
+- permafrost/open-field constraint.
+
+Generate these explanations
+from model constraints/results.
+
+Do NOT write generic AI-generated explanations
+unconnected to the solver.
+
+============================================================
+42. FIELD VALIDATION — SMALL BUT POWERFUL
+============================================================
+
+Do NOT let PWN dominate the main Future North screen.
+
+After the main decision,
+show a compact section:
+
+“SAHADA DOĞRULANACAKLAR”
+
+or a better Turkish label.
+
+Example structure:
+
+VARIABLE
+DECISION IMPACT
+CURRENT EVIDENCE
+FIELD TEST?
+
+Marine temperature
+medium
+modelled
+PWN
+
+Marine salinity
+medium/high
+modelled
+PWN
+
+Source-water chemistry
+scenario dependent
+unknown/range
+physical sample
+
+Seasonal terrestrial freshwater
+high
+hydrology/model
+not PWN.
+
+This section should make the expedition's role
+obvious without turning the app
+into an expedition brochure.
+
+============================================================
+43. EVIDENCE / PROVENANCE — PRESENT BUT NOT CLUTTERED
+============================================================
+
+Every important value must be traceable.
+
+But do NOT fill the main screen
+with citations and warning banners.
+
+Use:
+
+- info icons,
+- evidence drawer,
+- provenance side panel,
+- expandable methodology.
+
+For a value show, when opened:
+
+- source,
+- dataset/product,
+- variable,
+- period,
+- spatial resolution,
+- transformation,
+- uncertainty,
+- transfer limitation,
+- accessed/version date.
+
+The jury should be able to inspect it.
+
+The ordinary user should not drown in it.
+
+============================================================
+44. VISUAL DESIGN LOCK
+============================================================
+
+The current pale green/beige generic form UI
+is NOT acceptable.
+
+Target visual language:
+
+RESEARCH FIELD CONSOLE.
+
+Design principles:
+
+- deep forest / petrol / near-black shell,
+- warm off-white analytical canvas,
+- semantic green for production,
+- cool blue for water,
+- icy cyan for field observation,
+- restrained amber for energy,
+- muted warm/rust for climate pressure,
+- neutral gray for uncertainty,
+- professional scientific line icons,
+- subtle topographic / contour / water-column motifs,
+- compact typography,
+- strong hierarchy,
+- moderate radii,
+- clean grids,
+- generous but not wasteful spacing.
+
+No stock photography.
+
+No huge empty cards.
+
+No childish “eco” aesthetic.
+
+No generic AI gradient everywhere.
+
+No floating glassmorphism overload.
+
+No enormous marketing headings.
+
+It should feel:
+
+scientific,
+modern,
+physical,
+credible,
+premium,
+interactive.
+
+============================================================
+45. MICROINTERACTIONS
+============================================================
+
+Effects should communicate model state.
+
+Useful examples:
+
+- selected future horizon transition,
+- production pattern morph,
+- water allocation flow transition,
+- binding constraint highlight,
+- modelled → observed transition,
+- sourced value → manual override state,
+- PRE-TASE → POST-TASE comparison.
+
+Animations should be restrained and fast.
+
+No decorative animation without meaning.
+
+============================================================
+46. RESEARCH BEFORE IMPLEMENTATION
+============================================================
+
+Do a focused scientific research sprint.
+
+For every model layer create:
+
+QUESTION
+REQUIRED VARIABLE
+BEST SOURCE
+BACKUP SOURCE
+SPATIAL/TEMPORAL SCALE
+TRANSFORMATION
+UNCERTAINTY
+MODEL ROLE
+LIMITATION.
+
+Research categories:
+
+1. future climate,
+2. crop suitability,
+3. crop water demand,
+4. soil,
+5. permafrost,
+6. terrestrial hydrology,
+7. storage/water security,
+8. high-latitude open-field production,
+9. greenhouse/hydroponics,
+10. local energy,
+11. marine T/S,
+12. desalination/source-water treatment,
+13. potential laboratory water analyses,
+14. planning objective/demand basis.
+
+============================================================
+47. IMPORTANT STARTING SOURCES TO VERIFY
+============================================================
+
+Use these as STARTING POINTS,
+not blindly as final truth.
+
+Verify current versions yourself.
+
+- NASA NEX-GDDP-CMIP6
+- ERA5-Land
+- CARRA/CARRA2 where useful
+- ESA Permafrost CCI v5
+- SoilGrids
+- Copernicus Marine Arctic Ocean Physics / TOPAZ
+- NVE Svalbard/hydrological material
+- SINTEF / UNIS / UiB Longyearbyen water-security work
+- FAO-56
+- FAO water-quality-for-agriculture guidance
+- peer-reviewed high-latitude crop studies
+- high-latitude controlled-environment studies
+- EDEN ISS as an analogue where relevant
+- Alaska/UAF crop research where relevant
+- Xu et al. 2026 northern agricultural-frontier paper.
+
+Research additional primary sources as needed.
+
+Prefer:
+
+official datasets
++
+peer-reviewed papers
++
+official local sources.
+
+Avoid blogs and unsupported commercial claims.
+
+============================================================
+48. DO NOT FAKE OUR OWN DATA
+============================================================
+
+This project CAN produce new research
+without pretending public data were our measurements.
+
+Always distinguish:
+
+SOURCE DATA
+
+from:
+
+OUR ANALYSIS.
+
+Correct:
+
+“We integrated future climate, water, crop and resource data
+and produced a new optimized production scenario.”
+
+Incorrect:
+
+“We measured future climate.”
+
+PRE-TASE results are:
+
+OUR MODEL / OUR ANALYSIS.
+
+PWN and physical samples are:
+
+OUR FIELD OBSERVATIONS.
+
+Controlled experiments are:
+
+OUR EXPERIMENTAL DATA.
+
+Keep this distinction everywhere.
+
+============================================================
+49. LOCATION LOGIC
+============================================================
+
+Do NOT hardcode the entire concept to one location
+without scientific justification.
+
+There are two concepts:
+
+PLANNING LOCATION
+
+and
+
+FIELD OBSERVATION LOCATION.
+
+They may sometimes be related,
+but they are NOT automatically identical.
+
+The initial demonstration may use a defensible
+Svalbard / Longyearbyen / relevant northern context
+because of available evidence.
+
+But:
+
+TASE is ship-based
+and field observations depend on expedition route.
+
+Never claim:
+
+“A TASE cast directly validates Longyearbyen source water”
+
+unless the spatial/physical connection is actually demonstrated.
+
+============================================================
+50. WHAT THE JURY SHOULD UNDERSTAND IN 30 SECONDS
+============================================================
+
+A jury member should be able to watch this demo:
+
+1. Open Future North.
+2. Select a future horizon.
+3. Climate/resource state updates.
+4. Candidate crops update automatically.
+5. Recommended production pattern appears.
+6. Water-source allocation appears.
+7. System explains why.
+8. Switch to another future horizon.
+9. Pattern/water strategy changes.
+10. Open “field validation”.
+11. See which decision-critical variables TASE can measure.
+
+The intended reaction is:
+
+“They are not only predicting what may grow.
+They are planning how future northern agriculture
+should allocate crops, production methods and water,
+and they have designed field research
+to test the physical assumptions behind that decision.”
+
+============================================================
+51. ACCEPTANCE TEST — FUTURE NORTH
+============================================================
+
+The rebuild is NOT complete unless:
+
+TEST A
+I can choose a future horizon
+and receive a meaningful production plan
+without typing arbitrary crop targets.
+
+TEST B
+The plan contains:
+crop + amount + method + water source.
+
+TEST C
+Water management is a first-class result.
+
+TEST D
+Changing future horizon changes inputs/calculation
+based on real projection data,
+not cosmetic labels.
+
+TEST E
+The crop portfolio is evidence-generated,
+not only three hardcoded crops.
+
+TEST F
+Uncertainty produces ranges/sensitivity,
+not a wall of DATA NEEDED.
+
+TEST G
+I can understand why the optimizer chose the pattern.
+
+TEST H
+I can identify which uncertainties
+could change the decision.
+
+TEST I
+I can see which of those
+TASE/PWN/sampling can test.
+
+TEST J
+PRE-TASE functions fully
+without future field data.
+
+TEST K
+A post-observation pathway exists
+using the SAME decision engine.
+
+TEST L
+The screen looks like a modern
+scientific research simulator,
+not an admin dashboard.
+
+============================================================
+52. IMPLEMENTATION REQUIREMENTS
+============================================================
+
+Do NOT only modify mock text.
+
+Implement the actual pipeline.
+
+Where real data can be downloaded and processed,
+do so.
+
+Cache and version data locally
+according to project conventions.
+
+Add provenance.
+
+Add reproducible scripts.
+
+Add tests.
+
+Where a full data integration
+cannot reasonably be finished in this iteration:
+
+1. implement the correct interface/schema,
+2. use the strongest defensible sourced range,
+3. label the evidence level,
+4. document exactly what remains,
+5. DO NOT replace the main output with an empty placeholder.
+
+============================================================
+53. DOCUMENTATION TO PRODUCE
+============================================================
+
+Create/update documentation such as:
+
+FUTURE_NORTH_REBUILD.md
+
+NORTH_DATA_PROVENANCE.md
+
+NORTH_MODEL_ASSUMPTIONS.md
+
+NORTH_DECISION_ENGINE.md
+
+NORTH_VALIDATION_LINK.md
+
+or equivalent existing project files.
+
+Record:
+
+- exact source,
+- exact variable,
+- processing,
+- assumptions,
+- limitations,
+- model equations,
+- optimization formulation,
+- uncertainty method,
+- UI-to-model mapping.
+
+Do not create duplicate/conflicting docs
+if an existing canonical document should be updated.
+
+============================================================
+54. DO NOT OVERCLAIM
+============================================================
+
+Never claim:
+
+- future agriculture is certain,
+- all farming will move north,
+- PWN measures total agricultural water security,
+- one 2027 profile validates 2050 climate,
+- hydroponics uses no water,
+- seawater can directly irrigate crops,
+- the model is “AI” unless a real trained/validated AI component exists,
+- uncertainty disappeared,
+- public source data are our field measurements.
+
+Scientific credibility is more important
+than impressive wording.
+
+============================================================
+55. FINAL PROJECT LOGIC
+============================================================
+
+The Future North project must ultimately feel like:
+
+EXISTING SCIENTIFIC EVIDENCE
+
+→ FUTURE CLIMATE SCENARIO
+
+→ POSSIBLE CROPS
+
+→ WATER + SOIL + ENERGY FILTER
+
+→ PRODUCTION METHOD SELECTION
+
+→ OPTIMIZED FUTURE PRODUCTION SYSTEM
+
+→ WATER-MANAGEMENT PLAN
+
+→ DECISION EXPLANATION
+
+→ SENSITIVITY / INFORMATION VALUE
+
+→ TASE FIELD RESEARCH TARGETS
+
+→ PWN + PHYSICAL SAMPLES
+
+→ MODEL-OBSERVATION TEST
+
+→ FIELD-INFORMED RERUN
+
+→ CONTROLLED AGRICULTURAL VALIDATION.
+
+============================================================
+56. THE ONE-SENTENCE PRODUCT DEFINITION
+============================================================
+
+The Future North system is:
+
+“Mevcut bilimsel veriler ve gelecek iklim projeksiyonlarını
+birleştirerek kuzey bölgelerinde gelecekte
+hangi ürünlerden ne kadar,
+hangi yöntemle
+ve hangi su kaynaklarıyla üretim yapılması gerektiğini hesaplayan;
+kararın kritik su varsayımlarını belirleyen
+ve Arktik saha gözlemleriyle bu varsayımların
+test edilmesine imkân veren
+bir tarım ve su yönetimi karar destek sistemi.”
+
+Everything you implement should support that sentence.
+
+============================================================
+57. EXECUTE NOW
+============================================================
+
+Do not respond only with a proposal.
+
+First audit the repository and current implementation.
+
+Then perform the required research.
+
+Then define the revised scientific/data architecture.
+
+Then implement the Future North rebuild.
+
+Preserve valid existing backend/data work.
+
+Replace weak product/UI decisions.
+
+Run all relevant tests.
+
+Add new tests for the Future North workflow.
+
+Then report clearly:
+
+1. what you researched,
+2. which sources/data you actually integrated,
+3. what scientific model changed,
+4. what UI/product flow changed,
+5. what now works end-to-end,
+6. what remains uncertain,
+7. what TASE will test,
+8. what is still future work.
+
+The final deliverable must be a working product,
+not a concept document.

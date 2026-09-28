@@ -1,0 +1,552 @@
+{
+  "checked_at_utc": "2026-09-22T23:09:44.791729+00:00",
+  "request": {
+    "site_id": "longyearbyen",
+    "horizon_id": "mid",
+    "scenario_id": "ssp245",
+    "objective": "balanced",
+    "production_retention": 1.0,
+    "minimum_crop_share": 0.05,
+    "area_m2": 100.0,
+    "roof_ratio": 1.0,
+    "storage_m3_per_m2": 0.1,
+    "collection_efficiency": 0.8,
+    "desalination": true,
+    "freshwater_m3": 0.0,
+    "heat_cop": 1.0,
+    "energy_limit_kwh": null,
+    "salinity_g_kg": 35.0,
+    "source_temperature_c": 2.0,
+    "recovery": 0.45,
+    "disabled_crops": [],
+    "disabled_methods": []
+  },
+  "provenance": {
+    "engine_version": "north-diversity-production-regret-2",
+    "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+    "evidence_sha256": {
+      "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+      "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+      "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+      "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+      "agronomic_envelopes": "42cff6281c437546dc32797ceabb3b2cca10fb64bfeace8ad748342dff8909fd",
+      "planning_code": "4b21ad6f8d2dc5fbccc96e29c0704cc888f88451ca65b776749162a8ca9435e8",
+      "candidate_code": "195a37916dc0f29705d3fbf27b493326ad658d93eca985ca8b97036c80cae2c5"
+    },
+    "sources": {
+      "EDEN_ISS_2018": {
+        "accessed_on": "2026-09-23",
+        "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+        "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+        "period": "2018-02-07/2018-11-20",
+        "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+        "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+        "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+        "url": "https://doi.org/10.3389/fpls.2020.00656"
+      },
+      "FAO56": {
+        "accessed_on": "2026-09-23",
+        "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+        "locator": "Tables 11 and 12",
+        "period": "1998 publication",
+        "spatial_scope": "Multi-region reference examples",
+        "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+        "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+        "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+      },
+      "FAO_ECOCROP_BARLEY": {
+        "classification": "EXTERNAL_SPECIES_ENVELOPE",
+        "locally_validated": false,
+        "locator": "Ecology/Cultivation table",
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1232"
+      },
+      "FAO_ECOCROP_POTATO": {
+        "classification": "EXTERNAL_SPECIES_ENVELOPE",
+        "locally_validated": false,
+        "locator": "Ecology/Cultivation table",
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1971"
+      },
+      "NORA_2016": {
+        "accessed_on": "2026-09-23",
+        "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+        "locator": "Tables 3-2 and 3-3",
+        "period": "2014 and 2015 trials",
+        "spatial_scope": "Alta and Holt, northern Norway",
+        "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+        "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+        "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf"
+      },
+      "POTATO_TROMSO_2025": {
+        "accessed_on": "2026-09-23",
+        "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+        "locator": null,
+        "period": "2020 experiment; 2025 publication",
+        "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+        "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+        "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+        "url": "https://doi.org/10.1007/s11540-025-09854-0"
+      },
+      "UAF_GDD_2022": {
+        "accessed_on": "2026-09-23",
+        "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+        "locator": null,
+        "period": "2022 publication",
+        "spatial_scope": "Alaska",
+        "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+        "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+        "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/"
+      },
+      "UAF_HYDROPONIC_2007": {
+        "accessed_on": "2026-09-23",
+        "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+        "locator": "pp.24–25",
+        "period": "2007",
+        "spatial_scope": "Alaska, recirculating NFT lettuce",
+        "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+        "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+        "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf"
+      },
+      "XU_2026": {
+        "accessed_on": "2026-09-23",
+        "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+        "locator": null,
+        "period": "1980–2010; 2041–2070; 2071–2100",
+        "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+        "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+        "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+        "url": "https://doi.org/10.1038/s43247-026-03702-w"
+      }
+    },
+    "resource_evidence_path": "data/north/resource_evidence.json",
+    "uncertainty": "Deterministic bounded reruns; no probability/confidence intervals.",
+    "sensitivity_threshold": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+    "temperature_approximation": "21/19°C day/night targets, 17h flat light schedule preserving published ramp-integrated DLI. Daily outdoor weather reconstructed hourly, not hourly observation.",
+    "normalization": "Single growing layer, 100 m² default; cultivated area != complete facility footprint.",
+    "season_policy": "May–September / March–October / annual engineering schedules, not projected natural growing seasons.",
+    "capacity_policy": "No local energy/land permit/water right assumed. Optional explicit resource ceilings only."
+  },
+  "story_code_sha256": "9fb50c54a5b920a81ea1c5b1e4f778bad7498b02451129c53d3e73b182021feb",
+  "story": {
+    "version": "north-decision-story-1.0",
+    "classification": "CALCULATED_DECISION_EXPLANATION",
+    "plan_status": "conditional",
+    "water_security": {
+      "annual_demand_m3": 14.187618105909758,
+      "sources": [
+        {
+          "id": "stored_precipitation",
+          "label": "Toplanan yağış / kar erimesi",
+          "m3": 14.06286033193899,
+          "share_pct": 99.12
+        },
+        {
+          "id": "desalinated_seawater",
+          "label": "Arıtılmış deniz suyu",
+          "m3": 0.12475777397076915,
+          "share_pct": 0.88
+        },
+        {
+          "id": "allocated_freshwater",
+          "label": "Açıkça tanımlanan tatlı su tahsisi",
+          "m3": 0.0,
+          "share_pct": 0.0
+        }
+      ],
+      "allocated_source_total_m3": 14.18761810590976,
+      "source_share_basis": "Actual allocated source total; not physical source-water availability.",
+      "source_balance_residual_m3": 1.7763568394002505e-15,
+      "source_balance_status": "CLOSED",
+      "critical_month": {
+        "month": 5,
+        "label": "Mayıs",
+        "model": "MPI-ESM1-2-HR",
+        "backup_m3": 0.0758609222518361,
+        "demand_m3": 1.44445267986968,
+        "backup_share_pct": 5.251880058727874,
+        "basis": "MAX_MODEL_CLIMATOLOGICAL_MONTH_FROM_DAILY_REPLAY",
+        "selection_rule": "Largest monthly backup volume; tied volumes use highest backup/demand ratio.",
+        "meaning": "Roof/tank shortfall before backup sources; not an unserved deficit after desalination.",
+        "is_single_worst_year_month": false
+      },
+      "storage": {
+        "configured_m3": 10.0,
+        "modeled_peak_occupied_m3": 10.0,
+        "minimum_required_m3": null,
+        "basis": "MAX_DAILY_OCCUPIED_STORAGE_ACROSS_MODELS",
+        "capacity_optimized": false,
+        "meaning": "Selected tank size and simulated occupied volume are different. Neither is a calculated minimum tank size."
+      },
+      "backup": {
+        "status": "COMPUTED",
+        "annual_m3": {
+          "min": 0.0,
+          "mean": 0.20103945172332868,
+          "max": 5.575982652242932
+        },
+        "worst_model": "MRI-ESM2-0",
+        "worst_year": 2041,
+        "worst_model_annual_m3": {
+          "min": 0.0,
+          "mean": 0.2787991326121466,
+          "max": 5.575982652242932
+        },
+        "maximum_daily_m3": 0.046595247737731625,
+        "models": [
+          {
+            "model": "ACCESS-CM2",
+            "annual_m3": {
+              "min": 0.0,
+              "mean": 0.02324370259224807,
+              "max": 0.46487405184496144
+            },
+            "worst_year": 2041,
+            "maximum_daily_m3": 0.03320528941749726,
+            "days_with_backup": 14
+          },
+          {
+            "model": "MPI-ESM1-2-HR",
+            "annual_m3": {
+              "min": 0.0,
+              "mean": 0.30107551996559134,
+              "max": 5.156625422603348
+            },
+            "worst_year": 2041,
+            "maximum_daily_m3": 0.046595247737731625,
+            "days_with_backup": 165
+          },
+          {
+            "model": "MRI-ESM2-0",
+            "annual_m3": {
+              "min": 0.0,
+              "mean": 0.2787991326121466,
+              "max": 5.575982652242932
+            },
+            "worst_year": 2041,
+            "maximum_daily_m3": 0.046595247737731625,
+            "days_with_backup": 154
+          }
+        ],
+        "aggregation": "Min/max across modeled years and models; mean of model annual means. Equal periods required for pooled-mean interpretation.",
+        "meaning": "Additional water after roof/tank supply, before freshwater/desalination; not measured unreliability.",
+        "probability_claimed": false,
+        "first_modeled_year": 2041,
+        "worst_year_is_first_modeled_year": true,
+        "initial_condition_warning": "İlk model yılında boş depo başlangıcı etkisi bulunuyor; bu bir kurak yıl kanıtı değildir."
+      },
+      "dry_year_sensitivity": {
+        "status": "COMPUTED",
+        "annual_mean_backup_m3": 0.20103945172332868,
+        "worst_model_year_backup_m3": 5.575982652242932,
+        "increase_m3": 5.374943200519604,
+        "increase_pct": 2673.576332627798,
+        "is_sensitive": true,
+        "display_threshold_pct": 5.0,
+        "comparison": "(Largest modeled annual backup - equal-weight mean annual backup) / mean annual backup.",
+        "threshold_kind": "Explicit display convention, not a physical failure threshold or significance test.",
+        "interpretation": "Highest backup-demand year; not necessarily the lowest-precipitation year.",
+        "worst_year_is_first_modeled_year": true,
+        "initial_condition_warning": "İlk model yılında boş depo başlangıcı etkisi bulunuyor; bu bir kurak yıl kanıtı değildir.",
+        "probability_claimed": false
+      }
+    },
+    "production": {
+      "crops": [
+        {
+          "crop_id": "kohlrabi",
+          "name": "Alabaş",
+          "area_m2": 75.0,
+          "production_kg": 3649.4999999999995,
+          "methods": [
+            "hydroponics"
+          ],
+          "seasons": [
+            "annual"
+          ]
+        },
+        {
+          "crop_id": "arugula",
+          "name": "Roka",
+          "area_m2": 5.0,
+          "production_kg": 228.75,
+          "methods": [
+            "hydroponics"
+          ],
+          "seasons": [
+            "annual"
+          ]
+        },
+        {
+          "crop_id": "basil",
+          "name": "Fesleğen",
+          "area_m2": 5.0,
+          "production_kg": 38.717500000000015,
+          "methods": [
+            "hydroponics"
+          ],
+          "seasons": [
+            "summer",
+            "extended"
+          ]
+        },
+        {
+          "crop_id": "lettuce",
+          "name": "Marul",
+          "area_m2": 5.0,
+          "production_kg": 47.599999999999994,
+          "methods": [
+            "greenhouse",
+            "hydroponics"
+          ],
+          "seasons": [
+            "summer"
+          ]
+        },
+        {
+          "crop_id": "radish",
+          "name": "Turp",
+          "area_m2": 5.0,
+          "production_kg": 54.6,
+          "methods": [
+            "greenhouse"
+          ],
+          "seasons": [
+            "summer"
+          ]
+        },
+        {
+          "crop_id": "swiss_chard",
+          "name": "Pazı",
+          "area_m2": 5.0,
+          "production_kg": 185.2,
+          "methods": [
+            "hydroponics"
+          ],
+          "seasons": [
+            "annual"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "id": "hydroponics",
+          "label": "kontrollü hidroponik üretim",
+          "area_m2": 94.74762770201205
+        },
+        {
+          "id": "greenhouse",
+          "label": "sera",
+          "area_m2": 5.252372297987949
+        }
+      ]
+    },
+    "actions": [
+      {
+        "id": "production",
+        "kind": "production",
+        "tone": "positive",
+        "title": "Hesaplanan üretim dağılımını uygula",
+        "text": "94,7 m² kontrollü hidroponik üretim; 5,3 m² sera. Ürün alanları: Alabaş 75,0 m², Roka 5,0 m², Fesleğen 5,0 m², Marul 5,0 m², Turp 5,0 m², Pazı 5,0 m². Yerel pilotta verim ve çevrim koşullarını doğrula.",
+        "metrics": {
+          "crops": [
+            {
+              "crop_id": "kohlrabi",
+              "name": "Alabaş",
+              "area_m2": 75.0,
+              "production_kg": 3649.4999999999995,
+              "methods": [
+                "hydroponics"
+              ],
+              "seasons": [
+                "annual"
+              ]
+            },
+            {
+              "crop_id": "arugula",
+              "name": "Roka",
+              "area_m2": 5.0,
+              "production_kg": 228.75,
+              "methods": [
+                "hydroponics"
+              ],
+              "seasons": [
+                "annual"
+              ]
+            },
+            {
+              "crop_id": "basil",
+              "name": "Fesleğen",
+              "area_m2": 5.0,
+              "production_kg": 38.717500000000015,
+              "methods": [
+                "hydroponics"
+              ],
+              "seasons": [
+                "summer",
+                "extended"
+              ]
+            },
+            {
+              "crop_id": "lettuce",
+              "name": "Marul",
+              "area_m2": 5.0,
+              "production_kg": 47.599999999999994,
+              "methods": [
+                "greenhouse",
+                "hydroponics"
+              ],
+              "seasons": [
+                "summer"
+              ]
+            },
+            {
+              "crop_id": "radish",
+              "name": "Turp",
+              "area_m2": 5.0,
+              "production_kg": 54.6,
+              "methods": [
+                "greenhouse"
+              ],
+              "seasons": [
+                "summer"
+              ]
+            },
+            {
+              "crop_id": "swiss_chard",
+              "name": "Pazı",
+              "area_m2": 5.0,
+              "production_kg": 185.2,
+              "methods": [
+                "hydroponics"
+              ],
+              "seasons": [
+                "annual"
+              ]
+            }
+          ],
+          "methods": [
+            {
+              "id": "hydroponics",
+              "label": "kontrollü hidroponik üretim",
+              "area_m2": 94.74762770201205
+            },
+            {
+              "id": "greenhouse",
+              "label": "sera",
+              "area_m2": 5.252372297987949
+            }
+          ]
+        },
+        "evidence_basis": "Actual selected allocations; conditional yield transfer."
+      },
+      {
+        "id": "water_sources",
+        "kind": "water",
+        "tone": "warning",
+        "title": "Su kaynaklarını bu paylarla hazırla",
+        "text": "Toplanan yağış / kar erimesi: 14,1 m³ (%99,1); Arıtılmış deniz suyu: 0,1 m³ (%0,9). Toplanan suyun kalitesini ve gerekli koşullandırmayı doğrula.",
+        "metrics": {
+          "sources": [
+            {
+              "id": "stored_precipitation",
+              "label": "Toplanan yağış / kar erimesi",
+              "m3": 14.06286033193899,
+              "share_pct": 99.12
+            },
+            {
+              "id": "desalinated_seawater",
+              "label": "Arıtılmış deniz suyu",
+              "m3": 0.12475777397076915,
+              "share_pct": 0.88
+            },
+            {
+              "id": "allocated_freshwater",
+              "label": "Açıkça tanımlanan tatlı su tahsisi",
+              "m3": 0.0,
+              "share_pct": 0.0
+            }
+          ],
+          "balance_status": "CLOSED"
+        },
+        "evidence_basis": "Monthly LP allocated usable-water volumes, not surveyed source capacity."
+      },
+      {
+        "id": "seasonal_backup",
+        "kind": "water",
+        "tone": "warning",
+        "title": "Mayıs için yedek suyu planla",
+        "text": "En yüksek ortalama aylık yedek gereği 0,1 m³; aynı ayın talebinin %5,3. Bu açık çatı/depo sonrası, yedek kaynak verilmeden öncedir.",
+        "metrics": {
+          "month": 5,
+          "label": "Mayıs",
+          "model": "MPI-ESM1-2-HR",
+          "backup_m3": 0.0758609222518361,
+          "demand_m3": 1.44445267986968,
+          "backup_share_pct": 5.251880058727874,
+          "basis": "MAX_MODEL_CLIMATOLOGICAL_MONTH_FROM_DAILY_REPLAY",
+          "selection_rule": "Largest monthly backup volume; tied volumes use highest backup/demand ratio.",
+          "meaning": "Roof/tank shortfall before backup sources; not an unserved deficit after desalination.",
+          "is_single_worst_year_month": false
+        },
+        "evidence_basis": "MAX_MODEL_CLIMATOLOGICAL_MONTH_FROM_DAILY_REPLAY"
+      },
+      {
+        "id": "infrastructure",
+        "kind": "infrastructure",
+        "tone": "warning",
+        "title": "Enerji ve depo kurulumunu doğrula",
+        "text": "Yıllık ısı gereği 1896 kWh ısıl; ısıtma dönüşümü dışındaki elektrik 117473 kWh; seçilen ısıtma katsayısıyla toplam 119369 kWh elektrik eşdeğeri; hesapta seçilen depo 10,0 m³; minimum depo hesabı yapılmadı. Bunlar enerji miktarlarıdır; cihaz gücü veya mevcut yerel kapasite değildir.",
+        "metrics": {
+          "heat_kwh_th": 1895.789149685574,
+          "electricity_kwh": 117473.10462356126,
+          "equivalent_electricity_kwh": 119368.89377324683,
+          "treatment_electricity_kwh": 0.37499055623940064,
+          "treatment_heat_kwh_th": 0.0,
+          "configured_storage_m3": 10.0,
+          "modeled_peak_occupied_storage_m3": 10.0,
+          "configured_energy_limit_kwh": null,
+          "heat_cop": 1.0
+        },
+        "evidence_basis": "Calculated annual energy; explicit configured tank and energy ceiling."
+      },
+      {
+        "id": "dry_year",
+        "kind": "risk",
+        "tone": "warning",
+        "title": "İlk üretim yılı için yedek suyu hazırla",
+        "text": "İlk model yılında boş depo başlangıcı etkisi bulunuyor; bu bir kurak yıl kanıtı değildir. Başlangıç dahil sınanan yıllarda en yüksek yedek gereği 5,6 m³; yıllık model ortalaması 0,20 m³.",
+        "metrics": {
+          "status": "COMPUTED",
+          "annual_mean_backup_m3": 0.20103945172332868,
+          "worst_model_year_backup_m3": 5.575982652242932,
+          "increase_m3": 5.374943200519604,
+          "increase_pct": 2673.576332627798,
+          "is_sensitive": true,
+          "display_threshold_pct": 5.0,
+          "comparison": "(Largest modeled annual backup - equal-weight mean annual backup) / mean annual backup.",
+          "threshold_kind": "Explicit display convention, not a physical failure threshold or significance test.",
+          "interpretation": "Highest backup-demand year; not necessarily the lowest-precipitation year.",
+          "worst_year_is_first_modeled_year": true,
+          "initial_condition_warning": "İlk model yılında boş depo başlangıcı etkisi bulunuyor; bu bir kurak yıl kanıtı değildir.",
+          "probability_claimed": false
+        },
+        "evidence_basis": "Daily replay model-year envelope; explicit 5% display threshold."
+      }
+    ],
+    "risk": {
+      "sensitivity_computed": false,
+      "sensitive_inputs": [],
+      "unresolved_inputs": [],
+      "infeasible_test_cases": 0,
+      "reporting_rule": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+      "tested_breakpoints": [],
+      "breakpoint_analysis_performed": false
+    },
+    "limitations": [
+      "Üretim ve kaynak gereksinimleri koşullu model sonuçlarıdır; yerel işletme veya yeni saha ölçümü değildir.",
+      "Aylık kaynak tahsisi ve günlük çatı/depo sonrası yedek gereksinimi farklı hesaplardır.",
+      "Depo kapasitesi optimize edilmedi; seçilen kapasite ve doluluk minimum depo gereksinimi değildir.",
+      "Model-yıl aralığı ve gösterim eşikleri olasılık, güven aralığı veya kanıtlanmış başarısızlık eşiği değildir."
+    ]
+  },
+  "assertions_passed": true
+}

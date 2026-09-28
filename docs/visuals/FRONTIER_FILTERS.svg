@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#F4F2EC"/>
+<text x="92" y="53" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#116D72" dominant-baseline="text-before-edge">İKLİMSEL UYGUNLUK → KAYNAK KOŞULLARINDA ÜRETİM</text>
+<text x="92" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="49" font-weight="700" fill="#17363E" dominant-baseline="text-before-edge">Yetişebilmesi, sürdürülebilir olduğu</text>
+<text x="92" y="169" font-family="Segoe UI, Arial, sans-serif" font-size="49" font-weight="700" fill="#17363E" dominant-baseline="text-before-edge">anlamına gelmez.</text>
+<text x="92" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">Kavramsal karar akışı • Harita veya hesaplanmış alan sonucu değildir.</text>
+<rect x="92" y="340" width="310" height="205" rx="18" fill="#FFFFFF"/>
+<rect x="115" y="362" width="46" height="40" rx="8" fill="#116D72"/>
+<text x="130" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" dominant-baseline="text-before-edge">1</text>
+<text x="115" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#17363E" dominant-baseline="text-before-edge">İKLİM</text>
+<text x="115" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">Sıcaklık ve</text>
+<text x="115" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">yetişme dönemi</text>
+<line x1="414" y1="441" x2="447" y2="441" stroke="#116D72" stroke-width="4"/>
+<polygon points="447,441 435,433 435,449" fill="#116D72"/>
+<rect x="458" y="340" width="310" height="205" rx="18" fill="#FFFFFF"/>
+<rect x="481" y="362" width="46" height="40" rx="8" fill="#116D72"/>
+<text x="496" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" dominant-baseline="text-before-edge">2</text>
+<text x="481" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#17363E" dominant-baseline="text-before-edge">TOPRAK / ZEMİN</text>
+<text x="481" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">Permafrost ve</text>
+<text x="481" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">fiziksel koşullar</text>
+<line x1="780" y1="441" x2="813" y2="441" stroke="#116D72" stroke-width="4"/>
+<polygon points="813,441 801,433 801,449" fill="#116D72"/>
+<rect x="824" y="340" width="310" height="205" rx="18" fill="#FFFFFF"/>
+<rect x="847" y="362" width="46" height="40" rx="8" fill="#116D72"/>
+<text x="862" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" dominant-baseline="text-before-edge">3</text>
+<text x="847" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#17363E" dominant-baseline="text-before-edge">SU GÜVENLİĞİ</text>
+<text x="847" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">Miktar, kalite,</text>
+<text x="847" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">zaman ve süreklilik</text>
+<line x1="1146" y1="441" x2="1179" y2="441" stroke="#116D72" stroke-width="4"/>
+<polygon points="1179,441 1167,433 1167,449" fill="#116D72"/>
+<rect x="1190" y="340" width="310" height="205" rx="18" fill="#FFFFFF"/>
+<rect x="1213" y="362" width="46" height="40" rx="8" fill="#116D72"/>
+<text x="1228" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" dominant-baseline="text-before-edge">4</text>
+<text x="1213" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#17363E" dominant-baseline="text-before-edge">ENERJİ</text>
+<text x="1213" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">Isıtma, ışık,</text>
+<text x="1213" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">pompaj ve arıtma</text>
+<line x1="1512" y1="441" x2="1545" y2="441" stroke="#116D72" stroke-width="4"/>
+<polygon points="1545,441 1533,433 1533,449" fill="#116D72"/>
+<rect x="1556" y="340" width="310" height="205" rx="18" fill="#FFFFFF"/>
+<rect x="1579" y="362" width="46" height="40" rx="8" fill="#116D72"/>
+<text x="1594" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" dominant-baseline="text-before-edge">5</text>
+<text x="1579" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#17363E" dominant-baseline="text-before-edge">ÜRETİM YÖNTEMİ</text>
+<text x="1579" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">Ürüne ve kaynaklara</text>
+<text x="1579" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">uygun sistem</text>
+<line x1="1711" y1="548" x2="1711" y2="584" stroke="#116D72" stroke-width="4"/>
+<line x1="1711" y1="584" x2="960" y2="584" stroke="#116D72" stroke-width="4"/>
+<line x1="960" y1="584" x2="960" y2="624" stroke="#116D72" stroke-width="4"/>
+<polygon points="960,624 952,612 968,612" fill="#116D72"/>
+<rect x="210" y="641" width="1500" height="164" rx="22" fill="#116D72"/>
+<text x="257" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="43" font-weight="700" fill="#FFFFFF" dominant-baseline="text-before-edge">SUSTAINABLE PRODUCTION FRONTIER</text>
+<text x="257" y="741" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="400" fill="#FFFFFF" dominant-baseline="text-before-edge">Nerede + ne + hangi yöntem + hangi su kaynağı + hangi dönem?</text>
+<rect x="210" y="839" width="1500" height="104" rx="16" fill="#E3E7DD"/>
+<text x="245" y="859" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" fill="#17363E" dominant-baseline="text-before-edge">PWN’nin katkısı: ilgili deniz modelini ve kaynak suyunu yerinde sınamak.</text>
+<text x="245" y="902" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">Kaynak suyu → arıtma / kullanılabilir su → enerji → ilgili üretim kararı. Karasal su bütçesi ayrıca gerekir.</text>
+<text x="92" y="1005" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" fill="#577078" dominant-baseline="text-before-edge">Yönteme özgü kısıtlar uygulanır; eksik veri “uygun” sayılmaz.  •  Kaynak: U5 / EVIDENCE_MAP E01–E06, E13, E19</text>
+</svg>

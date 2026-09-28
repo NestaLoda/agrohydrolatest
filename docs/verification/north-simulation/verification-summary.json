@@ -1,0 +1,25 @@
+{
+  "completed_at_local": "2026-09-23T02:42:13.659648+03:00",
+  "change": "Frontend simulation/decision clarity; backend/data unchanged",
+  "build": "TypeScript + Vite passed",
+  "frontend_regression_tests": {
+    "passed": 23,
+    "failed": 0,
+    "scope": "Existing Turkey economics/presets/water pressure",
+    "duration_ms": 245.8549
+  },
+  "browser_qa": "browser-qa.json",
+  "desktop": {
+    "width": 1440,
+    "height": 1000,
+    "outer_scroll_height": 1000,
+    "canvas_height": 904,
+    "canvas_scroll_height": 1007
+  },
+  "console_errors": [],
+  "mobile_tested": false,
+  "backend_last_run": "2026-09-23T02:10:02.737453+03:00",
+  "backend_last_passed": 399,
+  "backend_rerun_this_turn": false,
+  "limitations": "No new physical observations or scientific optimization change. Model plan remains conditional."
+}

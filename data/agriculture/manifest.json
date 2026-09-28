@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-09-22",
+  "derivation": "Manual source-table transcription and source-backed crop parameter curation; user overrides are separate request objects.",
+  "files": {
+    "crops.json": {
+      "sha256": "2425e6be64faf0a92e6f54f3ca1ce604ea1047b8cf334ae3a8e9a5ccc9c8d892"
+    },
+    "region_baselines.json": {
+      "sha256": "bd0a488d4a353bbd92d145e20d06cb23e22b5e69cbc179f9fc712ecfa88eab80"
+    }
+  }
+}

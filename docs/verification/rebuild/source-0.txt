@@ -1,0 +1,1590 @@
+PAGE 1
+Proje  Ana  Alanı   :  Su  Araştırmaları  Proje  Tematik  Alanı  :  Su  Yönetimi  Proje  Adı  (Başlığı)  :  Sürdürülebilir  Su  Yönetimi  İçin  Konya’da  Ürün  Deseni  ve  
+İklim
+ 
+Baskısı
+ 
+Etkileşiminin
+ 
+Karar
+ 
+Destek
+ 
+Temelli
+ 
+Analizi
+  Özet  
+Konya,  Türkiye’nin  en  önemli  tarım  merkezlerinden  biri  olmasına  rağmen  yarı  kurak  iklim  
+özellikleri,
+ 
+düşük
+ 
+ve
+ 
+düzensiz
+ 
+yağış
+ 
+rejimi,
+ 
+artan
+ 
+sıcaklıklar
+ 
+ve
+ 
+yükselen
+ 
+sulama
+ 
+ihtiyacı
+ 
+nedeniyle
+ 
+su
+ 
+baskısına
+ 
+açık
+ 
+bir
+ 
+üretim
+ 
+alanıdır.
+ 
+Bu
+ 
+durum,
+ 
+iklim
+ 
+değişikliğinin
+ 
+etkileri
+ 
+altında
+ 
+tarımsal
+ 
+üretim
+ 
+deseninin
+ 
+su
+ 
+yönetimi
+ 
+açısından
+ 
+yeniden
+ 
+değerlendirilmesini
+ 
+gerekli
+ 
+kılmaktadır.
+ 
+Bu
+ 
+projede,
+ 
+Konya’daki
+ 
+mevcut
+ 
+tarımsal
+ 
+ürün
+ 
+deseninin
+ 
+iklim
+ 
+değişikliği
+ 
+baskısı
+ 
+altında
+ 
+oluşturduğu
+ 
+göreli
+ 
+sulama
+ 
+baskısı
+ 
+incelenmiş
+ 
+ve
+ 
+alternatif
+ 
+ürün
+ 
+deseni
+ 
+senaryolarının
+ 
+bu
+ 
+baskıyı
+ 
+azaltma
+ 
+potansiyeli
+ 
+araştırılmıştır.Çalışmada
+ 
+Konya’da
+ 
+yaygın
+ 
+olarak
+ 
+yetiştirilen
+ 
+buğday,
+ 
+arpa,
+ 
+dane
+ 
+mısır
+ 
+ve
+ 
+şeker
+ 
+pancarı
+ 
+ürünleri
+ 
+ele
+ 
+alınmıştır.
+ 
+Öncelikle
+ 
+bu
+ 
+ürünlerin
+ 
+2023
+ 
+yılı
+ 
+ekim
+ 
+alanları
+ 
+ile
+ 
+göreli
+ 
+su
+ 
+gereksinimlerini
+ 
+temsil
+ 
+eden
+ 
+katsayılar
+ 
+bir
+ 
+araya
+ 
+getirilerek
+ 
+senaryo
+ 
+temelli
+ 
+bir
+ 
+göreli
+ 
+sulama
+ 
+baskısı
+ 
+modeli
+ 
+oluşturulmuştur.
+ 
+Daha
+ 
+sonra
+ 
+baz,
+ 
+orta
+ 
+baskı
+ 
+ve
+ 
+yüksek
+ 
+baskı
+ 
+olmak
+ 
+üzere
+ 
+üç
+ 
+farklı
+ 
+iklim
+ 
+senaryosu
+ 
+tanımlanmış;
+ 
+sıcaklık
+ 
+artışı
+ 
+ve
+ 
+yağış
+ 
+azalmasına
+ 
+bağlı
+ 
+olarak
+ 
+toplam
+ 
+göreli
+ 
+sulama
+ 
+baskısındaki
+ 
+değişim
+ 
+hesaplanmıştır.
+ 
+Elde
+ 
+edilen
+ 
+sonuçlara
+ 
+göre
+ 
+mevcut
+ 
+ürün
+ 
+deseni
+ 
+altında
+ 
+toplam
+ 
+göreli
+ 
+sulama
+ 
+baskısı,
+ 
+iklim
+ 
+baskısı
+ 
+arttıkça
+ 
+düzenli
+ 
+biçimde
+ 
+yükselmiştir.
+ 
+Normalize
+ 
+baskı
+ 
+endeksi
+ 
+baz
+ 
+senaryoda
+ 
+1,00,
+ 
+orta
+ 
+baskı
+ 
+senaryosunda
+ 
+1,10
+ 
+ve
+ 
+yüksek
+ 
+baskı
+ 
+senaryosunda
+ 
+1,20
+ 
+olarak
+ 
+bulunmuştur.
+ 
+Çalışmada
+ 
+ayrıca
+ 
+ürün
+ 
+oranları
+ 
+belirli
+ 
+kısıtlar
+ 
+altında
+ 
+optimize
+ 
+edilerek
+ 
+toplam
+ 
+baskıyı
+ 
+azaltabilecek
+ 
+alternatif
+ 
+bir
+ 
+ürün
+ 
+deseni
+ 
+önerilmiştir.
+ 
+Bunun
+ 
+yanında
+ 
+geliştirilen
+ 
+web
+ 
+tabanlı
+ 
+simülasyon
+ 
+arayüzü
+ 
+ile
+ 
+sıcaklık
+ 
+artışı,
+ 
+yağış
+ 
+azalması
+ 
+ve
+ 
+ürün
+ 
+oranı
+ 
+değişimlerinin
+ 
+göreli
+ 
+sulama
+ 
+baskısına
+ 
+etkisi
+ 
+etkileşimli
+ 
+biçimde
+ 
+gösterilmiştir.
+ 
+Sonuç
+ 
+olarak
+ 
+proje,
+ 
+Konya’da
+ 
+ürün
+ 
+deseni
+ 
+tercihlerinin
+ 
+iklim
+ 
+değişikliği
+ 
+altında
+ 
+sulama
+ 
+baskısını
+ 
+doğrudan
+ 
+etkilediğini
+ 
+ve
+ 
+kontrollü
+ 
+ürün
+ 
+deseni
+ 
+düzenlemelerinin
+ 
+sürdürülebilir
+ 
+su
+ 
+yönetimi
+ 
+ile
+ 
+tarımsal
+ 
+planlamaya
+ 
+katkı
+ 
+sağlayabileceğini
+ 
+ortaya
+ 
+koymuştur.
+ 
+Anahtar  Kelimeler:  Konya,  Sulama,  Modelleme,  Kuraklık,  Optimizasyon  1.  Amaç  
+1.1  Problem  
+Konya,  yarı  kurak  iklim  özellikleri,  düzensiz  yağış  rejimi  ve  artan  sulama  gereksinimi  
+nedeniyle
+ 
+su
+ 
+kaynakları
+ 
+açısından
+ 
+baskı
+ 
+altındaki
+ 
+önemli
+ 
+bir
+ 
+tarım
+ 
+alanıdır.
+ 
+Konya
+ 
+Kapalı
+ 
+Havzası’nda
+ 
+kuraklık
+ 
+eğilimi,
+ 
+yeraltı
+ 
+suyu
+ 
+kullanımı
+ 
+ve
+ 
+sulama
+ 
+talebi
+ 
+birlikte
+ 
+değerlendirildiğinde,
+ 
+tarımsal
+ 
+sürdürülebilirlik
+ 
+açısından
+ 
+belirgin
+ 
+bir
+ 
+risk
+ 
+ortaya
+ 
+çıkmaktadır
+ 
+(Topak
+ 
+ve
+ 
+Acar,
+ 
+2010;
+ 
+Uçar
+ 
+vd.,
+ 
+2024;
+ 
+Ghasempour
+ 
+vd.,
+ 
+2025;
+ 
+Güz
+ 
+vd.,
+ 
+2025).
+ 
+Konya’daki  ürün  deseni  içinde  bazı  ürünler  diğerlerine  göre  daha  yüksek  su  talebi  
+oluşturmaktadır.
+ 
+Bu
+ 
+nedenle
+ 
+sulama
+ 
+baskısı
+ 
+yalnızca
+ 
+sıcaklık
+ 
+artışı
+ 
+veya
+ 
+yağış
+ 
+azalmasıyla
+ 
+değil,
+ 
+hangi
+ 
+ürünlerin
+ 
+ne
+ 
+oranda
+ 
+ekildiğiyle
+ 
+de
+ 
+ilişkilidir.
+ 
+İklim
+ 
+değişikliğinin
+ 
+tarımsal
+ 
+üretim
+ 
+üzerindeki
+ 
+etkisini
+ 
+değerlendirmek
+ 
+için
+ 
+meteorolojik
+ 
+değişkenlerle
+ 
+birlikte
+ 
+ürün
+ 
+deseni
+ 
+tercihlerine
+ 
+de
+ 
+odaklanmak
+ 
+gerekmektedir
+ 
+(Kaya
+ 
+ve
+ 
+Aladağ,
+ 
+2009;
+ 
+Yılmaz,
+ 
+2011;
+ 
+Dündar
+ 
+ve
+ 
+Topak,
+ 
+2025).
+ 
+Literatürde  Konya  Kapalı  Havzası’nda  kuraklık,  yeraltı  suyu  yönetimi  ve  tarımsal  kırılganlık  
+üzerine
+ 
+çalışmalar
+ 
+bulunmasına
+ 
+rağmen,
+ 
+mevcut
+ 
+ürün
+ 
+deseninin
+ 
+iklim
+ 
+baskısı
+ 
+altında
+ 
+oluşturduğu
+ 
+sulama
+ 
+yükünü
+ 
+senaryo
+ 
+temelli
+ 
+ve
+ 
+açıklanabilir
+ 
+bir
+ 
+modelle
+ 
+değerlendiren,
+ 
+ayrıca
+ 
+alternatif
+ 
+ürün
+ 
+oranları
+ 
+için
+ 
+optimizasyon
+ 
+önerisi
+ 
+sunan
+ 
+sadeleştirilmiş
+ 
+çalışmalar
+ 
+sınırlıdır
+ 
+PAGE 2
+(Hacısüleyman  ve  Özger,  2025;  Taheri  vd.,  2025;  Vivekanandan  ve  Viswanathan,  2007).  
+Bu  bağlamda  proje  problemi  şu  şekilde  tanımlanmıştır:   Konya’daki  mevcut  ürün  deseni,  iklim  baskısı  senaryoları  altında  göreli  sulama  baskısını  ne  ölçüde  artırmaktadır  ve  ürün  oranlarının  yeniden  düzenlenmesiyle  bu  baskı  azaltılabilir  mi?  
+1.2  Projenin  Amacı  
+Bu  projenin  amacı,  Konya’daki  mevcut  tarımsal  ürün  deseninin  iklim  değişikliği  baskısı  altında  oluşturduğu  göreli  sulama  baskısını  senaryo  temelli  bir  model  ile  incelemek  ve  ürün  oranlarının  yeniden  düzenlenmesi  yoluyla  bu  baskının  azaltılıp  azaltılamayacağını  araştırmaktır.  
+Bu  amaç  doğrultusunda  Konya’da  yaygın  olarak  yetiştirilen  buğday,  arpa,  dane  mısır  ve  şeker  pancarı  çalışma  kapsamına  alınmıştır.  Ürünlerin  ekim  alanları  ile  göreli  su  gereksinimlerini  temsil  eden  katsayılar  bir  araya  getirilerek  bir  sulama  baskısı  modeli  kurulmuş;  baz,  orta  baskı  ve  yüksek  baskı  senaryoları  altında  toplam  göreli  baskının  değişimi  hesaplanmıştır.  Son  aşamada  ise  toplam  ekim  alanını  koruyan  ancak  su  baskısını  azaltmayı  hedefleyen  alternatif  ürün  deseni  senaryoları  geliştirilmiştir  (Esetlili  vd.,  2022;  Hacısüleyman  ve  Özger,  2025;  Vivekanandan  ve  Viswanathan,  2007).  
+Ayrıca  model,  sıcaklık  artışı,  yağış  azalması  ve  ürün  oranı  değişimleri  altında  farklı  senaryoların  test  edilebildiği  web  tabanlı  bir  simülasyon  arayüzü  ile  desteklenmiştir.  Böylece  çalışma  yalnızca  mevcut  durumu  açıklayan  bir  analiz  değil,  karar  destek  niteliği  taşıyan  bir  araç  da  ortaya  koymuştur.  
+Sonuç  olarak  proje,  Konya’da  iklim  değişikliği,  ürün  deseni  ve  sulama  baskısı  arasındaki  ilişkiyi  sayısallaştırmayı;  yüksek  baskı  oluşturan  dağılımları  belirlemeyi  ve  daha  dengeli  alternatif  senaryolar  önermeyi  amaçlamaktadır.  
+2.  Giriş  
+2.1  İklim  Değişikliği,  Tarımsal  Üretim  ve  Su  Baskısı  
+İklim  değişikliği,  sıcaklık  rejimlerinde  artış,  yağışın  zamansal  ve  mekânsal  dağılımında  düzensizlik,  kurak  dönemlerin  sıklığında  artış  ve  su  kaynakları  üzerindeki  baskının  derinleşmesi  gibi  etkiler  yoluyla  tarımsal  üretim  sistemlerini  doğrudan  etkilemektedir.  Özellikle  yarı  kurak  ve  kuraklığa  eğilimli  bölgelerde  tarımsal  üretimin  sürdürülebilirliği,  yalnızca  toprak  verimliliği  ya  da  üretim  kapasitesiyle  değil,  aynı  zamanda  suya  erişim  ve  suyun  verimli  yönetimiyle  belirlenmektedir.  Bu  nedenle  günümüzde  tarımsal  planlama,  yalnızca  verim  odaklı  değil,  aynı  zamanda  iklim  değişikliğine  uyum  ve  su  kaynaklarının  korunması  odaklı  biçimde  ele  alınmak  zorundadır.  
+Tarımsal  üretimde  kullanılan  su  miktarı,  yalnızca  meteorolojik  koşullara  bağlı  değildir.  Aynı  iklim  koşullarında  dahi  farklı  ürünler,  gelişim  dönemleri  ve  üretim  desenleri  nedeniyle  farklı  düzeylerde  su  talebi  oluşturabilmektedir.  Bu  durum,  iklim  değişikliği  etkilerinin  değerlendirilmesinde  ürün  deseni  kavramını  merkezi  hale  getirmektedir.  Başka  bir  ifadeyle,  iklim  baskısı  altında  tarımsal  su  talebini  belirleyen  temel  unsurlardan  biri,  hangi  ürünlerin  ne  oranda  yetiştirildiğidir.  Bu  nedenle  iklim  değişikliğinin  tarımsal  sistemler  üzerindeki  etkisini  sayısallaştırmaya  yönelik  çalışmalarda,  ürün  bazlı  su  talebi  farklarının  ve  üretim  deseninin  
+PAGE 3
+birlikte  değerlendirilmesi  gerekmektedir  (Esetlili  vd.,  2022;  Vivekanandan  ve  Viswanathan,  2007;  Taheri  vd.,  2025).  
+Bu  bağlamda  su  baskısı,  yalnızca  fiziksel  su  eksikliğini  ifade  eden  bir  kavram  olarak  değil;  mevcut  iklim  koşulları,  ürün  tercihleri  ve  sulama  gereksinimleri  altında  tarımsal  sistemin  su  kaynakları  üzerinde  oluşturduğu  yük  olarak  değerlendirilmelidir.  Özellikle  iklim  değişikliğinin  etkilerinin  daha  görünür  hale  geldiği  bölgelerde,  su  baskısını  azaltabilecek  alternatif  ürün  deseni  senaryolarının  araştırılması  hem  bilimsel  hem  de  yönetsel  açıdan  önem  taşımaktadır.  
+     Şekil  1 .  İklim  değişikliği–ürün  deseni–sulama  baskısı  arasındaki  kavramsal  ilişki  şeması  
+2.2  Konya’nın  İklimsel  ve  Tarımsal  Yapısı  
+Konya,  geniş  tarım  alanları,  yüksek  üretim  kapasitesi  ve  stratejik  ürünlerdeki  ağırlığı  nedeniyle  Türkiye  tarımı  açısından  kritik  bir  konuma  sahiptir.  Bununla  birlikte  Konya,  iklim  ve  su  kaynakları  bakımından  önemli  sınırlılıklara  sahip  bir  üretim  bölgesidir.  Yarı  kurak  iklim  özellikleri,  düşük  ve  düzensiz  yağış  rejimi,  yaz  aylarında  belirgin  kuraklık  ve  yüksek  buharlaşma  eğilimi,  tarımsal  faaliyetleri  doğrudan  etkilemektedir  (Kaya  ve  Aladağ,  2009;  Yılmaz,  2011).  Bu  nedenle  Konya’da  tarımsal  üretimin  önemli  bir  bölümü,  doğrudan  ya  da  dolaylı  olarak  sulama  olanaklarına  bağlı  biçimde  sürdürülmektedir.  
+  
+      Şekil  2.  Konya’nın  Türkiye  içindeki  konumu  (Wikipedia,  2011)  
+
+PAGE 4
+Konya  Kapalı  Havzası  özelinde  yapılan  çalışmalar,  havzada  kuraklık  eğiliminin,  yeraltı  suyu  kullanım  baskısının  ve  tarımsal  kırılganlığın  giderek  arttığını  göstermektedir.  Standart  kuraklık  indekslerine  dayalı  analizler,  havzanın  kurak  dönemlere  açık  olduğunu  ortaya  koyarken;  daha  güncel  çalışmalar  tarımsal  kuraklığın  zamansal  ve  mekânsal  olarak  yaygınlaştığını,  özellikle  yarı  kurak  karakter  taşıyan  alanlarda  kırılganlığın  belirginleştiğini  göstermektedir  (Uçar  vd.,  2024;  Ghasempour  vd.,  2025).  Benzer  biçimde,  Konya  Kapalı  Havzası’nda  su  kaynakları  yönetimi  üzerine  yapılan  araştırmalar,  mevcut  üretim  ve  sulama  yapısının  uzun  vadede  sürdürülebilirlik  açısından  risk  oluşturduğunu  vurgulamaktadır  (Topak  ve  Acar,  2010;  Güz  vd.,  2025).  
+  
+Şekil  3.  Konya’da  yıllık  ortalama  sıcaklık  ve  yağış  rejimi  (Climate-Data.org,  t.y.)  
+Konya’da  buğday,  arpa,  dane  mısır  ve  şeker  pancarı  üretim  deseni  içinde  önemli  yer  tutmaktadır.  Ancak  bu  ürünlerin  su  gereksinimleri  birbirinden  farklıdır.  Bu  nedenle  ürün  deseni,  yalnızca  tarımsal  üretim  planlamasının  değil,  aynı  zamanda  su  yönetiminin  de  temel  bileşenlerinden  biridir.  
+Tablo  1.  Çalışmada  ele  alınan  ürünlerin  2023  yılı  ekim  alanları.  (Konya  İl  Tarım  ve  Orman  Müdürlüğü,  2024)  
+Ürün  Adı  2023  Ekim  Alanı  (da)  Buğday  5.966.866  Arpa  3.852.011  Dane  mısır  1.855.054  Şeker  pancarı  1.019.473  
+2.3  Ürün  Deseni  ve  Göreli  Sulama  Baskısı  İlişkisi  
+Ürün  deseni,  belirli  bir  üretim  alanında  hangi  ürünlerin  hangi  oranlarda  yetiştirildiğini  ifade  eden  temel  bir  tarımsal  planlama  bileşenidir.  Ancak  ürün  deseni  yalnızca  ekonomik  tercihlerin  ya  da  geleneksel  üretim  alışkanlıklarının  sonucu  değildir;  aynı  zamanda  su,  iklim,  
+
+PAGE 5
+toprak  ve  yönetim  koşullarıyla  doğrudan  ilişkilidir.  Özellikle  su  kaynaklarının  sınırlı  olduğu  bölgelerde  ürün  deseninin  yapısı,  toplam  sulama  talebini  ve  dolayısıyla  su  baskısını  belirleyen  başlıca  unsurlardan  biri  haline  gelmektedir.  
+Düşük  su  gereksinimine  sahip  ürünlerin  ağırlıklı  olduğu  bir  desen  ile  yüksek  su  gereksinimine  sahip  ürünlerin  öne  çıktığı  bir  desen,  aynı  iklim  koşulları  altında  dahi  farklı  düzeylerde  sulama  baskısı  oluşturur.  Bu  nedenle  ürün  bazlı  su  talebi  farkları  dikkate  alınmadan  yapılan  iklim  ya  da  kuraklık  değerlendirmeleri,  tarımsal  sistemin  gerçek  kırılganlığını  tam  olarak  yansıtmayabilir.  Nitekim  su  ayak  izi  ve  sulama  etkisi  üzerine  yapılan  çalışmalar,  özellikle  mısır  gibi  daha  yüksek  su  talebi  oluşturan  ürünlerle  tahıl  grubu  ürünler  arasında  belirgin  farklar  bulunduğunu  göstermektedir  (Esetlili  vd.,  2022;  Dündar  ve  Topak,  2025).  
+Bu  çalışmada  kullanılan  “göreli  sulama  baskısı”  yaklaşımı,  tarımsal  sistemin  su  kaynakları  üzerindeki  yükünü,  ürün  alanı,  ürünün  göreli  su  gereksinimi  ve  iklim  senaryosu  altında  değişen  baskı  düzeyi  üzerinden  değerlendirmeyi  amaçlamaktadır.  Bu  yaklaşım  mutlak  su  açığını  ya  da  tam  hidrolojik  bilanço  değerini  hesaplamaktan  ziyade,  ürün  deseni  değişimlerinin  toplam  baskı  üzerindeki  etkisini  açıklanabilir  ve  karşılaştırılabilir  bir  biçimde  ortaya  koymayı  hedeflemektedir.  Böylece  farklı  ürün  desenleri,  su  yönetimi  açısından  senaryo  temelli  olarak  kıyaslanabilmektedir.  
+2.4  Literatür  Taraması  ve  Benzer  Çalışmalar  
+Literatür  incelendiğinde,  Konya  Kapalı  Havzası  ve  benzeri  yarı  kurak  bölgelerde  kuraklık  analizi,  tarımsal  kırılganlık,  yeraltı  suyu  yönetimi  ve  sulama  verimliliği  üzerine  önemli  çalışmalar  bulunduğu  görülmektedir.  Kuraklık  indeksleri  ile  yapılan  değerlendirmeler,  havzadaki  meteorolojik  ve  hidrolojik  baskıyı  ortaya  koyarken;  tarımsal  kuraklık  ve  kırılganlık  çalışmaları,  bu  baskının  tarımsal  sistem  üzerindeki  etkisini  mekânsal  ve  zamansal  olarak  incelemektedir  (Uçar  vd.,  2024;  Ghasempour  vd.,  2025).  Yeraltı  suyu  ve  havza  yönetimi  üzerine  yapılan  çalışmalar  ise,  mevcut  kullanım  yapısının  sürdürülebilir  olmadığını  ve  daha  bütünleşik  bir  yönetim  ihtiyacını  göstermektedir  (Topak  ve  Acar,  2010;  Güz  vd.,  2025).  
+Öte  yandan  ürün  deseni  optimizasyonu  üzerine  yapılan  çalışmalar,  su  kısıtı  altında  alternatif  ürün  kombinasyonlarının  doğrusal  programlama  ve  çok  amaçlı  optimizasyon  yöntemleriyle  değerlendirilebileceğini  göstermektedir.  Gediz  Havzası  üzerine  yapılan  güncel  bir  çalışma,  ürün  deseninin  doğrusal  programlama  ile  optimize  edilmesinin  su  ve  tarımsal  planlama  açısından  uygulanabilir  sonuçlar  üretebildiğini  ortaya  koymuştur  (Hacısüleyman  ve  Özger,  2025).  Benzer  şekilde  farklı  ülkelerde  gerçekleştirilen  çalışmalar,  ürün  deseni  optimizasyonunun  sınırlı  doğal  kaynaklar  altında  sürdürülebilir  üretim  planlaması  için  etkili  bir  araç  olduğunu  göstermektedir  (Vivekanandan  ve  Viswanathan,  2007;  Taheri  vd.,  2025).  
+Bununla  birlikte  mevcut  literatürde  iki  temel  boşluk  dikkat  çekmektedir.  Birincisi,  Konya  özelinde  iklim  baskısı  ile  ürün  deseni  ilişkisini  doğrudan  ve  sade  bir  karar  destek  modeliyle  ele  alan  çalışmaların  sınırlı  olmasıdır.  İkincisi  ise,  bu  tür  analizlerin  çoğunlukla  uzmanlara  yönelik  karmaşık  modelleme  çerçevelerinde  kalması,  kullanıcı  tarafından  senaryo  bazlı  test  edilebilen  erişilebilir  araçlara  yeterince  dönüştürülmemesidir.  Bu  proje,  tam  da  bu  noktada,  Konya’daki  mevcut  ürün  desenini  iklim  baskısı  senaryoları  altında  göreli  sulama  baskısı  açısından  modelleyerek  ve  alternatif  ürün  deseni  önerileri  geliştirerek  literatürdeki  bu  boşluğa  lise  düzeyinde,  sadeleştirilmiş  ancak  analitik  bir  katkı  sunmayı  hedeflemektedir.  
+PAGE 6
+2.5  Projenin  Önemi  ve  Çıkış  Noktası  
+Bu  projenin  çıkış  noktası,  Konya’da  tarımsal  üretimin  büyüklüğüne  rağmen  su  kaynaklarının  sınırlı  ve  baskı  altında  olmasıdır.  İklim  değişikliği  etkileri  altında,  yalnızca  mevcut  durumu  betimleyen  değil,  alternatif  senaryoları  karşılaştırabilen  modeller  gereklidir.  
+Bu  çalışma,  mevcut  ürün  deseninin  su  baskısı  açısından  değerlendirilmesini,  alternatif  ürün  dağılımlarının  optimizasyonla  test  edilmesini  ve  sonuçların  web  tabanlı  bir  arayüz  üzerinden  etkileşimli  biçimde  gösterilmesini  içermektedir.  
+Sonuç  olarak  proje,  Konya’da  iklim  değişikliği,  tarımsal  üretim  ve  su  yönetimi  arasındaki  ilişkiyi  ürün  deseni  üzerinden  inceleyerek  yerel  ölçekte  anlamlı  sonuç  üretmeyi  ve  sürdürülebilir  üretim  planlamasına  katkı  sunmayı  amaçlamaktadır.  
+3.  Yöntem  
+3.1  Araştırma  Tasarımı  ve  Çalışma  Akışı  
+Bu  çalışma,  Konya’daki  mevcut  ürün  deseninin  iklim  baskısı  altındaki  göreli  sulama  baskısını  sayısallaştırmayı  ve  alternatif  ürün  dağılımlarının  bu  baskı  üzerindeki  etkisini  inceleyen  nicel  bir  modelleme  araştırmasıdır.  Çalışma;  veri  toplama,  veri  ön  işleme,  baskı  modelinin  kurulması,  senaryo  analizi,  optimizasyon  ve  sonuçların  web  tabanlı  arayüzde  görselleştirilmesi  aşamalarından  oluşmaktadır.  
+Araştırmada,  ayrıntılı  hidrolojik  denge  modeli  yerine;  ürün  alanı,  göreli  su  katsayısı  ve  iklim  baskısını  temsil  eden  senaryo  çarpanlarını  bir  araya  getiren  açıklanabilir  bir  karar  destek  modeli  kullanılmıştır.  Bu  tercih,  lise  düzeyinde  uygulanabilir  ve  denetlenebilir  bir  çerçeve  sağlamak  amacıyla  yapılmıştır.  
+           Şekil  4.  Araştırmanın  genel  iş  akışı  
+3.2  Çalışma  Alanı  
+Araştırmanın  çalışma  alanı  Konya  ili  olarak  belirlenmiştir.  Konya’nın  çalışma  alanı  olarak  seçilmesinin  temel  nedeni,  ilin  Türkiye  tarımı  açısından  stratejik  öneme  sahip  olması  ve  aynı  zamanda  yarı  kurak  iklim  özellikleri  nedeniyle  su  baskısına  açık  bir  yapıya  sahip  bulunmasıdır.  Konya’da  yaz  aylarında  sıcaklık  artışı  ve  yağış  azlığı  belirginleşmekte;  bu  
+
+PAGE 7
+durum  tarımsal  üretimde  sulama  gereksinimini  artırmaktadır  (Kaya  ve  Aladağ,  2009;  Yılmaz,  
+2011).
+ 
+Konya
+ 
+Kapalı
+ 
+Havzası
+ 
+üzerine
+ 
+yapılan
+ 
+güncel
+ 
+çalışmalar
+ 
+da
+ 
+kuraklık,
+ 
+yeraltı
+ 
+suyu
+ 
+baskısı
+ 
+ve
+ 
+tarımsal
+ 
+kırılganlık
+ 
+sorunlarının
+ 
+bölge
+ 
+açısından
+ 
+önemli
+ 
+olduğunu
+ 
+göstermektedir
+ 
+(Uçar
+ 
+vd.,
+ 
+2024;
+ 
+Ghasempour
+ 
+vd.,
+ 
+2025;
+ 
+Güz
+ 
+vd.,
+ 
+2025).
+ 
+Çalışmada
+ 
+Konya’da
+ 
+yaygın
+ 
+ve
+ 
+temsil
+ 
+gücü
+ 
+yüksek
+ 
+dört
+ 
+ürün
+ 
+seçilmiştir:
+ 
+buğday,
+ 
+arpa,
+ 
+dane
+ 
+mısır
+ 
+ve
+ 
+şeker
+ 
+pancarı.
+ 
+Bu
+ 
+ürünler
+ 
+hem
+ 
+ekim
+ 
+alanları
+ 
+bakımından
+ 
+önemlidir
+ 
+hem
+ 
+de
+ 
+su
+ 
+gereksinimleri
+ 
+bakımından
+ 
+birbirlerinden
+ 
+ayrışmaktadır.
+ 
+Bu
+ 
+nedenle
+ 
+ürün
+ 
+deseni
+ 
+değişiminin
+ 
+göreli
+ 
+sulama
+ 
+baskısına
+ 
+etkisini
+ 
+incelemek
+ 
+için
+ 
+uygun
+ 
+bir
+ 
+karşılaştırma
+ 
+seti
+ 
+oluşturmaktadır.
+ 
+Çalışmada
+ 
+ele
+ 
+alınan
+ 
+ürünler
+ 
+ve
+ 
+bunlara
+ 
+ait
+ 
+2023
+ 
+ekim
+ 
+alanları
+ 
+Tablo
+ 
+2’de
+ 
+sunulmuştur.
+ 
+ 
+ Tablo  2.  Çalışma  kapsamındaki  ürünler  ve  2023  yılı  ekim  alanları.  
+ 
+ 
+  
+ 
+ 
+             
+ 
+3.3  Veri  Kaynakları  
+Araştırmada  kullanılan  veriler;  resmi  kurumsal  raporlar,  ürün  raporları  ve  meteorolojik  
+kaynaklardan
+ 
+elde
+ 
+edilmiştir.
+ 
+Ürün
+ 
+alanları
+ 
+için
+ 
+Konya
+ 
+İl
+ 
+Tarım
+ 
+ve
+ 
+Orman
+ 
+Müdürlüğü
+ 
+verileri,
+ 
+ürün
+ 
+bağlamı
+ 
+için
+ 
+TEPGE
+ 
+ve
+ 
+sektörel
+ 
+raporlar,
+ 
+iklimsel
+ 
+arka
+ 
+plan
+ 
+için
+ 
+ise
+ 
+Meteoroloji
+ 
+Genel
+ 
+Müdürlüğü
+ 
+verileri
+ 
+kullanılmıştır
+ 
+(Konya
+ 
+İl
+ 
+Tarım
+ 
+ve
+ 
+Orman
+ 
+Müdürlüğü,
+ 
+2023,
+ 
+2024,
+ 
+2025;
+ 
+Eğilmez,
+ 
+2024,
+ 
+2025;
+ 
+Kanat,
+ 
+2023;
+ 
+TEPGE,
+ 
+2024,
+ 
+2025;
+ 
+MGM,
+ 
+2026).
+ 
+Bu  veriler  dört  temel  veri  setine  dönüştürülmüştür:  ürün  veri  seti,  baz  iklim  veri  seti,  senaryo  
+veri
+ 
+seti
+ 
+ve
+ 
+optimizasyon
+ 
+kuralları.
+ 
+Böylece
+ 
+çalışma,
+ 
+tarımsal,
+ 
+meteorolojik
+ 
+ve
+ 
+model
+ 
+kısıtlarını
+ 
+içeren
+ 
+bütünleşik
+ 
+bir
+ 
+veri
+ 
+yapısı
+ 
+üzerine
+ 
+kurulmuştur.
+ 
+3.4
+ 
+Veri
+ 
+Ön
+ 
+İşleme
+ 
+Süreci
+ 
+Veri  toplama  sonrasında  ürün  adları  standartlaştırılmış,  tüm  alan  verileri  dekar  cinsine  
+çevrilmiş
+ 
+ve
+ 
+ürünlerin
+ 
+toplam
+ 
+alan
+ 
+içindeki
+ 
+payları
+ 
+hesaplanmıştır.
+ 
+Böylece
+ 
+hem
+ 
+mutlak
+ 
+alan
+ 
+değerleri
+ 
+hem
+ 
+de
+ 
+ürün
+ 
+desenindeki
+ 
+göreli
+ 
+ağırlıklar
+ 
+belirlenmiştir.
+ 
+ 
+Ürün  Ekim  alanı  (da)  Pay  (%)  
+Buğday  5.966.866  47,0  
+Arpa  3.852.011  30,3  
+Dane  mısır  1.855.054  14,6  
+Şeker  pancarı  1.019.473  8,0  
+Toplam  12.693.404  100  
+PAGE 8
+Tablo  3.  Baz  iklim  verileri  ve  senaryo  parametreleri.  
+Gösterge  /  Senaryo  Sıcaklık  artışı  (°C)  Yağış  değişimi  (%)  İklim  çarpanı  
+Baz  iklim  durumu  0,0  0  1,00  
+Orta  baskı  senaryosu  +1,0  -10  1,10  
+Yüksek  baskı  senaryosu  
++2,0  -20  1,20  
+İklim  verileri  tarafında  aylık  sıcaklık  ve  yağış  değerleri  tek  bir  baz  iklim  tablosunda  düzenlenmiştir.  Bu  tablo  doğrudan  sulama  baskısı  formülüne  ham  değişken  olarak  sokulmamış,  senaryoların  tanımlanmasında  kullanılan  iklimsel  arka  plan  olarak  değerlendirilmiştir.  Bu  yaklaşım,  modelin  aşırı  karmaşıklaşmasını  önleyerek  senaryo  temelli  yorumlamayı  kolaylaştırmıştır.  Ayrıca  her  ürün  için  kullanılan  su  katsayıları,  ürünlerin  göreli  su  gereksinimini  temsil  eden  sadeleştirilmiş  parametreler  olarak  tanımlanmıştır.Bu  katsayılar  mutlak  evapotranspirasyon  hesabını  temsil  etmemekte;  ürünler  arasındaki  su  baskısı  farkını  modelde  karşılaştırmalı  biçimde  göstermek  için  kullanılmaktadır.Bu  yönüyle  model,  tam  hidrolojik  simülasyondan  çok  karşılaştırmalı  ve  açıklanabilir  bir  baskı  endeksi  yaklaşımına  dayanmaktadır.  
+                                   Şekil  5.  Konya  için  baz  aylık  sıcaklık  ve  yağış  rejimi  
+ 
+3.5  Göreli  Sulama  Baskısı  Modelinin  Oluşturulması  
+Bu  araştırmada  temel  analiz  birimi  olarak  “göreli  sulama  baskısı”  kavramı  kullanılmıştır.  Göreli  sulama  baskısı,  belirli  bir  ürünün  ekim  alanı,  o  ürüne  atanan  göreli  su  katsayısı  ve  ilgili  iklim  senaryosunun  baskı  düzeyi  dikkate  alınarak  hesaplanmıştır.  Her  bir  ürün  için  kullanılan  temel  formül  şudur:  
+ Ü 𝑟 ü 𝑛  𝐵𝑎𝑠𝑘=𝑠=
+𝑖
+= 𝐴𝑙𝑎𝑛
+𝑖
+× 𝑆𝑢  𝐾𝑎𝑡𝑠𝑎𝑦=𝑠=
+𝑖
+× 𝐼𝑘𝑙𝑖𝑚  Ç 𝑎𝑟𝑝𝑎𝑛=
+
+PAGE 9
+Burada:  
+●  :  i  ürününün  ekim  alanını  (dekar),  𝐴𝑙𝑎𝑛
+𝑖
+●  :  i  ürününün  göreli  su  gereksinimini,  𝑆𝑢  𝐾𝑎𝑡𝑠𝑎𝑦=𝑠=
+𝑖
+●  :  ilgili  senaryo  altındaki  iklim  baskısını  temsil  etmektedir.  𝐼𝑘𝑙𝑖𝑚  Ç 𝑎𝑟𝑝𝑎𝑛=
+Toplam  göreli  sulama  baskısı  ise  tüm  ürünlerin  baskı  değerlerinin  toplamı  alınarak  hesaplanmıştır:  
+    
+𝑇𝑜𝑝𝑙𝑎𝑚
+ 
+𝐵𝑎𝑠𝑘=
+=
+𝑖
+=
+1
+ 𝑛
+∑
+Ü
+𝑟
+ü
+𝑛
+ 
+𝐵𝑎𝑠𝑘=𝑠=
+𝑖
+Farklı  senaryoların  baz  duruma  göre  karşılaştırılabilmesi  için  ayrıca  normalize  edilmiş  bir  baskı  endeksi  oluşturulmuştur:  
+    
+𝑁𝑜𝑟𝑚𝑎𝑙𝑖𝑧𝑒
+ 
+𝐸𝑛𝑑𝑒𝑘𝑠
+=
+ 𝑆𝑒𝑛𝑎𝑟𝑦𝑜  𝑇𝑜𝑝𝑙𝑎𝑚  𝐵𝑎𝑠𝑘=𝑠=
+𝐵𝑎𝑧
+ 
+𝑆𝑒𝑛𝑎𝑟𝑦𝑜
+ 
+𝑇𝑜𝑝𝑙𝑎𝑚
+ 
+𝐵𝑎𝑠𝑘=𝑠=
+Bu  yaklaşım  sayesinde  farklı  iklim  koşulları  altında  mevcut  ya  da  alternatif  ürün  desenlerinin  baz  duruma  göre  ne  ölçüde  daha  yüksek  veya  daha  düşük  baskı  oluşturduğu  karşılaştırmalı  biçimde  görülebilmiştir.  
+ 
+               Şekil  6.  Senaryolara  göre  normalize  edilmiş  göreli  sulama  baskısı  endeksi  
+Model,  kesin  su  açığını  değil,  ürün  deseni  temelli  göreli  baskıyı  göstermektedir.  Bu  nedenle  formülasyon,  karar  destek  ve  senaryo  karşılaştırma  amacıyla  tasarlanmıştır.  
+  3.6  İklim  Senaryolarının  Oluşturulması  
+Çalışmada  üç  senaryo  tanımlanmıştır:  baz  senaryo,  orta  baskı  senaryosu  ve  yüksek  baskı  senaryosu.  
+
+PAGE 10
+●  Baz  senaryo,  mevcut  durumun  referans  kabul  edildiği  ve  iklim  çarpanının  1,00  olduğu  durumdur.  ●  Orta  baskı  senaryosu,  sıcaklık  artışı  ve  yağış  azalmasının  baskıyı  orta  düzeyde  artırdığı  durumu  temsil  etmektedir.  ●  Yüksek  baskı  senaryosu,  daha  olumsuz  iklim  koşullarını  temsil  etmekte  ve  baskının  daha  fazla  arttığı  durumu  göstermektedir.  
+Analiz  kodunda,  sıcaklık  artışı  ve  yağış  değişimi  birlikte  kullanılarak  iklim  çarpanını  hesaplayan  yardımcı  bir  fonksiyon  tanımlanmıştır.  
+   𝐼𝑘𝑙𝑖𝑚  Ç 𝑎𝑟𝑝𝑎𝑛= = 1 + 0 , 05 × 𝑆=𝑐𝑎𝑘𝑙=𝑘  𝐴𝑟𝑡= ş = − 𝑌𝑎 ğ = ş  𝐷𝑒 ğ 𝑖 ş 𝑖𝑚𝑖
+Bu  formül,  sıcaklıktaki  artışın  evapotranspirasyon  baskısını  yükselttiği;  yağıştaki  azalmanın  ise  su  baskısını  artırdığı  kabulüne  dayanmaktadır.  Senaryo  dosyasında  tanımlanan  baz,  orta  ve  yüksek  baskı  değerleri,  modelde  standart  karşılaştırma  seti  olarak  kullanılmıştır.  Ayrıca  daha  sonra  duyarlılık  analizinde  bu  parametreler  daha  geniş  aralıklarda  değiştirilerek  sistemin  farklı  iklim  kombinasyonlarına  verdiği  tepkiler  incelenmiştir.  
+Senaryo  tanımları  Şekil  7’de  gösterilen  toplam  baskı  grafiğinde  karşılaştırmalı  olarak  sunulmuştur.  Şekil  7’de  görüldüğü  üzere  iklim  çarpanındaki  artış,  toplam  göreli  sulama  baskısında  doğrusal  bir  yükselişe  yol  açmaktadır.  
+  Şekil  7.  Baz,  orta  baskı  ve  yüksek  baskı  senaryolarına  göre  toplam  göreli  sulama  baskısı  
+3.7  Ürün  Bazlı  Katkı  Analizi  
+Toplam  baskının  hangi  ürünlerden  kaynaklandığını  belirlemek  amacıyla  her  ürünün  toplam  baskı  içindeki  yüzde  katkısı  hesaplanmıştır.  
+ 
+𝐾𝑎𝑡𝑘=
+ 
+𝑌
+ü
+𝑧𝑑𝑒𝑠𝑖
+𝑖
+=
+ Ü 𝑟 ü 𝑛  𝐵𝑎𝑠𝑘=𝑠=
+𝑖
+𝑇𝑜𝑝𝑙𝑎𝑚
+ 
+𝐵𝑎𝑠𝑘=
+× 100
+Bu  hesaplama  sayesinde  toplam  baskının  hangi  ürünler  tarafından  sürüklendiği  belirlenmiştir.  Özellikle  alanı  geniş  olan  fakat  görece  orta  katsayılı  ürünlerle,  alanı  daha  dar  ancak  yüksek  su  
+
+PAGE 11
+katsayısına  sahip  ürünlerin  baskı  üzerindeki  etkileri  karşılaştırılabilmiştir.  Bu  analiz,  Şekil  8’de  sunulan  yığılmış  sütun  grafiği  ile  desteklenmiştir.  Şekil  8’de  görüldüğü  üzere  her  senaryoda  ürünlerin  baskı  içindeki  payı  izlenebilmekte,  böylece  toplam  baskının  hangi  ürünlerden  kaynaklandığı  daha  açık  biçimde  yorumlanabilmektedir.  
+ 
+                        Şekil  8.  Ürün  bazlı  baskı  katkılarının  senaryolara  göre  dağılımı  
+3.8  Ürün  Deseni  Optimizasyonu  
+Araştırmanın  kritik  aşamalarından  biri,  belirli  kısıtlar  altında  toplam  göreli  sulama  baskısını  azaltabilecek  alternatif  ürün  oranlarının  araştırılmasıdır.  Bu  amaçla  Python  ortamında  SciPy  kütüphanesinin  kısıtlı  optimizasyon  aracı  ve  SLSQP  yöntemi  kullanılmıştır.  
+Optimizasyonun  amaç  fonksiyonu,  toplam  göreli  sulama  baskısını  minimize  etmektir:  
+      
+𝑚𝑖𝑛
+𝑖
+=
+1
+ 𝑛
+∑
+(
+𝑂𝑟𝑎𝑛
+𝑖
+×
+𝑇𝑜𝑝𝑙𝑎𝑚
+ 
+𝐴𝑙𝑎𝑛
+×
+𝑆𝑢
+ 
+𝐾𝑎𝑡𝑠𝑎𝑦=𝑠=
+𝑖
+×
+=𝑘𝑙𝑖𝑚
+ 
+Ç
+𝑎𝑟𝑝𝑎𝑛=
+)
+Karar  değişkenleri  ürün  oranlarıdır.  Optimizasyonda  oranların  toplamının  1  olması,  ürün  bazlı  alt  ve  üst  sınırların  korunması  ve  uygulanabilirlik  için  ek  politika  kısıtlarının  sağlanması  koşulları  kullanılmıştır.  
+1.  Toplam  alan  sabitliği  kısıtı  
+     
+𝑖
+=
+1
+ 𝑛
+∑
+𝑂𝑟𝑎𝑛
+𝑖
+=
+1
+2.  Ürün  bazlı  alt  ve  üst  sınırlar   Her  ürün  için  veri  setinde  tanımlanan  minimum  ve  maksimum  oranlar  korunmuştur.   3.  Ek  politika/uygulanabilirlik  kısıtları   Buğday  için  minimum  oran,  arpa  için  minimum  oran,  dane  mısır  ve  şeker  pancarı  için  maksimum  oran  sınırları  ayrıca  uygulanmıştır.   
+
+PAGE 12
+Bu  kısıtların  amacı,  teorik  olarak  en  düşük  baskıyı  veren  fakat  tarımsal  gerçeklikten  tamamen  kopan  bir  ürün  desenine  ulaşmak  yerine,  belirli  ölçüde  uygulanabilir  bir  alternatif  desen  oluşturmaktır.  Optimize  öncesi  ve  sonrası  ürün  oranlar  Şekil  9’da  görülebilir.  
+ 
+               Şekil  9.  Mevcut  ürün  deseni  ile  optimize  ürün  deseninin  karşılaştırılması  
+Mevcut  ve  optimize  desenin  karşılaştırıldığı  grafikte  görüldüğü  üzere  model,  düşük  su  katsayılı  ürünlerin  payını  artırma;  yüksek  su  katsayılı  ürünlerin  payını  ise  azaltma  eğilimindedir.  Bu  sonuç,  ürün  deseni  değişiminin  göreli  sulama  baskısını  azaltabilecek  bir  araç  olarak  değerlendirilebileceğini  göstermektedir.  
+   3.9  Duyarlılık  Analizi  
+Model  sonuçlarının  yalnızca  üç  sabit  senaryoya  bağlı  kalmaması  için  duyarlılık  analizi  de  gerçekleştirilmiştir.  Bu  analizde  sıcaklık  artışı  0  ile  +3  °C  arasında,  yağış  değişimi  ise  %0  ile  -%30  arasında  değiştirilmiş;  bu  iki  değişkenin  farklı  kombinasyonları  altında  toplam  göreli  sulama  baskısının  nasıl  değiştiği  hesaplanmıştır.  
+Duyarlılık  analizi  7×7’lik  bir  grid  üzerinde  yürütülmüş  ve  her  kombinasyon  için  iklim  çarpanı  hesaplanarak  toplam  baskı  yeniden  bulunmuştur.  Elde  edilen  sonuçlar  ısı  haritası  biçiminde  görselleştirilmiştir.  Şekil  10’da  görüldüğü  üzere  sıcaklık  artışı  ile  yağış  azalması  birlikte  yükseldikçe  toplam  baskı  artmaktadır.  Bu  analiz,  modelin  yalnızca  önceden  tanımlanmış  üç  senaryo  için  değil,  daha  geniş  bir  iklim  baskısı  aralığında  da  tutarlı  tepkiler  verdiğini  göstermektedir.  
+
+PAGE 13
+                              Şekil  10.  Sıcaklık  artışı  ve  yağış  azalmasına  göre  duyarlılık  analizi  ısı  haritası  
+3.10  Web  Tabanlı  Simülasyon  Arayüzü  
+Geliştirilen  modelin  yalnızca  masaüstü  analizinde  kalmaması  ve  kullanıcı  tarafından  etkileşimli  biçimde  test  edilebilmesi  için  Streamlit  tabanlı  bir  web  arayüzü  hazırlanmıştır.  Bu  arayüzde  kullanıcı,  sıcaklık  artışı  ve  yağış  değişimi  parametrelerini  değiştirebilmekte;  ürün  oranlarını  düzenleyebilmekte;  mevcut  desen,  kullanıcı  deseni  ve  optimize  desen  sonuçlarını  karşılaştırabilmektedir.  Arayüz  ayrıca  toplam  baskı,  normalize  endeks,  iklim  çarpanı  ve  ürün  bazlı  dağılım  gibi  çıktıların  anlık  olarak  görüntülenmesini  sağlamaktadır.  Böylece  geliştirilen  sistem,  araştırmanın  analitik  çıktılarının  görselleştirilmesini  ve  karar  destek  amacıyla  test  edilmesini  mümkün  kılmaktadır.  Şekil  11’de  uygulamanın  genel  görünümü,  Şekil  12’de  ise  örnek  bir  senaryo  testi  verilmiştir.  
+ 
+                      Şekil  11.  Web  tabanlı  simülasyon  arayüzünün  genel  görünümü  
+ 
+
+PAGE 14
+ 
+                     Şekil  12.  Örnek  kullanıcı  senaryosu  ve  anlık  baskı  çıktısı  
+Bu  arayüz,  projenin  ana  bilimsel  çıktısı  değildir;  ana  modelin  kullanıcı  tarafından  etkileşimli  
+olarak
+ 
+denenmesini
+ 
+sağlayan
+ 
+bir
+ 
+destek
+ 
+bileşenidir.
+ 
+Bu
+ 
+nedenle
+ 
+raporda
+ 
+uygulama
+ 
+geliştirme
+ 
+çalışması
+ 
+olarak
+ 
+değil,
+ 
+araştırma
+ 
+modelinin
+ 
+senaryo
+ 
+tabanlı
+ 
+karar
+ 
+destek
+ 
+aracı
+ 
+olarak
+ 
+sunulmaktadır.
+ 
+4.  Proje  İş-Zaman  Çizelgesi  
+ 
+5.  Bulgular  
+5.1  Mevcut  Ürün  Deseninin  Genel  Görünümü  
+Çalışma  kapsamında  ele  alınan  buğday,  arpa,  dane  mısır  ve  şeker  pancarı  ürünlerine  
+ait
+ 
+2023
+ 
+yılı
+ 
+ekim
+ 
+alanları
+ 
+Tablo
+ 
+1’de,
+ 
+bu
+ 
+alanların
+ 
+karşılaştırmalı
+ 
+görünümü
+ 
+ise
+ 
+Şekil
+ 
+13’te
+ 
+sunulmuştur.
+ 
+Tablo
+ 
+1’de
+ 
+görüldüğü
+ 
+üzere
+ 
+mevcut
+ 
+ürün
+ 
+deseni
+ 
+içerisinde
+ 
+en
+ 
+geniş
+ 
+ekim
+ 
+alanına
+ 
+sahip
+ 
+ürün
+ 
+buğdaydır.
+ 
+Buğdayı
+ 
+arpa
+ 
+izlemekte,
+ 
+dane
+ 
+mısır
+ 
+ve
+ 
+şeker
+ 
+pancarı
+ 
+ise
+ 
+daha
+ 
+düşük
+ 
+alanlarda
+ 
+yetiştirilmektedir.
+ 
+Buna
+ 
+göre
+ 
+ürün
+ 
+deseni,
+ 
+geniş
+ 
+alan
+ 
+kaplayan
+ 
+tahıl
+ 
+grubu
+ 
+ürünler
+ 
+ile
+ 
+İşin  Adı
+ 
+AYLAR  
+  
+NİSAN  
+MAYIS  
+HAZİRAN  
+TEMMUZ  
+AĞUSTOS  
+EYLÜL  
+EKİM  
+KASIM  
+ARALIK  
+OCAK  
+ŞUBAT  
+MART  
+Literatür  Taraması 
+    X  X  X  X X X X  X  
+Model  Geliştirme  ve  Senaryo  Analizi  
+       X X X X  X  
+Verilerin  Toplanması  ve  Analizi 
+     X X X X X X  X  
+Proje  Raporu  Yazımı 
+        X X X  X  
+
+PAGE 15
+daha  sınırlı  alanda  yer  almasına  rağmen  görece  yüksek  su  talebine  sahip  ürünlerin  bir  arada  bulunduğu  bir  yapı  göstermektedir.  
+                        
+      Şekil  13.  Konya’da  çalışma  kapsamında  ele  alınan  ürünlerin  2023  yılı  ekim  alanları.  
+Mevcut  ürün  alanlarının  dağılımı,  toplam  göreli  sulama  baskısının  yalnızca  ürünlerin  su  katsayılarına  değil,  aynı  zamanda  ekim  alanlarının  büyüklüğüne  de  bağlı  olduğunu  ortaya  koymaktadır.  Özellikle  buğdayın  geniş  alan  kaplaması,  bu  ürünün  toplam  baskı  üzerindeki  etkisini  artırmaktadır.  Buna  karşılık  dane  mısır  ve  şeker  pancarı  daha  dar  alanda  yer  alsalar  da,  görece  yüksek  su  gereksinimleri  nedeniyle  baskı  üzerinde  dikkat  çekici  bir  etki  oluşturmaktadır.  
+5.2  Senaryo  Analizi  Sonuçları  
+Baz,  orta  baskı  ve  yüksek  baskı  senaryolarına  ait  toplam  göreli  sulama  baskısı  değerleri  Şekil  7’de  sunulmuştur.  Şekil  7’de  görüldüğü  üzere  baz  senaryoda  toplam  göreli  sulama  baskısı  en  düşük  düzeyde  gerçekleşirken,  orta  baskı  ve  yüksek  baskı  senaryolarında  bu  değer  düzenli  biçimde  artmaktadır.  Bu  sonuç,  modelde  tanımlanan  iklim  baskı  çarpanının  ürün  deseni  üzerindeki  toplam  baskıyı  doğrudan  etkilediğini  göstermektedir.  
+Tablo  4  incelendiğinde,  baz  senaryoda  toplam  göreli  sulama  baskısı  15.702.550 ,  orta  baskı  senaryosunda  17.272.805  ve  yüksek  baskı  senaryosunda  18.843.060  olarak  hesaplanmıştır.  Buna  bağlı  olarak  normalize  edilmiş  baskı  endeksi  baz  senaryoda  1,00 ,  orta  baskı  senaryosunda  1,10  ve  yüksek  baskı  senaryosunda  1,20  olarak  bulunmuştur.  Bu  durum,  iklim  baskısındaki  artışın  göreli  sulama  baskısında  da  doğrusal  bir  yükseliş  oluşturduğunu  göstermektedir.  
+ 
+ 
+
+PAGE 16
+Tablo  4.  Senaryo  sonuçlarının  sayısal  özeti.  
+Senaryo  Toplam  göreli  sulama  baskısı  Normalize  endeks  
+Baz  15.702.550  1,00  
+Orta  baskı  17.272.805  1,10  
+Yüksek  baskı  18.843.060  1,20  
+Bu  sonuçlar,  mevcut  ürün  deseninin  iklim  koşullarındaki  olumsuz  değişimlere  duyarlı  olduğunu  göstermektedir.  Sıcaklık  artışı  ve  yağış  azalması  büyüdükçe,  mevcut  ürün  yapısı  altında  toplam  sulama  baskısı  da  artmaktadır.  
+5.3  Ürün  Bazlı  Baskı  Katkılarının  Değerlendirilmesi  
+Ürünlerin  toplam  göreli  sulama  baskısı  içindeki  katkı  payları  Şekil  8’de  yığılmış  sütun  grafiği  ile  gösterilmiştir.  Şekil  8’de  görüldüğü  üzere  senaryolar  değişse  de  ürünlerin  toplam  baskı  içindeki  göreli  katkı  sıralaması  değişmemektedir.  Bunun  nedeni,  senaryo  analizinde  tüm  ürünlerin  aynı  iklim  çarpanı  ile  ölçeklenmesidir.  Bu  nedenle  toplam  baskı  artsa  da  ürünlerin  toplam  içindeki  payları  büyük  ölçüde  sabit  kalmaktadır.  
+Baz  senaryo  sonuçlarına  göre  toplam  baskı  içinde  en  yüksek  katkıyı  buğday  oluşturmaktadır.  Buğdayı  arpa,  dane  mısır  ve  şeker  pancarı  izlemektedir.  Bu  bulgu,  toplam  baskının  yalnızca  su  katsayısına  değil,  ekim  alanına  da  bağlı  olduğunu  göstermektedir.  Buğday  görece  orta  su  katsayısına  sahip  olmasına  rağmen  geniş  ekim  alanı  nedeniyle  en  büyük  katkıyı  sağlamaktadır.  Dane  mısır  ve  şeker  pancarı  ise  daha  düşük  alan  kaplamalarına  rağmen  yüksek  su  katsayıları  nedeniyle  dikkat  çekici  katkı  oluşturmaktadır.  
+Bu  sonuçlar,  Konya’daki  mevcut  ürün  deseninde  sulama  baskısının  hem  geniş  alan  kaplayan  ürünler  hem  de  görece  yüksek  su  talep  eden  ürünler  tarafından  birlikte  şekillendirildiğini  göstermektedir.  Bu  nedenle  etkili  bir  azaltım  stratejisi  için  ürün  deseni  bütüncül  biçimde  değerlendirilmelidir.  
+5.4  Normalize  Endeks  Sonuçlarının  Yorumlanması  
+Normalize  edilmiş  göreli  sulama  baskısı  endeksi  Şekil  6’da  sunulmuştur.  Baz  senaryo  referans  değer  olarak  1,00  kabul  edilmiş,  orta  baskı  senaryosunda  bu  değer  1,10’a,  yüksek  baskı  senaryosunda  ise  1,20’ye  yükselmiştir.  
+Normalize  endeks,  mutlak  baskı  değerlerinden  bağımsız  olarak  farklı  iklim  koşullarının  mevcut  ürün  deseni  üzerindeki  göreli  etkisini  göstermektedir.  Buna  göre  orta  baskı  senaryosu  yaklaşık  %10,  yüksek  baskı  senaryosu  ise  yaklaşık  %20  daha  yüksek  bir  baskı  düzeyine  karşılık  gelmektedir.  
+Bu  sonuç,  mevcut  ürün  deseninin  iklim  baskısındaki  artış  karşısında  kırılgan  olduğunu  ve  daha  uyumlu  alternatif  ürün  oranlarının  değerlendirilmesi  gerektiğini  göstermektedir.  
+ 
+PAGE 17
+5.5  Optimizasyon  Bulguları  
+Mevcut  ürün  deseni  ile  alternatif  ürün  deseni  senaryolarının  karşılaştırılması  amacıyla  optimizasyon  analizi  uygulanmıştır.  Elde  edilen  optimize  ürün  oranlarının  mevcut  desen  ile  karşılaştırılması  Şekil  9’da,  sayısal  karşılaştırması  ise  Tablo  5’te  sunulmuştur.  
+Tablo  5.  Optimizasyon  öncesi  ve  sonrası  ürün  oranlarının  karşılaştırılması  
+Ürün  Mevcut  oran  (%)  Optimize  oran  (%)  
+Buğday  47,0  47,0  
+Arpa  30,3  45,0  
+Dane  mısır  14,6  5,0  
+Şeker  pancarı  8,0  3,0  
+Şekil  9  genel  olarak  değerlendirildiğinde,  optimizasyon  sürecinin  görece  düşük  su  katsayısına  sahip  ürünlerin  payını  artırma;  yüksek  su  katsayılı  ürünlerin  payını  ise  azaltma  eğiliminde  olduğu  görülmektedir.   Optimizasyon  sonucunda  arpa  gibi  daha  düşük  göreli  su  katsayısına  sahip  ürünlerin  payı  yükselmiş,  dane  mısır  ve  şeker  pancarı  gibi  daha  yüksek  katsayılı  ürünlerin  payı  ise  azalmıştır.  Bu  durum,  ürün  deseninin  belirli  sınırlar  içinde  yeniden  düzenlenmesiyle  toplam  göreli  sulama  baskısının  azaltılabileceğini  göstermektedir.  Mevcut  ürün  deseni  altında  toplam  göreli  sulama  baskısı  15.702.550,  optimize  ürün  deseni  altında  ise  14.338.276  olarak  hesaplanmış;  buna  göre  toplam  baskıda  yaklaşık  %8,7’lik  azalma  sağlanmıştır.  Tablo  5’teki  karşılaştırma,  optimizasyonun  mevcut  desen  ile  kıyaslandığında  toplam  göreli  sulama  baskısını  azaltma  potansiyeline  sahip  olduğunu  göstermektedir.  
+5.6  Duyarlılık  Analizi  Bulguları  
+Duyarlılık  analizi  sonuçları  Şekil  10’da  sunulmuştur.  Burada  sıcaklık  artışı  ve  yağış  azalmasının  farklı  kombinasyonları  için  normalize  baskı  endeksinin  nasıl  değiştiği  gösterilmektedir.  Şekil  10’da  görüldüğü  üzere  sıcaklık  artışı  ile  yağış  azalması  birlikte  yükseldikçe  normalize  edilmiş  göreli  sulama  baskısı  da  artmaktadır.  En  olumsuz  senaryoda  normalize  endeks  1,45  düzeyine  kadar  yükselmiştir.  Bu  sonuç,  mevcut  ürün  deseninin  daha  sert  iklim  baskıları  altında  çok  daha  yüksek  bir  göreli  sulama  yükü  oluşturabileceğini  göstermektedir.  
+5.7  Web  Tabanlı  Simülasyon  Arayüzüne  İlişkin  Bulgular  
+Araştırma  kapsamında  geliştirilen  web  tabanlı  simülasyon  arayüzü,  model  sonuçlarının  kullanıcı  tarafından  etkileşimli  biçimde  test  edilmesini  sağlamıştır.  Şekil  12’de  arayüzün  örnek  bir  senaryo  altındaki  görünümü  sunulmuştur.  Kullanıcı  sıcaklık  artışı,  yağış  değişimi  ve  ürün  oranlarını  değiştirebilmekte;  sistem  buna  karşılık  toplam  baskı,  normalize  endeks  ve  ürün  bazlı  dağılım  gibi  sonuçları  anlık  olarak  üretmektedir.  
+ 
+Bu  arayüz,  araştırmanın  ana  bilimsel  bulgularını  değiştiren  bir  bileşen  değil;  bu  bulguların  karar  destek  mantığıyla  test  edilmesine  olanak  tanıyan  bir  uygulama  katmanıdır.  
+PAGE 18
+6.  Sonuç  ve  Tartışma  
+Bu  çalışmada,  Konya’daki  mevcut  ürün  deseninin  iklim  baskısı  altındaki  göreli  sulama  baskısına  etkisi  senaryo  temelli  bir  modelle  incelenmiş,  alternatif  ürün  deseni  düzenlemelerinin  bu  baskıyı  azaltma  potansiyeli  araştırılmıştır.  Bulgular,  mevcut  ürün  deseninin  iklim  değişikliğine  karşı  kırılgan  olduğunu  ve  ürün  oranlarında  yapılacak  kontrollü  değişimlerin  toplam  baskıyı  azaltabilecek  bir  araç  olarak  değerlendirilebileceğini  göstermiştir.  
+Tablo  1’e  göre  Konya’daki  üretim  yapısında  buğday  ve  arpa  alan  bakımından  baskınken,  dane  mısır  ve  şeker  pancarı  daha  düşük  alan  kaplamalarına  rağmen  göreli  su  gereksinimi  bakımından  daha  dikkat  çekici  ürünlerdir.  Bu  sonuç,  sulama  baskısının  yalnızca  su  katsayısına  değil,  ekim  alanına  da  bağlı  olduğunu  göstermektedir.  Geniş  alanda  yetiştirilen  bir  ürün  görece  daha  düşük  su  katsayısına  sahip  olsa  bile  toplam  baskıya  büyük  katkı  yapabilmekte;  buna  karşılık  daha  sınırlı  alandaki  ancak  daha  yüksek  su  talebine  sahip  ürünler,  alanlarına  kıyasla  daha  yoğun  baskı  oluşturabilmektedir.  Şekil  7  ve  Tablo  4  birlikte  değerlendirildiğinde,  baz  senaryodan  orta  ve  yüksek  baskı  senaryolarına  geçildikçe  toplam  göreli  sulama  baskısının  kademeli  olarak  arttığı  görülmektedir.  Şekil  6’daki  normalize  endeks  sonuçları  da  bu  artışı  doğrulamaktadır.  Bu  durum,  yarı  kurak  karakter  taşıyan  Konya’da  sıcaklık  artışı  ve  yağış  azalmasının  mevcut  ürün  deseni  altında  su  baskısını  büyütebileceğini  göstermektedir.  Şekil  8,  toplam  baskının  hangi  ürünlerden  kaynaklandığını  açık  biçimde  ortaya  koymaktadır.  En  büyük  katkı  geniş  ekim  alanı  nedeniyle  buğdaydan  gelmekte,  arpa  da  önemli  bir  pay  oluşturmaktadır.  Dane  mısır  ve  şeker  pancarı  ise  daha  küçük  alanlarda  yetişmelerine  rağmen  yüksek  göreli  su  katsayıları  nedeniyle  toplam  baskıyı  artıran  ürünler  arasında  yer  almaktadır.  Bu  bulgu,  su  yönetiminde  yalnızca  “en  çok  ekilen”  ya  da  “en  çok  su  isteyen”  ürüne  değil,  ürün  deseninin  bütününe  odaklanılması  gerektiğini  göstermektedir.  
+Çalışmanın  dikkat  çekici  bulgularından  biri,  ürün  deseni  optimizasyonunun  toplam  göreli  sulama  baskısını  azaltabilecek  potansiyele  sahip  olmasıdır.  Şekil  9  ve  Tablo  5’te  görüldüğü  üzere,  tanımlanan  kısıtlar  altında  yürütülen  optimizasyon,  görece  düşük  su  katsayılı  ürünlerin  oranını  artırmakta,  yüksek  katsayılı  ürünlerin  oranını  ise  azaltmaktadır.  Bu  sonuç,  modelin  amaç  fonksiyonuyla  uyumludur.  Ancak  elde  edilen  desen,  doğrudan  uygulanması  gereken  bir  plan  değil;  su  baskısını  azaltabilecek  alternatif  bir  senaryo  olarak  değerlendirilmelidir.  Çünkü  gerçek  planlama  süreçlerinde  ekonomik  getiri,  pazar  yapısı,  çiftçi  tercihi,  destek  politikaları  ve  sulama  altyapısı  gibi  birçok  ek  değişken  de  rol  oynamaktadır.  
+Duyarlılık  analizi,  modelin  yalnızca  üç  senaryoda  değil,  daha  geniş  bir  iklim  baskısı  aralığında  da  tutarlı  tepkiler  verdiğini  göstermiştir.  Sıcaklık  artışı  ile  yağış  azalması  birlikte  yükseldikçe  normalize  edilmiş  göreli  sulama  baskısı  da  artmaktadır.  Özellikle  sert  iklim  kombinasyonlarında  baskının  belirgin  biçimde  yükselmesi,  mevcut  ürün  deseninin  gelecekte  daha  ciddi  su  yönetimi  sorunlarıyla  karşılaşabileceğini  düşündürmektedir.  Bu  sonuç,  Konya  Kapalı  Havzası’nda  kuraklık  ve  su  baskısının  arttığını  ortaya  koyan  çalışmalarla  da  uyumludur  (Uçar  vd.,  2024;  Ghasempour  vd.,  2025;  Güz  vd.,  2025).  Çalışma,  Konya’da  su  baskısının  yalnızca  meteorolojik  kuraklıkla  değil,  üretim  deseniyle  de  ilişkili  olduğunu;  ürün  deseni  değişiminin  tarımsal  su  yönetiminde  önemli  bir  planlama  aracı  olabileceğini  ortaya  koymuştur.  Ayrıca  yalnızca  mutlak  su  açığına  odaklanan  karmaşık  modeller  dışında,  karşılaştırmalı  ve  açıklanabilir  senaryo  modellerinin  de  karar  destek  açısından  anlamlı  sonuçlar  üretebildiği  görülmüştür.  Bu  yönüyle  çalışma,  ayrıntılı  hidrolojik  modellerin  yerini  almak  yerine,  onları  tamamlayan  ve  yorumlamayı  kolaylaştıran  bir  yaklaşım  sunmaktadır.  
+PAGE 19
+Araştırmanın  güçlü  yönlerinden  biri,  resmi  ve  yarı  resmi  veri  kaynaklarını  bir  araya  getirerek  açıklanabilir  bir  model  kurmuş  olmasıdır.  Senaryo  analizi,  optimizasyon  ve  etkileşimli  simülasyon  arayüzünün  birlikte  kullanılması  da  çalışmanın  uygulama  değerini  artırmıştır.  Bununla  birlikte  model,  ayrıntılı  hidrolojik  denge  hesabı  yapan  fiziksel  bir  sistem  değildir;  kullanılan  su  katsayıları  ve  iklim  çarpanları  sadeleştirilmiş  parametrelerdir.  Ayrıca  ekonomik  getiri,  çiftçi  davranışı,  destekleme  politikaları,  toprak  su  tutma  kapasitesi  ve  yerel  sulama  altyapısı  gibi  değişkenler  doğrudan  modele  dahil  edilmemiştir.  Bu  nedenle  sonuçlar,  mutlak  doğruluk  iddiası  taşıyan  tahminler  olarak  değil,  karşılaştırmalı  ve  karar  destek  amaçlı  senaryo  sonuçları  olarak  değerlendirilmelidir.  
+Sonuç  olarak  bu  çalışma,  Konya’da  mevcut  ürün  deseninin  iklim  değişikliği  koşullarında  göreli  sulama  baskısını  artırabilecek  bir  yapı  sergilediğini;  buna  karşılık  kontrollü  ürün  deseni  değişimlerinin  bu  baskıyı  azaltma  potansiyeli  taşıdığını  göstermiştir.  Bu  bulgu,  su  kaynaklarının  sınırlı  olduğu  yarı  kurak  bölgelerde  tarımsal  planlamanın  yalnızca  verim  ve  alan  büyüklüğü  üzerinden  değil,  ürün  deseni–iklim  baskısı–su  yönetimi  ilişkisi  içinde  ele  alınması  gerektiğini  ortaya  koymaktadır.  
+7.  Öneriler  Bu  proje  kapsamında  geliştirilen  model,  Konya’daki  ürün  deseni  ile  göreli  sulama  baskısı  arasındaki  ilişkiyi  senaryo  temelli  olarak  ortaya  koymuştur.  İleriki  çalışmalarda  model  ilçe  bazında  ayrıntılandırılabilir;  evapotranspirasyon,  yeraltı  suyu  seviyesi,  sulama  verimliliği,  ekonomik  getiri  ve  çiftçi  tercihleri  gibi  değişkenler  eklenebilir.  Ayrıca  geliştirilen  web  tabanlı  arayüz,  daha  ayrıntılı  veri  ve  maliyet  parametreleriyle  genişletilerek  gelişmiş  bir  karar  destek  sistemine  dönüştürülebilir.   Kaynaklar  
+Climate-Data.org.  (t.y.).  Konya  iklimi . 10  Mart  2026  tarihinde  https://tr.climate-data.org/asya/tuerkiye/konya/konya-190/#climate-graph adresinden  erişilmiştir.  
+Dündar,  M.  A.  ve  Topak,  R.  (2025).  The  effect  of  irrigation  on  winter  wheat  yield  in  the  conditions  of  the  Konya  plain.  Turkish  Journal  of  Agriculture  -  Food  Science  and  Technology,  13 (12),  4183–4191. https://doi.org/10.24925/turjaf.v13i12.4183-4191.8344 
+Eğilmez,  S.  (2024).  Arpa  ürün  raporu  2024  (Yayın  No:  395).  Tarımsal  Ekonomi  ve  Politika  Geliştirme  Enstitüsü.  
+Eğilmez,  S.  (2025).  Arpa  ürün  raporu  2025  (Yayın  No:  412).  Tarımsal  Ekonomi  ve  Politika  Geliştirme  Enstitüsü.  
+Esetlili,  M.  T.,  Serbeş,  Z.  A.,  Çolak  Esetlili,  B.,  Kurucu,  Y.  ve  Delibacak,  S.  (2022).  Determination  of  water  footprint  for  the  cotton  and  maize  production  in  the  Küçük  Menderes  Basin.  Water,  14 (21),  3427. https://doi.org/10.3390/w14213427 
+Ghasempour,  F.,  Yamaç,  S.  S.,  Sekertekin,  A.,  Iban,  M.  C.  ve  Kutoglu,  S.  H.  (2025).  Spatiotemporal  agricultural  drought  assessment  and  mapping  its  vulnerability  in  a  semi-arid  region  exhibiting  aridification  trends.  Agriculture,  15 (19),  2060. https://doi.org/10.3390/agriculture15192060 
+Güz,  Ş.,  Saysel,  A.  K.,  Copty,  N.  K.  ve  Uygur,  İ.  (2025).  Dynamic  coupling  of  hydrogeology  
+PAGE 20
+and  human  decision-making  for  sustainable  groundwater  management  in  Konya  Closed  Basin,  Türkiye.  Journal  of  Hydrology:  Regional  Studies,  62 ,  103013. https://doi.org/10.1016/j.ejrh.2025.103013 
+Hacısüleyman,  V.  ve  Özger,  M.  (2025).  Gediz  havzasında  ürün  deseninin  çok  amaçlı  doğrusal  programlama  yaklaşımı  ile  optimizasyonu.  Tarım  Ekonomisi  Dergisi,  31 (2),  237–244. https://doi.org/10.24181/tarekoder.1699095 
+İzmir  Ticaret  Borsası.  (2024).  İTB  -  buğday  sektör  raporu  -  2024 .  
+Kanat,  Z.  (2023).  Şeker  pancarı  ve  şeker  ürün  raporu  2023  (Yayın  No:  388).  Tarımsal  Ekonomi  ve  Politika  Geliştirme  Enstitüsü.  
+Kaya,  B.,  ve  Aladağ,  C.  (2009).  Konya  Şartlarında  Yağış,  Sıcaklık  ve  Bitki  Örtüsü  İlişkisi.  Selçuk  Üniversitesi  Sosyal  Bilimler  Enstitüsü  Dergisi,  22,  265-278.  https://izlik.org/JA93GA25YS 
+Konya  İl  Tarım  ve  Orman  Müdürlüğü.  (2023).  İlçe  bazında  tarım  istatistikleri-2023 .  
+Konya  İl  Tarım  ve  Orman  Müdürlüğü.  (2024).  2024  Konya  tarımı .  
+Konya  İl  Tarım  ve  Orman  Müdürlüğü.  (2025).  2025  Konya  tarımı .  
+Meteoroloji  Genel  Müdürlüğü.  (2026).  Zirai  meteoroloji  bülteni:  Şubat  2026  (Sayı  241).  T.C.  Çevre,  Şehircilik  ve  İklim  Değişikliği  Bakanlığı.  
+Taheri,  N.,  Pishvaee,  M.  S.  ve  Jahani,  H.  (2025).  A  robust  multi-objective  optimization  model  for  grid-scale  design  of  sustainable  cropping  patterns:  A  case  study .  Computers  &  Industrial  Engineering,  200 ,  110772. https://doi.org/10.1016/j.cie.2024.110772 
+Tarımsal  Ekonomi  ve  Politika  Geliştirme  Enstitüsü.  (2024).  Mısır  tarım  ürünleri  piyasaları  raporu:  Temmuz  2024 .  
+Tarımsal  Ekonomi  ve  Politika  Geliştirme  Enstitüsü.  (2025).  Buğday  tarım  ürünleri  piyasaları  raporu:  Temmuz  2025 .  
+Topak,  R.,  ve  Acar,  B.  (2010).  Sustainable  Irrigation  and  Importance  of  Technological  Irrigation  Systems  for  Konya  Basin.  Research  Journal  of  Agricultural  Sciences,  2,  65-70.  https://izlik.org/JA99MF73WL 
+Uçar,  A.,  Eriş,  E.  ve  Önen,  F.  (2024).  Standart  kuraklık  indeksleri  ile  kuraklık  analizi:  Konya  kapalı  havzası  örneği.  DUJE  (Dicle  University  Journal  of  Engineering),  15 (4),  925–932.  https://doi.org/10.24012/dumf.1528706 
+Vivekanandan,  N.  ve  Viswanathan,  K.  (2007).  Optimization  of  multi-objective  cropping  pattern  using  linear  and  goal  programming  approaches.  MAUSAM,  58(3),  323-334.  https://doi.org/10.54302/mausam.v58i3.1326 
+Wikipedia.  (2011).  Konya  in  Turkey.  10  Mart  2026  tarihinde  https://tr.wikipedia.org/wiki/Dosya:Konya_in_Turkey.svg adresinden  erişilmiştir.  
+  Yılmaz,  Ö.  (2011).  Konya  Ovası  Ve  Çevresinin  İklim  Özelliklerinin  Tahıl  Tarımına  Etkileri.  Afyon  Kocatepe  Üniversitesi  Sosyal  Bilimler  Dergisi,  13(1),  101-126.  https://izlik.org/JA93SR92ZB 

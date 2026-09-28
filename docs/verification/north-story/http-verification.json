@@ -1,0 +1,40 @@
+{
+  "verified_at_utc": "2026-09-22T23:10:45.586202+00:00",
+  "timelines": 2,
+  "periods_each": 4,
+  "checks": [
+    "non-equal calculated crop allocation",
+    "diversity floor",
+    "95% harvest floor",
+    "source closure",
+    "daily critical month",
+    "no invented minimum storage",
+    "same engine over time",
+    "real frontier counts",
+    "no invented open field",
+    "water-energy crop floors",
+    "1000 m² scale",
+    "synthetic same-engine POST"
+  ],
+  "default_totals": {
+    "area_m2": 100.0,
+    "production_kg": 4204.367499999999,
+    "water_m3": 14.187618105909758,
+    "heat_kwh_th": 1895.789149685574,
+    "electricity_kwh": 117473.10462356126,
+    "equivalent_electricity_kwh": 119368.89377324683,
+    "stored_water_m3": 14.06286033193899,
+    "desalinated_m3": 0.12475777397076915,
+    "freshwater_m3": 0.0,
+    "treatment_electricity_kwh": 0.37499055623940064,
+    "treatment_heat_kwh_th": 0.0
+  },
+  "default_areas": {
+    "arugula": 5.0,
+    "basil": 5.0,
+    "kohlrabi": 75.0,
+    "lettuce": 5.0,
+    "radish": 5.0,
+    "swiss_chard": 5.0
+  }
+}

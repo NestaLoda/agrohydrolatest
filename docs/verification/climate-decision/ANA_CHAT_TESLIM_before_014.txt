@@ -1,0 +1,132 @@
+TESLİM 013 — NET KARAR, EKONOMİ KONTROLÜ, 10 AÇILIR ANALİZ
+22 Eylül 2026. Aynı proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim; .git yok.
+Önizleme: http://127.0.0.1:8011/#turkiye
+
+SON İSTEK / GÜNCEL ÜRÜN
+Kullanıcı simülasyon sonrası net, nesnel azalt/artır önerileri, iyi/kötü sonuçta yeşil/kırmızı durum, su tasarrufu ile gelir/gider farkının ayrı hesabı ve çok sayıda açılır grafik istedi. Telefon testi yapılmadı; AGENTS.md'deki masaüstü tercihi devam ediyor.
+
+1) NET KARAR VE RENKLER
+Öneri artık doğrudan 'Arpa payını azaltın: %28,1 → %14; Buğday payını artırın: %50,9 → %75,5' biçiminde gerçek koşu miktarlarından hesaplanır. En büyük azalış/artış öne çıkar; tüm ürünler tablo/grafiklerde korunur. Model su katsayıları, bağlayıcı kısıt ve üretim azalması yanındadır.
+Su açısından daha düşük gereğin kararı yeşil, ek gereğin/çözümsüz kararın durumu kırmızı; kısmi/eksik/değişimsiz durum nötrdür. Canlı su bandı da başlangıca göre artışı kırmızı, azalışı yeşil gösterir. Kriter su olarak açıkça yazılır; bu genel ekonomik üstünlük/kâr iddiası değildir. Önceki koşu hâlâ etiketlenir. Renk tek başına kullanılmaz; yazı ve simge eşlik eder. Renk için yaklaşık %0,05 görünürlük eşiği, ekonomi rengi için 1 TL eşiği kullanılır; ham hesaplar yuvarlanmaz/değiştirilmez.
+
+2) EKONOMİ KONTROLÜ — GERÇEK VERİ YOKKEN KÂR UYDURULMAZ
+Depoda doğrulanmış ürün satış fiyatı, yerel üretim maliyeti ve sulama tarifesi bulunmadı. Bu tur piyasa fiyatı/maliyet araştırması veya yeni ekonomik veri indirmesi yapılmadı.
+Kapalı başlayan Ekonomi kontrolü: sulama TL/m³; ürün bazında satış TL/kg ve sulama hariç üretim gideri TL/ha. Boşlar DATA NEEDED; girilmiş sıfır geçerli sıfırdır. Girilenler MANUAL OVERRIDE / kullanıcı ekonomi senaryosudur, resmî kaynak değildir. Sulama maliyeti su+pompalama/hizmeti kapsayabilir; diğer üretim gideri sulamayı dışlamalıdır (çifte maliyet yok).
+Aynı koşunun mevcut deseni ve önerilen deseni aynı birim fiyat/maliyetle karşılaştırılır: satış geliri, üretim gideri, sulama gideri, modellenmiş faaliyet marjı ve farkları. Marj = gelir − üretim gideri − sulama; yatırım, finansman, vergi dahil net kâr değildir. Alan bazlı gider doğrusal varsayımdır. Verimler/üretim miktarları mevcut model koşusundan gelir.
+Yalnız su tarifesi girilirse sulama gideri tasarrufu hesaplanır; eksik ürün fiyat/maliyetinde gelir veya faaliyet marjı 0 yapılmaz. Su tasarrufu gelir kaybını karşılamıyorsa kırmızı; iyileşse bile öneri marjı negatifse kırmızı kalır. Tam veride pozitif faaliyet marjı iyileşmesi yeşil; satış geliri korunması ayrıca kontrol edilir. Trakya eksik çeltik suyu toplam su gideri/marjını eksik bırakır. Açıkça 0 TL/m³ girilirse ücret 0 olabilir; su hacmi bilinmiyor olmaya devam eder.
+Bölgeye özel varsayımlar yalnız tarayıcı sessionStorage'da tutulur; kaynak veri ve optimizer girdilerine yazılmaz. Su odaklı optimizer değişmedi: bu ekonomi kontrolü, öneriyi kârı maksimize eden bir optimizasyona dönüştürmez. Ekonomi kaydını indir: fiyatlar, birimler, iki desenin miktarları, hesap, USER_SCENARIO ve run_id içeren JSON.
+
+3) AÇILIR ANALİZ LABORATUVARI — 10 GERÇEK GRAFİK
+Ana ekran kısa tarla → su → karar → iki küçük grafiği korur. Büyük laboratuvar kapalı başlar; seçiciyle tek seferde yalnız bir büyük grafik görünür, kapatılınca içerik kaldırılır. Aynı özellik ayrıntılı Veriler/grafikler sekmesinde de vardır. Kullanıcının 50 grafikli eski proje örneği tasarım hedefi olarak alındı; 50 sahte/tekrarlı grafik üretilmedi, 10 anlamlı hesap görünümü eklendi:
+01 kaynak / seçilen / önerilen alan payı;
+02 alan payındaki yüzde puan değişimi;
+03 mevcut / önerilen ürün suyu;
+04 ürün bazında üretim kg (farklı ürün kg'ları performans/gelir diye toplanmaz);
+05 hektara brüt su m³/ha;
+06 net / brüt su mm (brüt m³/ha ÷ 10);
+07 beyan edilmiş minimum üretimin karşılanması (%100 alt sınır, hedef skoru değil);
+08 azami kaynak sınırının kullanımı (%100 üst sınır; minimumlarla karıştırılmaz);
+09 kaynak → koşul → seçim → optimizasyon → öneri su değişimi zinciri;
+10 toplam su / beyan edilen senaryo bütçesi.
+Bütün grafikler gerçek dondurulmuş model koşusundan istemcide anında SVG olarak çizilir; Python'ın hesapladığı sonuç kullanılır, fazladan rastgele/sentetik senaryo veya görsel için sahte veri oluşturulmaz. Birim/eksen/lejant/tam değer araç ipuçları ve SVG indirme vardır. Büyük grafik alanı 270 px.
+Eksik değerler DATA NEEDED kalır. Waterfall bütün aşamalarda aynı bilinen ürün kümesini kullanır. Trakya toplam su/bütçe grafiği toplam bilinmediğinden çizilmez, SVG indirme kapalıdır; ürün suyu grafiğinde çeltik bilinmiyor diye gösterilir. Kaynak ve koşu alanları ayrı paydalardır.
+
+DOĞRULAMA — BU TUR
+TypeScript/Vite üretim derlemesi başarılı. Yeni saf ekonomi hesabında 13/13 test geçti: 'node --experimental-strip-types --test frontend/tests/economics.test.ts'. Son kayıt 2026-09-22T22:36:17.131514+03:00. Testler: gelir/gider işaretleri, ürün sıra bağımsızlığı, su tasarrufuyla birlikte kâr düşüşü, boşlar, sıfırlar, eksik çeltik, geçersiz/taşan değer, veri değiştirmeme, iyileşmesine rağmen negatif marj, renk eşikleri. Node v22.15.0 TS-stripping deneysel uyarısı var; hata yok.
+15/15 masaüstü tarayıcı kontrolü geçti; kayıt 2026-09-22T19:41:21.067Z. Net oranlar/renk; kapalı grafikler; yalnız tarifeyle tasarruf ama bilinmeyen marj; gelir kaybında kırmızı; tam veride gelir+marj artışında yeşil; hâlâ zararda kırmızı; kuraklıkta canlı su kırmızı; çözümsüz karar; 10 tekil grafiğin sonlu verilerle çizimi/aç-kapa; Trakya toplam/bütçe ve çeltik; 5 bölge/varsayım ayrımı; ekonomi dışa aktarma düğmesi; konsol hatası yok. Bazı kontroller birleşiktir.
+Tarayıcıda kullanılan 2 TL/m³, 10/100 TL/kg, 1000 TL/ha veya sıfır değerleri yalnız QA varsayımlarıydı; tümü temizlendi. Uygulama Konya kaynak başlangıcı/hesaplanan öneri ve boş ekonomi alanlarıyla bırakıldı. Bu rakamlar veri seti veya piyasa önerisi değildir.
+Backend/model değişmedi; tam backend test suite bu tur tekrarlanmadı. Son tam backend kaydı: 175 geçti / 0 hata, 2026-09-22T21:56:14.722623+03:00, 20.102 s (010). 012'de 10 masaüstü kontrolü; önceki sonuçlar kendi tarihleriyle geçerlidir.
+
+DOSYALAR / KANIT
+Yeni: frontend/src/economics.ts; frontend/tests/economics.test.ts; components/TurkeyEconomics.tsx; components/TurkeyAnalysisExplorer.tsx; components/turkey-analysis.css.
+Güncel: components/TurkeyDecisionSupport.tsx, LivePattern.tsx, TurkeyDecisionCanvas.tsx, AnalysisData.tsx; frontend/src/instrument.css; frontend/dist.
+İki alt ajan: saf hesap/test ve analiz grafikleri; ana ajan karar/ekonomi UI, entegrasyon ve masaüstü kontrolleri. Veri/backend/Kuzey/PWN dosyaları değiştirilmedi.
+docs/verification/decision-economics/: economics-tests.log, build.log, browser-qa.json, final-desktop.png, economic-loss.png, drought-red-water.png, waterfall.png, ANA_CHAT_TESLIM_before_013.txt.
+Güncel teslim, BUILD_STATUS ve PROJECT_SOURCE_OF_TRUTH güncellendi.
+
+KORUNAN TARLA / ANA AKIŞ
+Mevcut kaynak tarla sabittir; canlı oranlar sürgüde parselleri hareket ettirir; öneri yalnız gerçek hesap sonucundan gelir. Eski öneri sonraki düzenlemelerde önceki koşu diye etiketlenir. Boş alan toprak, sıfır ürün sıfır genişlik; gerçek coğrafi parsel haritası iddiası yok. Farklı bölgelerde aynı crop_id dokusu kullanılır. Canlı su/ha önizleme aynı bilimsel fonksiyonlardan gelir; yeni model veya AI/LLM eklenmedi. Kısa masaüstü akışı ve açılır tablolar korunur.
+
+KÜMÜLATİF GÜNCEL PROJE DURUMU
+Tek araştırma: Konya → Türkiye → Future North → PRE-TASE → TASE fiziksel kanıt → aynı motorla POST → kontrollü tarım pilotu. PWN saha aracı, sera doğrulama ortamı. Yeni master + en yeni açık kullanıcı talimatları eski ürün kararlarının üstünde.
+
+TÜRKİYE
+Uygulamadaki beş bölge: Konya, Seyhan/Adana, Gediz/Manisa, GAP/Şanlıurfa, Trakya/Edirne. Kaynaklar seçili il ürünlerine aittir; 81 il veya bütün havzalar tamamlandı denmez. Başlangıç 2024 resmî il ekilişi/üretimi, günlük hava referansı 2024–2025 ERA5. Canlı 2026 ekiliş sayımı doğrulanmadı. Güncel sıcaklık ayrı Open-Meteo MODEL_NOWCAST; tarih/saatli, optimizatöre girmez.
+Referans etiketi Mevcut; bu düğme kaynak başlangıcını yükler ve önceki öneriyi temizler. Açılışta kaynaklı mevcut desen + ayrı ilk öneri. Canlı tarla, kaynaklı mevcut ve hesaplanan öneriden açıkça ayrılır; öneri yalnız motor koşusundan gelir.
+Dokuz senaryo: Mevcut, Mükemmel, Su −%10/−%20/−%30, Kuraklık, Az yağış, Verimli sulama, Su +%10. Kuraklık su/yağış −%20, ET0 +%10. Mükemmel: %95 randıman + ürün başına mevcut üretimin en az %80'i; yüksek minimum korunur, gelir tahmini değildir. Diğer varsayılan ürün tabanı %50. Minimumlar/katsayılar açık senaryodur.
+Bölgesel amaç: önce ekili alanı en yükseğe çıkar, aynı alan için suyu en aza indir. Eski mevcut miktarlar tavan değildir. Kc/takvim/toprak/randıman ve sabit verim varsayımları; gerçek mevsimlik su tahsisi, sulu/kuru alan ayrımı, yerel münavebe, ekonomi/üretim ihtiyaçları eksik. Başlangıç bütçesi mevcut desenin model gereğidir, resmî tahsis değil. Trakya çeltik suyu eksik olduğundan çeltik alanı sabit, diğerleri kısmi optimize edilir.
+Türkiye sol paneli sade kontrollerden oluşur; iklim açık, gelişmiş parametreler düzenlenebilir. Konya pilotu sekmesi kaldırılmıştır; tarihsel rapor korunur. Sonuçta su kazanımı m³/% ve koşul/desen ayrımı, yan yana pay/su grafikleri ve eski–yeni pay/üretim değişimi tablosu bulunur. Ana ekran 012 ile kısa tarla/karar/grafik akışına dönüştü; ayrıntılar grafik sekmesi ve açılır bölümlerde.
+Tarihsel yaklaşık %8,7 göreli su baskısı sonucudur; ölçülmüş m³ tasarrufu değildir. Konya 2026 raporundaki 2024 hazır verim sütunu uyuşmazlığı kaynak kaydında; verim resmî üretim/alan oranından türetilir.
+
+KORUNAN VARLIKLAR
+4.380 eski ERA5 + 3.655 yeni ERA5 günlük satırı; 14.610 EC-Earth; 730 NASA ACCESS-CM2 SSP245/585 2035 günlük satır ve 6 NetCDF; 21 resmî tarım kaydı, 9 ürün kataloğu, 7 Kuzey aday araştırması. Ham veri/hash/provenans korunur. Bu tur dış bilimsel veri paketi indirilmedi; yeni saha ölçümü yok. Eski tarım JSON/manifest snapshotları ve tüm önceki teslimler verification/archive içinde.
+
+KORUNAN KUZEY/PWN AYRINTISI — ÖNCEKİ KAYIT
+GERÇEK HESAP ÖRNEĞİ — YEREL ARKTİK ÖNERİSİ DEĞİL
+NASA SSP245 2035 + açık mühendislik katsayıları + dengeli amaç: arpa 5699,44 kg / 1,90 ha; patates 0; marul 1013,23 kg / 337,74 m² hidroponik. Su 3819,89 m³; enerji yaklaşık 40000 kWh. Tatlı su 2000, depolanmış su 500, arıtılmış deniz suyu yaklaşık 1319,89 m³. Sayılar LP çıktısıdır; katsayıların yerel doğruluğu veya gerçek üretim kanıtı değildir. Su/enerji önceliği: 4559,55 kg arpa + 810,59 kg marul; 3055,91 m³ ve 26802,88 kWh. Eksiksiz girdiler/sonuçlar/run_id: docs/verification/rebuild/engine-results.json.
+
+SU GÜVENLİĞİ / BİLGİ DEĞERİ / TASE
+Fiziksel su → mevsim → erişim/depo → kalite → arıtma/enerji → kullanılabilir üretim suyu. Motor kaynak bütçesi/kalite/enerji/kapasiteyi kullanır; bu bütün hidrolojik zincirin veya optimum sezon/depo işletmesinin çözümü değildir.
+Açık senaryoda mevsimsel tatlı su, enerji ve deniz sıcaklığı uç koşuları deseni etkiliyor. Tatlı su/enerji ±%20 stres; sıcaklık 5/18°C arıtma bağıntısının destek alanı, Arktik sıcaklık tahmini değil. Bu deterministik duyarlılık; EVSI, ekonomik fayda veya güven yüzdesi değil. Salinite/kimya için sayısal karar bağlantısı yok.
+Karasal yıllık/mevsimsel su hacmi, iklim2050, verim ve permafrost PWN ile doğrudan ölçülmez. PWN hedefleri C/S, T, p/z, UTC, konum ve kalibrasyon/kalite. Model beklentisi fiziksel ölçümden önce dondurulur. Modelin doğru çıkması ve desenin değişmemesi geçerli sonuçlardır.
+İzinli numune: arka plan/gradient derinliği aday; sayı/derinlik/panel sabitlenmedi. δ18O/δ2H kaynak karakterizasyonu; yalnız kararı iyileştiren sınırlı kimya arıtma/üretim uyumu için aday. Uzman/laboratuvar, gemi/izin, koruma/taşıma gereksinimleri açık. Sabit derinlik ve gradient seçimi eşit örnek bütçesinde karşılaştırılabilir; AI zorunlu değil.
+Sefer sonrası numune veya ölçülen kimyadan açık SYNTHETIC/RECONSTRUCTED su → arıtma/koşullandırma → standart besin çözeltisi → kontrollü test. Su/enerji/EC/büyüme/biokütle/verim vekili ölçülür. Bu tüm Arktik tarımını doğrulamaz. Önerilen sera/hidroponik pilotun gerçek işletme verisi sonraki model iyileştirmesidir.
+
+GERÇEK EKSİKLER — TAMAMLANMIŞ SAYILMADI
+Tam otomatik yerel kaynaklı Future North üretim önerisi henüz yok. Varsayılan sonuç DATA NEEDED; tam sözleşmenin bu bilimsel kabulü açık. Yerel su tahsisi/mevsimsellik/depo/erişim/rakip kullanımlar, toprak/permafrost/aktif tabaka, dönemsel yield/sulama, sera ısı/ışık/enerji ve kaynak-temsil bağı eksik. Kaynaklı aday elemesi yalnız kısmi otomasyon. Yıllık Arizona hidroponik verileri kısa Arktik sezona sessizce kopyalanmadı. Gerçek eşlenmiş okyanus modeli/PWN/CTD ve kimyadan arıtma modeli bağlantısı henüz yok.
+
+
+PWN TEDARİK / FİZİKSEL DURUM — ÖNCEKİ İŞ KORUNUR
+DFR0300 K1 EC kit + ESP32 + DS18B20 + encoder + microSD; açık 3D başlık, ayrı taşıyıcı ip, yukarıda mesafe tekeri/kuru kutu. Kullanıcı 3D yazıcı erişimini doğruladı. SD elektriksel uyum, kitte standartlar, gerçek mekanik ölçüler ve stok/teslim teyidi açık. Parça alınmadı, sipariş verilmedi; fiziksel firmware/kalibrasyon/tank/Arktik deneyi bu tur yapılmadı.
+docs/PWN_V01_LINKLI_ALISVERIS.md/.txt, PWN_V01_TAM_MALZEME_LISTESI.md, PWN_V01_CIHAZ_TARIFI.md, docs/teslim/PWN_V01_YAPIM_PAKETI_01.zip ve konsept görsel korunur. Önceki fiyatlar kendi tarihli araştırma kaydıdır; bu tur yenilenmedi, kesin tüm cihaz bedeli diye kullanılmaz. Konsept CAD veya ürün fotoğrafı değildir.
+
+
+SONRAKİ ADIM / AÇIK BAĞIMLILIKLAR
+Kullanıcının yönlendirmesiyle Future North akışına geçmek. Kaynaklı yerel mevsimsel su, permafrost/zemin, verim ve enerji verileri olmadan Kuzey başlangıcı DATA NEEDED kalır. Saha ölçümü ve kimya planı bu boşlukları bütünüyle kapatmaz. Türkiye için yerel sulu/kuru alan, gerçek tahsis ve ürün/münavebe ihtiyaçları bilimsel iyileştirme olarak açık.
+
+KISA TESLİM GEÇMİŞİ
+005: ortak çok ürün/yöntem/kaynak motoru ve saha duyarlılığı.
+006/U12: Türkiye ilk hesap, Kuzey günlük iklim tanısı, cihaz belgeleri.
+007: bilimsel simülatör rebuild, kaynaklı Kuzey elemesi, PRE/POST; 151 test/15 UI.
+008: beş Türkiye bölgesinde kaynaklı mevcut/bağımsız öneri; yeni kaynak ve iklim; 167 test/22 UI, 40 koşu ve bağımsız optimum kontrolü.
+009: sade kontroller, Mevcut, Mükemmel, su kazanımı grafikleri, pilot sekmesi kaldırma; derleme/9 UI/5 yeni senaryo koşusu. Tam suite tekrar edilmemişti.
+010: Canlı su önizlemesi ve ilk halka/karışım yaklaşımı; 175 test/8 UI. Halka tasarımı 011 ile değiştirildi.
+011: Yerel web referansından canlı dokulu tarla/parsel; derleme/11 UI. Backend suite yeniden çalıştırılmadı.
+012: Kısa masaüstü, Öneri/Neden/Dikkat ve iki kısa grafik; derleme/10 masaüstü UI. Mobil test yok.
+013: Net azalt/artır oranları, nesnel durum renkleri, kullanıcı fiyat/maliyet senaryosuyla ekonomi kontrolü, 10 açılır SVG analiz; 13 hesap testi/15 masaüstü kontrolü. Backend optimizer ve AI/LLM durumu değişmedi.
+
+Bu tek güncel dosya ana sohbete yüklenebilir veya içeriği yapıştırılabilir. Kendiliğinden başka sohbete mesaj gönderilmedi.
+
+PWN TEDARİK EKİ — 22 EYLÜL 2026
+Kullanıcının Kartal'dan alabileceği DFR0300 ve Direnc.net alternatifleri araştırıldı. Güncel kaynaklı dosya: docs/PWN_KARTAL_TEDARIK.md.
+DFR0300: Gümrük Sepeti Dudullu 5.500 TL, sayfada sıfır/stok 1/mağazadan teslim; tam kit içeriği teyit edilecek. Direnc.net aynı DFR0300 K1 8.124,83 TL, sepete ekle. Robotistan'da doğrulanmış DFR0300 sayfası bulunamadı; TDS/pH muadil sayılmadı.
+Direnc güncel resmî adresi Yukarı Dudullu Eser Sokak 7/A Ümraniye; eski Maltepe adresi kullanılmayacak. Elden teslim telefonla teyitsiz. Robotistan Başakşehir için internetten sipariş/ödeme ve Ofisten Teslim Al seçeneği var.
+Direnc ESP32-WROOM32D 377,76; DS18B20 58,12 (stok teyidi); SD modülü 29,06; breadboard 55,21; iki jumper paketi ayrı ayrı 49,40 TL. Bu altı kalem toplamı 618,95 TL, hesap; tüm cihaz bedeli değil. Direnc encoder kategoride tükendi; önceki Robotistan seçeneği korundu.
+ÖNEMLİ FİYAT DÜZELTMESİ: Önceki Emes 1.950 TL EC ilanıyla aynı sitenin 8.900 TL kit ilanı arasında açıklanmamış fark var. Eski 3.423,50 TL ana parça toplamı kesin bütçe değildir. docs/PWN_V01_LINKLI_ALISVERIS.md başına güncelleme eklendi; eski PDF yeniden üretilmedi, fiyatları yeni tedarik dosyasıyla birlikte okunmalı.
+Doğrulama: web satıcı fiyat/adres/teslimat sayfaları araştırıldı; telefonla stok ayırtılmadı, satın alma yapılmadı. Elektriksel/fiziksel test yapılmadı; yukarıdaki yazılım testleri bu tedarik işi kapsamında yeniden çalıştırılmadı.
+Sonraki somut adım: DFR0300 tam kit içeriği ve elden teslimi satıcıya teyit ettirip ana parçaları tedarik etmek; usta gerçek kart/kablo/mil ölçülerine göre montajı eşleştirecek.
+
+PWN DİRENC AĞIRLIKLI SEPET — 22 EYLÜL 2026
+Kullanıcı Direnc.net’te alınabilenlerin oradan alınacağı senaryoyu seçti. Güncel satın alma listesi docs/PWN_DIRENC_SEPETI.md ve .txt. DFR0300 dahil 7 ana Direnc kalemi 8.743,78 TL; Robotistan encoder ve yeni 16 GB kart eklenince 9.726,11 TL ara toplam. Küçük elektronik, USB, sarf, mekanik, olası kalibrasyon eksiği ve kargo hariç; tüm cihaz fiyatı değil. Adetli küçük parça ve atölye tamamlama listesi dosyada.
+Önceki tedarik dosyasındaki Gümrük Sepeti önceliği artık seçili senaryo değil; alternatif kaynak olarak kalır. Bu iş önceki aynı gün kaynak kontrollerinin listelenmesi ve toplam hesabıdır; yeniden web stok sorgusu, sipariş, donanım veya yazılım testi yapılmadı.
+Sonraki adım: Direnc’te DFR0300 kit içeriğini, DS18B20 stoğunu ve elden teslimi teyit edip listeyi yapacak kişiye iletmek.
+
+PWN BÜTÇE REVİZYONU — 22 EYLÜL 2026
+En yeni kullanıcı kısıtı: yaklaşık 4.000 TL yalnız sensör/kart/algılayıcılara; mekanik ve montaj okulda. Önceki DFR0300’lı 9.726,11 TL ara toplamlı Direnc sepeti artık güncel öneri değildir.
+Yeni öneri dosyası: docs/PWN_4000TL_ANA_PARCA_PLANI.md. Direnc analog TDS probu+kartı 261,53 TL ve ADS1115 309,77 TL bu tur webden doğrulandı. ESP32, DS18B20, SD modülü/bellek, encoder ile ana toplam 2.018,57 TL; bu kalemlerin diğer fiyatları aynı gün önceki kontrolden. İsteğe bağlı pH 1.046,12 TL (stok/prob içeriği teyitsiz), eklenirse 3.064,69 TL; ilk öneri pH olmadan temel profili çalıştırmak. Mekanik/sarf/kargo/kalibrasyon hariç.
+Bilimsel kapsam açıkça daraltıldı: düşük tuzluluklu kontrollü su kolonunda sıcaklık/derinlik ve iletkenliğe dayalı TDS sensör sinyali. DFR0300 muadili, deniz suyu EC’si veya salinite cihazı olarak sunulmaz. Ham voltaj kaydı, aralık/sıcaklık/standartla doğrulama öncelikli; EC birimi ancak kalibrasyonla. Eski 12,88 mS/cm kalibrasyon standardı yeni aralığa otomatik taşınmaz. Eski “TDS almayın” genellemesi düzeltildi: daraltılmış PoC için kullanılabilir.
+Satın alma, fiziksel ölçüm ve kod değişikliği yok; uygulama testleri yeniden çalıştırılmadı. Sonraki adım: kutu içeriği/stok kontrolü ve okulda düşük aralıklı sensör yanıtının fiziksel doğrulaması.
+
+PWN ENCODER ÇIKARILDI — 22 EYLÜL 2026 SON DÜZELTME
+Kullanıcı 600 TL encoderin çıkarılmasını ve derinliğin okulda başka yöntemle çözülmesini istedi. Yöntem henüz tanımlı değil. docs/PWN_4000TL_ANA_PARCA_PLANI.md güncellendi: altı ana parça 1.410,26 TL; opsiyonel pH dahil 2.456,38 TL. Önceki encoderli toplamlar tarihsel kaldı. Mekanik okulda.
+DFRobot SEN0244 için canlı Robot Sepeti sayfası 1.198,66 TL ve 7–12 iş günü tedarik gösteriyor. Ucuz TDS yerine SEN0244 olursa 2.347,39 TL; pH ile 3.393,51 TL. Dokümantasyon avantajı; aralık/doğruluk iyileşmesi iddiası yok. Kısa takvim nedeniyle önerilen hemen kurulabilir yol yerel TDS ile başlamak. Stok/kutu içeriği ve pH entegrasyonu teyit gerektirir. Sipariş, kod veya fiziksel test yapılmadı.
+
+## Güncel öncelik — iletkenlik, pH sepet dışında
+
+22 Eylül 2026: Kullanıcı TDS/EC sensöründe en çok 1.000 TL, tercihen Direnc; pH'a 1.000 TL harcamak istemiyor. Encoder ve pH güncel öneri sepetinden çıkarıldı. Önceki pH'lı toplamlar yalnız alternatif hesaplarıdır.
+
+Yeni bulunan seçenek: DFRobot SEN0244, E-komponent'te KDV dahil 829,55 TL. https://www.e-komponent.com/dfrobot-sen0244-gravity-analog-tds-sensor-meter-for-arduino . Canlı sayfa 140 adet YURT DIŞI stok, 7–10 iş günü ve tahmini kargoya teslim 1–6 Ekim 2026 gösteriyor. Bu elden/yerel stok değildir. Üretici kitinde prob bulunur; satıcı teknik tablosu Board(s), Cable(s) dediği için prob dahil tam SEN0244 kutusu teyit edilmeli. SEN0244 üretici dokümantasyonu avantajıdır, yayınlanmış aralığı/doğruluğu ucuz seçeneğe göre daha iyi değildir (0–1000 ppm, ±%10 tam ölçek). Direnc'te 1.000 TL altında doğrulanmış daha yüksek performanslı EC/TDS kitine ulaşılamadı.
+
+Bu 829,55 TL kit mevcut 261,53 TL TDS yerine alınırsa altı ana parça 1.978,28 TL. İkisi birlikte alınmaz. Hızlı temin gerekirse mevcut yerel TDS'li altı parça 1.410,26 TL korunur.
+
+pH yerine ilgili ek işlev önerisi: DS3231 gerçek zaman saati, Direnc 174,35 TL: https://www.direnc.net/arduino-i2c-ds3231-real-time-clock-rtc-modulu . İnternetsiz tarih/saat kaydı için; yeni su parametresi ölçmez. Stok gösterimi üst/alt sayfada tutarsız, teyit gerekli. Uygun yedek pil ve modülün şarj devresi uyumu usta tarafından seçilecek; pil dahil varsayılmaz. SEN0244 + temel parçalar + RTC = 2.152,63 TL; yerel ucuz TDS + temel parçalar + RTC = 1.584,61 TL. Kargo/kalibrasyon/pil hariç. ADS1115 16 bit olması sensörü 16 bit doğrulukta yapmaz. Kalan bütçe yeni gereksiz kanal yerine EC standardı/referans doğrulamasına önceliklendirilecek. Gerçek su ölçümü/satın alma yok.

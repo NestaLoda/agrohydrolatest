@@ -1,0 +1,58 @@
+{
+  "dataset_id": "open_meteo_highresmip_EC_Earth3P_HR_longyearbyen_future",
+  "source_kind": "EXTERNAL_CLIMATE_MODEL",
+  "provider": "Open-Meteo / EC-Earth Consortium / CMIP6 HighResMIP",
+  "model": "EC_Earth3P_HR",
+  "scenario_label": "HighResMIP forcing; provider describes it as close to RCP8.5; no selectable SSP",
+  "ssp": null,
+  "member_id": null,
+  "upstream_version": null,
+  "version_note": "API does not expose member/upstream version; immutable retrieval snapshot used",
+  "period": [
+    "2030-01-01",
+    "2049-12-31"
+  ],
+  "disable_bias_correction": true,
+  "bias_correction": "Disabled for both periods; uncorrected model-grid output",
+  "requested_coordinate": {
+    "latitude": 78.22,
+    "longitude": 15.65
+  },
+  "returned_coordinate": {
+    "latitude": 78.046875,
+    "longitude": 15.8203125,
+    "elevation": 21.0
+  },
+  "utc_offset_seconds": 0,
+  "units": {
+    "time": "iso8601",
+    "temperature_2m_min": "°C",
+    "temperature_2m_max": "°C",
+    "precipitation_sum": "mm"
+  },
+  "row_count": 7305,
+  "missing_values": {
+    "temperature_2m_min": 0,
+    "temperature_2m_max": 0,
+    "precipitation_sum": 0
+  },
+  "source_url": "https://climate-api.open-meteo.com/v1/climate?latitude=78.22&longitude=15.65&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum&disable_bias_correction=true&cell_selection=land&temperature_unit=celsius&precipitation_unit=mm",
+  "documentation_url": "https://open-meteo.com/en/docs/climate-api",
+  "model_doi": "https://doi.org/10.22033/ESGF/CMIP6.2323",
+  "accessed_at_utc": "2026-09-22T11:30:53.460415+00:00",
+  "license": "CC BY 4.0; acknowledge Open-Meteo, CMIP6 and EC-Earth Consortium",
+  "raw_path": "data/north/raw/future_EC_Earth3P_HR_a4c2f1b0839f5157be7ceecbd5a7bfca61119204005bbbe948f18b946aad2f99.json",
+  "sha256": "a4c2f1b0839f5157be7ceecbd5a7bfca61119204005bbbe948f18b946aad2f99",
+  "limitations": [
+    "External single-model projection; neither observation nor multi-model ensemble.",
+    "The baseline is historical model output, not observed weather or the separate ERA5 series.",
+    "Both periods use the same named model with bias correction disabled; raw model-grid biases remain, and member/version are not exposed by this API response.",
+    "Annual spread describes simulated interannual variability, not model/scenario uncertainty or a confidence interval.",
+    "GDD5 and frost-free run are descriptive climate indicators, not a crop yield or suitability validation.",
+    "Precipitation includes snow water equivalent; it is not runoff, stored supply or available irrigation water.",
+    "One model grid point is not all of Svalbard, Barents or the Arctic, and not a confirmed expedition station.",
+    "Atmospheric air-temperature projections cannot be substituted for marine source-water temperature or PWN observations.",
+    "Requested future 2031–2050 had an entirely missing 2050; comparison explicitly uses 2030–2049, not 2031–2050.",
+    "The first bias-corrected baseline had 108 Tmin>Tmax days and was rejected; both retained periods use bias correction disabled, without swapping values."
+  ]
+}

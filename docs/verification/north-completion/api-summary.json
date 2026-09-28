@@ -1,0 +1,47 @@
+{
+  "verified_at_utc": "2026-09-23T08:21:27.073852+00:00",
+  "purpose_cases": [
+    {
+      "purpose": "fresh_mass",
+      "crops": {
+        "arugula": 5.0,
+        "basil": 5.0,
+        "kohlrabi": 75.0,
+        "lettuce": 5.0,
+        "radish": 5.0,
+        "swiss_chard": 5.0
+      },
+      "energy_closure": 1.4551915228366852e-11
+    },
+    {
+      "purpose": "protein",
+      "crops": {
+        "arugula": 75.0,
+        "basil": 5.0,
+        "kohlrabi": 5.0,
+        "lettuce": 5.0,
+        "radish": 5.0,
+        "swiss_chard": 5.0
+      },
+      "energy_closure": 0.0
+    },
+    {
+      "purpose": "food_energy",
+      "crops": {
+        "arugula": 75.0,
+        "basil": 5.0,
+        "kohlrabi": 5.0,
+        "lettuce": 5.0,
+        "radish": 5.0,
+        "swiss_chard": 5.0
+      },
+      "energy_closure": 0.0
+    }
+  ],
+  "timeline_periods": 5,
+  "empty_plan_not_zero_supply": true,
+  "power_limit_screen": true,
+  "validation_endpoints": true,
+  "incomplete_observation_rejected": true,
+  "real_field_data_created": false
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=78.2232&longitude=15.6469&start_date=1995-01-01&end_date=2025-12-31&models=era5&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Cshortwave_radiation_sum&timezone=GMT&cell_selection=land&elevation=nan&temperature_unit=celsius&precipitation_unit=mm",
+  "accessed_at_utc": "2026-09-23T08:08:08.581333+00:00",
+  "sha256": "bbbe78ab50ee19af6f7b388fcdf69bd34695e763643daa44c32a0629aaf2e192",
+  "requested_model": "era5",
+  "classification": "SOURCED_REANALYSIS_NOT_FIELD_OBSERVATION",
+  "period": [
+    1995,
+    2025
+  ],
+  "variables": [
+    "temperature_2m_min",
+    "temperature_2m_max",
+    "precipitation_sum",
+    "shortwave_radiation_sum"
+  ],
+  "elevation_processing": "elevation=nan: statistical altitude downscaling disabled; land-cell selection.",
+  "raw_path": "data/north/rebuild_climate/recent_reference/era5_1995_2025.json",
+  "documentation": "https://open-meteo.com/en/docs/historical-weather-api",
+  "dataset_documentation": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview",
+  "license": "Open-Meteo CC BY 4.0; Copernicus ERA5 attribution",
+  "upstream_version": null,
+  "version_note": "Provider has no upstream version identifier; hash pins retrieved snapshot."
+}

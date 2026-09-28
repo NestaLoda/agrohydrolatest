@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partial" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partialnoncss" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <dataset name="MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2015_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2015_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2015_v2.0.nc">
+      <dataSize units="Mbytes">249.2</dataSize>
+      <date type="modified">2025-06-09T12:22:05.761Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2016_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2016_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2016_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-09T12:22:28.727Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2017_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2017_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2017_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-09T12:22:58.737Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2018_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2018_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2018_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-09T12:22:11.875Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2019_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2019_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2019_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T12:21:53.985Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2020_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2020_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2020_v2.0.nc">
+      <dataSize units="Mbytes">250.3</dataSize>
+      <date type="modified">2025-06-09T12:25:52.962Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2021_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2021_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2021_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-09T12:23:27.657Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2022_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2022_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2022_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-09T12:24:55.325Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2023_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2023_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2023_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-09T12:23:15.610Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2024_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2024_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2024_v2.0.nc">
+      <dataSize units="Mbytes">249.7</dataSize>
+      <date type="modified">2025-06-09T12:24:33.623Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2025_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2025_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2025_v2.0.nc">
+      <dataSize units="Mbytes">248.9</dataSize>
+      <date type="modified">2025-06-09T12:20:37.575Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2026_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2026_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2026_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-09T12:23:10.570Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2027_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2027_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2027_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T12:21:48.622Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2028_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2028_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2028_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-09T12:20:52.295Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2029_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2029_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2029_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-09T12:25:52.998Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2030_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2030_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2030_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-09T12:21:02.963Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2031_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2031_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2031_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T12:21:04.549Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2032_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2032_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2032_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T12:26:06.842Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2033_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2033_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2033_v2.0.nc">
+      <dataSize units="Mbytes">248.9</dataSize>
+      <date type="modified">2025-06-09T12:24:31.691Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2034_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2034_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2034_v2.0.nc">
+      <dataSize units="Mbytes">248.9</dataSize>
+      <date type="modified">2025-06-09T12:26:58.746Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2035_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2035_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2035_v2.0.nc">
+      <dataSize units="Mbytes">249.4</dataSize>
+      <date type="modified">2025-06-09T12:25:53.418Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2036_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2036_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2036_v2.0.nc">
+      <dataSize units="Mbytes">248.9</dataSize>
+      <date type="modified">2025-06-09T12:26:22.824Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2037_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2037_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2037_v2.0.nc">
+      <dataSize units="Mbytes">250.1</dataSize>
+      <date type="modified">2025-06-09T12:26:55.744Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2038_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2038_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2038_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-09T12:25:06.153Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2039_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2039_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2039_v2.0.nc">
+      <dataSize units="Mbytes">248.9</dataSize>
+      <date type="modified">2025-06-09T12:25:57.394Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2040_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2040_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2040_v2.0.nc">
+      <dataSize units="Mbytes">248.9</dataSize>
+      <date type="modified">2025-06-09T12:24:29.511Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2041_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2041_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2041_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T12:27:00.433Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2042_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2042_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2042_v2.0.nc">
+      <dataSize units="Mbytes">249.6</dataSize>
+      <date type="modified">2025-06-09T12:24:46.306Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2043_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2043_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2043_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-09T12:26:36.759Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2044_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2044_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2044_v2.0.nc">
+      <dataSize units="Mbytes">250.2</dataSize>
+      <date type="modified">2025-06-09T12:22:05.032Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2045_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2045_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2045_v2.0.nc">
+      <dataSize units="Mbytes">248.9</dataSize>
+      <date type="modified">2025-06-09T12:25:46.773Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2046_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2046_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2046_v2.0.nc">
+      <dataSize units="Mbytes">250.9</dataSize>
+      <date type="modified">2025-06-09T12:22:10.882Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2047_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2047_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2047_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T12:23:21.826Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2048_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2048_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2048_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T12:22:13.934Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2049_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2049_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2049_v2.0.nc">
+      <dataSize units="Mbytes">249.5</dataSize>
+      <date type="modified">2025-06-09T12:23:00.786Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2050_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2050_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2050_v2.0.nc">
+      <dataSize units="Mbytes">248.0</dataSize>
+      <date type="modified">2025-06-09T12:20:44.021Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2051_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2051_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2051_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T12:21:06.848Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2052_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2052_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2052_v2.0.nc">
+      <dataSize units="Mbytes">250.7</dataSize>
+      <date type="modified">2025-06-09T12:22:53.243Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2053_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2053_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2053_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T12:21:15.983Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2054_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2054_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2054_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T12:26:59.829Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2055_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2055_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2055_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T12:23:27.741Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2056_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2056_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2056_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T12:23:28.350Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2057_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2057_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2057_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T12:24:10.556Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2058_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2058_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2058_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T12:26:34.622Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2059_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2059_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2059_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T12:24:51.293Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2060_v2.0.nc">
+      <dataSize units="Mbytes">248.7</dataSize>
+      <date type="modified">2025-06-09T12:26:05.170Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2061_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2061_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2061_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T12:23:12.503Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2062_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2062_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2062_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T12:23:36.733Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2063_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2063_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2063_v2.0.nc">
+      <dataSize units="Mbytes">247.3</dataSize>
+      <date type="modified">2025-06-09T12:23:14.563Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2064_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2064_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2064_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T12:22:01.018Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2065_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2065_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2065_v2.0.nc">
+      <dataSize units="Mbytes">248.0</dataSize>
+      <date type="modified">2025-06-09T12:21:45.815Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2066_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2066_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2066_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-09T12:21:57.356Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2067_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2067_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2067_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-09T12:21:47.804Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2068_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2068_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2068_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-09T12:22:10.773Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2069_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2069_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2069_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T12:22:51.089Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2070_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2070_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2070_v2.0.nc">
+      <dataSize units="Mbytes">248.0</dataSize>
+      <date type="modified">2025-06-09T12:27:00.844Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2071_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2071_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2071_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T12:20:24.993Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2072_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2072_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2072_v2.0.nc">
+      <dataSize units="Mbytes">249.3</dataSize>
+      <date type="modified">2025-06-09T12:20:47.374Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2073_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2073_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2073_v2.0.nc">
+      <dataSize units="Mbytes">249.3</dataSize>
+      <date type="modified">2025-06-09T12:22:19.801Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2074_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2074_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2074_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-09T12:24:13.404Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2075_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2075_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2075_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T12:26:35.621Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2076_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2076_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2076_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-09T12:26:09.980Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2077_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2077_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2077_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-09T12:20:46.711Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2078_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2078_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2078_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-09T12:23:37.848Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2079_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2079_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2079_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-09T12:24:34.851Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2080_v2.0.nc">
+      <dataSize units="Mbytes">249.3</dataSize>
+      <date type="modified">2025-06-09T12:20:33.003Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2081_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2081_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2081_v2.0.nc">
+      <dataSize units="Mbytes">248.0</dataSize>
+      <date type="modified">2025-06-09T12:26:08.536Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2082_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2082_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2082_v2.0.nc">
+      <dataSize units="Mbytes">247.3</dataSize>
+      <date type="modified">2025-06-09T12:25:21.276Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2083_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2083_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2083_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-09T12:26:16.580Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2084_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2084_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2084_v2.0.nc">
+      <dataSize units="Mbytes">249.9</dataSize>
+      <date type="modified">2025-06-09T12:25:06.568Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2085_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2085_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2085_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T12:23:32.532Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2086_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2086_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2086_v2.0.nc">
+      <dataSize units="Mbytes">249.3</dataSize>
+      <date type="modified">2025-06-09T12:24:09.829Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2087_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2087_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2087_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-09T12:24:51.351Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2088_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2088_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2088_v2.0.nc">
+      <dataSize units="Mbytes">249.3</dataSize>
+      <date type="modified">2025-06-09T12:21:47.265Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2089_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2089_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2089_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-09T12:21:03.805Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2090_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2090_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2090_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-09T12:24:13.251Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2091_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2091_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2091_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-09T12:26:24.271Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2092_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2092_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2092_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-09T12:21:59.564Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2093_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2093_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2093_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-09T12:25:14.826Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2094_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2094_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2094_v2.0.nc">
+      <dataSize units="Mbytes">247.2</dataSize>
+      <date type="modified">2025-06-09T12:22:17.573Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2095_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2095_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2095_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-09T12:23:24.299Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2096_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2096_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2096_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-09T12:26:22.053Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2097_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2097_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2097_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-09T12:20:33.447Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2098_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2098_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2098_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T12:26:22.192Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2099_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2099_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2099_v2.0.nc">
+      <dataSize units="Mbytes">249.4</dataSize>
+      <date type="modified">2025-06-09T12:22:58.345Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2100_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2100_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp245/r1i1p1f1/tasmin/tasmin_day_MPI-ESM1-2-HR_ssp245_r1i1p1f1_gn_2100_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-09T12:25:09.491Z</date>
+    </dataset>
+  </dataset>
+</catalog>

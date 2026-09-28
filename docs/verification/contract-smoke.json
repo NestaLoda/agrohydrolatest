@@ -1,0 +1,218 @@
+{
+  "verified_at": "2026-09-22T15:30:52.132Z",
+  "version": "0.5.0",
+  "checks": [
+    {
+      "test": "At 1366×768 all five initial Konya crop sliders and persistent RUN are visible without scrolling",
+      "passed": true
+    },
+    {
+      "test": "Normal inputs are directly editable without source/manual modes and edited values are individually tagged",
+      "passed": true
+    },
+    {
+      "test": "Konya water -20% one-click scenario is repeatable and explanation has binding-constraint evidence",
+      "passed": true,
+      "seconds": 0.496,
+      "water_m3": 4845911096.007888
+    },
+    {
+      "test": "Same-screen analysis tab exposes source-backed water and production charts plus exact tables",
+      "passed": true
+    },
+    {
+      "test": "Scenario controls and RUN stay visible while result canvas scrolls",
+      "passed": true
+    },
+    {
+      "test": "Direct crop area and share controls preserve official baseline",
+      "passed": true
+    },
+    {
+      "test": "Scenario JSON download contains actual edited input and honest classification",
+      "passed": true
+    },
+    {
+      "test": "Drought quick preset changes declared rainfall and ET0 assumptions",
+      "passed": true
+    },
+    {
+      "test": "Candidate crop can be added and activated through explicit manual assumptions",
+      "passed": true
+    },
+    {
+      "test": "Single-region workflow generalizes to official Şanlıurfa pattern",
+      "passed": true
+    },
+    {
+      "test": "Default northern capacity objective does not certify unknown site suitability or expose arbitrary kg targets",
+      "passed": true
+    },
+    {
+      "test": "Actual NASA SSP585 2035 metrics load as context, separate from production assumptions",
+      "passed": true
+    },
+    {
+      "test": "Explanatory example preserves capacity objective and computes normalization from resource capacities",
+      "passed": true
+    },
+    {
+      "test": "Balanced objective produces all three candidates using explicit max-min capacity logic",
+      "passed": true
+    },
+    {
+      "test": "Three-crop northern result stays explicitly explanatory with selected climate provenance",
+      "passed": true
+    },
+    {
+      "test": "Northern sticky RUN remains in viewport when climate controls wrap the topbar",
+      "passed": true
+    },
+    {
+      "test": "All three northern crop names and native ha/m² allocation values are visible in the initial desktop result",
+      "passed": true,
+      "rows": [
+        {
+          "crop": "Arpa",
+          "name_bottom": 510.734375,
+          "value_bottom": 522.234375,
+          "unit": "ha"
+        },
+        {
+          "crop": "Patates",
+          "name_bottom": 581.734375,
+          "value_bottom": 593.234375,
+          "unit": "ha"
+        },
+        {
+          "crop": "Marul",
+          "name_bottom": 753.734375,
+          "value_bottom": 765.234375,
+          "unit": "m²"
+        }
+      ]
+    },
+    {
+      "test": "Verified NASA daily values appear as monthly temperature and precipitation charts; method/source water chart stays separate",
+      "passed": true
+    },
+    {
+      "test": "Water and energy planning objectives retain their explicit solver ordering",
+      "passed": true
+    },
+    {
+      "test": "Demand objective exposes the explicit demand basket and preserves legacy reproducibility",
+      "passed": true
+    },
+    {
+      "test": "Research drawer calculates five uncertainty rows and separates TASE measurements from terrestrial hydrology and unknown chemistry linkage",
+      "passed": true
+    },
+    {
+      "test": "PRE-TASE snapshot reproduces exact run; post-observation changes only supported temperature input",
+      "passed": true
+    },
+    {
+      "test": "No pattern change is a valid explicitly reported observation outcome",
+      "passed": true
+    },
+    {
+      "test": "Invalid time matching prevents post-observation recommendation",
+      "passed": true
+    },
+    {
+      "test": "Editing planning assumptions cannot silently mutate the saved PRE-TASE baseline",
+      "passed": true
+    },
+    {
+      "test": "Existing PWN importer and raw provenance remain working",
+      "passed": true
+    },
+    {
+      "test": "Evidence drawer keeps keyboard access",
+      "passed": true
+    }
+  ],
+  "screens": [
+    {
+      "workspace": "BUGÜN / TÜRKİYE",
+      "width": 1366,
+      "overflow": false
+    },
+    {
+      "workspace": "GELECEK / KUZEY",
+      "width": 1366,
+      "overflow": false
+    },
+    {
+      "workspace": "SAHA / PWN",
+      "width": 1366,
+      "overflow": false
+    },
+    {
+      "workspace": "KANIT / VERİ",
+      "width": 1366,
+      "overflow": false
+    },
+    {
+      "workspace": "BUGÜN / TÜRKİYE",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "GELECEK / KUZEY",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "SAHA / PWN",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "KANIT / VERİ",
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "blocked_external_requests": [],
+  "initial_crop_viewport": {
+    "passed": true,
+    "initial": [
+      {
+        "label": "Buğday alan payı",
+        "top": 331.875,
+        "bottom": 351.875
+      },
+      {
+        "label": "Arpa alan payı",
+        "top": 380.875,
+        "bottom": 400.875
+      },
+      {
+        "label": "Dane mısır alan payı",
+        "top": 429.875,
+        "bottom": 449.875
+      },
+      {
+        "label": "Şeker pancarı alan payı",
+        "top": 478.875,
+        "bottom": 498.875
+      },
+      {
+        "label": "Patates alan payı",
+        "top": 527.875,
+        "bottom": 547.875
+      }
+    ],
+    "initialFooter": {
+      "x": 19,
+      "y": 658.5,
+      "width": 353,
+      "height": 102
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,33 @@
+{
+  "site_id": "longyearbyen",
+  "model": "MRI-ESM2-0",
+  "scenario": "ssp585",
+  "variable": "pr",
+  "year": 2026,
+  "url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/pr/pr_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2026_v2.0.nc?var=pr&north=78.125&south=78.125&west=15.625&east=15.625&time_start=2026-01-01T00%3A00%3A00Z&time_end=2026-12-31T23%3A59%3A59Z&accept=netcdf3&addLatLon=true",
+  "catalog_path": "AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/pr/pr_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2026_v2.0.nc",
+  "accessed_at_utc": "2026-09-22T21:34:46.842146+00:00",
+  "sha256": "95a03733bf254cfefed914473c354da54d6332619561eb8afc977a5fcdefbee0",
+  "local_path": "data/north/rebuild_climate/raw/longyearbyen/MRI-ESM2-0/ssp585/pr_2026.nc",
+  "bytes": 7404,
+  "day_count": 365,
+  "units": "kg m-2 s-1",
+  "grid": {
+    "latitude": 78.125,
+    "longitude": 15.625
+  },
+  "attributes": {
+    "version": "2.0",
+    "variant_label": "r1i1p1f1",
+    "cmip6_source_id": "MRI-ESM2-0",
+    "cmip6_institution_id": "MRI",
+    "cmip6_license": "CC-BY 4.0",
+    "source": "BCSD",
+    "creation_date": "Sat Nov 16 04:44:26 PST 2024",
+    "tracking_id": "2e4e9c4f-a8d3-4a5e-bfa2-cce4852f3a56",
+    "resolution_id": "0.25 degree",
+    "calendar": "proleptic_gregorian"
+  },
+  "classification": "SOURCED_CLIMATE_MODEL",
+  "previous_failed_attempts": []
+}

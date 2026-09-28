@@ -1,0 +1,64 @@
+{
+  "recorded_at_utc": "2026-09-22T23:20:59.372444+00:00",
+  "backend": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "399",
+    "time": "43.513",
+    "timestamp": "2026-09-23T02:10:02.737453+03:00",
+    "hostname": "bahademir"
+  },
+  "frontend": {
+    "passed": 23,
+    "failed": 0,
+    "completed_at": "2026-09-23T02:07:34.655194+03:00",
+    "scope": "Existing economic/preset/water-gauge regression tests; North UI covered by build and recorded desktop checks."
+  },
+  "build": {
+    "status": "TypeScript and Vite passed",
+    "completed_at": "2026-09-23T02:19:30.613488+03:00",
+    "assets": [
+      "index-DRJUcMDu.js",
+      "index-DyyjqXu-.css"
+    ]
+  },
+  "http": {
+    "verified_at_utc": "2026-09-22T23:10:45.586202+00:00",
+    "checks": [
+      "non-equal calculated crop allocation",
+      "diversity floor",
+      "95% harvest floor",
+      "source closure",
+      "daily critical month",
+      "no invented minimum storage",
+      "same engine over time",
+      "real frontier counts",
+      "no invented open field",
+      "water-energy crop floors",
+      "1000 m² scale",
+      "synthetic same-engine POST"
+    ]
+  },
+  "desktop": {
+    "completed_at_utc": "2026-09-22T23:20:08.511Z",
+    "recorded_checks": 5,
+    "dimensions": [
+      1440,
+      1000
+    ],
+    "layout": {
+      "canvasHeight": 904,
+      "canvasScroll": 1067,
+      "height": 1000,
+      "pageHeight": 1000,
+      "pageWidth": 1440,
+      "width": 1440
+    },
+    "console_errors": 0,
+    "mobile_tested": false,
+    "viewport_override_reset": true
+  },
+  "limits": "Implementation verification does not validate actual Arctic production, regional capacity or new field measurements."
+}

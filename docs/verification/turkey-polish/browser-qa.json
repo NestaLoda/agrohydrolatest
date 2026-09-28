@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-09-22T18:12:16.012Z",
+  "checks": [
+    {
+      "name": "Mevcut resets source and clears recommendation",
+      "pass": true
+    },
+    {
+      "name": "Climate controls default expanded",
+      "pass": true
+    },
+    {
+      "name": "Left explanation paragraphs hidden",
+      "pass": true
+    },
+    {
+      "name": "Konya pilot tab removed",
+      "pass": true
+    },
+    {
+      "name": "Ideal scenario runs with95 efficiency and80 floors",
+      "pass": true
+    },
+    {
+      "name": "Advanced max share editable to0.9",
+      "pass": true
+    },
+    {
+      "name": "Paired SVG plots and ratio table render",
+      "pass": true
+    },
+    {
+      "name": "Trakya retains unknown rice water",
+      "pass": true
+    },
+    {
+      "name": "No browser console errors",
+      "pass": true
+    }
+  ],
+  "console_errors": []
+}

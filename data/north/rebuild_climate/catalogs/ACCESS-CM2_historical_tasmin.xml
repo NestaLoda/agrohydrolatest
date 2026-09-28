@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partial" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partialnoncss" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <dataset name="ACCESS-CM2/historical/r1i1p1f1/tasmin/">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1950_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1950_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1950_v2.0.nc">
+      <dataSize units="Mbytes">246.4</dataSize>
+      <date type="modified">2025-06-13T05:09:01.160Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1951_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1951_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1951_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-13T05:08:11.357Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1952_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1952_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1952_v2.0.nc">
+      <dataSize units="Mbytes">249.2</dataSize>
+      <date type="modified">2025-06-13T05:08:16.131Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1953_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1953_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1953_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-13T05:08:19.998Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1954_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1954_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1954_v2.0.nc">
+      <dataSize units="Mbytes">249.8</dataSize>
+      <date type="modified">2025-06-13T05:08:14.972Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1955_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1955_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1955_v2.0.nc">
+      <dataSize units="Mbytes">247.1</dataSize>
+      <date type="modified">2025-06-13T05:07:23.243Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1956_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1956_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1956_v2.0.nc">
+      <dataSize units="Mbytes">249.8</dataSize>
+      <date type="modified">2025-06-13T05:08:06.114Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1957_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1957_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1957_v2.0.nc">
+      <dataSize units="Mbytes">249.2</dataSize>
+      <date type="modified">2025-06-13T05:07:36.714Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1958_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1958_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1958_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-13T05:09:34.748Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1959_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1959_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1959_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-13T05:08:19.498Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1960_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1960_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1960_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-13T05:08:58.272Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1961_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1961_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1961_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-13T05:07:18.645Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1962_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1962_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1962_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-13T05:08:07.589Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1963_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1963_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1963_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-13T05:10:08.731Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1964_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1964_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1964_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-13T05:09:48.157Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1965_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1965_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1965_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-13T05:08:02.360Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1966_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1966_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1966_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-13T05:07:33.758Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1967_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1967_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1967_v2.0.nc">
+      <dataSize units="Mbytes">250.5</dataSize>
+      <date type="modified">2025-06-13T05:08:13.371Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1968_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1968_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1968_v2.0.nc">
+      <dataSize units="Mbytes">249.9</dataSize>
+      <date type="modified">2025-06-13T05:08:22.993Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1969_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1969_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1969_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-13T05:08:55.720Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1970_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1970_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1970_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-13T05:10:05.852Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1971_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1971_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1971_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-13T05:08:04.323Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1972_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1972_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1972_v2.0.nc">
+      <dataSize units="Mbytes">249.8</dataSize>
+      <date type="modified">2025-06-13T05:08:56.975Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1973_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1973_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1973_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-13T05:06:59.125Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1974_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1974_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1974_v2.0.nc">
+      <dataSize units="Mbytes">247.1</dataSize>
+      <date type="modified">2025-06-13T05:09:52.943Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1975_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1975_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1975_v2.0.nc">
+      <dataSize units="Mbytes">249.2</dataSize>
+      <date type="modified">2025-06-13T05:08:03.574Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1976_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1976_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1976_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-13T05:08:45.976Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1977_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1977_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1977_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-13T05:08:12.952Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1978_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1978_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1978_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-13T05:07:29.179Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1979_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1979_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1979_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-13T05:09:35.849Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1980_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1980_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1980_v2.0.nc">
+      <dataSize units="Mbytes">249.1</dataSize>
+      <date type="modified">2025-06-13T05:10:03.940Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1981_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1981_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1981_v2.0.nc">
+      <dataSize units="Mbytes">250.5</dataSize>
+      <date type="modified">2025-06-13T05:06:56.853Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1982_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1982_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1982_v2.0.nc">
+      <dataSize units="Mbytes">247.1</dataSize>
+      <date type="modified">2025-06-13T05:08:49.609Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1983_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1983_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1983_v2.0.nc">
+      <dataSize units="Mbytes">249.8</dataSize>
+      <date type="modified">2025-06-13T05:10:05.412Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1984_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1984_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1984_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-13T05:08:47.473Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1985_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1985_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1985_v2.0.nc">
+      <dataSize units="Mbytes">249.1</dataSize>
+      <date type="modified">2025-06-13T05:08:04.281Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1986_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1986_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1986_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-13T05:08:40.635Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1987_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1987_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1987_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-13T05:07:37.818Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1988_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1988_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1988_v2.0.nc">
+      <dataSize units="Mbytes">249.8</dataSize>
+      <date type="modified">2025-06-13T05:09:00.607Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1989_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1989_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1989_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-13T05:08:08.846Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1990_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1990_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1990_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-13T05:09:03.384Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1991_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1991_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1991_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-13T05:07:32.412Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1992_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1992_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1992_v2.0.nc">
+      <dataSize units="Mbytes">249.7</dataSize>
+      <date type="modified">2025-06-13T05:09:48.805Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1993_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1993_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1993_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-13T05:09:39.149Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1994_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1994_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1994_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-13T05:07:27.799Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1995_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1995_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1995_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-13T05:07:43.494Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1996_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1996_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1996_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-13T05:07:35.096Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1997_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1997_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1997_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-13T05:08:48.548Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1998_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1998_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1998_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-13T05:08:41.014Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1999_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1999_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_1999_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-13T05:09:49.023Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2000_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2000_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2000_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-13T05:07:19.434Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2001_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2001_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2001_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-13T05:07:39.645Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2002_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2002_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2002_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-13T05:09:36.742Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2003_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2003_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2003_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-13T05:09:04.906Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2004_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2004_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2004_v2.0.nc">
+      <dataSize units="Mbytes">249.7</dataSize>
+      <date type="modified">2025-06-13T05:08:40.895Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2005_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2005_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2005_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-13T05:07:41.170Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2006_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2006_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2006_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-13T05:08:57.049Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2007_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2007_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2007_v2.0.nc">
+      <dataSize units="Mbytes">249.5</dataSize>
+      <date type="modified">2025-06-13T05:08:53.213Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2008_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2008_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2008_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-13T05:07:29.883Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2009_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2009_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2009_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-13T05:07:21.350Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2010_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2010_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2010_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-13T05:07:21.833Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2011_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2011_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2011_v2.0.nc">
+      <dataSize units="Mbytes">248.7</dataSize>
+      <date type="modified">2025-06-13T05:08:20.958Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2012_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2012_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2012_v2.0.nc">
+      <dataSize units="Mbytes">249.4</dataSize>
+      <date type="modified">2025-06-13T05:09:02.037Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2013_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2013_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2013_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-13T05:07:26.165Z</date>
+    </dataset>
+    <dataset name="tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2014_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2014_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/ACCESS-CM2/historical/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_2014_v2.0.nc">
+      <dataSize units="Mbytes">247.3</dataSize>
+      <date type="modified">2025-06-13T05:08:07.977Z</date>
+    </dataset>
+  </dataset>
+</catalog>

@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-09-22T18:58:10.787Z",
+  "checks": [
+    {
+      "name": "Area sliders update composition and water before Calculate",
+      "pass": true
+    },
+    {
+      "name": "Prior recommendation stays frozen and is labelled as previous run",
+      "pass": true
+    },
+    {
+      "name": "Climate preview equals same-engine current-pattern water after simulation",
+      "pass": true
+    },
+    {
+      "name": "Zero crop area appears as unallocated instead of renormalizing to100",
+      "pass": true
+    },
+    {
+      "name": "Trakya unknown rice water remains partial with missing-data label",
+      "pass": true
+    },
+    {
+      "name": "Crop legend interaction highlights crop and updates donut center",
+      "pass": true
+    },
+    {
+      "name": "Live component is available in graphs tab",
+      "pass": true
+    },
+    {
+      "name": "No browser console errors",
+      "pass": true
+    }
+  ],
+  "console_errors": []
+}

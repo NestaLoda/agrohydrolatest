@@ -1,0 +1,33 @@
+{
+  "site_id": "longyearbyen",
+  "model": "MPI-ESM1-2-HR",
+  "scenario": "historical",
+  "variable": "rsds",
+  "year": 1998,
+  "url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1998_v2.0.nc?var=rsds&north=78.125&south=78.125&west=15.625&east=15.625&time_start=1998-01-01T00%3A00%3A00Z&time_end=1998-12-31T23%3A59%3A59Z&accept=netcdf3&addLatLon=true",
+  "catalog_path": "AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/rsds/rsds_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1998_v2.0.nc",
+  "accessed_at_utc": "2026-09-22T21:23:08.670763+00:00",
+  "sha256": "d8fdc7c62055d761b534c55f113f19e91fe1f0c45e7a5bafe6bf0e7ed888795e",
+  "local_path": "data/north/rebuild_climate/raw/longyearbyen/MPI-ESM1-2-HR/historical/rsds_1998.nc",
+  "bytes": 7508,
+  "day_count": 365,
+  "units": "W m-2",
+  "grid": {
+    "latitude": 78.125,
+    "longitude": 15.625
+  },
+  "attributes": {
+    "version": "2.0",
+    "variant_label": "r1i1p1f1",
+    "cmip6_source_id": "MPI-ESM1-2-HR",
+    "cmip6_institution_id": "MPI-M",
+    "cmip6_license": "CC-BY-SA 4.0",
+    "source": "BCSD",
+    "creation_date": "Sat Nov 16 09:36:59 PST 2024",
+    "tracking_id": "a62a687b-d8d5-49a9-85a4-5624288f7b57",
+    "resolution_id": "0.25 degree",
+    "calendar": "proleptic_gregorian"
+  },
+  "classification": "SOURCED_CLIMATE_MODEL",
+  "previous_failed_attempts": []
+}

@@ -1,0 +1,35 @@
+{
+  "status": "ready",
+  "built_at_utc": "2026-09-23T08:08:08.851501+00:00",
+  "period": [
+    2015,
+    2025
+  ],
+  "raw_period": [
+    1995,
+    2025
+  ],
+  "raw_days": 11323,
+  "recent_days": 4018,
+  "raw_files": [
+    {
+      "path": "data/north/rebuild_climate/recent_reference/era5_1995_2025.json",
+      "sha256": "bbbe78ab50ee19af6f7b388fcdf69bd34695e763643daa44c32a0629aaf2e192"
+    },
+    {
+      "path": "data/north/rebuild_climate/recent_reference/metadata.json",
+      "sha256": "f4754c4b94403ddef5bcc49199128ff7a453eeceaaea5bed7234054c9a9597ff"
+    }
+  ],
+  "derived_files": [
+    {
+      "path": "data/north/rebuild_climate/recent_reference/longyearbyen_recent_ERA5.csv.gz",
+      "sha256": "957706e1441f3495b59a31c6ee6c3272aef2190beee0a95700a27d8e3683982c"
+    },
+    {
+      "path": "data/north/rebuild_climate/recent_reference/context.json",
+      "sha256": "be3aa9d028cf4369066eb2b57a79a94d75fb915335025efe5b78ab22da922ec2"
+    }
+  ],
+  "nasa_context_sha256": "597b2b1169dd795dabde4b9807216f268a3e9bd5bafd459b7e9026f2a2a77c03"
+}

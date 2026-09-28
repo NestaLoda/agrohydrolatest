@@ -1,0 +1,15 @@
+
+> production-frontier@0.5.0 build
+> tsc -b && vite build
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 58 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 0.69 kB │ gzip:   0.44 kB
+dist/assets/maplibre-gl-worker-DhgwFz4A.js    508.76 kB
+dist/assets/index-DyyjqXu-.css                202.29 kB │ gzip:  35.45 kB
+dist/assets/index-DRJUcMDu.js               1,490.03 kB │ gzip: 416.07 kB
+
+✓ built in 747ms

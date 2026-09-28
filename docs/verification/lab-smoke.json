@@ -1,0 +1,126 @@
+{
+  "verified_at": "2026-09-22T14:41:19.939Z",
+  "version": "0.4.0",
+  "checks": [
+    {
+      "test": "AUTO individual unlock visibly marks parameter override",
+      "passed": true
+    },
+    {
+      "test": "Konya water -20% one-click scenario is repeatable and explanation has binding-constraint evidence",
+      "passed": true,
+      "seconds": 0.409,
+      "water_m3": 4845911096.007888
+    },
+    {
+      "test": "Same-screen analysis tab exposes source-backed water and production charts plus exact tables",
+      "passed": true
+    },
+    {
+      "test": "Scenario controls and RUN stay visible while result canvas scrolls",
+      "passed": true
+    },
+    {
+      "test": "MANUAL crop area and share controls preserve official baseline",
+      "passed": true
+    },
+    {
+      "test": "Drought quick preset changes declared rainfall and ET0 assumptions",
+      "passed": true
+    },
+    {
+      "test": "Candidate crop can be added and activated through explicit manual assumptions",
+      "passed": true
+    },
+    {
+      "test": "Single-region workflow generalizes to official Şanlıurfa pattern",
+      "passed": true
+    },
+    {
+      "test": "Source mode never certifies unknown northern field suitability",
+      "passed": true
+    },
+    {
+      "test": "Actual NASA SSP585 2035 metrics load as context, separate from production assumptions",
+      "passed": true
+    },
+    {
+      "test": "Three-crop northern result stays explicitly explanatory with selected climate provenance",
+      "passed": true
+    },
+    {
+      "test": "Verified NASA daily values appear as monthly temperature and precipitation charts; method/source water chart stays separate",
+      "passed": true
+    },
+    {
+      "test": "PRE-TASE snapshot reproduces exact run; post-observation changes only supported temperature input",
+      "passed": true
+    },
+    {
+      "test": "No pattern change is a valid explicitly reported observation outcome",
+      "passed": true
+    },
+    {
+      "test": "Invalid time matching prevents post-observation recommendation",
+      "passed": true
+    },
+    {
+      "test": "Editing planning assumptions cannot silently mutate the saved PRE-TASE baseline",
+      "passed": true
+    },
+    {
+      "test": "Existing PWN importer and raw provenance remain working",
+      "passed": true
+    },
+    {
+      "test": "Evidence drawer keeps keyboard access",
+      "passed": true
+    }
+  ],
+  "screens": [
+    {
+      "workspace": "BUGÜN / TÜRKİYE",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "workspace": "GELECEK / KUZEY",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "workspace": "SAHA / PWN",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "workspace": "KANIT / VERİ",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "workspace": "BUGÜN / TÜRKİYE",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "GELECEK / KUZEY",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "SAHA / PWN",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "workspace": "KANIT / VERİ",
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "blocked_external_requests": [],
+  "passed": true
+}

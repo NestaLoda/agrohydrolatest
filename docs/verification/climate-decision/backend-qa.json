@@ -1,0 +1,45 @@
+{
+  "classification": "TEST_VERIFICATION_RECORD",
+  "scope": "Temperature sensitivity scenario backend; recorded from already completed runs, not rerun for this record",
+  "verified_at": "2026-09-22T23:09:26.0122324+03:00",
+  "runtime": {
+    "python": "3.12.14",
+    "executable": "C:/Users/bahao/OneDrive/Belgeler/2204devrim/.venv/Scripts/python.exe",
+    "cwd": "C:/Users/bahao/OneDrive/Belgeler/2204devrim"
+  },
+  "targeted": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_temperature_scenario.py -q",
+    "passed": 24,
+    "failed": 0,
+    "exit_code": 0
+  },
+  "full_suite": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q",
+    "passed": 199,
+    "failed": 0,
+    "exit_code": 0,
+    "duration_seconds": null,
+    "duration_note": "The complete pytest duration was not captured; no duration is inferred from separate tool polling times.",
+    "warning": "Existing Starlette TestClient AnyIO BlockingPortal deprecation warning; no test failure."
+  },
+  "coverage": [
+    "Zero temperature delta preserves sourced ET0 and original crop-water arithmetic exactly",
+    "Daily temperature-term ratio, warmer/cooler scenarios and numerator clamp",
+    "Temperature, rainfall and explicit additional ET0 factor combine in the same water balance",
+    "Missing/invalid daily temperature and nonpositive denominator remain DATA_NEEDED",
+    "Preview equals optimizer coefficients for all five Turkey regions",
+    "Source baseline remains at zero temperature delta while current scenario changes",
+    "Manual net-irrigation input remains unchanged and explicitly not climate-derived",
+    "Trakya rice and total water remain unknown",
+    "Input bounds and nonfinite values are rejected; nonzero North temperature scenario is rejected"
+  ],
+  "method_review": {
+    "primary_source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+    "source": "FAO Irrigation and Drainage Paper 56, Chapter 3, Equation 52",
+    "reviewed_on": "2026-09-22",
+    "formula": "ET0_scenario = ET0_source * max(Tmean + delta_C + 17.8, 0) / (Tmean + 17.8); Tmean = (Tmin + Tmax)/2",
+    "interpretation": "The ratio is a project-derived, uncalibrated sensitivity scenario based on Equation 52's temperature term. It is not a FAO-endorsed adjustment or a full Penman-Monteith recalculation. FAO calls for regional verification/calibration of Equation 52.",
+    "assumptions": "Tmin and Tmax shift equally; diurnal temperature range and extraterrestrial radiation are held fixed. Yield, crop timing, Kc, heat/frost damage and snowmelt are not updated.",
+    "provenance": "science.py is already included in the simulation code hash. Source climate files were not modified."
+  }
+}

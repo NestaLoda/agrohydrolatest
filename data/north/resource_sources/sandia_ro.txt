@@ -1,0 +1,1914 @@
+
+PAGE 1
+SANDIA REPORT
+SAND2010-6735
+Unlimited Release
+Printed September, 2010
+Computational and Experimental
+Platform for Understanding and
+Optimizing Water Flux and Salt
+Rejection in Nanoporous Membranes
+Susan B. Rempe, David M. Rogers, Ying-Bing Jiang, Shaorong Y ang, Kevin Le-
+ung, C. Jeffrey Brinker, Chris Lorenz, Sameer Varma, Dubravko Sabo, Zhu Chen,
+Seema Singh, Caroline S. Rempe, T om Mayer, T odd M. Alam, Peter J. Feibelman,
+John Merson
+Prepared by
+Sandia National Laboratories
+Albuquerque, New Mexico 87185 and Livermore, California 94550
+Sandia National Laboratories is a multi-program laboratory managed and operated by Sandia Corporation,
+a wholly owned subsidiary of Lockheed Martin Corporation, for the U.S. Department of Energy’s
+National Nuclear Security Administration under contract DE-AC04-94AL85000.
+Approved for public release; further dissemination unlimited.
+
+
+PAGE 2
+Issued by Sandia National Laboratories, operated for the United States Department of Energy
+by Sandia Corporation.
+NOTICE: This report was prepared as an account of work sponsored by an agency of the United
+States Government. Neither the United States Government, nor any agency thereof, nor any
+of their employees, nor any of their contractors, subcontractors, or their employees, make any
+warranty, express or implied, or assume any legal liability or responsibility for the accuracy,
+completeness, or usefulness of any information, apparatus, product, or process disclosed, or rep-
+resent that its use would not infringe privately owned rights. Reference herein to any speciﬁc
+commercial product, process, or service by trade name, trademark, manufacturer, or otherwise,
+does not necessarily constitute or imply its endorsement, recommendation, or favoring by the
+United States Government, any agency thereof, or any of their contractors or subcontractors.
+The views and opinions expressed herein do not necessarily state or reﬂect those of the United
+States Government, any agency thereof, or any of their contractors.
+Printed in the United States of America. This report has been reproduced directly from the best
+available copy.
+Available to DOE and DOE contractors from
+U.S. Department of Energy
+Ofﬁce of Scientiﬁc and Technical Information
+P.O. Box 62
+Oak Ridge, TN 37831
+Telephone: (865) 576-8401
+Facsimile: (865) 576-5728
+E-Mail: reports@adonis.osti.gov
+Online ordering: http://www.osti.gov/bridge
+Available to the public from
+U.S. Department of Commerce
+National Technical Information Service
+5285 Port Royal Rd
+Springﬁeld, VA 22161
+Telephone: (800) 553-6847
+Facsimile: (703) 605-6900
+E-Mail: orders@ntis.fedworld.gov
+Online ordering: http://www.ntis.gov/help/ordermethods.asp?loc=7-4-0#online
+DEPARTMENT OF ENERGY
+• •UNITEDSTATES OF AMERICA
+2
+
+PAGE 3
+SAND2010-6735
+Unlimited Release
+Printed September, 2010
+Computational and Experimental Platform for
+Understanding and Optimizing Water Flux and Salt
+Rejection in Nanoporous Membranes
+Susan B. Rempe
+Abstract
+Aﬀordable clean water is both a global and a national security issue as lack of it can cause
+death, disease, and international tension. Furthermore, eﬃcient water ﬁltration reduces the
+demand for energy, another national issue. The best current solution to clean water lies
+in reverse osmosis (RO) membranes that remove salts from water with applied pressure,
+but widely used polymeric membrane technology is energy intensive and produces water de-
+pleted in useful electrolytes. Furthermore incremental improvements, based on engineering
+solutions rather than new materials, have yielded only modest gains in performance over
+the last 25 years. We have pursued a creative and innovative new approach to membrane
+design and development for cheap desalination membranes by approaching the problem at
+the molecular level of pore design. Our inspiration comes from natural biological channels,
+which permit faster water transport than current reverse osmosis membranes and selectively
+pass healthy ions. Aiming for an order-of-magnitude improvement over mature polymer
+technology carries signiﬁcant inherent risks. The success of our fundamental research eﬀort
+lies in our exploiting, extending, and integrating recent advances by our team in theory,
+modeling, nano-fabrication and platform development. A combined theoretical and experi-
+mental platform has been developed to understand the interplay between water ﬂux and ion
+rejection in precisely-deﬁned nano-channels. Our innovative functionalization of solid state
+nanoporous membranes with organic protein-mimetic polymers achieves 3-fold improvement
+in water ﬂux over commercial RO membranes and has yielded a pending patent and indus-
+trial interest. Our success has generated useful contributions to energy storage, nanoscience,
+and membrane technology research and development important for national health and pros-
+perity.
+3
+
+PAGE 4
+Acknowledgment
+We gratefully thank the LDRD program for funding that provided full or partial support
+to a summer undergraduate student intern, four Sandia postdocs, and three postdocs and a
+student at the U of New Mexico. We also thank the LDRD oﬃce for presenting this project
+with the 2010 Award for Excellence. Finally, we are indebted to Prof. Eric Jakobsson and a
+grant from the National Center for Supercomputing Applications at UIUC, which provided
+compute time to our foreign national postdoc.
+4
+
+PAGE 5
+Contents
+1 Introduction 9
+2 Thermodynamic Analysis of Membrane Separations Processes 13
+Equilibrium Energy Cost Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Energy Costs from Nonequilibrium Transport Theories . . . . . . . . . . . . . . . . . . . . . . 17
+Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Standard Test Conditions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Example Application . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+3 Chemical and Structural Basis for Selectivity and Water Flux 27
+Pressure-Driven Flow . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+Eﬀect of Pore Functionality on Ion Rejection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Tuning Pore Hydrophobicity and Size . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Salt Concentration and pH Dependence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Origins of the Dual Acidity Observed in Silica Membranes . . . . . . . . . . . . . . . . . . . 33
+Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+4 Biomimetic High-Flux Desalination Membrane Based On Self-Assembled
+Nanopores Tuned by Atomic Layer Deposition 45
+Materials and Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Results and Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+5 Conclusions 53
+5
+
+PAGE 6
+References 56
+6
+
+PAGE 7
+List of Figures
+2.1 Process pipeline for an RO facility . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+2.2 Thermodynamic cycle for the RO process . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+2.3 Isolines of ϵ, the energy loss per log concentration ratio per required ﬂux as a
+function of measured salt rejection and mass ﬂux. . . . . . . . . . . . . . . . . . . . . . . . 23
+3.1 NaCl translocation through dipolar nanopores under hydrostatic pressure . . . 28
+3.2 NaCl translocation through decorated nanopores under hydrostatic pressure . 29
+3.3 Variation in water contact angle and channel ﬂux with surface hydrophobicity 36
+3.4 Representative snapshot of a silica pore simulated under periodic boundary
+conditions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+3.5 Eﬀect of water force ﬁelds on the diﬀusion coeﬃcients (top) and occupancies
+of water molecules (bottom) inside silica pores . . . . . . . . . . . . . . . . . . . . . . . . . 38
+3.6 Eﬀect of the degree of methylation on the diﬀusion coeﬃcients and occupancies
+of water molecules inside silica pores . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+3.7 Eﬀect of pore size on the diﬀusion coeﬃcients and occupancies of water
+molecules inside silica pores . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+3.8 Zeta potential measurement of mesoporous silica . . . . . . . . . . . . . . . . . . . . . . . . 41
+3.9 Eﬀect of salt concentration and pH on ionic current through silica nanopores. 42
+3.10 Deprotonation potential of mean force and pKa. . . . . . . . . . . . . . . . . . . . . . . . . 43
+4.1 FTIR-ATR Spectra for APS Pretreatment of Anodiscs R⃝ . . . . . . . . . . . . . . . . . 47
+4.2 FTIR spectra of samples before and after ALD . . . . . . . . . . . . . . . . . . . . . . . . . 48
+4.3 Variation of membrane characteristics with increasing number of ALD cycles . 49
+4.4 Comparison between ALD membrane and commercial DOW membrane . . . . . 50
+7
+
+PAGE 8
+List of Tables
+2.1 Dow membrane permeability analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+8
+
+PAGE 9
+Chapter 1
+Introduction
+Lack of potable water plagues half the world’s population, causing death, disease, and in-
+ternational tension. Furthermore, energy and water are inextricably and reciprocally linked,
+with production of one requiring use of the other. The best current solution to clean water
+lies in reverse osmosis (RO) membranes that remove salts from water with applied pressure,
+but this technology is mature and expensive. Furthermore, the water produced lacks elec-
+trolytes important to health. The high cost lies in gathering together and concentrating salt,
+sodium and chloride ions, by forcing saline water through a membrane to recover puriﬁed wa-
+ter on the other side. Incremental improvements, based on engineering solutions rather than
+fundamental changes to widely used polymeric materials, have yielded only modest gains in
+reverse osmosis performance over the last 25 years. In order to progress, a breakthrough in
+materials research is needed.
+To achieve a potential breakthrough in reverse osmosis membrane design, we have pursued
+a fundamental research and development eﬀort that exploits and extends recent advances by
+our team in theory, modeling, nano-fabrication and platform development. We developed
+a combined theoretical and experimental platform that enabled us to probe the interplay
+between water ﬂux and ion rejection in precisely-deﬁned inorganic nano-channels. Inspired
+by water- and electrolyte-selective protein channels in biological membranes, we investigated
+the molecular design principles of natural systems that ﬁlter water far more eﬃciently than
+conventional RO membranes. In contrast to the active site architecture formed by thin dense
+polymer coatings on commercial RO membranes, biological cell membranes demonstrate fast
+water ﬂux and selective ion rejection through nanopores at low applied pressure.
+With molecular modeling, we identiﬁed three key mechanisms used by nature for selecting
+speciﬁc ions for transport across a cell membrane. Each mechanism of selective ion binding
+shared a common structural feature – binding sites. We found that binding sites composed of
+dipolar functional groups with speciﬁc architectural characteristics can stabilize speciﬁc ions
+for permeation across natural membranes. Furthermore, properties of a binding site can be
+tuned without changing its structure simply by modulating the charge-response properties
+of the surrounding environment. Comparison with the crystal structure of biological water-
+selective channels showed a distinct absence of ion binding sites in the water permeation
+pathway. Natural water channels instead contain a collection of dipoles, alternating in
+direction, and mixed with greasy hydrophobic groups lining the channel walls.
+Our eﬀorts to transcribe nature’s structural design features into robust synthetic porous
+9
+
+PAGE 10
+membranes produced ﬁve models of biomimetic pores nanofabricated using self-assembly
+and novel atomic-layer deposition strategies (ALD). Our experimental and theoretical plat-
+forms allowed successive modiﬁcation of pore size and surface chemistry and charge, fol-
+lowed by measurements of pore structure and selective transport function to deduce struc-
+ture/transport property relationships in the inorganic nanopores. We found that purely
+hydrophobic pores, as achieved with trimethyl silane coverage, fully inhibited water trans-
+port. As in the natural water-selective channel proteins, partially hydrophilic pore surfaces
+are required to provide ‘binding sites’ that stabilize water molecules, increase diﬀusion, and
+increase water ﬂux across the membrane. Furthermore, narrow pores with diameters in the
+nanometer length scale or smaller are required for ion rejection functionality because large
+pores stabilize ions by permitting counterions and water molecules to permeate with the
+ions.
+Both theoretical and experimental investigations yielded further scientiﬁc insights as to
+the reactivity of titratable walls due to the conﬁning geometry of a nanoporous space. Con-
+trary to the expectation that more conﬁned water in a nanopore exhibits a lower dielectric
+constant and hence renders the ionization reaction involved in deprotonation of a silanol sur-
+face less favorable, ab initio molecular dynamics simulations showed the opposite. Reducing
+the diameter between two ﬂat walls covered with silanol groups produced a decrease in pKa,
+which is associated with enhanced reactivity of the walls.
+In the ﬁnal fabrication of organic modiﬁed nanopores by self-assembly and plasma-
+assisted atomic layer deposition (ALD), we synthesized nanopores with multiple organic sur-
+face derivatizations to more closely mimic the structure of water-selective protein channels in
+cell membranes. In these channels, a polyamide network composed of opposing dipoles from
+carbonyl and amine groups, with greasy hydrophobic groups in between, stretch across the
+nanopores. The pores notably lack well-deﬁned ion binding sites characteristic of ion-selective
+biological channels. Gas permeance measurements conﬁrmed the presence of a nanoporous
+structure. In a side-by-side comparison of performance between our ALD polypeptide mem-
+branes and DOW commercial membranes, the ALD membranes maintained high enough
+salt rejection to produce drinking water, yet outperformed the commercial membranes by as
+much as a factor of three in terms of water ﬂux.
+Scientiﬁc insight gained by establishing structure/transport property relationships in
+nanopores will inform new membrane processing strategies amenable to economic large-scale
+manufacturing. With guidance from world-wide experts in macroscopic membranes, our
+microscopic membranes will have the potential to be scaled up into practical systems that
+could enhance the quantity of fresh water supplies at an aﬀordable cost for the nation and
+the world, thus directly furthering Sandia’s commitment to water, energy, national security,
+and public health issues.
+A goal of future work is to scale up our system to high-pressure large-membrane for-
+mats. Small-scale systems utilizing our novel platform and focusing on transport at the
+individual pore level are mandatory for design, fabrication, characterization and simulation
+of the microporous selectivity ﬁlter. Similar fabrication strategies can be employed for larger
+scale anodisc alumina (AO) membranes. During the project, we demonstrated ALD modi-
+10
+
+PAGE 11
+ﬁcation of larger-scale, AO-supported mesoporous silica membranes. Surface-conﬁned ALD
+deposition of a hybrid ﬁlm followed by removal of the organic template resulted in a microp-
+orous membrane with a record high combination of ﬂux and selectivity for gas molecules[9].
+Scale-up to technologically-relevant systems requires compatibility with polymeric supports.
+One approach is the development of reverse phase mesoporous materials, which have or-
+ganic frameworks and hydrophilic pores. Another is the metal-organic framework materials
+(MOFs). MOFs spontaneously assemble at room temperature from linkers and connectors
+much like tinker toys. Their pore size can be tailored by the linker/connector chemistry.
+MIL-101 and super tetrahedron (ST) MOF have pore diameters of 2.9-3.4 nm and 0.86 nm,
+respectively. A critical issue is whether MOFs can be prepared as defect-free ﬁlms. Future
+scale-up activities can be aided by collaboration with UOP, a leading expert in spiral wound
+membrane modules, and will include surfactant-templated oxides and ALD deposition on
+asymmetric cellulose acetate membranes.
+This report begins with an analysis of desalination energy requirements in order to quan-
+tify the potential for future improvements in desalination membrane technology. The ther-
+modynamic analysis of the ﬁrst chapter makes it possible to draw conclusions from the
+vast array of equilibrium molecular dynamics simulations present in the literature as well
+as create a standardized comparison for measuring and reporting experimental RO mate-
+rial eﬃciency. Commonly employed methods for estimating minimum desalination energy
+costs have been revised to include operations at positive input stream recovery ratios using
+a thermodynamic cycle analogous to the Carnot cycle. Several gaps in the statistical me-
+chanical theory of irreversible processes have also been identiﬁed, which may in the future
+lead to improved communication between materials engineering models and statistical me-
+chanical simulation. Simulation results for silica surfaces and nanochannels are summarized
+in the following chapter. We next review our progress on experimental design and testing
+of nanoporous RO materials via templating and atomic layer deposition (ALD). We ﬁnd
+that the eﬃciency of these nanoporous membranes is more than double that of currently
+available membrane technology for brackish water desalination due to the improved mem-
+brane ﬂux and salt rejection at low pressure. Finally, we summarize our conclusions and
+future work. The creation and evaluation of a novel material platform for RO desalination
+operating through a templated nanoporous structure has resulted in higher salt rejection at
+lower applied pressure. This is an important advance because traditional materials operating
+through diﬀusion-based mechanisms require high pressures to prevent salt passage.
+Full descriptions of the technical and conceptual advances made in this project can be
+found in a Technical Advance ﬁled with Sandia and articles published in these journals:
+J. Am Chem. Soc. [9, 46, 16, 17], J. Mol. Biol. [48], J. Comput. Theor. Nanosci. [18, 25],
+J. Chem. Phys. [51, 19, 37], Nature Materials [3], Nature Nanotech[27], SMALL[35], MRS
+Bull.[4], Phys. Chem. Chem. Phys. (Communication) [38], Biophys. J. [47], J. Chem.
+Theory Comput.[49], Chem. Phys. Lett. (Frontiers Article) [2], and J. Membrane Sci. [50].
+11
+
+PAGE 12
+12
+
+PAGE 13
+Chapter 2
+Thermodynamic Analysis of
+Membrane Separations Processes
+Water permeable, salt excluding membranes carry enormous potential for making drink-
+ing water available through reverse osmosis (RO) and generating energy from saltwater
+mixing through forward osmosis. However, several factors limit the eﬃciency of the mechan-
+ical to chemical potential energy conversion process, including hydraulic pump eﬃciency,
+recovery of pressure energy from waste water, uncontrolled mixing of saline and fresh water,
+and ﬂuid ﬂow resistance of the RO membrane. Along with the thermodynamic cost of solute
+concentration, these combine to make energy the largest component of the operating cost for
+seawater desalination facilities[34, 1, 36, 26]. Recent advances in pressure recovery devices
+have placed the energy conversion eﬃciency of the mechanical components (hydraulic pump
+and pressure recovery) in the 85-89% range[42, 1]. Taking example data from the Perth de-
+salination plant[43], the pressure drop across the RO membrane accounts for 1.85 kWh/m 3
+of the total desalination energy budget, while 0.4 kWh/m 3 is lost to mechanical eﬃciency,
+and a remaining 1.2 kWh/m 3 is used for pre/post treatment and transport throughout the
+facility.
+Comparing the energy cost arising from the membrane pressure drop to the thermo-
+dynamic energy cost of 1.1 kWh/m 3 for concentrating dissolved salts in seawater at 44%
+recovery (calculation method shown in the next section), it is clear that improved membrane
+materials have a large potential impact on desalination and energy recovery prospects. Typ-
+ical thin ﬁlm composite aromatic polyamide with a polysulfone support and asymmetric
+cellulose triacetate materials have relative resistances of 0.7 and 2.5 h· bar/cm[40, 12, 39].
+While signiﬁcant eﬀort has gone into additional treatments to improve these materials, im-
+provements in membrane material performance have been slowing, thus motivating a search
+for viable alternatives to traditional polymer-based membranes. Zeolite-based membrane
+materials[23, 22] have been considered, but show too high resistance.
+Equilibrium Energy Cost Analysis
+RO membranes convert mechanical (pressure) energy into chemical energy by concentrat-
+ing saline solutions. This section will show a reversible thermodynamic cycle for carrying
+13
+
+PAGE 14
+out this process – relating it to a Carnot cycle where chemical potential is substituted for the
+heat source. The most important result from this analysis is a lower bound on the energy
+required for any process used for desalination.
+E
+Vin
+= RT [(1− x)co ln co + xcw ln cw− ci ln ci] (2.1)
+In this equation, the process is assumed to use Vin m3 of input water with a solute concentra-
+tion of ci moles of solute (or equivalent moles of dissociated electrolyte) per m 3 and produce
+xVin m3 of waste water at a concentration of cw > ci and (1− x)Vin m3 of puriﬁed water at
+concentration co. Conservation of mass implies the rejection rate is x = (ci− co)/(cw− co),
+and the recovery rate is 1− x.
+input
+waste out
+outputpressure exchanger
+RO membrane
+Figure 2.1. Process pipeline for an RO facility. Input
+water is pressurized using mechanical energy and recycled
+pressure energy recovered from the eﬄuent stream. It ﬂows
+to the RO membranes, where the pressure is converted into
+chemical energy by concentrating the waste-water.
+The reverse osmosis membrane operates inside of an industrial process that generates the
+required work and transports the working solutions. Ideally, all the energy added to the ﬂuid
+can be recovered except what is consumed by the RO membrane using “perfect” pressure and
+heat exchangers. In reality, the input pump is only 80-90% eﬃcient, the pressure exchanger
+is 80-95% eﬃcient, and a steady rate of pressure and heat leakage occurs throughout the
+pipeline. Current RO desalination plants report that 50-65% of the operating energy (around
+2 kW-h / m 3) is consumed in the RO membrane unit[1].
+Figure 2.2 shows a cycle operating between two sets of working conditions (input at
+ci in the lower half, waste output at cw in the upper half). A constant total volume Vtot
+is maintained throughout and no expansion / compression of the ﬂuid takes place, so all
+variables have been made into volume fractions via division by Vtot. The cycle begins by
+14
+
+PAGE 15
+4 3
+1 2
+∆  =55.5
+∆  =27.8
+cw co
+ci co
+output x∆V
+as waste
+input ∆V
+of seawater
+Figure 2.2. Thermodynamic cycle for the RO membrane
+chemical potential / pressure conversion engine. Osmotic
+pressure diﬀerences are based on seawater to drinking water
+conversion at 50% recovery.
+pulling a volume fraction ∆ v of input at a constant concentration and osmotic pressure
+diﬀerence – a process requiring zero work, but increasing the potential energy of the enclosed
+volume. This step is analogous to heat transfer in the Carnot cycle. Next, the left-hand side
+volume, vI is compressed, lowering its volume by an amount ∆vc during step 2→ 3. A waste
+volume of x∆v is ejected during step 3 → 4 (again at constant concentration and osmotic
+pressure diﬀerence), reducing the total desalinated water output of the cycle to (1 − x)∆v.
+Finally, the input osmotic pressure diﬀerence is restored by extracting work from the device.
+The eight volume fractions at steps 1–4 can be calculated from four total volume con-
+straints ( vI + vII = 1), two number constraints ( N(1) = N(4), N(2) = N(3)), and the
+choices ∆v, ∆vc. Writing the number constraints ascI(n)vI(n)+cII (n)vII (n) = vI(n)(cI(n)−
+cII (n)) + cII (n), vI(n) are the solutions to four linear equations.
+vI(1) = vI(2)− ∆v
+vI(2) = ∆vc
+1− x
+vI(3) = xvI(2)
+vI(4) = xvI(1) = vI(3)− x∆v (2.2)
+These solutions verify the consistency of the above cycle, since a solution exists where all
+volume fractions are positive when x∈ (0, 1).
+The energy added to the system during each leg can be computed by assigning a potential
+energy to each step. To derive this, imagine dissipating all the stored energy from a given
+state (vI @ cI, vII @ cII ). This can be done reversibly by allowing the membrane to relax
+15
+
+PAGE 16
+at constant N, giving oﬀ work
+E/Vtot = RT
+∫ vf
+I
+vI
+cIvI
+v − cII vII
+v dv
+= RT
+(
+cIvI ln vf
+I
+vI
++ cII vII ln vf
+II
+vII
+)
+, (2.3)
+where cI(v) = (cIvI)/v and cII (v) = (cII vII )/v are equal at the point of zero potential energy,
+vf
+I = cIvI/(cIvI + cII vII ). This makes the potential energy of any state equal to
+E/Vtot = N
+Vtot
+ln N
+Vtot
+− cIvI ln cI− cII vII ln cII . (2.4)
+The total work required to run the cycle is given by the energy diﬀerences E(3)− E(2) +
+E(1)− E(4) and must balance the “chemical” energy put into the system during the volume
+ﬂow steps. The energy of the concentration step 2 → 3 is
+E2→3/Vtot = RT ∆vc
+1− x ((1− x)co ln co + xcw ln cw− ci ln ci) . (2.5)
+This expression also agrees with the energy requirement of a reversible path outlined in
+Ref. [21], where nI is held ﬁxed while work is done to vary the volume (solute-impermeable
+membrane) and then an entropy of mixing is added to make cI = cw and cII = co. It
+also shows that this step is the only one that must be considered for calculating desalination
+energy requirements, since its energy is identical to Eq. 2.1 when the output volume ∆V (1−x)
+is replaced with ∆ vc. Finally, the work released during 4 → 1 is
+E4→1/Vtot = RT
+(
+∆V− ∆vc
+1− x
+)
+((1− x)co ln co + xcw ln cw− ci ln ci) , (2.6)
+proving Eq. 2.1.
+As an example calculation, consider a desalination process taking in seawater at 1.12
+equivalents, operating at 50% recovery, and producing mineral water at 250 mg/L (6.7e-3
+equivalents assuming a KCl standard at 74.5513 g/mol). The waste concentration will be
+cw=2.23 equivalents, the osmotic pressure diﬀerence at steps 1 and 2 is 27.77 bar and 55.54
+bar at steps 3 and 4. In this case, Eq. 2.1 gives an energy requirement of 0.522 kW-h / m 3
+of input (1.04 per m 3 of output) at 300 K 1.
+We can now apply all the standard eﬃciency arguments used by Carnot using the re-
+versible cycle above. Importantly, the above represents a maximum eﬃciency process. To
+apply the traditional argument, suppose another desalination process were discovered that
+used less energy than predicted by Eq. 2.1. In this case, we could make most servicable
+use of its eﬄuent by using it as fuel for running our cycle in reverse. The net work pro-
+duced in cycle 2.2 would then be greater than was put into the initial eﬄuent production.
+Equation 2.1 is therefore a theoretical lower limit on the energy requirement of desalination.
+1The thermal energy scale in these units is RT = 0.69287 kW-h/m3 / (mol./L)
+16
+
+PAGE 17
+If a constant concentration is maintained, and x→ 1, L’Hˆ opital’s rule can be used to
+calculate the limit of Eq. 2.1 divided by 1 − x to cast it in terms of output volume.
+lim
+x→1
+E
+Vout
+= RT
+[
+ci− co
+(
+1 + ln ci
+co
+)]
+(2.7)
+This is equal to the usual osmotic pressure diﬀerence less a term accounting for the potential
+energy lost from mixing, causing the process to require less work. For the example above,
+the extra term is -0.0237 kW-h/m 3, making the total cost at inﬁnitesimal recovery equal to
+0.7476 kW-h/m3.
+The reversible thermodynamic cycle of this section shows the connection between al-
+ternate ways of understanding osmosis and is closely related to the industrial desalination
+process. All cycles operating between equilibrium states can be solved by writing out the
+state functions for each intermediate. This was accomplished here via Eq. 2.4, which can
+be easily modiﬁed for non-ideal osmotic pressure by substituting the equation of state Π( ρ)
+into Eq. 2.3. A connection with the Carnot cycle was made in which it is possible to view
+desalination as an refrigerator whose coeﬃcient of performance depends on the membrane
+salt rejection. These results are valid for arbitrary input water recovery ratio, and do not
+require consideration of vapor equilibria [15].
+Energy Costs from Nonequilibrium Transport Theories
+Background
+In a seminal work by Mr. Staverman in 1951 [41] the linear, local equilibrium approxima-
+tion of nonequilibrium thermodynamics was applied to the problem of membrane transport
+in the presence of mechanical (pressure), osmotic, and electrical driving forces. The linear
+transport theory was uniﬁed by Onsager some 20 years earlier [32] and is notable for its abil-
+ity to synthesize empirical relationships long known to engineering[8]. Pursuing the theory is
+important, however, since it provides a path toward a nonequilibrium statistical mechanics
+with which to express transport coeﬃcients from microscopic averages.
+The usual Onsager expression assumes the ﬂuxes, j, are proportional to thermodynamic
+driving forces through the conductivity coeﬃcients, L.
+[ jS
+jW
+]
+=−
+[ LS LSW
+LWS LW
+]
+·
+[∂µS
+∂x∂µW
+∂x
+]
+The chemical potential,
+βµi(x) = ln ρi(x)Λ3
+i
+sint
+i
++ βµex
+i , (2.8)
+need not be constant throughout the system when it is out of equilibrium. A useful approx-
+imation to the chemical potential is given by explicitly considering its voltage and pressure-
+17
+
+PAGE 18
+dependence and then assuming the activity coeﬃcient γi is a function of local solution com-
+position only.
+µi = µ0
+i + β−1 ln(γiρi) + qiψ(x) + ViP (x)
+≡ µc
+i(x) + qiψ(x) + ViP (x) (2.9)
+Assuming no net local charge is built up, voltage diﬀerences are approximately zero and
+don’t contribute to the above. Separating the pressure into its own column and writing out
+the volume ﬂux, jV = VSjS + VW jW ,
+
+
+jS
+jW
+jV
+
+ =−
+
+
+LS LSW LSP
+LWS LW LWP
+LPS LPW LP
+
+·
+
+
+∂µc
+S
+∂x∂µc
+W
+∂x∂P
+∂x
+
+ .
+This equation deﬁnes LSP = LSVS + LSW VW (read across), and LPW = VSLSW + VW LW
+(read down), etc.
+Next, integrate over a line crossing the membrane (assuming constant ﬂux in this direction
+in the steady-state). This converts the coeﬃcients on the right to average coeﬃcients, and
+the ∂
+∂x -s to ∆-s. According to Ref. [21], the concentration-dependence of the water chemical
+potential diﬀerence is equivalent to−VW ∆Π, the energy diﬀerence due to osmotic pressure.
+
+
+jS
+jW
+jV
+
+ =−
+
+
+lS lSW lSP
+lWS lW lWP
+lPS lPW lP
+
+·
+
+
+∆µc
+S
+−VW ∆Π
+∆P
+
+ (2.10)
+Neglecting the contribution to the ﬂux due to the salt chemical potential diﬀerence, we
+get
+jV≃ lPW VW ∆Π− lP ∆P
+=−lP (∆P− σ∆Π) (2.11)
+σ≡ VW lPW /lP . (2.12)
+This says that the membrane ﬂux is proportional to an eﬀective pressure diﬀerence. The
+eﬀective pressure diﬀerence is smaller than ∆ P by the Staverman reﬂection coeﬃcient[41]
+times the osmotic pressure diﬀerence, ∆Π. For perfect salt rejection, σ = 1 and osmosis can
+take place. If the membrane doesn’t reject salt, jV is less sensitive to ∆Π.
+To ﬁnd the relationship between σ and the usual salt rejection, solve for ∆ P in terms of
+∆µc, jV to give an equation equivalent to Eq. 2.10.
+
+
+jS
+jW
+−∆P
+
+ =
+
+
+lSPlP S
+lP
+− lS
+lSPlP W
+lP
+− lSW lSP /lP
+lW PlP S
+lP
+− lWS
+lW PlP W
+lP
+− lW lWP /lP
+lPS /lP lPW /lP 1/lP
+
+·
+
+
+∆µc
+S
+−VW ∆Π
+jV
+
+
+18
+
+PAGE 19
+Distributing the minus signs and VW into the coeﬃcients, assuming Onsager reciprocity (i.e.
+the L matrix is symmetric)[32, 41] 2, and substituting the deﬁnition of σ, we ﬁnd
+
+
+jS
+jW
+∆P
+
+ =
+
+
+−σlS + (1− σ)lSW
+VW
+VS
+−σVSlS + (1− σ)VW lSW
+1−σ
+VS
+−σlWS + (1− σ)lW
+VW
+VS
+−σVSlWS + (1− σ)VW lW
+σ
+VW
+− 1−σ
+VS
+σ −1/lP
+
+·
+
+
+∆µc
+S
+∆Π
+jV
+
+
+To ﬁnd the salt rejection, we use the concentration of salt in the volume ﬂux at zero
+osmotic pressure diﬀerence.
+jS
+jV
+= 1− σ
+VS
+= (1− r)ρI
+S
+⇒ σ = 1− VSρI
+S(1− r) (2.13)
+For perfect salt rejection, σ = 1, while for zero salt rejection, σ = 1− VSρI
+S is less than one –
+showing a tendancy for the concentrated side to back-ﬂow, diﬀusing toward the lower osmotic
+pressure region. However, VS≈ 16.6 mL/mol and a 37 g/L NaCl solution has VSρ = 0.01.
+Saturation is about 10× higher, so even at zero salt rejection, the reﬂection coeﬃcient, σ,
+cannot possibly drop below 0 .9, and is usually higher than 0 .99.
+Using Eq.s 2.11 and 2.13, the membrane permeability, lP , can be calculated for experi-
+mental data when the applied pressure, salt rejection, and input salt concentration are known
+experimentally.
+At this point it is also possible to set an upper boundary on the permeability by consider-
+ing the resistance caused by the drag of the rejected ions on the permeant ﬂuid. Because the
+membrane is hindering the ﬂow of ions, they are moving slower than the surrounding ﬂuid.
+Collisions will tend to push the ions toward the membrane, while deﬂected molecules from
+the permeating ﬂuid reduce the ﬂuid’s forward momentum and increase its temperature.
+When the current has reached a steady-state, the average force exterted by the ion on the
+ﬂuid will equal the drag force on an ion moved through a stationary ﬂuid. The total drag
+resistance on a ﬂuid forced to move past nbound/A frozen ions per unit area will therefore be
+Rdrag = Fdragnbound/A
+jV
+. (2.14)
+Diﬀusion constants, D, for electrolytes in aqueous solutions have been well studied, and
+are related to the drag force through the friction constant, γ. Requiring balance between ex-
+ternal forces and diﬀusion at equilibrium, Einstein showed mγ = RT /D. Using the Langevin
+equation[14],
+mdu
+dt = R(t) + Fext− mγu,
+(where⟨u⟩ = jV , the average ﬂow velocity), it is also possible to show that the solution
+resistance to an applied electric force leads to a proportionality between the diﬀusion constant
+2This assumption must hold for inﬁnitesimal deviations from equilibrium, but see Ref. [7] for a coun-
+terexample in far from equilibrium conditions.
+19
+
+PAGE 20
+and the conductivity, Λ [24].
+D = RT
+F 2
+Λ
+|z| (2.15)
+At a steady-state, the number of ions causing ﬂuid drag will remain constant, and mγ⟨u⟩
+must equal the average force exerted on the ion by the membrane, causing a drag on solution.
+Therefore
+Fdrag = mγjV . (2.16)
+Substituting the density of bound ions times a characteristic height, d, for the layer of bound
+ions, we arrive at a minimum resistance.
+Rdrag = mγdρbound = RT dρbound
+D (2.17)
+Assuming a boundary height of d = 10 ˚A and a solute concentration of 0.1 mol/L and
+using diﬀusion constants 1.334e-5 and 2.032e-5 cm 2/s for Na+ and Cl− leads to a maximum
+permeability on the order of 10 5 bar·h/cm.
+While the CRC Handbook lists ionic diﬀusion constants at inﬁnite dilution, it is possible
+to infer diﬀusion constants in alternate experimental conditions using the Stokes-Einstein
+relation, mγ≈ 6πηr along with a table of solution viscosities. The viscosity of water at
+20◦C increases from 1.002 cP to 1.068 cP as the salt concentration increases from zero to 0.7
+mol/L NaCl, while a 5◦ shift to 25◦C decreases the viscosity to 0.89 cP[24]. Temperature is
+thus a much more important factor setting the limiting resistance.
+This analysis clearly shows that resistance due to the rejected ions is not a limiting
+factor as long as they remain in solution near the membrane. However, Chapter 4 gives
+experimental evidence for the importance of solution boundary layer eﬀects, since doubling
+the membrane thickness did not lead to the expected 50% decrease in conductivity. Therefore
+more careful analyses are warranted. Further work using the solution to the Fokker-Planck
+equations for steady state ﬂux at the experimental membrane geometry may be able to put
+d· ρbound on more quantitative footing.
+Standard Test Conditions
+Comparing the eﬃciency of alternative materials for reverse osmosis requires identical
+ﬂux rates, φreq, and salt concentrations {ci, co}. Under identical test conditions it becomes
+meaningful to compare the net work done on the ﬂuid, which is governed by the pressure
+drop across the membrane
+Ereq
+Vout
+= ∆Preq. (2.18)
+Calculating the required energy per unit output at standard conditions requires making two
+basic assumptions similar in spirit to Ohm’s law: the membrane resistance is proportional
+to both the permeate ﬂux and the membrane thickness.
+20
+
+PAGE 21
+To relate experimental conditions at constant pressure diﬀerence to those at constant
+ﬂux, we make the assumption that the ﬂux scales linearly with the pressure diﬀerence as in
+Eq. 2.11. Next, use the experimentally observed ﬂux to infer a ﬂux at the required concen-
+tration diﬀerence by imagining we carried out an identical experiment with α membranes
+stacked in series so that the “membrane height,” L, becomes
+L′ = αL
+and
+φ′ = φ/α
+l′
+p = lP /α
+c′
+o
+ci
+= (1− r)α (2.19)
+The last equation further assumes that the salt rejection is independent of the input con-
+centration so that, for example, when α = 2, then c′
+o/ci = co/ci× c′
+o/co = (1− r)(1− r).
+For a given ci,req/co,req, we scale the ﬂux by solving for α (assuming the relation holds for
+concentrations in the range co–ci).
+α = ln ci,req/co,req
+− ln(1− r) (2.20)
+Now substituting the scaling relation (2.11) in the energy requirement (2.18) and taking
+the absolute value of all pressure diﬀerences gives the energy requirement for carrying out a
+desalination process at an arbitrary ﬂux, φreq, to yield a required osmotic pressure diﬀerence,
+∆Πreq.
+Ereq
+Voutφreq
+=|∆Preq
+φreq
+= 1
+lP
++ σ|∆Πreq|
+φreq
+= α
+lP,expt
++ σ|∆Πreq
+φreq| (2.21)
+Example Application
+Mesoporous silica modiﬁed by 6 atomic layer deposition (ALD) cycles of trimethoxysi-
+lane (TMOS) followed by 16 cycles of aminopropylsilane (APS) deposition to make NH 2
+functionalized nanopores has shown rejection ratios around r=31% with a ﬂux around φm
+= 1.8 g / cm 2 h. Converting units to a volume ﬂux gives
+φ
+(m
+h
+)
+= φm
+( g
+cm2 h
+)
+×
+( 1 L
+1000 g H 2O + co/2 mol. NaCl × 58.443 g NaCl / mol. NaCl
+)
+× 10−3
+(m3
+L
+)
+× 104
+(cm2
+m2
+)
+= φm
+100.0 + 2.922co
+. (2.22)
+21
+
+PAGE 22
+Converting the pressure to energy units gives
+P
+(kW-h
+m3
+)
+= P (psi)× 6.8947573· 10−2
+(bar
+psi
+)
+×
+( 1 kW-h
+3.6· 106 J
+)
+× 102
+( J
+L-bar
+)
+× 103
+( L
+m3
+)
+= P (psi)× 6.8947573· 10−2
+(bar
+psi
+)
+×
+(1 kW-h/m3
+36 bar
+)
+(2.23)
+= P (psi)× 1.91521· 10−3
+(kW-h/m3
+psi
+)
+. (2.24)
+For{ci = 0.1711, co = 0.118} equivalents / L, φ = 0.018 m/h and Π expt = RT× r× ci =
+0.03675 kW-h/m3 3 . The ﬂux per over-pressure is lP = 0.154 (indicating that over-pressure
+must be 6.5 times the ﬂow rate in m/h).
+Choosing to run this experiment between concentrations ci = 1 .12 and co = 6 .7· 10−3
+equiv./L requires α = 13 .8 separation stages, and an energy requirement per desired ﬂow
+rate of Ereq
+Voutφreq
+= 89.6 + 0.77
+φreq
+. (2.25)
+Based on the form of Eq. 2.21, the minimum required energy is just the osmotic pressure
+diﬀerence as expected, while the ﬂow rate per over-pressure consumes extra energy and lowers
+the device eﬃciency. Maximum eﬃciency would be achieved at zero resistance, where lP→
+∞ and the ﬁrst term disappears. In this experimental setup, therefore, the eﬃciency can
+simply be measured by the ratio α/lP . To make this independent of the target concentration
+ratio, we can divide by ln ci/co
+ϵ≡ α
+lP ln ci/co
+= (−lP ln(1− r))−1. (2.26)
+The energy loss Eq. 2.21 can be expressed in terms of ϵ as
+Ereq/V− σ|∆Πreq|
+φreq
+= ϵ ln ci/co. (2.27)
+Eq. 2.27 shows that the energy loss metric, ϵ, can be directly interpreted as a ﬂow resistance
+for 1− e−1 percent rejection.
+A plot of ϵ contours vs. r and φm is shown in Fig. 2.3. The experimental conditions are
+assumed to be ci = 5 g/L NaCl, ∆ P = 80 psi. This plot shows the relative importance of
+salt rejection and ﬂux on the separation resistance.
+Results
+In this section, we apply the local equilibrium transport theory of the last two sections
+to experimental measurements in order to calculate relative material eﬃciencies.
+3The thermal energy scale at 300 K in these units is RT = 0.69287 kW-h/m3 / (mol/L)
+22
+
+PAGE 23
+ 0  20  40  60  80  100
+ 0
+ 5
+ 10
+ 15
+ 20
+φm (g/cm2 h)
+20
+7
+3
+1
+0.5
+0.1
+r (%)
+Figure 2.3. Isolines of ϵ, the energy loss per log concen-
+tration ratio per required ﬂux as a function of measured salt
+rejection and mass ﬂux.
+Typical performances for asymmetric cellulose di- and tri-acetate membranes have been
+reported in Fig. 2 of Ref. [12]. 4 As the preparations are altered, they ﬁnd an empirical
+relationship close to jV =−15.14343865r + 16.25638044 cm/h for pure water permeability
+and 17 bar operating pressure. Since VSρS = 10−3 is negligible under these conditions, σ≈ 1
+and lP≈ 0.956− 0.891r. According to the energy loss coeﬃcient,
+ϵ = (−lP ln(1− r))−1 , (2.28)
+the best eﬃciency point is found at a rejection ratio r = 0.715 and permeability lP = 0.319
+cm/h-bar, where the standard resistance is ϵ = 2 .50 bar/(cm/h). However, no membrane
+was shown at this point in their diagram, and the closest in eﬃciency is found to be at a
+salt rejection ratio of r = 0.8, and water permeability of lP = 0.256 cm/h-bar with standard
+resistance ϵ = 2.42 bar/(cm/h), which is slightly better than the predicted minimum. For a
+system operating at 30 g/L input concentration (seawater concentration) and 68 bar pressure,
+the best eﬃciency was at r = 0.84, lP = 0.109 cm/h-bar and standard resistance ϵ = 5.01
+bar/(cm/h).
+According to FILMTEC TM5 materials, SW30HRLE-400 can be run at 32 g NaCl/L and
+55.16 bar to get a 99.8% salt rejection at a ﬂow rate of 3.16 cm/h. This implies lP = 0.113
+cm/h-bar and ϵ = 1.42. Our tests on FILMTEC TM polyamide thin ﬁlm composite (TFC)
+membrane (SW30HR) at lower concentration and pressure show slightly lower salt rejection,
+4From the data in their Table 3, it can be inferred that the membrane area is 13 .2cm2.
+5FILMTEC is a registered trademark of FilmTec, a subsidiary of Dow Chemical.
+23
+
+PAGE 24
+and the FILMTEC TM technical manual notes the output concentration empirically varies
+inversely to the membrane ﬂux. This cannot possibly hold at low ﬂux though, since then
+the rejection ratio would become < 0! Our tests carried out at 5 g/L and 13.8 bar give 91%
+rejection at 0.55 mL/h. Using the Filmtec manual’s permeability estimate of 0.279 cm/h-
+bar, the eﬀective surface area is 0.2 cm 2, and ϵ = 1.49 bar/(cm/h). This is better than the
+high-salt ϵ because the permeability decreases with added pressure.
+Our amide-modiﬁed silica nanopores have much larger ﬂuxes. For example the 13.8 bar
+point above has 86% rejection and a 10.25 cm/h ﬂux (assuming A=0.2 cm 2). These imply
+a permeability of lP = 1 .011 cm/h-bar and standard resistance of ϵ = 0 .50 bar/(cm/h).
+If it could be utilized in current seawater RO plants, the present membrane would drop
+energy lost due to membrane resistance by 67% – some 0.469 kW-h/m 3, amounting to 26%
+of the total ﬁrst-pass membrane-speciﬁc energy cost or $1 million/y. for a 100 ML/day RO
+plant. Presently, however, the burst strength of the silica substrate is not yet high enough
+to withstand the high-pressure operating conditions required for seawater.
+The zeolite membranes reported in Ref. [22] have a rejection of 76.7% and 0.0112 cm/h
+ﬂux at a salt concentration of 0.1 M NaCl and an applied pressure of 20.7 bar. This gives
+an anomalously low permeability of 7× 10−4 cm/h-bar.
+The carboxylic acid functionalized carbon nanotube (CNT) reported in Ref. [5] shows
+a ﬂux of 37 cm/h for a 0.6 mM K 3Fe(CN)6 solution with a pressure of 0.69 bar. Salt
+rejection for KCl is around 45% at this concentration, while the rejection of the bulkier
+K3Fe(CN)6 at this ionic strength is around 98%. Even though this number decreases to zero
+at concentrations above 10 mM, using these ﬁgures gives a permeability of 58 .72 cm/h-bar
+and a tremendous eﬃciency. However these membranes have not yet shown high enough salt
+rejection at reasonable operating conditions for brackish water desalination.
+Dow maintains a wealth of product information on its website, and summary of membrane
+permeabilities is given in the Table 2.
+The permeabilities found in Table 2, in most cases, are larger than those calculated from
+the design equations in Table 3.10 of the FILMTEC TM technical manual. For 2, 5, and 32 g
+NaCl/L salinity these are 0.308, 0.279, and 0.124 cm/h ·bar, respectively. This is likely the
+result of thinner polyamide ﬁlms employed in brackish water desalination. Unfortunately,
+there is no test data available for FILMTECTM brackish water membranes at 5 g/L. However,
+using the manual’s estimate for permeability decrease with increased solution concentration
+from 2 to 5 g/L, we can expect a 10% increase in the standard resistance, ϵ, over the values
+listed in Table 2.
+Calculations of membrane ﬂux and standardized resistances using the thermodynamic
+theory developed above have enabled a consistent comparison of membrane materials. In
+order to decrease the standardized membrane resistance (increasing water permeability),
+either higher ﬂux or greater salt rejection can be pursued, as shown in Fig. 2.3. Comparing
+the optimal eﬃciency for each material gives an indication of the relative performance that
+can be expected, and shows that current cellulose acetate materials are 2-3 times less eﬃcient
+24
+
+PAGE 25
+Membrane Test Salinity
+(g/L)
+Test Pres-
+sure (bar)
+r lP (cm/h-
+bar)
+ϵ (h-bar/cm) Max Operat-
+ing Pressure
+(bar)XLE-440 0.5 6.9 99.0 0.757 0.287 41
+LE-440i 2 10.3 99.3 0.567 0.355 41
+LE-440 2 10.3 99.3 0.516 0.391 41
+BW30LE-440 2 10.0 99.0 0.534 0.407 41
+BW30HR-440i (new) 2 15.5 99.7 0.354 0.487 41
+BW30XFR-400/34i 2 15.5 99.65 0.354 0.500 41
+BW30-400-FR 2 15.3 99.5 0.328 0.576 41
+BW30-365 2 15.3 99.5 0.325 0.581 41
+BW30-365-FR 2 15.3 99.5 0.325 0.581 41
+BW30-400(also 34i) 2 15.5 99.5 0.323 0.584 41
+BW30-440i 2 15.5 99.5 0.322 0.587 41
+SW30ULE (new) 32 55.0 99.7 0.167 1.032 83
+SW30XLE (new) 32 55.16 99.7 0.137 1.259 83
+SW30HRLE (new) 32 55.16 99.8 0.113 1.419 83
+SW30XHR (new) 32 55.0 99.82 0.092 1.723 83
+SW30XHR 32 55.16 99.8 0.091 1.763 83
+Table 2.1. Dow membrane permeability analysis
+than polyamide thin ﬁlm composites, which are on par with our novel nanoporous silica
+membranes.
+Variations in standardized resistances can also be seen when the assumptions (2.19) are
+violated – that is salt rejection does not remain constant, or the membrane resistance is not
+proportional to its height. In these cases, we gain information about variations in material
+formulation that lead to diﬀerences in the underlying separation mechanism. Functionalized
+carbon nanotubes [5] have not produced adequate salt rejection at high ionic strength, which
+may be explained by a Donnan exclusion mechanism. Polyamide thin ﬁlm composite (TFC)
+membranes exhibit increased rejection and resistance at high ﬂow rates and may indicate
+contraction of the membrane. Directly varying membrane thickness by additional chemical
+deposition cycles has not lead to a proportionate increase in resistance (Chapt. 4), a fact
+which points to the importance of concentration polarization at the membrane boundary[28].
+25
+
+PAGE 26
+26
+
+PAGE 27
+Chapter 3
+Chemical and Structural Basis for
+Selectivity and Water Flux
+Our experiments show that the behavior of ions conﬁned within nanopores diﬀer signiﬁ-
+cantly from that in free bulk solutions. Our theoretical studies show novel structural designs
+that control ion passage through membranes. Based on these observations, new ideas will be
+developed to help us design nanopores that permit fast transport of water and select ions,
+thus providing novel solutions for energy-eﬃcient highly-selective membrane-based separa-
+tion technology critical not only to water puriﬁcation, but also pertinent to electrical energy
+storage applications in supercapacitors and lithium-ion batteries. Thus our work strongly
+impacts Sandia’s missions in national energy security (eﬃcient separations) and public health
+(clean, cheap water).
+Pressure-Driven Flow
+In an important theoretical success, we completed a study of pressure-driven water and
+salt permeation through model nanopore membranes using non-equilibrium molecular dy-
+namics (MD) simulations[18]. A dual-membrane model is applied, initially with one reservoir
+ﬁlled with 1.0 M NaCl and the other with pure water (see Fig. 3.1). The surfaces of the
+membrane and the 12 A diameter pore interior are smooth and hydrophilic, and the left-most
+pore contains a dipolar layer that mimics hydroxylated silica surfaces at the pH of zero charge
+and electrostatically repels Cl−[16]. Despite this anion-repulsive surface, at suﬃciently high
+hydrostatic pressure ( 170 atm.), the membrane only achieves about 32% ion rejection; the
+ions pass through the pore as Na +/Cl− pairs or larger aggregates (Fig. 3.1). At lower pres-
+sures closer to the values used in desalination applications (68 atm.), salt rejection is higher,
+about 70%. This pressure-dependence of salt rejection highlights the importance of moder-
+ate pressures for high salt rejection. It also highlights potential pit-falls of MD simulations
+that apply abnormally high pressures to observe water transport at shorter simulation time
+scales.
+We further decorated the entrance or interior of the dipolar nanopore with −|e| charged
+spheres to mimic deprotonated carboxylate or silanol groups found in the systems studied
+experimentally: carbon nanotubes or hydroxylated silica nanopores at neutral pH. Salt re-
+27
+
+PAGE 28
+jection ratios are qualitatively similar to those found for the dipolar nanopores (above) at
+corresponding applied pressures, indicating that the pressure-dependence of salt rejection
+ratio is a general phenomenon even with decorated pore mouths (Fig. 3.2).
+Figure 3.1. NaCl translocation through dipolar nanopores
+under hydrostatic pressure. Cl− (green) at entrance, though
+energetically unfavorable, crosses via ion pair formation with
+Na+(blue). (a)-(c): sequential snapshots picoseconds apart.
+The dual reservoir simulation cell is periodically replicated.
+H2O molecules are depicted as red/white spheres.
+Eﬀect of Pore Functionality on Ion Rejection
+We achieved a signiﬁcant advance in understanding K+ over Na+ selectivity in two diverse
+biological systems. Theoretical work by us using quantum mechanical models [45] established
+two essential structural features of a potassium-selective biological ion channel: 1) binding
+sites that can maintain speciﬁc high numbers of oxygen ligands ( > 6) for ion coordination;
+2) a special local environment (0.5 nm radius) around the binding sites that lacks proton-
+donor groups, which potentially could compete with a bound ion for its ligands. The high
+numbers of ligands unexpectedly overcoordinate the permeant K + ion, apparently to avoid
+trapping it. This new mechanistic resolution of cation selectivity has been described as
+‘the caress of the surroundings, the crowding of the ligands’[11]. Ideas for translating this
+mechanism into a synthetic membrane pore revolve around the new plasma-assisted atomic
+layer deposition techniques recently developed by us [10] in conjunction with new molecular
+imprinting strategies used successfully by us to fabricate sub-nm diameter pores selective
+to small gas molecules (see below) [9]. We next examined a small molecule with similar
+28
+
+PAGE 29
+Figure 3.2. NaCl translocation through other types of
+nanopores, decorated with negative charges (brown spheres)
+at the pore entrance (a) and in the pore interior (b & c)
+to qualitatively mimic carbon nanotubes and hydroxylated
+silica nanopores at neutral pH. In all cases, a high enough
+hydrostatic pressure causes ion translation in ion pair/larger
+aggregates. Lower pressures promote ion rejection.
+selectivity characteristics toward K + over Na+ ions. This valinomycin molecule binds K +
+with only 6 oxygen ligands. Our work established that valinomycin indeed selects between
+cations using only 6 ligands. The essential structural feature for valinomycin selectivity is a
+speciﬁc cavity size that ﬁts K+, not the smaller Na+[48]. Valinomycin enforces constraints on
+cavity size using a combination of intramolecular hydrogen bonds and its speciﬁc ring size.
+Compared to the K-channel mechanism, valinomycin tolerates the presence of hydrogen-
+bond donors in itslocal neighborhood, as is evident from its persistent selectivity in solvents
+of varying polarity. In addition, its complexation energy with K + is small in liquid water,
+meaning that K + ions don’t get stuck inside the ring. Thus, we propose that valinomycin’s
+mechanism may work well in a synthetic membrane conﬁguration either directly or through
+a surrogate molecule. Cheap, simple sugar molecules called cyclodextrins could be encoded
+with valinomycin’s structural features, and plugged into synthetic pores to create K +/Na+
+selectivity. Cheap ways of incorporating such cation selectivity into desalination membranes
+can save lives by providing essential minerals to desalinated drinking water.
+To investigate the design rules for cation over anion selectivity, we extended our earlier
+modeling work, which showed the attraction of silica nanopores for Na + ions even at the pH
+of zero charge (PZC)[20]. To begin, we constructed two coarse-grained theoretical nanopore
+models with smooth hydrophilic pores. One was a tube model of inﬁnite length with al-
+ternate dipolar and non-dipolar stretches of length L/2. The other was a membrane model
+29
+
+PAGE 30
+of ﬁnite length with dipole layers on the pore interior surface, but not on the membrane
+surface. As L/2 increases, cations (Na +) populate the dipolar regions but anions (Cl −) are
+excluded (selective cation/anion transport). For the membrane geometry, it is critical that
+the pore interior surface and the membrane surface have diﬀerent dipole surface density to
+achieve selectivity. Total cation/anion rejection can be attained in the tube geometry with
+alternating dipolar layers. This work [16] suggests a new design for desalination membranes.
+Tuning Pore Hydrophobicity and Size
+Due to decreased ﬂow resistance, hydrophobic channels are expected to yield a higher
+water ﬂux than hydrophilic ones. However, hydrophobicity may hinder water entrance and
+require high pressure to force water through, adding to desalination energy costs. Similarly,
+larger pore diameters are expected to yield higher water ﬂux, but may lack salt rejection
+capabilities and hinder water puriﬁcation.
+To investigate the tradeoﬀ between hydrophilic and hydrophobic surfaces, we performed
+Grand Canonical Monte Carlo simulations to estimate the water content in silica nanopores
+functionalized with varying amounts of hydrophobic trimethyl silane (TMS, -Si(CH 3)3)
+groups, each replacing a hydrophobic surface silanol (-SiOH) group. Model silica pores with
+approximate pore diameters of 10 and 15 Angstroms were created. Periodical boundary
+conditions were applied so that membrane surfaces are excluded; only interior pore surfaces
+exist, and 25 and 50% of the SiOH groups therein are replaced with TMS. We found that, at
+equilibrium, despite the added hydrophobic coverage, the pore interiors are still ﬁlled with
+water in all cases except the 10 A diameter and 50% TMS coverage model. As can be seen
+in Fig. 3.4, continuous water passageways persist in these pores.
+In contrast, full replacement of pore surface silanol groups with hydrophobic trimethyl
+silane produces a large free energy cost for water occupation. This free energy penalty
+for the fully hydrophobic pores prevents water entry without an external driving force,
+and hinders water ﬂux under pressure-driven desalination conditions. Clearly water needs
+some hydrophilic ‘binding sites’ to be stabilized in a narrow pore. Inspection of the crystal
+structure of natural water channels (aquaporins) shows they contain a diversity of functional
+groups on their walls: both hydrophilic polar groups of opposing dipoles (carbonyl and
+amine) as well as hydrophobic groups. In Chapter 4, we describe how we translate this
+functional diversity observed in natural water-selective channel proteins to create pores with
+both high water ﬂux and high salt rejection.
+Experimental investigations of hydrophobic pores conﬁrm the theoretical predictions.
+Water ﬂux diminishes to zero as surface coverage with trimethyl silane increases to values
+greater than 1.5 groups per square nm. Contact angles measured between water and ﬂat
+silica surfaces show that the angle increases from 38 degrees, for the untreated hydrophilic
+surface, to more than 90 degrees for trimethyl silane coverages greater than 1.5/nm 2. Such
+a larger contact angle represents a repelling capillary force that further increases resistance
+to water ﬂow. Water ﬂux further diminishes with reductions in pore size. In contrast, salt
+30
+
+PAGE 31
+rejection increases with smaller pores. Theoretical predictions described below correlate
+smaller water diﬀusion constants and reduced water occupancy with reduced pore sizes and
+increased surface hydrophobicity (Fig. 3.3).
+Water dynamics in silica pores Fig. 3.4 were investigated using molecular dynamics (MD)
+simulations. Speciﬁcally, two diﬀerent properties of waters inside the pores were studied.
+First, the diﬀusion coeﬃcients D(z) of water molecules were determined as a function of the
+height along the pore axis, z, using
+D(z) = lim
+∆t→∞
+⣨(
+zi(t + ∆t)− zi(t)
+)2⟩
+2∆t ,
+where,
+z− ∆z
+2 < zi(t)≤ z + ∆z
+2
+For these calculations, data was analyzed from 10 ns MD trajectories. The bin-width, ∆ z,
+was set at 1 ˚A, and the magnitudes of time-intervals ∆ t were varied from 2 to 100 ps to
+estimate the ∆ t→ ∞limiting case. Next, water occupancy proﬁles were estimated by
+averaging the numbers of water molecules found in each bin during the 10 ns trajectory.
+The eﬀect of water force ﬁelds on our predictions of water diﬀusion coeﬃcients and water
+occupancy in a silica pore was studied by generating three separate trajectories, one using
+an SPC/E water model, another using a TIP3P water model and the last one using an SPC
+water model. The silica pore used for this analysis had a diameter of 15 ˚A, and almost half
+of its pore facing hydroxyl groups (silanol, -SiOH) were substituted with tri-methyl groups
+(50% hydrophobic with trimethyl silane, Si(CH 3)3). The eﬀect of water force ﬁeld on the
+distribution of water molecules inside the pore was negligible, as seen in the occupancy
+proﬁles of Fig. 3.5. Each water force ﬁeld yielded a noticeably diﬀerent diﬀusion coeﬃcient
+proﬁle, but despite the diﬀerences, all water models consistently yielded a diﬀusion coeﬃcient
+almost an order of magnitude smaller than the diﬀusion coeﬃcient in bulk water.
+Reducing the total number of tri-methyl silane groups on the pore surface to reduce the
+ratio of hydrophobic to hydroxyl groups from 50% to 25% doubled the diﬀusion coeﬃcient
+of water molecules (Fig. 3.6). Nevertheless, the diﬀusion coeﬃcient of water molecules in
+the pore still remained small in comparison to their values in bulk water. Reducing the
+density of hydrophobic groups also increased the occupancy of water in the pore, but this
+was perhaps because now there was more empty space in the pore due to the substitution of
+larger -Si(CH3)3 groups with smaller -SiOH groups. Reducing the pore size, without altering
+the ratio of tri-methyl over hydroxyl groups (50:50) reduced both the diﬀusion coeﬃcient
+and the occupancy of water molecules in the silica pore (Fig. 3.7).
+All MD simulations were carried out using the Lammps software. The following pa-
+rameters were used to carry out simulations in an NVT ensemble: periodic boundaries in
+all directions; the particle-particle particle-mesh (PPPM) method with a precision value of
+0.0001 and a cut-oﬀ of 10 for computation of electrostatic interactions; twin-range cut-oﬀ
+of 15/16 for van der Waals interactions; SPC/E charges and van der Waals parameters for
+description of water models; all atom CHARMM charges and van der Waals parameters for
+31
+
+PAGE 32
+description of silica atoms; an integration time-step of 2 fs; the SHAKE algorithm with a
+tolerance of 0.0001 units to constrain the Si-O and O-H bonds in silica and all the bonds
+and angles in water molecules; and a Berendsen method with a coupling constant of 0.1 ps
+to maintain temperature at 298.15 K.
+Further experiments were performed to study how a single hydrophilic functionality cor-
+relates with salt rejection and water ﬂux (see also Chapter 4). Samples with -OH surfaces
+consisted of mesoporous silica, made from Brij-56 lipid later removed with calcination, and
+then treated to two cycles of liquid-phase atomic layer deposition (ALD) to yield 2.4 nm hy-
+droxylated silica pores. Similar methods were used to generate surfaces with -NH 2, -CN, or
+-SO3H functionalized pore surfaces. While nitrile surfaces produced improved water ﬂux and
+charged surfaces produced higher salt rejection, overall, the singly functionalized hydrophilic
+surfaces performed modestly in terms of salt rejection and water ﬂux.
+To summarize, we ﬁnd with both experimental and theoretical approaches that some
+hydrophilicity is required on the walls of nanopores to permit spontaneous water ﬁlling. More
+hydrophilicity is associated with higher water occupancy, higher water diﬀusion constants
+(but still smaller than in bulk liquid water), and experimental observations of higher water
+ﬂux. While larger pores also yield higher water ﬂux, salt rejection is diminished. Small pores
+functionalized with a single type of hydrophilic coating generally yield modest salt rejection
+and water ﬂux and thus highlight the subtle design requirements used by natural pores to
+achieve both fast water transport and perfect salt rejection.
+Salt Concentration and pH Dependence
+In this section we describe observations of surface-charge-dominated ion transport through
+silica nanopores at very low salt concentrations. Surface charge plays an important role in
+ion transport through nanopores with pore sizes smaller than the Debye screening length
+(λ). We also observed that for pure HCl solution at pH=3, 4 or 5, where ion transport is
+expected to be dominated by surface charge instead of the bulk solution ion concentration,
+the ion conductance, and hence the silica surface charge at pH=3, is always higher than
+those at pH=4. In contrast, on ﬂat silica, the surface charge at pH=4 should be higher
+because the zero-surface-charge point (isoelectric point) for silica surface is at pH=2. We
+hypothesize that the isoelectric point of silica may be shifted to higher values in nanopores.
+Direct measurement of surface charge shows that the isoelectric point (a pH value for zero
+surface charge) of the silica nanopore surface has shifted to higher pH values compared to a
+free ﬂat silica surface (Fig. 3.8).
+The ion current through nanopores was measured at diﬀerent salt solutions using a patch-
+clamp system on a nanofabricated platform comprising a 50-100 nm aperture milled by
+focused ion beam (FIB) and a 30-50 nm thick tunable mouth self-assembled nanoporous
+(<3nm) layer coated on the FIBed aperture. We observe two unusual behaviors signiﬁcant
+to desalination performance. 1) When the pore size is comparable to the Debye screening
+32
+
+PAGE 33
+length for various salt concentrations, the ion currents at low concentrations are higher than
+what we expect from a linear model (Fig. 3.9(a)), suggesting that the counter ions attracted
+by the inherent pore surface charge to the pore surface vicinity is the main mechanism for
+ion transport. 2) Based on a Debye length of 1.0 nm for a bulk solution of 0.1 M KCl, the
+screening region should have occupied much of the pore (pore size =2.6 nm), and a transition
+point to surface-charge-dominated ion transport should be observed at 0.1 M concentration.
+Instead we observed a transition point at ∼0.01 M, suggesting that the Debye length inside
+the 2-3 nm nanopore is smaller than that for a free bulk solution (Fig. 3.9(a)). We hypothesize
+that the isoelectric point (a pH value for zero surface charge) of the silica nanopore surface
+has shifted to higher pH values compared to a free ﬂat silica surface.
+To follow-up on this hypothesis, zeta potentials (an indication of surface charge) of non-
+porous silica were measured at diﬀerent pH (see Fig. 3.8a) The results show that the isoelec-
+tric point for nanoporous silica is at pH=3-4, in contrast to pH=2.5 for a ﬂat silica surface.
+This result has been further conﬁrmed by the KBr adsorption of nanopores at diﬀerent pH.
+Fig. 3.8b shows the EDS elemental analysis for CTAB mesoporous silica ﬁlm soaked with
+KBr solution at diﬀerent pH (adjusted by HCl addition) then air-dried. At pH=3, the ad-
+sorbed ions are mainly negative (e.g. Cl − from HCl; Br− from KBr), indicating a positive
+surface charge at pH=3; at pH=4, K + starts showing up, indicating the transition to neg-
+ative surface charge; at pH=5, no Br − was found, indicating a negative surface charge. To
+summarize, a narrow pore geometry can facilitate salt transport at very low concentrations
+because ions interact with the charged surfaces, while transition to a constant salt rejection
+regime occurs at a smaller than expected Debye screening length. The shift in isoelectric
+point reﬂects new behavior of titratable silica surfaces in a nanoporous geometry: compared
+to bulk silica, negatively charged surfaces can be neutralized with fewer protons added to
+solution. These studies provide us with an understanding of pore properties that can help
+us design energy-eﬃcient water channels.
+Origins of the Dual Acidity Observed in Silica Mem-
+branes
+In a major theoretical advance, we identiﬁed the structural origins of the dual-acidity
+constant behavior observed at silica-water interfaces[17]. Ref. [31] reported that 19% (81%)
+of surface SiOH groups exhibit pKa=4.5 (8.5), respectively. This acid-base behavior governs
+the net charge inside silica pore membranes, which in turn aﬀects desalination performance.
+As silica-water interfaces tend to be amorphous and diﬃcult to image, we have applied
+accurate ab initio molecular dynamics simulations to compute the free energy of silanol group
+acidity in diverse chemical and hydrogen-bonding environments. We ﬁnd that most models
+proposed for the two pKa’s in the literature, such as those based on chemical connectivity and
+inter-silanol hydrogen bonding motifs, all yield pKa 7.9-9.5. High acidity of pKa 4.5, which
+approximates that of acetic acid (vinegar), is observed only on strained/defected regions of
+silica surfaces, on which we also ﬁnd evidence of water-incorporation reactions.
+33
+
+PAGE 34
+We also examined the pKa of narrow silica slits to compare with the shift in pH of zero
+charge (PZC) measured in experiments. 3, 4, and 6 layers of water are conﬁned between
+periodically replicated β-cristobalite slabs with reconstructed (100) surfaces, yielding 4.0
+surface SiOH groups per square nanometer of silica surface. AIMD simulations were applied
+to calculate the deprotonation potential of mean force (Fig. 3.10) and extract the pKa.
+We found that SiOH groups in very narrow water-ﬁlled silica slits, containing only 3 and
+4 layers of water, yield a pKa of 6.9. With approximately 6 layers of water, pKa=8.0 is
+predicted. Thus reducing the slit width actually decreases the pKa. This is contrary to
+the expectation that more conﬁned water exhibits a lower dielectric constant and hence
+renders the ionization involved in deprotonation less favorable. In other words, a higher
+pKa is expected for more conﬁned water and our experimental measurements of refractive
+index inside the silica nanopores do indicate a reduction relative to bulk water. However,
+all predicted pKa exhibit a standard deviation of about 0.5 pH unit. Hence one may argue
+that all the pKa in Fig. 3.10 are within statistical uncertainties of each other.
+Compared to experimental results described earlier, we note that our model silica slits
+exhibit conﬁnement in one dimension and do not have a cylindrical geometry. Furthermore,
+the experiments measure the PZC, which is the arithmetic mean of the pKa of -SiOH and
+SiOH+
+2 . Therefore the simulations and experimental results are not directly comparable.
+Discussion
+Our theoretical and experimental platforms enable us to investigate the interplay between
+water ﬂux and ion rejection in precisely-deﬁned nano-channels. Our simulation studies of
+ion rejection reveal that high pressures can force salt pairs into a channel, even if the channel
+is functionalized with charged groups at the entrance or interior. This highlights potential
+pitfalls of molecular simulations that apply abnormally high pressure in order to observe
+water transport at short simulation times and may also highlight diﬃculties with operating
+desalination plants at high pressures. Theoretical studies of natural channels reveal three
+sets of design rules for speciﬁc ion selection (at appropriate pressures) that could generate
+more healthy drinking water as well as provide input to a variety of industry and energy
+applications. Propositions for translating these ion-selective design features to inorganic
+pores have been made, but not yet tested. Instead, we pursued a systematic experimental and
+theoretical investigation to determine how variations in the chemistry of the nanopore walls
+and their size aﬀect water ﬂux and salt rejection. Although varying levels of hydrophobicity
+using TMS produced only modest ﬂux and ion rejection performance, we learned important
+lessons regarding hydrophobicity and pore size: 1) Some hydrophilicity on channel walls is
+required to provide stabilizing water ’binding sites;’ and 2) Small pore size enhances ion
+rejection commensurate with reduction in water ﬂux.
+In biological channel proteins, water-selective pores with perfect salt rejection are com-
+posed of narrow (sub-nm) pores that pass water fast and in single ﬁle. These pores lack the
+architectures associated with ion selectivity. Furthermore, narrow ’selectivity ﬁlters’ are also
+34
+
+PAGE 35
+associated with fast (selective) ion transport. An investigation into the properties of small
+pores reveals the importance of ion-surface interactions on ion transport properties. The
+Debye screening length for a solution of speciﬁc salt concentration inside a 2-3 nm nanopore
+is smaller than expected (relative to bulk solution). Therefore ion transport mechanisms
+are dominated by interactions with charged surfaces even at low concentrations and lead to
+enhanced ion transport. Further investigation into the charge of the conﬁned silica surfaces
+shows that charge in relation to solution pH is not as expected. In the nanopore geome-
+try, direct measurement of surface charge shows that the isoelectric point (the pH value for
+zero surface charge) is shifted to higher pH values relative to a ﬂat surface. Thus, smaller
+additions of protons (smaller shifts in pH) change the surface from negative, to neutral, to
+positive. With theory, we investigated the structural origin of acid dissociation constants
+of the hydroxylated silica surface and determined that strained regions of silica surfaces in-
+corporate water and yield more reactive (more readily dissociable, more acidic, lower pK a)
+surfaces. Thus, to approach the biological properties of cell membranes that we wish to
+mimic initially, that is, the fast water transport and high salt rejection of the water-selective
+protein channels, we conclude that we should avoid overly high pressures, avoid dipole ar-
+rangements on the pore walls that produce ion binding sites, and create narrow pores that
+promote interactions between surface and permeating species.
+35
+
+PAGE 36
+(a) Unmodiﬁed silanol surface,
+C.A.=38◦
+(b) Treated at 150 ◦C to yield 1.0
+TMS/nm2, C.A.=70◦
+(c) Treated at 200 ◦C to yield 1.3
+TMS/nm2, C.A.=82◦
+(d) Treated at 250 ◦C to yield 1.6
+TMS/nm2, C.A.=91◦
+(e) Treated at 300 ◦C to yield 2.2
+TMS/nm2, C.A.=98◦
+(f) Membrane ﬂux
+Figure 3.3. Variation in water contact angle (CA) and
+channel ﬂux with surface hydrophobicity (obtained by treat-
+ing surfaces with trimethyl silane, TMS). Water ﬂux dimin-
+ishes with reductions in pore size (f) and increased hydropho-
+bicity.
+36
+
+PAGE 37
+Figure 3.4. Representative snapshot of a silica pore simu-
+lated under periodic boundary conditions. The Si atoms are
+colored orange, the O atoms of silica are colored red, the C
+atoms of the methyl groups are colored green, the O atoms
+of the water molecules are colored blue, and all H atoms are
+colored white.
+37
+
+PAGE 38
+Figure 3.5. Eﬀect of water force ﬁelds on the diﬀusion co-
+eﬃcients (top) and occupancies of water molecules (bottom)
+inside silica pores
+38
+
+PAGE 39
+Figure 3.6. Eﬀect of the degree of methylation on the dif-
+fusion coeﬃcients and occupancies of water molecules inside
+silica pores
+39
+
+PAGE 40
+Figure 3.7. Eﬀect of pore size on the diﬀusion coeﬃcients
+and occupancies of water molecules inside silica pores
+40
+
+PAGE 41
+Figure 3.8. a) Zeta potential measurement of mesoporous
+silica; b) EDS data of KBr adsorption in mesoporous silica
+as pH varies.
+41
+
+PAGE 42
+(a) Eﬀect of salt concentration on 2.6 nm B56 pores
+ (b) Eﬀect of pH on pores of varying diameter
+Figure 3.9. Eﬀect of salt concentration and pH on ionic
+current through silica nanopores.
+42
+
+PAGE 43
+Figure 3.10. Deprotonation potential of mean force and
+pKa as functions of the approximate number of water layers
+conﬁned between silica slabs.
+43
+
+PAGE 44
+44
+
+PAGE 45
+Chapter 4
+Biomimetic High-Flux Desalination
+Membrane Based On Self-Assembled
+Nanopores Tuned by Atomic Layer
+Deposition
+At present, an important application area of RO technology is desalinating brackish water
+from interior sources that are in the range of 3–16 g/L[26]. Although less pressure (and
+energy) is required for these input sources, traditional diﬀusion-based membrane materials
+require high ﬂux in order to maintain acceptable salt rejection. A membrane material able
+to maintain high rejection at low ﬂux rates is required for a breakthrough in this application.
+Toward this end, we report here our investigation of nanoporous separation membranes.
+Porous aluminosilicates are well-known, roughly hexagonal structured, alternatives to
+zeolite materials[13] that can be functionalized by grafting surface silicates as in standard
+reversed-phased liquid chromatography column preparation. Aluminosilicate membranes
+containing pores around 20 nm in diameter and occupying 25-50% of the surface area formed
+the starting point for our experiments. A regular, oriented substructure composed of 2.6 nm
+pores was then formed with a solution of silica and Brij-56 lipid followed by calcination to
+remove the lipid. Finally, functionalization proceeded via deposition of silanes and layer-by-
+layer coating growth during liquid-phase atomic layer deposition (LP-ALD) reaction cycles.
+The molecular channels in the resulting peptide network have a sub-nm diameter with ex-
+posed -N-H, O=C-, and hydrophobic aromatic groups, deliberately designed to mimic the
+surface chemistry found in biological water-selective channel proteins.
+The salt rejection and membrane ﬂux were characterized for varied surface chemistries
+and pore sizes. We found that the salt rejection of porous ALD membranes increases substan-
+tially after ALD modiﬁcation with alternating amine and hydrophobic chemistries. After 32
+ALD cycles, these membranes show 85-95% salt rejection and more than triple the water ﬂux
+of a polyamide thin ﬁlm composite (TFC) membrane designed for seawater desalination. In
+addition the ALD membrane retains its high salt rejection properties at low pressure ranges
+(<150psi), suggesting a novel rejection mechanism able to operate eﬃciently at low applied
+pressure.
+45
+
+PAGE 46
+Because of the oriented channel architecture aﬀorded by our experimental platform, it
+is interesting to compare the pore structure with the naturally occurring aquaporin water
+channel. Aquaporins allow water transport at rates on the order of 109 molecules per pore per
+second and complete rejection of ions[6, 44]. Structurally, each aquaporin channel consists
+of six transmembrane α-helices arranged in a right-handed bundle to form a narrow channel.
+A series of backbone carbonyl oxygens, each providing a high dipole moment of around 3.5
+Debye, line one side of the channel and accept one hydrogen bond per water to properly
+orient a chain of translocating waters. The other side is composed primarily of hydrophobic,
+aromatic residues (one phenylalanine, and several tryptophan side-chains). This regular
+structure is interrupted in the middle by the asparagine NH 2 functional groups of two NPA
+(asparagine, proline, alanine) motifs donating hydrogen bonds in order to prevent proton
+conduction. The narrowest segment of the channel has a constriction between 3 and 5 ˚A in
+diameter[29, 44].
+Similar to aquaporins, our synthetic nanopores contain both hydrophilic amide and hy-
+drophobic aromatic functionality within a similar pore radius. However, ALD is not able to
+achieve the same level of structural control over the pore geometry. Thus water molecules
+translocating through the synthetic channel experience pockets of aquaporin-like function-
+ality, but are not as structurally constrained into a stable, ordered, single-ﬁle line.
+Materials and Methods
+The desalination membrane was fabricated by coating self-assembled mesoporous silica
+on 13 mm diameter anodized porous alumina discs (anodiscs R⃝1) from Whatman, followed
+by progressively tuning pore size and surface chemistry via atomic layer deposition.
+To prepare mesoporous silica, 0.90 g of Brij 56 was dissolved in 15 mL ethanol, followed
+by addition of 2.8 g of tetraethoxysilane (TEOS) and 1.25 mL of 0.07 M HCl aqueous
+solution. The solution was stirred vigorously for 75 minutes then diluted with water to 65
+mL. Anodiscs R⃝ were then dip-coated using this solution twice, and the dip-coated samples
+were calcined at 450◦C for 3 hours.
+In order to provide anchoring functionality for the ALD reactions, amine groups were
+added to the silica surface by immersing samples in a toluene aminopropyl triethylsilicate
+(APS) (33% w/w) and triethylamine (3% w/w) for 2 hours. The residual APS was removed
+under vacuum at 100◦C, and conﬁrmed with FT-IR (Fig. 4.1).
+ALD was carried out at 120 ◦C in an ˚A-dep ALD system. Terephthaloyl chloride (TC,
+heated at 120◦C), triethylamine (TEA) and parabenzenediamine (PA, heated 120 ◦C) were
+used as the precursors. Each ALD cycle consisted of the following four steps: 1) 20 seconds
+exposure of TC and TEA; 2) Ar purge at a ﬂow rate of 10 sccm for 10 seconds; 3) 20
+seconds exposure of PA and TEA. 4) Ar purge at a ﬂow rate of 10 sccm for 10 seconds.
+1Anodisk is a registered trademark of Whatman Int’l Ltd., UK
+46
+
+PAGE 47
+These steps were repeated to achieve surface polymer growth, progressively shrinking the
+mesopore radius.
+Results and Discussion
+Fig. 4.1 shows the FTIR spectra for the mesoporous silica samples treated by APS with
+various reaction times. We assigned the absorption at 1070 cm −1 to the Si-O stretching
+vibration; the absorption at 3600 cm−1 to surface silica -OH groups; and the absorptions at
+2800 cm−1 and 3300 cm−1 to C-H and N-H stretches, respectively. Because the absorptivity
+of the N-H bond is low, only a small peak is visible at 3300 cm −1. The C-H signal at
+2800 cm−1 can be attributed to the CH 2 group in the -CH 2-CH2NH ligand, and conﬁrms
+modiﬁcation of the pore surface by APS.
+Figure 4.1. FTIR-ATR Spectra for APS Pretreatment of
+Anodiscs R⃝
+Fig. 4.2 shows the FTIR spectra for the samples before ALD modiﬁcation (the red spec-
+trum), after 8 cyles polyamide ALD (the purple spectrum) and after 32 cycle polyamide
+ALD (the blue spectrum). Before ALD, there was no substantial absorption in the range of
+1200-1900 cm−1. At 8 cycles of ALD, strong signals at 1680 cm−1 and 1510 cm−1 are present.
+These are characteristic of amide I bond and amide II bonds, respectively. The adsorption
+at 1440 cm−1 and 1285 cm−1 can be attributed to N-H deformation and C-N stretch in
+amide structure. After 32 cycles of ALD the intensities of all these peaks increase, indicat-
+ing continued deposition of polyamide in agreement with our observations of decreased pore
+radius.
+In order to probe the progressive pore size reduction by ALD modiﬁcation, the mem-
+brane’s permeability to N 2 and He was studied. Fig. 4.3(a) shows the gas permeance of
+47
+
+PAGE 48
+Figure 4.2. FTIR spectra of samples before and after ALD
+membranes after various ALD cycles. Prior to ALD, the membrane showed good perme-
+ability to both N 2 and He, and the He/N 2 selectivity was about 2.0. This is in agreement
+with Knudsen diﬀusion operating at a pore size of 2.6 nm, much larger than the molecular
+diameters of both N 2 (3.6˚A) and He (2.2 ˚A). When the number of ALD cycles increases,
+the permeance of both N 2 and He decreases, conﬁrming the progressive pore size reduction.
+In this range, the permeance is proportional to the square of pore diameter, as predicted
+by Knudsen diﬀusion with a cylindrical pore model. After 8 cycles, the He/N 2 selectivity
+becomes > 2.6. This suggests that the gas transport mechanism has changed from Knudsen
+diﬀusion to conﬁgurational diﬀusion,where the pore size is expected to be about 3–4 times
+the gas molecular diameter, or 1.0–1.4 nm. After 16 cycles, N 2 permeance tends to zero,
+indicating that no pores larger than 3 .6 ˚A remain. This implies an ALD deposition rate of
+about 0.08 ˚A/cycle or higher (if extra cycles were required to close unsealed defects gener-
+ated during the Brij-56 templating). At this moment, the He permeance is still about 6.4
+sccm/bar, suggesting that the membrane still has an atomic scale pore size of about 2.2–
+3.6 ˚A, considering a He molecular diameter of 2.2 ˚A. After 32 cycles, the He/N 2 selectivity
+increased to 36 and He permeance was 4.8 sccm, showing that the membrane retains some
+porosity with pore diameter around 2–3 ˚A.
+After LP-ALD deposition of polyamide, water permeance and salt rejection properties
+were measured using an Alltech high pressure HPLC water pump, with a constant input feed
+at 5 g/L NaCl solution and an imposed membrane pressure drop of 200 psi. Figure 4.3(b)
+shows the water ﬂux and salt rejection of the membrane samples described above. Before
+ALD modiﬁcation, the pore size was 2.6 nm and the pore surface was covered by hydroxyl
+groups. The water ﬂux was 9.8 cc/hr and small salt rejection of 4.7% was observed. After
+two ALD cycles, the water ﬂux was reduced slightly but the salt rejection increased from
+48
+
+PAGE 49
+4.7% to 18%, suggesting that the polyamide surface chemistry has a substantial impact on
+the salt rejection properties. After 4 ALD cycles, water ﬂux was reduced to 4.1cc/hr and the
+salt rejection approached 40%. At this moment the estimated pore size was about 2.0 nm
+according to gas permeance data. After 8 cycles, the water ﬂux further reduced to 2.8 cc/hr,
+and the salt rejection increased to 53%, where the estimated pore size was about 1.2 nm.
+After 16 cycles, water ﬂux was 2.2 cc/hr, and the salt rejection increased substantially to
+78%, where the estimated average pore size was about 2–3 ˚A, but the relatively low He/N 2
+selectivity of 16 suggests that there may be open defects in the membrane at this point. After
+32 cycles, the water ﬂux slightly decreased to 2.0 cc/hr, while the salt rejection increased
+to 86%. The estimated average pore size was still around 2–3 ˚A, but the higher He/N 2
+selectivity indicates a lower defect level. The water ﬂux did not diminish much even though
+the thickness of the ALD layer doubled. This suggests that after 32 cycles the ALD membrane
+is thin enough that membrane thickness is not the limiting factor for water transport.
+(a) Gas permeance and He/N 2 selectivity
+ (b) Water ﬂux (blue) and salt rejection (red).
+Figure 4.3. Variation of membrane characteristics with
+increasing number of ALD cycles
+Four more samples were prepared with 32 ALD cycles. The water ﬂux was measured
+to be 2.00, 2.10, 2.00, and 2.18 cc/hr and the salt rejections were all in the range of 85%-
+95%. Fig. 4.4 shows a performance comparison between this ALD membrane and a sample
+FILMTECTM SW30HR membrane tested under the same conditions. Compared to the
+polyamide thin ﬁlm composite (TFC) membrane, the ALD membrane has around three
+times the water ﬂux at 300 psi, and the ratio increases with decreasing pressure. The salt
+rejection ratio for the ALD membrane is slightly lower than the commercial DOW membrane
+at the high pressure for which the SW30HR membrane was designed. At 150 psi, the ALD
+membrane does well in both water ﬂux and salt rejection. In addition, the ALD membrane
+still retains a linear ﬂux relationship and nearly constant salt rejection with decreasing
+pressure, making it able to operate highly eﬃciently as low as 80 psi (at only 26 psi of
+resistive loss), where it achieves a ﬂux of lP = 3.05 cm/h·bar and 87% salt rejection – for a
+standard resistance of ϵ = 0.16 bar·h/cm!
+In this work, we have demonstrated the fabrication of high ﬂux desalination membranes
+49
+
+PAGE 50
+Figure 4.4. Comparison between ALD membrane and
+commercial DOW membrane
+with substantial salt rejection capabilities based on a hybrid inorganic/organic framework.
+The combination of self-assembled mesoporous silica and subsequent ALD tuning has per-
+mitted synthesis of an oriented nanoporous geometry with which it is possible to mimic
+some features of natural water channels. The immediate improvement in salt rejection after
+2 ALD cycles hints that the mixed amide/hydrophobic surface chemistry plays an important
+role in ion exclusion. Further cycles substantially increase the salt rejection, likely through
+a combination of narrowing the channel diameter and defect healing. When the average
+channel size is narrowed to atomic dimensions, 2–3 ˚A in diameter, 85 95% salt rejection is
+achieved.
+With current processing conditions, our membrane may contain gap defects requiring
+more ALD cycles to close, blocking some smaller pores in the process. Despite this shortcom-
+ing, the high ﬂux rates achieved show that active pores remain very good water conductors.
+Such chemically tunable membranes allow strong tests of channel structure/function rela-
+tionships to lay the groundwork for future desalination technologies using nano-engineered
+structures. The low-pressure desalination performance of the present membrane shows that
+a breakthrough is possible in membrane energy eﬃciency using oriented porous materials.
+Other important design goals for reverse osmosis membrane materials include a broader
+operating pH and temperature range and reduced susceptibility to oxidation, biological at-
+tack and degradation. Although there is plenty of room at the nano-scale for innovations of
+the membrane support to address these these considerations, they must eventually be taken
+into account before nanoporous reverse osmosis membranes can be brought to fruition.
+Some of the advantages of silica-based membranes are the high thermal stability and
+50
+
+PAGE 51
+material strength of silicates, the negligible observed dependence of rejection rate on feed
+pressure, and the ability to control pore interior independently from surface chemistry. The
+latter property could prove highly useful in further development of surface chemistries to
+prevent biofouling. Indeed, bioﬁlm formation on silica surfaces has been considered before
+in the biomedical literature. Silica is known to be much more tolerant to high tempera-
+tures than polymer membranes, and this can be exploited for controlling microorganisms
+by sterilization. Although our anodisk R⃝-based membrane has not been able to show the
+high burst strength required for seawater desalination, the pore structure itself is expected
+to be much less compressible than polymer membranes, resulting in higher water ﬂux during
+high pressure operation. Additionally, our system does not show reduced salt rejection at
+low pressure operation as in conventional polymer membranes. Finally, the large range of
+potential pore modiﬁcations makes this an ideal setup for achieving ﬁne-grained control over
+the solute rejection characteristics of ultra low pressure, nanoﬁltration membranes.
+51
+
+PAGE 52
+52
+
+PAGE 53
+Chapter 5
+Conclusions
+In this project, we have completed a range of theoretical and experimental studies to un-
+derstand, design, implement, and test novel nanoporous reverse osmosis membrane materials.
+Investigations of ion selectivity in biological systems have helped elucidate the principles of
+ionic selectivity encountered by natural water conducting and ion-selective channels and
+generate possibilities for their translation into synthetic pores. Based on our achievements
+in atomic layer deposition (ALD) and molecular imprinting techniques, we have constructed
+structures that mimic biological pores in dimensions and exposed functionality. Their atomic-
+scale was demonstrated using gas molecule size selectivity, and several have been shown to
+possess improved salt rejection and water permeability.
+Signiﬁcant accomplishments have been made toward developing a science-based under-
+standing of the principles for optimization of water ﬂux and select salt rejection in mem-
+branes. Both equilibrium and non-equilibrium desalination energy requirements were derived
+in a form suitable for application to industrial processes, revealing the critical impact of the
+membrane water permeability on overall process energy requirements and the potential≈25%
+decrease on total energy consumption that could be made possible through future improve-
+ments in membrane technology. We have completed computational studies of pressure-driven
+water and salt permeation through model nanopore membranes, with both dipolar walls and
+chemically decorated/undecorated mouths. We found that, in contrast to experience with
+polymer membranes, for ﬁxed channel dimensions lower salt rejection is observed with very
+high applied pressure, even for decorated pore mouths, which highlights the importance of
+ion pairing eﬀects. Through an examination of model dipolar membranes, we found several
+important electrostatic mechanisms for ion selection. Theoretical studies of cation selective
+biological channels revealed that selectivity can be achieved through either ﬂexible pore bind-
+ing sites that over-coordinate the permeant ion or through maintaining a speciﬁc cavity size
+chemically preferred by the permeant ion. Simulations on coarse-grained membrane models
+showed that the negative dipole moments of oxygens lining both silica and potassium chan-
+nel pores cause cations to populate the pore interior more strongly for longer pores, with
+corresponding anion exclusion. Next, water occupying regions of the pore far from the center
+(where the surface dipole is changing and the electric ﬁeld is largest) are unable to provide
+screening at large distances, lowering the eﬀective dielectric of the pore interior to values in
+the neighborhood of 2.3 to 10 for 12 nm pores[16]. Because of the long-ranged interaction
+of permeating ions with the oppositely oriented membrane surface dipoles, diﬀerent dipole
+densities on the pore interior and membrane surface are required to achieve a net electro-
+53
+
+PAGE 54
+static potential in macroscopic pores. Salt rejection was found to be much higher for pores
+incorporating uniform dipole layers along the channel as opposed to simple functionalization
+of the outer pore rim. Atomistic molecular dynamics calculations with hydrophobic pores
+showed smaller diﬀusion constants, indicating lower water permeabilities, correlating with
+experimentally observed lower ﬂux and higher salt rejection. Ab-initio molecular dynamics
+simulations also identiﬁed the structural origins of the dual-acidity constant behavior ob-
+served at silica-water interfaces. This acid-base behavior governs the net charge inside silica
+pore membranes, which aﬀects desalination performance through tuning the channel’s ionic
+selectivity and hydrophilicity. These theoretical works have made valuable contributions to
+the design and testing of new desalination membrane materials and processes.
+We have also made advancements in technical and experimental capabilities and expertise
+for nanoporous membrane design, fabrication, testing and application. Using liquid-phase
+atomic layer deposition, we achieved deposition of biomimetic chemical functionality on
+self-assembled mesoporous silica to create 2-3 nm nanopores capable of high salt rejection
+and water permeability. The best measurements on these systems yielded standardized
+resistances of 0.16 bar-h/cm, two to three times lower than the lowest energy consumption
+membranes currently available for brackish water desalination. This eﬃciency increase would
+directly translate to a 50-66% decrease in operating energy loss at each RO membrane unit.
+These membranes are capable of constant salt rejection at very low excess pressure and are in
+addition relatively insensitive to input salt concentration for salinities in the useful operating
+range above 0.05 mol/L (Fig. 3.9(a)). Preliminary capacitance measurements of plain 2.6
+nm diameter silica pores placed the interior dielectric around 29, roughly consistent with
+the theoretical estimates on narrower channels. Also in accord with theory, but contrary to
+expectations of decreased friction from pore walls, increases in pore hydrophobicity decreased
+water permeability. Although the increase in water contact angle and water-pore surface
+tension should imply decreased pore wetting and friction, a combination of decreased pore
+size by the dewetted trimethylsilyl groups and water orientational restriction have combined
+to produce this result. Finally, experiments to understand the role of surface charge on ion
+transport through nanopores with pore sizes smaller than the Debye screening length have
+resulted in new insights into water reactions at the silica-water interface. Because of the
+multiple protonation reactions of surface silanols, we measured the surface charge of silica
+as a function of pH, and found that the isoelectric point of nanoporous silica is pH=3 ∼4,
+0.5∼1.5 higher than a ﬂat silica surface. The combination of theory and experiment utilized
+in this project has thus given both top-down and bottom-up characterizations of the utility
+and chemistry of these novel nanoporous membrane materials.
+The studies undertaken in this work lay the groundwork for research in several future
+directions. First, preliminary work has shown that an extension of the nonequilibrium theory
+of Chapter 2 to account for electrically driven transport can be developed. This will enable
+determination of individual ion selectivities and water ﬂux through voltage measurements on
+patches of tens of nanochannels. Studying batch to batch variations at this reduced size will
+allow us to separate out irreproducible ﬂuxes arising from membrane defects as well as lead to
+further information on ion transport behavior within nanopores. This approach has not yet
+been pursued to completion due to possible diﬃculties in inferring the very small water ﬂux
+54
+
+PAGE 55
+through these small patches from variations in current with time and concentration[30, 33],
+and in addition is not suitable for scale-up.
+Next, the phenomenal conductivity of aquaporins and the theoretical limiting conduc-
+tivity calculated in Chapter 2 indicates that order of magnitude improvements in water
+permeabilities over what has been achieved to date are still possible. Since this report has
+shown improved ﬂux and salt rejection capabilities, the most pressing need is to develop a
+strong, ﬂexible support containing a high density of oriented nanochannels for ALD modi-
+ﬁcation. This can provide a work-around for the brittle anodized alumina supports used in
+Chapter 4 – required for creating ideal porous structures matching theoretical studies used
+to learn pore design rules – and possibly decrease the number of large gap defects. It would
+also enable incorporation of the resulting membrane into the spiral wound elements common
+to industrial operations and possibly ALD deposition in an assembly line format. Further
+improvements enabling the placement of water-coordinating groups at precise intervals along
+the channel axis would allow an even closer approach to the aquaporin structure, bringing
+further possible improvements in performance.
+Finally, the approach taken in this work for ALD functionalization of nanochannels can
+be immediately applied in other important energy storage and separation applications. Car-
+bon dioxide capture and removal could potentially be mediated by pores able to transport
+carbonate selectively. Further incorporating a switchable gate into such a CO 2−
+3 -selective
+pore would provide a membrane capable of novel staged architectures for CO 2 separation.
+Our biologically inspired approach also holds potential promise for the study and design of
+novel Li+-selection mechanisms for translation into synthetic membranes. Ion selective mem-
+branes in general can be used to convert energy stored in concentration gradients directly
+into electrical energy.
+Our experiments show that the behavior of ions conﬁned within nanopores diﬀer signiﬁ-
+cantly from that in free bulk solutions. Our theoretical studies show novel structural designs
+that control ion passage through membranes. Based on these observations, new ideas have
+been developed to help design nanopores that permit fast transport of water and select ions,
+thus providing novel solutions for energy-eﬃcient, highly selective membrane-based separa-
+tion technology critical not only to water puriﬁcation, but also pertinent to electrical energy
+storage applications in supercapacitors and lithium-ion batteries. Our work thus strongly
+impacts Sandia’s missions in national energy security (eﬃcient separations) and public health
+(clean, cheap water).
+55
+
+PAGE 56
+56
+
+PAGE 57
+References
+[1] W. T. Andrews, W. F. Pergande, and G. S. McTaggart. Energy performance enhance-
+ments of a 950 m 3/d seawater reverse osmosis unit in Grand Cayman. Desalination,
+135(1–3):195–204, 2001.
+[2] D. Asthagiri, P. D. Dixit, S. Merchant, M. E. Paulaitis, L. R. Pratt, S. B. Rempe,
+and S. Varma. Ion selectivity from local conﬁgurations of ligands in solutions and ion
+channels. Chem. Phys. Lett. (Frontiers Article) , 485(1–3):1–7, 2010. (invited, cover
+page).
+[3] Z. Chen and Y. B. et al. Jiang. Dna translocation through an array of kinked nanopores.
+Nature Materials, 9:667–675, 2010.
+[4] R. T. Cygan, C. J. Brinker, M. Nyman, K. Leung, and S. B. Rempe. A molecular basis
+for advanced materials in water treatment. MRS Bull. , 33:42–47, 2008.
+[5] F. Fornasiero, H. G. Park, J. K. Holt, M. Stadermann, C. P. Grigoropoulos, A. Noy,
+and O. Bakajin. Ion exclusion by sub-2-nm carbin nanotube pores. Proc. Nat. Acad.
+Sci., 105(45):17250–17255, 2008.
+[6] J. Bernard Heymann and Andreas Engel. Aquaporins: Phylogeny, structure, and phys-
+iology of water channels. News Physiol. Sci. , 14(5):187–193, 1999.
+[7] C. Jarzynski and O. Mazonka. Feynman’s ratchet and pawl: An exactly solvable model.
+Phys. Rev. E , 59(6):6448–6459, Jun 1999.
+[8] E. T. Jaynes. The minimum entropy production principle. Ann. Rev. Phys. Chem. ,
+31:579–601, 1980.
+[9] Y.-B. Jiang, G. Xomeritakis, Z. Chen, D. Dunphy, D. Kissel, J. L. Cecchi, and C. Jeﬀrey
+Brinker. Sub-10 nm thick microporous membranes made by plasma-deﬁned atomic layer
+deposition of a bridged silsesquioxane precursor.J. Amer. Chem. Soc., 129:15446–15447,
+November 2007.
+[10] Ying-Bing Jiang, Nanguo Liu, Henry Gerung, Joseph L. Cecchi, and C. Jeﬀrey Brinker.
+Nanometer-thick conformal pore sealing of self-assembled mesoporous silica by plasma-
+assisted atomic layer deposition. J. Amer. Chem. Soc. , 128(34):11018–11019, 2006.
+[11] Peter C. Jordan. Tuning a potassium channel–the caress of the surroundings. Biophys.
+J., 93(4):1091–1092, 2007.
+[12] L. Kastelan-Kunst, V. Dananic, B. Kunst, and K. Kosutic. Preparation and porosity
+of cellulose triacetate reverse osmosis membranes. J. Membrane Sci. , 109(2):223–230,
+1996.
+57
+
+PAGE 58
+[13] C. T. Kresge, M. E. Leonowicz, W. J. Roth, J. C. Vartuli, and J. S. Beck. Ordered meso-
+porous molecular sieves synthesized by a liquid-crystal template mechanism. Nature,
+359:710–712, 1992.
+[14] R Kubo. The ﬂuctuation-dissipation theorem. Rep. Prog. Phys., 29:255, 1966.
+[15] Uri Lachish. Osmosis and thermodynamics. Am. J. Phys. , 75(11):997–998, 2007.
+[16] K. Leung. Ion-dipole interactions are asymptotically unscreened by water in dipolar
+nanopores, yielding patterned ion distributions. JACS, 130:1808, 2008.
+[17] K Leung, I. M. B. Nielsen, and L. J. Criscenti. Elucidating the bimodal acid-base
+behavior of the water-silica interface from ﬁrst principles. J. Amer. Chem. Soc. ,
+131(51):18358–18365, 2009.
+[18] K. Leung and S. B. Rempe. Ion rejection by nanoporous membranes in pressure-driven
+molecular dynamics simulations. J. Comput. and Theor. Nanosci. , 6:1–8, 2009. (in-
+vited).
+[19] K. Leung, S. B. Rempe, and A. von Lilienfeld. Ab initio molecular dynamics calculation
+of ion hydration free energies. J. Chem. Phys. , 130(20):204507–204518, 2009.
+[20] Kevin Leung, Susan B. Rempe, and Christian D. Lorenz. Salt permeation and exclusion
+in hydroxylated and functionalized silica pores. Phys. Rev. Lett. , 96(9):095504, Mar
+2006.
+[21] Ira N. Levine. Physical Chemistry. McGraw-Hill, 5 th ed. edition, 2001.
+[22] Liangxiong Li, Junhang Dong, and Tina M. Nenoﬀ. Transport of water and alkali
+metal ions through mﬁ zeolite membranes during reverse osmosis. Sep. Purif. Tech. ,
+53(1):42–48, 2007.
+[23] Liangxiong Li, Junhang Dong, Tina M. Nenoﬀ, and Robert Lee. Desalination by reverse
+osmosis using MFI zeolite membranes. J. Membr. Sci. , 243(1-2):401–404, 2004.
+[24] David R. Lide. CRC Handbook of Chemistry and Physics . CRC Press, Boca Raton, FL,
+2004.
+[25] C. D. Lorenz, M. Tsige, S. B. Rempe, M. Chandross, M. J. Stevens, and G. S. Grest.
+Simulation study of the silicon oxide and water interface. J. Comput. and Theor.
+Nanosci., 2010. (invited, in print).
+[26] Yan-Yue Lu, Yang-Dong Hu, Xiu-Liung Zhang, Lian-Ying Wu, and Qing-Zhi Liu. Op-
+timum design of reverse osmosis system under diﬀerent feed concentration and product
+speciﬁcation. J. Membr. Sci. , 287(2):219–229, 2007.
+[27] S. Moghaddam, E. Pengwang, and Y. B. et al. Jiang. An inorganic-organic proton
+exchange membrane for fuel cells with a controlled nanoscale pore structure. Nature
+Nanotech, 5:230–236, 2010.
+58
+
+PAGE 59
+[28] A. W. Mohammad, N. Hilal, H. Al-Zoubi, and N. A. Darwish. Prediction of perme-
+ate ﬂuxes and rejections of highly concentrated salts in nanoﬁltration membranes. J.
+Membr. Sci., 289(1-2):40–50, 2007.
+[29] Kazuyoshi Murata, Kaoru Mitsuoka, Teruhisa Hirai, Thomas Walz, Peter Agre,
+J. Bernard Heymann, Andreas Engel, and Yoshinori Fujiyoshi. Structural determinants
+of water permeation through aquaporin-1. Nature, 407:599–605, October 2000.
+[30] Tatsuhiro Okada, Signe Kjelstrup Ratkje, and Harald Hanche-Olsen. Water transport
+in cation exchange membranes. J. Membrane Sci. , 66(2-3):179–192, 1992.
+[31] Shaowei Ong, Xiaolin Zhao, and Kenneth B. Eisenthal. Polarization of water molecules
+at a charged interface: second harmonic studies of the silica/water interface. Chemical
+Physics Letters, 191(3-4):327 – 335, 1992.
+[32] Lars Onsager. Reciprocal relations in irreversible processes. I. Phys. Rev., 37(4):405–
+426, Feb 1931.
+[33] Magnar Ottøy, Tormod Førland, Signe Kjelstrup Ratkje, and Steﬀen Møller-Holst.
+Membrane transference numbers from a new emf method. J. Membrane Sci. , 74(1-
+2):1–8, 1992.
+[34] G. Owen, M. Bandi, J. A. Howell, and S. J. Churchouse. Economic assessment of
+membrane processes for water and waste water treatment. J. Membrane Sci. , 102:77–
+91, 1995.
+[35] J. Pang, J. N. Stuecker, Y.-B. Jiang, A. J. Bhakta, E. D. Branson, P. Li, J. Cesarano,
+D. Sutton, P. Calvert, and C. J. Brinker. Directed aerosol writing of ordered silica
+nanostructures on arbitrary surfaces with self-assembling inks. SMALL, 4(7):982–989,
+2008.
+[36] G. Pique. Low power bill makes desalination aﬀordable. Int’t Desal. And Water Reuse
+Quarterly, November 2005.
+[37] S. B. Rempe and K. Leung. Response to “comment on ‘ab initio molecular dynamics
+calculation of ion hydration free energies’ [jcp 133, xx71xx (2010).”. J. Chem. Phys. ,
+133(1), 2010. (in print).
+[38] S. B. Rempe, T. R. Mattsson, and K. Leung. On the complete basis set limit and
+plane-wave methods in ﬁrst-principles simulations of water. Phys. Chem. Chem. Phys.
+(Communication), 10:4685–4687, 2008.
+[39] R. Riley. Reverse Osmosis. 1990. vol. 2, US DOE Report DOE/ER/30133-H1.
+[40] Dow Water & Process Solutions. FILMTECTM Reverse Osmosis Membranes Technical
+Manual. Dow Chemical Company, Midland MI. electronic resource, downloaded Sept.
+2010.
+59
+
+PAGE 60
+[41] A. J. Staverman. Non-equilibrium thermodynamics of membrane processes. Trans.
+Faraday Soc., 48:176–185, 1952.
+[42] R. L. Stover. Energy recovery device performance analysis. ERI Technical Report, 2005.
+[43] R. L. Stover. Low energy consumption SWRO. ERI Technical Report, 2008.
+[44] Emad Tajkhorshid, Peter Nollert, Morten ø Jensen, Larry J. W. Miercke, Joseph
+O’Connell, Robert M. Stroud, and Klaus Schulten. Control of the selectivity of the
+aquaporin water channel family by global orientational tuning. Science, 296(5567):525–
+530, April 2002.
+[45] S. Varma and S. B. Rempe. Tuning ion coordination architectures to enable selective
+partitioning. Biophys. J., 93:1093–1099, 2007.
+[46] Sameer Varma and Susan B. Rempe. Structural transitions in ion coordination driven
+by changes in competition for ligand binding. J. Am. Chem. Soc., 130(46):15405–15419,
+2008.
+[47] Sameer Varma and Susan B. Rempe. Multi-body eﬀects in ion binding and selectivity.
+Biophys. J., 2010. in press.
+[48] Sameer Varma, Dubravko Sabo, and Susan B. Rempe. K +/Na+ selectivity in K chan-
+nels and valinomycin: Over-coordination versus cavity-size constraints. J. Mol. Biol. ,
+376:13–22, 2008.
+[49] Troy W. Whitﬁeld, Sameer Varma, Edward Harder, Guillaume Lamoureux, Susan B.
+Rempe, and Benoˆ ıt Roux. Theoretical study of aqueous solvation of K+ comparing ab
+initio, polarizable, and ﬁxed-charge models. J. Chem. Theory Comput., 3(6):2068–2082,
+2007.
+[50] G. Xomeritakis, N.G. Liu, Z. Chen, Y.-B. Jiang, R. Khn, P.E. Johnson, C.-Y. Tsai,
+P.B. Shah, S. Khalil, S. Singh, and C.J. Brinker. Anodic alumina supported dual-layer
+microporous silica membranes. J. Membrane Sci. , 287(2):157–161, 2007.
+[51] Luning Zhang, Seema Singh, Chuanshan Tian, Y. Ron Shen, Yan Wu, Mark A. Shannon,
+and C. Jeﬀery Brinker. Nanoporous silica-water interfaces studied by sum-frequency
+vibrational spectroscopy. J. Chem. Phys. , 130(15):154702, 2009.
+60
+
+PAGE 61
+DISTRIBUTION:
+1 Ying-Bing Jiang
+E PS, MSC03 2040
+1 University of New Mexico
+Albuquerque NM 87131-0001
+2 MS 0895 S. Rempe, 08635
+2 MS 1315 D. M. Rogers, 08635
+1 MS 1413 E. Ackerman, 08635
+1 MS 9291 B. Simmons, 08630
+1 MS 9161 B. Even, 08650
+1 MS 9161 S. Allendorf, 08656
+1 MS 9405 G. Kubiak, 08600
+1 MS 0754 M. Rigali, 06736
+1 MS 1415 P. J. Feibelman, 01130
+1 MS 0886 T. M. Alam, 01816
+1 MS 0735 J. Merson, 06730
+1 MS 0754 P. Brady, 06730
+1 MS 0484 R. Hwang, 08004
+1 MS 1427 C. Barbour, 01100
+1 MS 1315 J. Nelson, 01130
+1 MS 0724 J. Hruby, 06000
+1 MS 0899 Technical Library, 9536 (electronic copy)
+1 MS 0161 Legal Intellectual Property, 11500
+1 MS 0359 D. Chavez, LDRD Oﬃce, 1911
+61
+
+PAGE 62
+62
+
+PAGE 63
+v1.35
+
+PAGE 64

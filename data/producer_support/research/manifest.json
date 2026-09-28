@@ -1,0 +1,54 @@
+[
+  {
+    "id": "tarsim_sera_2026",
+    "url": "https://www.tarsim.gov.tr/staticweb/krm-web/mevzuatlar/genel-sartlar/2026/sera-genel-sartlar.pdf",
+    "accessed_at": "2026-09-23T11:51:37.925194+00:00",
+    "claim": "2026 sera koşulları; A.2.1(6) top raksız teknik donanım/ürün ilişkisi",
+    "classification": "OFFICIAL_EXTERNAL_SOURCE",
+    "applies_to": "Türkiye; Arktik tesisine otomatik uygulanmaz",
+    "local_path": "data/producer_support/research/tarsim_sera_2026.pdf",
+    "sha256": "a6e63462942a773f01e334f17e7d312d5df53ac57ef30b2ecc6ed87be5f420b5",
+    "archive_status": "DOWNLOADED",
+    "content_type": "application/pdf",
+    "final_url": "https://www.tarsim.gov.tr/staticweb/krm-web/mevzuatlar/genel-sartlar/2026/sera-genel-sartlar.pdf"
+  },
+  {
+    "id": "tarsim_gelir",
+    "url": "https://www.tarsim.gov.tr/subPage/gelir-koruma-sigortasi",
+    "accessed_at": "2026-09-23T11:51:38.129209+00:00",
+    "claim": "Buğday, arpa, çavdar kapsamı",
+    "classification": "OFFICIAL_EXTERNAL_SOURCE",
+    "applies_to": "Türkiye; Arktik tesisine otomatik uygulanmaz",
+    "local_path": "data/producer_support/research/tarsim_gelir.html",
+    "sha256": "0af978d965ad36c57f5673c0bf1b72e6d2a73b37b037da71ab5e025796755866",
+    "archive_status": "DOWNLOADED",
+    "content_type": "text/html;charset=UTF-8",
+    "final_url": "https://www.tarsim.gov.tr/subPage/gelir-koruma-sigortasi"
+  },
+  {
+    "id": "bakanlik_sozlesme",
+    "url": "https://www.tarimorman.gov.tr/BUGEM/Haber/849/Bitkisel-Uretim-Tip-Sozlesmesi",
+    "accessed_at": "2026-09-23T11:51:38.159508+00:00",
+    "claim": "Sözleşmeli bitkisel üretim tip sözleşmesi",
+    "classification": "OFFICIAL_EXTERNAL_SOURCE",
+    "applies_to": "Türkiye; Arktik tesisine otomatik uygulanmaz",
+    "local_path": "data/producer_support/research/bakanlik_sozlesme.html",
+    "sha256": "12970cceba8e408a5dc772835191345c7bb743f2e196e8f6a73eeebfe09a661e",
+    "archive_status": "DOWNLOADED",
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.tarimorman.gov.tr/BUGEM/Haber/849/Bitkisel-Uretim-Tip-Sozlesmesi"
+  },
+  {
+    "id": "seddk_kuruluslar",
+    "url": "https://seddk.gov.tr/tr/kuruluslar/sigorta-reasurans-ve-bes-sirketleri",
+    "accessed_at": "2026-09-23T11:51:39.816476+00:00",
+    "claim": "Yetkili kuruluşları inceleme başlangıcı",
+    "classification": "OFFICIAL_EXTERNAL_SOURCE",
+    "applies_to": "Türkiye; Arktik tesisine otomatik uygulanmaz",
+    "local_path": "data/producer_support/research/seddk_kuruluslar.html",
+    "sha256": "38f74bfe4d38b8f13b97dd901ee0777f1e637aecb47f1ec17bdfc0ad8257c3f1",
+    "archive_status": "DOWNLOADED",
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://seddk.gov.tr/tr/kuruluslar/sigorta-reasurans-ve-bes-sirketleri"
+  }
+]

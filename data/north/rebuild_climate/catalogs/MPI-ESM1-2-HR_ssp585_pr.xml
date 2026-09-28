@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partial" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partialnoncss" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <dataset name="MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2015_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2015_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2015_v2.0.nc">
+      <dataSize units="Mbytes">205.2</dataSize>
+      <date type="modified">2025-06-09T10:33:38.592Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2016_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2016_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2016_v2.0.nc">
+      <dataSize units="Mbytes">206.2</dataSize>
+      <date type="modified">2025-06-09T10:33:48.436Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2017_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2017_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2017_v2.0.nc">
+      <dataSize units="Mbytes">203.9</dataSize>
+      <date type="modified">2025-06-09T10:31:54.294Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2018_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2018_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2018_v2.0.nc">
+      <dataSize units="Mbytes">203.2</dataSize>
+      <date type="modified">2025-06-09T10:34:11.181Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2019_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2019_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2019_v2.0.nc">
+      <dataSize units="Mbytes">203.4</dataSize>
+      <date type="modified">2025-06-09T10:33:44.627Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2020_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2020_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2020_v2.0.nc">
+      <dataSize units="Mbytes">204.6</dataSize>
+      <date type="modified">2025-06-09T10:32:26.410Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2021_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2021_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2021_v2.0.nc">
+      <dataSize units="Mbytes">203.4</dataSize>
+      <date type="modified">2025-06-09T10:34:13.354Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2022_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2022_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2022_v2.0.nc">
+      <dataSize units="Mbytes">205.1</dataSize>
+      <date type="modified">2025-06-09T10:34:17.773Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2023_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2023_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2023_v2.0.nc">
+      <dataSize units="Mbytes">203.0</dataSize>
+      <date type="modified">2025-06-09T10:32:38.644Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2024_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2024_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2024_v2.0.nc">
+      <dataSize units="Mbytes">203.9</dataSize>
+      <date type="modified">2025-06-09T10:34:18.949Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2025_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2025_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2025_v2.0.nc">
+      <dataSize units="Mbytes">203.7</dataSize>
+      <date type="modified">2025-06-09T10:33:52.448Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2026_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2026_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2026_v2.0.nc">
+      <dataSize units="Mbytes">202.7</dataSize>
+      <date type="modified">2025-06-09T10:30:51.747Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2027_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2027_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2027_v2.0.nc">
+      <dataSize units="Mbytes">203.5</dataSize>
+      <date type="modified">2025-06-09T10:34:19.682Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2028_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2028_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2028_v2.0.nc">
+      <dataSize units="Mbytes">202.5</dataSize>
+      <date type="modified">2025-06-09T10:30:57.685Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2029_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2029_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2029_v2.0.nc">
+      <dataSize units="Mbytes">200.4</dataSize>
+      <date type="modified">2025-06-09T10:30:52.737Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2030_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2030_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2030_v2.0.nc">
+      <dataSize units="Mbytes">203.5</dataSize>
+      <date type="modified">2025-06-09T10:31:16.501Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2031_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2031_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2031_v2.0.nc">
+      <dataSize units="Mbytes">203.9</dataSize>
+      <date type="modified">2025-06-09T10:33:47.679Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2032_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2032_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2032_v2.0.nc">
+      <dataSize units="Mbytes">204.2</dataSize>
+      <date type="modified">2025-06-09T10:30:53.526Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2033_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2033_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2033_v2.0.nc">
+      <dataSize units="Mbytes">201.2</dataSize>
+      <date type="modified">2025-06-09T10:31:21.788Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2034_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2034_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2034_v2.0.nc">
+      <dataSize units="Mbytes">202.6</dataSize>
+      <date type="modified">2025-06-09T10:30:51.011Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2035_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2035_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2035_v2.0.nc">
+      <dataSize units="Mbytes">203.0</dataSize>
+      <date type="modified">2025-06-09T10:34:16.913Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2036_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2036_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2036_v2.0.nc">
+      <dataSize units="Mbytes">203.4</dataSize>
+      <date type="modified">2025-06-09T10:31:18.620Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2037_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2037_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2037_v2.0.nc">
+      <dataSize units="Mbytes">203.0</dataSize>
+      <date type="modified">2025-06-09T10:32:15.898Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2038_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2038_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2038_v2.0.nc">
+      <dataSize units="Mbytes">203.9</dataSize>
+      <date type="modified">2025-06-09T10:33:16.825Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2039_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2039_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2039_v2.0.nc">
+      <dataSize units="Mbytes">202.5</dataSize>
+      <date type="modified">2025-06-09T10:33:11.502Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2040_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2040_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2040_v2.0.nc">
+      <dataSize units="Mbytes">202.6</dataSize>
+      <date type="modified">2025-06-09T10:32:59.422Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2041_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2041_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2041_v2.0.nc">
+      <dataSize units="Mbytes">205.2</dataSize>
+      <date type="modified">2025-06-09T10:33:39.625Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2042_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2042_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2042_v2.0.nc">
+      <dataSize units="Mbytes">204.8</dataSize>
+      <date type="modified">2025-06-09T10:31:13.938Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2043_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2043_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2043_v2.0.nc">
+      <dataSize units="Mbytes">205.5</dataSize>
+      <date type="modified">2025-06-09T10:31:16.926Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2044_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2044_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2044_v2.0.nc">
+      <dataSize units="Mbytes">203.9</dataSize>
+      <date type="modified">2025-06-09T10:34:11.051Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2045_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2045_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2045_v2.0.nc">
+      <dataSize units="Mbytes">202.5</dataSize>
+      <date type="modified">2025-06-09T10:32:56.650Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2046_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2046_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2046_v2.0.nc">
+      <dataSize units="Mbytes">203.2</dataSize>
+      <date type="modified">2025-06-09T10:31:28.123Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2047_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2047_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2047_v2.0.nc">
+      <dataSize units="Mbytes">202.1</dataSize>
+      <date type="modified">2025-06-09T10:33:47.191Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2048_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2048_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2048_v2.0.nc">
+      <dataSize units="Mbytes">203.1</dataSize>
+      <date type="modified">2025-06-09T10:33:54.768Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2049_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2049_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2049_v2.0.nc">
+      <dataSize units="Mbytes">202.2</dataSize>
+      <date type="modified">2025-06-09T10:33:42.254Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2050_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2050_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2050_v2.0.nc">
+      <dataSize units="Mbytes">203.6</dataSize>
+      <date type="modified">2025-06-09T10:33:49.976Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2051_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2051_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2051_v2.0.nc">
+      <dataSize units="Mbytes">202.9</dataSize>
+      <date type="modified">2025-06-09T10:32:06.892Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2052_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2052_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2052_v2.0.nc">
+      <dataSize units="Mbytes">200.8</dataSize>
+      <date type="modified">2025-06-09T10:31:15.453Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2053_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2053_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2053_v2.0.nc">
+      <dataSize units="Mbytes">201.3</dataSize>
+      <date type="modified">2025-06-09T10:33:47.114Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2054_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2054_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2054_v2.0.nc">
+      <dataSize units="Mbytes">200.7</dataSize>
+      <date type="modified">2025-06-09T10:30:47.672Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2055_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2055_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2055_v2.0.nc">
+      <dataSize units="Mbytes">200.8</dataSize>
+      <date type="modified">2025-06-09T10:34:16.123Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2056_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2056_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2056_v2.0.nc">
+      <dataSize units="Mbytes">202.5</dataSize>
+      <date type="modified">2025-06-09T10:34:20.221Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2057_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2057_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2057_v2.0.nc">
+      <dataSize units="Mbytes">200.9</dataSize>
+      <date type="modified">2025-06-09T10:31:13.941Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2058_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2058_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2058_v2.0.nc">
+      <dataSize units="Mbytes">201.2</dataSize>
+      <date type="modified">2025-06-09T10:31:26.237Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2059_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2059_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2059_v2.0.nc">
+      <dataSize units="Mbytes">199.1</dataSize>
+      <date type="modified">2025-06-09T10:32:51.621Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2060_v2.0.nc">
+      <dataSize units="Mbytes">200.5</dataSize>
+      <date type="modified">2025-06-09T10:33:36.924Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2061_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2061_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2061_v2.0.nc">
+      <dataSize units="Mbytes">197.3</dataSize>
+      <date type="modified">2025-06-09T10:31:25.311Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2062_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2062_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2062_v2.0.nc">
+      <dataSize units="Mbytes">201.7</dataSize>
+      <date type="modified">2025-06-09T10:34:21.713Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2063_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2063_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2063_v2.0.nc">
+      <dataSize units="Mbytes">201.7</dataSize>
+      <date type="modified">2025-06-09T10:30:47.288Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2064_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2064_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2064_v2.0.nc">
+      <dataSize units="Mbytes">203.1</dataSize>
+      <date type="modified">2025-06-09T10:33:37.110Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2065_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2065_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2065_v2.0.nc">
+      <dataSize units="Mbytes">200.2</dataSize>
+      <date type="modified">2025-06-09T10:30:52.280Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2066_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2066_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2066_v2.0.nc">
+      <dataSize units="Mbytes">199.4</dataSize>
+      <date type="modified">2025-06-09T10:34:11.354Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2067_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2067_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2067_v2.0.nc">
+      <dataSize units="Mbytes">200.8</dataSize>
+      <date type="modified">2025-06-09T10:31:21.342Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2068_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2068_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2068_v2.0.nc">
+      <dataSize units="Mbytes">200.1</dataSize>
+      <date type="modified">2025-06-09T10:34:14.568Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2069_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2069_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2069_v2.0.nc">
+      <dataSize units="Mbytes">200.3</dataSize>
+      <date type="modified">2025-06-09T10:31:52.525Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2070_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2070_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2070_v2.0.nc">
+      <dataSize units="Mbytes">201.0</dataSize>
+      <date type="modified">2025-06-09T10:33:39.307Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2071_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2071_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2071_v2.0.nc">
+      <dataSize units="Mbytes">201.4</dataSize>
+      <date type="modified">2025-06-09T10:34:13.845Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2072_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2072_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2072_v2.0.nc">
+      <dataSize units="Mbytes">203.1</dataSize>
+      <date type="modified">2025-06-09T10:32:49.049Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2073_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2073_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2073_v2.0.nc">
+      <dataSize units="Mbytes">202.0</dataSize>
+      <date type="modified">2025-06-09T10:31:18.702Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2074_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2074_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2074_v2.0.nc">
+      <dataSize units="Mbytes">201.9</dataSize>
+      <date type="modified">2025-06-09T10:32:12.386Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2075_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2075_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2075_v2.0.nc">
+      <dataSize units="Mbytes">199.5</dataSize>
+      <date type="modified">2025-06-09T10:31:18.781Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2076_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2076_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2076_v2.0.nc">
+      <dataSize units="Mbytes">200.1</dataSize>
+      <date type="modified">2025-06-09T10:33:40.644Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2077_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2077_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2077_v2.0.nc">
+      <dataSize units="Mbytes">202.6</dataSize>
+      <date type="modified">2025-06-09T10:33:44.997Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2078_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2078_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2078_v2.0.nc">
+      <dataSize units="Mbytes">200.5</dataSize>
+      <date type="modified">2025-06-09T10:31:16.353Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2079_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2079_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2079_v2.0.nc">
+      <dataSize units="Mbytes">199.7</dataSize>
+      <date type="modified">2025-06-09T10:31:23.313Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2080_v2.0.nc">
+      <dataSize units="Mbytes">198.3</dataSize>
+      <date type="modified">2025-06-09T10:33:19.310Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2081_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2081_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2081_v2.0.nc">
+      <dataSize units="Mbytes">198.5</dataSize>
+      <date type="modified">2025-06-09T10:33:52.541Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2082_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2082_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2082_v2.0.nc">
+      <dataSize units="Mbytes">199.7</dataSize>
+      <date type="modified">2025-06-09T10:30:54.499Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2083_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2083_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2083_v2.0.nc">
+      <dataSize units="Mbytes">200.5</dataSize>
+      <date type="modified">2025-06-09T10:33:42.119Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2084_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2084_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2084_v2.0.nc">
+      <dataSize units="Mbytes">201.5</dataSize>
+      <date type="modified">2025-06-09T10:32:36.979Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2085_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2085_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2085_v2.0.nc">
+      <dataSize units="Mbytes">201.9</dataSize>
+      <date type="modified">2025-06-09T10:32:03.956Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2086_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2086_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2086_v2.0.nc">
+      <dataSize units="Mbytes">200.0</dataSize>
+      <date type="modified">2025-06-09T10:34:21.126Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2087_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2087_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2087_v2.0.nc">
+      <dataSize units="Mbytes">199.0</dataSize>
+      <date type="modified">2025-06-09T10:31:23.833Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2088_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2088_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2088_v2.0.nc">
+      <dataSize units="Mbytes">201.2</dataSize>
+      <date type="modified">2025-06-09T10:32:30.862Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2089_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2089_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2089_v2.0.nc">
+      <dataSize units="Mbytes">200.2</dataSize>
+      <date type="modified">2025-06-09T10:34:12.558Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2090_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2090_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2090_v2.0.nc">
+      <dataSize units="Mbytes">199.8</dataSize>
+      <date type="modified">2025-06-09T10:34:16.136Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2091_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2091_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2091_v2.0.nc">
+      <dataSize units="Mbytes">201.9</dataSize>
+      <date type="modified">2025-06-09T10:31:21.373Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2092_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2092_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2092_v2.0.nc">
+      <dataSize units="Mbytes">199.8</dataSize>
+      <date type="modified">2025-06-09T10:31:20.331Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2093_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2093_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2093_v2.0.nc">
+      <dataSize units="Mbytes">200.7</dataSize>
+      <date type="modified">2025-06-09T10:33:50.287Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2094_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2094_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2094_v2.0.nc">
+      <dataSize units="Mbytes">198.7</dataSize>
+      <date type="modified">2025-06-09T10:30:48.735Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2095_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2095_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2095_v2.0.nc">
+      <dataSize units="Mbytes">197.0</dataSize>
+      <date type="modified">2025-06-09T10:33:43.394Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2096_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2096_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2096_v2.0.nc">
+      <dataSize units="Mbytes">198.7</dataSize>
+      <date type="modified">2025-06-09T10:31:22.192Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2097_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2097_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2097_v2.0.nc">
+      <dataSize units="Mbytes">197.6</dataSize>
+      <date type="modified">2025-06-09T10:31:14.889Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2098_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2098_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2098_v2.0.nc">
+      <dataSize units="Mbytes">199.8</dataSize>
+      <date type="modified">2025-06-09T10:31:55.830Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2099_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2099_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2099_v2.0.nc">
+      <dataSize units="Mbytes">201.1</dataSize>
+      <date type="modified">2025-06-09T10:33:18.710Z</date>
+    </dataset>
+    <dataset name="pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2100_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2100_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/ssp585/r1i1p1f1/pr/pr_day_MPI-ESM1-2-HR_ssp585_r1i1p1f1_gn_2100_v2.0.nc">
+      <dataSize units="Mbytes">201.6</dataSize>
+      <date type="modified">2025-06-09T10:33:05.573Z</date>
+    </dataset>
+  </dataset>
+</catalog>

@@ -1,0 +1,23 @@
+{
+  "dataset_id": "seyhan_drought_plan_2019_context",
+  "provider": "T.C. Tarım ve Orman Bakanlığı, Su Yönetimi Genel Müdürlüğü",
+  "title": "Seyhan Havzası Kuraklık Yönetim Planı — Yönetici Özeti",
+  "version": "Ankara, 2019 (document cover); URL directory date 2023 is not the publication date",
+  "access_date": "2026-09-22",
+  "source_url": "https://www.tarimorman.gov.tr/SYGM/Belgeler/KURAKLIK%20Y%C3%96NET%C4%B0M%20PLANLARI%2009.01.2023/SEYHAN%20HAVZASI%20KYP%20Y%C3%96NET%C4%B0C%C4%B0%20%C3%96ZET%C4%B0.pdf",
+  "local_raw_path": "data/raw/references/seyhan_drought_summary_ca992dc00f6d313d54dcb1d79a9a7c90ba17fa596266ad1e235af331f2ff0ba0.pdf",
+  "content_sha256": "ca992dc00f6d313d54dcb1d79a9a7c90ba17fa596266ad1e235af331f2ff0ba0",
+  "classification": "EXTERNAL HISTORICAL PLANNING ESTIMATE",
+  "spatial_resolution": "Basin and sub-basin summaries; not a farm water entitlement",
+  "temporal_resolution": "Annual figures for existing conditions as assessed in the 2019 plan; exact single year is not assigned",
+  "license": "Publicly readable official document; open redistribution license not verified",
+  "access_limits": "Downloaded without authentication; document cache for research and citation",
+  "source_locator": "PDF page45 / printed4-8 / Table4.4",
+  "units": {"annual_water_use_hm3": "hm3/year"},
+  "records": [
+    {"area": "Seyhan basin", "agricultural_water_use_hm3_year": 1920.5, "total_sector_water_use_hm3_year": 2104.53},
+    {"area": "Lower Seyhan plain sub-basin", "agricultural_water_use_hm3_year": 1740.9, "total_sector_water_use_hm3_year": 1857.77}
+  ],
+  "interpretation": "Agriculture is a major component of the plan's water-use accounting; realistic production decisions need sectoral demand and seasonal allocation beyond weather.",
+  "not_allowed": ["Do not present these historical plan estimates as 2023 or 2026 observations.", "Do not allocate a share of basin totals to the one-hectare demonstration without an allocation method and actual rights/supply data.", "Do not interpret annual estimated use as available sustainable withdrawal or guaranteed supply.", "Ecological flows, temporal reliability and future water transfers require separate treatment."]
+}

@@ -1,0 +1,14 @@
+import type { JsonRecord } from '../api'
+import { Card, Notice, number, obj, list, str } from '../ui'
+
+export default function AutomaticNorth({data,busy,error}:{data:JsonRecord|null;busy:boolean;error:string}){
+  if(error)return <Notice warn>{error}</Notice>
+  if(busy||!data)return <Card title="Bölge verileri otomatik analiz ediliyor"><p className="small">Seçili günlük iklim serisi → yetişme penceresi → ürün koşulları → hesaplanabilenler ve eksikler.</p></Card>
+  const source=obj(data.source),summary=obj(data.summary),window=obj(summary.longest_frost_free_window)
+  return <Card title="Sistemin bölge analizi" className="automatic-north"><p className="small">{str(source.model)} · {str(source.scenario)} · {str(source.period)} · {number(data.row_count,0)} günlük kayıt otomatik işlendi.</p>
+    <div className="auto-facts"><span>Don olmayan en uzun pencere<strong>{number(window.days,0)} gün</strong></span><span>Yıllık yağış<strong>{number(summary.mean_annual_precipitation_mm)} mm</strong></span><span>Isı birikimi · taban 5°C<strong>{number(summary.mean_annual_gdd5_c_days)} derece-gün</strong></span></div>
+    <div className="table-scroll"><table><thead><tr><th>Aday / yöntem</th><th>İklimden hesaplanan durum</th><th>Karar için kalan bilgi</th></tr></thead><tbody>{list(data.candidate_analysis).map(c=>{const screen=obj(c.thermal_screen);return <tr key={str(c.crop_id)}><th>{str(c.name_tr)}<small>{Array.isArray(c.methods)?c.methods.map(m=>({open_field:'Açık tarla',greenhouse:'Sera',hydroponics:'Hidroponik'}[String(m)]||String(m))).join(' / '):''}</small></th><td className="wrap-cell">{screen.status==='screened_out'?'Kaynak sıcaklık zarfına uyan asgari yetişme penceresi bulunamadı.':screen.status==='screening_pass_not_validated'?'İlk sıcaklık taramasında pencere var; olgunlaşma ve yerel uygunluk henüz doğrulanmadı.':screen.status==='NOT_APPLICABLE_CONTROLLED_ENVIRONMENT'?'Kontrollü ortam adayı; dış iklim iç ortam ve enerji ihtiyacını belirler.':'Yerel uygunluk henüz doğrulanmış değil.'}<small>Kaynak takvimi: {number(c.reference_calendar_days,0)} gün</small></td><td className="wrap-cell">{Array.isArray(c.missing)?c.missing.join(' · '):''}</td></tr>})}</tbody></table></div>
+    <Notice>Ürünleri ve iklimi siz girmediniz; sistem kaynaklardan analiz etti. Bu analiz henüz tam üretim deseni değildir: yerel su arzı, zemin ve üretim katsayıları tamamlanmadan miktar önerisi üretmiyor.</Notice>
+    <details><summary>Otomatik hesaplar ve kaynak dayanakları</summary><p className="small">18°C iç ortam hedefi için ısıtma göstergesi: {number(summary.mean_annual_heating_degree_hours_18c)} derece-saat. Bu kWh değildir; bina ve işletme modeli gerekir.</p><pre>{JSON.stringify({source,field_evidence:data.field_evidence,limitations:data.limitations},null,2)}</pre></details>
+  </Card>
+}

@@ -1,0 +1,57 @@
+{
+  "dataset_id": "open_meteo_era5_seyhan_adana_2024_2025_290c2d915da5",
+  "provider": "Open-Meteo; underlying ERA5: ECMWF / Copernicus Climate Change Service",
+  "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0&longitude=35.32&start_date=2024-01-01&end_date=2025-12-31&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Cet0_fao_evapotranspiration&models=era5&timezone=UTC&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=land",
+  "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+  "upstream_doi": "10.24381/cds.adbb2d47",
+  "version": "Archive API v1; models=era5; provider does not expose numerical processing build; SHA256 pins returned bytes",
+  "access_date": "2026-09-22T17:48:06.545890+00:00",
+  "temporal_resolution": "daily UTC aggregation of hourly reanalysis",
+  "temporal_start": "2024-01-01",
+  "temporal_end": "2025-12-31",
+  "spatial_resolution": "ERA5 0.25 degree grid; point extraction, not basin average; elevation downscaling disabled",
+  "requested_location": {
+    "site_id": "seyhan_adana",
+    "name": "Seyhan / Adana",
+    "latitude": 37.0,
+    "longitude": 35.32,
+    "role": "transfer_demonstration"
+  },
+  "returned_grid_location": {
+    "latitude": 37.0,
+    "longitude": 35.25,
+    "elevation": 95.0
+  },
+  "units": {
+    "tmin_c": "°C",
+    "tmax_c": "°C",
+    "precipitation_mm": "mm",
+    "et0_mm": "mm"
+  },
+  "variables": [
+    "tmin_c",
+    "tmax_c",
+    "precipitation_mm",
+    "et0_mm"
+  ],
+  "license": "Open-Meteo API data CC BY 4.0; attribution to Open-Meteo and ERA5/Copernicus",
+  "license_url": "https://open-meteo.com/en/terms",
+  "access_limits": "Free API non-commercial only; <10000 calls/day, <5000/hour, <600/minute; no credential used",
+  "classification": "MODEL / REANALYSIS",
+  "content_sha256": "290c2d915da5e6af170278e639b0f5b6b96d4511bce27809c8f5dd8521feb7f1",
+  "local_raw_path": "data/raw/open_meteo/open_meteo_era5_seyhan_adana_2024_2025_290c2d915da5e6af170278e639b0f5b6b96d4511bce27809c8f5dd8521feb7f1.json",
+  "row_count": 731,
+  "missing_values": {
+    "tmin_c": 0,
+    "tmax_c": 0,
+    "precipitation_mm": 0,
+    "et0_mm": 0
+  },
+  "transformations": "Rename variables only; temperature degC, daily precipitation and ET0 mm; missing values retained as null/empty, never zero-filled",
+  "limitations": [
+    "ET0 is provider-derived FAO56 grass reference evapotranspiration, not crop ET, actual ET, available irrigation water or runoff.",
+    "Precipitation includes snowfall water equivalent; precipitation is not immediately usable supply, especially in Arctic snow conditions.",
+    "One grid cell cannot validate a basin; two years are a demonstration, not a climate normal or future projection.",
+    "Local terrain/coastal representativeness remains unresolved; actual returned grid coordinate preserved."
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "key": "konya_2026",
+    "url": "https://konya.tarimorman.gov.tr/Belgeler/kitap/%C4%B0l_Tar%C4%B1m_ve_Orman_Ocak_26_4DonemV2.pdf",
+    "sha256": "502357209e5742d35b5c7b9fbdc11ee9d9fad3cfd931d81aa96166d64eef9f3b",
+    "local_path": "data/agriculture/raw/konya_2026_502357209e5742d35b5c7b9fbdc11ee9d9fad3cfd931d81aa96166d64eef9f3b.pdf"
+  },
+  {
+    "key": "manisa_2025",
+    "url": "https://manisa.tarimorman.gov.tr/Belgeler/Brifing%202025/2025%20YILI%20FAALIYET%20RAPORU.pdf",
+    "sha256": "8708105e3c2606c0edc75b134ee78567bd663f355bdf37f075f4f5b6ef2d10ab",
+    "local_path": "data/agriculture/raw/manisa_2025_8708105e3c2606c0edc75b134ee78567bd663f355bdf37f075f4f5b6ef2d10ab.pdf"
+  }
+]

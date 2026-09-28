@@ -1,0 +1,123 @@
+ANA SOHBETE TESLİM — 2204-D → TÜRKİYE → FUTURE NORTH → TASE-VII
+TESLİM 005 | 22 Eylül 2026 | Yazılım 0.5.0
+Çalışma alanı: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Uygulama: http://127.0.0.1:8000/#turkiye
+
+Bu tek dosya ana sohbete yüklenebilir/yapıştırılabilir. Güncel durumu birleştirir; ayrıntılar docs/BUILD_STATUS.md. Başka sohbete kendiliğinden mesaj gönderilmedi.
+
+PWN ACİL ÜRÜN BAĞLANTILARI — 22 EYLÜL 2026
+
+Kullanıcı cihaz parçalarının satın alma linklerini istedi. Yeni docs/PWN_V01_LINKLI_ALISVERIS.md ve .txt kopyası: ana parçalar, küçük elektronik, ölçüye bağlı mekanik, kitte yoksa kalibrasyon, mevcut atölye araçları. İki alt ajanla Agent Reach/Exa ve web üzerinden satıcı ürün sayfaları araştırıldı. Ana EC/ESP32/DS18B20/encoder/microSD sayfaları açılıp görülen fiyatlar kontrol edildi. İlk beş parça toplamı 3.423,50 TL; tüm cihaz toplamı değildir. Satıcıyla stok/içerik/teslim teyidi ve sipariş yok.
+
+Mevcut cihaz yolu korunur: hazır DFR0300 K1 EC + ESP32 + DS18B20 + encoder + microSD; açık 3D başlık, ayrı taşıyıcı ip, yukarıda mesafe tekeri ve kuru kutu. Kullanıcıda 3D yazıcı var. SD için Robotistan adayı/önceki Robodükkan alternatifi; yalnız biri alınacak, elektriksel uyum kontrolü açık. İki EC standardı kitte varsa ayrıca alınmaz. 8mm mil/rulman ayrı kılavuz içindir, encoder miline otomatik uyum iddiası yok. Büyük paketlerin fazlalığı ve ölçüye bağlı parçalar listede işaretli. Teknik saf su adayının distile durulama şartına uygunluğu teyit gerektirir. Genel atölye araçlarının bazılarına ürün seçilmedi; eldeki kullanılacak diye açık yazıldı. Ayrıntılı tank deneyinin alışverişi sonraki aşamadır; kullanıcı önce cihazı ortaya çıkarmayı istedi.
+
+Önceki yapım paketi docs/teslim/PWN_V01_YAPIM_PAKETI_01.zip, görev metni docs/PWN_YAPIM_GOREVI.txt, konsept docs/visuals/PWN_V01_CIHAZ_KONSEPTI_01.png ve cihaz tarifi docs/PWN_V01_CIHAZ_TARIFI.md korunur. Yeni linkli liste ZIP'in yanında gönderilebilir. Konsept gerçek ürün fotoğrafı/CAD değildir. Fiziksel üretim/firmware bu tur yapılmadı; yazılım testleri yeniden çalıştırılmadı. Aşağıdaki yazılım0.5.0/test durumu aynen korunur. Sıradaki cihaz adımı kit tedariki ve ustanın gerçek parça/ölçü eşleştirmesidir. Başka kişiye mesaj gönderilmedi.
+
+YETKİLİ ÇERÇEVE
+Kullanıcının FINAL PRODUCT + RESEARCH CONTRACT metni eksiksiz docs/FINAL_PRODUCT_CONTRACT.md'ye alındı. Bilimsel source-of-truth altında, önceki ürün/UI talimatlarının üstündedir. Repository yeniden başlatılmadı. Resmî tarım, FAO56, NASA iklimi, provenance, çok ürünlü motor, importer, PRE/POST ve testler korundu.
+
+Konya gerçek pilot/predecessor. Eski rapordaki yaklaşık %8,7 göreli model azalması tarihsel sonuç; yeni motorun ölçülmüş tasarrufu değildir. Kullanıcı beyanı: Ali Baha Demir 2204-D Su Yönetimi Türkiye birinciliği ekibinde ve 2204-C Türkiye ikinciliği geçmişi var. 2204-D baştan Arktik için yapılmış gibi anlatılmaz. Görüşülmemiş kişi danışman değildir.
+
+KANIT AYRIMI
+Resmî istatistik/reanaliz/dış iklim modeli/literatür = kaynaklı dış bilgi.
+Optimize desen/su hesabı/duyarlılık = hesap/simülasyon.
+Yerel doğrulanmamış kaynak miktarı/yield/enerji/uygunluk = varsayım veya DATA NEEDED.
+PWN saha/numune/sera = plan. Bu teslimde yeni gerçek tank veya Arktik ölçümü yok.
+
+1. ÜRÜN ŞİMDİ NEDİR?
+Bir bilimsel planlama simülatörü: bölge verisini yükler, koşullar ve açık amaç altında ürün × yöntem × su kaynağı × dönem üretim desenini hesaplar. Üç durum aynı sistemde: Türkiye, Kuzey, saha güncellemesi. Sol deney kontrolleri; sağ karar/analiz. Saha araçtır, ana ürün değildir.
+
+2. NE SADELEŞTİ?
+AUTO/MANUAL iki dünya, her alan için Düzenle kilidi ve öndeki keyfî Kuzey kg hedefleri kaldırıldı. Kontroller doğrudan düzenlenir; yalnız başlangıçtan farklı değer MANUEL SENARYO etiketlenir. Kaynak baseline değişmez. Büyük sayfa gezinmesi yok. Tablolar, grafikler, kısıt denetimi ve provenance korunur. Ayrıntılar ikincil sekme/çekmecede.
+
+3. TÜRKİYE NASIL ÇALIŞIYOR?
+Konya otomatik → beş ürünün gerçek başlangıç alanları → Su −%20 → hesapla → mevcut/önerilen. İlk su/üretim hesabı optimizasyon çalışmadan görünür. Su bütçesi resmî tahsis değil açık senaryodur. Sonuç boş alan ve üretim kaybıyla birlikte okunur. Şanlıurfa, Adana, Manisa, Edirne aynı motorda farklı resmî başlangıç kullanır. Bu yöntem aktarımı demosudur; tüm Türkiye bilimsel validasyonu değildir. Türkiye için yeni PWN kampanyası gerekmiyor.
+
+4. KUZEY ADAYLARI NASIL SEÇİLİYOR?
+Doğrulanmış araştırma kaydı + kaynak kimliği + ürün kataloğu/yöntem uyumu filtreleniyor. İlk araştırma portföyü arpa, patates, marul; yedi adayın emsali ve eksikleri kayıtlı. Ispanak/roka/fesleğen/microgreen varsayılan çözümde zorlanmıyor. Otomatik filtre yerel tarımsal uygunluk/yield validasyonu değildir. Varsayılan Kuzeyde gerekli yerel girdiler yoksa sonuç insufficient_data, öneri null. Açıklayıcı senaryo ayrı bilinçli seçimdir.
+
+5. HANGİ AMAÇLAR VAR?
+Kapasite: kullanıcı kg hedefleri/minimumları kullanılmaz; aynı kaynaklarla her ürünün tek başına ulaşabildiği üst potansiyel hesaplanır. Bu potansiyellerin açık önceliklerle normalize karşılanması artırılır; sonra su/enerji azaltılır.
+Dengeli: önce ürünlerin ortak minimum potansiyel karşılanma oranı, sonra toplam karşılanma, su, enerji.
+Talep: eski normalize hedef karşılanma ve ilan edilen minimumlar korunur.
+Su öncelikli / enerji öncelikli: etkin ürünlerin tam tanımlı talebi zorunlu; sonra seçilen kaynak, ardından diğer kaynak azaltılır.
+Ağırlıklar ve normalizasyon görünür; gizli sürdürülebilirlik skoru veya eğitilmiş AI yok. Farklı kg'ler gıda/değer eşdeğeri sayılmaz. Özgün request ve etkin hesap girdisi ayrı kayıtlı.
+
+6. HESAPLANAN KUZEY DESENİ NEDİR?
+Aşağıdakiler aynı açıklayıcı kaynak/katsayı örneği için gerçek motor çıktısıdır; yerel Arktik tarım önerisi DEĞİLDİR.
+Kapasite: arpa 0 kg, patates 20.334,98 kg, hidroponik marul 1.200 kg.
+Dengeli: arpa 3.366,02 kg, patates 13.464,10 kg, hidroponik marul 598,41 kg; açık alan 1,79521 ha, hidroponik 199,47 m²; su 4.500 m³, enerji yaklaşık 36.646,29 kWh.
+Talep: arpa 3.000 kg/1 ha; patates 10.000 kg/0,5 ha; marul 1.000 kg/333,33 m²; su 3.686,67 m³, enerji 38.084,49 kWh.
+Bu örnekte su/enerji önceliği aynı talep desenini veriyor; her amacın farklı sonuç üretmesi şart değil. Alternatif yöntemli test farklı seçimleri doğruladı.
+Hesap ve run_id: docs/verification/contract-results.json. Formüller: docs/FUTURE_NORTH_DECISION_MODEL.md.
+
+7. VERİ DAYANAKLARI
+21 resmî il/ürün tarım kaydı, 9 ürün kataloğu, 4.380 günlük ERA5, 14.610 günlük EC_Earth tarihsel/gelecek bağlamı, NASA ACCESS-CM2 SSP245/585 2035 için 730 günlük satır korunur. NASA tek model/yıldır; tarla ET0/yield/kar hidrolojisi değildir. FAO56/Kc/depo/randıman su hesabı yerel takvim varsayımı içerir. İl verisi havza/parsel eşleniği değildir; ikinci ekiliş tekil araziyi tekrar sayabilir. Kaynak/ham dosya SHA256 kayıtları ve immutable çalıştırmalar korunur.
+
+8. KRİTİK EKSİKLER
+Yerel karasal mevsimsel su/tahsis/depolama/mevcut kullanımlar; toprak/permafrost/aktif tabaka; yerel çeşit/takvim/yield; geleceğin ET0/kar-erime; sera ısı/ışık/enerji; kaynak kimyası/arıtma tepkisi; gerçek zaman-konum-derinlikli okyanus model profili. NVE/ESA/TOPAZ kataloglarının incelenmesi verinin indirildiği anlamına gelmez. Eksikler uydurulmadı.
+
+9. KARAR BİLGİSİ ANALİZİ NE GÖSTERİYOR?
+Yeni /api/decision-information: referans + 6 koşu; bir defada bir girdi değiştirilir. Tatlı su ve enerji ±%20 stres varsayımı; deniz sıcaklığı 5/18°C bağlı arıtma ilişkisinin alanı, Arktik beklenen sıcaklık aralığı değil.
+Talep örneğinde tatlı su, enerji ve sıcaklık uç koşuları desen/uygulanabilirlik farkı verdi. Tuzluluk ve kimya sayısal bağlantısı yok: etki bilinmiyor. Sabit HIGH/MEDIUM pazarlama etiketi yok; hesaplanan fark var. Değişmeyen sonuç geçerlidir.
+Olasılık/güven yüzdesi veya ekonomik EVSI hesaplanmıyor. Uç noktalar aradaki bütün eşikleri/etkileşimleri kapsamaz. Kapasite/dengeli amaçta kaynak değiştikçe tek ürün normalizasyonu da yeniden hesaplanır; sabit amaç katsayılı marjinal etki değildir.
+
+10. TASE HANGİ ETKİLİ BİLİNMEYENİ ÖLÇEBİLİR?
+Karasal yıllık/mevsimsel üretim su miktarını veya tesis enerji bütçesini PWN doğrudan ölçmez. Kaynak sıcaklığı, iletkenlik/salinite ve fiziksel su kolonu ölçülebilir. Numune kimyası protokol uygunsa analiz edilebilir; bugünkü modelde etkisi henüz hesaplı değildir. Saha profilinin kıyısal alım noktasını temsil bağı ayrıca kurulmalıdır.
+
+11. PWN NE ÖLÇECEK?
+Arctic v1 hedef: iletkenlik/salinite, sıcaklık, basınç/derinlik, UTC/konum, kalite/kalibrasyon metaverisi; mümkünse reference CTD. A paketi: atıştan önce model kaydını sabitle, gerçek profil ile karşılaştır. Modelin doğru çıkması da sonuçtur. v0.1 düşük maliyetli tank prensip gösterimidir; research-grade CTD değildir.
+
+12. NUMUNELER NE İÇİN?
+B paketi: operasyonel izinli standart/gradient/arka plan derinlik mantığı; kesin derinlikler kilitli değil. δ18O/δ2H kaynak karakterizasyonu; salinite/EC, Na/Cl/Ca/Mg, gerekliyse bor/alkalinite arıtma/üretim uygunluğu soruları için aday. Dev kimya paneli yok; uzman/laboratuvar seçimi gerekir. Aynı korunmuş şişe bütün analizlere/büyüme deneyine uygun varsayılmaz.
+
+13. PRE / POST NEDİR?
+PRE: girdiler, amaç, model noktası ve run_id dondurulur. Geçerli eşleşmiş gözlemden sonra yalnız desteklenen girdi değiştirilerek aynı motor çalışır. Ürün/yöntem/kaynak/enerji/fizibilite/kısıt farkı gösterilir. Şu an sayısal bağlı girdi deniz sıcaklığıdır. Örnek gözlem açık simülasyondur; gerçek TASE verisi değildir. Tank veya uyumsuz/kalibrasyonsuz kayıt deniz gözlemi sayılmaz. Fark çıkması veya güven artışı garanti edilmez.
+
+14. SEFER SONRASI KAYNAK SUYU DENEYİ
+İzinli getirilen numune ya da ölçülen kimyadan açıkça yeniden oluşturulmuş sentetik su → karakterizasyon → uygun işlem → standardize besin çözeltisi → kısa çevrimli kontrollü büyüme deneyi. Uygun kaynak suyu kontrolüyle karşılaştır. Nihai besin bileşimi kontrol edilmeli; EC eşitliği tek başına eşdeğer besleme değildir. Bağımsız rezervuarlar deney birimi; kesin tasarım ve tekrar sayısı uzmanla belirlenir. Su, işlem enerjisi, çözeltinin özellikleri, biyokütle/gelişim ölçülür. Bu deney bütün Arktik ürün desenini ispatlamaz.
+
+15. SERA PİLOTU NASIL DEVAM ETTİRİR?
+Motor kontrollü yöntemi önerirse pilot tesis → gerçek su/enerji/sıcaklık/nem/EC/yield/arızalar → model-gerçek farkı → parametre iyileştirme. Sera ana projenin tamamı değil bir yöntemin doğrulama ortamıdır. Sigorta yalnız gelecekte araştırma dalı; fiyatlama uygulanmadı.
+
+16. GÖRSEL DEĞİŞİKLİKLER
+Orman/petrol bağlam, sıcak açık tuval, ölçülü alan vurguları; doğrudan kontroller, küçük üst çubuk, sabit hesapla, açıklama/kanıt hiyerarşisi. Laptop ilk görünümünde beş Konya sürgüsü ve Kuzeyde üç hesaplanan ürün/kapasitesi görünür. Kaynakların ayrıntıları kaydırılır. North ana sonuç tek üretim sistemi deseni; sahte mevcut Kuzey deseniyle kıyas yok.
+
+17. TESTLER
+22 Eylül 2026 18:29:40 TSİ başlayan tam paket:139 test geçti,0 hata,11,804 saniye;1 mevcut Starlette/AnyIO deprecation uyarısı. JUnit:docs/verification/contract-tests.xml.
+TypeScript/Vite0.5.0 build geçti.
+22 Eylül2026 18:30:52 TSİ:27 tarayıcı kontrolü+8görünüm geçti; JS/başarısızHTTP/dışistek sıfır; yataytaşma yok. Rapor:docs/verification/contract-smoke.json, betik:scripts/contract_smoke.cjs.
+Testler yazılımı doğrular; tarımsal saha validasyonu değildir.
+
+18. EKRAN KANITLARI
+Hepsi docs/verification altında:
+contract-konya-baseline.png
+contract-konya-stress.png
+contract-second-region.png
+contract-north-lab.png
+contract-north-pattern.png
+contract-research.png
+contract-pre-post.png
+Ek:contract-data.png,contract-north-data.png,contract-mobile.png.
+
+19. BİZ FİZİKSEL OLARAK NE YAPMALIYIZ?
+Öğretmenlerle kart/EC/sıcaklık/derinlik/logger yolunu netleştir → tezgâh kontrolü → homojen su → tabakalı kolon → ilk gerçek CSV → importer → kontrollü tank profili. Gerçek ölçüm geldiğinde KENDİ ÖLÇÜMÜMÜZ — KONTROLLÜ TANK DENEYİ olur, Arktik saha etiketi olmaz. Güncel malzeme listesi docs/PWN_V01_TAM_MALZEME_LISTESI.md; donanım bu yazılım tesliminde kurulmadı.
+
+20. KARE/TASE/UZMAN GERİ BİLDİRİMİ
+Sensör hassasiyeti/soğuk ve deniz dayanımı; referans CTD; atış/halat/çerçeve; model ile konum-zaman-derinlik eşleme; numune derinliği/panel/şişe/koruma/taşıma; laboratuvar kapasitesi; kaynak suyu işleme ve kontrollü üretim protokolü. Kimseye mesaj gönderilmedi; danışman veya izin teyit edilmiş gösterilmedi.
+
+BELGE VE KOD DİZİNİ
+Sözleşme/UX/model/duyarlılık: FINAL_PRODUCT_CONTRACT.md, FINAL_SIMULATOR_UX.md, FUTURE_NORTH_DECISION_MODEL.md, FIELD_INFORMATION_VALUE.md.
+Araştırma/devam: ARCTIC_RESEARCH_PROGRAM.md, SOURCE_WATER_TO_GROWTH_VALIDATION.md, PROJECT_CONTINUITY.md, DEMO_PLAN.md, INTERVIEW_STORY.md, JURY_QA.md, EVIDENCE_MAP.md, BUILD_STATUS.md.
+Eski SIMULATOR_UX.md güncel tek belgeye yönlendirildi. Aday ayrıntısı:data/candidate_review_u11.json; mevcut pinned araştırma kaydı korunur.
+Kod:backend/planning.py,planning_contracts.py,information_value.py,app.py; frontend/src/components/ScenarioEditor.tsx,PatternComparison.tsx,SimulationResults.tsx,ResearchMission.tsx;App.tsx,workspaces/Simulation.tsx,api.ts,planning.ts,styles.css. Yeni amaç ve bilgi testleri.
+
+DONANIM İŞİNİN KORUNAN GÜNCEL BAĞLAMI
+Paralel donanım araştırmasının belgeleri korunmuştur. Kullanıcı 3D yazıcı erişimini doğrulamış; DFR0300 K1 kitli yol için eski DIY ön devre alışverişi gerekmeyebilir. SD elektriksel uyumu, kit standartları/teslimi ve mekanik ölçüler açıktır. Önceki parça toplamları tüm maliyetin kesin teklifi değildir; bu tur fiyat doğrulanmadı veya satın alma yapılmadı. Tam liste ve öğretmen belgeleri esas alınır. Hazır CTD/EC alternatifleri docs/PWN_READY_MADE_OPTIONS.md içindedir.
+
+KISA TESLİM GEÇMİŞİ
+001 bilimsel çerçeve/ilk uygulama;002 dashboard;003 ortak çok ürünlü motor;004 kalıcıScenarioLab,iklimkanıtı,PREkaydı,129test/20tarayıcı;005 doğrudandüzenleme,5amaç,adayfiltre,kararduyarlılığı,A/B/Caraştırma,139test/27tarayıcı.
+Tam004 arşivi:docs/archive/ANA_CHAT_TESLIM_004.txt. Geçmiş testler yeni testmiş gibi aktarılmaz.
+
+SONRAKİ SOMUT ADIM
+Yazılım kabul demosu hazır. Fiziksel tank CSV'si ve seçilen kuzey kaynak/üretim bağlamı için uzmanla daraltılmış model–gözlem/numune protokolü bir sonraki gerçek kanıt adımıdır. Tam yerel gelecek tarım modeli tamamlandı iddiası yok.

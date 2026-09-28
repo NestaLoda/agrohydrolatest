@@ -1,0 +1,33 @@
+{
+  "site_id": "longyearbyen",
+  "model": "ACCESS-CM2",
+  "scenario": "ssp245",
+  "variable": "tasmin",
+  "year": 2062,
+  "url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2062_v2.0.nc?var=tasmin&north=78.125&south=78.125&west=15.625&east=15.625&time_start=2062-01-01T00%3A00%3A00Z&time_end=2062-12-31T23%3A59%3A59Z&accept=netcdf3&addLatLon=true",
+  "catalog_path": "AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp245/r1i1p1f1/tasmin/tasmin_day_ACCESS-CM2_ssp245_r1i1p1f1_gn_2062_v2.0.nc",
+  "accessed_at_utc": "2026-09-23T12:58:10.728673+00:00",
+  "sha256": "6eaabe73bad38a0c810cb4052795f80464e9ceebe8a91ad4f1f87006d373d3e1",
+  "local_path": "data/north/rebuild_climate/raw/longyearbyen/ACCESS-CM2/ssp245/tasmin_2062.nc",
+  "bytes": 7104,
+  "day_count": 365,
+  "units": "K",
+  "grid": {
+    "latitude": 78.125,
+    "longitude": 15.625
+  },
+  "attributes": {
+    "version": "2.0",
+    "variant_label": "r1i1p1f1",
+    "cmip6_source_id": "ACCESS-CM2",
+    "cmip6_institution_id": "CSIRO-ARCCSS",
+    "cmip6_license": "CC-BY-SA 4.0",
+    "source": "BCSD",
+    "creation_date": "Sat Nov 16 16:39:59 PST 2024",
+    "tracking_id": "01763975-f568-4a8a-b828-d2bf45fcc0ee",
+    "resolution_id": "0.25 degree",
+    "calendar": "proleptic_gregorian"
+  },
+  "classification": "SOURCED_CLIMATE_MODEL",
+  "previous_failed_attempts": []
+}

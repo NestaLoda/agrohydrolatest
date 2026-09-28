@@ -1,0 +1,114 @@
+{
+  "screens": [
+    {
+      "step": 1,
+      "title": "Konya pilotu",
+      "overflow": false
+    },
+    {
+      "step": 2,
+      "title": "Türkiye transferi",
+      "overflow": false
+    },
+    {
+      "step": 3,
+      "title": "Kuzeye açılan sınır",
+      "overflow": false
+    },
+    {
+      "step": 4,
+      "title": "Kaynak koşulları",
+      "overflow": false
+    },
+    {
+      "step": 5,
+      "title": "Üretim sistemi",
+      "overflow": false
+    },
+    {
+      "step": 6,
+      "title": "PWN gözlem katmanı",
+      "overflow": false
+    },
+    {
+      "step": 7,
+      "title": "Su kaynağı etkisi",
+      "overflow": false
+    },
+    {
+      "step": 8,
+      "title": "Koşullu üretim sınırı",
+      "overflow": false
+    }
+  ],
+  "mobile": [
+    {
+      "step": 1,
+      "overflow": false
+    },
+    {
+      "step": 2,
+      "overflow": false
+    },
+    {
+      "step": 3,
+      "overflow": false
+    },
+    {
+      "step": 4,
+      "overflow": false
+    },
+    {
+      "step": 5,
+      "overflow": false
+    },
+    {
+      "step": 6,
+      "overflow": false
+    },
+    {
+      "step": 7,
+      "overflow": false
+    },
+    {
+      "step": 8,
+      "overflow": false
+    }
+  ],
+  "interactions": [
+    {
+      "test": "production decision",
+      "status": "conditional",
+      "run_id": "e151d3d1fe606ca1b481c194"
+    },
+    {
+      "test": "PWN example",
+      "source": "SIMULATION_EXPLANATORY",
+      "samples": 61
+    },
+    {
+      "test": "CSV import with provenance",
+      "sha256": "f6463c431aba25c02bb83471418548d605eed9964600eb6cbda1bf8ac227b4f2"
+    },
+    {
+      "test": "source water sensitivity",
+      "specific_energy_kwh_m3": 6.7
+    },
+    {
+      "test": "source condition reaches optimizer",
+      "before_kwh": 25120.75,
+      "after_kwh": 25077.05
+    },
+    {
+      "test": "impossible resources",
+      "status": "unsuitable"
+    },
+    {
+      "test": "source dialog keyboard close",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "blocked_external_requests": []
+}

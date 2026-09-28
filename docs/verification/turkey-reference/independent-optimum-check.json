@@ -1,0 +1,365 @@
+{
+  "method": "For this open-field portfolio: reserve held rice; allocate crop minima; assign residual feasible area to lowest water/ha. No extra upper-share restrictions in defaults. Compare with LP within lexicographic numerical tolerance.",
+  "checks": [
+    {
+      "region": "konya",
+      "preset": "reference",
+      "independent_area_ha": 1252478.0,
+      "independent_water_m3": 8088466987.083633,
+      "area_error_ha": 0.012524780118837953,
+      "water_error_m3": 73.6917610168457,
+      "pass": true
+    },
+    {
+      "region": "konya",
+      "preset": "water10",
+      "independent_area_ha": 1225031.7722528838,
+      "independent_water_m3": 7926982249.96911,
+      "area_error_ha": 0.012524779886007309,
+      "water_error_m3": 73.69175815582275,
+      "pass": true
+    },
+    {
+      "region": "konya",
+      "preset": "water20",
+      "independent_area_ha": 1075333.5791896628,
+      "independent_water_m3": 7046206444.416986,
+      "area_error_ha": 0.012524780118837953,
+      "water_error_m3": 73.69176006317139,
+      "pass": true
+    },
+    {
+      "region": "konya",
+      "preset": "water30",
+      "independent_area_ha": 925635.3861264416,
+      "independent_water_m3": 6165430638.864862,
+      "area_error_ha": 0.012524780118837953,
+      "water_error_m3": 73.69176006317139,
+      "pass": true
+    },
+    {
+      "region": "konya",
+      "preset": "drought",
+      "independent_area_ha": 869705.0142810493,
+      "independent_water_m3": 7046206444.416986,
+      "area_error_ha": 0.01252478000242263,
+      "water_error_m3": 92.28814792633057,
+      "pass": true
+    },
+    {
+      "region": "konya",
+      "preset": "dryrain",
+      "independent_area_ha": 1252478.0,
+      "independent_water_m3": 8701290446.190298,
+      "area_error_ha": 0.012524780118837953,
+      "water_error_m3": 80.84257507324219,
+      "pass": true
+    },
+    {
+      "region": "konya",
+      "preset": "efficient",
+      "independent_area_ha": 1252478.0,
+      "independent_water_m3": 7136882635.662028,
+      "area_error_ha": 0.012524780118837953,
+      "water_error_m3": 65.02214050292969,
+      "pass": true
+    },
+    {
+      "region": "konya",
+      "preset": "waterplus",
+      "independent_area_ha": 1252478.0,
+      "independent_water_m3": 8088466987.083633,
+      "area_error_ha": 0.012524780118837953,
+      "water_error_m3": 73.6917610168457,
+      "pass": true
+    },
+    {
+      "region": "seyhan_adana",
+      "preset": "reference",
+      "independent_area_ha": 294433.3,
+      "independent_water_m3": 1796048749.794015,
+      "area_error_ha": 0.0029443330131471157,
+      "water_error_m3": 16.17935585975647,
+      "pass": true
+    },
+    {
+      "region": "seyhan_adana",
+      "preset": "water10",
+      "independent_area_ha": 290920.52113946155,
+      "independent_water_m3": 1776745736.6224904,
+      "area_error_ha": 0.002944332954939455,
+      "water_error_m3": 16.17935585975647,
+      "pass": true
+    },
+    {
+      "region": "seyhan_adana",
+      "preset": "water20",
+      "independent_area_ha": 254994.5533545962,
+      "independent_water_m3": 1579329543.664436,
+      "area_error_ha": 0.0029443330131471157,
+      "water_error_m3": 16.17935585975647,
+      "pass": true
+    },
+    {
+      "region": "seyhan_adana",
+      "preset": "water30",
+      "independent_area_ha": 219068.58556973073,
+      "independent_water_m3": 1381913350.7063813,
+      "area_error_ha": 0.002944332954939455,
+      "water_error_m3": 16.17935562133789,
+      "pass": true
+    },
+    {
+      "region": "seyhan_adana",
+      "preset": "drought",
+      "independent_area_ha": 203703.99984514946,
+      "independent_water_m3": 1579329543.664436,
+      "area_error_ha": 0.0029443330131471157,
+      "water_error_m3": 20.592052221298218,
+      "pass": true
+    },
+    {
+      "region": "seyhan_adana",
+      "preset": "dryrain",
+      "independent_area_ha": 294433.3,
+      "independent_water_m3": 1935759410.6740146,
+      "area_error_ha": 0.0029443330131471157,
+      "water_error_m3": 17.80698323249817,
+      "pass": true
+    },
+    {
+      "region": "seyhan_adana",
+      "preset": "efficient",
+      "independent_area_ha": 294433.3,
+      "independent_water_m3": 1584748896.8770723,
+      "area_error_ha": 0.0029443330131471157,
+      "water_error_m3": 14.275902271270752,
+      "pass": true
+    },
+    {
+      "region": "seyhan_adana",
+      "preset": "waterplus",
+      "independent_area_ha": 294433.3,
+      "independent_water_m3": 1796048749.794015,
+      "area_error_ha": 0.0029443330131471157,
+      "water_error_m3": 16.17935585975647,
+      "pass": true
+    },
+    {
+      "region": "gediz_manisa",
+      "preset": "reference",
+      "independent_area_ha": 141483.5,
+      "independent_water_m3": 781823620.8282683,
+      "area_error_ha": 0.0014148350164759904,
+      "water_error_m3": 6.464863896369934,
+      "pass": true
+    },
+    {
+      "region": "gediz_manisa",
+      "preset": "water10",
+      "independent_area_ha": 141483.5,
+      "independent_water_m3": 781823620.8282683,
+      "area_error_ha": 0.0014148350164759904,
+      "water_error_m3": 6.464863896369934,
+      "pass": true
+    },
+    {
+      "region": "gediz_manisa",
+      "preset": "water20",
+      "independent_area_ha": 130957.92732344622,
+      "independent_water_m3": 733728688.267132,
+      "area_error_ha": 0.0014148350019240752,
+      "water_error_m3": 6.4648637771606445,
+      "pass": true
+    },
+    {
+      "region": "gediz_manisa",
+      "preset": "water30",
+      "independent_area_ha": 110885.86821563079,
+      "independent_water_m3": 642012602.2337404,
+      "area_error_ha": 0.00141483498737216,
+      "water_error_m3": 6.4648637771606445,
+      "pass": true
+    },
+    {
+      "region": "gediz_manisa",
+      "preset": "drought",
+      "independent_area_ha": 103486.67843939694,
+      "independent_water_m3": 733728688.267132,
+      "area_error_ha": 0.0014148350164759904,
+      "water_error_m3": 8.242700576782227,
+      "pass": true
+    },
+    {
+      "region": "gediz_manisa",
+      "preset": "dryrain",
+      "independent_area_ha": 141483.5,
+      "independent_water_m3": 838027000.2656255,
+      "area_error_ha": 0.0014148350164759904,
+      "water_error_m3": 7.14337682723999,
+      "pass": true
+    },
+    {
+      "region": "gediz_manisa",
+      "preset": "efficient",
+      "independent_area_ha": 141483.5,
+      "independent_water_m3": 689844371.3190603,
+      "area_error_ha": 0.0014148350164759904,
+      "water_error_m3": 5.704291820526123,
+      "pass": true
+    },
+    {
+      "region": "gediz_manisa",
+      "preset": "waterplus",
+      "independent_area_ha": 141483.5,
+      "independent_water_m3": 781823620.8282683,
+      "area_error_ha": 0.0014148350164759904,
+      "water_error_m3": 6.464863896369934,
+      "pass": true
+    },
+    {
+      "region": "gap_sanliurfa",
+      "preset": "reference",
+      "independent_area_ha": 790896.0,
+      "independent_water_m3": 9044076362.458063,
+      "area_error_ha": 0.00790895998943597,
+      "water_error_m3": 81.82415771484375,
+      "pass": true
+    },
+    {
+      "region": "gap_sanliurfa",
+      "preset": "water10",
+      "independent_area_ha": 778435.5232694324,
+      "independent_water_m3": 8915163331.794159,
+      "area_error_ha": 0.007908960105851293,
+      "water_error_m3": 81.82415771484375,
+      "pass": true
+    },
+    {
+      "region": "gap_sanliurfa",
+      "preset": "water20",
+      "independent_area_ha": 682688.6424520742,
+      "independent_water_m3": 7924589628.261475,
+      "area_error_ha": 0.007908959873020649,
+      "water_error_m3": 81.82415676116943,
+      "pass": true
+    },
+    {
+      "region": "gap_sanliurfa",
+      "preset": "water30",
+      "independent_area_ha": 586941.7616347162,
+      "independent_water_m3": 6934015924.72879,
+      "area_error_ha": 0.007908960105851293,
+      "water_error_m3": 81.82415771484375,
+      "pass": true
+    },
+    {
+      "region": "gap_sanliurfa",
+      "preset": "drought",
+      "independent_area_ha": 590119.0455359863,
+      "independent_water_m3": 7924589628.261475,
+      "area_error_ha": 0.00790895998943597,
+      "water_error_m3": 94.87532806396484,
+      "pass": true
+    },
+    {
+      "region": "gap_sanliurfa",
+      "preset": "dryrain",
+      "independent_area_ha": 790896.0,
+      "independent_water_m3": 9279393712.991398,
+      "area_error_ha": 0.00790895998943597,
+      "water_error_m3": 84.85908889770508,
+      "pass": true
+    },
+    {
+      "region": "gap_sanliurfa",
+      "preset": "efficient",
+      "independent_area_ha": 790896.0,
+      "independent_water_m3": 7980067378.639469,
+      "area_error_ha": 0.00790895998943597,
+      "water_error_m3": 72.19778633117676,
+      "pass": true
+    },
+    {
+      "region": "gap_sanliurfa",
+      "preset": "waterplus",
+      "independent_area_ha": 790896.0,
+      "independent_water_m3": 9044076362.458063,
+      "area_error_ha": 0.00790895998943597,
+      "water_error_m3": 81.82415771484375,
+      "pass": true
+    },
+    {
+      "region": "trakya_edirne",
+      "preset": "reference",
+      "independent_area_ha": 323327.6,
+      "independent_water_m3": 1137767936.8013604,
+      "area_error_ha": 0.002746970043517649,
+      "water_error_m3": 9.138899326324463,
+      "pass": true
+    },
+    {
+      "region": "trakya_edirne",
+      "preset": "water10",
+      "independent_area_ha": 323327.6,
+      "independent_water_m3": 1137767936.8013604,
+      "area_error_ha": 0.002746970043517649,
+      "water_error_m3": 9.138899326324463,
+      "pass": true
+    },
+    {
+      "region": "trakya_edirne",
+      "preset": "water20",
+      "independent_area_ha": 308764.1442862857,
+      "independent_water_m3": 1089316750.1915536,
+      "area_error_ha": 0.002746970043517649,
+      "water_error_m3": 9.138899326324463,
+      "pass": true
+    },
+    {
+      "region": "trakya_edirne",
+      "preset": "water30",
+      "independent_area_ha": 267835.7961908571,
+      "independent_water_m3": 953152156.4176092,
+      "area_error_ha": 0.0027469699853099883,
+      "water_error_m3": 9.138899326324463,
+      "pass": true
+    },
+    {
+      "region": "trakya_edirne",
+      "preset": "drought",
+      "independent_area_ha": 239511.21372169998,
+      "independent_water_m3": 1089316750.1915536,
+      "area_error_ha": 0.002746970043517649,
+      "water_error_m3": 12.566816329956055,
+      "pass": true
+    },
+    {
+      "region": "trakya_edirne",
+      "preset": "dryrain",
+      "independent_area_ha": 323327.6,
+      "independent_water_m3": 1272281876.001361,
+      "area_error_ha": 0.002746970043517649,
+      "water_error_m3": 10.668412446975708,
+      "pass": true
+    },
+    {
+      "region": "trakya_edirne",
+      "preset": "efficient",
+      "independent_area_ha": 323327.6,
+      "independent_water_m3": 1003912885.412965,
+      "area_error_ha": 0.002746970043517649,
+      "water_error_m3": 8.063734769821167,
+      "pass": true
+    },
+    {
+      "region": "trakya_edirne",
+      "preset": "waterplus",
+      "independent_area_ha": 323327.6,
+      "independent_water_m3": 1137767936.8013604,
+      "area_error_ha": 0.002746970043517649,
+      "water_error_m3": 9.138899326324463,
+      "pass": true
+    }
+  ]
+}

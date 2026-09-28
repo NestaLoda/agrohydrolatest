@@ -1,0 +1,154 @@
+TAP version 13
+# (node:17584) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: matches explicit arithmetic and signed savings, independent of crop order
+ok 1 - matches explicit arithmetic and signed savings, independent of crop order
+  ---
+  duration_ms: 4.2469
+  type: 'test'
+  ...
+# Subtest: blank crop prices stay unknown while water-charge savings remain computable
+ok 2 - blank crop prices stay unknown while water-charge savings remain computable
+  ---
+  duration_ms: 0.7452
+  type: 'test'
+  ...
+# Subtest: missing water tariff is not treated as free irrigation
+ok 3 - missing water tariff is not treated as free irrigation
+  ---
+  duration_ms: 0.4239
+  type: 'test'
+  ...
+# Subtest: zero activity needs no price and explicit zero prices are preserved
+ok 4 - zero activity needs no price and explicit zero prices are preserved
+  ---
+  duration_ms: 0.3295
+  type: 'test'
+  ...
+# Subtest: partial rice water coverage blocks the full margin and full water savings
+ok 5 - partial rice water coverage blocks the full margin and full water savings
+  ---
+  duration_ms: 0.4539
+  type: 'test'
+  ...
+# Subtest: explicit zero water tariff permits zero charge, without requiring an unknown water volume
+ok 6 - explicit zero water tariff permits zero charge, without requiring an unknown water volume
+  ---
+  duration_ms: 0.2312
+  type: 'test'
+  ...
+# Subtest: negative and nonfinite unit values are unknown rather than generating fictional returns
+ok 7 - negative and nonfinite unit values are unknown rather than generating fictional returns
+  ---
+  duration_ms: 0.5264
+  type: 'test'
+  ...
+# Subtest: crop removal/addition and empty selections are calculated by crop ID
+ok 8 - crop removal/addition and empty selections are calculated by crop ID
+  ---
+  duration_ms: 1.8613
+  type: 'test'
+  ...
+# Subtest: invalid quantity and arithmetic overflow never escape as numeric results
+ok 9 - invalid quantity and arithmetic overflow never escape as numeric results
+  ---
+  duration_ms: 0.4689
+  type: 'test'
+  ...
+# Subtest: does not mutate frozen scenario inputs or quantities
+ok 10 - does not mutate frozen scenario inputs or quantities
+  ---
+  duration_ms: 0.5664
+  type: 'test'
+  ...
+# Subtest: economic display stays red when an improvement still leaves a modeled loss
+ok 11 - economic display stays red when an improvement still leaves a modeled loss
+  ---
+  duration_ms: 0.2763
+  type: 'test'
+  ...
+# Subtest: economic display distinguishes positive improvement, deterioration and unknown results
+ok 12 - economic display distinguishes positive improvement, deterioration and unknown results
+  ---
+  duration_ms: 0.1534
+  type: 'test'
+  ...
+# Subtest: 1 TL visual tolerance leaves accounting amounts untouched
+ok 13 - 1 TL visual tolerance leaves accounting amounts untouched
+  ---
+  duration_ms: 0.1763
+  type: 'test'
+  ...
+# (node:7184) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: all climate choices preserve source crop quantities and production floors
+ok 14 - all climate choices preserve source crop quantities and production floors
+  ---
+  duration_ms: 5.384
+  type: 'test'
+  ...
+# Subtest: preset selection preserves optional user crop edits and prior input objects
+ok 15 - preset selection preserves optional user crop edits and prior input objects
+  ---
+  duration_ms: 0.5182
+  type: 'test'
+  ...
+# Subtest: favorable and resource scenarios expose distinct physical changes without hidden crop changes
+ok 16 - favorable and resource scenarios expose distinct physical changes without hidden crop changes
+  ---
+  duration_ms: 0.3105
+  type: 'test'
+  ...
+# Subtest: custom climate unselects preset; climate preview invalidates for temperature, not area alone
+ok 17 - custom climate unselects preset; climate preview invalidates for temperature, not area alone
+  ---
+  duration_ms: 1.8008
+  type: 'test'
+  ...
+# (node:9744) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: budget ratio has a real 100% boundary and an exact deficit
+ok 18 - budget ratio has a real 100% boundary and an exact deficit
+  ---
+  duration_ms: 2.8418
+  type: 'test'
+  ...
+# Subtest: zero budgets never become Infinity, NaN or false green
+ok 19 - zero budgets never become Infinity, NaN or false green
+  ---
+  duration_ms: 0.2571
+  type: 'test'
+  ...
+# Subtest: partial or missing water never appears within budget
+ok 20 - partial or missing water never appears within budget
+  ---
+  duration_ms: 0.2083
+  type: 'test'
+  ...
+# Subtest: arc overflow preserves the ratio and all SVG inputs stay finite
+ok 21 - arc overflow preserves the ratio and all SVG inputs stay finite
+  ---
+  duration_ms: 0.2144
+  type: 'test'
+  ...
+# Subtest: eligible scenario capacity excludes disabled or unproven-quality sources
+ok 22 - eligible scenario capacity excludes disabled or unproven-quality sources
+  ---
+  duration_ms: 0.2811
+  type: 'test'
+  ...
+# Subtest: immutable prior-run budget stays independent of edited live sources
+ok 23 - immutable prior-run budget stays independent of edited live sources
+  ---
+  duration_ms: 0.2204
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 313.3947

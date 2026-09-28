@@ -1,0 +1,779 @@
+{
+  "schema_version": "2.0",
+  "updated_on": "2026-09-23",
+  "classification": "CURATED_PRIMARY_SOURCE_CANDIDATE_LIBRARY",
+  "sources": {
+    "EDEN_ISS_2018": {
+      "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+      "url": "https://doi.org/10.3389/fpls.2020.00656",
+      "period": "2018-02-07/2018-11-20",
+      "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+      "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+      "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+      "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+      "accessed_on": "2026-09-23"
+    },
+    "UAF_GDD_2022": {
+      "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+      "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/",
+      "period": "2022 publication",
+      "spatial_scope": "Alaska",
+      "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+      "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+      "locator": null,
+      "accessed_on": "2026-09-23"
+    },
+    "FAO56": {
+      "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+      "url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+      "period": "1998 publication",
+      "spatial_scope": "Multi-region reference examples",
+      "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+      "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+      "locator": "Tables 11 and 12",
+      "accessed_on": "2026-09-23"
+    },
+    "NORA_2016": {
+      "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+      "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf",
+      "period": "2014 and 2015 trials",
+      "spatial_scope": "Alta and Holt, northern Norway",
+      "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+      "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+      "locator": "Tables 3-2 and 3-3",
+      "accessed_on": "2026-09-23"
+    },
+    "POTATO_TROMSO_2025": {
+      "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+      "url": "https://doi.org/10.1007/s11540-025-09854-0",
+      "period": "2020 experiment; 2025 publication",
+      "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+      "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+      "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+      "locator": null,
+      "accessed_on": "2026-09-23"
+    },
+    "XU_2026": {
+      "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+      "url": "https://doi.org/10.1038/s43247-026-03702-w",
+      "period": "1980–2010; 2041–2070; 2071–2100",
+      "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+      "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+      "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+      "locator": null,
+      "accessed_on": "2026-09-23"
+    },
+    "UAF_HYDROPONIC_2007": {
+      "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+      "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf",
+      "period": "2007",
+      "spatial_scope": "Alaska, recirculating NFT lettuce",
+      "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+      "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+      "locator": "pp.24–25",
+      "accessed_on": "2026-09-23"
+    }
+  },
+  "crops": [
+    {
+      "crop_id": "lettuce",
+      "name": "Marul",
+      "name_tr": "Marul",
+      "group": "vegetable",
+      "cultivar": "Expertise",
+      "source_ids": [
+        "EDEN_ISS_2018",
+        "UAF_HYDROPONIC_2007"
+      ],
+      "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+      "period": "2018",
+      "compatible_methods": [
+        "greenhouse",
+        "hydroponics"
+      ],
+      "production": {
+        "yield_kg_m2_cycle": {
+          "low": 1.5,
+          "central": 2.38,
+          "high": 3.5,
+          "unit": "kg edible fresh biomass / m² cultivated surface / cycle",
+          "range_kind": "reported_observed_min_max",
+          "source_id": "EDEN_ISS_2018",
+          "locator": "Table 3, Expertise"
+        },
+        "cycle_days": 38,
+        "cycle_days_kind": "reported_mean",
+        "replicate_cycles": 15,
+        "harvest_mode": "batch",
+        "target_temperature_c_day": 21,
+        "target_temperature_c_night": 19,
+        "photoperiod_h": 17,
+        "equivalent_full_light_hours": 16,
+        "ppfd_umol_m2_s": 330,
+        "ppfd_range_umol_m2_s": [
+          330,
+          330
+        ],
+        "dli_mol_m2_day": 19.008,
+        "dli_range_mol_m2_day": [
+          19.008,
+          19.008
+        ],
+        "co2_ppm": 1000,
+        "relative_humidity_pct": 65,
+        "source_id": "EDEN_ISS_2018",
+        "area_basis": "cultivated canopy surface; not building footprint",
+        "cycle_scope": "Reported mean cultivation cycle, not year-round guaranteed harvest. Use complete cycles for a declared season; nursery and turnaround excluded.",
+        "transformation": "DLI = PPFD × (15 h full light + 2 × 1 h half light) × 3600 / 1e6",
+        "light_parameter_selection": "Measured constant PPFD"
+      },
+      "climate": {
+        "open_field_gdd_requirement_c_days": null,
+        "open_field_frost_free_requirement_days": null,
+        "indoor_environment": "Maintain published controlled setpoints; outdoor GDD does not veto heated/lighted production.",
+        "photoperiod_requirement": "Published treatment, not biological optimum or universal minimum"
+      },
+      "soil": {
+        "root_medium": "rockwool/aeroponic isolated root zone; arugula on recycled cotton mat",
+        "requires_native_soil": false,
+        "construction_validation_required": true
+      },
+      "water": {
+        "method": "controlled_environment_water_balance",
+        "makeup_m3_kg": null,
+        "kc": null,
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "note": "Yield article reports recirculation and condensate recovery but not crop-specific makeup volumes. Resource model must separately label physical balance or transfer assumptions."
+      },
+      "limitations": [
+        "Observed fresh-yield variation at one polar analogue, not future site prediction interval.",
+        "Greenhouse option means an engineered controlled envelope with isolated soilless roots; it does not convert EDEN yield to unheated soil greenhouse yield.",
+        "CO2, lighting, nutrient and root-system operating conditions are required for the analogue comparison."
+      ]
+    },
+    {
+      "crop_id": "arugula",
+      "name": "Roka",
+      "name_tr": "Roka",
+      "group": "vegetable",
+      "cultivar": "Low-light treatment",
+      "source_ids": [
+        "EDEN_ISS_2018"
+      ],
+      "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+      "period": "2018",
+      "compatible_methods": [
+        "greenhouse",
+        "hydroponics"
+      ],
+      "production": {
+        "yield_kg_m2_cycle": {
+          "low": 1.87,
+          "central": 3.05,
+          "high": 4.34,
+          "unit": "kg edible fresh biomass / m² cultivated surface / cycle",
+          "range_kind": "reported_observed_min_max",
+          "source_id": "EDEN_ISS_2018",
+          "locator": "Table 6, initial 330 PPFD"
+        },
+        "cycle_days": 24.2,
+        "cycle_days_kind": "reported_mean",
+        "replicate_cycles": 9,
+        "harvest_mode": "batch",
+        "target_temperature_c_day": 21,
+        "target_temperature_c_night": 19,
+        "photoperiod_h": 17,
+        "equivalent_full_light_hours": 16,
+        "ppfd_umol_m2_s": 330,
+        "ppfd_range_umol_m2_s": [
+          330,
+          330
+        ],
+        "dli_mol_m2_day": 19.008,
+        "dli_range_mol_m2_day": [
+          19.008,
+          19.008
+        ],
+        "co2_ppm": 1000,
+        "relative_humidity_pct": 65,
+        "source_id": "EDEN_ISS_2018",
+        "area_basis": "cultivated canopy surface; not building footprint",
+        "cycle_scope": "Reported mean cultivation cycle, not year-round guaranteed harvest. Use complete cycles for a declared season; nursery and turnaround excluded.",
+        "transformation": "DLI = PPFD × (15 h full light + 2 × 1 h half light) × 3600 / 1e6",
+        "light_parameter_selection": "Measured constant PPFD"
+      },
+      "climate": {
+        "open_field_gdd_requirement_c_days": null,
+        "open_field_frost_free_requirement_days": null,
+        "indoor_environment": "Maintain published controlled setpoints; outdoor GDD does not veto heated/lighted production.",
+        "photoperiod_requirement": "Published treatment, not biological optimum or universal minimum"
+      },
+      "soil": {
+        "root_medium": "rockwool/aeroponic isolated root zone; arugula on recycled cotton mat",
+        "requires_native_soil": false,
+        "construction_validation_required": true
+      },
+      "water": {
+        "method": "controlled_environment_water_balance",
+        "makeup_m3_kg": null,
+        "kc": null,
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "note": "Yield article reports recirculation and condensate recovery but not crop-specific makeup volumes. Resource model must separately label physical balance or transfer assumptions."
+      },
+      "limitations": [
+        "Observed fresh-yield variation at one polar analogue, not future site prediction interval.",
+        "Greenhouse option means an engineered controlled envelope with isolated soilless roots; it does not convert EDEN yield to unheated soil greenhouse yield.",
+        "CO2, lighting, nutrient and root-system operating conditions are required for the analogue comparison."
+      ]
+    },
+    {
+      "crop_id": "radish",
+      "name": "Turp",
+      "name_tr": "Turp",
+      "group": "vegetable",
+      "cultivar": "Raxe",
+      "source_ids": [
+        "EDEN_ISS_2018"
+      ],
+      "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+      "period": "2018",
+      "compatible_methods": [
+        "greenhouse",
+        "hydroponics"
+      ],
+      "production": {
+        "yield_kg_m2_cycle": {
+          "low": 1.1,
+          "central": 1.82,
+          "high": 3.21,
+          "unit": "kg edible fresh biomass / m² cultivated surface / cycle",
+          "range_kind": "reported_observed_min_max",
+          "source_id": "EDEN_ISS_2018",
+          "locator": "Table 9, Raxe"
+        },
+        "cycle_days": 22.6,
+        "cycle_days_kind": "reported_mean",
+        "replicate_cycles": 10,
+        "harvest_mode": "batch",
+        "target_temperature_c_day": 21,
+        "target_temperature_c_night": 19,
+        "photoperiod_h": 17,
+        "equivalent_full_light_hours": 16,
+        "ppfd_umol_m2_s": 600,
+        "ppfd_range_umol_m2_s": [
+          600,
+          600
+        ],
+        "dli_mol_m2_day": 34.56,
+        "dli_range_mol_m2_day": [
+          34.56,
+          34.56
+        ],
+        "co2_ppm": 1000,
+        "relative_humidity_pct": 65,
+        "source_id": "EDEN_ISS_2018",
+        "area_basis": "cultivated canopy surface; not building footprint",
+        "cycle_scope": "Reported mean cultivation cycle, not year-round guaranteed harvest. Use complete cycles for a declared season; nursery and turnaround excluded.",
+        "transformation": "DLI = PPFD × (15 h full light + 2 × 1 h half light) × 3600 / 1e6",
+        "light_parameter_selection": "Measured constant PPFD"
+      },
+      "climate": {
+        "open_field_gdd_requirement_c_days": null,
+        "open_field_frost_free_requirement_days": null,
+        "indoor_environment": "Maintain published controlled setpoints; outdoor GDD does not veto heated/lighted production.",
+        "photoperiod_requirement": "Published treatment, not biological optimum or universal minimum"
+      },
+      "soil": {
+        "root_medium": "rockwool/aeroponic isolated root zone; arugula on recycled cotton mat",
+        "requires_native_soil": false,
+        "construction_validation_required": true
+      },
+      "water": {
+        "method": "controlled_environment_water_balance",
+        "makeup_m3_kg": null,
+        "kc": null,
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "note": "Yield article reports recirculation and condensate recovery but not crop-specific makeup volumes. Resource model must separately label physical balance or transfer assumptions."
+      },
+      "limitations": [
+        "Observed fresh-yield variation at one polar analogue, not future site prediction interval.",
+        "Greenhouse option means an engineered controlled envelope with isolated soilless roots; it does not convert EDEN yield to unheated soil greenhouse yield.",
+        "CO2, lighting, nutrient and root-system operating conditions are required for the analogue comparison."
+      ]
+    },
+    {
+      "crop_id": "kohlrabi",
+      "name": "Alabaş",
+      "name_tr": "Alabaş",
+      "group": "vegetable",
+      "cultivar": "Reported kohlrabi",
+      "source_ids": [
+        "EDEN_ISS_2018"
+      ],
+      "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+      "period": "2018",
+      "compatible_methods": [
+        "greenhouse",
+        "hydroponics"
+      ],
+      "production": {
+        "yield_kg_m2_cycle": {
+          "low": 5.74,
+          "central": 8.11,
+          "high": 10.58,
+          "unit": "kg edible fresh biomass / m² cultivated surface / cycle",
+          "range_kind": "reported_observed_min_max",
+          "source_id": "EDEN_ISS_2018",
+          "locator": "Table 9, Kohlrabi"
+        },
+        "cycle_days": 58.71,
+        "cycle_days_kind": "reported_mean",
+        "replicate_cycles": 6,
+        "harvest_mode": "batch",
+        "target_temperature_c_day": 21,
+        "target_temperature_c_night": 19,
+        "photoperiod_h": 17,
+        "equivalent_full_light_hours": 16,
+        "ppfd_umol_m2_s": 350,
+        "ppfd_range_umol_m2_s": [
+          300,
+          400
+        ],
+        "dli_mol_m2_day": 20.16,
+        "dli_range_mol_m2_day": [
+          17.28,
+          23.04
+        ],
+        "co2_ppm": 1000,
+        "relative_humidity_pct": 65,
+        "source_id": "EDEN_ISS_2018",
+        "area_basis": "cultivated canopy surface; not building footprint",
+        "cycle_scope": "Reported mean cultivation cycle, not year-round guaranteed harvest. Use complete cycles for a declared season; nursery and turnaround excluded.",
+        "transformation": "DLI = PPFD × (15 h full light + 2 × 1 h half light) × 3600 / 1e6",
+        "light_parameter_selection": "Midpoint of reported 300–400 PPFD used as explicit engineering nominal; range retained"
+      },
+      "climate": {
+        "open_field_gdd_requirement_c_days": null,
+        "open_field_frost_free_requirement_days": null,
+        "indoor_environment": "Maintain published controlled setpoints; outdoor GDD does not veto heated/lighted production.",
+        "photoperiod_requirement": "Published treatment, not biological optimum or universal minimum"
+      },
+      "soil": {
+        "root_medium": "rockwool/aeroponic isolated root zone; arugula on recycled cotton mat",
+        "requires_native_soil": false,
+        "construction_validation_required": true
+      },
+      "water": {
+        "method": "controlled_environment_water_balance",
+        "makeup_m3_kg": null,
+        "kc": null,
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "note": "Yield article reports recirculation and condensate recovery but not crop-specific makeup volumes. Resource model must separately label physical balance or transfer assumptions."
+      },
+      "limitations": [
+        "Observed fresh-yield variation at one polar analogue, not future site prediction interval.",
+        "Greenhouse option means an engineered controlled envelope with isolated soilless roots; it does not convert EDEN yield to unheated soil greenhouse yield.",
+        "CO2, lighting, nutrient and root-system operating conditions are required for the analogue comparison."
+      ]
+    },
+    {
+      "crop_id": "swiss_chard",
+      "name": "Pazı",
+      "name_tr": "Pazı",
+      "group": "vegetable",
+      "cultivar": "Reported Swiss Chard",
+      "source_ids": [
+        "EDEN_ISS_2018"
+      ],
+      "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+      "period": "2018",
+      "compatible_methods": [
+        "greenhouse",
+        "hydroponics"
+      ],
+      "production": {
+        "yield_kg_m2_cycle": {
+          "low": 7.35,
+          "central": 9.26,
+          "high": 11.28,
+          "unit": "kg edible fresh biomass / m² cultivated surface / cycle",
+          "range_kind": "reported_observed_min_max",
+          "source_id": "EDEN_ISS_2018",
+          "locator": "Table 6, Swiss Chard"
+        },
+        "cycle_days": 90,
+        "cycle_days_kind": "reported_mean",
+        "replicate_cycles": 3,
+        "harvest_mode": "repeated harvest within one reported cycle",
+        "target_temperature_c_day": 21,
+        "target_temperature_c_night": 19,
+        "photoperiod_h": 17,
+        "equivalent_full_light_hours": 16,
+        "ppfd_umol_m2_s": 330,
+        "ppfd_range_umol_m2_s": [
+          330,
+          330
+        ],
+        "dli_mol_m2_day": 19.008,
+        "dli_range_mol_m2_day": [
+          19.008,
+          19.008
+        ],
+        "co2_ppm": 1000,
+        "relative_humidity_pct": 65,
+        "source_id": "EDEN_ISS_2018",
+        "area_basis": "cultivated canopy surface; not building footprint",
+        "cycle_scope": "Reported mean cultivation cycle, not year-round guaranteed harvest. Use complete cycles for a declared season; nursery and turnaround excluded.",
+        "transformation": "DLI = PPFD × (15 h full light + 2 × 1 h half light) × 3600 / 1e6",
+        "light_parameter_selection": "Measured constant PPFD"
+      },
+      "climate": {
+        "open_field_gdd_requirement_c_days": null,
+        "open_field_frost_free_requirement_days": null,
+        "indoor_environment": "Maintain published controlled setpoints; outdoor GDD does not veto heated/lighted production.",
+        "photoperiod_requirement": "Published treatment, not biological optimum or universal minimum"
+      },
+      "soil": {
+        "root_medium": "rockwool/aeroponic isolated root zone; arugula on recycled cotton mat",
+        "requires_native_soil": false,
+        "construction_validation_required": true
+      },
+      "water": {
+        "method": "controlled_environment_water_balance",
+        "makeup_m3_kg": null,
+        "kc": null,
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "note": "Yield article reports recirculation and condensate recovery but not crop-specific makeup volumes. Resource model must separately label physical balance or transfer assumptions."
+      },
+      "limitations": [
+        "Observed fresh-yield variation at one polar analogue, not future site prediction interval.",
+        "Greenhouse option means an engineered controlled envelope with isolated soilless roots; it does not convert EDEN yield to unheated soil greenhouse yield.",
+        "CO2, lighting, nutrient and root-system operating conditions are required for the analogue comparison."
+      ]
+    },
+    {
+      "crop_id": "basil",
+      "name": "Fesleğen",
+      "name_tr": "Fesleğen",
+      "group": "herb",
+      "cultivar": "Dolly",
+      "source_ids": [
+        "EDEN_ISS_2018"
+      ],
+      "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+      "period": "2018",
+      "compatible_methods": [
+        "greenhouse",
+        "hydroponics"
+      ],
+      "production": {
+        "yield_kg_m2_cycle": {
+          "low": 6.37,
+          "central": 7.3,
+          "high": 8.22,
+          "unit": "kg edible fresh biomass / m² cultivated surface / cycle",
+          "range_kind": "reported_observed_min_max",
+          "source_id": "EDEN_ISS_2018",
+          "locator": "Table 7, Basil"
+        },
+        "cycle_days": 121,
+        "cycle_days_kind": "reported_mean",
+        "replicate_cycles": 2,
+        "harvest_mode": "repeated harvest within one reported cycle",
+        "target_temperature_c_day": 21,
+        "target_temperature_c_night": 19,
+        "photoperiod_h": 17,
+        "equivalent_full_light_hours": 16,
+        "ppfd_umol_m2_s": 330,
+        "ppfd_range_umol_m2_s": [
+          330,
+          330
+        ],
+        "dli_mol_m2_day": 19.008,
+        "dli_range_mol_m2_day": [
+          19.008,
+          19.008
+        ],
+        "co2_ppm": 1000,
+        "relative_humidity_pct": 65,
+        "source_id": "EDEN_ISS_2018",
+        "area_basis": "cultivated canopy surface; not building footprint",
+        "cycle_scope": "Reported mean cultivation cycle, not year-round guaranteed harvest. Use complete cycles for a declared season; nursery and turnaround excluded.",
+        "transformation": "DLI = PPFD × (15 h full light + 2 × 1 h half light) × 3600 / 1e6",
+        "light_parameter_selection": "Measured constant PPFD"
+      },
+      "climate": {
+        "open_field_gdd_requirement_c_days": null,
+        "open_field_frost_free_requirement_days": null,
+        "indoor_environment": "Maintain published controlled setpoints; outdoor GDD does not veto heated/lighted production.",
+        "photoperiod_requirement": "Published treatment, not biological optimum or universal minimum"
+      },
+      "soil": {
+        "root_medium": "rockwool/aeroponic isolated root zone; arugula on recycled cotton mat",
+        "requires_native_soil": false,
+        "construction_validation_required": true
+      },
+      "water": {
+        "method": "controlled_environment_water_balance",
+        "makeup_m3_kg": null,
+        "kc": null,
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "note": "Yield article reports recirculation and condensate recovery but not crop-specific makeup volumes. Resource model must separately label physical balance or transfer assumptions."
+      },
+      "limitations": [
+        "Observed fresh-yield variation at one polar analogue, not future site prediction interval.",
+        "Greenhouse option means an engineered controlled envelope with isolated soilless roots; it does not convert EDEN yield to unheated soil greenhouse yield.",
+        "CO2, lighting, nutrient and root-system operating conditions are required for the analogue comparison."
+      ]
+    },
+    {
+      "crop_id": "barley",
+      "name": "Arpa",
+      "name_tr": "Arpa",
+      "group": "cereal",
+      "cultivar": null,
+      "source_ids": [
+        "UAF_GDD_2022",
+        "NORA_2016",
+        "FAO56",
+        "XU_2026"
+      ],
+      "evidence_level": "NORTHERN_FIELD_RESEARCH_CANDIDATE",
+      "period": "See source records",
+      "compatible_methods": [
+        "open_field"
+      ],
+      "production": null,
+      "climate": {
+        "gdd_base_c": 0,
+        "gdd_requirement_c_days": 1388.888888888889,
+        "gdd_original_value": 2500,
+        "gdd_original_unit": "degree Fahrenheit days, base 32°F",
+        "gdd_transformation": "Fahrenheit degree-day difference × 5/9; base 32°F = 0°C",
+        "source_id": "UAF_GDD_2022",
+        "frost_free_requirement_days": null,
+        "reference_cycle_days": 135,
+        "reference_cycle_is_minimum_requirement": false,
+        "photoperiod_requirement": null
+      },
+      "soil": {
+        "requires_native_soil": true,
+        "agronomic_site_validation_required": true,
+        "rooting_depth_m": null,
+        "ph_range": null
+      },
+      "water": {
+        "method": "FAO56_ET0_times_stage_Kc",
+        "kc": {
+          "initial": 0.3,
+          "mid": 1.15,
+          "end": 0.25
+        },
+        "kc_stage_days": [
+          20,
+          25,
+          60,
+          30
+        ],
+        "makeup_m3_kg": null,
+        "source_ids": [
+          "FAO56"
+        ],
+        "note": "Reference calendar not Arctic phenology. Barley/wheat shared spring cereal row; no winter-wheat calendar transfer."
+      },
+      "limitations": [
+        "No site-calibrated field yield, drainage, soil depth or local land allocation is inferred.",
+        "Frost-free duration is reported as climate context, not assigned a fabricated cultivar threshold."
+      ]
+    },
+    {
+      "crop_id": "potato",
+      "name": "Patates",
+      "name_tr": "Patates",
+      "group": "tuber",
+      "cultivar": null,
+      "source_ids": [
+        "POTATO_TROMSO_2025",
+        "FAO56",
+        "XU_2026"
+      ],
+      "evidence_level": "NORTHERN_FIELD_RESEARCH_CANDIDATE",
+      "period": "See source records",
+      "compatible_methods": [
+        "open_field"
+      ],
+      "production": null,
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement_c_days": null,
+        "gdd_original_value": null,
+        "gdd_original_unit": null,
+        "gdd_transformation": null,
+        "source_id": null,
+        "frost_free_requirement_days": null,
+        "reference_cycle_days": 130,
+        "reference_cycle_is_minimum_requirement": false,
+        "photoperiod_requirement": null
+      },
+      "soil": {
+        "requires_native_soil": true,
+        "agronomic_site_validation_required": true,
+        "rooting_depth_m": null,
+        "ph_range": null
+      },
+      "water": {
+        "method": "FAO56_ET0_times_stage_Kc",
+        "kc": {
+          "initial": 0.5,
+          "mid": 1.15,
+          "end": 0.75
+        },
+        "kc_stage_days": [
+          25,
+          30,
+          45,
+          30
+        ],
+        "makeup_m3_kg": null,
+        "source_ids": [
+          "FAO56"
+        ],
+        "note": "Reference calendar not Arctic phenology. Barley/wheat shared spring cereal row; no winter-wheat calendar transfer."
+      },
+      "limitations": [
+        "No site-calibrated field yield, drainage, soil depth or local land allocation is inferred.",
+        "Frost-free duration is reported as climate context, not assigned a fabricated cultivar threshold."
+      ]
+    },
+    {
+      "crop_id": "wheat",
+      "name": "Buğday",
+      "name_tr": "Buğday",
+      "group": "cereal",
+      "cultivar": null,
+      "source_ids": [
+        "FAO56",
+        "XU_2026"
+      ],
+      "evidence_level": "NORTHERN_FIELD_RESEARCH_CANDIDATE",
+      "period": "See source records",
+      "compatible_methods": [
+        "open_field"
+      ],
+      "production": null,
+      "climate": {
+        "gdd_base_c": null,
+        "gdd_requirement_c_days": null,
+        "gdd_original_value": null,
+        "gdd_original_unit": null,
+        "gdd_transformation": null,
+        "source_id": null,
+        "frost_free_requirement_days": null,
+        "reference_cycle_days": 135,
+        "reference_cycle_is_minimum_requirement": false,
+        "photoperiod_requirement": null
+      },
+      "soil": {
+        "requires_native_soil": true,
+        "agronomic_site_validation_required": true,
+        "rooting_depth_m": null,
+        "ph_range": null
+      },
+      "water": {
+        "method": "FAO56_ET0_times_stage_Kc",
+        "kc": {
+          "initial": 0.3,
+          "mid": 1.15,
+          "end": 0.25
+        },
+        "kc_stage_days": [
+          20,
+          25,
+          60,
+          30
+        ],
+        "makeup_m3_kg": null,
+        "source_ids": [
+          "FAO56"
+        ],
+        "note": "Reference calendar not Arctic phenology. Barley/wheat shared spring cereal row; no winter-wheat calendar transfer."
+      },
+      "limitations": [
+        "No site-calibrated field yield, drainage, soil depth or local land allocation is inferred.",
+        "Frost-free duration is reported as climate context, not assigned a fabricated cultivar threshold."
+      ]
+    }
+  ],
+  "planning_basis": {
+    "unit": "100 m² cultivated surface for a declared season",
+    "classification": "NORMALIZED_COMPARISON_NOT_LOCAL_CAPACITY",
+    "source": "Dimensional normalization, a stated analytical design choice rather than an externally observed capacity.",
+    "objective_policy": "No default edible-mass sum, crop preference weights, nutrition equivalence or invented demand. Compare per-crop resource intensity/complete-cycle capacity; a mixed portfolio requires explicit demand/diversity policy.",
+    "season_accounting": "floor(season_days / reported_mean_cycle_days) complete cycles; no fractional final harvest and no claim to modeled phenology. Include nursery/turnaround separately before a site design."
+  },
+  "evidence_selection": {
+    "cea_selection": "Six crops with repeated-cycle min/max and area-based yield in the same polar controlled trial. Specific cultivar/treatment is visible; not an optimized species list.",
+    "scope": "Open-field and controlled candidates are screened separately. Field candidates remain visible even when not allocated by conservative site policy."
+  },
+  "xu_2026": {
+    "doi": "10.1038/s43247-026-03702-w",
+    "published_on": "2026-05-30",
+    "crops": [
+      "wheat",
+      "maize",
+      "barley",
+      "soybean",
+      "sunflower",
+      "sugarbeet",
+      "potato"
+    ],
+    "climate_dataset": "CHELSA 2.1",
+    "gcm_count": 5,
+    "gcms": [
+      "GFDL-ESM4",
+      "MPI-ESM1-2-HR",
+      "MRI-ESM2-0",
+      "IPSL-CM6A-LR",
+      "UKESM1-0-LL"
+    ],
+    "scenarios": [
+      "SSP1-2.6",
+      "SSP5-8.5"
+    ],
+    "periods": [
+      "1980-2010",
+      "2041-2070",
+      "2071-2100"
+    ],
+    "methods": "MaxEnt 3.4.4, ENMeval 2.0.5, 63 environmental predictors before selection, 5 arc-minute final grid, MAAT-based near-surface permafrost model with NSIDC ground ice.",
+    "validation": "Paper describes 10 repeated runs, 75% training/25% validation and AUC; these are not validation of this app.",
+    "end_century": {
+      "northward_shift_km": [
+        331,
+        739
+      ],
+      "new_frontier_million_km2": [
+        4.86,
+        11.64
+      ],
+      "permafrost_thaw_affected_frontier_percent": [
+        29,
+        18
+      ]
+    },
+    "source_data": "https://doi.org/10.5281/zenodo.20282716",
+    "not_used_as": "No location crop yield, allocated water, field measurements, or locally reproduced MaxEnt is inferred from hemisphere results."
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "verified_at_utc": "2026-09-22T22:02:24.697082+00:00",
+  "python": "3.12.14",
+  "status": "passed",
+  "pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "21",
+    "time": "2.649",
+    "timestamp": "2026-09-23T01:00:35.296685+03:00",
+    "hostname": "bahademir"
+  },
+  "raw_files": 1680,
+  "daily_model_point_rows": 153399,
+  "source_values": 613596,
+  "contexts": 7,
+  "models": [
+    "ACCESS-CM2",
+    "MPI-ESM1-2-HR",
+    "MRI-ESM2-0"
+  ],
+  "manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+  "offline_rebuild_passed": true,
+  "old_2035_subset_regression_passed": true,
+  "local_reference_adjustment_applied": false,
+  "checks": [
+    "1680 raw SHA256 + all derived hashes",
+    "20 full Gregorian years per model/context",
+    "version 2.0, units, model/member/scenario and explicit cell identity",
+    "Tmin <= Tmax and nonnegative finite precipitation/radiation",
+    "nonlinear indicators before model mean",
+    "2100 non-leap calendar",
+    "hash tamper rejection",
+    "callers cannot mutate cache",
+    "original2035subset agreement within float32 precision"
+  ],
+  "context_summary": [
+    {
+      "horizon": "historical",
+      "scenario": "ssp245",
+      "period": [
+        1995,
+        2014
+      ],
+      "temperature_c": {
+        "mean": -7.929442673205391,
+        "min": -8.553201041122724,
+        "max": -7.298338258718848
+      },
+      "gdd5": {
+        "mean": 3.2313198343913823,
+        "min": 1.4205171203613873,
+        "max": 4.5840345764161725
+      },
+      "frost_free_run_days": {
+        "mean": 22.066666666666663,
+        "min": 20.9,
+        "max": 23.95
+      }
+    },
+    {
+      "horizon": "near",
+      "scenario": "ssp245",
+      "period": [
+        2021,
+        2040
+      ],
+      "temperature_c": {
+        "mean": -5.63860088795752,
+        "min": -5.779905338939819,
+        "max": -5.431848438416258
+      },
+      "gdd5": {
+        "mean": 28.7570907592779,
+        "min": 17.063433990479002,
+        "max": 40.525472717285844
+      },
+      "frost_free_run_days": {
+        "mean": 41.550000000000004,
+        "min": 37.2,
+        "max": 44.5
+      }
+    },
+    {
+      "horizon": "near",
+      "scenario": "ssp585",
+      "period": [
+        2021,
+        2040
+      ],
+      "temperature_c": {
+        "mean": -5.492635178252683,
+        "min": -6.876205625370557,
+        "max": -3.6133162213506673
+      },
+      "gdd5": {
+        "mean": 36.80338394165098,
+        "min": 12.363470764160473,
+        "max": 83.2872668457042
+      },
+      "frost_free_run_days": {
+        "mean": 41.63333333333333,
+        "min": 30.9,
+        "max": 57.35
+      }
+    },
+    {
+      "horizon": "mid",
+      "scenario": "ssp245",
+      "period": [
+        2041,
+        2060
+      ],
+      "temperature_c": {
+        "mean": -3.520776887912644,
+        "min": -5.01467308756314,
+        "max": -2.7281005125561686
+      },
+      "gdd5": {
+        "mean": 77.19399327596125,
+        "min": 19.31224212646534,
+        "max": 143.61393157959117
+      },
+      "frost_free_run_days": {
+        "mean": 53.25,
+        "min": 46.6,
+        "max": 64.2
+      }
+    },
+    {
+      "horizon": "mid",
+      "scenario": "ssp585",
+      "period": [
+        2041,
+        2060
+      ],
+      "temperature_c": {
+        "mean": -2.806596700879288,
+        "min": -3.9309544312677978,
+        "max": -1.2236365512431053
+      },
+      "gdd5": {
+        "mean": 107.39419433593866,
+        "min": 43.74497253418052,
+        "max": 216.3323487854021
+      },
+      "frost_free_run_days": {
+        "mean": 62.70000000000001,
+        "min": 53.75,
+        "max": 77.2
+      }
+    },
+    {
+      "horizon": "late",
+      "scenario": "ssp245",
+      "period": [
+        2081,
+        2100
+      ],
+      "temperature_c": {
+        "mean": -1.4242422749925343,
+        "min": -1.9948233501103716,
+        "max": -0.31260255469077136
+      },
+      "gdd5": {
+        "mean": 148.0725524393733,
+        "min": 92.87153503418098,
+        "max": 190.67496856689647
+      },
+      "frost_free_run_days": {
+        "mean": 72.36666666666666,
+        "min": 69.25,
+        "max": 74.3
+      }
+    },
+    {
+      "horizon": "late",
+      "scenario": "ssp585",
+      "period": [
+        2081,
+        2100
+      ],
+      "temperature_c": {
+        "mean": 2.322829765752745,
+        "min": 0.5747725016950171,
+        "max": 4.8500833031310275
+      },
+      "gdd5": {
+        "mean": 426.03145767212214,
+        "min": 242.07948669433827,
+        "max": 702.6072634887742
+      },
+      "frost_free_run_days": {
+        "mean": 117.16666666666667,
+        "min": 108.25,
+        "max": 123.95
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+import type {JsonRecord} from '../api'
+import {obj,list,number} from '../ui'
+export default function NorthProductionPurpose({result}:{result:JsonRecord}){
+ const plan=obj(result.plan),purpose=obj(plan.production_purpose),totals=obj(plan.totals)
+ if(!purpose.id)return null
+ return <section><h3>Seçilen hedef: {String(purpose.label)}</h3><div className="north-range-row"><span>Taze yenebilir hasat<b>{number(totals.production_kg,0)} kg/yıl</b></span><span>Aktarılan bileşimle protein<b>{number(totals.protein_kg)} kg/yıl</b></span><span>Besin enerjisi<b>{number(totals.food_energy_kcal,0)} kcal/yıl</b><small>Tesisin elektrik tüketimi değildir</small></span></div><p>Bu değerler kaynaklı besin bileşiminin model hasadına uygulanmasıdır. Kişi sayısı, dengeli beslenme veya kâr sonucu değildir.</p><details><summary>Ürünlerin kaynaklı besin katsayıları</summary><table><thead><tr><th>Ürün</th><th>Protein / 100 g</th><th>Besin enerjisi / 100 g</th></tr></thead><tbody>{list(purpose.coefficients).map(c=><tr key={String(c.crop_id)}><td>{({lettuce:'Marul',arugula:'Roka',kohlrabi:'Alabaş',radish:'Turp',swiss_chard:'Pazı',basil:'Fesleğen'} as Record<string,string>)[String(c.crop_id)]}</td><td>{number(c.protein_g_per_100g_edible)} g</td><td>{number(c.food_kcal_per_100g_edible)} kcal</td></tr>)}</tbody></table><p>Matvaretabellen · ham yenebilir kısım. Yerel Arktik ürün analizi değildir; protein sindirilebilirlik düzeltmesi içermez.</p></details></section>
+}

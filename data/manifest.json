@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0",
+  "datasets": [
+    {
+      "dataset_id": "open_meteo_era5_konya_2022_2023",
+      "provider": "Open-Meteo; underlying ERA5: ECMWF / Copernicus Climate Change Service",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=37.87&longitude=32.49&start_date=2022-01-01&end_date=2023-12-31&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Cet0_fao_evapotranspiration&models=era5&timezone=UTC&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=land",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "upstream_doi": "10.24381/cds.adbb2d47",
+      "version": "Archive API v1; models=era5; provider does not expose numerical processing build; SHA256 pins returned bytes",
+      "access_date": "2026-09-22T10:36:13.023907+00:00",
+      "temporal_resolution": "daily UTC aggregation of hourly reanalysis",
+      "temporal_start": "2022-01-01",
+      "temporal_end": "2023-12-31",
+      "spatial_resolution": "ERA5 0.25 degree grid; point extraction, not basin average; elevation downscaling disabled",
+      "requested_location": {
+        "site_id": "konya",
+        "name": "Konya",
+        "latitude": 37.87,
+        "longitude": 32.49,
+        "role": "historical_pilot_comparison"
+      },
+      "returned_grid_location": {
+        "latitude": 37.75,
+        "longitude": 32.5,
+        "elevation": 1189.0
+      },
+      "units": {
+        "tmin_c": "°C",
+        "tmax_c": "°C",
+        "precipitation_mm": "mm",
+        "et0_mm": "mm"
+      },
+      "variables": [
+        "tmin_c",
+        "tmax_c",
+        "precipitation_mm",
+        "et0_mm"
+      ],
+      "license": "Open-Meteo API data CC BY 4.0; attribution to Open-Meteo and ERA5/Copernicus",
+      "license_url": "https://open-meteo.com/en/terms",
+      "access_limits": "Free API non-commercial only; <10000 calls/day, <5000/hour, <600/minute; no credential used",
+      "classification": "MODEL / REANALYSIS",
+      "content_sha256": "d4b4d8217d3405f885feb8d1a351bba17c28a085c07cd0273c144950e79ba4be",
+      "local_raw_path": "data/raw/open_meteo/open_meteo_era5_konya_2022_2023_d4b4d8217d3405f885feb8d1a351bba17c28a085c07cd0273c144950e79ba4be.json",
+      "row_count": 730,
+      "missing_values": {
+        "tmin_c": 0,
+        "tmax_c": 0,
+        "precipitation_mm": 0,
+        "et0_mm": 0
+      },
+      "transformations": "Rename variables only; temperature degC, daily precipitation and ET0 mm; missing values retained as null/empty, never zero-filled",
+      "limitations": [
+        "ET0 is provider-derived FAO56 grass reference evapotranspiration, not crop ET, actual ET, available irrigation water or runoff.",
+        "Precipitation includes snowfall water equivalent; precipitation is not immediately usable supply, especially in Arctic snow conditions.",
+        "One grid cell cannot validate a basin; two years are a demonstration, not a climate normal or future projection.",
+        "Local terrain/coastal representativeness remains unresolved; actual returned grid coordinate preserved."
+      ]
+    },
+    {
+      "dataset_id": "open_meteo_era5_seyhan_adana_2022_2023",
+      "provider": "Open-Meteo; underlying ERA5: ECMWF / Copernicus Climate Change Service",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0&longitude=35.32&start_date=2022-01-01&end_date=2023-12-31&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Cet0_fao_evapotranspiration&models=era5&timezone=UTC&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=land",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "upstream_doi": "10.24381/cds.adbb2d47",
+      "version": "Archive API v1; models=era5; provider does not expose numerical processing build; SHA256 pins returned bytes",
+      "access_date": "2026-09-22T10:36:45.686071+00:00",
+      "temporal_resolution": "daily UTC aggregation of hourly reanalysis",
+      "temporal_start": "2022-01-01",
+      "temporal_end": "2023-12-31",
+      "spatial_resolution": "ERA5 0.25 degree grid; point extraction, not basin average; elevation downscaling disabled",
+      "requested_location": {
+        "site_id": "seyhan_adana",
+        "name": "Seyhan / Adana",
+        "latitude": 37.0,
+        "longitude": 35.32,
+        "role": "transfer_demonstration"
+      },
+      "returned_grid_location": {
+        "latitude": 37.0,
+        "longitude": 35.25,
+        "elevation": 95.0
+      },
+      "units": {
+        "tmin_c": "°C",
+        "tmax_c": "°C",
+        "precipitation_mm": "mm",
+        "et0_mm": "mm"
+      },
+      "variables": [
+        "tmin_c",
+        "tmax_c",
+        "precipitation_mm",
+        "et0_mm"
+      ],
+      "license": "Open-Meteo API data CC BY 4.0; attribution to Open-Meteo and ERA5/Copernicus",
+      "license_url": "https://open-meteo.com/en/terms",
+      "access_limits": "Free API non-commercial only; <10000 calls/day, <5000/hour, <600/minute; no credential used",
+      "classification": "MODEL / REANALYSIS",
+      "content_sha256": "548b4731aa31fa44b07620b97c7c848f15ffb7d9512a61abcc989af22686520f",
+      "local_raw_path": "data/raw/open_meteo/open_meteo_era5_seyhan_adana_2022_2023_548b4731aa31fa44b07620b97c7c848f15ffb7d9512a61abcc989af22686520f.json",
+      "row_count": 730,
+      "missing_values": {
+        "tmin_c": 0,
+        "tmax_c": 0,
+        "precipitation_mm": 0,
+        "et0_mm": 0
+      },
+      "transformations": "Rename variables only; temperature degC, daily precipitation and ET0 mm; missing values retained as null/empty, never zero-filled",
+      "limitations": [
+        "ET0 is provider-derived FAO56 grass reference evapotranspiration, not crop ET, actual ET, available irrigation water or runoff.",
+        "Precipitation includes snowfall water equivalent; precipitation is not immediately usable supply, especially in Arctic snow conditions.",
+        "One grid cell cannot validate a basin; two years are a demonstration, not a climate normal or future projection.",
+        "Local terrain/coastal representativeness remains unresolved; actual returned grid coordinate preserved."
+      ]
+    },
+    {
+      "dataset_id": "open_meteo_era5_gediz_manisa_2022_2023_a082a5d7937a",
+      "provider": "Open-Meteo; underlying ERA5: ECMWF / Copernicus Climate Change Service",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.61&longitude=27.43&start_date=2022-01-01&end_date=2023-12-31&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Cet0_fao_evapotranspiration&models=era5&timezone=UTC&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=land",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "upstream_doi": "10.24381/cds.adbb2d47",
+      "version": "Archive API v1; models=era5; provider does not expose numerical processing build; SHA256 pins returned bytes",
+      "access_date": "2026-09-22T11:26:42.052998+00:00",
+      "temporal_resolution": "daily UTC aggregation of hourly reanalysis",
+      "temporal_start": "2022-01-01",
+      "temporal_end": "2023-12-31",
+      "spatial_resolution": "ERA5 0.25 degree grid; point extraction, not basin average; elevation downscaling disabled",
+      "requested_location": {
+        "site_id": "gediz_manisa",
+        "name": "Gediz / Manisa",
+        "latitude": 38.61,
+        "longitude": 27.43,
+        "role": "transfer_demonstration"
+      },
+      "returned_grid_location": {
+        "latitude": 38.5,
+        "longitude": 27.5,
+        "elevation": 323.0
+      },
+      "units": {
+        "tmin_c": "°C",
+        "tmax_c": "°C",
+        "precipitation_mm": "mm",
+        "et0_mm": "mm"
+      },
+      "variables": [
+        "tmin_c",
+        "tmax_c",
+        "precipitation_mm",
+        "et0_mm"
+      ],
+      "license": "Open-Meteo API data CC BY 4.0; attribution to Open-Meteo and ERA5/Copernicus",
+      "license_url": "https://open-meteo.com/en/terms",
+      "access_limits": "Free API non-commercial only; <10000 calls/day, <5000/hour, <600/minute; no credential used",
+      "classification": "MODEL / REANALYSIS",
+      "content_sha256": "a082a5d7937a552e6bfe7abeefab70ee0e8dd35bab5bc982f1315470c9754bd1",
+      "local_raw_path": "data/raw/open_meteo/open_meteo_era5_gediz_manisa_2022_2023_a082a5d7937a552e6bfe7abeefab70ee0e8dd35bab5bc982f1315470c9754bd1.json",
+      "row_count": 730,
+      "missing_values": {
+        "tmin_c": 0,
+        "tmax_c": 0,
+        "precipitation_mm": 0,
+        "et0_mm": 0
+      },
+      "transformations": "Rename variables only; temperature degC, daily precipitation and ET0 mm; missing values retained as null/empty, never zero-filled",
+      "limitations": [
+        "ET0 is provider-derived FAO56 grass reference evapotranspiration, not crop ET, actual ET, available irrigation water or runoff.",
+        "Precipitation includes snowfall water equivalent; precipitation is not immediately usable supply, especially in Arctic snow conditions.",
+        "One grid cell cannot validate a basin; two years are a demonstration, not a climate normal or future projection.",
+        "Local terrain/coastal representativeness remains unresolved; actual returned grid coordinate preserved."
+      ]
+    },
+    {
+      "dataset_id": "open_meteo_era5_gap_sanliurfa_2022_2023_4ec9fa9c3621",
+      "provider": "Open-Meteo; underlying ERA5: ECMWF / Copernicus Climate Change Service",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=36.87&longitude=39.03&start_date=2022-01-01&end_date=2023-12-31&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Cet0_fao_evapotranspiration&models=era5&timezone=UTC&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=land",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "upstream_doi": "10.24381/cds.adbb2d47",
+      "version": "Archive API v1; models=era5; provider does not expose numerical processing build; SHA256 pins returned bytes",
+      "access_date": "2026-09-22T11:27:29.588831+00:00",
+      "temporal_resolution": "daily UTC aggregation of hourly reanalysis",
+      "temporal_start": "2022-01-01",
+      "temporal_end": "2023-12-31",
+      "spatial_resolution": "ERA5 0.25 degree grid; point extraction, not basin average; elevation downscaling disabled",
+      "requested_location": {
+        "site_id": "gap_sanliurfa",
+        "name": "GAP / Harran–Şanlıurfa",
+        "latitude": 36.87,
+        "longitude": 39.03,
+        "role": "transfer_demonstration"
+      },
+      "returned_grid_location": {
+        "latitude": 36.75,
+        "longitude": 39.0,
+        "elevation": 369.0
+      },
+      "units": {
+        "tmin_c": "°C",
+        "tmax_c": "°C",
+        "precipitation_mm": "mm",
+        "et0_mm": "mm"
+      },
+      "variables": [
+        "tmin_c",
+        "tmax_c",
+        "precipitation_mm",
+        "et0_mm"
+      ],
+      "license": "Open-Meteo API data CC BY 4.0; attribution to Open-Meteo and ERA5/Copernicus",
+      "license_url": "https://open-meteo.com/en/terms",
+      "access_limits": "Free API non-commercial only; <10000 calls/day, <5000/hour, <600/minute; no credential used",
+      "classification": "MODEL / REANALYSIS",
+      "content_sha256": "4ec9fa9c3621e5a088e3479045e48b8e98086b5c7ab8c1f231d6a0168fd52214",
+      "local_raw_path": "data/raw/open_meteo/open_meteo_era5_gap_sanliurfa_2022_2023_4ec9fa9c3621e5a088e3479045e48b8e98086b5c7ab8c1f231d6a0168fd52214.json",
+      "row_count": 730,
+      "missing_values": {
+        "tmin_c": 0,
+        "tmax_c": 0,
+        "precipitation_mm": 0,
+        "et0_mm": 0
+      },
+      "transformations": "Rename variables only; temperature degC, daily precipitation and ET0 mm; missing values retained as null/empty, never zero-filled",
+      "limitations": [
+        "ET0 is provider-derived FAO56 grass reference evapotranspiration, not crop ET, actual ET, available irrigation water or runoff.",
+        "Precipitation includes snowfall water equivalent; precipitation is not immediately usable supply, especially in Arctic snow conditions.",
+        "One grid cell cannot validate a basin; two years are a demonstration, not a climate normal or future projection.",
+        "Local terrain/coastal representativeness remains unresolved; actual returned grid coordinate preserved."
+      ]
+    },
+    {
+      "dataset_id": "open_meteo_era5_trakya_edirne_2022_2023_aa7b8cd4e521",
+      "provider": "Open-Meteo; underlying ERA5: ECMWF / Copernicus Climate Change Service",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=41.68&longitude=26.56&start_date=2022-01-01&end_date=2023-12-31&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Cet0_fao_evapotranspiration&models=era5&timezone=UTC&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=land",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "upstream_doi": "10.24381/cds.adbb2d47",
+      "version": "Archive API v1; models=era5; provider does not expose numerical processing build; SHA256 pins returned bytes",
+      "access_date": "2026-09-22T11:27:34.731104+00:00",
+      "temporal_resolution": "daily UTC aggregation of hourly reanalysis",
+      "temporal_start": "2022-01-01",
+      "temporal_end": "2023-12-31",
+      "spatial_resolution": "ERA5 0.25 degree grid; point extraction, not basin average; elevation downscaling disabled",
+      "requested_location": {
+        "site_id": "trakya_edirne",
+        "name": "Trakya / Edirne",
+        "latitude": 41.68,
+        "longitude": 26.56,
+        "role": "transfer_demonstration"
+      },
+      "returned_grid_location": {
+        "latitude": 41.75,
+        "longitude": 26.5,
+        "elevation": 125.0
+      },
+      "units": {
+        "tmin_c": "°C",
+        "tmax_c": "°C",
+        "precipitation_mm": "mm",
+        "et0_mm": "mm"
+      },
+      "variables": [
+        "tmin_c",
+        "tmax_c",
+        "precipitation_mm",
+        "et0_mm"
+      ],
+      "license": "Open-Meteo API data CC BY 4.0; attribution to Open-Meteo and ERA5/Copernicus",
+      "license_url": "https://open-meteo.com/en/terms",
+      "access_limits": "Free API non-commercial only; <10000 calls/day, <5000/hour, <600/minute; no credential used",
+      "classification": "MODEL / REANALYSIS",
+      "content_sha256": "aa7b8cd4e52198691942e01fd05b59bcb9c46d99340bc91636e646acccafea0b",
+      "local_raw_path": "data/raw/open_meteo/open_meteo_era5_trakya_edirne_2022_2023_aa7b8cd4e52198691942e01fd05b59bcb9c46d99340bc91636e646acccafea0b.json",
+      "row_count": 730,
+      "missing_values": {
+        "tmin_c": 0,
+        "tmax_c": 0,
+        "precipitation_mm": 0,
+        "et0_mm": 0
+      },
+      "transformations": "Rename variables only; temperature degC, daily precipitation and ET0 mm; missing values retained as null/empty, never zero-filled",
+      "limitations": [
+        "ET0 is provider-derived FAO56 grass reference evapotranspiration, not crop ET, actual ET, available irrigation water or runoff.",
+        "Precipitation includes snowfall water equivalent; precipitation is not immediately usable supply, especially in Arctic snow conditions.",
+        "One grid cell cannot validate a basin; two years are a demonstration, not a climate normal or future projection.",
+        "Local terrain/coastal representativeness remains unresolved; actual returned grid coordinate preserved."
+      ]
+    },
+    {
+      "dataset_id": "open_meteo_era5_longyearbyen_2022_2023",
+      "provider": "Open-Meteo; underlying ERA5: ECMWF / Copernicus Climate Change Service",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=78.22&longitude=15.65&start_date=2022-01-01&end_date=2023-12-31&daily=temperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Cet0_fao_evapotranspiration&models=era5&timezone=UTC&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=land",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "upstream_doi": "10.24381/cds.adbb2d47",
+      "version": "Archive API v1; models=era5; provider does not expose numerical processing build; SHA256 pins returned bytes",
+      "access_date": "2026-09-22T10:36:49.801374+00:00",
+      "temporal_resolution": "daily UTC aggregation of hourly reanalysis",
+      "temporal_start": "2022-01-01",
+      "temporal_end": "2023-12-31",
+      "spatial_resolution": "ERA5 0.25 degree grid; point extraction, not basin average; elevation downscaling disabled",
+      "requested_location": {
+        "site_id": "longyearbyen",
+        "name": "Longyearbyen",
+        "latitude": 78.22,
+        "longitude": 15.65,
+        "role": "northern_controlled_production_context"
+      },
+      "returned_grid_location": {
+        "latitude": 78.25,
+        "longitude": 15.75,
+        "elevation": 217.0
+      },
+      "units": {
+        "tmin_c": "°C",
+        "tmax_c": "°C",
+        "precipitation_mm": "mm",
+        "et0_mm": "mm"
+      },
+      "variables": [
+        "tmin_c",
+        "tmax_c",
+        "precipitation_mm",
+        "et0_mm"
+      ],
+      "license": "Open-Meteo API data CC BY 4.0; attribution to Open-Meteo and ERA5/Copernicus",
+      "license_url": "https://open-meteo.com/en/terms",
+      "access_limits": "Free API non-commercial only; <10000 calls/day, <5000/hour, <600/minute; no credential used",
+      "classification": "MODEL / REANALYSIS",
+      "content_sha256": "ee6fce871f1b3295ca8448766bb26a8c7ee7df949bd2f2b6d7a64c2cd177ae8f",
+      "local_raw_path": "data/raw/open_meteo/open_meteo_era5_longyearbyen_2022_2023_ee6fce871f1b3295ca8448766bb26a8c7ee7df949bd2f2b6d7a64c2cd177ae8f.json",
+      "row_count": 730,
+      "missing_values": {
+        "tmin_c": 0,
+        "tmax_c": 0,
+        "precipitation_mm": 0,
+        "et0_mm": 0
+      },
+      "transformations": "Rename variables only; temperature degC, daily precipitation and ET0 mm; missing values retained as null/empty, never zero-filled",
+      "limitations": [
+        "ET0 is provider-derived FAO56 grass reference evapotranspiration, not crop ET, actual ET, available irrigation water or runoff.",
+        "Precipitation includes snowfall water equivalent; precipitation is not immediately usable supply, especially in Arctic snow conditions.",
+        "One grid cell cannot validate a basin; two years are a demonstration, not a climate normal or future projection.",
+        "Local terrain/coastal representativeness remains unresolved; actual returned grid coordinate preserved."
+      ]
+    }
+  ]
+}

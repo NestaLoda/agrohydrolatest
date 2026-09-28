@@ -1,0 +1,176 @@
+{
+  "timestamp": "2026-09-22T19:41:21.067Z",
+  "desktopOnly": true,
+  "allManualFinancialValuesWereQAAssumptionsAndCleared": true,
+  "checks": [
+    {
+      "check": "actionable exact crop ratios, positive water tone, large sections default closed",
+      "pass": true,
+      "evidence": {
+        "advice": " Daha az su gerektiren desenKARAR DESTEĞİDesen değişiminden 719.291.142 m³ (%8,2) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.ÖneriArpa payını %28,1 → %14 azaltın; Buğday payını %50,9 → %75,5 artırın.Neden?Üretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 5.884, Arpa 6.963 m³/ha; Arpa üretim alt sınırında.DikkatArpa üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın.",
+        "economicsOpen": false,
+        "graphsOpen": false,
+        "tone": "turkey-decision-support verdict-good",
+        "waterTone": "live-water-heading verdict-good"
+      }
+    },
+    {
+      "check": "water tariff alone computes water cost savings while revenue and margin remain unknown",
+      "pass": true,
+      "evidence": "Ekonomi kontrolü\n1.438.582.284 TL sulama gideri azalması\n\nSeçilen fiyat ve maliyetlerle mevcut senaryo → öneri. Bu kontrol, su odaklı önerinin ekonomik sonucunu hesaplar.\n\nSulama birim maliyeti\nTL/m³ · su + pompalama / hizmet\nDesen değişiminden sulama gideri farkı\nAzalma: 1.438.582.284 TL\nÜrün\tSatış fiyatı · TL/kg\tSulama hariç üretim gideri · TL/ha\nBuğday\t\t\nArpa\t\t\nDane mısır\t\t\nŞeker pancarı\t\t\nPatates\t\t\nSezon hesabı\tMevcut senaryo\tÖneri\tÖneri − mevcut\nSatış geliri\tDATA NEEDED\tDATA NEEDED\tDATA NEEDED\nSulama hariç üretim gideri\tDATA NEEDED\tDATA NEEDED\tDATA NEEDED\nSulama gideri\t17.615.516.111 TL\t16.176.933.827 TL\t-1.438.582.284 TL\nModellenmiş faaliyet marjı\tDATA NEEDED\tDATA NEEDED\tDATA NEEDED\n\nSu gideri azalması tek başına kâr artışı değildir; eksik fiyat / gider değerleri tamamlanmalı.\n\nMANUAL OVERRIDE · aynı birim fiyat/maliyet, iki desene uygulanır. Marj = gelir − üretim gideri − sulama. Yatırım, finansman ve vergi dahil net kâr hesabı değildir.\nEkonomi girdilerini temizle"
+    },
+    {
+      "check": "water saved but crop revenue loss produces red economic advice",
+      "pass": true,
+      "inputs": "QA assumptions only: water2 TL/m3, eachcropprice10 TL/kg, cultivation1000 TL/ha",
+      "evidence": {
+        "summary": " Ekonomi kontrolü−42.917.676.371 TL faaliyet farkı",
+        "tone": "economics-panel verdict-bad",
+        "verdict": "Su odaklı öneri bu fiyatlarda faaliyet marjını düşürüyor. Uygulamadan önce ürün sınırlarını ve maliyetleri yeniden değerlendirin."
+      }
+    },
+    {
+      "check": "complete assumptions with improved positive margin and preserved revenue display green",
+      "pass": true,
+      "inputs": "QA only: wheatprice100, otherprices10 TL/kg; water2; cultivation1000",
+      "evidence": {
+        "tone": "economics-panel verdict-good",
+        "verdict": "Bu varsayımlarda faaliyet marjı artıyor. Satış geliri de korunuyor."
+      }
+    },
+    {
+      "check": "all 10 distinct charts render individually with finite labelled data",
+      "pass": true,
+      "evidence": [
+        {
+          "id": "areas",
+          "title": "Kaynak → seçilen → önerilen alan payları\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n20\n40\n60\n80\nBuğday\n50,9\n50,9\n75,5\nArpa\n28,1\n28,1\n14\nDane mısır\n12,7\n12,7\n6,3\nŞeker pancarı\n6,8\n6,8\n3,4\nPatates\n1,5\n1,5\n0,7\n% alan"
+        },
+        {
+          "id": "shift",
+          "title": "Öneriyle hangi ürünün alan payı değişiyor?\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "-27\n-13,5\n0\n+13,5\n+27\nBuğday\n+24,5\nArpa\n-14\nDane mısır\n-6,3\nŞeker pancarı\n-3,4\nPatates\n-0,7\nÖnerilen − seçilen · yüzde puan"
+        },
+        {
+          "id": "crop-water",
+          "title": "Aynı koşullarda ürünlere göre su gereği\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n1,5 Mr\n2,9 Mr\n4,4 Mr\n5,9 Mr\nBuğday\n3,8 Mr\n5,6 Mr\nArpa\n2,4 Mr\n1,2 Mr\nDane mısır\n1,5 Mr\n755,9 Mn\nŞeker pancarı\n919 Mn\n459,5 Mn\nPatates\n174,8 Mn\n87,4 Mn\nm³"
+        },
+        {
+          "id": "production",
+          "title": "Ürün bazında üretim miktarı\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n1,8 Mr\n3,7 Mr\n5,5 Mr\n7,4 Mr\nBuğday\n1,8 Mr\n2,7 Mr\nArpa\n891,9 Mn\n446 Mn\nDane mısır\n2 Mr\n1 Mr\nŞeker pancarı\n7 Mr\n3,5 Mr\nPatates\n753,7 Mn\n376,9 Mn\nkg"
+        },
+        {
+          "id": "intensity",
+          "title": "Ürünlerin modellenmiş brüt su gereği\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n2,9 B\n5,7 B\n8,6 B\n11,5 B\nBuğday\n5,9 B\nArpa\n7 B\nDane mısır\n9,5 B\nŞeker pancarı\n10,8 B\nPatates\n9,3 B\nm³/ha"
+        },
+        {
+          "id": "net-gross",
+          "title": "Net ve brüt sulama suyu gereği\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n286,3\n572,6\n858,9\n1,1 B\nBuğday\n441,3\n588,4\nArpa\n522,2\n696,3\nDane mısır\n713,1\n950,8\nŞeker pancarı\n810,3\n1,1 B\nPatates\n697,9\n930,5\nmm"
+        },
+        {
+          "id": "minima",
+          "title": "Beyan edilen minimum üretimin karşılanması\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n78,5\n157,1\n235,6\n314,1\n%100 sınırı\nBuğday\n296,3\nArpa\n100\nDane mısır\n100\nŞeker pancarı\n100\nPatates\n100\n% alt sınır"
+        },
+        {
+          "id": "limits",
+          "title": "Azami kaynak kapasitesinin kullanımı\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n26,5\n53\n79,5\n106\n%100 sınırı\nAçık tarla alanı\n100\nYerel tatlı su\n91,8\n% kapasite"
+        },
+        {
+          "id": "waterfall",
+          "title": "Su gereği değişiminin ayrıştırılması\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n2,5 Mr\n5,1 Mr\n7,6 Mr\n10,1 Mr\n8,8 Mr\nBaşlangıç\n0\nKoşul etkisi\n0\nSeçim etkisi\n−719,3 Mn\nÖneri etkisi\n8,1 Mr\nÖneri\nm³\nAynı ürün kümesi · başlangıç → koşul → seçim → optimizasyon"
+        },
+        {
+          "id": "budget",
+          "title": "Toplam su gereği ve senaryo bütçesi\nSon koşu · d87f80c0",
+          "svgCount": 1,
+          "text": "0\n2,3 Mr\n4,7 Mr\n7 Mr\n9,3 Mr\nSeçilen senaryo\n8,8 Mr\nÖnerilen desen\n8,1 Mr\nSu bütçesi\n8,8 Mr\nm³"
+        }
+      ]
+    },
+    {
+      "check": "large analysis closes and removes chart controls",
+      "pass": true
+    },
+    {
+      "check": "improving but still negative margin stays red",
+      "pass": true,
+      "inputs": "QA only zero crop prices/cultivation, water2 TL/m3; removed aftertest",
+      "evidence": {
+        "tone": "economics-panel verdict-bad",
+        "verdict": "Bu varsayımlarda önerinin faaliyet marjı -16.176.933.827 TL: giderler geliri aşıyor. Önceki desene göre iyileşme var, ancak marj hâlâ negatif."
+      }
+    },
+    {
+      "check": "drought live water increase is red, with explicit water-only meaning",
+      "pass": true,
+      "evidence": "Canlı seçimin su gereği\n10.504.481.199 m³\n+19,3% başlangıca göre · su artıyor"
+    },
+    {
+      "check": "infeasible simulation gives red concrete blocked decision",
+      "pass": true,
+      "evidence": "Bu koşullar uygulanabilir değil\nKISITLAR SAĞLANMIYOR\n\nBu koşullarda uygulanabilir ürün deseni bulunamadı.\n\nÖneri\nGeçerli çözüm olmadan yeni ürün miktarı önerilmiyor.\nHesap koşulu\nÜretim / alan alt sınırları, izin verilen seçenekler ve kaynaklar birlikte sağlanamıyor; sınırlar otomatik gevşetilmedi.\nSonraki adım\nÖnce kontrol edin: Su kaynağı kapalı veya kapasitesi sıfır."
+    },
+    {
+      "check": "Trakya missing total water blocks totalwater/budget chart and export",
+      "pass": true,
+      "evidence": "DATA NEEDED · Bütün ürünlerin toplam su gereği bilinmeden toplam su–bütçe grafiği kurulmaz; bilinen alt toplam için Ürünlerin suyu grafiğini kullanın."
+    },
+    {
+      "check": "crop water chart marks rice unknown instead of zero",
+      "pass": true,
+      "evidence": "0\n226,6 Mn\n453,2 Mn\n679,8 Mn\n906,4 Mn\nBuğday\n469,9 Mn\n691,9 Mn\nAyçiçeği\n855,1 Mn\n427,5 Mn\nÇeltik\nDATA NEEDED\nDATA NEEDED\nArpa\n36,6 Mn\n18,3 Mn\nm³"
+    },
+    {
+      "check": "partial rice water prevents a fabricated complete monetary water saving",
+      "pass": true,
+      "evidence": "Ekonomi kontrolü\nFiyat / maliyet DATA NEEDED\n\nSeçilen fiyat ve maliyetlerle mevcut senaryo → öneri. Bu kontrol, su odaklı önerinin ekonomik sonucunu hesaplar.\n\nSulama birim maliyeti\nTL/m³ · su + pompalama / hizmet\nDesen değişiminden sulama gideri farkı\nDATA NEEDED\nÜrün\tSatış fiyatı · TL/kg\tSulama hariç üretim gideri · TL/ha\nBuğday\t\t\nAyçiçeği\t\t\nÇeltik\t\t\nArpa\t\t\nSezon hesabı\tMevcut senaryo\tÖneri\tÖneri − mevcut\nSatış geliri\tDATA NEEDED\tDATA NEEDED\tDATA NEEDED\nSulama hariç üretim gideri\tDATA NEEDED\tDATA NEEDED\tDATA NEEDED\nSulama gideri\tDATA NEEDED\tDATA NEEDED\tDATA NEEDED\nModellenmiş faaliyet marjı\tDATA NEEDED\tDATA NEEDED\tDATA NEEDED\n\nSu gideri azalması tek başına kâr artışı değildir; eksik fiyat / gider değerleri tamamlanmalı.\n\nMANUAL OVERRIDE · aynı birim fiyat/maliyet, iki desene uygulanır. Marj = gelir − üretim gideri − sulama. Yatırım, finansman ve vergi dahil net kâr hesabı değildir.\nEkonomi girdilerini temizle"
+    },
+    {
+      "check": "all other regions get specific actions and isolated blank economic assumptions",
+      "pass": true,
+      "evidence": [
+        {
+          "region": "seyhan_adana",
+          "summary": "Ekonomi kontrolü\nFiyat / maliyet DATA NEEDED",
+          "advice": "Daha az su gerektiren desen\nKARAR DESTEĞİ\n\nDesen değişiminden 178.113.196 m³ (%9) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nDane mısır payını azaltın: %27,1 → %13,5; Buğday payını artırın: %43,3 → %71,6.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 5.495, Dane mısır 7.967 m³/ha; Dane mısır üretim alt sınırında.\nDikkat\nDane mısır üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+        },
+        {
+          "region": "gediz_manisa",
+          "summary": "Ekonomi kontrolü\nFiyat / maliyet DATA NEEDED",
+          "advice": "Daha az su gerektiren desen\nKARAR DESTEĞİ\n\nDesen değişiminden 135.337.246 m³ (%14,8) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nArpa payını azaltın: %25,1 → %12,6; Buğday payını artırın: %54,9 → %77,4.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 4.569, Arpa 7.157 m³/ha; Arpa üretim alt sınırında.\nDikkat\nArpa üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+        },
+        {
+          "region": "gap_sanliurfa",
+          "summary": "Ekonomi kontrolü\nFiyat / maliyet DATA NEEDED",
+          "advice": "Daha az su gerektiren desen\nKARAR DESTEĞİ\n\nDesen değişiminden 861.660.755 m³ (%8,7) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nÖneri\nPamuk payını azaltın: %24,8 → %12,4; Buğday payını artırın: %42,9 → %71,4.\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 10.346, Pamuk 16.960 m³/ha; Pamuk üretim alt sınırında.\nDikkat\nPamuk üretimi %50 azalır; uygulamadan önce gerçek su tahsisini ve işletme koşullarını doğrulayın."
+        }
+      ]
+    },
+    {
+      "check": "economic calculation export is available and test assumptions were cleared",
+      "pass": true
+    },
+    {
+      "check": "browser console has no errors",
+      "pass": true,
+      "evidence": []
+    }
+  ]
+}

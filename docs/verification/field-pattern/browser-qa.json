@@ -1,0 +1,298 @@
+{
+  "timestamp": "2026-09-22T19:13:34.451Z",
+  "checks": [
+    {
+      "check": "initial calculated field, textured crops, no donut",
+      "pass": true,
+      "evidence": {
+        "donuts": 0,
+        "farms": [
+          {
+            "label": "Mevcut · tarla dağılımı",
+            "plots": [
+              {
+                "basis": "50.9297%",
+                "id": "wheat",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 130.5749969482422
+              },
+              {
+                "basis": "28.0845%",
+                "id": "barley",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 72
+              },
+              {
+                "basis": "12.6943%",
+                "id": "maize_grain",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 32.53750228881836
+              },
+              {
+                "basis": "6.79167%",
+                "id": "sugar_beet",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 17.412500381469727
+              },
+              {
+                "basis": "1.49982%",
+                "id": "potato",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 3.837500095367432
+              }
+            ]
+          },
+          {
+            "label": "Hesaplanan öneri · tarla dağılımı",
+            "plots": [
+              {
+                "basis": "75.4648%",
+                "id": "wheat",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 175.53750610351562
+              },
+              {
+                "basis": "14.0423%",
+                "id": "barley",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 46.26250076293945
+              },
+              {
+                "basis": "6.34717%",
+                "id": "maize_grain",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 20.912500381469727
+              },
+              {
+                "basis": "3.39584%",
+                "id": "sugar_beet",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 11.1875
+              },
+              {
+                "basis": "0.749909%",
+                "id": "potato",
+                "texture": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww",
+                "transition": "flex-basis, filter",
+                "width": 2.4625000953674316
+              }
+            ]
+          }
+        ],
+        "water": " Önerilen desenin su gereği8.088.466.913 m³-8,2% başlangıca göre"
+      }
+    },
+    {
+      "check": "slider changes live crop widths, source unchanged, water immediate",
+      "pass": true,
+      "evidence": {
+        "label": "Seçilen · canlı1.252.478 ha",
+        "live": [
+          "51.9297%",
+          "27.5122%",
+          "12.4356%",
+          "6.65327%",
+          "1.46925%"
+        ],
+        "source": [
+          "50.9297%",
+          "28.0845%",
+          "12.6943%",
+          "6.79167%",
+          "1.49982%"
+        ],
+        "water": " Canlı seçimin su gereği8.778.441.320 m³-0,3% başlangıca göre"
+      }
+    },
+    {
+      "check": "old result frozen with previous-run label and matching water",
+      "pass": true,
+      "evidence": {
+        "basis": [
+          "75.4648%",
+          "14.0423%",
+          "6.34717%",
+          "3.39584%",
+          "0.749909%"
+        ],
+        "label": "Son öneri · önceki koşu1.252.478 ha",
+        "water": " Önerilen desenin su gereği8.088.466.913 m³-8,2% başlangıca göre"
+      }
+    },
+    {
+      "check": "zero crop has no minimum painted width, empty soil preserved",
+      "pass": true,
+      "evidence": {
+        "emptyNote": "Atanmayan alan: %51,9 · 650.407,6 ha",
+        "emptyWidth": 133.1374969482422,
+        "wheatWidth": 0
+      }
+    },
+    {
+      "check": "Calculate selects new recommended field",
+      "pass": true
+    },
+    {
+      "check": "keyboard legend highlights crop and exact hectares in both fields",
+      "pass": true
+    },
+    {
+      "check": "all five regions share field component with ID-stable crop styles",
+      "pass": true,
+      "evidence": [
+        {
+          "crops": [
+            {
+              "basis": "71.6395%",
+              "id": "wheat",
+              "soil": "#d6d6a8"
+            },
+            {
+              "basis": "13.5489%",
+              "id": "maize_grain",
+              "soil": "#7faa78"
+            },
+            {
+              "basis": "12.5443%",
+              "id": "sunflower",
+              "soil": "#c7ce91"
+            },
+            {
+              "basis": "2.2673%",
+              "id": "cotton",
+              "soil": "#bdcfb3"
+            }
+          ],
+          "fieldCount": 2,
+          "region": "seyhan_adana",
+          "water": " Önerilen desenin su gereği1.796.048.734 m³-9% başlangıca göre"
+        },
+        {
+          "crops": [
+            {
+              "basis": "77.4447%",
+              "id": "wheat",
+              "soil": "#d6d6a8"
+            },
+            {
+              "basis": "12.5626%",
+              "id": "barley",
+              "soil": "#b7ce96"
+            },
+            {
+              "basis": "4.80519%",
+              "id": "maize_grain",
+              "soil": "#7faa78"
+            },
+            {
+              "basis": "5.18757%",
+              "id": "cotton",
+              "soil": "#bdcfb3"
+            }
+          ],
+          "fieldCount": 2,
+          "region": "gediz_manisa",
+          "water": " Önerilen desenin su gereği781.823.614 m³-14,8% başlangıca göre"
+        },
+        {
+          "crops": [
+            {
+              "basis": "71.4388%",
+              "id": "wheat",
+              "soil": "#d6d6a8"
+            },
+            {
+              "basis": "9.46692%",
+              "id": "barley",
+              "soil": "#b7ce96"
+            },
+            {
+              "basis": "12.3961%",
+              "id": "cotton",
+              "soil": "#bdcfb3"
+            },
+            {
+              "basis": "6.69823%",
+              "id": "maize_grain",
+              "soil": "#7faa78"
+            }
+          ],
+          "fieldCount": 2,
+          "region": "gap_sanliurfa",
+          "water": " Önerilen desenin su gereği9.044.076.281 m³-8,7% başlangıca göre"
+        },
+        {
+          "crops": [
+            {
+              "basis": "64.3216%",
+              "id": "wheat",
+              "soil": "#d6d6a8"
+            },
+            {
+              "basis": "19.5786%",
+              "id": "sunflower",
+              "soil": "#c7ce91"
+            },
+            {
+              "basis": "15.0407%",
+              "id": "rice",
+              "soil": "#a2c7b4"
+            },
+            {
+              "basis": "1.05914%",
+              "id": "barley",
+              "soil": "#b7ce96"
+            }
+          ],
+          "fieldCount": 2,
+          "missing": "Toplam su: DATA NEEDED · eksik ürün verisi",
+          "region": "trakya_edirne",
+          "water": " Bilinen ürünlerde su1.137.767.928 m³-16,4% başlangıca göre"
+        }
+      ]
+    },
+    {
+      "check": "Trakya rice visible, unknown total water remains DATA NEEDED",
+      "pass": true
+    },
+    {
+      "check": "field visualization also available in graphs tab",
+      "pass": true
+    },
+    {
+      "check": "390 CSS pixel stacked fields without horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "columns": "327px",
+        "document": 371,
+        "farms": [
+          {
+            "width": 327,
+            "x": 22,
+            "y": 448.6875
+          },
+          {
+            "width": 327,
+            "x": 22,
+            "y": 637.6875
+          }
+        ],
+        "viewport": 390
+      }
+    },
+    {
+      "check": "browser console has no errors after region and view changes",
+      "pass": true,
+      "evidence": []
+    }
+  ]
+}

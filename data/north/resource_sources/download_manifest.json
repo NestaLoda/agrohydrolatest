@@ -1,0 +1,162 @@
+[
+  {
+    "id": "mit_seawater",
+    "url": "https://web.mit.edu/seawater/SEAWATER_v3.1.5_07Aug24.zip",
+    "accessed_at_utc": "2026-09-22T21:21:25.763947+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/mit_seawater.zip",
+    "sha256": "5eff86e99b56eb1564c8afd98fc507f923003db8d28ccc6887b48782e107a54c",
+    "bytes": 225025,
+    "final_url": "https://web.mit.edu/seawater/SEAWATER_v3.1.5_07Aug24.zip"
+  },
+  {
+    "id": "dupont_filmtec",
+    "url": "https://www.dupont.com/content/dam/water/amer/us/en/water/public/documents/en/RO-NF-FilmTec-Manual-45-D01504-en.pdf",
+    "accessed_at_utc": "2026-09-22T21:21:25.763947+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/dupont_filmtec.pdf",
+    "sha256": "eb7c8d7f7829e2652fa26896b53618c82cd7d05037f759a3a1c9b647f681fa97",
+    "bytes": 9554575,
+    "final_url": "https://www.dupont.com/content/dam/water/amer/us/en/water/public/documents/en/RO-NF-FilmTec-Manual-45-D01504-en.pdf"
+  },
+  {
+    "id": "cornell_lettuce",
+    "url": "https://cea.cals.cornell.edu/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf",
+    "accessed_at_utc": "2026-09-22T21:21:25.768603+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/cornell_lettuce.pdf",
+    "sha256": "40be195e0ccb09f9d4781046c19aba03cfd52ce0c794cbf0ebdb5cc1a5e00e3d",
+    "bytes": 2962519,
+    "final_url": "https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf"
+  },
+  {
+    "id": "topaz_pum",
+    "url": "https://documentation.marine.copernicus.eu/PUM/CMEMS-ARC-PUM-002-003.pdf",
+    "accessed_at_utc": "2026-09-22T21:21:25.768603+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/topaz_pum.pdf",
+    "sha256": "89c8f1f4c5a88b1d69e9a0d6f4c23bb0754993c3ede83a96c351d91cb7fb8aef",
+    "bytes": 682277,
+    "final_url": "https://documentation.marine.copernicus.eu/PUM/CMEMS-ARC-PUM-002-003.pdf"
+  },
+  {
+    "id": "topaz_quid",
+    "url": "https://documentation.marine.copernicus.eu/QUID/CMEMS-ARC-QUID-002-003.pdf",
+    "accessed_at_utc": "2026-09-22T21:21:25.768603+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/topaz_quid.pdf",
+    "sha256": "aeed2327fbef958c007e1de39622cf4217925981e1eaa197192461a94c9aef40",
+    "bytes": 4612761,
+    "final_url": "https://documentation.marine.copernicus.eu/QUID/CMEMS-ARC-QUID-002-003.pdf"
+  },
+  {
+    "id": "eden_energy",
+    "url": "https://elib.dlr.de/186936/1/EDEN%20ISS%20Energy_final_v2.pdf",
+    "accessed_at_utc": "2026-09-22T21:21:26.372760+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/eden_energy.pdf",
+    "sha256": "17f965fc0f489c5155a8d48deae8174396f2d815cc94c4154bef3adc06dbadfb",
+    "bytes": 690030,
+    "final_url": "https://elib.dlr.de/186936/1/EDEN%20ISS%20Energy_final_v2.pdf"
+  },
+  {
+    "id": "uga_greenhouse",
+    "url": "https://fieldreport.caes.uga.edu/wp-content/uploads/2025/08/B-792_6.pdf",
+    "accessed_at_utc": "2026-09-22T21:21:26.662888+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/uga_greenhouse.pdf",
+    "sha256": "ed8c7b4969f4df77ed7e1051cce94c50724a1e680cd358740bf280e6f375705b",
+    "bytes": 9265316,
+    "final_url": "https://fieldreport.caes.uga.edu/wp-content/uploads/2025/08/B-792_6.pdf"
+  },
+  {
+    "id": "sintef_isdammen",
+    "url": "https://www.sintef.no/en/latest-news/2026/securing-the-water-supply-in-longyearbyen-is-critical/",
+    "accessed_at_utc": "2026-09-22T21:21:26.881263+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/sintef_isdammen.html",
+    "sha256": "7cfa5f77399ee33d315daed46081a9ce3be2baa135cbf2d3af47fbfe0bc71931",
+    "bytes": 65445,
+    "final_url": "https://www.sintef.no/en/latest-news/2026/securing-the-water-supply-in-longyearbyen-is-critical/"
+  },
+  {
+    "id": "svalbard_energy",
+    "url": "https://www.svalbard-energi.no/svalbard-energi-as.587394.no.html",
+    "accessed_at_utc": "2026-09-22T21:21:26.984651+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/svalbard_energy.html",
+    "sha256": "00f8ca7878fb498e32a73ce8b1f90e505eb8619d632888466de8c25fd1a7aeed",
+    "bytes": 15109,
+    "final_url": "https://www.svalbard-energi.no/svalbard-energi-as.587394.no.html"
+  },
+  {
+    "id": "texas_rainwater",
+    "url": "https://www.twdb.texas.gov/innovativewater/rainwater/faq.asp",
+    "accessed_at_utc": "2026-09-22T21:21:27.211976+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/texas_rainwater.html",
+    "sha256": "11185c4f9c546043fec3b4a241232c5abf59fcd82af4ef80277bc3d4e78cbad6",
+    "bytes": 81172,
+    "final_url": "https://www.twdb.texas.gov/innovativewater/rainwater/faq.asp"
+  },
+  {
+    "id": "purdue_heating",
+    "url": "https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/",
+    "accessed_at_utc": "2026-09-22T21:21:27.296181+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/purdue_heating.html",
+    "sha256": "7df5b8481ca29ed4ecf3bcaf7996882777d1f4529440fbbbbe63d82703245b35",
+    "bytes": 92575,
+    "final_url": "https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/"
+  },
+  {
+    "id": "usace_snow",
+    "url": "https://www.hec.usace.army.mil/confluence/hmsdocs/hmstrm/snow-accumulation-and-melt/temperature-index-method",
+    "accessed_at_utc": "2026-09-22T21:44:24.124625+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/usace_snow.html",
+    "sha256": "829246e5ed46501d37c19ff4eb1c5a2140c9511537ea391949f66b505512b254",
+    "bytes": 99330,
+    "final_url": "https://www.hec.usace.army.mil/confluence/hmsdocs/hmstrm/snow-accumulation-and-melt/temperature-index-method"
+  },
+  {
+    "id": "fao_penman",
+    "url": "https://www.fao.org/4/x0490e/x0490e06.htm",
+    "accessed_at_utc": "2026-09-22T21:44:21.757166+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/fao_penman.html",
+    "sha256": "097e3aa9223ef69cf589549c445083eb78b1549b099459b448f01a5e7337c68b",
+    "bytes": 33762,
+    "final_url": "https://www.fao.org/4/x0490e/x0490e06.htm"
+  },
+  {
+    "id": "epa_dehumidifier",
+    "url": "https://www.energystar.gov/products/dehumidifiers/key_efficiency_criteria",
+    "accessed_at_utc": "2026-09-22T21:44:22.013326+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/epa_dehumidifier.html",
+    "sha256": "a01ac6e936e7c8238207cc8b76bf43f3ba5b37cf15b52042ec8310da535e26f7",
+    "bytes": 37173,
+    "final_url": "https://www.energystar.gov/products/dehumidifiers/key_efficiency_criteria"
+  },
+  {
+    "id": "doe_desalination",
+    "url": "https://www.energy.gov/sites/default/files/2017/12/f46/Seawater_desalination_bandwidth_study_2017.pdf",
+    "accessed_at_utc": "2026-09-22T21:44:22.044271+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/doe_desalination.pdf",
+    "sha256": "aae88476377136b109db7216854dd9355da9d62b1632ad45365c991675d36496",
+    "bytes": 6231533,
+    "final_url": "https://www.energy.gov/sites/default/files/2017/12/f46/Seawater_desalination_bandwidth_study_2017.pdf"
+  },
+  {
+    "id": "sandia_ro",
+    "url": "https://www.osti.gov/servlets/purl/1008105/",
+    "accessed_at_utc": "2026-09-22T21:44:31.476807+00:00",
+    "status": "downloaded",
+    "local_path": "data/north/resource_sources/sandia_ro.pdf",
+    "sha256": "68a0f2a45a6458b6ce984d68c62a058fec6ba97948a0d71638acb9322a58e602",
+    "bytes": 2795227,
+    "final_url": "https://www.osti.gov/servlets/purl/1008105/"
+  }
+]

@@ -1,0 +1,43 @@
+PWN v0.1 — FIRMWARE VE DOSYA KAYDI
+22 Eylül 2026. Uygulanacak gereksinim; hazır veya kartta denenmiş firmware değildir.
+
+GÜNCEL HEDEF
+ESP32 ESP-32S 30 pin + DFR0300 K1 hazır EC kartı + DS18B20 + NPN quadrature encoder + uyumlu SPI microSD. Fiziksel pin/besleme seçimi gerçek kart ve modül ile kontrol edilerek kaydedilecek.
+
+Firmware başlangıç işlevleri:
+1. Seri durum çıktısı ve SD açma/yazma/kapama.
+2. Gerçek sıcaklık; sensör hata kodlarını sıcaklık gibi kaydetmeme.
+3. Encoder A/B sayımı, aşağı/pozitif yön, boşta sıfırlama ve cetvelle counts_per_meter kalibrasyonu.
+4. EC ham ADC veya mV okuma; seçilen birimi metadata'da bildirme. Bölücü oranını geri hesaba katma. DFRobot iki nokta kalibrasyonunu ESP32 ADC ve kalıcı depolama düzenine uyarlama.
+5. İlk hedef yaklaşık saniyelik satırdır; gerçek örnekleme zamanı/yerleşme ayrıca kontrol edilir. Encoder daha sık arka planda sayılır. SD yazımı sayım kesmesinde yapılmaz.
+6. START/STOP, dosya kapama ve tekrar açılabilir gerçek kayıt. Güç kesip açınca kalibrasyon ayarları korunur.
+
+Önerilen seri komutlar: STATUS; START <cast_id>; STOP; ZERO_ENCODER.
+Başlangıç/STOP bilgisayardan yapılabilir; bu sürümün hedefi kendi SD kaydıdır, tamamen bilgisayarsız kumanda şart değildir. Kayıt sırasında sıfır referansı değiştirilmez.
+
+CSV: UTF-8, virgül ayırıcı, nokta ondalık. Bir dosya bir profil/cast. İlk satır:
+schema_version,source_kind,device_id,experiment_id,cast_id,sample_index,timestamp_utc,elapsed_ms,raw_conductivity_signal,temperature_C,encoder_count,cable_out_m,pressure_dbar,latitude,longitude,calibration_id,quality_flag
+
+Gerçek tank cihazı için:
+- schema_version: 1.0
+- source_kind: OUR_NEW_MEASUREMENT_TANK
+- device_id / experiment_id / cast_id: gerçek cihaz, çalışma ve profil kimlikleri.
+- sample_index: sıfırdan artan satır sayısı.
+- elapsed_ms: başlangıçtan geçen gerçek süre, zorunlu hedefimiz.
+- timestamp_utc: gerçek UTC eşitleme yoksa boş. Yerel saate Z eklenmez.
+- raw_conductivity_signal: ham okuma; birim adc_count_12bit veya mV gibi metadata'da açık.
+- temperature_C: gerçek okuma; başarısızsa boş ve kalite bayrağı.
+- encoder_count: gerçek işaretli sayım.
+- cable_out_m: kalibre mesafe varsa; yoksa boş ve ENCODER_UNCALIBRATED bayrağı.
+- pressure_dbar / latitude / longitude: bu sürümde boş; sıfır uydurulmaz.
+- calibration_id: yapılmış kalibrasyonun kimliği; yapılmadıysa boş.
+- quality_flag: OK veya gerçek sorun kodu. Örnekler ADC_SATURATED, MISSING_TEMPERATURE, ENCODER_UNCALIBRATED, SENSOR_NOT_VALIDATED. OK ile hata aynı satırda yazılmaz.
+
+Kalibre EC sonucu ham sütunun üzerine yazılmaz. Varsa ec_mS_cm gibi ayrı türetilmiş dosyada tutulur; uygulama desteğiyle eşleştirilir. NaCl çözeltisinden deniz tuzluluğu/PSU uydurulmaz.
+
+Dosyaya eşlik edecek metadata bilgileri:
+Gerçek kart/sensör modelleri; firmware ve kütüphane sürümleri; pin tablosu; ADC ayarı; ham sinyal birimi ve tanımı; gerilim bölücü oranı; encoder sayım modu ve counts_per_meter; sıfır/prob referansı; elapsed_only zaman temeli; varsa kalibrasyon kimliği/standartları/katsayıları; kaynak türü ve cast kimlikleri. Ayrı okunabilir not olarak teslim edilebilir, uygulama için JSON'a dönüştürülür. Cihazın dosya özeti/hash hesaplaması şart değildir; bilgisayar yapabilir.
+
+Yapılmış kabulü: firmware derlenmiş ve gerçek karta yüklenmiş; gerçek sensör/encoder değerlerinden dosya yazılmış; STOP sonrası kart dosyası bilgisayarda açılmış. Sentetik satır veya derleme başarısı tek başına çalışan donanım değildir.
+
+Dayanak: projenin hardware/pwn-v0.1/DATA_SCHEMA.md sözleşmesi. Tam uygulama uyumu ilk gerçek dosyayla tekrar kontrol edilecek. Bu belge elektrik bağlantı şeması değildir.

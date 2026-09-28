@@ -1,0 +1,157 @@
+{
+  "completed_at_utc": "2026-09-22T23:06:01.870487+00:00",
+  "complete": true,
+  "with_sensitivity": false,
+  "contexts": [
+    {
+      "horizon": "historical",
+      "scenario": "ssp245",
+      "seconds": 29.219,
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.0,
+        "production_kg": 4204.367499999999,
+        "water_m3": 14.107104191837102,
+        "heat_kwh_th": 2759.5071698517813,
+        "electricity_kwh": 116572.35421438949,
+        "equivalent_electricity_kwh": 119331.86138424127,
+        "stored_water_m3": 9.536660359980532,
+        "desalinated_m3": 4.57044383185657,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 13.737607046198137,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+      "evidence_sha256": {
+        "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+        "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+        "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+        "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+        "agronomic_envelopes": "42cff6281c437546dc32797ceabb3b2cca10fb64bfeace8ad748342dff8909fd",
+        "planning_code": "4b21ad6f8d2dc5fbccc96e29c0704cc888f88451ca65b776749162a8ca9435e8",
+        "candidate_code": "195a37916dc0f29705d3fbf27b493326ad658d93eca985ca8b97036c80cae2c5"
+      },
+      "classification": "NORMALIZED_CONDITIONAL_PRODUCTION_PLAN"
+    },
+    {
+      "horizon": "near",
+      "scenario": "ssp245",
+      "seconds": 29.797,
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.0,
+        "production_kg": 4204.367499999999,
+        "water_m3": 14.146844713842073,
+        "heat_kwh_th": 2275.6228458227906,
+        "electricity_kwh": 117049.51177244594,
+        "equivalent_electricity_kwh": 119325.13461826874,
+        "stored_water_m3": 10.802273135354955,
+        "desalinated_m3": 3.34457157848712,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 10.052942727987688,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+      "evidence_sha256": {
+        "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+        "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+        "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+        "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+        "agronomic_envelopes": "42cff6281c437546dc32797ceabb3b2cca10fb64bfeace8ad748342dff8909fd",
+        "planning_code": "4b21ad6f8d2dc5fbccc96e29c0704cc888f88451ca65b776749162a8ca9435e8",
+        "candidate_code": "195a37916dc0f29705d3fbf27b493326ad658d93eca985ca8b97036c80cae2c5"
+      },
+      "classification": "NORMALIZED_CONDITIONAL_PRODUCTION_PLAN"
+    },
+    {
+      "horizon": "near",
+      "scenario": "ssp585",
+      "seconds": 30.672,
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.0,
+        "production_kg": 4204.367499999999,
+        "water_m3": 14.152214119471836,
+        "heat_kwh_th": 2240.850718291349,
+        "electricity_kwh": 117079.50845614668,
+        "equivalent_electricity_kwh": 119320.35917443802,
+        "stored_water_m3": 10.54196381293032,
+        "desalinated_m3": 3.610250306541518,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 10.851506303171691,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+      "evidence_sha256": {
+        "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+        "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+        "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+        "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+        "agronomic_envelopes": "42cff6281c437546dc32797ceabb3b2cca10fb64bfeace8ad748342dff8909fd",
+        "planning_code": "4b21ad6f8d2dc5fbccc96e29c0704cc888f88451ca65b776749162a8ca9435e8",
+        "candidate_code": "195a37916dc0f29705d3fbf27b493326ad658d93eca985ca8b97036c80cae2c5"
+      },
+      "classification": "NORMALIZED_CONDITIONAL_PRODUCTION_PLAN"
+    },
+    {
+      "horizon": "mid",
+      "scenario": "ssp585",
+      "seconds": 30.797,
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.0,
+        "production_kg": 4204.367499999999,
+        "water_m3": 14.226557479628335,
+        "heat_kwh_th": 1795.288816592478,
+        "electricity_kwh": 117596.76213228871,
+        "equivalent_electricity_kwh": 119392.0509488812,
+        "stored_water_m3": 14.052221519167249,
+        "desalinated_m3": 0.17433596046108946,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 0.5240101414534003,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+      "evidence_sha256": {
+        "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+        "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+        "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+        "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+        "agronomic_envelopes": "42cff6281c437546dc32797ceabb3b2cca10fb64bfeace8ad748342dff8909fd",
+        "planning_code": "4b21ad6f8d2dc5fbccc96e29c0704cc888f88451ca65b776749162a8ca9435e8",
+        "candidate_code": "195a37916dc0f29705d3fbf27b493326ad658d93eca985ca8b97036c80cae2c5"
+      },
+      "classification": "NORMALIZED_CONDITIONAL_PRODUCTION_PLAN"
+    },
+    {
+      "horizon": "late",
+      "scenario": "ssp245",
+      "seconds": 1.062,
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.00000000000001,
+        "production_kg": 4204.367499999999,
+        "water_m3": 14.24683462846448,
+        "heat_kwh_th": 1566.170726824757,
+        "electricity_kwh": 117879.98092503018,
+        "equivalent_electricity_kwh": 119446.15165185492,
+        "stored_water_m3": 14.246834628464482,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 0.0,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+      "evidence_sha256": {
+        "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+        "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+        "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+        "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+        "agronomic_envelopes": "42cff6281c437546dc32797ceabb3b2cca10fb64bfeace8ad748342dff8909fd",
+        "planning_code": "4b21ad6f8d2dc5fbccc96e29c0704cc888f88451ca65b776749162a8ca9435e8",
+        "candidate_code": "195a37916dc0f29705d3fbf27b493326ad658d93eca985ca8b97036c80cae2c5"
+      },
+      "classification": "NORMALIZED_CONDITIONAL_PRODUCTION_PLAN"
+    }
+  ]
+}

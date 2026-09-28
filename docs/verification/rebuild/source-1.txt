@@ -1,0 +1,424 @@
+PAGE 1
+Sürdürülebilir Su Yönetimi İçin Konyaʼda Ürün Deseni ve İklimBaskısı Etkileşiminin Karar Destek Temelli Analizi
+Ali Baha Demir · Cem Ural · Ferit Bora Akman
+Proje Ekibi:
+SÜRDÜRÜLEBİLİR BİR GELECEK:DESENDEN GELECEĞE
+SÜRDÜRÜLEBİLİR BİR GELECEK:DESENDEN GELECEĞE
+PAGE 2
+  
+   
+   
+1 . 0 6 9  m ³  /  K i ş i
+Su Yönetimi ve Küresel Önemi (2050 Projeksiyonu)
+%25 Artış
+A r t a n  T a l e p
+2 0 5 0  y ı l ı n a  k a d a r  k ü r e s e l  su
+t a l e b i n i n  e n  a z  ç e y r e k  o r a n ı n d a
+a r t m a s ı  b e k l e n m e k t e d i r .
+% 2 5
+T ü k e t i m
+D ü n y a  n ü f u s u n u n  1 / 4 ' ü ,  h e r  y ı l
+m e v c u t  s u y u n u n  % 8 0 ' i n i
+t ü k e t m e k t e d i r . +1 Milyar
+R i s k l i  N ü f u s
+S ı c a k l ı k  1 . 3 ° C  a r t s a  d a h i  f a z l a d a n  1
+m i l y a r  i n s a n  ş i d d e t l i  su  s t r e s i
+y a ş a y a c a k t ı r .
+2 0 2 3  M e v c u t
+2 0 5 0  T a h m i n i
+1 0 0 0  m ³  ( M u t l a k  Fa k i r l i k )
+1 . 3 0 1  m ³  /  K i ş i
+Türkiye İçin Geri Sayım: Su Kıtlığı
+PAGE 3
+2 0 2 3  Y ı l ı  E k i m  A l a n l a r ı  ( D e k a r )
+B u ğ d a y A r p a D a n e  m ı s ı r Ş e k e r  p a n c a r ı
+0
+1 . 0 0 0 . 0 0 0
+2 . 0 0 0 . 0 0 0
+3 . 0 0 0 . 0 0 0
+4 . 0 0 0 . 0 0 0
+5 . 0 0 0 . 0 0 0
+6 . 0 0 0 . 0 0 0
+5 . 9 6 6 . 8 6 6
+3 . 8 5 2 . 0 1 1
+1 . 8 5 5 . 0 5 4
+1 . 0 1 9 . 4 7 3
+Neden Konya?
+Konyaʼda tarımsal üretimin büyüklüğü, su yönetimi kararlarını daha kritik hâle getirir.
+  
+ Yarı kurak 
+iklim
+PAGE 4
+Problem
+Ürünler in Su Ger eksinimi F ar klı
+A ynı alan, f ar klı ürünler de f ar klı
+sulama b askısı oluş turur .
+Kar ar Des t ek Ar acı Eksik
+Ürün deseni değişimler inin
+etkisini hızlıc a t es t eden
+er işilebilir ar açlar a ihtiy aç v ar dır .
+İklim Baskısı Ar tıy or
+Sıc aklık ar tışı v e y ağış
+azalması sulama ihtiy acını
+yüksel tir .
+İklim Baskısı Ar tıy or
+Sıc aklık ar tışı v e y ağış
+azalması sulama ihtiy acını
+yüksel tir .
+Asıl pr oblem y alnız c a su b askısı değil; iklim b askısı al tında hangi ürün deseninin daha sür dürülebilir olduğuna kar ar v er ebilmektir .
+T a r ı m s a l  T a l e p  >  D o ğ a l  A r z
+PAGE 5
+Buğda y
+4 7 %
+Ar p a
+30 , 3%
+Dane Mısır
+14 , 6%
+Şek er P anc ar ı
+8%
+En geniş ekim alanı
+ Temel tahıl ürünü
+Geniş alanlı tahıl
+ Görece düşük su katsayısı
+  Daha yüksek su ihtiyacı
+ Baskı katkısı dikkat çekici
+  Alanı daha düşük
+ Su katsayısı en yüksek grup
+Ürün Deseni Nedir?
+H a n g i  ü r ü n ü n  n e  k a d a r  e k i l d i ğ i ,  t o p l a m  s u l a m a  b a s k ı s ı n ı  d o ğ r u d a n  d e ğ i ş t i r i r .
+Şek er P anc ar ı
+8 , 1%
+PAGE 6
+  
+2
+3
+Gör eli
+Sulama
+Baskısı
+4
+Göreli Sulama Baskısı Nedir?
+Ekim
+Alanı
+Ürünün Su
+Ger eksinimi
+İklim
+Baskısı
+1
+Alan büyüdükçe baskı artabilir.
+Su ihtiyacı yüksek ürünler daha fazla baskı oluşturur.
+Sıcaklık artışı ve yağış azalması baskıyı yükseltir.
+PAGE 7
+Konyaʼdaki mevcut ürün deseninin iklim baskısı
+üzerinde oluşturduğu göreli sulama yükünün
+karar destek sistemiyle analiz edilmesi,
+sürdürülebilir ürün deseni önerileri sunarak
+sulama baskısını azaltabilir mi?
+Araştırma Sorusu
+PAGE 8
+  
+  
+   
+Amaç
+Sulama Baskısını
+Etkileyen
+Faktörleri
+Nicelleştirmek
+Açıklanabilir
+Matematiksel
+Model Geliştirmek
+Alternatif Ürün
+Desenleri
+Üretmek
+Modeli Karar
+Destek
+Sistemine
+Dönüştürmek
+PAGE 9
+ Matematiksel Modelin İnşası
+1. Alan
+Ürünün ekim alanı
+ modelde ürünün
+üretim büyüklüğünü
+temsil eder.
+2. Su Katsayısı
+Ürünün göreli su
+gereksinimi
+ ürünler arasındaki
+baskı farkını gösterir.
+3. İklim Çarpanı
+Senaryo etkisi
+ sıcaklık artışı ve
+yağış azalmasını
+modele dahil eder.
+(Su Katsayısı)   (İklim Çarpanı)
+
+PAGE 10
+Veri:
+ 2023 yılı ekim
+alanları
+Kullanım:
+ Ürün bazlı baskı
+hesabı
+Örnek:
+ Buğday: 5.97 milyon
+da
+Veri:
+ Göreli su
+gereksinimi
+katsayıları
+Kullanım:
+ Ürünler arası baskı
+farkını temsil eder
+Örnek:
+ Arpa: 1.00
+ Şeker pancarı: 1.80
+Veri:
+ Sıcaklık artışı ve
+yağış değişimi
+Kullanım:
+ İklim çarpanının
+hesaplanması
+Örnek:
+ +2°C / -20% yağış
+→ 1.20
+Veri:
+ Ürün oranı alt–üst
+sınırları
+Kullanım:
+ Uygulanabilir alternatif
+desen üretimi
+Örnek:
+ Toplam ürün oranı:
+100%
+Modelde Kullanılan Veriler
+Ürün Ekim Alanları Ürün Su Katsayıları
+İ k l i m  P a r a m e t r e l e r i
+O p t i m i z a s y o n  K ı s ı t l a r ı
+PAGE 11
+Modeldeki Göreli Su Katsayıları (Kc)
+Ürün Türü Birim Alanda Su İhtiyacı Göreli Katsayı (Kc)
+Arpa Düşük (Referans) 1.00
+Buğday Orta 1.15
+Dane Mısır Çok Yüksek 1.70
+Şeker Pancarı Aşırı Yüksek 1.80
+En az su tük et en Ar p a (1. 00) r ef er ans alınar ak kat sa yılar belir lenmiş tir .
+Katsayılar mutlak su tüketimini değil, ürünler arası göreli su baskısı farkını temsil eder.
+PAGE 12
+Baz Senaryo
+ 0°C sıcaklık artışı
+ 0% yağış değişimi
+ İklim çarpanı: 1,00
+Orta Baskı Senaryosu
+ +1.5°C sıcaklık artışı
+ -15% yağış değişimi
+ İklim çarpanı: 1,22
+Yüksek Baskı
+Senaryosu
+ +3°C sıcaklık artışı
+ -30% yağış değişimi
+ İklim çarpanı: 1,45
+Modeldeki İklim Senaryo Aralıkları
+PAGE 13
+Amaç
+ Baskının hangi ürünlerden
+kaynaklandığını görmek.
+Mantık
+ Alan büyükse veya su katsayısı
+yüksekse baskı katkısı artabilir.
+Çıktı
+ Her ürünün toplam baskıdaki
+payını ifade eder.
+Buğday
+katkısı
+Arpa katkısı
+Dane mısır
+katkısı
+Şek er p anc ar ı
+katkısı
+Toplam Göreli
+Sulama
+Baskısı
+Ürün Bazlı Baskıya Katkı Analizi
+Katkı (%) = Ürün Baskısı / Göreli Sulama Baskı × 100
+PAGE 14
+Duyarlılık Analizi
+49 farklı iklim kombinasyonu
+Sıc aklık ar tışı: 0° C ile + 3 ° C
+Y ağış değişimi: 0% ile - 30%
+7 × 7 k ombinas y on
+PAGE 15
+5
+Sistem Mimarisi
+1
+2
+3
+4
+6
+1 .  V e r i  K a t m a n ı
+E k i m  a l a n ı
+ İ k l i m  v e r i s i
+ S u  k a t s a y ı s ı
+6 .  K a r a r  Ç ı k t ı s ı
+B a s k ı  e n d e k s i
+A l t e r n a t i f
+d e s e n
+2. Hesaplama Modeli
+Alan × Katsayı × Çarpan
+3. Senaryo Motoru
+Baz / Orta / Yüksek
+ Sıcaklık + Yağış
+4 .  O p t i m i z a s y o n
+K ı s ı t l ı  ü r ü n  d e s e n i
+ M i n i m u m  b a s k ı
+5 .  W e b  A r a y ü z ü
+S l i d e r  +  g r a f i k  +  m e t r i k
+PAGE 16
+Karar Destek Sistemimiz
+
+PAGE 17
+Ö r n e k  b i r  s e n a r y o
+ü z e r i n d e n  i n c e l e y e l i m .
+Ö r n e k  b i r  s e n a r y o
+ü z e r i n d e n  i n c e l e y e l i m .
+PAGE 18
+
+PAGE 19
+Proje Haritası
+PAGE 20
+Sonuç ve Tartışma
+İklim baskısı ve ürün deseni birlikte
+değerlendirildiğinde sulama baskısı
+hızla değişmektedir.
+Ürün oranları, sulama baskısını
+doğrudan etkileyen yönetilebilir bir
+değişkendir.
+Karar destek sistemi, farklı senaryoları uygulamadan
+önce test etmeyi sağlar.
+Bu çalışma, tarımsal su yönetiminde yalnızca veri üretmenin değil; veriyi test edilebilir, yorumlanabilir ve karar
+verilebilir bir sisteme dönüştürmenin gerekli olduğunu göstermiştir.
+PAGE 21
+Literatür Karşılaştırması
+PAGE 22
+Projenin Özgün Yönü
+Su baskısı ile ekonomik
+etkinin birlikte
+değerlendirilmesi.
+Kısıtlar altında alternatif
+ürün deseni optimizasyonu
+yapılması.
+İklim ve ürün desenini
+birleştiren bütünleşik
+model geliştirilmesi.
+Yapay zekâ destekli
+uzman sonuç
+raporu üretilmesi.
+Kullanıcı tarafından
+test edilebilir karar
+destek sistemi
+oluşturulması.
+PAGE 23
+Öneriler ve Gelecek Çalışmalar
+Ürün deseni kar ar lar ı, su b askısı etkisiy le
+bir likt e değer lendir ilmelidir .
+Ürün değişimi öner iler i, çif t çi gelir ini
+k oruy ac ak des t ekler le bir likt e düşünülmelidir .
+Model ilçe b azlı hâle getir ilebilir .
+Gelir , maliy et v e çif t çi t er cihi
+değişk enler i modele dahil edilebilir .
+Çok amaçlı optimizas y on geliş tir ilebilir .
+İl v e İlçe T ar ım Müdür lükler i için senar y o t es t ar acı olabilir .
+Çif t çiler f ar klı ürün desenler ini uy gulamadan önce t es t edebilir .
+Model b aşka bölgeler e, ülk eler e v e iller e uy ar lanabilir .
+PAGE 24
+T e ş e k k ü r l e r .
+T e ş e k k ü r l e r .
+Sür dürülebilir su y önetiminde ürün deseni y alnız c a t ar ımsal bir t er cih değil,
+y önetilebilir bir kar ar değişk enidir .
+PAGE 25
+Optimizasyonun Somut Etkisi
+PAGE 26
+  
+  
+   
+Sonuç ve Tartışma
++1, 50° C sıc aklık ar tışı v e
+- 20% y ağış değişimi,
+K on y a Kap alı Ha vzası
+için yüksek b askı
+senar y osu
+oluş tur makt adır .
+İklim v e ürün
+desenini bir leş tir en
+bütünleşik model
+geliş tir ilmesi.
+Su kısı tlaması
+uy gulanac aksa, ürün
+deseni düz enlemesi
+ek onomik des t ek
+mekanizmalar ıy la bir likt e
+planlanmalıdır .
+Optimiz e desen, su
+b askısını azal tır k en
+gelir t ar afında ek
+p a y da oluş tur makt adır .
+Sis t em; r isk uy ar ısı, ürün deseni
+y orumu, ek onomik denge v e
+uy gulanabilir poli tika öner isini a ynı
+kar ar des t ek çıktısında bir leş tir ir .
+PAGE 27
+Risk Göstergesi: Baskı Ne Kadar Kritik?
+Bu senaryo, baz duruma göre yaklaşık 40% daha yüksek göreli sulama baskısı oluşturdu.
+PAGE 28
+Optimizasyon: Sistem Ne Önerdi?
+PAGE 29
+Optimize Desen: Ürün Oranları Nasıl Değişti?
+Kullanıcı senaryosu:
+Buğday: 40%
+Arpa: 20%
+Dane mısır: 25%
+Şeker pancarı: 15%
+Optimize öneri:
+Buğday: 47%
+Arpa: 45%
+Dane mısır: 5%
+Şeker pancarı: 3%
+Sistem, su yoğun ürünlerin payını azaltıp
+daha düşük baskılı ürünlere yöneldi.
+PAGE 30
+Yapay Zeka Çıktısı
+PAGE 31
+Konyaʼda yaygın üretim
+Farklı su gereksinimleri
+Karşılaştırılabilir ürün seti
+Neden Bu Dört Ürün?
+Buğday | Arpa | Dane Mısır | Şeker Pancarı
+PAGE 32
+Çözümümüz: Web Tabanlı Karar Destek Sistemi
+
+PAGE 33
+  
+  
+  
+Konyaʼnın İklim Yapısı
+Yarı kurak 
+iklim
+Düşük ve düzensiz 
+yağış
+Yaz aylarında artan
+sulama ihtiyacı
+İklim yapısının etkilediği iklim baskısı, ürün deseni kararlarını daha önemli hâle getirir.
+PAGE 34
+
+PAGE 35
+Uygulama Genel Arayüzü
+PAGE 36
+Canlı Test Senaryosu
+Sıcaklık Artışı: +1,50°C
+Yağış Değişimi: -20%
+İklim Çarpanı: ≈ 1,27
+Buğday: 40%
+Arpa: 20%
+Dane mısır: 25%
+Şeker pancarı: 15%
+Kuraklık baskısı altında, çiftçinin daha yüksek getirili fakat daha su kullanımı yoğun ürünlere yöneldiği
+bir senaryo test edildi.

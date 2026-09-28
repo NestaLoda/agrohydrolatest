@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "access_date": "2026-09-22",
+  "classification": "SOURCE-BACKED SELECTION CONTEXT; NOT LOCAL VALIDATION",
+  "comparison_contract": {
+    "purpose": "Aynı buğday su dengesi hesabını farklı gerçek iklim girdilerine taşıyarak bölgesel duyarlılığı göstermek.",
+    "climate_period": "2022-01-01/2023-12-31",
+    "climate_source": "Open-Meteo Archive, models=era5, daily UTC; 0.25 degree point extraction",
+    "common_crop": "winter_wheat",
+    "common_crop_label": "Kış buğdayı — ortak FAO-56 örnek takvimi; yerel kalibrasyon değil",
+    "common_area_ha": 1,
+    "common_season_start": "2022-11-01",
+    "common_season_days": 240,
+    "common_soil_storage_capacity_mm": 60,
+    "common_initial_soil_water_mm": 30,
+    "shared_assumptions": "Takvim, Kc duyarlılık senaryoları, 60 mm depo ve 30 mm başlangıç suyu tüm bölgelerde aynıdır. Depo ve başlangıç suyu tasarım varsayımıdır; yerel toprak ölçümü değildir.",
+    "not_established": ["Türkiye genelinde doğrulama", "Havza ortalama iklimi", "Yerel çiftlik sulama programı", "Güvenilir veya tahsis edilmiş sulama suyu", "Gözlenmiş ürün verimi", "Uzun dönem iklim normali"],
+    "crop_parameter_source": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+  },
+  "regions": [
+    {
+      "site_id": "konya",
+      "name": "Konya",
+      "role": "historical_pilot_comparison",
+      "crop_basis": "Önceki kullanıcı raporundaki üretim bölgesi ve tahıl-su yönetimi bağlamı.",
+      "selection_reason": "Önceki pilotla bilimsel süreklilik ve iç havzada yeraltı suyu baskısı bağlamı.",
+      "water_context": "Bakanlığın 2020 kaydı yeraltı suyunun tarımsal önemini ve izleme gereğini açıklar.",
+      "limitations": "Eski pilotun başarısı yeni modelin doğruluğuna aktarılmaz; 2020 haberindeki durum güncel su arzı sayılmaz.",
+      "sources": [{"url": "https://www.tarimorman.gov.tr/Haber/4437/Konya-Kapali-Havzasinda-Yeralti-SuyunaYakin-Takip", "title": "Konya Kapalı Havzası'nda Yeraltı Suyuna Yakın Takip", "date": "2020-03-23", "support": "Yeraltı suyunun Konya tarımı ve sürdürülebilirlik açısından önemi; tarihsel izleme bağlamı."}]
+    },
+    {
+      "site_id": "seyhan_adana",
+      "name": "Seyhan / Adana",
+      "role": "transfer_demonstration",
+      "crop_basis": "Seyhan/Camuzcu'da ekmeklik buğday çeşit denemesi ve hasadı resmî kayıtta bulunur.",
+      "selection_reason": "Konya dışındaki ilk transfer noktası; Aşağı Seyhan üretim ve sektörel su yönetimi bağlamı.",
+      "water_context": "2019 kuraklık planı tarımsal su kullanımını havza ve alt havza düzeyinde değerlendirir.",
+      "limitations": "2019 plan kullanımları güncel tahsis değildir; deneme verimi modele taşınmadı.",
+      "sources": [
+        {"url": "https://adana.tarimorman.gov.tr/Haber/697/Seyhan-Ilce-Tarim-Ve-Orman-Mudurlugu-Bugday-Cesit-Verim-Demonstrasyonu-Kurdu", "title": "Seyhan İlçe Tarım ve Orman Müdürlüğü Buğday Çeşit Verim Demonstrasyonu Kurdu", "date": "2020-06-23", "support": "Ortak ürün buğdayın Seyhan'da fiilen denendiği ve hasat edildiği."},
+        {"url": "https://www.tarimorman.gov.tr/SYGM/Belgeler/KURAKLIK%20Y%C3%96NET%C4%B0M%20PLANLARI%2009.01.2023/SEYHAN%20HAVZASI%20KYP%20Y%C3%96NET%C4%B0C%C4%B0%20%C3%96ZET%C4%B0.pdf", "title": "Seyhan Havzası Kuraklık Yönetim Planı Yönetici Özeti", "date": "2019", "support": "PDF s.45 / basılı4-8 Tablo4.4: tarımsal kullanımın tarihsel plan bağlamı; kullanılabilir arz değildir."}
+      ]
+    },
+    {
+      "site_id": "gediz_manisa",
+      "name": "Gediz / Manisa",
+      "role": "transfer_demonstration",
+      "crop_basis": "Manisa İl Müdürlüğünün 2021 kaydı buğday ve arpa hasadını bildirir.",
+      "selection_reason": "Batı Türkiye'de ortak tahıl ürünü ve kuraklık derecelerine göre sektörler arası tahsis planlaması bağlamı.",
+      "water_context": "Gediz sektörel su tahsisi planı farklı kuraklık koşullarında sektörler arası paylaşımı ele alır.",
+      "limitations": "2019 plan / 2020 genelge ve 2021 hasat haberi 2023–2026 gözlenmiş su tahsisi değildir; Manisa noktası tüm Gediz'i temsil etmez.",
+      "sources": [
+        {"url": "https://manisa.tarimorman.gov.tr/Sayfalar/Detay.aspx?TermId=d59be594-0585-4d66-8a17-00217dd913d6&TermSetId=51c21c3c-cdd9-4e02-8fb2-bd268f69bdcc&TermStoreId=368e785b-af33-487d-a98d-c11d5495130b&UrlSuffix=748%2FManisada-Hububat-Hasadi-Devam-Ediyor", "title": "Manisa'da Hububat Hasadı Devam Ediyor", "date": "2021-06-25", "support": "Buğdayın Manisa'da yetiştirildiği ve hasat zamanının ilçeler arasında değiştiği."},
+        {"url": "https://www.tarimorman.gov.tr/SYGM/Belgeler/Gediz-K%C3%BC%C3%A7%C3%BCk%20Menderes%20Havzas%C4%B1%20SSTP%20Eylem%20Plan%C4%B1_18.12.2020/Gediz%20Havzas%C4%B1%20SSTP%20Eylem%20Plan%C4%B1_18.12.2020.pdf", "title": "Gediz Havzası Sektörel Su Tahsis Planı Eylem Planı", "date": "2019 plan; 2020-12-31 genelge; 2021–2025 eylem dönemi", "support": "Normal ve farklı kuraklık derecelerinde sektörel su paylaşımı planlama çerçevesi."}
+      ]
+    },
+    {
+      "site_id": "gap_sanliurfa",
+      "name": "GAP / Harran–Şanlıurfa",
+      "role": "transfer_demonstration",
+      "crop_basis": "GAPTAEM kataloğunda suluda buğday (1996), Harran'da buğday su tüketimi (1987) ve sulu koşullarda buğday çeşit denemesi (1998) bulunur.",
+      "selection_reason": "Güneydoğuda sulama ve drenaj altyapısının belirgin olduğu bir üretim bağlamını aynı buğday hesabına katmak.",
+      "water_context": "DSİ 15. Bölge listesi Harran sulama ve tahliye kanalı projelerini gösterir; altyapı ve işletme bilgisi iklim girdisinden ayrı gerekliliktir.",
+      "limitations": "Katalog eski araştırmaların varlığını doğrular, bugünkü katsayıları sağlamaz. İnşa listesi tamamlanmış tesis veya garantili su arzı değildir; nokta tüm GAP'ı temsil etmez.",
+      "sources": [
+        {"url": "https://arastirma.tarimorman.gov.tr/gaptaem/Menu/34/Sonuclanan-Projeler", "title": "GAPTAEM Sonuçlanan Projeler", "date": "Sayfa tarihi yok; ilgili araştırmalar 1987/1996/1998", "support": "Harran/Şanlıurfa'da buğday ve sulama araştırmasının tarihsel varlığı."},
+        {"url": "https://bolge15.dsi.gov.tr/Sayfa/Detay/809", "title": "DSİ 15. Bölge — İnşa Halindeki Sulama Tesisleri", "date": "Sayfa tarihi yok; erişim 2026-09-22; ilgili iş başlangıcı 2024", "support": "Harran sulama/tahliye altyapısı bağlamı; tamamlanma veya su miktarı iddiası yok."}
+      ]
+    },
+    {
+      "site_id": "trakya_edirne",
+      "name": "Trakya / Edirne",
+      "role": "transfer_demonstration",
+      "crop_basis": "2024 resmî tarla gözlemi Edirne'de kışlık buğdayın gelişimini izler.",
+      "selection_reason": "Türkiye'nin kuzeybatısında kışlık tahıl üretimini ve farklı meteorolojik girdileri aynı fiziksel hesapla karşılaştırmak.",
+      "water_context": "2025 İl Su Kurulu yeraltı/yüzey suyu korunması ve tarımsal sulamada modern sistemleri gündeme alır.",
+      "limitations": "Bir il toplantısı sayısal su tahsisi sağlamaz; 2024 fenolojisi 2022–2023 model takvimini doğrulamaz; nokta tüm Trakya değildir.",
+      "sources": [
+        {"url": "https://edirne.tarimorman.gov.tr/Haber/491/Hububat-Ve-Aycicegi-Ekimi-Yapilan-Arazilerde-Fenolojik-Gozlem-Yapildi", "title": "Hububat ve Ayçiçeği Ekimi Yapılan Arazilerde Fenolojik Gözlem Yapıldı", "date": "2024-05-17", "support": "Edirne'de kışlık buğday yetiştiriciliği ve yerel fenoloji gözlemi."},
+        {"url": "https://edirne.tarimorman.gov.tr/Sayfalar/GormeEngellilerDetay.aspx?Liste=Haber&OgeId=531", "title": "İl Su Kurulu Toplantısı", "date": "2025-04-09", "support": "Yeraltı/yüzey su kaynakları ve tarımsal sulama verimliliğinin yönetim gündemi olduğu."}
+      ]
+    }
+  ],
+  "northern_context_site_id": "longyearbyen",
+  "northern_context_note": "Altıncı iklim noktası Türkiye benchmark kümesine dahil değildir. Kuzey kontrollü üretim bağlamı ayrı değerlendirilir."
+}

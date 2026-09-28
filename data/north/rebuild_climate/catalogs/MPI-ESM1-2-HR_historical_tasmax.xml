@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partial" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partialnoncss" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <dataset name="MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1950_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1950_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1950_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T07:02:19.969Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1951_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1951_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1951_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-09T07:02:48.866Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1952_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1952_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1952_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-09T07:02:13.867Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1953_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1953_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1953_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-09T07:05:43.618Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1954_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1954_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1954_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-09T07:05:54.026Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1955_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1955_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1955_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-09T07:04:32.907Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1956_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1956_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1956_v2.0.nc">
+      <dataSize units="Mbytes">249.6</dataSize>
+      <date type="modified">2025-06-09T07:06:13.023Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1957_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1957_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1957_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-09T07:03:19.252Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1958_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1958_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1958_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-09T07:06:22.821Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1959_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1959_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1959_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-09T07:02:52.873Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1960_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1960_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1960_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T07:05:22.445Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1961_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1961_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1961_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-09T07:05:49.646Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1962_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1962_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1962_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-09T07:05:18.318Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1963_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1963_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1963_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T07:04:54.339Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1964_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1964_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1964_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-09T07:04:50.178Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1965_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1965_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1965_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-09T07:06:03.304Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1966_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1966_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1966_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-09T07:02:14.958Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1967_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1967_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1967_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-09T07:04:57.386Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1968_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1968_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1968_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T07:06:26.488Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1969_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1969_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1969_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T07:03:00.441Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1970_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1970_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1970_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-09T07:06:08.979Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1971_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1971_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1971_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T07:01:57.445Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1972_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1972_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1972_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T07:04:02.844Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1973_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1973_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1973_v2.0.nc">
+      <dataSize units="Mbytes">246.7</dataSize>
+      <date type="modified">2025-06-09T07:04:20.794Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1974_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1974_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1974_v2.0.nc">
+      <dataSize units="Mbytes">248.7</dataSize>
+      <date type="modified">2025-06-09T07:06:33.574Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1975_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1975_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1975_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T07:02:44.303Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1976_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1976_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1976_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T07:01:43.818Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1977_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1977_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1977_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-09T07:06:09.662Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1978_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1978_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1978_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T07:03:14.721Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1979_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1979_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1979_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T07:03:58.288Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1980_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1980_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1980_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-09T07:04:30.974Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1981_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1981_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1981_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-09T07:06:40.762Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1982_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1982_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1982_v2.0.nc">
+      <dataSize units="Mbytes">246.7</dataSize>
+      <date type="modified">2025-06-09T07:05:22.464Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1983_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1983_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1983_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T07:07:20.918Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1984_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1984_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1984_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T07:01:39.467Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1985_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1985_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1985_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T07:03:28.667Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1986_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1986_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1986_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T07:01:23.571Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1987_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1987_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1987_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-09T07:06:26.555Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1988_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1988_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1988_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T07:03:04.122Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1989_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1989_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1989_v2.0.nc">
+      <dataSize units="Mbytes">246.0</dataSize>
+      <date type="modified">2025-06-09T07:02:44.197Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1990_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1990_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1990_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-09T07:06:18.614Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1991_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1991_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1991_v2.0.nc">
+      <dataSize units="Mbytes">246.7</dataSize>
+      <date type="modified">2025-06-09T07:01:24.361Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1992_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1992_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1992_v2.0.nc">
+      <dataSize units="Mbytes">247.3</dataSize>
+      <date type="modified">2025-06-09T07:03:07.892Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1993_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1993_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1993_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-09T07:04:04.776Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1994_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1994_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1994_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-09T07:07:18.632Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1995_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1995_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1995_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-09T07:07:18.780Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1996_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1996_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1996_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-09T07:03:15.720Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1997_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1997_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1997_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-09T07:05:04.359Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1998_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1998_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1998_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T07:06:04.980Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1999_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1999_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_1999_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-09T07:03:11.427Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2000_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2000_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2000_v2.0.nc">
+      <dataSize units="Mbytes">250.1</dataSize>
+      <date type="modified">2025-06-09T07:02:11.656Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2001_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2001_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2001_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T07:07:23.960Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2002_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2002_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2002_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-09T07:02:53.635Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2003_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2003_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2003_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-09T07:04:29.184Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2004_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2004_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2004_v2.0.nc">
+      <dataSize units="Mbytes">248.0</dataSize>
+      <date type="modified">2025-06-09T07:01:47.554Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2005_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2005_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2005_v2.0.nc">
+      <dataSize units="Mbytes">248.0</dataSize>
+      <date type="modified">2025-06-09T07:06:22.937Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2006_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2006_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2006_v2.0.nc">
+      <dataSize units="Mbytes">247.3</dataSize>
+      <date type="modified">2025-06-09T07:04:39.036Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2007_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2007_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2007_v2.0.nc">
+      <dataSize units="Mbytes">246.0</dataSize>
+      <date type="modified">2025-06-09T07:05:17.574Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2008_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2008_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2008_v2.0.nc">
+      <dataSize units="Mbytes">248.7</dataSize>
+      <date type="modified">2025-06-09T07:05:56.584Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2009_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2009_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2009_v2.0.nc">
+      <dataSize units="Mbytes">248.0</dataSize>
+      <date type="modified">2025-06-09T07:02:44.287Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2010_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2010_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2010_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-09T07:02:54.807Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2011_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2011_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2011_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-09T07:04:05.831Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2012_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2012_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2012_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-09T07:02:59.396Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2013_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2013_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2013_v2.0.nc">
+      <dataSize units="Mbytes">246.7</dataSize>
+      <date type="modified">2025-06-09T07:03:05.169Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2014_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2014_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MPI-ESM1-2-HR/historical/r1i1p1f1/tasmax/tasmax_day_MPI-ESM1-2-HR_historical_r1i1p1f1_gn_2014_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-09T07:05:56.531Z</date>
+    </dataset>
+  </dataset>
+</catalog>

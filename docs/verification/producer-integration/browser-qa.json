@@ -1,0 +1,112 @@
+{
+  "checked_at": "2026-09-23T12:54:59.847Z",
+  "checks": [
+    {
+      "case": "model_transfer",
+      "fields": [
+        {
+          "label": null,
+          "value": "on"
+        },
+        {
+          "label": null,
+          "value": "on"
+        },
+        {
+          "label": null,
+          "value": "on"
+        },
+        {
+          "label": null,
+          "value": "on"
+        },
+        {
+          "label": null,
+          "value": "on"
+        },
+        {
+          "label": "Yıllık hasat beklentisi",
+          "value": "47.6"
+        },
+        {
+          "label": "Satışa uygun olmayan ürün",
+          "value": ""
+        },
+        {
+          "label": "Alıcının yıllık alabileceği miktar",
+          "value": ""
+        },
+        {
+          "label": "Üreticiye ödenecek fiyat",
+          "value": ""
+        },
+        {
+          "label": "Yıllık işletme gideri",
+          "value": ""
+        },
+        {
+          "label": "İndirimsiz kurulum bedeli",
+          "value": ""
+        },
+        {
+          "label": "Öngörülen ekipman indirimi",
+          "value": ""
+        },
+        {
+          "label": "Kurulum giderini yayma süresi",
+          "value": ""
+        },
+        {
+          "label": "Yıllık destek hizmeti bedeli",
+          "value": ""
+        },
+        {
+          "label": null,
+          "value": "Longyearbyen · 2050 · Marul: model hasadı, ölçüm değil"
+        }
+      ],
+      "text": "MODEL → PİLOT → ÜRETİCİ → GERÇEK VERİ\nTarım Güvencesi\n\nDesenden Dengeye · dönemlik üretici desteği ve sigorta konsepti\n\nDestek planım\nNasıl işler?\nDestek simülasyonu\nYaygınlaştırma planı\nYıllık işletme senaryosu\n\nTek ürün veya aynı fiyatla satılan ürün grubu. Tutarlar aynı yılın ve aynı para biriminin değerleri olmalı.\n\nPara birimi\nTL\nEUR\nYıllık hasat beklentisi\nkg\nSatışa uygun olmayan ürün\n%\nAlıcının yıllık alabileceği miktar\nkg\nÜreticiye ödenecek fiyat\nTL / kg\nYıllık işletme gideri\nTL\nİndirimsiz kurulum bedeli\nTL\nÖngörülen ekipman indirimi\n%\nKurulum giderini yayma süresi\nyıl\nYıllık destek hizmeti bedeli\nTL\nÜrün ve değerlerin dayanağı\nİşletme giderine neler girer?\nDestek simülasyonunu çalıştırVarsayımsal örneği yükleTemizle\nDestek gerçekten işe yarıyor mu?\n\nİndirimi, yıllık hizmet bedelini ve satılabilecek ürünü birlikte karşılaştır. Önce pilot veya teklif değerlerini gir.\n\nÜretim modelindeki hasat beklentisi, otomatik olarak satılabilir ürün veya satış garantisi sayılmaz."
+    },
+    {
+      "case": "linked_calculation",
+      "text": "MODEL → PİLOT → ÜRETİCİ → GERÇEK VERİ\nTarım Güvencesi\n\nDesenden Dengeye · dönemlik üretici desteği ve sigorta konsepti\n\nDestek planım\nNasıl işler?\nDestek simülasyonu\nYaygınlaştırma planı\nYıllık işletme senaryosu\n\nTek ürün veya aynı fiyatla satılan ürün grubu. Tutarlar aynı yılın ve aynı para biriminin değerleri olmalı.\n\nPara birimi\nTL\nEUR\nYıllık hasat beklentisi\nkg\nSatışa uygun olmayan ürün\n%\nAlıcının yıllık alabileceği miktar\nkg\nÜreticiye ödenecek fiyat\nTL / kg\nYıllık işletme gideri\nTL\nİndirimsiz kurulum bedeli\nTL\nÖngörülen ekipman indirimi\n%\nKurulum giderini yayma süresi\nyıl\nYıllık destek hizmeti bedeli\nTL\nÜrün ve değerlerin dayanağı\nİşletme giderine neler girer?\nDestek simülasyonunu çalıştırVarsayımsal örneği yükleTemizle\n2050 · Marul · modelden aktarıldı\n\n47,6 kg/yıl hasat beklentisi. Fiyat ve giderler ayrı kullanıcı senaryosudur.\n\nKULLANICI SENARYOSU · SÖZLEŞME DOĞRULANMADI\nİndirim tek başına yeterli mi?\nDestek olmadan yıllık denge\n400 TL\nDestek ile yıllık denge\n360 TL\n\nGelir − işletme gideri − yıllık hizmet − yıllara bölünmüş kurulum. Bu, net kâr veya nakit akışı hesabı değildir; vergi, finansman ve paranın zaman değeri hariçtir.\n\nSatış hesabına giren\n40 kg\nAlıcısı planlanmamış\n2,8 kg\nBaşabaş satış fiyatı\n41 TL/kg\nÜretimi alıcı kapasitesiyle eşleştir.\n\nBu senaryoda pazarlanabilir ürünün tamamı alıcı kapasitesine sığmıyor. Ek alıcı ve saklama olanağını doğrula; doğrulanmayan ürünü satılmış sayma.\n\nKayıpları pilotta ölç.\n\nHasat, kalite reddi ve depolama kayıplarını ayrı kaydet; girilen kayıp oranını gerçek üretim verisiyle güncelle.\n\nOlumlu hesabı pilot ve yazılı koşullarla doğrula.\n\nSıfır veya pozitif senaryo bakiyesi yatırım onayı değildir. Üretim miktarı, ödeme vadesi, kalite kabulü ve giderleri doğrulamadan büyütme.\n\nProgram bedelini ve sağlanan hizmeti gözden geçir.\n\nYıllık program bedeli, ekipman indiriminin bu yıla düşen faydasını aşıyor. Teknik desteğin veya pazara erişimin ek kazancı bu hesapta varsayılmadı.\n\nOlumsuz koşullara karşı dayanıklılığı test et.\n\nBirleşik stres denemesinde bakiye negatife dönüyor. Bu deneme bir olasılık veya gelecek tahmini değildir.\n\nKoşullar kötüleşirse\n\nSeçili %20 stresler olasılık veya tahmin değildir. İşletme gideri, hasat azalsa da ayrıca düşürülmez.\n\nÜretim %20 azalırsa\n73,6 TL\nSatış fiyatı %20 azalırsa\n-40 TL\nİşletme gideri %20 artarsa\n120 TL\nÜç olumsuz koşul birlikte\n-509,1 TL\nİndirim, hizmet bedeli ve hesap ayrıntısı\nGirdiler ve sonucu indir"
+    },
+    {
+      "case": "stale_plan_blocked",
+      "disabled": true
+    },
+    {
+      "case": "new_period_context",
+      "text": "MODEL → PİLOT → ÜRETİCİ → GERÇEK VERİ\nTarım Güvencesi\n\nDesenden Dengeye · dönemlik üretici desteği ve sigorta konsepti\n\nDestek planım\nNasıl işler?\nDestek simülasyonu\nYaygınlaştırma planı\nDÖNEMLİK DESTEK · KATILIM TASLAĞI\n2030 üretim önerisinden uygulamaya\n\nTarım Güvencesi fikri, üreticiyi eğitimden hasadın alıcıya ulaşmasına kadar destekleyen bir işleyiştir. Aşağıda seçilenler tasarlanan hizmetlerdir; kayıt, ödeme veya sözleşme oluşturmaz.\n\nLongyearbyen · 2030 · 100 m² model planı\n\nTopraksız %95 · sera %5. Bu plan saha ve pilotla sınanacak; ticari tesis veya ölçülmüş hasat değildir.\n\nKatılım amacı\nÖğrenme ve küçük pilot\nMevcut üretimi iyileştirme\nDoğrulanan pilotu yaygınlaştırma\n12 aylık karşılaştırma\nHizmet süresi ve bedeli henüz sözleşmeye bağlanmadı.\nSeçilen hizmetler taslağa kaydedilir. Hizmet bedeli veya indirim, seçimlerden otomatik türetilmez; teklif koşullarıyla ayrıca girilir.\nTanış ve öğren\nGençler için topraksız tarım, su devridaimi ve temel bakım eğitimi.\nKurulumu kolaylaştır\nModüler sistem ve servis tekliflerini karşılaştır; dönemlik ekipman desteğini tanımla.\nÜretim boyunca destekle\nSu kalitesi, besin çözeltisi, enerji ve bitki gelişimini takip et; sorunlarda teknik destek planla.\nHasadı alıcıya ulaştır\nÜreticiden alım ve market/manavlara dağıtım için kalite, miktar, fiyat ve teslim koşullarını belirle.\nRisk kapsamını netleştir\nBakım hizmeti ile poliçeye bağlı teminatı ayır; uygun sigorta tarafıyla kapsamı araştır.\nBu plandaki hangi ürünü inceleyelim?\nAlabaş\nRoka\nMarul\nTurp\nPazı\nFesleğen\n\nAlabaş · 3.649,5 kg/yıl model beklentisi\nTopraksız kapalı ortam\n\nBu ürünle desteğin etkisini hesapla →\nYalnız bu ürünün model hasadı aktarılır. Fiyat, alıcı kapasitesi ve giderleri siz girersiniz.\nProgram neyi değiştirmeyi hedefliyor?\nDestek planı taslağını indir"
+    },
+    {
+      "case": "turkey_before_simulation",
+      "recommendations": 0
+    },
+    {
+      "case": "turkey_loaded_before_simulation",
+      "recommendations": 0
+    },
+    {
+      "case": "turkey_after_simulation",
+      "text": "TARIM GÜVENCESİ · PROGRAM TASARIMI\nÜretim kararını eğitim, teknik destek ve alıcıyla tamamla.\n\nBölgesel ürün deseni tek başına hidroponiğe geçiş kararı değildir. Yerel pilotun su, enerji ve ürün sonucuna göre destek yolunu seç.\n\nGençlere eğitim\nEkipman desteği\nTeknik takip\nÜrün alımı / dağıtım\nDestek koşullarının mali etkisi ayrıca hesaplanır; üretim veya kazanç artışı varsayılmaz.\nBu öneriyle destek planla"
+    },
+    {
+      "case": "console_errors",
+      "value": []
+    },
+    {
+      "case": "layout",
+      "value": {
+        "page": [
+          1280,
+          720
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    }
+  ]
+}

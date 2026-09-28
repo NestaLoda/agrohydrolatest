@@ -1,0 +1,94 @@
+{
+  "recorded_at": "2026-09-22T17:57:28.111Z",
+  "checks": [
+    {
+      "name": "Konya: 2024 source, recent ERA5 and independent recommendation",
+      "pass": true
+    },
+    {
+      "name": "Reference restores sourced baseline and clears prior recommendation",
+      "pass": true
+    },
+    {
+      "name": "Su -10% preset budget from reference",
+      "pass": true
+    },
+    {
+      "name": "Su -20% preset budget from reference",
+      "pass": true
+    },
+    {
+      "name": "Su -30% preset budget from reference",
+      "pass": true
+    },
+    {
+      "name": "Kuraklık preset budget from reference",
+      "pass": true
+    },
+    {
+      "name": "Az yağış preset budget from reference",
+      "pass": true
+    },
+    {
+      "name": "Verimli sulama preset budget from reference",
+      "pass": true
+    },
+    {
+      "name": "Su +10% preset budget from reference",
+      "pass": true
+    },
+    {
+      "name": "Konya water -20 produces new plan",
+      "pass": true
+    },
+    {
+      "name": "Trakya: partial recommendation with explicit unknown total water",
+      "pass": true
+    },
+    {
+      "name": "Rapid region switch preserves pending initial calculation",
+      "pass": true
+    },
+    {
+      "name": "gediz_manisa calculated recommendation",
+      "pass": true
+    },
+    {
+      "name": "gediz_manisa water20 scenario calculated",
+      "pass": true
+    },
+    {
+      "name": "seyhan_adana calculated recommendation",
+      "pass": true
+    },
+    {
+      "name": "seyhan_adana water20 scenario calculated",
+      "pass": true
+    },
+    {
+      "name": "gap_sanliurfa calculated recommendation",
+      "pass": true
+    },
+    {
+      "name": "gap_sanliurfa water20 scenario calculated",
+      "pass": true
+    },
+    {
+      "name": "Trakya water20 remains partial with rice held",
+      "pass": true
+    },
+    {
+      "name": "Drought: rain80 and ET0 110",
+      "pass": true
+    },
+    {
+      "name": "Irrigation85 restores rainfall100",
+      "pass": true
+    },
+    {
+      "name": "No browser console errors",
+      "pass": true
+    }
+  ],
+  "console_errors": []
+}

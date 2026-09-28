@@ -1,0 +1,530 @@
+
+PAGE 1
+51st International Conference on Environmental Systems ICES-2022-87 
+10-14 July 2022, St. Paul, Minnesota 
+Copyright © 2022 German Aerospace Center (DLR) 
+Energy and Power Demand of Food Production in Space 
+based on Results of the EDEN ISS Antarctic Greenhouse 
+Paul Zabel1, Vincent Vrakking2, Conrad Zeidler2, Daniel Schubert3 
+German Aerospace Center (DLR), Institute of Space Systems, Bremen, Germany. 
+The EDEN ISS greenhouse is a space-analogue test facility near the German Neumayer III 
+station in Antarctica. The facility is part of the project of the same name and was designed 
+and bui lt since 2015 and eventually deployed in Antarctica in January 2018. The first 
+operational phase of the greenhouse started on February the 7th and continued until the 20th 
+of November 2018. The purpose of the facility is to enable multidisciplinary research on topics 
+related to future plant cultivation on human space exploration missions. Research on food 
+quality and safety, plant health monitoring, microbiology, system validation, human factors, 
+horticultural sciences and resource demand were conducted. Pa rt of the latter were 
+measurements of the electrical energy and power demand. Those measurements were 
+conducted on the facility and subsystem level, which were complemented by determining the 
+demand of single components like LED lamps at different illumina tion settings. This paper 
+describes the electrical energy and power demand during the experiment season between 
+February and November 2018. Furthermore, the impact of these results on designing and 
+planning future plant cultivation system in space are evaluated. 
+Nomenclature 
+AMS = Atmosphere Management Subsystem 
+AWI = Alfred-Wegener Institute for Polar and Marine Research 
+CDHS = Control and Data Handling Subsystem 
+CPO = Cold Porch 
+EMS = Energy Measurement System 
+FEG = Future Explroation Greenhouse 
+ILS = Illumination Subsystem 
+MTF = Mobile Test Facility 
+NDS = Nutrient Delivery Subsystem 
+NM III = Neumayer Station III 
+PDS = Power Distribution Subsystem 
+SES = Service Section 
+TCS = Thermal Control Subsystem 
+I. Introduction 
+HE implementation of space greenhouse systems into future habitats and their utilization in conjunction with 
+other life support systems poses a number of challenges. One of these challenges is the electrical energy required 
+to cultivate plants in a closed controlled environment. Maintaining su ch an environment is only possible with the 
+extensive use of technologies  for e.g.  regulating the composition, temperature and humidity of the atmosphere; 
+sustaining the nutrient and water supply; supplying illumination and monitoring plant health. All of these technologies 
+require electrical energy to be operated. Information about the electrical energy demand of space greenhouses is 
+scarce, due to the lack of any large scale systems operational in space. Only small experimental plant cultivation 
+systems have been deployed during space missions1 so far. Data regarding power and energy demand of these systems 
+                                                           
+1 Head of Synergetic Material Utilization young investigator group, Institute of Space Systems, Robert -Hooke-Str. 7, 
+28359 Bremen, Germany. 
+2 Research Associate, Institute of Space Systems, Robert-Hooke-Str. 7, 28359 Bremen, Germany. 
+3 Head of EDEN research group, Institute of Space Systems, Robert-Hooke-Str. 7, 28359 Bremen, Germany. 
+T 
+
+PAGE 2
+ 
+2 
+International Conference on Environmental Systems 
+ 
+ 
+is almost never published  and it can be doubted that this data can be used to estimate the energy demand of a large 
+scale food production system providing the majority of the food to a future space crew.  
+Analogue experiments with plant cultivation facilities in a relevant environment on Earth can fill this gap. Suitable 
+locations for such experiments are Antarctic research bases, which face similar difficulties like future space habitats. 
+In fact, several of these research bases deployed plant cultivation facilities over the last d ecades2. Although, many of 
+these greenhouse systems have not been designed as space research and innovation experiments, but as food 
+supplement facilities. The South Pole Food Growth Chamber and  the EDEN ISS Mobile Test Facility are two 
+Antarctic greenhouses which were designed, built and operated with a focus on testing plant cultivation in a remote 
+environment as a precursor for future space missions. Both facilities were used for a large numbe r of different 
+experiments, which also included measurements regarding the electrical energy demand.  
+This paper focuses on analyzing the energy measurement data generated during the 2018 experiment phase of the 
+EDEN ISS project. A dedicated energy measurem ent system was installed in the greenhouse system from the 
+beginning to monitor the electrical power and energy demand of the whole facility, its subsystems and a few 
+components. This data allows a detailed view on the energy usage of a space greenhouse an alogue test facility  and 
+helps to draw recommendations for future space systems. 
+II. Materials and Methods 
+A. EDEN ISS Mobile Test Facility Infrastructure 
+The EDEN ISS Mobile Test Facility (MTF) is located in the immediate vicinity of the Neumayer Station III (NM 
+III) which is operated by the German Alfred-Wegener Institute for Polar and Marine Research (AWI). The MTF was 
+designed and built as an experimental facility for plant cultivation systems, allowing the test ing of essential 
+technologies and production procedures for future long-duration human space missions3. Detailed system analysis was 
+conducted by the consortium partners resulting in a solid design 4–6, including a complete risk assessment 7. The MTF 
+consists of two customized 20 foot high-cube shipping containers, which are placed on top of a raised platform located 
+approximately 400 meters south of NM III. The research facility can be subdivided into three distinct sections:  
+• Airlock/ Cold Porch (CPO) (Blue section in Figure 1): A small room providing storage and a small air buffer 
+to limit the entry of cold air when the main access door of the facility is used. This area is used for changing 
+clothes. Furthermore, the main fresh water tank and the waste water tank are both located in the subfloor 
+space of this section. 
+• Service Section (SES) (Red section in Figure 1): This section houses the primary control, atmosphere 
+management, thermal control, power  control and nutrient delivery systems of the MTF 8. Additionally, this 
+section provides a working table including sink, trash bins, and storage for tools and consumables. In addition 
+this section housed an independent rack-like plant cultivation system as part of the plant growth demonstrator 
+for future deployment onboard the International Space Station (ISS)9,10.  
+• Future Exploration Greenhouse (FEG) (Green section in Figure 1): The main plant cultivation space of the 
+MTF which includes multi -level plant growth racks with a total growth area of 12.5 m 2 operating in a 
+controlled environment. The FEG is used to study plant cultivation and the related technologies for future 
+planetary habitats11.  
+ 
+The technologies required to cultivate plants in a controlled environment are arranged in six different subsystems, 
+which are briefly described in the following. Detailed information about the subsystems can be found in  other 
+publications of the authors11,8. 
+• The nutrient delivery subsystem  (NDS) adjusts the irrigation water’s pH and EC value. Depending on the 
+plant type (leafy or fruit -building crop), the mixing computer provides a dedicated nutrient solution that is 
+delivered directly t o the roots. Eight high -pressure pumps spray a fine nutrient mist inside the root 
+compartment of each plant tray.  
+• The atmosphere management subsystem (AMS) regulates the temperature, humidity, and CO2 concentration 
+within the FEG. Furthermore, the air flo w is filtered (particle filter, HEPA, and activated carbon filter) and 
+the humidity condensate water is recovered and fed back to the fresh water tank.  
+• The thermal control subsystem (TCS) is used to remove excess heat from the MTF and to provide a cool ing 
+fluid to the dehumidifier for condensation of the humidity produced by the plants. 
+• The illumination control subsystem (ILS) consists of 42 fluid-cooled LED fixtures integrated into the FEG. 
+The light spectrum can freely be composed of red, blue, far-red, and white for each plant tray.  
+
+PAGE 3
+ 
+3 
+International Conference on Environmental Systems 
+ 
+ 
+• The power distribution subsystem  (PDS) provides electrical energy to all subsystems of the MTF. The 
+electrical energy is generated in NM III and transmitted to the MTF. 
+• The control and data handling subsystem  (CDHS) consists of a set of independent programmable logic 
+controllers which receive information from a wide range of sensors. Based on this information and defined 
+program logics this subsystem controls all functions of the MTF. The CDHS sends system telemetry to the 
+mission control center in Bremen, Germany. Furthermore, every day a set of images taken from fixed 
+positions inside the FEG is sent to the mission control center to allow remote experts to observe plant 
+development and to assist the on-site operator12. 
+ 
+ 
+Figure 1: Schematic top-view of the MTF. The blue section indicates the Cold Porch. The red area is 
+called Service Section and houses a work desk and almost all greenhouse subsystems. The green section is the 
+main plant cultivation space, called the Future Exploration Greenhouse. Red boxes indicate doors between 
+the sections and to the outside. The light blue box indicates a window.  
+B. Experiment timeframe 
+The MTF arrived in Antarctica on the 3rd of January 2018. The deployment took around five weeks and was 
+finished in early February 13. The winter -over on-site operator remained in Antarctica for the following 10 months 
+until December 2018. In the following chapters ‘experi mental phase’ refers to the period from mid-February 2018 to 
+mid-November 2018. The timeline of the experiment phase is shown in Figure 2. 
+The first plants were sown on February 7th 2018. The winter-over period started with the departure of the last summer 
+crew on February 18 th. The first harvest of lettuce and leafy greens was on March 20 th. The first cucumber harvest 
+(29th of March) and first tomato harvest (16th of May) took place in the weeks that followed. The coldest temperature 
+of the season was recorded in the morning of the 8 th of October 2018 with -43.5 °C. The winter -over period ended 
+with the arrival of the first summer crew on November 2nd. The experiment campaign of the MTF ended with the final 
+harvest which took place on November 20 th. The EDEN ISS winter -over operator departed a few days before 
+Christmas 2018. 
+ 
+Figure 2: Timeline of the EDEN ISS experiment phase (early 2018 to early 2019). 
+
+
+PAGE 4
+ 
+4 
+International Conference on Environmental Systems 
+ 
+ 
+C. Energy Measurement System 
+The hardware of the energy measurement system (EMS) utilizes the DIRIS Digiware energy measurement devices 
+sold by the company Socomec. DIRIS Digiware is a modular system which allows a customized solution  for energy 
+and power measurements. It is possible to combine a variety of electrical voltage and current measurement modules. 
+Depending on the module type three to six sensors can be connected Different types of sensors are available depending 
+on the cable diameter and the current flowing through the cable.  
+The EDEN ISS EMS consists of a voltage measurement module (U -30) and two sorts of current measurement 
+modules (I-35 and I-61). The U-30 module has three sensor inputs and measures the voltage of the th ree-phase main 
+power supply to the MTF. Hereby, the voltage between each phase and neutral is measured. One current measurement 
+module I -35 measures the electrical current of each of the three main power supply phases. Six I -61 current 
+measurement modules,  each of which has six sensor slots, measure the electrical current on the subsystem and 
+component level. The measurement module setup is shown in Figure 3. The actual sensors performing the 
+measurement are located on the respective power line inside the PDS cabinet directly after the fuse securing the 
+respective subsystem or component. All modules are connected to each other in a row via an integrated bus. In addition 
+to the measurement modules, the EDEN ISS EMS also has a small display integrated in the power box to visualize 
+data inside the MTF. A gateway module is used to connect the EMS to the network infrastructure of the MTF which 
+allows access to the E MS from each computer connected to the EDEN ISS local network in Antarctica and also 
+remotely from the mission control center in Bremen, Germany. 
+ 
+ 
+Figure 3: The EMS as installed in the power distribution box of the MTF. Modules f rom left to right: One 
+voltage measurement module U30, one current measurement module I -35, six current measurement modules 
+I-61.  
+The EDEN ISS EMS setup with the DIRIS Digiware hardware allows for precise measurements of voltage and 
+current due to the hig h accuracy class of the modules and attached sensors, see Table 1. In addition to the measured 
+voltage and current values the EMS can calculate power and energy demand internally and display those values. The 
+EMS also allows export of the data via csv files, which makes it easy to analyze the data. Besides the mere 
+measurement of voltage and current, the EMS is also capable of analyzing the status of the power distribution system 
+of the MTF by measuring values such as frequency or inductive loads. 
+ 
+Table 1: Sensor types and accuracy class for each measurement module. 
+Module Sensor type Accuracy 
+class 
+U-30 (voltage) Directly wired Class 0.2 
+I-35 (current) TE-35 Class 0.5 
+I-61 (current) TE-18 Class 0.5 
+
+
+PAGE 5
+ 
+5 
+International Conference on Environmental Systems 
+ 
+ 
+D. Electrical Power Generation 
+As mentioned previously the MTF has no means to generate electrical power by its own, but it is connected to the 
+power grid of NM III. The station has four combined heat and power plants (CHP) running with diesel, of which one 
+is an emergency back -up and up to three are operational on demand. Each CHP provides up to 150 kW electrical 
+power. The thermal load resulting from the power generation is used to heat the station living and working areas. The 
+CHPs are supplemented with a wind turbine, which can generate up to 30 kW electrical power.  
+III. Results 
+A. System level – MTF overall energy and power demand 
+The electrical energy demand of the MTF ranged from 6,600 to 7,800 kWh per month, see Figure 4, with February 
+and November being the exception because only 21 respectively 20 days of those months account to the experiment 
+phase. The total dema nd from February to November 2018 was around 68,516 kWh which corresponds to 5, 481 
+kWh/m² cultivation area.  
+The drop of the energy demand in June was caused by the failure of one of the two free cooler fans  on the roof of 
+the MTF  mid of May. The fans have a large power demand. The remaining fan was shut down from June until 
+September, because the low temperatures of the Antarctic environment were enough to cool the cooling fluid without 
+the need for forced convection by the fans. The rise in energy demand from June to October is most likely associated 
+with the dropping temperatures during the winter months and the corresponding need for additional electrical heating. 
+Without the shut down of the freecooler fans, the energy demand i n the June -October period would be around 900 
+kWh per month higher than shown in Figure 4. 
+ 
+ 
+Figure 4: Monthly electrical energy demand (in kWh) of the MTF in 2018. (*February data starting from the 
+7th. **November data until the 20th) 
+ 
+The overall power demand of the MTF from March to November 2018 is shown in  Figure 5. The February data 
+could not be used, because of recording issues of the measurement system. The graph shows a cyclic behaviour, which 
+is caused mainly by the daily cycle of the LED lamps.  During the photoperiod of 17 hours the LED lamps were o n, 
+during the dark period of 7 hours the LEDs were off. The average power demand during the photoperiod is 11.23 kW 
+and during the dark period 8.2 1 kW which corresponds to an average of, respectively, 898.4 W/m² and 656.8 W/m² 
+cultivation area. 
+ 
+4973
+6597
+7402 7636
+6605
+7229 7663 7675 7531
+5205
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+8000
+9000
+10000Electrical Energy Demand [kWh]
+
+PAGE 6
+ 
+6 
+International Conference on Environmental Systems 
+ 
+ 
+ 
+Figure 5: Electrical power demand (in W) of the MTF from March 1 st until November 20th 2018. 
+B. Subsystem level – Energy and power demand of each subsystem 
+The energy demand of each subsystem is shown in Figure 6. The aforementioned effect of the shutdown of the 
+free cooler fans is clearly visible in the values of the TCS. The values of the common equipment rise constantly from 
+May to October. This behaviour is caused by the room heaters located in the three sections of the MTF. These heaters 
+turn on, when the temperature drops below a certain threshold. The values of the common equipment consequently 
+follow the dropping external temperatures during winter (A pril to October), because the heaters turn on more 
+frequently. The energy demand of the AMS, ILS, NDS and CDHS  are relatively constant throughout the year. Please 
+note, that the data for February and November is only available for 21 respectively 20 days.  
+ 
+ 
+Figure 6: Monthly electrical energy demand (in kWh) of each MTF subsystem in 2018. (*February data 
+starting from the 7th. **November data until the 20th) 
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+01.03.18 31.03.18 01.05.18 01.06.18 01.07.18 01.08.18 01.09.18 01.10.18 01.11.18
+Electrical Power Demand [W]
+Date
+0
+500
+1000
+1500
+2000
+2500
+3000Electrical Energy Demand [kWh]
+AMS TCS Common Equipment CDHS ILS NDS
+
+PAGE 7
+ 
+7 
+International Conference on Environmental Systems 
+ 
+ 
+Table 2 shows the absolute and relative energy demand of each subsystem from March to November 2018. The 
+AMS had the highest demand followed by the ILS, the common equipment and the TCS. The demand of the CDHS 
+is relatively small and the demand of the NDS is almost negligible. 
+ 
+Table 2: Absolute and relative electrical energy demand for each subsystem between February and 
+November 2018. 
+Subsystem AMS TCS Common 
+Equipment CDHS  ILS NDS 
+Absolute electrical energy 
+demand [kWh] 23,040 7,551 13,461 4,268 19,033 1,163 
+Relative electrical energy 
+demand 33 % 11 % 20 % 6 % 28 % 2 % 
+C. Variation in subsystem power demand throughout a typical day 
+The power demand of some subsystems varies throughout the day, because those subsystems are subject to a 
+specific schedule or react to certain parameters. The illumination subsystem is on a day -night cycle. All LEDs inside 
+the FEG are turned on and off tog ether based on a specific schedule. At 00:00, the LEDs are switched from normal 
+illumination to a dusk setting with reduced intensity and therefore reduced power demand. After an hour the LEDs 
+are turned off completely for the dark period which is scheduled during the normal night rhythm of the crew. At 08:00, 
+the lamps are switched on to a dawn setting with reduced intensity. At 09:00 the lamps are switched to the normal 
+intensity level until 23:59. This day -night cycle can also be seen in the power demand  graph of the ILS in Figure 7 
+and Figure 8, which show exemplary graphs for two days. 
+The power demand of the AMS largely depends on the temperature inside the FEG which in turn depends on the 
+external conditions and the amount of heat produced by the LED lamps. Some of the electrical energy used by the 
+LEDs is converted to heat which warms the air inside the FEG. The FEG in turn loses heat to the Antarctic 
+environment. The AMS has heating rods to warm the atmosphere of the FEG in case the temperature drops below a 
+certain set point, which is necessary throughout the whole day and especially during the night period, when the LEDs 
+are shut off. 
+ 
+Figure 7: Subsystem power demand on September 5th 2018. 
+ 
+The power demand of the TCS, CDHS and NDS are nearly constant throughout each day. Whereas the power 
+demand of the common equipment shows some oscillations. Figure 7 shows daily graphs from September 5 th, which 
+means in th e mid of the Antarctic winter and corresponding low external temperatures, and Figure 8 shows daily 
+graphs from April 28th, a day with mild external temperatures. The main difference between the two days is the power 
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+5.9.18 0:00 5.9.18 4:00 5.9.18 8:00 5.9.18 12:00 5.9.18 16:00 5.9.18 20:00 6.9.18 0:00
+Electrical Power Demand [W]
+Time
+TCS CDHS Common Equipment AMS ILS NDS
+
+PAGE 8
+ 
+8 
+International Conference on Environmental Systems 
+ 
+ 
+demand of the common equipment, which is higher on September 5 th compared to April 28 th. This is caused by the 
+electrical room heaters installed in the Cold Porch and Service Section which keep the air temperature stable. One can 
+see the additional electrical power demand of around 1,500 W on September 5 th compared to April 28 th associated 
+with those room heaters. 
+ 
+ 
+Figure 8: Subsystem power demand on April 28th 2018. 
+IV. Discussion 
+A. Comparing the MTF energy demand to other Antarctic greenhouses 
+While there are many other greenhouse facilities in Antarctica 2, data on their electrical energy demand is scarce. 
+Only for the South Pole Food Growth Chamber (SPFGC) data is available 14. The SPFGC was operational around the 
+year 2010 and located inside a building of the American Amundsen -Scott South Pole Station. Several plan t species 
+were cultivated inside the SPFGC, which had a cultivation area of around 22.7 m². The SPFGC and the EDEN ISS 
+MTF are hard to compare, because the SPFGC was a set of customized rooms inside a heated building whereas the 
+MTF is a stand -alone facility. Furthermore, the SPFGC used high -pressure sodium lamps instead of LEDs for plant 
+illumination. The electrical energy demand of the former is much higher compared to LEDs.  
+The energy demand of the SPFGC was around 281 kWh/d which is in the same range as the EDEN ISS MTF (240 
+kW/h). However, when considering the cultivation area, the SPFGC required 12.8 kWh/m²/d and the MTF required 
+19.2 kWh/m²/d. The higher demand of electrical energy of the MTF compared to the SPFGC was most likely caused 
+by the different environments in which the two facilities were located. Furthermore, it is not clear whether the SPFGC 
+recovered the moisture transpired by the plants. Recovering moisture from the atmosphere is energy intensive and is 
+also one factor  which might have caused EDEN ISS to have a higher energy demand. 
+B. Considerations regarding the influence of the Antarctic environment  
+The EDEN ISS MTF stands on a platform and is year-round exposed to the Antarctic environment. Consequently, 
+equipment is required to counter act the heat loss to the environment and other equipment which is only required for 
+this location. This equipment is not associated with plant growth in general. For example, a facility with a different 
+purpose in the same location would also need electric al heaters to keep the internal air temperature in a comfortable 
+zone. Most of the equipment not directly related to plant cultivation (e.g. room heaters, water boiler, room illumination 
+or tea kettle) is encompassed in the category ‘Common Equipment’. Thi s category alone required 13,461 kWh of 
+electrical energy (20% of total MTF demand) in the experiment season 2018 and had an average power demand of 
+2,280 W. 
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+28.4.18 0:00 28.4.18 4:00 28.4.18 8:00 28.4.18 12:00 28.4.18 16:00 28.4.18 20:00 29.4.18 0:00
+Electrical Power Demand [W]
+Time
+TCS CDHS Common Equipment AMS ILS NDS
+
+PAGE 9
+ 
+9 
+International Conference on Environmental Systems 
+ 
+ 
+Another influence of the Antarctic environment is on the energy demand of the atmosphere management subsystem 
+and the thermal control subsystem, which maintain the temperature and humidity inside the greenhouse, among others. 
+However, it cannot clearly determined how much of the energy demand of both subsystems is caused by the Atnarctic 
+environment and which can be attributed to plant cultivation alone. Doing that would require to position the whole 
+facility in a location with moderate climate conditions to have data for comparison.   
+C. Energy demand for illumination 
+Besides the atmosphere management subs ystem and the thermal control subsystem, the illumination subsystem 
+also has a high electrical energy demand, e.g. 28% of the total energy demand of EDEN ISS in 2018. This demand 
+depends on the lamp technology used, the lighting schedule, the spectrum and the intensity provided for plant 
+cultivation and therefore varies with the day -night cycle and also with the maturity of the plants. Younger plants 
+typically receive less light compared to fully mature plants. The illumination subsystem is independent of the Antarctic 
+environment and therefore analogue experiment data allows a better projection for furute space greenhouses.  
+When comparing again EDEN ISS  with the SPFGC, t he SPFGC required 9.5 kWh/m²/d and the EDEN  ISS 
+required 5.7 kWh/m²/d for plant illumina tion. This large difference is mainly caused by the used technology. The 
+SPFGC data is from an operational period during which high-pressure sodium lamps were used for plant illumination, 
+whereas EDEN ISS uses LED lamps. When comparing the energy demand for plant illumination, it is clear that LED 
+lamps are superior over high-pressure sodium lamps, which was expected. The EDEN ISS ILS required only 60% of 
+the electrical energy the SPFGC used for providing light for the cultivation crops. This comparison was only made on 
+the basis of energy demand and cultivation area. For a detailed comparison of the energy demand of the illumination 
+systems additional information like the length of the photoperiod per day and the light intensity are required which 
+were not available in that detail for the SPFGC. 
+D. Electrical energy demand for food production 
+The EDEN ISS MTF produced in total 517 kg of biomass during the 2018 season, of which 268 kg were food 15. 
+The remaining biomass were roots, stems, inedible leaves. The production of this amount of biomass required around 
+55,055 kWh, this value only includes the hardware required for plant cultivation and excludes the electrical energy 
+demand of the common equipment. This means t hat ~205 kWh electrical energy per kilogram produced food was 
+required in 2018. For comparison, the SPFGC used around 22.8 kWh/kg14. This is partly caused by the different energy 
+requirements mentioned before and partly by the different biomass productivity. SPFGC was reported to have a 
+productivity of 0.13 kg/m²/d 14 and EDEN ISS had a productivity of around 0.08 kg/m²/d in 2018 15. One should keep 
+in mind, that both Antarctic facilities cultivated salad and vegetable crops and no legumes and no grains.  
+V. Conclusion 
+This paper pres ented the results of measuring the electrical energy and power demand of an experimental plant 
+cultivation system for future bio -regenerative life support systems. Comparable systems are scarce making 
+comparisons on the demand and efficiency nearly impossi ble. However, the data shown in this paper will be helpful 
+for future investigations of such systems. 
+The location of the EDEN ISS MTF, Antarctica, had several impacts on the measurements. Equipment that would 
+not be installed in a space greenhouse (e.g. electrical room heaters) was necessary to counteract the low temperatures 
+of the external environment. Although, most of this additional equipment was grouped in the Common Equipment 
+subsystem and measured separately, the Antarctic environment also affected the energy demand of the TCS and AMS. 
+The ILS measurement results were not affected by the Antarctic environment. These effects cannot be separated from 
+the nominal measurements (operation in a norml environment), because this kind of reference measurements have not 
+been conducted so far. However, the EDEN ISS MTF is going to be brought back from Antarctica in the next years 
+and operated in a location in Germany, which will allow these measurements. The 2018 data and the data from 
+subsequent could then be reevaluated and interpreted based on these reference measurements. 
+Despite the influence of the Antarctic environment on the measurements, it is safe to say, that the highest demand 
+of electrical energy is required for illumination and atmosphere, including thermal, management. Since the efficiency 
+of LEDs is already very close to its theoretical limit, improvements will only have small effects on reducing the energy 
+demand. However, reductions of the energy demand is possible by more effectively illuminati ng the crop canopy by 
+reducing stray light and also by better determining the illumination demand of each crop to avoid over -illumination. 
+The authors see more room for energy reductions in the atmosphere management subsystem. There it is important to 
+find efficient ways to ventilate the growth area and simultaneously control the temperature and humidity. It should 
+
+PAGE 10
+ 
+10 
+International Conference on Environmental Systems 
+ 
+ 
+also be investigated to make use of the spare heat that is produced by the subsystems of the plant cultivation system, 
+which would improve its overall efficiency. Thus a holistic approach to the energy system of the whole spacecraft or 
+habitat including a plant cultivation system could also bring improvements. 
+Another conlusion that can be drawn indirectly from the experimental results presented in this paper, is the lack 
+of available data regarding the energy demand of plant cultivation systems for bio-regenerative life support. Measuring 
+electrical energy and power demand during the operation of such a system is only rarely conducted. However, it is of 
+uttermost importance for designing future systems to understand these demands. Only then conlusions on the overall 
+effectivity can be drawn. Consequently, the authors of this paper recommend to include energy measurements in every 
+future experiment or technology demonstrator. The absolute minimum of measurements to be taken are on the demand 
+of the overall system. The next step would be to perform measurements on subsystem level, which eventually should 
+be complemented with measurements on component level, especially if specific components (e.g. new LED 
+illumination systems) are tested. Measurements should be done in a frequency that matches the subsystem and plant 
+cycles, e.g. a sum only over one day of operation is not enough, because it would ignore the daily variation caused by 
+the plant illumination schedule. 
+As expected, the demand of electrical energy of plant cultivation systems is high, but only with consistent and 
+consequent measurements can components and operation techniques identified and tested for reducing this demand.  
+Acknowledgments 
+The EDEN ISS project has received funding from the European Union’s Horizon 2020 research and innovation 
+program under grant agreement No 636501. 
+References 
+1 P. Zabel, M. Bamsey, D. Schubert, M. Tajmar, Review and analysis of over 40 years of space plant growth systems, Life 
+Sci. Space Res. (Amst) 10 (2016) 1–16. https://doi.org/10.1016/j.lssr.2016.06.004. 
+2 M. Bamsey, P. Zabel, C. Zeidler, D. Gyimesi, D. Schubert, E. Kohlberg, D. Mengedoht, J. Rae, Review of Antarctic 
+greenhouses and plant production facilities: A historical account of food plants on the ice, 45th International Conference on 
+Environmental Systems, Bellevue, Washington, 2015. 
+3 P. Zabel, M. Bamsey, C. Zeidler, V. Vrakking, B.-W. Johannes, P. Rettberg, D. Schubert, O. Romberg, B. Imhof, R. 
+Davenport, W. Hoheneder, R. Waclavicek, C. Gilbert, M. Hogle, A. Battistelli, W. Stefanoni, S. Moscatello, S. Proietti, G. Santi, 
+F. Nazzaro, F. Fratianni, R. Coppola, M. Dixon, M. Stasiak, E. Kohlberg, D. Mengedoht, L. Bucchieri, E. Mazzoleni, V. Fetter, 
+T. Hummel, G. Boscheri, F. Massobrio, M. Lamantea, C. Lobascio, A. Petrini, M. Adami, G. Bonzano, L. Fiore, T. Dueck, C. 
+Stanghellini, G. Bochenek, A. Gilley, M. McKeon-Bennett, G. Stutte, T. Larkin, S. Moane, P. Murray, P. Downey, R. Fortezza, 
+A. Ceriello, Introducing EDEN ISS - A European project on advancing plant cultivation technologies and operations, 45th 
+International Conference on Environmental Systems, Bellevue, Washington, 2015. 
+4 M. Bamsey, P. Zabel, C. Zeidler, L. Poulet, D. Schubert, E. Kohlberg, T. Graham, Design of a containerized greenhouse 
+module for deployment to the Neumayer III Antarctic Station, 44th International Conference on Environmental Systems, 
+Tucson, Arizona, 2014. 
+5 M. Bamsey, P. Zabel, C. Zeidler, V. Vrakking, D. Schubert, E. Kohlberg, M. Stasiak, T. Graham, Early Trade-offs and 
+Top-Level Design Drivers for Antarctic Greenhouses and Plant Production Facilities, 46th International Conference on 
+Environmental Systems, Vienna, Austria, 2016. 
+6 P. Zabel, M. Bamsey, C. Zeidler, V. Vrakking, D. Schubert, O. Romberg, G. Boscheri, T. Dueck, The preliminary design 
+of the EDEN ISS Mobile Test Facility - An Antarctic greenhouse, 46th International Conference on Environmental Systems, 
+Vienna, Austria, 2016. 
+7 A. Santos, V. Infante, M. Bamsey, D. Schubert, A case study in the application of failure analysis techniques to Antarctic 
+Systems: EDEN ISS, 2016 IEEE International Symposium on Systems Engineering (ISSE), Edinburgh, United Kingdom, IEEE, 
+03.10.2016 - 05.10.2016, pp. 1–7. 
+8 V. Vrakking, M. Bamsey, P. Zabel, C. Zeidler, D. Schubert, O. Romberg, Service Section Design of the EDEN ISS 
+Project, 47th International Conference on Environmental Systems, Charleston, South Carolina, 2017. 
+9 G. Boscheri, V. Guarnieri, C. Iacopini, I. Locantore, M. Lamantea, C. Lobascio, D. Schubert, The EDEN ISS Rack-Like 
+Plant Growth Facility, 46th International Conference on Environmental Systems, Vienna, Austria, 2016. 
+10 G. Boscheri, M. Volponi, M. Lamantea, C. Lobascio, D. Schubert, P. Zabel, Main performance results of the EDEN ISS 
+rack-like plant growth facility, 47th International Conference on Environmental Systems, Charleston, South Carolina, 2017. 
+11 P. Zabel, M. Bamsey, C. Zeidler, V. Vrakking, D. Schubert, O. Romberg, Future Exploration Greenhouse Design of the 
+EDEN ISS project, 47th International Conference on Environmental Systems, Charleston, South Carolina, 2017. 
+12 C. Zeidler, P. Zabel, V. Vrakking, M. Dorn, M. Bamsey, D. Schubert, A. Ceriello, R. Fortezza, D. de Simone, C. 
+Stanghellini, F. Kempkes, E. Meinen, A. Mencarelli, G.-J. Swinkels, A.-L. Paul, R.J. Ferl, The Plant Health Monitoring System 
+
+PAGE 11
+ 
+11 
+International Conference on Environmental Systems 
+ 
+ 
+of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase, Frontiers in Plant Science 10 (2019) 
+1457. https://doi.org/10.3389/fpls.2019.01457. 
+13 D. Schubert, M. Bamsey, P. Zabel, C. Zeidler, V. Vrakking, Status of the EDEN ISS Greenhouse after on-site installation 
+in Antarctica, 48th International Conference on Environmental Systems, Albuquerque, New Mexico, 2018. 
+14 R.L. Patterson, G.A. Giacomelli, M. Kacira, P.D. Sadler, R.M. Wheeler, Description, operation and production of the 
+South Pole Food Growth Chamber, Acta Hortic. (2012) 589–596. https://doi.org/10.17660/ActaHortic.2012.952.75. 
+15 P. Zabel, C. Zeidler, V. Vrakking, M. Dorn, D. Schubert, Biomass Production of the EDEN ISS Space Greenhouse in 
+Antarctica During the 2018 Experiment Phase, Frontiers in Plant Science 11 (2020) 656. 
+https://doi.org/10.3389/fpls.2020.00656. 
+ 

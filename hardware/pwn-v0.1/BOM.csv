@@ -1,0 +1,25 @@
+item_id,item,quantity,priority,selection_or_requirement,inventory_status,purchase_rule,source
+P01,ESP32 geliştirme kartı veya uygun Deneyap,1,CORE,Örnek pin planı ESP32-DevKitC V4 WROOM-32E içindir,UNKNOWN,Önce okul envanteri; yoksa uygun kart,https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html
+P02,USB veri kablosu,1,CORE,Kart konnektörüne uygun veri taşıyan kablo,UNKNOWN,Yalnız yoksa al,README.md
+P03,Suya uygun DS18B20 paketli sıcaklık probu,1,CORE,3 telli harici besleme; kablo işlevleri satıcıdan teyit,UNKNOWN,Yalnız yoksa al,https://www.analog.com/media/en/technical-documentation/data-sheets/DS18B20.pdf
+P04,4.7 kohm pull-up direnç,1,CORE,Kısa masaüstü 1-Wire başlangıç bağlantısı; öğretmen kontrolü,UNKNOWN,Okul direnç setini kullan,WIRING.md
+P05,Quadrature encoder,1,CORE,3.3 V mantık veya pasif kontak; sayım modu kalibre edilecek,UNKNOWN,Önce mevcut encoderı incele,WIRING.md
+P06,Sabit çaplı ölçüm tekeri ve baskı/kılavuz,1 set,CORE,İp kaymadan dönecek; boyut gerçek malzemeye göre,UNKNOWN,Atölyede üret; hazır şart değil,MECHANICAL_BRIEF.md
+P07,Elektrot çifti,1 çift,CORE,Aynı malzeme; sabit açık yüzey ve aralık; öğretmen seçimi,UNKNOWN,Önce uygun stok malzeme,CONDUCTIVITY_CELL.md
+P08,İletkenlik analog ön devre bileşenleri,1 set,CORE,AC veya dengeli kutuplama; akım sınırlama; uygun ADC sinyali,UNKNOWN,Öğretmen devreyi seçmeden rastgele alım yok,CONDUCTIVITY_CELL.md
+P09,Uygun aralıklı hazır EC modülü,1,FALLBACK,DIY başarısızsa; 3.3 V ADC uyumu kontrol,UNKNOWN,Önce ödünç; gerekirse seçilmiş modül,CONDUCTIVITY_CELL.md
+P10,Harici ADC,1,OPTIONAL,Ön devre gerektirirse; ADC tek başına EC ölçmez,UNKNOWN,Gerekçe olmadan alma,https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html
+P11,microSD kart ve 3.3 V uyumlu SPI modülü,1 set,CORE,Alternatif yeterli kart içi yerel bellek; modül beslemesini teyit,UNKNOWN,Yalnız uygun mevcut bellek yoksa,WIRING.md
+P12,USB güç kaynağı veya powerbank,1,CORE,Elektronik kuru; kartı tek besleme yolundan çalıştır,UNKNOWN,Mevcut güvenilir güç kaynağını kullan,https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html
+P13,Breadboard veya delikli plaket,1,CORE,Kuru tarafta sabit bağlantı,UNKNOWN,Okul envanteri,WIRING.md
+P14,Kablo direnç konnektör ısı makaron seti,1 set,CORE,Gerçek devreye göre; sualtı konnektör iddiası yok,UNKNOWN,Eksik sarf kadar al,WIRING.md
+P15,Kuru elektronik kutusu ve dökülme tepsisi,1 set,CORE,Kolon dışında ve üst bağlantılardan su yürümeyecek yerleşim,UNKNOWN,Mevcut kap/kutu uyarlanabilir,MECHANICAL_BRIEF.md
+P16,Şeffaf kolon veya yeterli şeffaf kap,1,CORE,Prob rahat hareket etmeli; sağlam taban; cetvelle izlenebilir,UNKNOWN,Mevcut uygun kap öncelikli,MECHANICAL_BRIEF.md
+P17,Prob tutucusu taşıyıcı ip kılavuz ağırlık,1 set,CORE,Ayrı yük yolu; dengeli hareket; boyut ölçüm sonrası,UNKNOWN,Atölye üretimi,CAD_BRIEF.md
+P18,Cetvel veya mezura,1,CORE,Encoder mesafe kontrolü ve yüzey sıfırı,UNKNOWN,Okul envanteri,TEST_PROCEDURE.md
+P19,Temiz kap tuz su terazi ölçülü kap,1 set,CORE,Belgeli çözelti hazırlama; miktar tek başına EC standardı değildir,UNKNOWN,Okul/laboratuvar envanteri,TEST_PROCEDURE.md
+P20,Referans EC metre ve uygun EC standartları,1 set,REFERENCE,Deney aralığında; referans sıcaklığı ve kimliği kayıtlı,UNKNOWN,Ödünç/laboratuvar öncelikli,TEST_PROCEDURE.md
+P21,Referans termometre,1,REFERENCE,Prob sapmasını ve dengeyi kontrol,UNKNOWN,Ödünç öncelikli,TEST_PROCEDURE.md
+P22,Multimetre ve lehim ekipmanı,1 set,CORE,Öğretmen gözetiminde devre kontrolü,UNKNOWN,Ortak atölye kullanımı,WIRING.md
+P23,Osiloskop,1,REFERENCE,AC sürme ve ön devre çıktısını kontrol,UNKNOWN,Ödünç; sırf PoC için satın alma zorunlu değil,CONDUCTIVITY_CELL.md
+P24,Dizüstü bilgisayar,1,CORE,CSV kontrol ve profil analizi,UNKNOWN,Mevcut bilgisayar,DATA_SCHEMA.md

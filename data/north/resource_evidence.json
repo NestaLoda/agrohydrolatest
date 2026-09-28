@@ -1,0 +1,743 @@
+{
+  "schema_version": "north-resource-evidence-1",
+  "model_version": "north-resources-physics-1",
+  "created_at_utc": "2026-09-22T21:48:48.162622+00:00",
+  "normalization": {
+    "growing_area_m2": 1,
+    "display_reference_m2": 100,
+    "status": "DECLARED_NORMALIZED_PLANNING_BASIS",
+    "statement": "Neither1 nor100m2 is a discovered available plot, local agricultural allocation or a land-use permit."
+  },
+  "local_context": {
+    "site_id": "longyearbyen",
+    "municipal_source": "Isdammen",
+    "agricultural_freshwater_allocation_m3_year": null,
+    "agricultural_energy_allocation_kwh_year": null,
+    "current_energy": "diesel electricity, diesel boiler/diesel-power heat recovery",
+    "water_reference_policy": "No withdrawal from municipal Isdammen assigned to agriculture in this reference plan; allocation remains UNKNOWN, hydrology is not set to zero.",
+    "water_research": "SINTEF, UNIS and University of Bergen study2025-2027; finalreportexpectedQ2 2027; noagriculturalwaterallocationpublishedinverifiedsources.",
+    "sources": [
+      "sintef_isdammen",
+      "svalbard_energy"
+    ]
+  },
+  "parameter_catalog": {
+    "common.envelope_area_per_floor_m2": {
+      "configurations": [
+        2.2,
+        2.2,
+        2.2
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "m2 envelope/m2 growing area",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.height_m": {
+      "configurations": [
+        3,
+        3,
+        3
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "m",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.led_umol_j": {
+      "configurations": [
+        3.0,
+        2.6,
+        2.1
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "umol/J",
+      "status": "SOURCED_ANALOGUE_WITH_TRANSFER_ASSUMPTION",
+      "sources": [
+        "cea_engineering_text"
+      ],
+      "note": "Published device efficacy examples; actual fixture/spectrum must be selected."
+    },
+    "common.relative_humidity": {
+      "configurations": [
+        0.8,
+        0.7,
+        0.6
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.canopy_resistance_s_m": {
+      "configurations": [
+        250,
+        150,
+        70
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "s/m",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.aerodynamic_resistance_s_m": {
+      "configurations": [
+        200,
+        120,
+        70
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "s/m",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.canopy_radiation_absorptance": {
+      "configurations": [
+        0.65,
+        0.75,
+        0.85
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.dehumidifier_l_kwh": {
+      "configurations": [
+        3.81,
+        2.22,
+        1.7
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "L/kWh",
+      "status": "SOURCED_ANALOGUE_WITH_TRANSFER_ASSUMPTION",
+      "sources": [
+        "epa_dehumidifier"
+      ],
+      "note": "EPA efficiency criteria under defined test conditions, not actual cold-greenhouse performance."
+    },
+    "common.drainage_fraction": {
+      "configurations": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.drainage_recovery_fraction": {
+      "configurations": [
+        0.98,
+        0.95,
+        0.9
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.condensate_reuse_fraction": {
+      "configurations": [
+        0.95,
+        0.9,
+        0.8
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.pump_flow_l_min_m2": {
+      "configurations": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "L/min/m2",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.pump_head_m": {
+      "configurations": [
+        2,
+        3,
+        4
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "m",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.pump_efficiency": {
+      "configurations": [
+        0.65,
+        0.5,
+        0.35
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.fan_w_m2": {
+      "configurations": [
+        1,
+        2,
+        4
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "W/m2",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.cooling_cop": {
+      "configurations": [
+        4,
+        3,
+        2.5
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.biomass_water_l_m2_day": {
+      "configurations": [
+        0.03,
+        0.05,
+        0.08
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "L/m2/day",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "common.latitude_deg": {
+      "configurations": [
+        78.2232,
+        78.2232,
+        78.2232
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "degrees north",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "greenhouse.u_w_m2_k": {
+      "configurations": [
+        2.84,
+        3.12,
+        3.97
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "W/m2/K",
+      "status": "SOURCED_ANALOGUE_WITH_TRANSFER_ASSUMPTION",
+      "sources": [
+        "purdue_heating",
+        "uga_greenhouse"
+      ],
+      "note": "Material analogue: double coverings; not a measured Svalbard building."
+    },
+    "greenhouse.air_changes_h": {
+      "configurations": [
+        0.5,
+        0.75,
+        1
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "1/h",
+      "status": "SOURCED_ANALOGUE_WITH_TRANSFER_ASSUMPTION",
+      "sources": [
+        "uga_greenhouse"
+      ],
+      "note": "New double-plastic greenhouse leakage analogue."
+    },
+    "greenhouse.solar_transmission": {
+      "configurations": [
+        0.75,
+        0.65,
+        0.55
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "greenhouse.condensed_fraction": {
+      "configurations": [
+        0.3,
+        0.2,
+        0.1
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "indoor.u_w_m2_k": {
+      "configurations": [
+        0.3,
+        0.45,
+        0.6
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "W/m2/K",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "indoor.air_changes_h": {
+      "configurations": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "1/h",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "indoor.solar_transmission": {
+      "configurations": [
+        0,
+        0,
+        0
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "indoor.condensed_fraction": {
+      "configurations": [
+        0.95,
+        0.9,
+        0.8
+      ],
+      "order": "efficient, central, resource-intensive design configurations; metrics are not guaranteed monotone",
+      "unit": "fraction or dimensionless",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "Explicit screening design choice; no local measurement or crop-specific calibration claimed."
+    },
+    "roof.collection_efficiency": {
+      "range": [
+        0.75,
+        0.8,
+        0.85
+      ],
+      "unit": "fraction",
+      "status": "SOURCED_ANALOGUE_WITH_TRANSFER_ASSUMPTION",
+      "sources": [
+        "texas_rainwater"
+      ],
+      "note": "System capture range includes first flush and ordinary collection losses; Arctic icing/roof losses unvalidated."
+    },
+    "roof.melt_factor": {
+      "range": [
+        2.29,
+        3,
+        4.57
+      ],
+      "unit": "mm SWE/degree C/day",
+      "status": "SOURCED_ANALOGUE_WITH_TRANSFER_ASSUMPTION",
+      "sources": [
+        "usace_snow"
+      ],
+      "note": "Typical dry degree-day rates; simple project snow bucket omits full HEC-HMS cold content/refreezing model."
+    },
+    "roof.tank_size": {
+      "default": 0.1,
+      "suggested_design_range": [
+        0.025,
+        0.1,
+        0.25
+      ],
+      "unit": "m3 tank per m2 roof",
+      "status": "ENGINEERING_ASSUMPTION",
+      "sources": [],
+      "note": "25/100/250 L per m2 normalized engineering alternatives, not observed local storage."
+    }
+  },
+  "ro_parameters": {
+    "mass_salinity_definition": "g/kg, reference-composition mass salinity; never raw PSU/SP",
+    "temperature_definition": "in_situ degC; potential/conservative temperature requires documented conversion",
+    "recovery": {
+      "default": 0.45,
+      "admissible_scenario_range": [
+        0.1,
+        0.65
+      ],
+      "status": "ENGINEERING_SCENARIO_NOT_SELECTED_MEMBRANE"
+    },
+    "net_driving_pressure_25c_bar": [
+      5,
+      10,
+      15
+    ],
+    "pump_efficiency": [
+      0.85,
+      0.8,
+      0.75
+    ],
+    "energy_recovery_efficiency": [
+      0.98,
+      0.95,
+      0.9
+    ],
+    "pressure_drop_bar": [
+      1,
+      2,
+      3
+    ],
+    "auxiliary_kwh_m3": [
+      0.2,
+      0.4,
+      0.8
+    ],
+    "assumptions_status": "EXPLICIT_ENGINEERING_RANGES; auxiliary central .4 is comparable to DOE open-ocean .38 excluding site-specific pumping, not Arctic calibration.",
+    "maximum_pressure_bar": 83,
+    "cold_regime": "Below0C source is sensibly conditionedto0C; thermalinput separate; phase/freezingprotection and membrane fitness unvalidated.",
+    "source_ids": [
+      "mit_seawater",
+      "dupont_filmtec",
+      "doe_desalination"
+    ],
+    "brine_handling": {
+      "volume": "Vproduct*(1-recovery)/recovery",
+      "salinity": "Sfeed/(1-recovery), equal-density ideal-rejection approximation",
+      "energy": "Included only in explicit auxiliary range; real conveyance depends on head, receiving-water design and permit.",
+      "permission": "UNKNOWN; simulation is not discharge authorization."
+    }
+  },
+  "marine_expectation": {
+    "product_id": "ARCTIC_MULTIYEAR_PHY_002_003",
+    "daily_dataset": "cmems_mod_arc_phy_my_topaz4_P1D-m",
+    "monthly_dataset": "cmems_mod_arc_phy_my_topaz4_P1M",
+    "temperature_variable": "thetao",
+    "temperature_kind": "potential",
+    "temperature_unit": "degC",
+    "salinity_variable": "so",
+    "salinity_kind": "model_sea_water_salinity",
+    "salinity_unit": "1e-3",
+    "horizontal_resolution_km": 12,
+    "delivered_depth_levels": 40,
+    "daily_time": "daily average centred12:00UTC",
+    "ensemble": "100-member mean, not uncertainty quantified by profile alone",
+    "availability": "CATALOGUE_VERIFIED_NO_NUMERIC_PROFILE_ACQUIRED_BY_RESOURCE_AGENT",
+    "ro_directly_compatible": false,
+    "gates": [
+      "actual downloaded dimensions include depth",
+      "native metadata and dataset version",
+      "source URL/license/file SHA256",
+      "time averaging window versus cast UTC",
+      "requested versus grid position and representative depth",
+      "thermodynamic definitions converted by documented standard or comparison refused",
+      "QC/calibration and observed-versus-modelled status preserved"
+    ],
+    "source_ids": [
+      "topaz_pum",
+      "topaz_quid"
+    ]
+  },
+  "field_testable_variables": [
+    {
+      "variable": "seasonal_terrestrial_freshwater",
+      "current_evidence": "municipal source and ongoinghydrologicalstudy; agriculturalallocationnull",
+      "pwn_measurable": false,
+      "decision_link": "annual/monthly freshwater option requires independent allocation/infrastructuredata"
+    },
+    {
+      "variable": "marine_source_temperature",
+      "current_evidence": "real model profile pending; scenarios remain labelled",
+      "pwn_measurable": true,
+      "method": "calibrated in-situ temperaturewithUTC/location/depth",
+      "decision_link": "RO permeability,pressure and conditioning thermalenergy; site-time-depth representativenessrequired"
+    },
+    {
+      "variable": "marine_salinity",
+      "current_evidence": "reference-composition masssalinity required forRO",
+      "pwn_measurable": true,
+      "method": "calibratedC/T/p then documentedTEOS10 transformation; rawEC/SPkept",
+      "decision_link": "osmoticpressure and brineconcentration; no freshwater-volume inference"
+    },
+    {
+      "variable": "source_water_chemistry",
+      "current_evidence": "panelnotfinal",
+      "pwn_measurable": false,
+      "physical_sample_possible": true,
+      "method": "expert/labconfirmedion,alkalinity,boron/fouling-relatedpanelonlyifdecisionrelevant",
+      "decision_link": "treatment/recovery/conditioningcompatibility; conductivityaloneinsufficient"
+    },
+    {
+      "variable": "isotopic_source_characterization",
+      "current_evidence": "SINTEFparallelresearch supports relevance, notourpanelapproval",
+      "pwn_measurable": false,
+      "physical_sample_possible": true,
+      "method": "delta18O anddelta2H ifendmember/labjustified",
+      "decision_link": "sourcecharacterization notdirectcrop-water-yield coefficient"
+    }
+  ],
+  "downloaded_sources": [
+    {
+      "id": "mit_seawater",
+      "url": "https://web.mit.edu/seawater/SEAWATER_v3.1.5_07Aug24.zip",
+      "accessed_at_utc": "2026-09-22T21:21:25.763947+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/mit_seawater.zip",
+      "sha256": "5eff86e99b56eb1564c8afd98fc507f923003db8d28ccc6887b48782e107a54c",
+      "bytes": 225025,
+      "final_url": "https://web.mit.edu/seawater/SEAWATER_v3.1.5_07Aug24.zip",
+      "title": "MIT Seawater Thermophysical Properties v3.1.5, 2024-08-07",
+      "supports": "Osmotic coefficient and pressure correlations for reference-composition mass salinity; polynomial0-200C and0-120g/kg.",
+      "citations": [
+        "https://doi.org/10.5004/dwt.2010.1079",
+        "https://doi.org/10.1016/j.desal.2016.02.024"
+      ],
+      "does_not_support": "Practical Salinity to mass salinity conversion or source chemistry beyond seawater reference composition."
+    },
+    {
+      "id": "dupont_filmtec",
+      "url": "https://www.dupont.com/content/dam/water/amer/us/en/water/public/documents/en/RO-NF-FilmTec-Manual-45-D01504-en.pdf",
+      "accessed_at_utc": "2026-09-22T21:21:25.763947+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/dupont_filmtec.pdf",
+      "sha256": "eb7c8d7f7829e2652fa26896b53618c82cd7d05037f759a3a1c9b647f681fa97",
+      "bytes": 9554575,
+      "final_url": "https://www.dupont.com/content/dam/water/amer/us/en/water/public/documents/en/RO-NF-FilmTec-Manual-45-D01504-en.pdf",
+      "title": "FilmTec RO/NF Technical Manual Rev20, August2026",
+      "supports": "Eqs73/74 permeability temperature correction; most seawater elements maximum83bar/45C subject to element-specific limits.",
+      "does_not_support": "Arctic installation qualification, universal membrane NDP or complete water quality."
+    },
+    {
+      "id": "cornell_lettuce",
+      "url": "https://cea.cals.cornell.edu/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf",
+      "accessed_at_utc": "2026-09-22T21:21:25.768603+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/cornell_lettuce.pdf",
+      "sha256": "40be195e0ccb09f9d4781046c19aba03cfd52ce0c794cbf0ebdb5cc1a5e00e3d",
+      "bytes": 2962519,
+      "final_url": "https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf",
+      "title": "Cornell CEA Lettuce Handbook2013, hosted2019",
+      "supports": "DLI17 is cultivar/airflow dependent; some cultivars15 and without airflow12; do not generalize one light target to all crops."
+    },
+    {
+      "id": "topaz_pum",
+      "url": "https://documentation.marine.copernicus.eu/PUM/CMEMS-ARC-PUM-002-003.pdf",
+      "accessed_at_utc": "2026-09-22T21:21:25.768603+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/topaz_pum.pdf",
+      "sha256": "89c8f1f4c5a88b1d69e9a0d6f4c23bb0754993c3ede83a96c351d91cb7fb8aef",
+      "bytes": 682277,
+      "final_url": "https://documentation.marine.copernicus.eu/PUM/CMEMS-ARC-PUM-002-003.pdf",
+      "title": "TOPAZ4b Product User Manual issue1.0, November2025",
+      "supports": "Current daily and monthly physical datasets list 3D potential temperature/salinity; fixed40-depth output; ~12km; ensemble/time means."
+    },
+    {
+      "id": "topaz_quid",
+      "url": "https://documentation.marine.copernicus.eu/QUID/CMEMS-ARC-QUID-002-003.pdf",
+      "accessed_at_utc": "2026-09-22T21:21:25.768603+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/topaz_quid.pdf",
+      "sha256": "aeed2327fbef958c007e1de39622cf4217925981e1eaa197192461a94c9aef40",
+      "bytes": 4612761,
+      "final_url": "https://documentation.marine.copernicus.eu/QUID/CMEMS-ARC-QUID-002-003.pdf",
+      "title": "TOPAZ product quality information document",
+      "supports": "Historical validation and uncertainty scope.",
+      "does_not_support": "Some text describes older daily2D output; verify actual downloaded variable dimensions instead of resolving document conflict by assumption."
+    },
+    {
+      "id": "eden_energy",
+      "url": "https://elib.dlr.de/186936/1/EDEN%20ISS%20Energy_final_v2.pdf",
+      "accessed_at_utc": "2026-09-22T21:21:26.372760+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/eden_energy.pdf",
+      "sha256": "17f965fc0f489c5155a8d48deae8174396f2d815cc94c4154bef3adc06dbadfb",
+      "bytes": 690030,
+      "final_url": "https://elib.dlr.de/186936/1/EDEN%20ISS%20Energy_final_v2.pdf",
+      "title": "EDEN ISS energy consumption 2018 experiment, DLR primary paper",
+      "supports": "Light, thermal and atmosphere management are material energy components.",
+      "does_not_support": "Antarctic facility kWh/kg cannot be transferred unchanged to Svalbard."
+    },
+    {
+      "id": "uga_greenhouse",
+      "url": "https://fieldreport.caes.uga.edu/wp-content/uploads/2025/08/B-792_6.pdf",
+      "accessed_at_utc": "2026-09-22T21:21:26.662888+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/uga_greenhouse.pdf",
+      "sha256": "ed8c7b4969f4df77ed7e1051cce94c50724a1e680cd358740bf280e6f375705b",
+      "bytes": 9265316,
+      "final_url": "https://fieldreport.caes.uga.edu/wp-content/uploads/2025/08/B-792_6.pdf",
+      "title": "Greenhouses: Heating, Cooling and Ventilation, UGA B792",
+      "supports": "Cover thermal resistances and new double-plastic greenhouse air leakage 0.5-1.0 exchanges/h."
+    },
+    {
+      "id": "sintef_isdammen",
+      "url": "https://www.sintef.no/en/latest-news/2026/securing-the-water-supply-in-longyearbyen-is-critical/",
+      "accessed_at_utc": "2026-09-22T21:21:26.881263+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/sintef_isdammen.html",
+      "sha256": "7cfa5f77399ee33d315daed46081a9ce3be2baa135cbf2d3af47fbfe0bc71931",
+      "bytes": 65445,
+      "final_url": "https://www.sintef.no/en/latest-news/2026/securing-the-water-supply-in-longyearbyen-is-critical/",
+      "title": "Securing the water supply in Longyearbyen is critical",
+      "date": "2026-03-25",
+      "supports": "SINTEF/UNIS/UiB condition and water-balance study 2025-2027; sole municipal source Isdammen; manganese and permafrost-flow uncertainties. Report expected Q2 2027.",
+      "does_not_support": "No agricultural allocation, sustainable withdrawal or quantity is supplied."
+    },
+    {
+      "id": "svalbard_energy",
+      "url": "https://www.svalbard-energi.no/svalbard-energi-as.587394.no.html",
+      "accessed_at_utc": "2026-09-22T21:21:26.984651+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/svalbard_energy.html",
+      "sha256": "00f8ca7878fb498e32a73ce8b1f90e505eb8619d632888466de8c25fd1a7aeed",
+      "bytes": 15109,
+      "final_url": "https://www.svalbard-energi.no/svalbard-energi-as.587394.no.html",
+      "title": "Svalbard Energi AS",
+      "updated": "2026-01-16",
+      "supports": "Diesel electricity, diesel boilers and power-generation heat recovery; coal plant closed October 2023.",
+      "does_not_support": "No future agricultural supply limit or applicable commercial tariff."
+    },
+    {
+      "id": "texas_rainwater",
+      "url": "https://www.twdb.texas.gov/innovativewater/rainwater/faq.asp",
+      "accessed_at_utc": "2026-09-22T21:21:27.211976+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/texas_rainwater.html",
+      "sha256": "11185c4f9c546043fec3b4a241232c5abf59fcd82af4ef80277bc3d4e78cbad6",
+      "bytes": 81172,
+      "final_url": "https://www.twdb.texas.gov/innovativewater/rainwater/faq.asp",
+      "title": "Texas Water Development Board rainwater harvesting FAQ",
+      "supports": "75-85% collection system efficiency; roof precipitation collection concept."
+    },
+    {
+      "id": "purdue_heating",
+      "url": "https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/",
+      "accessed_at_utc": "2026-09-22T21:21:27.296181+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/purdue_heating.html",
+      "sha256": "7df5b8481ca29ed4ecf3bcaf7996882777d1f4529440fbbbbe63d82703245b35",
+      "bytes": 92575,
+      "final_url": "https://www.purdue.edu/hla/sites/cea/article/calculating-greenhouse-heating-requirements/",
+      "title": "Calculating Greenhouse Heating Requirements",
+      "supports": "UA temperature-difference equation and covering U values.",
+      "does_not_support": "Not local greenhouse geometry, foundation heat losses or Arctic validation."
+    },
+    {
+      "id": "usace_snow",
+      "url": "https://www.hec.usace.army.mil/confluence/hmsdocs/hmstrm/snow-accumulation-and-melt/temperature-index-method",
+      "accessed_at_utc": "2026-09-22T21:44:24.124625+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/usace_snow.html",
+      "sha256": "829246e5ed46501d37c19ff4eb1c5a2140c9511537ea391949f66b505512b254",
+      "bytes": 99330,
+      "final_url": "https://www.hec.usace.army.mil/confluence/hmsdocs/hmstrm/snow-accumulation-and-melt/temperature-index-method",
+      "title": "USACE HEC-HMS Temperature Index Method",
+      "supports": "Snow water-equivalent conservation and degree-day melt; typical2.29-4.57mm/C/day."
+    },
+    {
+      "id": "fao_penman",
+      "url": "https://www.fao.org/4/x0490e/x0490e06.htm",
+      "accessed_at_utc": "2026-09-22T21:44:21.757166+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/fao_penman.html",
+      "sha256": "097e3aa9223ef69cf589549c445083eb78b1549b099459b448f01a5e7337c68b",
+      "bytes": 33762,
+      "final_url": "https://www.fao.org/4/x0490e/x0490e06.htm",
+      "title": "FAO56 Chapter2 Equation3, general Penman-Monteith",
+      "supports": "Energy/aerodynamic combination equation with explicitly crop-specific canopy and aerodynamic resistances.",
+      "does_not_support": "Our greenhouse/indoor resistance, LAI, humidity or water requirement is not validated by citing FAO."
+    },
+    {
+      "id": "epa_dehumidifier",
+      "url": "https://www.energystar.gov/products/dehumidifiers/key_efficiency_criteria",
+      "accessed_at_utc": "2026-09-22T21:44:22.013326+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/epa_dehumidifier.html",
+      "sha256": "a01ac6e936e7c8238207cc8b76bf43f3ba5b37cf15b52042ec8310da535e26f7",
+      "bytes": 37173,
+      "final_url": "https://www.energystar.gov/products/dehumidifiers/key_efficiency_criteria",
+      "title": "ENERGY STAR Dehumidifier Efficiency Criteria v6, effective2025-10-01",
+      "supports": "Equipment IEF criteria 1.70,2.22,3.81 L/kWh under defined tests.",
+      "does_not_support": "Actual operation at this crop humidity and Arctic building conditions."
+    },
+    {
+      "id": "doe_desalination",
+      "url": "https://www.energy.gov/sites/default/files/2017/12/f46/Seawater_desalination_bandwidth_study_2017.pdf",
+      "accessed_at_utc": "2026-09-22T21:44:22.044271+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/doe_desalination.pdf",
+      "sha256": "aae88476377136b109db7216854dd9355da9d62b1632ad45365c991675d36496",
+      "bytes": 6231533,
+      "final_url": "https://www.energy.gov/sites/default/files/2017/12/f46/Seawater_desalination_bandwidth_study_2017.pdf",
+      "title": "DOE2017 Seawater Desalination Bandwidth Study",
+      "supports": "Table3-2 open-ocean example pretreatment .06+.19+.02=.27 kWh/m3, post-treatment .05+.06=.11; intake/brine depend on head.",
+      "does_not_support": "Our .2/.4/.8 auxiliary scenario range is not a measured Arctic range or a complete brine permit."
+    },
+    {
+      "id": "sandia_ro",
+      "url": "https://www.osti.gov/servlets/purl/1008105/",
+      "accessed_at_utc": "2026-09-22T21:44:31.476807+00:00",
+      "status": "downloaded",
+      "local_path": "data/north/resource_sources/sandia_ro.pdf",
+      "sha256": "68a0f2a45a6458b6ce984d68c62a058fec6ba97948a0d71638acb9322a58e602",
+      "bytes": 2795227,
+      "final_url": "https://www.osti.gov/servlets/purl/1008105/",
+      "title": "Sandia2010 report on osmotic energy extraction",
+      "supports": "Thermodynamic resource/pump/pressure exchanger losses are relevant context.",
+      "does_not_support": "No adopted plant efficiency fitted from this report."
+    }
+  ],
+  "additional_primary_references": [
+    {
+      "id": "cea_engineering_text",
+      "url": "https://doi.org/10.21061/introbiosystemsengineering/plant_controlled_environment",
+      "title": "Introduction to Biosystems Engineering: Plant Production in Controlled Environments",
+      "support": "Photon energy, DLI and light efficacy context; examples near2.1 and3umol/J."
+    }
+  ],
+  "limitations": [
+    "No actual Arctic waterprofile, selectedmembrane,pilotgreenhouse,localwaterallocationorgridcapacitycreated.",
+    "Engineeringrangesarevisible hypotheses, not fitteddata orprobabilisticconfidenceintervals.",
+    "Raincapture-qualitytreatment,chemicalcompatibility,foundations/soilpermissionsandenergyallocationremainindependentrequirements.",
+    "PM controlled-canopy resistance andcondensatereusemustbe measuredinpilot; dailyclimateisnotinsideplantclimate."
+  ],
+  "marine_stress_scenarios": {
+    "status": "DECLARED_ENGINEERING_STRESS_SCENARIOS_NOT_LOCAL_OBSERVATIONS",
+    "reference_salinity_g_kg": 35,
+    "reference_temperature_c": 2,
+    "salinity_g_kg_range": [
+      25,
+      37
+    ],
+    "temperature_c_range": [
+      -1,
+      8
+    ],
+    "meaning": "Chosen source-water perturbations for sensitivity only; not an acquired Longyearbyen/Barents profile, local climatology, confidence interval or future ocean projection."
+  }
+}

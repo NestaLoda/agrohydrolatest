@@ -1,0 +1,47 @@
+{
+  "at": "2026-09-23T08:25:05.476Z",
+  "checks": [
+    {
+      "check": "historical_switch",
+      "text": "Tarihsel iklime göre ne değişti?\n2015–2025 · yakın dönem\n1995–2014 · aynı iklim modeli\n1995–2014 → 2050\nÜrün oranları aynı kaldı.\nTopraksız üretim %95,2 → %94,7\nYeni su ihtiyacı %0,6 arttı.\nEnerji gereği aynı düzeyde.\nAynı alan, amaç ve altyapı. 1995–2014 aynı NASA model ailesidir; bugünkü ekiliş değildir. Enerji: elektrik eşdeğeri."
+    },
+    {
+      "check": "recent_reference",
+      "text": "Yakın döneme göre ne değişti?\n2015–2025 · yakın dönem\n1995–2014 · aynı iklim modeli\n2015–2025 → 2050\nÜrün oranları aynı kaldı.\nTopraksız üretim %94,6 → %94,7\nYeni su ihtiyacı %0,2 azaldı.\nEnerji gereği %0,5 azaldı.\nAynı alan, amaç ve altyapı. 2015–2025 yeniden analizidir; gerçek ekiliş değildir. Gelecekle fark, veri seti/hücre etkisini de içerir; yalnız iklim değişimine bağlanamaz. Enerji: elektrik eşdeğeri."
+    },
+    {
+      "check": "storage",
+      "text": "Bu üretim için nasıl bir depo ve yedek gerekir?\nSeçilen depo\n10 m³\nYağış/kar ile çalışma için hesaplanan depo\n10,9 m³\nSınanan kayıtların tamamı · ilk dolum hariç\nSeçilen depoyla yoğun gündeki yedek\n46,6 litre/gün\n\nBu üretimi yağış/karla sürdürmek için depoyu yaklaşık 10,9 m³ düzeyinde araştır veya yedek kaynağı koru.\n\nToplanabilen su azalırsa ne olur?\nHesabın sınırları\nYağış / kar → depo\n14,1 m³\nDeniz → arıtma\n0,1 m³\nYerel tatlı su tahsisi\n0 m³\nÜretim\n14,2 m³\nTuzlu su doğrudan bitkiye verilmez. İç devridaim, yeni bir su kaynağı olarak ikinci kez sayılmaz.\nToplanan yağış / kar erimesi %99,1\nArıtılmış deniz suyu %0,9\nEn çok yedek su isteyen ay\nMayıs\nSeçilen depo\n10 m³\nEn zor model-yıl\n5,6 m³ yedek\nGünlük su güvenliği · ilk işletme yılına dikkat\nAylık toplama ve üretim ihtiyacı\nOca\nŞub\nMar\nNis\nMay\nHaz\nTem\nAğu\nEyl\nEki\nKas\nAra\n\nÇatıdan toplanabilir su\nÜretim için yeni su ihtiyacı\n\nGünlük yağış/kar hesabından aylık dönem ortalaması. Kurak yıl güvenilirlik garantisi değildir; depo taşması ve arıtılmış tamamlama aynı dengede hesaplanır.\nACCESS-CM2 · günlük hava ile sınama\n0–0,5 m³/yıl\nYağış sonrası yedek su ihtiyacı · en yüksek 33,2 litre/gün\nMPI-ESM1-2-HR · günlük hava ile sınama\n0–5,2 m³/yıl\nYağış sonrası yedek su ihtiyacı · en yüksek 46,6 litre/gün\nMRI-ESM2-0 · günlük hava ile sınama\n0–5,6 m³/yıl\nYağış sonrası yedek su ihtiyacı · en yüksek 46,6 litre/gün\nAylık miktarlar"
+    },
+    {
+      "check": "energy",
+      "text": "Enerji nerede kullanılıyor?\nBitki ışıkları\n70.232 kWh/yıl\nSu dolaşımı\n157 kWh/yıl\nHavalandırma\n1.602 kWh/yıl\nNem alma\n22.303 kWh/yıl\nSoğutma\n23.179 kWh/yıl\nEn yoğun işletme ayı\nAğustos\nÜretim işletimi için güç taraması\n25,8 kW\nIsı + elektrik azamileri toplamı\nEnerji bağlantısı\nYerelde doğrulanacak\nArıtma gücü ve ilk çalıştırma ayrıca\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n\nYıllık kWh, toplam tüketimdir. kW ise aynı anda gereken güçtür. Yıllık enerji yeterli olsa bile yoğun anda bağlantı yetersiz kalabilir.\n\nGüç ve enerji hesabının sınırları\nIsı ile elektrik ayrı hesaplanır\n\nAynı ürün miktarları için yalnız sera: 134.642 kWh/yıl; seçilen sistem: 119.369 kWh/yıl elektrik eşdeğeri. Her iki seçenek de aynı motorla hesaplandı.\n\nIsı gereği\n1.896 kWh/yıl\nÜretim elektriği\n117.473 kWh/yıl\nArıtma elektriği\n0 kWh/yıl\n\nİklim her modelde ayrı günlük sıcaklık ve güneşlenmeyle işlenir. Isıtma, ışıklandırma ve su arıtma aynı sayı değildir. Isıtma verimi (COP), ısının elektrik karşılığını ve buna bağlı yöntem seçimini etkiler.\n\nÜretim · kg/yıl\n2.965–5.665\nSu · m³/yıl\n6–40\nElektrik eşdeğeri · kWh/yıl\n87.782–169.690\nAralıklar sınanan model ve parametre senaryolarının sonuçlarıdır; olasılık veya güven aralığı değildir."
+    },
+    {
+      "check": "purpose_evidence",
+      "text": "Neden bu ürünler seçildi?\n\nSeçtiğiniz hedef: taze ürün. Motor, bu çıktının ulaşılabilir en yüksek değerinin %95’ini korurken su–enerji gereğini birlikte sınırlar. Her etkin ürüne seçtiğiniz asgari alan ayrılır. Protein/kalori katsayıları Norveç besin tablosundan aktarılır; gerçek yerel hasat, dengeli diyet, talep veya kâr iddiası değildir.\n\nSeçilen hedef: Taze ürün miktarı\nTaze yenebilir hasat\n4.204 kg/yıl\nAktarılan bileşimle protein\n75,1 kg/yıl\nBesin enerjisi\n958.342 kcal/yıl\nTesisin elektrik tüketimi değildir\n\nBu değerler kaynaklı besin bileşiminin model hasadına uygulanmasıdır. Kişi sayısı, dengeli beslenme veya kâr sonucu değildir.\n\nÜrünlerin kaynaklı besin katsayıları\nHangi bilgiyi biliyoruz, hangisini varsayıyoruz?\n\nBu plan ortalama aylık iklim koşullarını kullanır; günlük değişkenlik su grafiğinde ayrıca sınanır. Yerel yeniden analiz kontrolü, NASA hücresinin yerleşim iklimini doğrudan temsil etmediğini gösteriyor.\n\nMODELED / SOURCED\nGelecek iklimi\n\n2041–2060, 3 GCM, günlük Tmin/Tmax/yağış/kısa dalga. 0,25° hücre; yerel tarla hava ölçümü değil. Tarihsel yerel ERA5-Land kontrolü projeksiyona otomatik düzeltme olarak uygulanmadı.\n\nNASA NEX-GDDP-CMIP6 v2.0 ↗\nSOURCED / TRANSFERR"
+    },
+    {
+      "check": "protein_changes_crop",
+      "text": "Roka\n%75\nTopraksız · kapalı ortam\nFesleğen\n%5\nTopraksız · kapalı ortam\nAlabaş\n%5\nTopraksız · kapalı ortam\nMarul\n%5\nGüneş alan sera + Topraksız · kapalı ortam\nTurp\n%5\nGüneş alan sera\nPazı\n%5\nTopraksız · kapalı ortam"
+    },
+    {
+      "check": "recent_plan",
+      "text": "Yakın dönem · ERA5 yeniden analizi\nSıcaklık farkı\n+3,7 °C\nYağış farkı\n-10%\nDonsuz dönem\n87 gün\nFarklar NASA 1995–2014’e göre; veri seti etkisini içerir."
+    },
+    {
+      "check": "validation_rejects_empty_record",
+      "passed": true,
+      "visibleMessage": "Kayıttaki zorunlu alanları, birimleri ve belge bilgilerini kontrol edin."
+    }
+  ],
+  "dimensions": {
+    "clientHeight": 898,
+    "clientWidth": 890,
+    "scrollHeight": 898,
+    "scrollWidth": 890
+  },
+  "consoleErrors": [],
+  "expectedHttp422": "Deliberate empty sample validation test",
+  "mobileTested": false
+}

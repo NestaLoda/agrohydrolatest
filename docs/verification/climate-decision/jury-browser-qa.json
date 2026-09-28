@@ -1,0 +1,57 @@
+{
+  "verified_at": "2026-09-22T20:29:16.432Z",
+  "desktop_only": true,
+  "checks": [
+    {
+      "check": "First screen shows current pattern, climate controls and optimize CTA; no premature recommendation",
+      "passed": true
+    },
+    {
+      "check": "Hot/dry scenario shows understandable red percentage warning before optimization",
+      "passed": true
+    },
+    {
+      "check": "Recommendation uses actionable crop shares, water percentage and unplanted percentage; exact quantities stay closed",
+      "passed": true
+    },
+    {
+      "check": "Exact action details remain available with hectares and water units",
+      "passed": true
+    },
+    {
+      "check": "Percentage overview, optional economics and expandable 10-chart laboratory retained",
+      "passed": true
+    },
+    {
+      "check": "Trakya names rice exclusion and shows a neutral scoped ratio, never full-region green or generic no-data message",
+      "passed": true,
+      "details": "Ürün deseni simülasyonu\nMODEL ÖNERİSİ\nİklim senaryosu ΔT 0°C · yağış %0\nCanlı seçim\nHesaplanan öneri\n\nMevcut iklim koşullarıyla başlıyoruz.\n\nMevcut\nÜrünlerin alan payı\nBuğday\n%43,7\nAyçiçeği\n%39,2\n%15\nEkili alan\n%100\nHesaplanan öneri\nÜrünlerin alan payı\nBuğday\n%64,3\nAyçiçeği\n%19,6\n%15\nEkili alan\n%100\nBuğday\n%64,3\nAyçiçeği\n%19,6\nÇeltik\n%15\nArpa\n%1,1\nÖNERİNİN SUYA ETKİSİ · Çeltik hariç\n%16,4 daha az su gerekiyor\nAynı iklimde mevcut desene göre hesaplanan değişim.\nÇeltik için ayrı su hesabı gerekir; bu karşılaştırma diğer ürünleri kapsar.\n%100 sınırı\n%83,6\nÇeltik hariç\n%0\n%200\nSu bütçesi baskısı\nSu hesabını aç · miktarlar ve ürün katkıları"
+    },
+    {
+      "check": "seyhan_adana starts from source and calculates only on Optimize",
+      "passed": true
+    },
+    {
+      "check": "gediz_manisa starts from source and calculates only on Optimize",
+      "passed": true
+    },
+    {
+      "check": "gap_sanliurfa starts from source and calculates only on Optimize",
+      "passed": true
+    },
+    {
+      "check": "Final build colors same-climate water reduction green after optimization",
+      "passed": true
+    },
+    {
+      "check": "Infeasible water restriction gives concrete plain-language action and no invented optimum",
+      "passed": true,
+      "details": "Karar vericiye eylem\nHEDEFLER UYUŞMUYOR\n\nBu koşullarda bütün hedefler birlikte karşılanamıyor · Seçilen desen su bütçesini %11.274,8 aşıyor.\n\nHangi payı değiştirmeli?\nBu koşul için yeni bir ürün dağılımı önerilmiyor.\nNeden?\nMevcut paylarla su bütçesi yetmiyor; üretim hedefleri de aynı anda korunmak zorunda.\nNeyi korumalı?\nSu bütçesini gerçek tahsise göre kontrol edin; ardından zorunlu üretim paylarını gözden geçirip yeniden hesaplayın.\nDetaylı eylem hesabı"
+    },
+    {
+      "check": "Restored source starting pattern; technical sections closed; no console errors",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

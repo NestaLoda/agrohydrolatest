@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partial" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partialnoncss" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <dataset name="MRI-ESM2-0/historical/r1i1p1f1/tasmin/">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1950_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1950_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1950_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-28T02:25:07.117Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1951_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1951_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1951_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:25:16.444Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1952_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1952_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1952_v2.0.nc">
+      <dataSize units="Mbytes">249.2</dataSize>
+      <date type="modified">2025-06-28T02:25:25.764Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1953_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1953_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1953_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-28T02:25:34.936Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1954_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1954_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1954_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:25:44.057Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1955_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1955_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1955_v2.0.nc">
+      <dataSize units="Mbytes">247.1</dataSize>
+      <date type="modified">2025-06-28T02:25:53.308Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1956_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1956_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1956_v2.0.nc">
+      <dataSize units="Mbytes">249.1</dataSize>
+      <date type="modified">2025-06-28T02:26:02.513Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1957_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1957_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1957_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:26:11.720Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1958_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1958_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1958_v2.0.nc">
+      <dataSize units="Mbytes">248.0</dataSize>
+      <date type="modified">2025-06-28T02:26:20.899Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1959_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1959_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1959_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:26:30.116Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1960_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1960_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1960_v2.0.nc">
+      <dataSize units="Mbytes">249.3</dataSize>
+      <date type="modified">2025-06-28T02:26:39.383Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1961_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1961_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1961_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:26:48.678Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1962_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1962_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1962_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-28T02:26:57.891Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1963_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1963_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1963_v2.0.nc">
+      <dataSize units="Mbytes">249.2</dataSize>
+      <date type="modified">2025-06-28T02:27:07.250Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1964_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1964_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1964_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-28T02:27:16.494Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1965_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1965_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1965_v2.0.nc">
+      <dataSize units="Mbytes">248.6</dataSize>
+      <date type="modified">2025-06-28T02:27:25.798Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1966_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1966_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1966_v2.0.nc">
+      <dataSize units="Mbytes">249.1</dataSize>
+      <date type="modified">2025-06-28T02:27:35.025Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1967_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1967_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1967_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:27:44.338Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1968_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1968_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1968_v2.0.nc">
+      <dataSize units="Mbytes">250.7</dataSize>
+      <date type="modified">2025-06-28T02:27:53.598Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1969_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1969_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1969_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-28T02:28:02.761Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1970_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1970_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1970_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-28T02:28:11.986Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1971_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1971_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1971_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-28T02:28:21.144Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1972_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1972_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1972_v2.0.nc">
+      <dataSize units="Mbytes">250.6</dataSize>
+      <date type="modified">2025-06-28T02:28:30.411Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1973_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1973_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1973_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-28T02:28:39.586Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1974_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1974_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1974_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:28:48.908Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1975_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1975_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1975_v2.0.nc">
+      <dataSize units="Mbytes">247.9</dataSize>
+      <date type="modified">2025-06-28T02:28:58.106Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1976_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1976_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1976_v2.0.nc">
+      <dataSize units="Mbytes">249.9</dataSize>
+      <date type="modified">2025-06-28T02:29:07.364Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1977_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1977_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1977_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:29:16.525Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1978_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1978_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1978_v2.0.nc">
+      <dataSize units="Mbytes">249.3</dataSize>
+      <date type="modified">2025-06-28T02:29:25.797Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1979_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1979_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1979_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:29:34.984Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1980_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1980_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1980_v2.0.nc">
+      <dataSize units="Mbytes">249.2</dataSize>
+      <date type="modified">2025-06-28T02:29:44.247Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1981_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1981_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1981_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:29:53.682Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1982_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1982_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1982_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:30:02.871Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1983_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1983_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1983_v2.0.nc">
+      <dataSize units="Mbytes">249.1</dataSize>
+      <date type="modified">2025-06-28T02:30:12.237Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1984_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1984_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1984_v2.0.nc">
+      <dataSize units="Mbytes">249.3</dataSize>
+      <date type="modified">2025-06-28T02:30:21.422Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1985_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1985_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1985_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-28T02:30:30.605Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1986_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1986_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1986_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T02:30:39.918Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1987_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1987_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1987_v2.0.nc">
+      <dataSize units="Mbytes">249.2</dataSize>
+      <date type="modified">2025-06-28T02:30:49.262Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1988_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1988_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1988_v2.0.nc">
+      <dataSize units="Mbytes">249.1</dataSize>
+      <date type="modified">2025-06-28T02:30:58.614Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1989_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1989_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1989_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-28T02:31:07.709Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1990_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1990_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1990_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T02:31:16.823Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1991_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1991_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1991_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-28T02:31:26.064Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1992_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1992_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1992_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-28T02:31:35.279Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1993_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1993_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1993_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-28T02:31:44.519Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1994_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1994_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1994_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-28T02:31:53.778Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1995_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1995_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1995_v2.0.nc">
+      <dataSize units="Mbytes">248.5</dataSize>
+      <date type="modified">2025-06-28T02:32:03.187Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1996_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1996_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1996_v2.0.nc">
+      <dataSize units="Mbytes">251.0</dataSize>
+      <date type="modified">2025-06-28T02:32:12.500Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1997_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1997_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1997_v2.0.nc">
+      <dataSize units="Mbytes">249.0</dataSize>
+      <date type="modified">2025-06-28T02:32:21.733Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1998_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1998_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1998_v2.0.nc">
+      <dataSize units="Mbytes">248.1</dataSize>
+      <date type="modified">2025-06-28T02:32:30.932Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1999_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1999_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_1999_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T02:32:40.092Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2000_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2000_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2000_v2.0.nc">
+      <dataSize units="Mbytes">249.7</dataSize>
+      <date type="modified">2025-06-28T02:32:49.324Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2001_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2001_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2001_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-28T02:32:58.480Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2002_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2002_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2002_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T02:33:07.635Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2003_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2003_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2003_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-28T02:33:16.744Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2004_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2004_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2004_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-28T02:33:26.004Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2005_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2005_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2005_v2.0.nc">
+      <dataSize units="Mbytes">248.8</dataSize>
+      <date type="modified">2025-06-28T02:33:35.273Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2006_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2006_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2006_v2.0.nc">
+      <dataSize units="Mbytes">249.5</dataSize>
+      <date type="modified">2025-06-28T02:33:44.505Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2007_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2007_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2007_v2.0.nc">
+      <dataSize units="Mbytes">248.9</dataSize>
+      <date type="modified">2025-06-28T02:33:53.875Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2008_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2008_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2008_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-28T02:34:03.226Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2009_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2009_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2009_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-28T02:34:12.440Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2010_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2010_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2010_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-28T02:34:21.769Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2011_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2011_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2011_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T02:34:30.920Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2012_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2012_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2012_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-28T02:34:40.124Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2013_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2013_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2013_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-28T02:34:49.453Z</date>
+    </dataset>
+    <dataset name="tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2014_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2014_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/historical/r1i1p1f1/tasmin/tasmin_day_MRI-ESM2-0_historical_r1i1p1f1_gn_2014_v2.0.nc">
+      <dataSize units="Mbytes">249.5</dataSize>
+      <date type="modified">2025-06-28T02:35:02.226Z</date>
+    </dataset>
+  </dataset>
+</catalog>

@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-09-23T11:55:15.754Z",
+  "checks": [
+    {
+      "name": "base",
+      "text": "MODEL → PİLOT → ÜRETİCİ → GERÇEK VERİ\nÜreticiye geçiş\n\nDesenden Dengeye · Üretici Destek ve Pazara Erişim Programı\n\nNasıl işler?\nDestek simülasyonu\nYaygınlaştırma planı\nYıllık işletme senaryosu\n\nTek ürün veya aynı fiyatla satılan ürün grubu. Tutarlar aynı yılın ve aynı para biriminin değerleri olmalı.\n\nPara birimi\nTL\nEUR\nYıllık hasat beklentisi\nkg\nSatışa uygun olmayan ürün\n%\nAlıcının yıllık alabileceği miktar\nkg\nÜreticiye ödenecek fiyat\nTL / kg\nYıllık işletme gideri\nTL\nİndirimsiz kurulum bedeli\nTL\nÖngörülen ekipman indirimi\n%\nKurulum giderini yayma süresi\nyıl\nYıllık destek hizmeti bedeli\nTL\nÜrün ve değerlerin dayanağı\nİşletme giderine neler girer?\nDestek simülasyonunu çalıştırVarsayımsal örneği yükleTemizle\n\nÖĞRETİCİ ÖRNEK · Sayılar gerçek teklif veya üretim ölçümü değildir.\n\nKULLANICI SENARYOSU · SÖZLEŞME DOĞRULANMADI\nİndirim tek başına yeterli mi?\nDestek olmadan yıllık denge\n2.000 TL\nDestek ile yıllık denge\n2.200 TL\n\nGelir − işletme gideri − yıllık hizmet − yıllara bölünmüş kurulum. Bu, net kâr veya nakit akışı hesabı değildir; vergi, finansman ve paranın zaman değeri hariçtir.\n\nSatış hesabına giren\n800 kg\nAlıcısı planlanmamış\n100 kg\nBaşabaş satış fiyatı\n47,3 TL/kg\nÜretimi alıcı kapasitesiyle eşleştir.\n\nBu senaryoda pazarlanabilir ürünün tamamı alıcı kapasitesine sığmıyor. Ek alıcı ve saklama olanağını doğrula; doğrulanmayan ürünü satılmış sayma.\n\nKayıpları pilotta ölç.\n\nHasat, kalite reddi ve depolama kayıplarını ayrı kaydet; girilen kayıp oranını gerçek üretim verisiyle güncelle.\n\nOlumlu hesabı pilot ve yazılı koşullarla doğrula.\n\nSıfır veya pozitif senaryo bakiyesi yatırım onayı değildir. Üretim miktarı, ödeme vadesi, kalite kabulü ve giderleri doğrulamadan büyütme.\n\nOlumsuz koşullara karşı dayanıklılığı test et.\n\nBirleşik stres denemesinde bakiye negatife dönüyor. Bu deneme bir olasılık veya gelecek tahmini değildir.\n\nKoşullar kötüleşirse\n\nSeçili %20 stresler olasılık veya tahmin değildir. İşletme gideri, hasat azalsa da ayrıca düşürülmez.\n\nÜretim %20 azalırsa\n-1.800 TL\nSatış fiyatı %20 azalırsa\n-5.800 TL\nİşletme gideri %20 artarsa\n-3.800 TL\nÜç olumsuz koşul birlikte\n-15.000 TL\nİndirim, hizmet bedeli ve hesap ayrıntısı\nGirdiler ve sonucu indir"
+    },
+    {
+      "name": "stale",
+      "visible": true
+    },
+    {
+      "name": "negative",
+      "text": "MODEL → PİLOT → ÜRETİCİ → GERÇEK VERİ\nÜreticiye geçiş\n\nDesenden Dengeye · Üretici Destek ve Pazara Erişim Programı\n\nNasıl işler?\nDestek simülasyonu\nYaygınlaştırma planı\nYıllık işletme senaryosu\n\nTek ürün veya aynı fiyatla satılan ürün grubu. Tutarlar aynı yılın ve aynı para biriminin değerleri olmalı.\n\nPara birimi\nTL\nEUR\nYıllık hasat beklentisi\nkg\nSatışa uygun olmayan ürün\n%\nAlıcının yıllık alabileceği miktar\nkg\nÜreticiye ödenecek fiyat\nTL / kg\nYıllık işletme gideri\nTL\nİndirimsiz kurulum bedeli\nTL\nÖngörülen ekipman indirimi\n%\nKurulum giderini yayma süresi\nyıl\nYıllık destek hizmeti bedeli\nTL\nÜrün ve değerlerin dayanağı\nİşletme giderine neler girer?\nDestek simülasyonunu çalıştırVarsayımsal örneği yükleTemizle\n\nÖĞRETİCİ ÖRNEK · Sayılar gerçek teklif veya üretim ölçümü değildir.\n\nKULLANICI SENARYOSU · SÖZLEŞME DOĞRULANMADI\nİndirim tek başına yeterli mi?\nDestek olmadan yıllık denge\n2.000 TL\nDestek ile yıllık denge\n-6.800 TL\n\nGelir − işletme gideri − yıllık hizmet − yıllara bölünmüş kurulum. Bu, net kâr veya nakit akışı hesabı değildir; vergi, finansman ve paranın zaman değeri hariçtir.\n\nSatış hesabına giren\n800 kg\nAlıcısı planlanmamış\n100 kg\nBaşabaş satış fiyatı\n58,5 TL/kg\nÜretimi alıcı kapasitesiyle eşleştir.\n\nBu senaryoda pazarlanabilir ürünün tamamı alıcı kapasitesine sığmıyor. Ek alıcı ve saklama olanağını doğrula; doğrulanmayan ürünü satılmış sayma.\n\nKayıpları pilotta ölç.\n\nHasat, kalite reddi ve depolama kayıplarını ayrı kaydet; girilen kayıp oranını gerçek üretim verisiyle güncelle.\n\nBu koşullarda ölçeği büyütmeden planı düzelt.\n\nHesaplanan gelir, yıllık gider ve ekipmanın yıllara yayılan bedelini karşılamıyor. Fiyatı, alıcı kapasitesini, işletme giderini ve ekipman teklifini doğrula.\n\nProgram bedelini ve sağlanan hizmeti gözden geçir.\n\nYıllık program bedeli, ekipman indiriminin bu yıla düşen faydasını aşıyor. Teknik desteğin veya pazara erişimin ek kazancı bu hesapta varsayılmadı.\n\nKoşullar kötüleşirse\n\nSeçili %20 stresler olasılık veya tahmin değildir. İşletme gideri, hasat azalsa da ayrıca düşürülmez.\n\nÜretim %20 azalırsa\n-10.800 TL\nSatış fiyatı %20 azalırsa\n-14.800 TL\nİşletme gideri %20 artarsa\n-12.800 TL\nÜç olumsuz koşul birlikte\n-24.000 TL\nİndirim, hizmet bedeli ve hesap ayrıntısı\nGirdiler ve sonucu indir"
+    },
+    {
+      "name": "pilot",
+      "text": "MODEL → PİLOT → ÜRETİCİ → GERÇEK VERİ\nÜreticiye geçiş\n\nDesenden Dengeye · Üretici Destek ve Pazara Erişim Programı\n\nNasıl işler?\nDestek simülasyonu\nYaygınlaştırma planı\nSONRAKİ AŞAMA · HENÜZ UYGULANMADI\nÖnce küçük ölçekte doğrula, sonra yaygınlaştır.\n\nTürkiye’de bir pilot üretici ve yerel alıcıyla başlayan sınama, Arktik araştırmasıyla aynı ölç–karşılaştır–iyileştir mantığını kullanır. İki yerin fiyatları, izinleri ve işletme şartları ayrı değerlendirilir.\n\n1 · Kaynak ve üretim\n\nSu kalitesi, arıtma, enerji kapasitesi ve seçilen ürünün gerçek pilot sonucu.\n\n2 · Ekipman ve alıcı\n\nYazılı teklif; alıcının kalite sınırı, miktarı, fiyatı, teslim ve ödeme koşulları.\n\n3 · Risk ve işletme\n\nBakım, kesinti/yedekleme, soğuk zincir, uygun poliçe ve ilk yatırım finansmanı.\n\n4 · Ölçülen devam kararı\n\nL/kg su, kWh/kg enerji, satılabilir hasat, gerçek gider, ret/fire ve ödeme süresi. Sonuç zayıfsa ölçeği büyütme; sistemi düzelt.\n\nSaha bu zincirin hangi kısmını güçlendirir?\n\nPWN ve izinli numuneler kaynak suyun sıcaklık, tuzluluk ve seçilmiş kullanım/arıtma özelliklerini sınar. Yağış–kar toplama, yerel su erişimi ve üretici ekonomisi ayrıca ölçülür. Kontrollü pilot, su → arıtma → üretim uyumunu test eder; satış ve kazanç için gerçek alıcı ve işletme kayıtları gerekir.\n\nProgramın gelir seçenekleri: açık hizmet bedeli veya açık satış hizmeti payı. Ekipman yönlendirme geliri varsa üreticiye açıklanır; bilimsel önerinin amacı buna göre değiştirilmez."
+    },
+    {
+      "name": "turkiye_entry",
+      "visible": true
+    },
+    {
+      "name": "escape_closes",
+      "dialogs": 0
+    },
+    {
+      "name": "layout",
+      "value": {
+        "dialog": {
+          "height": 662.4000244140625,
+          "width": 1100
+        },
+        "page": [
+          1280,
+          720
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "console_errors",
+      "value": []
+    }
+  ]
+}

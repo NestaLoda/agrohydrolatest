@@ -1,0 +1,342 @@
+{
+  "schema_version": "1.0",
+  "updated_on": "2026-09-23",
+  "sources": {
+    "MOSJ_JANSSONHAUGEN": {
+      "title": "Norwegian Meteorological Institute (2025), MOSJ Janssonhaugen permafrost monitoring",
+      "url": "https://mosj.no/en/indikator/climate/land/permafrost/",
+      "period": "Active layer 1998–2024; ground-temperature chart 1999-01-01 to 2024-09-19",
+      "spatial_scope": "Janssonhaugen, approximately 20 km from Longyearbyen",
+      "evidence_level": "LOCAL_REGION_FIELD_OBSERVATION",
+      "transfer_limitation": "Point borehole observations are regional context. Active-layer depth is not available agricultural soil depth; no parcel or future horizon inference.",
+      "locator": "Embedded public wpDataCharts 207 and 208",
+      "accessed_on": "2026-09-23"
+    },
+    "UNIS_PERMA_METEO": {
+      "title": "UNIS PermaMeteoCommunity",
+      "url": "https://www.unis.no/project/permameteocommunity/",
+      "period": "Project observations, source page",
+      "spatial_scope": "Longyeardalen",
+      "evidence_level": "LOCAL_GEOTECHNICAL_RESEARCH",
+      "transfer_limitation": "Variable ground ice and saline marine clay emphasize site heterogeneity; no quantitative parcel map extracted.",
+      "locator": null,
+      "accessed_on": "2026-09-23"
+    },
+    "ESA_CCI_V5": {
+      "title": "ESA Permafrost CCI v5.0 data catalogue",
+      "url": "https://climate.esa.int/en/projects/permafrost/data/",
+      "period": "1997–2023",
+      "spatial_scope": "Northern Hemisphere, 1 km",
+      "evidence_level": "REMOTE_SENSING_CONSTRAINED_THERMAL_MODEL",
+      "transfer_limitation": "Historical modeled annual grid is not future ground condition or borehole measurement. No pixel value acquired in this package.",
+      "locator": null,
+      "accessed_on": "2026-09-23"
+    },
+    "SOILGRIDS_2": {
+      "title": "ISRIC SoilGrids 2.0",
+      "url": "https://docs.isric.org/globaldata/soilgrids/",
+      "period": "2020 product / 2025-12-18 documentation update",
+      "spatial_scope": "250 m global prediction grid",
+      "evidence_level": "GLOBAL_SOIL_MODEL",
+      "transfer_limitation": "Not recommended for individual-farm decisions by ISRIC; queried Longyearbyen point returns null. No imputed pH or texture.",
+      "locator": null,
+      "accessed_on": "2026-09-23"
+    }
+  },
+  "sites": {
+    "longyearbyen": {
+      "name": "Longyearbyen çevresi",
+      "query_location": {
+        "latitude": 78.22,
+        "longitude": 15.65,
+        "kind": "scenario reference point, not parcel"
+      },
+      "permafrost": {
+        "status": "regional_observed_permafrost",
+        "source_ids": [
+          "MOSJ_JANSSONHAUGEN",
+          "UNIS_PERMA_METEO"
+        ],
+        "source_distance_km_approx": 20,
+        "observation_site": "Janssonhaugen",
+        "current_site_parcel_verified": false,
+        "future_permafrost_projected": false
+      },
+      "active_layer_observations": {
+        "unit": "cm",
+        "source_id": "MOSJ_JANSSONHAUGEN",
+        "chart_id": 207,
+        "rows": [
+          {
+            "year": 1998,
+            "value": 154
+          },
+          {
+            "year": 1999,
+            "value": 161
+          },
+          {
+            "year": 2000,
+            "value": 157
+          },
+          {
+            "year": 2001,
+            "value": 159
+          },
+          {
+            "year": 2002,
+            "value": 172
+          },
+          {
+            "year": 2003,
+            "value": 170
+          },
+          {
+            "year": 2004,
+            "value": 174
+          },
+          {
+            "year": 2005,
+            "value": 166
+          },
+          {
+            "year": 2006,
+            "value": 182
+          },
+          {
+            "year": 2007,
+            "value": 177
+          },
+          {
+            "year": 2008,
+            "value": 168
+          },
+          {
+            "year": 2009,
+            "value": 176
+          },
+          {
+            "year": 2010,
+            "value": 184
+          },
+          {
+            "year": 2011,
+            "value": 185
+          },
+          {
+            "year": 2012,
+            "value": 177
+          },
+          {
+            "year": 2013,
+            "value": 180
+          },
+          {
+            "year": 2014,
+            "value": 181
+          },
+          {
+            "year": 2015,
+            "value": 191
+          },
+          {
+            "year": 2016,
+            "value": 197
+          },
+          {
+            "year": 2017,
+            "value": 185
+          },
+          {
+            "year": 2018,
+            "value": 187
+          },
+          {
+            "year": 2019,
+            "value": 189
+          },
+          {
+            "year": 2020,
+            "value": 188
+          },
+          {
+            "year": 2021,
+            "value": 159
+          },
+          {
+            "year": 2022,
+            "value": 180
+          },
+          {
+            "year": 2023,
+            "value": 204
+          },
+          {
+            "year": 2024,
+            "value": 218
+          }
+        ],
+        "raw_html_sha256": "5e918a772e87c8514f980717a330c993236235d64c7801359035655e42d30c49",
+        "extraction": "JSON data embedded in source HTML; no plot digitization. Source prose says 2023 record; chart now includes 2024=218 cm, so values and prose timestamps may differ."
+      },
+      "ground_temperature_observations": {
+        "unit": "°C",
+        "source_id": "MOSJ_JANSSONHAUGEN",
+        "chart_id": 208,
+        "smoothing": "Source applies 366-day moving average; not raw daily independent measurements.",
+        "rows": [
+          {
+            "date": "1999-01-01",
+            "depth_m": 15,
+            "temperature_c": -6.3915
+          },
+          {
+            "date": "1999-01-01",
+            "depth_m": 25,
+            "temperature_c": -6.1499
+          },
+          {
+            "date": "1999-01-01",
+            "depth_m": 40,
+            "temperature_c": -5.768
+          },
+          {
+            "date": "2024-09-19",
+            "depth_m": 15,
+            "temperature_c": -4.5287
+          },
+          {
+            "date": "2024-09-19",
+            "depth_m": 25,
+            "temperature_c": -4.7639
+          },
+          {
+            "date": "2024-09-19",
+            "depth_m": 40,
+            "temperature_c": -4.9726
+          }
+        ],
+        "source_series_rows": 9394,
+        "raw_html_sha256": "5e918a772e87c8514f980717a330c993236235d64c7801359035655e42d30c49"
+      },
+      "soil": {
+        "status": "point_values_unresolved",
+        "source_id": "SOILGRIDS_2",
+        "query_url": "https://rest.isric.org/soilgrids/v2.0/properties/query?lon=15.65&lat=78.22&property=phh2o&property=clay&property=soc&depth=0-5cm&value=mean",
+        "queried_on": "2026-09-23",
+        "response": {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              15.65,
+              78.22
+            ]
+          },
+          "properties": {
+            "layers": [
+              {
+                "name": "clay",
+                "unit_measure": {
+                  "d_factor": 10,
+                  "mapped_units": "g/kg",
+                  "target_units": "%",
+                  "uncertainty_unit": ""
+                },
+                "depths": [
+                  {
+                    "range": {
+                      "top_depth": 0,
+                      "bottom_depth": 5,
+                      "unit_depth": "cm"
+                    },
+                    "label": "0-5cm",
+                    "values": {
+                      "mean": null
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "phh2o",
+                "unit_measure": {
+                  "d_factor": 10,
+                  "mapped_units": "pH*10",
+                  "target_units": "-",
+                  "uncertainty_unit": ""
+                },
+                "depths": [
+                  {
+                    "range": {
+                      "top_depth": 0,
+                      "bottom_depth": 5,
+                      "unit_depth": "cm"
+                    },
+                    "label": "0-5cm",
+                    "values": {
+                      "mean": null
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "soc",
+                "unit_measure": {
+                  "d_factor": 10,
+                  "mapped_units": "dg/kg",
+                  "target_units": "g/kg",
+                  "uncertainty_unit": ""
+                },
+                "depths": [
+                  {
+                    "range": {
+                      "top_depth": 0,
+                      "bottom_depth": 5,
+                      "unit_depth": "cm"
+                    },
+                    "label": "0-5cm",
+                    "values": {
+                      "mean": null
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "query_time_s": 1.6254382133483887
+        },
+        "response_sha256": "fa5d40db6955ee5e583831bfbbd284c79d3e92ae49cbf033561e3850bac8cfac",
+        "soil_ph": null,
+        "clay_pct": null,
+        "organic_carbon_g_kg": null,
+        "reason": "Successful point response contains null for all three requested topsoil means; null is retained."
+      },
+      "method_policy": {
+        "policy_id": "site_evidence_gate_v1",
+        "classification": "EXPLICIT_CONSERVATIVE_PLANNING_POLICY",
+        "open_field": {
+          "status": "requires_site_validation",
+          "eligible_for_normalized_plan": false,
+          "reason": "Yakın çevrede ölçülen permafrost ve değişken zemin var; tarıma ayrılmış parsel, drenaj, kök ortamı ve arazi izni doğrulanmadan açık tarla alanı dağıtılmıyor. Bu, bütün Svalbard için tarım fiziksel olarak imkânsız demek değildir."
+        },
+        "controlled": {
+          "status": "conditional_engineered_root_isolation",
+          "eligible_for_normalized_plan": true,
+          "reason": "Yalıtılmış kök ortamlı kontrollü sistem 100 m² karşılaştırmasına alınır; temel/zemin güvenliği, enerji, su tahsisi ve izinler ayrıca doğrulanır."
+        }
+      }
+    }
+  },
+  "acquisition": {
+    "esa_cci": {
+      "status": "catalogue_verified_no_pixel_extracted",
+      "permafrost_fraction_doi": "10.5285/d235665772ec4b558e9a89ac85595e71",
+      "active_layer_doi": "10.5285/a6fbedd8ee5b472c8e84e55f746c1704",
+      "ground_temperature_doi": "10.5285/5675b0be944f45a8af0e7ddbeb47a011",
+      "resolution_m": 1000,
+      "period": "1997-2023",
+      "selected_pixel_value": null
+    },
+    "soilgrids": "Point response retained with nulls; official docs warn beta availability and recommend regional rather than farm use."
+  }
+}

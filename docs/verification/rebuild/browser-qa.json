@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-09-22T17:23:28.370Z",
+  "checks": [
+    {
+      "name": "Konya -20% produces changed crop pattern",
+      "passed": true
+    },
+    {
+      "name": "North default DATA NEEDED with source-based potato screening and valid form",
+      "passed": true
+    },
+    {
+      "name": "Balanced scenario calculates crop kg and capacity",
+      "passed": true
+    },
+    {
+      "name": "Sensitivity shows terrestrial not TASE measurable and chemistry unlinked",
+      "passed": true
+    },
+    {
+      "name": "Matching temperature updates same optimizer, simulated label retained",
+      "passed": true
+    },
+    {
+      "name": "24-hour mismatch blocks observation update",
+      "passed": true
+    },
+    {
+      "name": "Equal observation yields valid no-change result",
+      "passed": true
+    },
+    {
+      "name": "Water priority computes without entering target kg",
+      "passed": true
+    },
+    {
+      "name": "Energy priority calculates a conditional pattern",
+      "passed": true
+    },
+    {
+      "name": "Second region loads and calculates without manual database entry",
+      "passed": true
+    },
+    {
+      "name": "Desktop lab 320–380 px and visible Calculate footer; no page overflow",
+      "passed": true,
+      "evidence": {
+        "footerBottom": 947,
+        "horizontalOverflow": false,
+        "labWidth": 370,
+        "viewportHeight": 960
+      }
+    },
+    {
+      "name": "Narrow responsive view has no page horizontal overflow",
+      "passed": true,
+      "evidence": {
+        "height": 844,
+        "scrollWidth": 371,
+        "width": 390
+      }
+    },
+    {
+      "name": "Crop slider keyboard interaction marks MANUAL OVERRIDE",
+      "passed": true
+    },
+    {
+      "name": "Laptop final layout has 354px lab and Calculate inside viewport",
+      "passed": true,
+      "evidence": {
+        "footerBottom": 755,
+        "height": 768,
+        "labWidth": 354,
+        "scrollWidth": 1367,
+        "width": 1367
+      }
+    },
+    {
+      "name": "No browser console errors in current verification session",
+      "passed": true,
+      "evidence": []
+    }
+  ],
+  "notes": [
+    "UI automation via CUA; requested viewport pixels differed from measured CSS sizes because of host scaling. Actual CSS dimensions recorded.",
+    "390x844 DOM overflow check passed; screenshot capture at that override was unavailable.",
+    "No network request interception used; console errors only, not a claim of zero network traffic.",
+    "Initial hidden advanced input step mismatch fixed and retested before recording passing checks."
+  ]
+}

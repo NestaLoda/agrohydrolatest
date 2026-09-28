@@ -1,0 +1,57 @@
+[
+  {
+    "dataset_id": "fao56_ch6",
+    "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+    "status": "not_acquired",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "dataset_id": "seyhan_wheat_2020",
+    "source_url": "https://adana.tarimorman.gov.tr/Haber/697/Seyhan-Ilce-Tarim-Ve-Orman-Mudurlugu-Bugday-Cesit-Verim-Demonstrasyonu-Kurdu",
+    "access_date": "2026-09-22T10:40:13.039000+00:00",
+    "content_sha256": "b673f7004cd89d2f1e4bab04f4fc6485f2e86c42890ec65085d9f376adc2c512",
+    "local_raw_path": "data/raw/references/seyhan_wheat_2020_b673f7004cd89d2f1e4bab04f4fc6485f2e86c42890ec65085d9f376adc2c512.html",
+    "byte_count": 157711,
+    "status": "acquired",
+    "classification": "EXTERNAL REFERENCE DOCUMENT",
+    "license": "Publicly readable source; no open redistribution license verified. Research reference cache only.",
+    "provider": "Adana Il Tarim ve Orman Mudurlugu",
+    "version": "Official news2020-06-23",
+    "temporal_resolution": "one historical harvest demonstration",
+    "spatial_resolution": "Camuzcu/Seyhan demonstration field",
+    "units": [
+      "kg/dekar"
+    ],
+    "variables": [
+      "five wheat varieties",
+      "historical trial yields"
+    ],
+    "access_limits": "Public, no authentication; no local model validation implied"
+  },
+  {
+    "dataset_id": "seyhan_drought_summary",
+    "source_url": "https://www.tarimorman.gov.tr/SYGM/Belgeler/KURAKLIK%20Y%C3%96NET%C4%B0M%20PLANLARI%2009.01.2023/SEYHAN%20HAVZASI%20KYP%20Y%C3%96NET%C4%B0C%C4%B0%20%C3%96ZET%C4%B0.pdf",
+    "access_date": "2026-09-22T10:43:07.985634+00:00",
+    "content_sha256": "ca992dc00f6d313d54dcb1d79a9a7c90ba17fa596266ad1e235af331f2ff0ba0",
+    "local_raw_path": "data/raw/references/seyhan_drought_summary_ca992dc00f6d313d54dcb1d79a9a7c90ba17fa596266ad1e235af331f2ff0ba0.pdf",
+    "byte_count": 5569603,
+    "status": "acquired",
+    "classification": "EXTERNAL REFERENCE DOCUMENT",
+    "license": "Publicly readable source; no open redistribution license verified. Research reference cache only.",
+    "provider": "T.C. Tarim ve Orman Bakanligi / SYGM",
+    "version": "2019 cover date; URL folder2023 is not publication date",
+    "temporal_resolution": "historical planning report with annual summaries",
+    "spatial_resolution": "Seyhan basin/subbasin",
+    "units": [
+      "hm3/year",
+      "mm",
+      "km2"
+    ],
+    "variables": [
+      "historical sector water use",
+      "water potential",
+      "drought planning"
+    ],
+    "access_limits": "Public, no authentication; no current farm allocation implied"
+  }
+]

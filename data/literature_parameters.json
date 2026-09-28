@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "access_date": "2026-09-22",
+  "provenance_note": "Manually transcribed numerical facts checked against the cited original sources. This is a curated derivative, not downloaded model output or measured local data.",
+  "future_frontier": {
+    "dataset_id": "xu_2026_external_frontier",
+    "classification": "FUTURE SCENARIO",
+    "display_label": "EXTERNAL LITERATURE RESULT",
+    "provider": "Xu et al., Communications Earth & Environment, 2026",
+    "source_url": "https://www.nature.com/articles/s43247-026-03702-w",
+    "institutional_record_url": "https://publications.pik-potsdam.de/pubman/faces/ViewItemOverviewPage.jsp?itemId=item_34579",
+    "version": "Published 2026-05-30; DOI 10.1038/s43247-026-03702-w",
+    "temporal_start": "2071-01-01",
+    "temporal_end": "2100-12-31",
+    "temporal_resolution": "30-year future period from external study",
+    "spatial_extent": "30 to 83 degrees North; seven-crop aggregate, not a Longyearbyen prediction",
+    "crops": ["barley", "maize", "potato", "soybean", "sugar_beet", "sunflower", "wheat"],
+    "scenarios": [
+      {"scenario": "SSP1-2.6", "mean_northward_climate_frontier_shift_km": 331},
+      {"scenario": "SSP5-8.5", "mean_northward_climate_frontier_shift_km": 739}
+    ],
+    "units": {"mean_northward_climate_frontier_shift_km": "km"},
+    "limitation": "Not our simulation, not actual production migration, not local future temperatures, and not a sustainable agricultural boundary. No 2041-2060 data are claimed. No gridded future climate was acquired in this milestone."
+  },
+  "wheat_fao56": {
+    "dataset_id": "fao56_wheat_reference",
+    "classification": "EXTERNAL LITERATURE PARAMETER",
+    "provider": "FAO, Allen et al. 1998, Irrigation and Drainage Paper 56",
+    "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+    "version": "FAO-56, 1998; Chapter 6 Tables 11 and 12",
+    "units": {"kc": "dimensionless", "growth_stage_days": "days"},
+    "winter_wheat": {
+      "kc_initial_frozen_soils": 0.4,
+      "kc_initial_nonfrozen_soils": 0.7,
+      "kc_mid": 1.15,
+      "kc_end_range": [0.25, 0.4],
+      "illustrative_mediterranean_growth_stages_days": [30, 140, 40, 30],
+      "illustrative_start_month": "November"
+    },
+    "spring_wheat": {"kc_initial_cereal_group": 0.3, "kc_mid": 1.15, "kc_end_range": [0.25, 0.4]},
+    "climate_condition": "Table 12 standard non-stressed well-managed crop, subhumid conditions approximately RHmin45%, u2=2m/s",
+    "limitation": "Stage lengths are examples, not Konya or Seyhan phenological measurements. Kc needs local crop, wetting and climatic adjustment. Soil water capacity, initial storage, irrigation efficiency and allocation are NOT supplied by this table."
+  },
+  "lettuce_method_comparison": {
+    "dataset_id": "barbosa_2015_table1",
+    "classification": "EXTERNAL LITERATURE MODEL RESULT",
+    "provider": "Barbosa et al. 2015, IJERPH",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4483736/",
+    "doi": "10.3390/ijerph120606879",
+    "version": "2015 Table 1; source table and method section inspected 2026-09-22",
+    "license": "CC BY 4.0",
+    "spatial_extent": "Yuma, Arizona, USA",
+    "temporal_resolution": "Annual modeled production accounting",
+    "source_unit_labels": {"yield": "kg/m2/y", "water": "L/kg/y", "energy": "kJ/kg/y"},
+    "records": [
+      {"method": "conventional_open_field", "yield_kg_m2_year": 3.9, "yield_sd": 0.21, "water_l_per_kg_annual_accounting": 250, "water_sd": 25, "energy_kj_per_kg_annual_accounting": 1100, "energy_sd": 75},
+      {"method": "hydroponic_greenhouse", "yield_kg_m2_year": 41, "yield_sd": 6.1, "water_l_per_kg_annual_accounting": 20, "water_sd": 3.8, "energy_kj_per_kg_annual_accounting": 90000, "energy_sd": 11000}
+    ],
+    "conversion": "For a same-year output target, source modeled annual water and energy divided by annual output yield intensities: L/kg to m3/kg divide by1000; kJ/kg to kWh/kg divide by3600. Do not divide once more by365. Source S.D. is not a confidence interval.",
+    "limitation": "Engineering/literature model contrasted with conventional budget/statistical data; no Arctic greenhouse measurements. Heating/cooling is strongly site dependent. These coefficients can demonstrate a method tradeoff only with an explicit external-context label, never be silently transferred to Longyearbyen."
+  },
+  "seyhan_crop_evidence": {
+    "dataset_id": "seyhan_wheat_demonstration_2020",
+    "classification": "EXTERNAL OBSERVATION",
+    "provider": "Adana İl Tarım ve Orman Müdürlüğü",
+    "source_url": "https://adana.tarimorman.gov.tr/Haber/697/Seyhan-Ilce-Tarim-Ve-Orman-Mudurlugu-Bugday-Cesit-Verim-Demonstrasyonu-Kurdu",
+    "version": "Official news 2020-06-23",
+    "spatial_extent": "Camuzcu, Seyhan; one demonstration field",
+    "evidence": "Five bread-wheat varieties trialed in Seyhan; reported harvest demonstrates overlapping crop availability with the Konya predecessor.",
+    "limitation": "Not 2023 yield observations, not a basin average, not independent validation of our new model. Trial yield is not silently used as our optimizer yield."
+  }
+}

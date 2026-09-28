@@ -1,0 +1,30 @@
+[
+  {
+    "check": "Default future water-first plan",
+    "at": "2026-09-22T23:47:18.535Z",
+    "water": "SU YÖNETİMİ KARARI\nDepolanan suyu temel al; açığı arıtmayla tamamla.\nSu analizini aç\nNEREDEN?\nNASIL KULLANILIR?\nNEYE DÖNÜŞÜR?\nYağış / karı depola\n%99,1\nDeniz suyunu arıt\n%0,9\nÜretime uygun su\nKaliteyi kontrol et\nGereken koşullandırmayı yap\nTopraksız + sera\nAşağıdaki ürün ve yöntem payları\nBesinli suyu üretim içinde devridaimle kullan; yalnız gereken yeni suyu tamamla.\nPaylar, hesaplanan yıllık yeni su ihtiyacına aittir. Devreden su ikinci bir kaynak olarak eklenmez.\nSuyu doğru aya yetiştir\nOca\nŞub\nMar\nNis\nMay\nHaz\nTem\nAğu\nEyl\nEki\nKas\nAra\nAylık yeni su ihtiyacı · sarı: yedek hazırlığı\n\nMayıs için yedek suyu hazırla. Ortalama kaynak payları, günlük su açığı olmayacağını garanti etmez.\n\nİlk üretim dönemine boş depoyla girme; dolum veya yedek su planını hazırla.\nBu kararı ne değiştirir?",
+    "dimensions": {
+      "canvasHeight": 904,
+      "canvasScroll": 1084,
+      "height": 1000,
+      "scrollHeight": 1000,
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  },
+  {
+    "check": "Only greenhouse changes water plan and removes hydroponic claim",
+    "at": "2026-09-22T23:47:28.717Z",
+    "water": "SU YÖNETİMİ KARARI\nDepolanan suyu temel al; açığı arıtmayla tamamla.\nSu analizini aç\nNEREDEN?\nNASIL KULLANILIR?\nNEYE DÖNÜŞÜR?\nYağış / karı depola\n%71,1\nDeniz suyunu arıt\n%28,9\nÜretime uygun su\nKaliteyi kontrol et\nGereken koşullandırmayı yap\nSera üretimi\nAşağıdaki ürün ve yöntem payları\nYeni suyu üretim ihtiyacına göre ver; geri kullanım koşullarını pilotta doğrula.\nPaylar, hesaplanan yıllık yeni su ihtiyacına aittir. Devreden su ikinci bir kaynak olarak eklenmez.\nSuyu doğru aya yetiştir\nOca\nŞub\nMar\nNis\nMay\nHaz\nTem\nAğu\nEyl\nEki\nKas\nAra\nAylık yeni su ihtiyacı · sarı: yedek hazırlığı\n\nMayıs için yedek suyu hazırla. Ortalama kaynak payları, günlük su açığı olmayacağını garanti etmez.\n\nDepolamayı ve yedek kaynağı üretim takvimiyle birlikte işlet.\nBu kararı ne değiştirir?"
+  },
+  {
+    "check": "Zero collection area selects a seawater-led strategy",
+    "at": "2026-09-22T23:47:50.900Z",
+    "water": "SU YÖNETİMİ KARARI\nArıtılmış suya dayanan üretimin enerji gereğini hazırla.\nSu analizini aç\nNEREDEN?\nNASIL KULLANILIR?\nNEYE DÖNÜŞÜR?\nDeniz suyunu arıt\n%100\nÜretime uygun su\nKaliteyi kontrol et\nGereken koşullandırmayı yap\nSera üretimi\nAşağıdaki ürün ve yöntem payları\nYeni suyu üretim ihtiyacına göre ver; geri kullanım koşullarını pilotta doğrula.\nPaylar, hesaplanan yıllık yeni su ihtiyacına aittir. Devreden su ikinci bir kaynak olarak eklenmez.\nSuyu doğru aya yetiştir\nOca\nŞub\nMar\nNis\nMay\nHaz\nTem\nAğu\nEyl\nEki\nKas\nAra\nAylık yeni su ihtiyacı · sarı: yedek hazırlığı\n\nMayıs için yedek suyu hazırla. Ortalama kaynak payları, günlük su açığı olmayacağını garanti etmez.\n\nArıtma ve su erişimini üretime başlamadan doğrula.\nBu kararı ne değiştirir?"
+  },
+  {
+    "check": "Water detail opens from the primary decision panel",
+    "at": "2026-09-22T23:48:06.808Z",
+    "detailVisible": true
+  }
+]

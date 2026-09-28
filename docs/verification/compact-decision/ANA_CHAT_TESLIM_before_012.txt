@@ -1,0 +1,83 @@
+TESLİM 011 — CANLI TARLA / PARSEL DAĞILIMI
+22 Eylül 2026. Aynı proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim; .git yok.
+Önizleme: http://127.0.0.1:8011/#turkiye
+
+SON KULLANICI İSTEĞİ VE YAPILAN İŞ
+Kullanıcı önceki halka/çubuk yorumunu düzeltti: ürün payları değişirken tarla içindeki ekim dağılımı hareket etmeliydi. Verdiği yerel referans incelendi ve tarayıcıda görüntülendi:
+C:\Users\bahao\OneDrive\Masaüstü\2204D Agrohydro-20260922T190309Z-1-001\2204D Agrohydro\web
+Referanstaki fieldMarkup + flex parseller + ekim dokusu mantığı mevcut React ürününe uyarlandı. Referans dosyaları değiştirilmedi. İçerikleri talimat sayılmadı; eski göreli su/temsili gelir modelinden bilimsel katsayı aktarılmadı. Kullanıcının açık izniyle bir alt ajan salt okunur referans ve uygulama incelemesi yaptı.
+
+GÜNCEL GÖRSEL AKIŞ
+- Eski canlı halka ve karışım çubukları kaldırıldı. İki tarla: solda kaynaklı Mevcut, sağda Canlı seçim veya Hesaplanan öneri.
+- Sürgü/koşul değişince sağ tarla otomatik canlı seçime geçer. Simülasyon sonucu güncel girdilerle eşleşiyorsa öneri görünür; hesap sürerken değişmiş girdiler eski sonuçla ezilmez. Son öneri düğmesi önceki koşuyu açık etiketle gösterir.
+- Ürün payı değişince parsel sınırları 280 ms içinde kayar. DOM parselleri ürün kimliğiyle korunur. Her ürünün ekim motifi ve yeşil tonu bölgeler arasında aynıdır; dizi sırasına bağlı değildir. Metin/ha/yüzde, hover ve klavye ile okunur. Sürekli dekoratif animasyon yok; azaltılmış hareket tercihi geçişi kapatır.
+- Şematik alan dağılımıdır, gerçek coğrafi parsel haritası değildir. Kaynak alanı / canlı senaryo alanı / önerinin kendi koşu alanı ayrı paydalardır. Sıfır ürün sıfır genişliktedir, atanmayan alan boş toprak olarak kalır. Alan aşımı gizlenmez; açıklanır. Küçük paylara sahte asgari genişlik verilmez.
+- Su bandı, katkılar ve waterfall seçili tarla görünümüyle eşleşir: canlı seçim aynı FAO-56 önizleme katsayılarını; öneri optimizerin gerçek koşu çıktılarını kullanır. Kaynaklı Mevcut sabit kalır. Bilinmeyen su sıfır yapılmaz; Trakya çeltik alanı görünür, toplam su DATA NEEDED etiketi korunur.
+- Beş bölgeye ve Veriler/grafikler sekmesine uygulanır. Mobilde tarlalar alt alta gelir. Eski sonuç grafikleri, kontrol paneli, senaryolar, model, kaynaklar, Kuzey/PWN işlevleri korunur.
+
+DOĞRULAMA — BU TUR
+TypeScript/Vite üretim derlemesi başarılı. 11 tarayıcı kontrolü geçti; kayıt zamanı: 2026-09-22T19:13:34.451Z.
+Kontroller: dokulu tarla/halka kaldırma, sürgüyle canlı pay ve su, kaynak alanın sabitliği, eski öneri+su korunması, sıfır/atanmayan toprak, hesap sonrası öneri, klavye vurgusu, beş bölge, Trakya bilinmeyen su, grafik sekmesi, 390 CSS pikselde taşmasız tek sütun, konsol hatası yok (bazı kontroller aynı maddede birleşiktir). Masaüstü ve mobil ekranlar kaydedildi. Az hareket CSS kuralı kaynak incelemesinde doğrulandı; OS tercihi tarayıcıda değiştirilmedi.
+Backend/model değişmedi; tam backend suite bu tur yeniden çalıştırılmadı. Son tam test kaydı TESLİM 010: 175 geçti / 0 hata, 2026-09-22T21:56:14.722623+03:00; 20.102 s. Bu eski sonuç yeni çalıştırma gibi sunulmaz.
+
+DOSYALAR / KANIT
+frontend/src/components/FieldPattern.tsx (yeni); components/LivePattern.tsx; frontend/src/instrument.css; frontend/dist derlemesi.
+docs/verification/field-pattern/: browser-qa.json, build.log, reference-hashes.json, reference.png, initial-fields.png, unassigned-soil.png, trakya-fields.png, mobile-fields.png, final-fields.png; ANA_CHAT_TESLIM_before_011.txt önceki teslimin tam kopyası.
+docs/BUILD_STATUS.md, docs/PROJECT_SOURCE_OF_TRUTH.md, docs/ANA_CHAT_TESLIM.txt güncellendi.
+
+KÜMÜLATİF GÜNCEL PROJE DURUMU
+Tek araştırma: Konya → Türkiye → Future North → PRE-TASE → TASE fiziksel kanıt → aynı motorla POST → kontrollü tarım pilotu. PWN saha aracı, sera doğrulama ortamı. Yeni master + en yeni açık kullanıcı talimatları eski ürün kararlarının üstünde.
+
+TÜRKİYE
+Uygulamadaki beş bölge: Konya, Seyhan/Adana, Gediz/Manisa, GAP/Şanlıurfa, Trakya/Edirne. Kaynaklar seçili il ürünlerine aittir; 81 il veya bütün havzalar tamamlandı denmez. Başlangıç 2024 resmî il ekilişi/üretimi, günlük hava referansı 2024–2025 ERA5. Canlı 2026 ekiliş sayımı doğrulanmadı. Güncel sıcaklık ayrı Open-Meteo MODEL_NOWCAST; tarih/saatli, optimizatöre girmez.
+Referans etiketi Mevcut; bu düğme kaynak başlangıcını yükler ve önceki öneriyi temizler. Açılışta kaynaklı mevcut desen + ayrı ilk öneri. Canlı tarla, kaynaklı mevcut ve hesaplanan öneriden açıkça ayrılır; öneri yalnız motor koşusundan gelir.
+Dokuz senaryo: Mevcut, Mükemmel, Su −%10/−%20/−%30, Kuraklık, Az yağış, Verimli sulama, Su +%10. Kuraklık su/yağış −%20, ET0 +%10. Mükemmel: %95 randıman + ürün başına mevcut üretimin en az %80'i; yüksek minimum korunur, gelir tahmini değildir. Diğer varsayılan ürün tabanı %50. Minimumlar/katsayılar açık senaryodur.
+Bölgesel amaç: önce ekili alanı en yükseğe çıkar, aynı alan için suyu en aza indir. Eski mevcut miktarlar tavan değildir. Kc/takvim/toprak/randıman ve sabit verim varsayımları; gerçek mevsimlik su tahsisi, sulu/kuru alan ayrımı, yerel münavebe, ekonomi/üretim ihtiyaçları eksik. Başlangıç bütçesi mevcut desenin model gereğidir, resmî tahsis değil. Trakya çeltik suyu eksik olduğundan çeltik alanı sabit, diğerleri kısmi optimize edilir.
+Türkiye sol paneli sade kontrollerden oluşur; iklim açık, gelişmiş parametreler düzenlenebilir. Konya pilotu sekmesi kaldırılmıştır; tarihsel rapor korunur. Sonuçta su kazanımı m³/% ve koşul/desen ayrımı, yan yana pay/su grafikleri ve eski–yeni pay/üretim değişimi tablosu bulunur. Yeni canlı katman bunları tamamlar.
+Tarihsel yaklaşık %8,7 göreli su baskısı sonucudur; ölçülmüş m³ tasarrufu değildir. Konya 2026 raporundaki 2024 hazır verim sütunu uyuşmazlığı kaynak kaydında; verim resmî üretim/alan oranından türetilir.
+
+KORUNAN VARLIKLAR
+4.380 eski ERA5 + 3.655 yeni ERA5 günlük satırı; 14.610 EC-Earth; 730 NASA ACCESS-CM2 SSP245/585 2035 günlük satır ve 6 NetCDF; 21 resmî tarım kaydı, 9 ürün kataloğu, 7 Kuzey aday araştırması. Ham veri/hash/provenans korunur. Bu tur dış bilimsel veri paketi indirilmedi; yeni saha ölçümü yok. Eski tarım JSON/manifest snapshotları ve tüm önceki teslimler verification/archive içinde.
+
+KORUNAN KUZEY/PWN AYRINTISI — ÖNCEKİ KAYIT
+GERÇEK HESAP ÖRNEĞİ — YEREL ARKTİK ÖNERİSİ DEĞİL
+NASA SSP245 2035 + açık mühendislik katsayıları + dengeli amaç: arpa 5699,44 kg / 1,90 ha; patates 0; marul 1013,23 kg / 337,74 m² hidroponik. Su 3819,89 m³; enerji yaklaşık 40000 kWh. Tatlı su 2000, depolanmış su 500, arıtılmış deniz suyu yaklaşık 1319,89 m³. Sayılar LP çıktısıdır; katsayıların yerel doğruluğu veya gerçek üretim kanıtı değildir. Su/enerji önceliği: 4559,55 kg arpa + 810,59 kg marul; 3055,91 m³ ve 26802,88 kWh. Eksiksiz girdiler/sonuçlar/run_id: docs/verification/rebuild/engine-results.json.
+
+SU GÜVENLİĞİ / BİLGİ DEĞERİ / TASE
+Fiziksel su → mevsim → erişim/depo → kalite → arıtma/enerji → kullanılabilir üretim suyu. Motor kaynak bütçesi/kalite/enerji/kapasiteyi kullanır; bu bütün hidrolojik zincirin veya optimum sezon/depo işletmesinin çözümü değildir.
+Açık senaryoda mevsimsel tatlı su, enerji ve deniz sıcaklığı uç koşuları deseni etkiliyor. Tatlı su/enerji ±%20 stres; sıcaklık 5/18°C arıtma bağıntısının destek alanı, Arktik sıcaklık tahmini değil. Bu deterministik duyarlılık; EVSI, ekonomik fayda veya güven yüzdesi değil. Salinite/kimya için sayısal karar bağlantısı yok.
+Karasal yıllık/mevsimsel su hacmi, iklim2050, verim ve permafrost PWN ile doğrudan ölçülmez. PWN hedefleri C/S, T, p/z, UTC, konum ve kalibrasyon/kalite. Model beklentisi fiziksel ölçümden önce dondurulur. Modelin doğru çıkması ve desenin değişmemesi geçerli sonuçlardır.
+İzinli numune: arka plan/gradient derinliği aday; sayı/derinlik/panel sabitlenmedi. δ18O/δ2H kaynak karakterizasyonu; yalnız kararı iyileştiren sınırlı kimya arıtma/üretim uyumu için aday. Uzman/laboratuvar, gemi/izin, koruma/taşıma gereksinimleri açık. Sabit derinlik ve gradient seçimi eşit örnek bütçesinde karşılaştırılabilir; AI zorunlu değil.
+Sefer sonrası numune veya ölçülen kimyadan açık SYNTHETIC/RECONSTRUCTED su → arıtma/koşullandırma → standart besin çözeltisi → kontrollü test. Su/enerji/EC/büyüme/biokütle/verim vekili ölçülür. Bu tüm Arktik tarımını doğrulamaz. Önerilen sera/hidroponik pilotun gerçek işletme verisi sonraki model iyileştirmesidir.
+
+GERÇEK EKSİKLER — TAMAMLANMIŞ SAYILMADI
+Tam otomatik yerel kaynaklı Future North üretim önerisi henüz yok. Varsayılan sonuç DATA NEEDED; tam sözleşmenin bu bilimsel kabulü açık. Yerel su tahsisi/mevsimsellik/depo/erişim/rakip kullanımlar, toprak/permafrost/aktif tabaka, dönemsel yield/sulama, sera ısı/ışık/enerji ve kaynak-temsil bağı eksik. Kaynaklı aday elemesi yalnız kısmi otomasyon. Yıllık Arizona hidroponik verileri kısa Arktik sezona sessizce kopyalanmadı. Gerçek eşlenmiş okyanus modeli/PWN/CTD ve kimyadan arıtma modeli bağlantısı henüz yok.
+
+
+PWN TEDARİK / FİZİKSEL DURUM — ÖNCEKİ İŞ KORUNUR
+DFR0300 K1 EC kit + ESP32 + DS18B20 + encoder + microSD; açık 3D başlık, ayrı taşıyıcı ip, yukarıda mesafe tekeri/kuru kutu. Kullanıcı 3D yazıcı erişimini doğruladı. SD elektriksel uyum, kitte standartlar, gerçek mekanik ölçüler ve stok/teslim teyidi açık. Parça alınmadı, sipariş verilmedi; fiziksel firmware/kalibrasyon/tank/Arktik deneyi bu tur yapılmadı.
+docs/PWN_V01_LINKLI_ALISVERIS.md/.txt, PWN_V01_TAM_MALZEME_LISTESI.md, PWN_V01_CIHAZ_TARIFI.md, docs/teslim/PWN_V01_YAPIM_PAKETI_01.zip ve konsept görsel korunur. Önceki fiyatlar kendi tarihli araştırma kaydıdır; bu tur yenilenmedi, kesin tüm cihaz bedeli diye kullanılmaz. Konsept CAD veya ürün fotoğrafı değildir.
+
+
+SONRAKİ ADIM / AÇIK BAĞIMLILIKLAR
+Kullanıcının yönlendirmesiyle Future North akışına geçmek. Kaynaklı yerel mevsimsel su, permafrost/zemin, verim ve enerji verileri olmadan Kuzey başlangıcı DATA NEEDED kalır. Saha ölçümü ve kimya planı bu boşlukları bütünüyle kapatmaz. Türkiye için yerel sulu/kuru alan, gerçek tahsis ve ürün/münavebe ihtiyaçları bilimsel iyileştirme olarak açık.
+
+KISA TESLİM GEÇMİŞİ
+005: ortak çok ürün/yöntem/kaynak motoru ve saha duyarlılığı.
+006/U12: Türkiye ilk hesap, Kuzey günlük iklim tanısı, cihaz belgeleri.
+007: bilimsel simülatör rebuild, kaynaklı Kuzey elemesi, PRE/POST; 151 test/15 UI.
+008: beş Türkiye bölgesinde kaynaklı mevcut/bağımsız öneri; yeni kaynak ve iklim; 167 test/22 UI, 40 koşu ve bağımsız optimum kontrolü.
+009: sade kontroller, Mevcut, Mükemmel, su kazanımı grafikleri, pilot sekmesi kaldırma; derleme/9 UI/5 yeni senaryo koşusu. Tam suite tekrar edilmemişti.
+010: Canlı su önizlemesi ve ilk halka/karışım yaklaşımı; 175 test/8 UI. Halka tasarımı 011 ile değiştirildi.
+011: Kullanıcının yerel web referansından canlı dokulu tarla/parsel dağılımı; mevcut/canlı/öneri ve görünümle eşleşen su; derleme/11 UI kontrolü. Backend suite yeniden çalıştırılmadı.
+
+Bu tek güncel dosya ana sohbete yüklenebilir veya içeriği yapıştırılabilir. Kendiliğinden başka sohbete mesaj gönderilmedi.
+
+PWN TEDARİK EKİ — 22 EYLÜL 2026
+Kullanıcının Kartal'dan alabileceği DFR0300 ve Direnc.net alternatifleri araştırıldı. Güncel kaynaklı dosya: docs/PWN_KARTAL_TEDARIK.md.
+DFR0300: Gümrük Sepeti Dudullu 5.500 TL, sayfada sıfır/stok 1/mağazadan teslim; tam kit içeriği teyit edilecek. Direnc.net aynı DFR0300 K1 8.124,83 TL, sepete ekle. Robotistan'da doğrulanmış DFR0300 sayfası bulunamadı; TDS/pH muadil sayılmadı.
+Direnc güncel resmî adresi Yukarı Dudullu Eser Sokak 7/A Ümraniye; eski Maltepe adresi kullanılmayacak. Elden teslim telefonla teyitsiz. Robotistan Başakşehir için internetten sipariş/ödeme ve Ofisten Teslim Al seçeneği var.
+Direnc ESP32-WROOM32D 377,76; DS18B20 58,12 (stok teyidi); SD modülü 29,06; breadboard 55,21; iki jumper paketi ayrı ayrı 49,40 TL. Bu altı kalem toplamı 618,95 TL, hesap; tüm cihaz bedeli değil. Direnc encoder kategoride tükendi; önceki Robotistan seçeneği korundu.
+ÖNEMLİ FİYAT DÜZELTMESİ: Önceki Emes 1.950 TL EC ilanıyla aynı sitenin 8.900 TL kit ilanı arasında açıklanmamış fark var. Eski 3.423,50 TL ana parça toplamı kesin bütçe değildir. docs/PWN_V01_LINKLI_ALISVERIS.md başına güncelleme eklendi; eski PDF yeniden üretilmedi, fiyatları yeni tedarik dosyasıyla birlikte okunmalı.
+Doğrulama: web satıcı fiyat/adres/teslimat sayfaları araştırıldı; telefonla stok ayırtılmadı, satın alma yapılmadı. Elektriksel/fiziksel test yapılmadı; yukarıdaki yazılım testleri bu tedarik işi kapsamında yeniden çalıştırılmadı.
+Sonraki somut adım: DFR0300 tam kit içeriği ve elden teslimi satıcıya teyit ettirip ana parçaları tedarik etmek; usta gerçek kart/kablo/mil ölçülerine göre montajı eşleştirecek.

@@ -1,0 +1,1885 @@
+{
+  "classification": "SIMULATION_EXPLANATORY",
+  "before": {
+    "status": "conditional",
+    "allocations": [
+      {
+        "active_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "lettuce",
+        "cycles": 4,
+        "electricity_kwh_m2": 77.35255147391466,
+        "heat_kwh_th_m2": 257.11751012785425,
+        "id": "lettuce:greenhouse:summer",
+        "method": "greenhouse",
+        "name": "Marul",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            58.69920721660791,
+            77.35255147391466,
+            98.88214109624835
+          ],
+          "fresh_makeup_m3_m2": [
+            0.13172770364218034,
+            0.21723679564047005,
+            0.39422770231382614
+          ],
+          "heat_kwh_th_m2": [
+            186.4538356126192,
+            257.11751012785425,
+            467.9273033695822
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 58.69920721660791,
+            "central": 77.35255147391466,
+            "high": 98.88214109624835
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.13172770364218034,
+            "central": 0.21723679564047005,
+            "high": 0.39422770231382614
+          },
+          "heat_kwh_th_m2": {
+            "low": 186.4538356126192,
+            "central": 257.11751012785425,
+            "high": 467.9273033695822
+          }
+        },
+        "season": "summer",
+        "source_ids": [
+          "EDEN_ISS_2018",
+          "UAF_HYDROPONIC_2007"
+        ],
+        "water_active_day_m3_m2": 0.0014198483375194124,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.044015298463101774,
+          0.042595450125582364,
+          0.044015298463101774,
+          0.044015298463101774,
+          0.042595450125582364,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 9.52,
+        "yield_range_kg_m2": {
+          "central": 9.52,
+          "high": 14.0,
+          "low": 6.0
+        },
+        "area_m2": 0.25237229798794925,
+        "share_pct": 0.25237229798794925,
+        "production_kg": 2.4025842768452765,
+        "water_m3": 0.05482454932332394,
+        "heat_kwh_th": 64.8893368839064,
+        "electricity_kwh": 19.521641170702974
+      },
+      {
+        "active_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "lettuce",
+        "cycles": 4,
+        "electricity_kwh_m2": 528.8352630644466,
+        "heat_kwh_th_m2": 0.7643901732796627,
+        "id": "lettuce:hydroponics:summer",
+        "method": "hydroponics",
+        "name": "Marul",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            382.9927992504675,
+            528.8352630644466,
+            757.8439173944492
+          ],
+          "fresh_makeup_m3_m2": [
+            0.022275945084253592,
+            0.05870293677741164,
+            0.17236783984050302
+          ],
+          "heat_kwh_th_m2": [
+            2.603163974486864,
+            0.7643901732796627,
+            0.30475759509080286
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 382.9927992504675,
+            "central": 528.8352630644466,
+            "high": 757.8439173944492
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.022275945084253592,
+            "central": 0.05870293677741164,
+            "high": 0.17236783984050302
+          },
+          "heat_kwh_th_m2": {
+            "low": 0.30475759509080286,
+            "central": 0.7643901732796627,
+            "high": 2.603163974486864
+          }
+        },
+        "season": "summer",
+        "source_ids": [
+          "EDEN_ISS_2018",
+          "UAF_HYDROPONIC_2007"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 9.52,
+        "yield_range_kg_m2": {
+          "central": 9.52,
+          "high": 14.0,
+          "low": 6.0
+        },
+        "area_m2": 4.747627702012051,
+        "share_pct": 4.747627702012051,
+        "production_kg": 45.19741572315472,
+        "water_m3": 0.2786996888339015,
+        "heat_kwh_th": 3.6290399618083184,
+        "electricity_kwh": 2510.712944725597
+      },
+      {
+        "active_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "arugula",
+        "cycles": 15,
+        "electricity_kwh_m2": 1246.6752230912457,
+        "heat_kwh_th_m2": 12.74631010442215,
+        "id": "arugula:hydroponics:annual",
+        "method": "hydroponics",
+        "name": "Roka",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            907.4122640150141,
+            1246.6752230912457,
+            1781.4691610259003
+          ],
+          "fresh_makeup_m3_m2": [
+            0.05317835909819363,
+            0.14013887358136995,
+            0.4114859705996322
+          ],
+          "heat_kwh_th_m2": [
+            15.876531994955016,
+            12.74631010442215,
+            10.844247910194
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 907.4122640150141,
+            "central": 1246.6752230912457,
+            "high": 1781.4691610259003
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.05317835909819363,
+            "central": 0.14013887358136995,
+            "high": 0.4114859705996322
+          },
+          "heat_kwh_th_m2": {
+            "low": 10.844247910194,
+            "central": 12.74631010442215,
+            "high": 15.876531994955016
+          }
+        },
+        "season": "annual",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.011894059085619352,
+          0.010838940940927312,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352
+        ],
+        "yield_kg_m2": 45.75,
+        "yield_range_kg_m2": {
+          "central": 45.75,
+          "high": 65.1,
+          "low": 28.05
+        },
+        "area_m2": 5.0,
+        "share_pct": 5.0,
+        "production_kg": 228.75,
+        "water_m3": 0.7006943679068498,
+        "heat_kwh_th": 63.73155052211075,
+        "electricity_kwh": 6233.376115456229
+      },
+      {
+        "active_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "radish",
+        "cycles": 6,
+        "electricity_kwh_m2": 240.90176798976648,
+        "heat_kwh_th_m2": 157.79929414869628,
+        "id": "radish:greenhouse:summer",
+        "method": "greenhouse",
+        "name": "Turp",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            184.88461307093854,
+            240.90176798976648,
+            305.8536092176979
+          ],
+          "fresh_makeup_m3_m2": [
+            0.18181958797006592,
+            0.284324940190315,
+            0.487282796196591
+          ],
+          "heat_kwh_th_m2": [
+            116.27727739053095,
+            157.79929414869628,
+            282.31342539124023
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 184.88461307093854,
+            "central": 240.90176798976648,
+            "high": 305.8536092176979
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.18181958797006592,
+            "central": 0.284324940190315,
+            "high": 0.487282796196591
+          },
+          "heat_kwh_th_m2": {
+            "low": 116.27727739053095,
+            "central": 157.79929414869628,
+            "high": 282.31342539124023
+          }
+        },
+        "season": "summer",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.0018583329424203582,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05760832121503114,
+          0.05574998827261078,
+          0.05760832121503114,
+          0.05760832121503114,
+          0.05574998827261078,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 10.92,
+        "yield_range_kg_m2": {
+          "central": 10.92,
+          "high": 19.259999999999998,
+          "low": 6.6000000000000005
+        },
+        "area_m2": 5.0,
+        "share_pct": 5.0,
+        "production_kg": 54.6,
+        "water_m3": 1.421624700951575,
+        "heat_kwh_th": 788.9964707434814,
+        "electricity_kwh": 1204.5088399488325
+      },
+      {
+        "active_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "kohlrabi",
+        "cycles": 6,
+        "electricity_kwh_m2": 1313.7683987903913,
+        "heat_kwh_th_m2": 12.07153974706237,
+        "id": "kohlrabi:hydroponics:annual",
+        "method": "hydroponics",
+        "name": "Alabaş",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            959.7080532770528,
+            1313.7683987903913,
+            1869.496206914902
+          ],
+          "fresh_makeup_m3_m2": [
+            0.054409961720658664,
+            0.1430245763190289,
+            0.41837081910878515
+          ],
+          "heat_kwh_th_m2": [
+            15.282547003629631,
+            12.07153974706237,
+            10.28969144944989
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 959.7080532770528,
+            "central": 1313.7683987903913,
+            "high": 1869.496206914902
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.054409961720658664,
+            "central": 0.1430245763190289,
+            "high": 0.41837081910878515
+          },
+          "heat_kwh_th_m2": {
+            "low": 10.28969144944989,
+            "central": 12.07153974706237,
+            "high": 15.282547003629631
+          }
+        },
+        "season": "annual",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00039157994885428884,
+        "water_monthly_m3_m2": [
+          0.012138978414482946,
+          0.011062133555133653,
+          0.012138978414482946,
+          0.011747398465628658,
+          0.012138978414482946,
+          0.011747398465628658,
+          0.012138978414482946,
+          0.012138978414482946,
+          0.011747398465628658,
+          0.012138978414482946,
+          0.011747398465628658,
+          0.012138978414482946
+        ],
+        "yield_kg_m2": 48.66,
+        "yield_range_kg_m2": {
+          "central": 48.66,
+          "high": 63.480000000000004,
+          "low": 34.44
+        },
+        "area_m2": 75.0,
+        "share_pct": 75.0,
+        "production_kg": 3649.4999999999995,
+        "water_m3": 10.726843223927167,
+        "heat_kwh_th": 905.3654810296778,
+        "electricity_kwh": 98532.62990927935
+      },
+      {
+        "active_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "swiss_chard",
+        "cycles": 4,
+        "electricity_kwh_m2": 1246.6752230912457,
+        "heat_kwh_th_m2": 12.74631010442215,
+        "id": "swiss_chard:hydroponics:annual",
+        "method": "hydroponics",
+        "name": "Pazı",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            907.4122640150141,
+            1246.6752230912457,
+            1781.4691610259003
+          ],
+          "fresh_makeup_m3_m2": [
+            0.05317835909819363,
+            0.14013887358136995,
+            0.4114859705996322
+          ],
+          "heat_kwh_th_m2": [
+            15.876531994955016,
+            12.74631010442215,
+            10.844247910194
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 907.4122640150141,
+            "central": 1246.6752230912457,
+            "high": 1781.4691610259003
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.05317835909819363,
+            "central": 0.14013887358136995,
+            "high": 0.4114859705996322
+          },
+          "heat_kwh_th_m2": {
+            "low": 10.844247910194,
+            "central": 12.74631010442215,
+            "high": 15.876531994955016
+          }
+        },
+        "season": "annual",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.011894059085619352,
+          0.010838940940927312,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352
+        ],
+        "yield_kg_m2": 37.04,
+        "yield_range_kg_m2": {
+          "central": 37.04,
+          "high": 45.12,
+          "low": 29.4
+        },
+        "area_m2": 5.0,
+        "share_pct": 5.0,
+        "production_kg": 185.2,
+        "water_m3": 0.7006943679068498,
+        "heat_kwh_th": 63.73155052211075,
+        "electricity_kwh": 6233.376115456229
+      },
+      {
+        "active_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "basil",
+        "cycles": 1,
+        "electricity_kwh_m2": 528.8352630644466,
+        "heat_kwh_th_m2": 0.7643901732796627,
+        "id": "basil:hydroponics:summer",
+        "method": "hydroponics",
+        "name": "Fesleğen",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            382.9927992504675,
+            528.8352630644466,
+            757.8439173944492
+          ],
+          "fresh_makeup_m3_m2": [
+            0.022275945084253592,
+            0.05870293677741164,
+            0.17236783984050302
+          ],
+          "heat_kwh_th_m2": [
+            2.603163974486864,
+            0.7643901732796627,
+            0.30475759509080286
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 382.9927992504675,
+            "central": 528.8352630644466,
+            "high": 757.8439173944492
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.022275945084253592,
+            "central": 0.05870293677741164,
+            "high": 0.17236783984050302
+          },
+          "heat_kwh_th_m2": {
+            "low": 0.30475759509080286,
+            "central": 0.7643901732796627,
+            "high": 2.603163974486864
+          }
+        },
+        "season": "summer",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 7.3,
+        "yield_range_kg_m2": {
+          "central": 7.3,
+          "high": 8.22,
+          "low": 6.37
+        },
+        "area_m2": 4.696232876712327,
+        "share_pct": 4.696232876712327,
+        "production_kg": 34.282499999999985,
+        "water_m3": 0.27568266165364574,
+        "heat_kwh_th": 3.5897542623917844,
+        "electricity_kwh": 2483.5335487680663
+      },
+      {
+        "active_months": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "basil",
+        "cycles": 2,
+        "electricity_kwh_m2": 839.6909956527894,
+        "heat_kwh_th_m2": 6.1098309125747186,
+        "id": "basil:hydroponics:extended",
+        "method": "hydroponics",
+        "name": "Fesleğen",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            610.1686724188763,
+            839.6909956527894,
+            1201.0526732540745
+          ],
+          "fresh_makeup_m3_m2": [
+            0.035670631017268827,
+            0.09400143470892713,
+            0.2760138611825048
+          ],
+          "heat_kwh_th_m2": [
+            8.477040079654401,
+            6.1098309125747186,
+            5.068926749368909
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 610.1686724188763,
+            "central": 839.6909956527894,
+            "high": 1201.0526732540745
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.035670631017268827,
+            "central": 0.09400143470892713,
+            "high": 0.2760138611825048
+          },
+          "heat_kwh_th_m2": {
+            "low": 5.068926749368909,
+            "central": 6.1098309125747186,
+            "high": 8.477040079654401
+          }
+        },
+        "season": "extended",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 14.6,
+        "yield_range_kg_m2": {
+          "central": 14.6,
+          "high": 16.44,
+          "low": 12.74
+        },
+        "area_m2": 0.3037671232876735,
+        "share_pct": 0.3037671232876735,
+        "production_kg": 4.435000000000033,
+        "water_m3": 0.02855454540644486,
+        "heat_kwh_th": 1.8559657600869233,
+        "electricity_kwh": 255.0705182000102
+      }
+    ],
+    "totals": {
+      "area_m2": 100.0,
+      "production_kg": 4204.367499999999,
+      "water_m3": 14.187618105909758,
+      "heat_kwh_th": 1895.789149685574,
+      "electricity_kwh": 117473.10462356126,
+      "equivalent_electricity_kwh": 119368.89377324683,
+      "stored_water_m3": 14.06286033193899,
+      "desalinated_m3": 0.12475777397076915,
+      "freshwater_m3": 0.0,
+      "treatment_electricity_kwh": 0.37499055623940064,
+      "treatment_heat_kwh_th": 0.0
+    },
+    "monthly": [
+      {
+        "month": 1,
+        "capture_m3": 2.152874666566667,
+        "stored_water_used_m3": 1.0293639719424146,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 1.1235106946242523,
+        "spill_m3": 0.0,
+        "demand_m3": 1.0293639719424146
+      },
+      {
+        "month": 2,
+        "capture_m3": 1.2810750193600002,
+        "stored_water_used_m3": 0.9380494260442971,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 1.4665362879399557,
+        "spill_m3": 0.0,
+        "demand_m3": 0.9380494260442972
+      },
+      {
+        "month": 3,
+        "capture_m3": 0.45062557867333336,
+        "stored_water_used_m3": 1.0329769960550668,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.8841848705582227,
+        "spill_m3": 0.0,
+        "demand_m3": 1.0329769960550668
+      },
+      {
+        "month": 4,
+        "capture_m3": 0.10366752667333332,
+        "stored_water_used_m3": 0.987852397231556,
+        "desalinated_m3": 0.01180276024108906,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 0.0,
+        "demand_m3": 0.9996551574726453
+      },
+      {
+        "month": 5,
+        "capture_m3": 1.33149766614,
+        "stored_water_used_m3": 1.33149766614,
+        "desalinated_m3": 0.11295501372968009,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 0.0,
+        "demand_m3": 1.4444526798696802
+      },
+      {
+        "month": 6,
+        "capture_m3": 16.942279075693335,
+        "stored_water_used_m3": 1.3978574321319484,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 15.544421643561387,
+        "demand_m3": 1.3978574321319481
+      },
+      {
+        "month": 7,
+        "capture_m3": 11.084831154526666,
+        "stored_water_used_m3": 1.44445267986968,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 9.640378474656986,
+        "demand_m3": 1.4444526798696802
+      },
+      {
+        "month": 8,
+        "capture_m3": 5.1611802076933335,
+        "stored_water_used_m3": 1.44445267986968,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 3.716727527823654,
+        "demand_m3": 1.4444526798696802
+      },
+      {
+        "month": 9,
+        "capture_m3": 3.9079590772133335,
+        "stored_water_used_m3": 1.3978574321319484,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 2.5101016450813853,
+        "demand_m3": 1.3978574321319481
+      },
+      {
+        "month": 10,
+        "capture_m3": 2.9102098638800005,
+        "stored_water_used_m3": 1.0329769960550668,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 1.8772328678249337,
+        "demand_m3": 1.0329769960550668
+      },
+      {
+        "month": 11,
+        "capture_m3": 2.156225409986667,
+        "stored_water_used_m3": 0.9961586825249172,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 1.1600667274617495,
+        "demand_m3": 0.9961586825249173
+      },
+      {
+        "month": 12,
+        "capture_m3": 1.8751585258999999,
+        "stored_water_used_m3": 1.0293639719424146,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 0.8457945539575853,
+        "demand_m3": 1.0293639719424146
+      }
+    ],
+    "crop_outputs_kg": {
+      "arugula": 228.75,
+      "basil": 38.717500000000015,
+      "kohlrabi": 3649.4999999999995,
+      "lettuce": 47.599999999999994,
+      "radish": 54.6,
+      "swiss_chard": 185.2
+    },
+    "balanced_crop_outputs_kg": {
+      "arugula": 228.75,
+      "basil": 38.717500000000015,
+      "kohlrabi": 3649.4999999999995,
+      "lettuce": 47.599999999999994,
+      "radish": 54.6,
+      "swiss_chard": 185.2
+    },
+    "objective": "balanced",
+    "production_retention": 1.0,
+    "minimum_crop_share": 0.05,
+    "crop_areas_m2": {
+      "arugula": 5.0,
+      "basil": 5.0,
+      "kohlrabi": 75.0,
+      "lettuce": 5.0,
+      "radish": 5.0,
+      "swiss_chard": 5.0
+    },
+    "objective_policy": {
+      "name": "diversity_fresh_mass_resource_minimax_regret",
+      "minimum_crop_share": 0.05,
+      "minimum_area_per_active_crop_m2": 5.0,
+      "balanced_mass_retention": 0.95,
+      "maximum_fresh_mass_kg": 4425.65,
+      "balanced_mass_floor_kg": 4204.367499999999,
+      "balanced_fresh_mass_kg": 4204.367499999999,
+      "balanced_max_normalized_regret": 0.41638562837321397,
+      "regret_anchors": {
+        "water": {
+          "unit": "m³",
+          "minimum": 13.101092236993539,
+          "at_other_minimum": 15.710514506203957,
+          "normalization_span": 2.609422269210418,
+          "active_regret_dimension": true
+        },
+        "energy": {
+          "unit": "kWh electric equivalent",
+          "minimum": 117512.20282795608,
+          "at_other_minimum": 121971.2687004856,
+          "normalization_span": 4459.065872529522,
+          "active_regret_dimension": true
+        }
+      },
+      "tie_breaks": [
+        "maximize fresh edible kg at optimum regret",
+        "minimize equivalent energy",
+        "minimize water"
+      ],
+      "resource_mode_floor": "each crop amount of the newly calculated balanced plan × production_retention, with the same diversity area floor",
+      "interpretation": "Fresh edible mass is the explicit output measure; not nutritional adequacy, economic profit or validated Arctic harvest. A 5% maximum-mass concession is a declared planning policy, not a fitted scientific weight."
+    },
+    "binding_constraints": [
+      "Yetiştirme alanı"
+    ],
+    "resource_constraints": [
+      {
+        "name": "Yetiştirme alanı",
+        "used": 100.0,
+        "limit": 100.0,
+        "slack": 0.0,
+        "unit": "m²",
+        "binding": true,
+        "reported_as_binding": true
+      },
+      {
+        "name": "Karasal su tahsisi",
+        "used": 0.0,
+        "limit": 0.0,
+        "slack": 0.0,
+        "unit": "m³",
+        "binding": true,
+        "reported_as_binding": false
+      },
+      {
+        "name": "Depolama hacmi",
+        "used": 1.4665362879399557,
+        "limit": 10.0,
+        "slack": 8.533463712060044,
+        "unit": "m³",
+        "binding": false,
+        "reported_as_binding": false
+      }
+    ],
+    "solver": {
+      "name": "SciPy / HiGHS",
+      "version": "north-diversity-production-regret-2",
+      "max_equality_residual": 4.440892098500626e-16
+    },
+    "policy": "Dengeli: her etkin ürüne toplam alanın en az %5 payı; toplam taze yenebilir kg maksimumunun %95’ini koru; ayrı su ve enerji optimumları arasındaki en büyük normalize kaybı küçült. Eşit ürün payı veya gizli ağırlık yok. Su/enerji önceliği yeni dengeli ürün miktarlarının seçilen payını korur. Besin, gelir veya talep optimumu değildir."
+  },
+  "after": {
+    "status": "conditional",
+    "allocations": [
+      {
+        "active_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "lettuce",
+        "cycles": 4,
+        "electricity_kwh_m2": 77.35255147391466,
+        "heat_kwh_th_m2": 257.11751012785425,
+        "id": "lettuce:greenhouse:summer",
+        "method": "greenhouse",
+        "name": "Marul",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            58.69920721660791,
+            77.35255147391466,
+            98.88214109624835
+          ],
+          "fresh_makeup_m3_m2": [
+            0.13172770364218034,
+            0.21723679564047005,
+            0.39422770231382614
+          ],
+          "heat_kwh_th_m2": [
+            186.4538356126192,
+            257.11751012785425,
+            467.9273033695822
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 58.69920721660791,
+            "central": 77.35255147391466,
+            "high": 98.88214109624835
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.13172770364218034,
+            "central": 0.21723679564047005,
+            "high": 0.39422770231382614
+          },
+          "heat_kwh_th_m2": {
+            "low": 186.4538356126192,
+            "central": 257.11751012785425,
+            "high": 467.9273033695822
+          }
+        },
+        "season": "summer",
+        "source_ids": [
+          "EDEN_ISS_2018",
+          "UAF_HYDROPONIC_2007"
+        ],
+        "water_active_day_m3_m2": 0.0014198483375194124,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.044015298463101774,
+          0.042595450125582364,
+          0.044015298463101774,
+          0.044015298463101774,
+          0.042595450125582364,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 9.52,
+        "yield_range_kg_m2": {
+          "central": 9.52,
+          "high": 14.0,
+          "low": 6.0
+        },
+        "area_m2": 0.252439625747364,
+        "share_pct": 0.252439625747364,
+        "production_kg": 2.4032252371149054,
+        "water_m3": 0.054839175390036854,
+        "heat_kwh_th": 64.9066480297696,
+        "electricity_kwh": 19.526849144678728
+      },
+      {
+        "active_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "lettuce",
+        "cycles": 4,
+        "electricity_kwh_m2": 528.8352630644466,
+        "heat_kwh_th_m2": 0.7643901732796627,
+        "id": "lettuce:hydroponics:summer",
+        "method": "hydroponics",
+        "name": "Marul",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            382.9927992504675,
+            528.8352630644466,
+            757.8439173944492
+          ],
+          "fresh_makeup_m3_m2": [
+            0.022275945084253592,
+            0.05870293677741164,
+            0.17236783984050302
+          ],
+          "heat_kwh_th_m2": [
+            2.603163974486864,
+            0.7643901732796627,
+            0.30475759509080286
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 382.9927992504675,
+            "central": 528.8352630644466,
+            "high": 757.8439173944492
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.022275945084253592,
+            "central": 0.05870293677741164,
+            "high": 0.17236783984050302
+          },
+          "heat_kwh_th_m2": {
+            "low": 0.30475759509080286,
+            "central": 0.7643901732796627,
+            "high": 2.603163974486864
+          }
+        },
+        "season": "summer",
+        "source_ids": [
+          "EDEN_ISS_2018",
+          "UAF_HYDROPONIC_2007"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 9.52,
+        "yield_range_kg_m2": {
+          "central": 9.52,
+          "high": 14.0,
+          "low": 6.0
+        },
+        "area_m2": 4.747560374252636,
+        "share_pct": 4.747560374252636,
+        "production_kg": 45.19677476288509,
+        "water_m3": 0.2786957364966972,
+        "heat_kwh_th": 3.6289884971306328,
+        "electricity_kwh": 2510.6773394322354
+      },
+      {
+        "active_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "arugula",
+        "cycles": 15,
+        "electricity_kwh_m2": 1246.6752230912457,
+        "heat_kwh_th_m2": 12.74631010442215,
+        "id": "arugula:hydroponics:annual",
+        "method": "hydroponics",
+        "name": "Roka",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            907.4122640150141,
+            1246.6752230912457,
+            1781.4691610259003
+          ],
+          "fresh_makeup_m3_m2": [
+            0.05317835909819363,
+            0.14013887358136995,
+            0.4114859705996322
+          ],
+          "heat_kwh_th_m2": [
+            15.876531994955016,
+            12.74631010442215,
+            10.844247910194
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 907.4122640150141,
+            "central": 1246.6752230912457,
+            "high": 1781.4691610259003
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.05317835909819363,
+            "central": 0.14013887358136995,
+            "high": 0.4114859705996322
+          },
+          "heat_kwh_th_m2": {
+            "low": 10.844247910194,
+            "central": 12.74631010442215,
+            "high": 15.876531994955016
+          }
+        },
+        "season": "annual",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.011894059085619352,
+          0.010838940940927312,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352
+        ],
+        "yield_kg_m2": 45.75,
+        "yield_range_kg_m2": {
+          "central": 45.75,
+          "high": 65.1,
+          "low": 28.05
+        },
+        "area_m2": 5.0,
+        "share_pct": 5.0,
+        "production_kg": 228.75,
+        "water_m3": 0.7006943679068498,
+        "heat_kwh_th": 63.73155052211075,
+        "electricity_kwh": 6233.376115456229
+      },
+      {
+        "active_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "radish",
+        "cycles": 6,
+        "electricity_kwh_m2": 240.90176798976648,
+        "heat_kwh_th_m2": 157.79929414869628,
+        "id": "radish:greenhouse:summer",
+        "method": "greenhouse",
+        "name": "Turp",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            184.88461307093854,
+            240.90176798976648,
+            305.8536092176979
+          ],
+          "fresh_makeup_m3_m2": [
+            0.18181958797006592,
+            0.284324940190315,
+            0.487282796196591
+          ],
+          "heat_kwh_th_m2": [
+            116.27727739053095,
+            157.79929414869628,
+            282.31342539124023
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 184.88461307093854,
+            "central": 240.90176798976648,
+            "high": 305.8536092176979
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.18181958797006592,
+            "central": 0.284324940190315,
+            "high": 0.487282796196591
+          },
+          "heat_kwh_th_m2": {
+            "low": 116.27727739053095,
+            "central": 157.79929414869628,
+            "high": 282.31342539124023
+          }
+        },
+        "season": "summer",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.0018583329424203582,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05760832121503114,
+          0.05574998827261078,
+          0.05760832121503114,
+          0.05760832121503114,
+          0.05574998827261078,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 10.92,
+        "yield_range_kg_m2": {
+          "central": 10.92,
+          "high": 19.259999999999998,
+          "low": 6.6000000000000005
+        },
+        "area_m2": 5.0,
+        "share_pct": 5.0,
+        "production_kg": 54.6,
+        "water_m3": 1.421624700951575,
+        "heat_kwh_th": 788.9964707434814,
+        "electricity_kwh": 1204.5088399488325
+      },
+      {
+        "active_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "kohlrabi",
+        "cycles": 6,
+        "electricity_kwh_m2": 1313.7683987903913,
+        "heat_kwh_th_m2": 12.07153974706237,
+        "id": "kohlrabi:hydroponics:annual",
+        "method": "hydroponics",
+        "name": "Alabaş",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            959.7080532770528,
+            1313.7683987903913,
+            1869.496206914902
+          ],
+          "fresh_makeup_m3_m2": [
+            0.054409961720658664,
+            0.1430245763190289,
+            0.41837081910878515
+          ],
+          "heat_kwh_th_m2": [
+            15.282547003629631,
+            12.07153974706237,
+            10.28969144944989
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 959.7080532770528,
+            "central": 1313.7683987903913,
+            "high": 1869.496206914902
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.054409961720658664,
+            "central": 0.1430245763190289,
+            "high": 0.41837081910878515
+          },
+          "heat_kwh_th_m2": {
+            "low": 10.28969144944989,
+            "central": 12.07153974706237,
+            "high": 15.282547003629631
+          }
+        },
+        "season": "annual",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00039157994885428884,
+        "water_monthly_m3_m2": [
+          0.012138978414482946,
+          0.011062133555133653,
+          0.012138978414482946,
+          0.011747398465628658,
+          0.012138978414482946,
+          0.011747398465628658,
+          0.012138978414482946,
+          0.012138978414482946,
+          0.011747398465628658,
+          0.012138978414482946,
+          0.011747398465628658,
+          0.012138978414482946
+        ],
+        "yield_kg_m2": 48.66,
+        "yield_range_kg_m2": {
+          "central": 48.66,
+          "high": 63.480000000000004,
+          "low": 34.44
+        },
+        "area_m2": 75.0,
+        "share_pct": 75.0,
+        "production_kg": 3649.4999999999995,
+        "water_m3": 10.726843223927167,
+        "heat_kwh_th": 905.3654810296778,
+        "electricity_kwh": 98532.62990927935
+      },
+      {
+        "active_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "swiss_chard",
+        "cycles": 4,
+        "electricity_kwh_m2": 1246.6752230912457,
+        "heat_kwh_th_m2": 12.74631010442215,
+        "id": "swiss_chard:hydroponics:annual",
+        "method": "hydroponics",
+        "name": "Pazı",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            907.4122640150141,
+            1246.6752230912457,
+            1781.4691610259003
+          ],
+          "fresh_makeup_m3_m2": [
+            0.05317835909819363,
+            0.14013887358136995,
+            0.4114859705996322
+          ],
+          "heat_kwh_th_m2": [
+            15.876531994955016,
+            12.74631010442215,
+            10.844247910194
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 907.4122640150141,
+            "central": 1246.6752230912457,
+            "high": 1781.4691610259003
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.05317835909819363,
+            "central": 0.14013887358136995,
+            "high": 0.4114859705996322
+          },
+          "heat_kwh_th_m2": {
+            "low": 10.844247910194,
+            "central": 12.74631010442215,
+            "high": 15.876531994955016
+          }
+        },
+        "season": "annual",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.011894059085619352,
+          0.010838940940927312,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352
+        ],
+        "yield_kg_m2": 37.04,
+        "yield_range_kg_m2": {
+          "central": 37.04,
+          "high": 45.12,
+          "low": 29.4
+        },
+        "area_m2": 5.0,
+        "share_pct": 5.0,
+        "production_kg": 185.2,
+        "water_m3": 0.7006943679068498,
+        "heat_kwh_th": 63.73155052211075,
+        "electricity_kwh": 6233.376115456229
+      },
+      {
+        "active_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "basil",
+        "cycles": 1,
+        "electricity_kwh_m2": 528.8352630644466,
+        "heat_kwh_th_m2": 0.7643901732796627,
+        "id": "basil:hydroponics:summer",
+        "method": "hydroponics",
+        "name": "Fesleğen",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            382.9927992504675,
+            528.8352630644466,
+            757.8439173944492
+          ],
+          "fresh_makeup_m3_m2": [
+            0.022275945084253592,
+            0.05870293677741164,
+            0.17236783984050302
+          ],
+          "heat_kwh_th_m2": [
+            2.603163974486864,
+            0.7643901732796627,
+            0.30475759509080286
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 382.9927992504675,
+            "central": 528.8352630644466,
+            "high": 757.8439173944492
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.022275945084253592,
+            "central": 0.05870293677741164,
+            "high": 0.17236783984050302
+          },
+          "heat_kwh_th_m2": {
+            "low": 0.30475759509080286,
+            "central": 0.7643901732796627,
+            "high": 2.603163974486864
+          }
+        },
+        "season": "summer",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 7.3,
+        "yield_range_kg_m2": {
+          "central": 7.3,
+          "high": 8.22,
+          "low": 6.37
+        },
+        "area_m2": 4.696232876712327,
+        "share_pct": 4.696232876712327,
+        "production_kg": 34.282499999999985,
+        "water_m3": 0.27568266165364574,
+        "heat_kwh_th": 3.5897542623917844,
+        "electricity_kwh": 2483.5335487680663
+      },
+      {
+        "active_months": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+        "crop_id": "basil",
+        "cycles": 2,
+        "electricity_kwh_m2": 839.6909956527894,
+        "heat_kwh_th_m2": 6.1098309125747186,
+        "id": "basil:hydroponics:extended",
+        "method": "hydroponics",
+        "name": "Fesleğen",
+        "resource_configurations": {
+          "electricity_kwh_m2": [
+            610.1686724188763,
+            839.6909956527894,
+            1201.0526732540745
+          ],
+          "fresh_makeup_m3_m2": [
+            0.035670631017268827,
+            0.09400143470892713,
+            0.2760138611825048
+          ],
+          "heat_kwh_th_m2": [
+            8.477040079654401,
+            6.1098309125747186,
+            5.068926749368909
+          ]
+        },
+        "resource_ranges": {
+          "electricity_kwh_m2": {
+            "low": 610.1686724188763,
+            "central": 839.6909956527894,
+            "high": 1201.0526732540745
+          },
+          "fresh_makeup_m3_m2": {
+            "low": 0.035670631017268827,
+            "central": 0.09400143470892713,
+            "high": 0.2760138611825048
+          },
+          "heat_kwh_th_m2": {
+            "low": 5.068926749368909,
+            "central": 6.1098309125747186,
+            "high": 8.477040079654401
+          }
+        },
+        "season": "extended",
+        "source_ids": [
+          "EDEN_ISS_2018"
+        ],
+        "water_active_day_m3_m2": 0.00038367932534255964,
+        "water_monthly_m3_m2": [
+          0.0,
+          0.0,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.011894059085619352,
+          0.011510379760276792,
+          0.011894059085619352,
+          0.0,
+          0.0
+        ],
+        "yield_kg_m2": 14.6,
+        "yield_range_kg_m2": {
+          "central": 14.6,
+          "high": 16.44,
+          "low": 12.74
+        },
+        "area_m2": 0.3037671232876735,
+        "share_pct": 0.3037671232876735,
+        "production_kg": 4.435000000000033,
+        "water_m3": 0.02855454540644486,
+        "heat_kwh_th": 1.8559657600869233,
+        "electricity_kwh": 255.0705182000102
+      }
+    ],
+    "totals": {
+      "area_m2": 100.0,
+      "production_kg": 4204.367499999999,
+      "water_m3": 14.187628779639267,
+      "heat_kwh_th": 1895.8064093667597,
+      "electricity_kwh": 117473.04475895336,
+      "equivalent_electricity_kwh": 119368.8511683201,
+      "stored_water_m3": 14.062868843017423,
+      "desalinated_m3": 0.12475993662184706,
+      "freshwater_m3": 0.0,
+      "treatment_electricity_kwh": 0.3455232677270912,
+      "treatment_heat_kwh_th": 0.0
+    },
+    "monthly": [
+      {
+        "month": 1,
+        "capture_m3": 2.152874666566667,
+        "stored_water_used_m3": 1.0293639719424146,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 1.1235106946242523,
+        "spill_m3": 0.0,
+        "demand_m3": 1.0293639719424146
+      },
+      {
+        "month": 2,
+        "capture_m3": 1.2810750193600002,
+        "stored_water_used_m3": 0.9380494260442971,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 1.4665362879399557,
+        "spill_m3": 0.0,
+        "demand_m3": 0.9380494260442972
+      },
+      {
+        "month": 3,
+        "capture_m3": 0.45062557867333336,
+        "stored_water_used_m3": 1.0329769960550668,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.8841848705582227,
+        "spill_m3": 0.0,
+        "demand_m3": 1.0329769960550668
+      },
+      {
+        "month": 4,
+        "capture_m3": 0.10366752667333332,
+        "stored_water_used_m3": 0.987852397231556,
+        "desalinated_m3": 0.01180276024108906,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 0.0,
+        "demand_m3": 0.9996551574726453
+      },
+      {
+        "month": 5,
+        "capture_m3": 1.33149766614,
+        "stored_water_used_m3": 1.33149766614,
+        "desalinated_m3": 0.112957176380758,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 0.0,
+        "demand_m3": 1.444454842520757
+      },
+      {
+        "month": 6,
+        "capture_m3": 16.942279075693335,
+        "stored_water_used_m3": 1.3978595250200874,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 15.544419550673247,
+        "demand_m3": 1.3978595250200874
+      },
+      {
+        "month": 7,
+        "capture_m3": 11.084831154526666,
+        "stored_water_used_m3": 1.4444548425207568,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 9.640376312005909,
+        "demand_m3": 1.444454842520757
+      },
+      {
+        "month": 8,
+        "capture_m3": 5.1611802076933335,
+        "stored_water_used_m3": 1.4444548425207568,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 3.716725365172577,
+        "demand_m3": 1.444454842520757
+      },
+      {
+        "month": 9,
+        "capture_m3": 3.9079590772133335,
+        "stored_water_used_m3": 1.3978595250200874,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 2.510099552193246,
+        "demand_m3": 1.3978595250200874
+      },
+      {
+        "month": 10,
+        "capture_m3": 2.9102098638800005,
+        "stored_water_used_m3": 1.0329769960550668,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 1.8772328678249337,
+        "demand_m3": 1.0329769960550668
+      },
+      {
+        "month": 11,
+        "capture_m3": 2.156225409986667,
+        "stored_water_used_m3": 0.9961586825249172,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 1.1600667274617495,
+        "demand_m3": 0.9961586825249173
+      },
+      {
+        "month": 12,
+        "capture_m3": 1.8751585258999999,
+        "stored_water_used_m3": 1.0293639719424146,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "storage_end_m3": 0.0,
+        "spill_m3": 0.8457945539575853,
+        "demand_m3": 1.0293639719424146
+      }
+    ],
+    "crop_outputs_kg": {
+      "arugula": 228.75,
+      "basil": 38.717500000000015,
+      "kohlrabi": 3649.4999999999995,
+      "lettuce": 47.599999999999994,
+      "radish": 54.6,
+      "swiss_chard": 185.2
+    },
+    "balanced_crop_outputs_kg": {
+      "arugula": 228.75,
+      "basil": 38.717500000000015,
+      "kohlrabi": 3649.4999999999995,
+      "lettuce": 47.599999999999994,
+      "radish": 54.6,
+      "swiss_chard": 185.2
+    },
+    "objective": "balanced",
+    "production_retention": 1.0,
+    "minimum_crop_share": 0.05,
+    "crop_areas_m2": {
+      "arugula": 5.0,
+      "basil": 5.0,
+      "kohlrabi": 75.0,
+      "lettuce": 5.0,
+      "radish": 5.0,
+      "swiss_chard": 5.0
+    },
+    "objective_policy": {
+      "name": "diversity_fresh_mass_resource_minimax_regret",
+      "minimum_crop_share": 0.05,
+      "minimum_area_per_active_crop_m2": 5.0,
+      "balanced_mass_retention": 0.95,
+      "maximum_fresh_mass_kg": 4425.65,
+      "balanced_mass_floor_kg": 4204.367499999999,
+      "balanced_fresh_mass_kg": 4204.367499999999,
+      "balanced_max_normalized_regret": 0.41638971882744796,
+      "regret_anchors": {
+        "water": {
+          "unit": "m³",
+          "minimum": 13.101092236993539,
+          "at_other_minimum": 15.710514506219676,
+          "normalization_span": 2.609422269226137,
+          "active_regret_dimension": true
+        },
+        "energy": {
+          "unit": "kWh electric equivalent",
+          "minimum": 117512.10056193892,
+          "at_other_minimum": 121971.26591215408,
+          "normalization_span": 4459.16535021516,
+          "active_regret_dimension": true
+        }
+      },
+      "tie_breaks": [
+        "maximize fresh edible kg at optimum regret",
+        "minimize equivalent energy",
+        "minimize water"
+      ],
+      "resource_mode_floor": "each crop amount of the newly calculated balanced plan × production_retention, with the same diversity area floor",
+      "interpretation": "Fresh edible mass is the explicit output measure; not nutritional adequacy, economic profit or validated Arctic harvest. A 5% maximum-mass concession is a declared planning policy, not a fitted scientific weight."
+    },
+    "binding_constraints": [
+      "Yetiştirme alanı"
+    ],
+    "resource_constraints": [
+      {
+        "name": "Yetiştirme alanı",
+        "used": 100.0,
+        "limit": 100.0,
+        "slack": 0.0,
+        "unit": "m²",
+        "binding": true,
+        "reported_as_binding": true
+      },
+      {
+        "name": "Karasal su tahsisi",
+        "used": 0.0,
+        "limit": 0.0,
+        "slack": 0.0,
+        "unit": "m³",
+        "binding": true,
+        "reported_as_binding": false
+      },
+      {
+        "name": "Depolama hacmi",
+        "used": 1.4665362879399557,
+        "limit": 10.0,
+        "slack": 8.533463712060044,
+        "unit": "m³",
+        "binding": false,
+        "reported_as_binding": false
+      }
+    ],
+    "solver": {
+      "name": "SciPy / HiGHS",
+      "version": "north-diversity-production-regret-2",
+      "max_equality_residual": 1.1102230246251565e-15
+    },
+    "policy": "Dengeli: her etkin ürüne toplam alanın en az %5 payı; toplam taze yenebilir kg maksimumunun %95’ini koru; ayrı su ve enerji optimumları arasındaki en büyük normalize kaybı küçült. Eşit ürün payı veya gizli ağırlık yok. Su/enerji önceliği yeni dengeli ürün miktarlarının seçilen payını korur. Besin, gelir veya talep optimumu değildir."
+  },
+  "changes": {
+    "area_reallocated_m2": 6.732775941475921e-05,
+    "area_expanded_m2": 0.0,
+    "area_reduced_m2": 0.0,
+    "changed_pattern": false,
+    "feasibility_changed": false,
+    "status_before": "conditional",
+    "status_after": "conditional",
+    "electricity_delta_kwh": -0.05986460790154524,
+    "heat_delta_kwh_th": 0.0172596811855783,
+    "equivalent_electricity_delta_kwh": -0.042604926726198755,
+    "water_delta_m3": 1.0673729509136365e-05,
+    "water_source_deltas_m3": {
+      "stored_water_m3": 8.51107843224952e-06,
+      "desalinated_m3": 2.162651077913802e-06,
+      "freshwater_m3": 0.0
+    },
+    "binding_constraints_before": [
+      "Yetiştirme alanı"
+    ],
+    "binding_constraints_after": [
+      "Yetiştirme alanı"
+    ],
+    "message": "Üretim dağılımı değişmedi. Bu da geçerli bir sonuç; enerji ve su farkını ayrıca inceleyin."
+  },
+  "synthetic_inputs": {
+    "source_temperature_c": 5.0,
+    "salinity_g_kg": 32.0
+  },
+  "unchanged_inputs": [
+    "future_climate",
+    "terrestrial_water",
+    "soil",
+    "crop_yield",
+    "crop_water",
+    "objective",
+    "constraints"
+  ],
+  "limits": [
+    "Sentetik kaynak senaryosu; gerçek saha ölçümü veya model doğrulaması değildir.",
+    "PRE/POST motor aynıdır; dağılımın değişmemesi geçerli sonuçtur."
+  ]
+}

@@ -1,0 +1,31 @@
+PWN — KULLANICININ SON LİSTESİ
+23 Eylül 2026. Son kullanıcı mesajı önceki encoder/GPS çıkarma kararını güncelledi. Fiyatlar son web kontrollerinden; bu tur yeniden sorgulanmadı. KDV dahil, kargo hariç.
+
+YAZILACAK / TEMİN EDİLECEK — HER BİRİNDEN 1 ADET
+GPS M8N: Robotistan 720,10 TL
+https://www.robotistan.com/ublox-gy-gpsv3-neo-8m-m8n-antenli-gps-modulu
+Not: M10 bulunamadığı için önceki araştırmanın M8N alternatifi; aynı model değildir.
+600 darbe encoder: Robotistan 608,31 TL
+https://www.robotistan.com/doner-encoder-600d
+ADS1115: Robotistan 133,79 TL
+https://www.robotistan.com/ads1115-16-bit-4-channels-adc
+DS18B20 su geçirmez: Robotistan 75,52 TL
+https://www.robotistan.com/su-gecirmez-ds18b20-dijital-isi-sensoru
+DS3231 RTC: Robotistan 204,55 TL — STOKTA YOK, listede kalacak
+https://www.robotistan.com/ds3231-hassas-rtc-ve-24c32-hafiza-karti
+İlk dört kalem toplamı 1.537,72 TL. Stokta olmayan RTC dahil planlanan toplam 1.742,27 TL.
+
+İLETKENLİK — KULLANICI İSTEĞİYLE ANA LİSTEYE EKLENDİ, 1 ADET
+TDS probu + kartı: Direnc 261,53 TL
+https://www.direnc.net/arduino-tds-sivi-iletkenlik-ve-kalite-sensoru
+GÜNCEL ANA TOPLAM: RTC hariç 1.799,25 TL; RTC dahil 2.003,80 TL. TDS düşük aralıklı PoC adayı; Atlas EC/deniz suyu salinite muadili değildir. Kullanıcı iletkenlik parçasının ana listeye eklenmesini istedi.
+
+MEVCUT / ALINMAYACAK
+Raspberry Pi, breadboard, jumper, Pi'nin mevcut depolaması. Ayrı SPI microSD modülü ve yeni bellek yok. Su basınç sensörü kullanıcı tarafından çıkarıldı. Pi adaptörünün mevcut/uygun olduğu okulda kontrol edilecek. ESP32, pH satın alma listesinde yok.
+
+NOTLAR
+GPS anteni ve elektronikler su üstü kuru bölümde planlanacak. Encoder yeniden listede; mekanik bağlantı ve mesafe kalibrasyonu okulda çözülecek. RTC pili, lojik seviye uyumu, DS18B20 pull-up ve EC kalibrasyon/ref. kontrolü montajda tamamlanacak; bu kalemler fiyat toplamına dahil değil. Kod geliştirme/sipariş/fiziksel ölçüm bu tur yapılmadı.
+
+
+GÜÇ TAMAMLAMASI — 23 EYLÜL 2026
+Hoca taşınabilir gösterim için 1 mevcut powerbank önerdi. Yeni satın alma zorunlu değil; Pi 4'e uygun 5 V/3 A USB-C çıkış/kablo ve yük altında çalışma doğrulanacak. Adaptör/depolama ve 3D yazıcı/dişli okulda karşılanacak. Fiziksel gösterim planı docs/ANA_CHAT_TESLIM.txt son bölümünde kayıtlı.

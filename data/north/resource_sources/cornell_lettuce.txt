@@ -1,0 +1,1705 @@
+
+PAGE 1
+` 
+© Cornell University CEA Program 2013 
+ 
+Cornell Controlled 
+Environment 
+Agriculture  
+  
+Hydroponic Lettuce Handbook 
+This hydroponic greenhouse production system was designed for small operations to provide 
+local production of head lettuce as well as employment to the proprieters.  Our research group 
+has experimented with many forms of hydroponics but have found this floating system to be the 
+most robust and forgiving of the available systems.  This system is built around consistent 
+produciton 365 days of the year.  This requires a high degree of environmental control including 
+supplemental lighting and moveable shade to provide a target amount of light which, in turn, 
+results in a predictable amount of daily growth. 
+by Dr. Melissa Brechner, Dr. A.J. Both, CEA Staff 
+ 
+
+
+PAGE 2
+` 
+© Cornell University CEA Program 2013 
+ 
+Table of Contents 
+Chapter 1: Greenhouse Hardware ................................................................................................... 6 
+1.1 Nursery or Seedling production Area.................................................................................... 6 
+Ebb and Flood Benches ........................................................................................................... 6 
+Solution Tank and Plumbing ................................................................................................... 8 
+Lighting ................................................................................................................................... 9 
+1.2 Pond Area ............................................................................................................................ 12 
+Lighting ................................................................................................................................. 13 
+Lighting Configuration and High Intensity Discharge (HID) Lamps ................................... 14 
+Paddle Fan ............................................................................................................................. 14 
+Aspirated Box ........................................................................................................................ 15 
+System Component Information ............................................................................................... 16 
+2.1 Dissolved Oxygen Sensor ................................................................................................... 16 
+2.3 Compact Submersible Centrifugal Pump ............................................................................ 16 
+2.4 Flow Meters......................................................................................................................... 16 
+Chapter 3: Computer Technology and Monitoring ....................................................................... 17 
+3.1 Biological Significance of Environmental Parameters ....................................................... 17 
+Temperature ........................................................................................................................... 17 
+Relative Humidity.................................................................................................................. 17 
+Carbon Dioxide or CO2 ......................................................................................................... 17 
+Lights ..................................................................................................................................... 17 
+Dissolved Oxygen.................................................................................................................. 18 
+pH .......................................................................................................................................... 18 
+
+PAGE 3
+` 
+© Cornell University CEA Program 2013 
+ 
+Electrical Conductivity .......................................................................................................... 18 
+Monitoring ................................................................................................................................. 18 
+3.3 Set-points ............................................................................................................................. 19 
+Chapter 4: Lettuce Production ...................................................................................................... 20 
+Chapter 5: Packaging and Post-Harvest Storage .......................................................................... 26 
+Chapter 6: Crop Health ................................................................................................................. 27 
+Disease ...................................................................................................................................... 27 
+Pests ........................................................................................................................................... 27 
+Chapter 7: References ................................................................................................................... 28 
+Appendix ....................................................................................................................................... 47 
+ 
+ 
+   
+Table of Figures 
+Figure 1.This is a photo of an empty Ebb and Flood bench while the bench is flooding for sub-
+irrigation. ......................................................................................................................................... 6 
+Figure 2. Bench for seedlings. ........................................................................................................ 7 
+Figure 3. Seedling area on edge of pond in greenhouse. ................................................................ 7 
+Figure 4. Breaker on the end of a wand for hand-watering. ........................................................... 7 
+Figure 5.Humidity cover propped against a sheet of rockwool. ..................................................... 8 
+Figure 6.Nutrient solution reservoir fiberglass tank (A), Pump (B), Piping (C), and Valve (D). 
+The bottom of the germination bench can be seen in (E). .............................................................. 8 
+Figure 7.Fluorescent (A) and incandescent (B) lighting in the growth room. Fluorescent lighting 
+is used for plant biomass production and incandescent lighting is used for photoperiod control. . 9 
+
+PAGE 4
+` 
+© Cornell University CEA Program 2013 
+ 
+Figure 8. High Pressure Sodium (A) and Metal Halide (B) lamps in a growth chamber. .............. 9 
+Figure 9. High Intensity Discharge (HID) luminaire in a greenhouse. ......................................... 10 
+Figure 10.Aspirated box in a greenhouse.  A fan draws air from the bottom of the box over the 
+sensors. .......................................................................................................................................... 11 
+Figure 11. Aspirated box opening on bottom of box. ................................................................... 11 
+Figure 12. Empty pond with liner. ................................................................................................ 12 
+Figure 13.Edge of pond detail.  The inside edges of two separate ponds made of wood and 
+separated by structural members is shown on left. The right hand picture shows a concrete pond.
+....................................................................................................................................................... 13 
+Figure 14. Paddle fan to increase vertical air movement and therefore evapotranspiration.  This is 
+important for the prevention of tipburn. ....................................................................................... 14 
+Figure 15. Aspirated box with digital output screen in greenhouse. ............................................ 15 
+Figure 16. Model: H-03216-04: 65 mm variable area aluminum flow meter with valve and glass 
+float for O2. Manufacturer: Cole Parmer Instrument Co., Niles, IL ............................................ 16 
+Figure 17. Quantum PAR sensor to measure light available for photosynthesis.  Foot-candle 
+sensor and lux meters are inappropriate because they are designed to quantify the sensitivity of 
+the human eye and overestimate (~25%) the light available for photosynthesis .......................... 19 
+Figure 18. Dissolved oxygen sensor.  DO levels should be greater than 4 ppm to prevent growth 
+inhibition. Visible signs of stress may be observed at 3 ppm. ...................................................... 19 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 5
+` 
+© Cornell University CEA Program 2013 
+ 
+Table of Abbreviations and Units  
+A Area Square feet or square meter. 
+CEA 
+Controlled 
+Environment 
+Agriculture Producing plants in a greenhouse or other space. 
+cm centimeter A unit of length 
+CWF 
+Cool White 
+Fluorescent A type of supplemental lighting  
+DLI  Daily Light Integral 
+The sum of photosynthetic (PAR) light received by plants in a 
+day. 
+DO Dissolved Oxygen 
+Oxygen concentration in nutrient solution measured in parts per 
+million. 
+EC electrical conductivity An indirect measurment of the strength of a nutrient solution. 
+HID 
+High Intensity 
+Discharge A type of HID supplemental lighting  
+hp horsepower A unit of power 
+HPS High Pressure Sodium 
+A high intensity discharge lamp/luminare type for supplemental 
+lighting 
+kPa  kilopascals A unit of pressure, force per unit area 
+MH Metal Halide A type of HID supplemental lighting  
+mol pronounced 'mole' 
+A number of anything equal to 6.02 x 1023 items. We use it to 
+quantify the number of photons between 400-700 nm of PAR 
+light plants receive. 
+mol/m2/d 
+moles per square 
+meter per day Integrated PAR light 
+mol/m2/s 
+moles per square 
+meter per second Instantaneous PAR light 
+nm nanometer Unit of length in SI, one billonth of a meter 
+PAR 
+Photosynthetically 
+Active Radiation 
+The portion of the electromagnetic spectrum between 400-700 
+nm plants use for photosynthesis  
+ppm parts per million 
+A unit that describes dimensionless quantities such as volume 
+fractions.  For describing carbon dioxide concentrations it is a 
+molar basis. 
+SI System Internationale 
+International system of units aka metric system - built around 7 
+basic units of measurements 
+µmol/m2/s 
+micro-mole per square 
+meter per second Instantaneous PAR light 
+µS/cm 
+microsiemens per 
+centimeter A unit of measurement for electrical conductivity 
+  
+
+PAGE 6
+` 
+© Cornell University CEA Program 2013 
+ 
+Chapter 1: Greenhouse Hardware 
+Of fundamental importance to hydroponic lettuce production are the physical components of 
+both the germination area and the pond area.  It is necessary to have not only an idea of the 
+physical components associated with each area, but also a good understanding of their purposes. 
+1.1 Nursery or Seedling production Area 
+The first 11 days of lettuce production takes place in the seedling production area.  Seedlings 
+develop best under constant lighting conditions with specific, closely controlled temperature, 
+relative humidity, carbon dioxide, and irrigation.  These conditions can only be met in a 
+controlled area, whether that is a greenhouse or a growth room, with the following equipment: 
+Ebb and Flood Benches, Tables, or Ponds 
+Solution Tank and Plumbing  
+Supplemental Lighting Aspirated sensor Box  
+Sensors  
+ 
+Ebb and Flood Benches 
+ 
+Figure 1.This is a photo of an empty Ebb and Flood bench while the bench is flooding for sub-irrigation. 
+To uniformly supply the germinating seedlings with water and nutrients, Ebb and Flood benches 
+(approximately 2.5 by 1.3 m or 8 by 4 foot) are periodically (2 to 4 times per day for 
+approximately 15 minutes) flooded.  These benches were specifically designed to supply water 
+and nutrients through sub-irrigation.  Through a pump and piping, the fertilizer solution is 
+pumped into the Ebb and Flood bench.  The solution is then automatically drained after a given 
+time period.  
+
+
+PAGE 7
+` 
+© Cornell University CEA Program 2013 
+ 
+ 
+Figure 2. Bench for seedlings. 
+Ponds 
+ 
+Figure 3. Seedling area on edge of pond in greenhouse. 
+ 
+Figure 4. Breaker on the end of a wand for hand-watering. 
+Alternately, the rockwool slabs in trays sitting on a bench (Figure 2) or the edge of a pond 
+(Figure 3) may be overhead watered with a hose that has a breaker (see Figure 4 above) on it that 
+slows the flow of high velocity water so that fragile seedlings are not damaged. 
+
+
+PAGE 8
+` 
+© Cornell University CEA Program 2013 
+ 
+ 
+Figure 5.Humidity cover propped against a sheet of rockwool. 
+Humidity covers (Figure 5) are used to provide a high humidity environment around the 
+germinating seeds. They are required if seeding with bare (not pelleted) seed.   
+Solution Tank and Plumbing  
+ 
+Figure 6.Nutrient solution reservoir fiberglass tank (A), Pump (B), Piping (C), and Valve (D). The bottom of the 
+germination bench can be seen in (E). 
+A fiberglass tank (A) see Figure 6, holds the nutrient solution used for sub-irrigating the 
+seedlings.  A plastic tank could also be used but may not be as strong as the fiberglass.  Care 
+must be taken to procure a plastic vessel that will not degrade quickly in sunlight if germination 
+area is in a greenhouse.  Any vessel that is used should be sufficiently opaque to prevent algae 
+growth.  Approximately 250 L (66 gallons) of nutrient solution is sufficient to prime the system 
+(given above-listed bench size), fill the bench, and provide nutrient solution for the first 11 days 
+of growth for approximately 2000 seedlings.  A small (1/50 h.p.) pump (B) is used to pump the 
+solution to the bench.  The piping (C) should be flexible to adjust to individual germination area 
+needs.  A throttling or gate valve (D) is included to control the flow of the nutrient solution to the 
+Ebb and Flow bench.  The bottom of the sub-irrigation bench (E) is visible in the photo above.  
+
+
+PAGE 9
+` 
+© Cornell University CEA Program 2013 
+ 
+The pump may be operated on a time clock so that irrigation can occur without human 
+intervention.  
+Lighting 
+ 
+Figure 7.Fluorescent (A) and incandescent (B) lighting in the growth room. Fluorescent lighting is used for plant biomass 
+production and incandescent lighting is used for photoperiod control. 
+ 
+Figure 8. High Pressure Sodium (A) and Metal Halide (B) lamps in a growth chamber. 
+Germination Room 
+In general, a separate room for germination of seedlings is very energy intensive.  Our 
+experience was that the improvement in growth obtained by utilizing a germination room was 
+not worth the large amount of energy such a room used and its’ use was discontinued.  Cool 
+white fluorescent (CWF) lamps (A, see Figure 7) or High Pressure Sodium/Metal halide (A,B, 
+see Figure 8) are recommended.  Heat generated by the lamps must be dissipated from the 
+germination area in order to maintain the temperature set points.  Use of incandescent lamps (B) 
+is discouraged because the red light emitted from these lamps causes the seedlings to 
+'stretch'.  Fluorescent lamps are rich in blue light, which cause compact and sturdy seedlings. 
+ 
+B 
+A 
+A 
+B 
+
+PAGE 10
+` 
+© Cornell University CEA Program 2013 
+ 
+ 
+Greenhouse 
+ 
+Figure 9. High Intensity Discharge (HID) luminaire in a greenhouse. 
+If germination of seedlings is performed in a greenhouse, high intensity discharge (HID) 
+luminaires such as high pressure sodium (HPS) of metal halide (MH) are recommended (Figure 
+9).   
+Configuration and Intensity 
+Lamps should be configured for a uniform distribution of light over the entire growing 
+area.  Light intensity is maintained at no less than 50 µmol/m2/s of PAR (Photosynthetically 
+Active Radiation) during the first 24 hours the seeds are kept in the germination area. This level 
+of illumination prevented stretching of the seedlings while minimizing the tendency of 
+supplemental lighting to dry out the surface of the medium. 
+The following calculation may be used for determination of hourly PAR.   
+𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻 𝑃𝑃𝑃𝑃𝑃𝑃= �100 𝜇𝜇𝜇𝜇𝐻𝐻𝐻𝐻
+𝜇𝜇2𝑠𝑠� � 60 𝑠𝑠
+1 𝜇𝜇𝑚𝑚𝑚𝑚� �60 𝜇𝜇𝑚𝑚𝑚𝑚
+1 ℎ𝐻𝐻𝐻𝐻𝐻𝐻� � 1 𝜇𝜇𝐻𝐻𝐻𝐻
+1 𝑥𝑥 106𝐻𝐻𝜇𝜇𝐻𝐻𝐻𝐻� = 0.36 𝜇𝜇𝐻𝐻𝐻𝐻
+𝜇𝜇2ℎ𝐻𝐻𝐻𝐻𝐻𝐻 
+Sum the accumulated hourly PAR values for a daily PAR value. 
+ For the remaining 10 days, the light intensity is maintained at 250 µmol/m2/s.  The photoperiod 
+(or day length) is 24 hours.  Shorter photoperiods are acceptable if the light intensity is increased 
+to provide the same total daily accumulated light (~22 mol/m2/d).  Anecdotal evidence shows 
+that some lettuce seedlings can tolerate 30 mol/m2/d.   
+Note for germination rooms: Light output of CWF and HID lamps decays over time.  Thus, it is 
+important to measure the light output of the lamps regularly.  If the light intensity drops below an 
+acceptable level (e.g. 200 µmol/m2/s), new lamps should be installed.  A quantum sensor can be 
+used to measure the amount of PAR. 
+ 
+
+
+PAGE 11
+` 
+© Cornell University CEA Program 2013 
+ 
+ 
+Figure 10.Aspirated box in a greenhouse.  A fan draws air from the bottom of the box over the sensors. 
+ 
+Figure 11. Aspirated box opening on bottom of box. 
+This is an example of an aspirated box (Figure 10) which houses and protects the sensors the 
+computer uses to make control decisions from light or localized temperature fluxes.  Most 
+greenhouse control systems supply their own aspirated boxes with sensors included that will be 
+used for environmental monitoring.  Aspirated boxes can be home-made but care must be taken 
+so that the air is drawn over the sensors so that heat is not added to the air from the fans.  The 
+position of the box should be close to the plant canopy to measure the environmental parameters 
+at the plant level.  This may not be possible in all germination areas.  The box is equipped with a 
+small fan which draws air past the sensors (Figure 11).  Sensors are located upstream from the 
+fan.  
+Sensors 
+See "Sensors" under Chapter 3: Computer Technology for full details.  
+ 
+ 
+
+
+PAGE 12
+` 
+© Cornell University CEA Program 2013 
+ 
+1.2 Pond Area 
+The concepts involved in the pond area are the following: 
+Pond Size  
+Pond Solution  
+Construction  
+Pond Design  
+Lighting  
+Paddle Fan  
+Aspirated Box  
+Pond Size 
+For example, for the production of 1245 heads per day a 660 m2 growing area is required. The 
+lettuce plants are grown in the pond area for 24 days. This includes one re-spacing of the plants 
+at Day 21, from 97 plants m-2 to 38 plants/sq m. 
+Pond Solution 
+Equal portions of Stock Solutions A and B (see formulas in appendix) are added to reverse-
+osmosis RO water to achieve an EC of 1200 µS/cm or 1.2 dS/cm. 
+Construction 
+  
+Figure 12. Empty pond with liner. 
+ 
+
+
+PAGE 13
+` 
+© Cornell University CEA Program 2013 
+ 
+Figure 13.Edge of pond detail.  The inside edges of two separate ponds made of wood and separated by structural 
+members is shown on left. The right hand picture shows a concrete pond. 
+There are three main options for pond construction. 
+• The pond may be sunken in the greenhouse floor, with the pond surface just 
+above the floor (not pictured). 
+• A containerized pond with concrete or wooden walls (Figure 12) can be 
+constructed on top of the floor of the greenhouse. 
+• The pond can be built on an island of fill with the ponds built into the fill so that 
+the water level is closer to waist level to lessen the amount of bending that must 
+be performed when working with the crop.  An important note is that a 
+greenhouse that uses this system must be sufficiently tall so that supplemental 
+lighting is not too close to the plants (not pictured). 
+In any case, the pond floor can be layered with sand to cushion any sharp edges from puncturing 
+the polyethylene lining. A heavy plastic (for example, 0.5 mm poly) liner is then installed as the 
+major barrier for leak protection. Proper precautions should be taken to avoid leaks. 
+Design 
+The pond area is designed to allow for one plant spacing (also called re-spacing) on Day 21.  To 
+facilitate the spacing process, multiple ponds run in parallel.  The plants are grown in one of the 
+ponds between days 11 and 21.  After re-spacing (from 97 plants m-2 to 38 plants m-2) the plants 
+are moved to one of the remaining ponds where they will be grown for two weeks (day 21 
+through day 35). 
+Lighting 
+Uniform light distribution is required in the Pond Growing Area.  A supplemental light intensity 
+within the range of 100-200 µmol/m2/s (for a total of 17 mol/m2/d1 of both natural and 
+supplemental lighting) at the plant level is recommended.  It should be noted that 17 mol/m2/d is 
+the light integral that worked best for the particular cultivar of boston bibb lettuce that we used.  
+For some cultivars, 15 or mol/m2/d is the maximum amount of light that can be used before the 
+physiological condition called tipburn occurs. High pressure sodium (HPS) lamps are a type of 
+High Intensity Discharge (HID) lamp, and are used to supply light.  These lamps are relatively 
+efficient, have a long life (~25,000 hours, generally these lamps lose 1% output for every 1000 
+hours), and slowly decay in output over time.  There is a recent development in the 
+manufacturing process for metal halide lamps that gives them a lifetime similar to high pressure 
+sodium lamps.  Metal halide lamps have a spectrum that is slightly more efficient for plant 
+growth than high pressure sodium lamps.  A new bulb produced by the Philips corporation has 
+exaggerated the benefits of metal halide lamps including shifting more light production to the 
+blue and red portions of the spectrum and decreasing the heat output of the luminare.  
+Independent lighting consultants have specialized software to determine proper number and 
+placement of lamps needed for a specific and uniform light intensity.  It is critical to have the 
+correct lighting system installation. 
+
+PAGE 14
+` 
+© Cornell University CEA Program 2013 
+ 
+Because the CEA lettuce program is production-intensive, lighting and electrical power usage is 
+high.  Local utility companies should have information on special rates and rebate programs for 
+new industries and Controlled Environment Agriculture facilities.  
+Lighting Configuration and High Intensity Discharge (HID) Lamps 
+The number and position of the lamps were determined using a specialized lighting configuration 
+computer program.  
+Figure 9 shows a high pressure sodium (HPS) lamp and luminaire used for supplemental 
+lighting.  These lamps provide the recommended Photosynthetically Active Radiation (PAR) 
+needed to supplement natural light.  The computer control program records the irradiance and 
+adjusts (on and off) the supplemental lighting system to achieve a predetermined total light level 
+each day.  For the lettuce production the recommended level is 17 mol/m2/d. 
+ 
+Paddle Fan  
+ 
+Figure 14. Paddle fan to increase vertical air movement and therefore evapotranspiration.  This is important for the 
+prevention of tipburn.  A 17 mol/m2/d DLI target has to be matched with sufficient downward air flow to prevent tip 
+burn. Without the air flow, we were not able to go over 12 mol/m2/d. 
+An overhead fan (paddle fan - Figure 14) is used to blow air vertically down onto the lettuce 
+plants at the rate of 140 cubic feet per minute per square foot of pond area.  The airflow increases 
+plant transpiration.  This increase in transpiration increases the transport of nutrients, especially 
+calcium, from the roots to the young, fast-growing lettuce leaves.  The greater rate of nutrient 
+transport provides sufficient amounts of calcium to the leaves and, therefore, prevents 
+tipburn.  Without this airflow, lettuce must be grown under reduced light levels (for example at 
+12 mol/m2/d instead of 17 mol/m2/d but realize that this data is only for cultivar Ostinata which 
+is no longer available), which slows the rate of growth. The actual daily light integral target that 
+can be achieved with and without vertical airflow before tip burn occurs is a function of cultivar 
+selection, spacing and airflow.  The numbers given above are examples of what has been 
+
+
+PAGE 15
+` 
+© Cornell University CEA Program 2013 
+ 
+successful in our situation and are not the only solution and no attempt was made to establish 
+airflow maxima and minima. 
+ 
+Aspirated Box 
+ 
+Figure 15. Aspirated box with digital output screen in greenhouse. 
+The aspirated box located in the pond area has the same function as the aspirated box in the 
+germination area.  
+
+
+PAGE 16
+` 
+© Cornell University CEA Program 2013 
+ 
+Chapter 2: System Components 
+System Component Information  
+Note: References to company and brand names are used for identification purposes only 
+and do not necessarily constitute endorsements over similar products made by other 
+companies.  
+2.1 Dissolved Oxygen Sensor 
+Most manufacturers recommend that dissolved oxygen sensors be calibrated daily.  Modern 
+sensors are fairly stable and will probably not go out of calibration in such a short time period.  
+Remember that your data is only as good as your calibration, so be sure to calibrate all sensors 
+on a regular basis. 
+A hand-held sensor (~$600 in 2013) is always an essential trouble-shooting tool and should 
+always be available.  If the facility is one acre or larger, an in-line sensor may be a worthwhile 
+investment.   
+Model: Orion 820, hand held, battery operated 
+Manufacturer: Orion Research Inc., Boston, MA 
+Some other manufacturers that make this same quality meter are YSI, Oakton and Extech 
+2.3 Compact Submersible Centrifugal Pump 
+Specifications: 0.02 HP, 75 W, max 1.5 Amps 
+2.4 Flow Meters 
+ 
+Figure 16. Model: H-03216-04: 65 mm variable area aluminum flow meter with valve and glass float for O2. 
+Manufacturer: Cole Parmer Instrument Co., Niles, IL 
+
+
+PAGE 17
+` 
+© Cornell University CEA Program 2013 
+ 
+Specifications: Max. flow rate for O2 = 46 ml/min. 
+ 
+Chapter 3: Computer Technology and Monitoring 
+Computer technology is an integral part in the production of hydroponic lettuce.  A computer 
+control system (example: Argus, Hortimax, Priva) should be used to control the abiotic 
+environment.  Different sensors are used to monitor greenhouse environment parameters.  These 
+parameters include temperature of greenhouse air and nutrient solution, relative humidity and 
+carbon dioxide concentration of greenhouse air, light intensities from sunlight and supplemental 
+lighting, pH, Dissolved Oxygen (DO) levels, and Electrical Conductivity (EC) of the nutrient 
+solution. Sensors will communicate the environmental conditions to the control computer which 
+will activate environmental control measures such as heating, ventilation, and lighting. 
+3.1 Biological Significance of Environmental Parameters 
+Temperature 
+Temperature controls the rate of plant growth.  Generally, as temperatures increase, chemical 
+processes proceed at faster rates.  Most chemical processes in plants are regulated by enzymes 
+which, in turn, perform at their best within narrow temperature ranges.  Above and below these 
+temperature ranges, enzyme activity starts to deteriorate and as a result chemical processes slow 
+down or are stopped.  At this point, plants are stressed, growth is reduced, and, eventually, the 
+plant may die.  The temperature of the plant environment should be kept at optimum levels for 
+fast and successful maturation.  Both the air and the water temperature must be monitored and 
+controlled. 
+Relative Humidity 
+The relative humidity (RH) of the greenhouse air influences the transpiration rate of plants.  High 
+RH of the greenhouse air causes less water to transpire from the plants, which causes less 
+transport of nutrients from roots to leaves and less cooling of the leaf surfaces.  High humidities 
+can also cause disease problems in some cases.  For example, high relative humidity encourages 
+the growth of botrytis and mildew. 
+Carbon Dioxide or CO2  
+The CO2 concentration of the greenhouse air directly influences the amount of photosynthesis 
+(growth) of plants.  Normal outdoor CO2 concentration is around 390 parts per million 
+(ppm).  Plants in a closed greenhouse during a bright day can deplete the CO2 concentration to 
+100 ppm, which severely reduces the rate of photosynthesis.  In greenhouses, increasing CO2 
+concentrations to 1000-1500 ppm speeds growth.  CO2 is supplied to the greenhouse by adding 
+liquid CO2.  Heaters that provide carbon dioxide as a by-product exist but we do not recommend 
+these because they often provide air contaminants that slow the growth of the lettuce. 
+Lights 
+Light measurements are taken with a quantum sensor, which measures Photosynthetically Active 
+Radiation (PAR) in the units µmol/m2/s.  PAR is the light which is useful to plants for the 
+
+PAGE 18
+` 
+© Cornell University CEA Program 2013 
+ 
+process of photosynthesis.  Measurements of PAR give an indication of the possible amount of 
+photosynthesis and growth being performed by the plant.  Foot-candle sensors and lux meters are 
+inappropriate because they do not directly measure light used for photosynthesis. 
+Dissolved Oxygen 
+Dissolved oxygen (DO) measurements indicate the amount of oxygen available in the pond 
+nutrient solution for the roots to use in respiration.  Lettuce will grow satisfactorily at a DO level 
+of at least 4 ppm.  If no oxygen is added to the pond, DO levels will drop to nearly 0 ppm.  The 
+absence of oxygen in the nutrient solution will stop the process of respiration and seriously 
+damage and kill the plant.  Pure oxygen is added to the recirculation system in the 
+ponds.  Usually the level is maintained at 8 (7-10, no advantage to 20) ppm.  For sufficiently 
+small systems, it is possible to add air to the solution through an air pump and aquarium air stone 
+but the dissolved oxygen level achieved will not be as high as can be achieved with pure oxygen. 
+pH 
+The pH of a solution is a measure of the concentration of hydrogen ions.  The pH of a solution 
+can range between 0 and 14. A neutral solution has a pH of 7.  That is, there are an equal number 
+of hydrogen ions (H+) and hydroxide ions (OH-).  Solutions ranging from pH 0-6.9 are 
+considered acidic and have a greater concentration of H+.  Solutions with pH 7.1-14 are basic or 
+alkaline and have a greater concentration of OH-. 
+The pH of a solution is important because it controls the availability of the fertilizer salts.  A pH 
+of 5.8 is considered optimum for the described lettuce growing system, however a range of 5.6-
+6.0 is acceptable.  Nutrient deficiencies may occur at ranges above or below the acceptable 
+range.  
+Electrical Conductivity 
+Electrical conductivity (EC) is a measure of the dissolved salts in a solution.  As nutrients are 
+taken up by a plant, the EC level is lowered since there are fewer salts in the 
+solution.  Alternately, the EC of the solution is increased when water is removed from the 
+solution through the processes of evaporation and transpiration.  If the EC of the solution 
+increases, it can be lowered by adding pure water, e.g., reverse osmosis water).  If the EC 
+decreases, it can be increased by adding a small quantity of a concentrated nutrient stock 
+solution. When monitoring the EC concentration, be sure to subtract the base EC of your source 
+water from the level detected by your sensor. 
+Monitoring 
+The following parameters should be monitored.  Specific sensor recommendations will not be 
+made here. 
+Temperature, see Figure 12. 
+Relative Humidity, see Figure 12. 
+Carbon Dioxide Concentration (Infra Red Carbon Dioxide Sensor)  
+Light (Quantum PAR sensor), see Figure 13. 
+Dissolved Oxygen, see Figure 14. 
+pH 
+
+PAGE 19
+` 
+© Cornell University CEA Program 2013 
+ 
+Electrical Conductivity (EC) 
+ 
+Figure 17. Quantum PAR sensor to measure light available for photosynthesis.  Foot-candle sensor and lux meters are 
+inappropriate because they are designed to quantify the sensitivity of the human eye and overestimate (~25%) the light 
+available for photosynthesis 
+ 
+Figure 18. Dissolved oxygen sensor.  DO levels should be greater than 4 ppm to prevent growth inhibition. Visible signs of 
+stress may be observed at 3 ppm. 
+3.3 Set-points 
+Air Temperature  24 C Day/19 C Night (75 F/65 F) 
+Water Temperature  No higher than 25C, cool at 26C, heat at 24C 
+Relative Humidity  minimum 50 and no higher than70% 
+Carbon Dioxide  1500 ppm if light is available, ambient (~390 ppm) if not 
+Light    17 mol m2/d combination of solar and supplemental light 
+D O    7 mg/L or ppm, crop failure if less than 3 ppm 
+pH    5.6-6 
+
+
+PAGE 20
+` 
+© Cornell University CEA Program 2013 
+ 
+EC    1150-1250 µS/cm above the source water 
+Chapter 4: Lettuce Production 
+Lettuce Production  
+This handbook is directed toward a daily production of 5 ounce (150 grams) heads of leaf 
+lettuce.  The production of the lettuce crop is separated into two growing areas.  Seeds are started 
+in a germination area where they germinate and grow for 11 days.  They should be shaded from 
+full sun on the first day after germination, but can then be exposed to full light (17 mol/m2/d) or 
+slightly greater.  On Day 11, the plants are transported to the greenhouse and transplanted into 
+the pond area where they are grown until re-spacing on day 21 and finally harvested on Day 35. 
+Germination Area Stage 
+Germination Area stage is scheduled for Production Days 0-11 and may occur in a growth 
+chamber or nursery area in the greenhouse. 
+Day 0 - Sowing 
+Production begins with the making of the germination media.  The media fills 7 plug trays of 200 
+plugs each (1” rockwool cubes that are 10 x 20 cells per sheet).   One lettuce seed is placed into 
+each plug.  This can be done with an automated seeding machine such as a drum seeder or a 
+vacuum seeder.   Rockwool should be moistened with nutrient solution that has a relatively low 
+pH such as 4.5 to remove pockets of high pH contaminants. 
+The trays are placed into the germination area which may be an Ebb and Flood bench, a table, or 
+on a float in the pond.  Trays on an Ebb and Flood bench are sub-irrigated with RO water for 1/4 
+hour every 12 hours.  For the initial 24 hours, lighting is maintained at 50 µmol/m2/s with a 
+photoperiod (day length) of 24 hours to ensure good germination if a germination room is 
+used.  The temperature is set for 20C (68F) in the germination room.  The seed trays may be 
+covered with plastic humidity covers to ensure a high relative humidity which prevents 
+desiccation. 
+ 
+Day 1 - Environmental Adjustment 
+ 
+
+
+PAGE 21
+` 
+© Cornell University CEA Program 2013 
+ 
+A fertilizer solution is added to the top or sub-irrigation water 24 hours after sowing.  The EC of 
+the water is maintained at 1200 µS/cm1above source water EC.  The pH of the solution is 
+adjusted to 5.8 with possible addition of a base, potassium hydroxide (KOH) and nitric acid 
+when it is too high. 
+The temperature is raised to 25C and the lights increased to 250 µmol/m2/s.  These 
+environmental factors are maintained for the remainder of the crops' time in the germination 
+area.  Sub-irrigation continues for 1/4 hour every 12 hours until Day 6.  The photoperiod remains 
+at 24 hours.  If hand-watering is used the same watering frequency does not need to be used but 
+care must be takes so that the media does not dry out. 
+ 
+Day 2 - Decreasing Humidity  
+ 
+The humidity covers in place on Days 0 and 1 are removed on Day 2.  At this time, the seed has 
+germinated and the radicle has started to penetrate into the soil, as can be seen in the above 
+photo.  High humidity levels during the first two days of germination are to ensure the seed does 
+not desiccate.  Low lights levels during the first 24 hours work in conjunction with the high 
+humidity to prevent excessive seed drying. 
+Day 3 - Removing Double Seedlings 
+ 
+Any double seedlings should be removed from the plugs on Days 3 or 4 to ensure a uniform 
+crop. Any seedlings that are particularly large should be removed so they do not suppress the 
+growth of neighboring plants.  Also, germination percentage can be determined to monitor seed 
+
+
+PAGE 22
+` 
+© Cornell University CEA Program 2013 
+ 
+quality and proper growing conditions at this stage. It is critical to have consistent environmental 
+conditions and consistent plant growth during this stage. 
+Day 4  
+ 
+Day 5  
+ 
+ 
+ 
+ 
+ 
+Day 6 - Increasing Watering Frequency  
+ 
+The lettuce seedlings have grown to such a size that they now require watering more frequently. 
+The sub-irrigation system if using an ebb and flood table is scheduled for flooding four times per 
+
+
+PAGE 23
+` 
+© Cornell University CEA Program 2013 
+ 
+day, or every six hours, for 1/4 hr (15 min).  If top watering with a breaker once a day should 
+suffice. 
+The following is a series of photos showing the growth of an individual lettuce seedling over a 5 
+day period.  
+Day 7 
+ 
+Day 8 
+ 
+Day 9 
+ 
+ 
+ 
+ 
+
+
+PAGE 24
+` 
+© Cornell University CEA Program 2013 
+ 
+Day 10 
+ 
+Day 11 
+  
+At this time, the leaves are beginning to overlap.  The roots of the seedlings have grown through 
+the bottom of the plug tray.  When transporting the plugs to the pond area, avoid damaging these 
+exposed roots. 
+ 
+ 
+ 
+ 
+ 
+ 
+Day 11  
+This photo shows the plants just after transplanting into the floats. 
+ 
+
+
+PAGE 25
+` 
+© Cornell University CEA Program 2013 
+ 
+Transplanting 
+On Day 11, the seedlings are transported to the greenhouse and transplanted into the pond.  Prior 
+to transplanting, the seedlings are thoroughly sub-irrigated.  Transplanting can be scheduled to 
+follow normal sub-irrigation periods in order to prevent desiccation during transfer. 
+The seedling plugs float in the pond in Styrofoam floats.  Each float is hand-drilled from 1” 
+insulation.  A wooden template placed over the Styrofoam board to be drilled hastens the drilling 
+process.  A drill press may be used if board geometry allows. Several holes can be drilled 
+simultaneously if a clever drill press apparatus is created.  A pneumatic drill may be used and 
+will make a cleaner hole as it operates at a higher speed. 
+Styrofoam Floats 
+ 
+Day 21 – Transplant 
+ 
+Day 35 – Harvest 
+ 
+
+
+PAGE 26
+` 
+© Cornell University CEA Program 2013 
+ 
+Post-Harvest 
+ 
+Styrofoam floats are cleaned between each growing cycle with a weak bleach (2%) solution. 
+Chapter 5: Packaging and Post-Harvest Storage 
+Packaging can be a significant cost depending on what materials customers demand.  Often both 
+a package for the product as well as a box to transport product in must be purchased. 
+Options: 
+In clamshell with or without roots 
+In lettuce boquet with or without roots – clamshell or bag 
+Post-Harvest Storage 
+After being packaged, the lettuce should be stored at 40F. 
+  
+
+
+PAGE 27
+` 
+© Cornell University CEA Program 2013 
+ 
+Chapter 6: Crop Health 
+Disease 
+Maintaining a healthy crop is vital. Powdery mildew can be a problem during winter production 
+of lettuce.  A plan should be in place for the treatment of mildew and appropriate chemical 
+controls should be obtained before the crop is planted.   
+The following are suggestions for maintaining a healthy greenhouse environment:  
+Keep the crop rapidly growing by providing adequate light, nutrients, and other environmental 
+conditions at all times. 
+If root disease does occur, the ponds and solution tanks should be drained and the crop 
+sacrificed.  The ponds and tanks should be cleaned with a 2% bleach solution. Other sanitation 
+products exist and are easily available such as Greenshield. It is possible the disease started in 
+the Germination Area, and that area, including the benches and solution tanks, should be cleaned, 
+as well.  
+Wash the Styrofoam floats, trays, and other equipment with a 2% bleach solution.  The 
+equipment should be washed between each use, to prevent the spread of disease. 
+Do not bring other plant material or soil into the greenhouse.  This material may contain pests 
+and pathogens likely to infect your crop.  Keep visitors to the greenhouse to a minimum or 
+allow them to view the production area from the outside of the greenhouse only.   
+Keep the solution tanks shaded in some manner.  Algae flourish in wet, well-lit locations, and the 
+solution tank is ideal for algal growth.  Shading the tanks, input and output pipes, and other 
+"wet" equipment will inhibit algal growth.  The algae will not harm the crop directly, but may act 
+to weaken the crop to potential disease. 
+Pests 
+Pests in hydroponic lettuce production can be a problem though they are not generally a major 
+problem.  Insect pests that may be found coupled with hydroponic lettuce production include 
+shore flies, fungus gnats, thrips, and aphids.  Fast plant growth rates make pest population 
+establishment difficult.  With continuous crop production, pest populations may have the 
+opportunity to establish themselves.  Precautions can be taken to exclude pests from the facility, 
+such as screening potential entry points (ventilation inlets).  Keeping the grass and weeds mowed 
+outside the greenhouse or removing all vegetation entirely can reduce pest pressure inside the 
+greenhouse.  Few pesticides have been labeled for use on greenhouse vegetables.  Biological 
+insect control is a viable but less used alternative.  The CEA group tried nicotine as an aphid 
+deterrent but not only did it not control aphids, but it also left a discernible taste on the lettuce. 
+  
+
+PAGE 28
+` 
+© Cornell University CEA Program 2013 
+ 
+Chapter 7: References 
+AUTHOR(S): Albright, L.D. 1997.  
+TITLE: Ventilation and shading for greenhouse cooling.  
+WHERE: Proceedings of the International Seminar on Protected Cultivation in India, December 
+18-19, Bangalore, India. pp. 17-24. 
+AUTHOR(S): Albright, L.D. 1997.  
+TITLE: Specifications, functioning and maintenance of equipment for forced cooling of 
+greenhouses.  
+WHERE: Proceedings of the International Seminar on Protected Cultivation in India, December 
+18-19, Bangalore, India. pp. 25-32.  
+AUTHOR(S): Albright, L.D. 1997.  
+TITLE: Greenhouse thermal environment and light control.  
+WHERE: In Plant Production in Closed Ecosystems, E. Goto et al. (eds.). Kluwer Academic 
+Publishers, the Netherlands. pp. 33-47.  
+ABSTRACT: Greenhouse thermal environment results from the interactions among numerous 
+factors: solar insolation; structural thermal characteristics; operation of heating, ventilation, and 
+cooling systems; supplemental lighting; and properties of the greenhouse crop are among the 
+most important. As greenhouse technology and sophistication evolve and environmental control 
+becomes more complete, the importance of supplemental lighting increases. Luminaires 
+contribute a sensible cooling load directly, and a latent cooling load indirectly by influencing 
+transpiration. The objectives of this paper are to provide a general overview of greenhouse 
+thermal environment, outline a methodology for greenhouse supplemental lighting control, and 
+explore the interactions of supplemental lighting and the thermal environment. The approach 
+used is based on modeling of greenhouse thermal processes, and simulations of supplemental 
+lighting system control.  
+AUTHOR(S): Albright, L.D. 1996.  
+TITLE: Controlled environment lettuce-production modules.  
+WHERE: Proceedings of the 26th National Agricultural Plastics Congress and the American 
+Greenhouse Growers Association Conference, June 14-18, Atlantic City, NJ. pp. 265-270.  
+AUTHOR(S): Albright, L.D. 1996.  
+TITLE: The importance of design and control of light in high-productivity controlled 
+environment agriculture (CEA).  
+WHERE: Keynote paper, presented at the International Conference on Agricultural and 
+Biological Environment (ICABE), August 15-19, Beijing, China. China Agricultural University 
+Press, Beijing, China. 6 pp.  
+ABSTRACT: Of the numerous environmental parameters important for plant growth, light 
+(PAR) is arguably the second most important (with the first being, thereby, temperature). Light is 
+the basis for plant g-rowth, timing and quality. If CEA facilities are to move to a higher level of 
+sophistication and productivity, lighting systems must be designed as carefully as are heat-ing 
+systems and light must be con-trolled as carefully as is temperature. Commercial com-puter 
+
+PAGE 29
+` 
+© Cornell University CEA Program 2013 
+ 
+programs exist that can be used to design supplemental lighting systems to a-chieve uniformity 
+of PPF. New algorithms are being developed that can con-trol supplemental lights and movable 
+shade mechanisms either by PPF level as a function of the stage of growth, or to achieve the 
+same total integrated PPF each day. This presentation describes the importance of light control 
+for con-sistent plant growth and recent work that shows the benefits of controlling light to a 
+consistent daily integral. The report also describes computer programs that can be used for 
+design and then control to achieve that goal. The technical details form the basis for a wider 
+vision of the potential for Con-trolled Environment Agriculture.  
+AUTHOR(S): Albright, L.D., and H.I. Henderson, Jr. 1996.  
+TITLE: Air conditioning greenhouses to increase effectiveness of carbon dioxide 
+enrichment.  
+WHERE: ASAE paper 964007. ASAE, 2950 Niles Road, St. Joseph, MI 49085-9659. 15 pp.  
+ABSTRACT: Greenhouse lettuce, and other crops, can benefit from supplemental lighting to 
+enhance growth on dark days. When carbon dioxide is added during lighted hours, growth may 
+be enhanced further. Unfortunately, heat added by lights may initiate venting and waste carbon 
+dioxide. This paper presents a simulation model that suggests a modest degree of air 
+conditioning may be economically beneficial in permitting carbon dioxide enrichment without 
+venting to substitute for supplemental lighting to enhance growth. The simulations suggest the 
+savings of lighting costs may compensate for operating a simple air conditioning system during 
+days of moderate cooling load and limited solar input.  
+AUTHOR(S): Albright, L.D. 1995.  
+TITLE: Controlling greenhouse ventilation inlets by pressure difference.  
+WHERE: HortTechnology 5(3):260-264.  
+ABSTRACT: Computerized control of the greenhouse climate has increased the importance of 
+air distribution and mixing. This report reviews the fluid mechanics of air flow through 
+ventilation inlets and external pressures imposed by winds and applies the analyses to suggest 
+methods of inlet control that improve traditional greenhouse ventilation. The suggested improved 
+control has been implemented in a five-section research greenhouse on the Cornell University 
+campus and has improved climate control significantly during ventilation. Potential pitfalls in 
+implementing the improved control methods are discussed.  
+AUTHOR(S): Albright, L.D. 1995.  
+TITLE: Greenhouse lighting control to a daily PPF integral, with energy and cost 
+consequences.  
+WHERE: ASAE paper 954487. ASAE, 2950 Niles Road, St. Joseph, MI 49085-9659. 22 pp.  
+ABSTRACT: A methodology is described and, from it, an accompanying computer model has 
+been developed to calculate the yearly operating cost of a supplemental lighting system for 
+commercial greenhouses based on reaching a prescribed daily integral of PPF. The model is 
+sensitive to time-of-day rates (including application of those rates to weekends and holidays), 
+weather, greenhouse characteristics, luminaire characteristics, and greenhouse location.  
+AUTHOR(S): Albright, L.D. 1994.  
+TITLE: Predicting greenhouse ventilating fan duty factors and operating costs.  
+
+PAGE 30
+` 
+© Cornell University CEA Program 2013 
+ 
+WHERE: ASAE paper 944576. ASAE, 2950 Niles Road, St. Joseph, MI 49085-9659. 20 pp.  
+ABSTRACT: A methodology is described and, from it, an accompanying computer model has 
+been developed to calculate the yearly operating cost of a mechanical ventilation system for 
+commercial greenhouses having no installed evaporative (or other) cooling system. The model is 
+sensitive to time-of-day rates (including application of those rates to weekends and holidays), 
+thermal parameters, fan characteristics, environmental control set points, and weather.  
+AUTHOR(S): Albright, L.D. 1994.  
+TITLE: Fan operating costs for controlled environment agriculture.  
+WHERE: Proceedings of the 5th annual CAEP Agricultural Demand-Side Management 
+Conference. Albany, NY. May 3-5, 1994. A Northeast Regional Agricultural Engineering 
+Service Publication. Riley-Robb Hall, Cornell University, Ithaca, NY 14853. pp. 51-60.  
+AUTHOR(S): Albright, L.D., and A.J. Both 1994.  
+TITLE: Comparison of luminaires: efficacies and system design.  
+WHERE: Proceedings of the International Lighting for Plants in Controlled Environments 
+Workshop. University of Wisconsin, WI. March 27-30, 1994. NASA Conference Publication 
+CP-3309. pp.281-297.  
+ABSTRACT: The trust of this report suggests supplemental lighting design processes that might 
+be used to achieve desired PAR levels and adequate uniformity over a lighted space. Measured 
+PAR distribution patterns from eight commercially available 400 W HPS luminaires are used in 
+three design examples, implemented through a commercially-available lighting design computer 
+program. Results suggest that PAR uniformity within ±10% is achievable at intensities of 200 
+and 300 micromol/sq. m/s in greenhouses and plant growth chambers. When PAR intensity is 
+significantly lower (e.g., 50 micromol/sq. m/s), uniformity is more difficult to achieve. This 
+study suggests the desirability of developing computer data file standards for PAR, rather than 
+vision lighting, for commercial luminaires, and obtaining a consensus data base of surface 
+reflectance values for materials used in plant growth chambers and greenhouses. Results also 
+suggest that luminaire selection can have a significant effect on lighting energy use and operating 
+cost because of different numbers of various models of luminaires required to meet a design 
+goal, not just luminaire-to-luminaire efficacy differences.  
+AUTHOR(S): Both, A.J., S.S. Scholl, L.D. Albright, and R.W. Langhans. 1998.  
+TITLE: Comparing continuous lettuce production in nutrient film technique and floating 
+hydroponics.  
+WHERE: Proceedings of the 15th International Lettuce Conference and Leafy Vegetable Crops 
+Workshop. September 23-26, 1998. Atlantic City, NJ. pp. 16-17.  
+AUTHOR(S): Both, A.J., L.D. Albright, and R.W. Langhans. 1998.  
+TITLE: Coordinated management of daily PAR integral and carbon dioxide for hydroponic 
+lettuce production.  
+WHERE: Acta Horticulturae 456:45-51.  
+ABSTRACT: The interaction between daily integrated photosynthetically active radiation (PAR) 
+and elevated aerial CO2 concentra-tion was studied during plant growth experi-ments with leaf 
+lettuce (Lactuca sativa L., cv. Vivaldi) in a controlled environ-ment agriculture facility 
+
+PAGE 31
+` 
+© Cornell University CEA Program 2013 
+ 
+(greenhouse) using the nutrient film technique. Accurate control of all environment parameters 
+(except relative humidity) and four identical greenhouse sections constituted the experimental 
+setup. Supplemental lighting (high pressure sodium lamps) was used to provide additional PAR 
+to the lettuce on days when too little sunlight was available to reach the required daily light 
+integral. Two experiments with four treatments each were performed to investigate six integrated 
+PAR/CO2 concentration combinations:-- 11/1500; 12/1250; 13/1000; 14/750, 15/530, and 
+16/400 (mol per sq. m per d/ppm). Lettuce plants were grown for 24 days under these conditions 
+after being grown in a growth room under optimum condi-tions for 11 days. Periodic harvests 
+during the greenhouse growing phase provided shoot dry mass data. Shoot fresh mass and 
+number of leaves per plant were determined at the final harvest: 35 days after seeding. Plant 
+growth under the six different treatments was virtually identical and resulted in an average shoot 
+fresh mass of 190 g with a dry matter percent-age of 3.7%. The results of the described 
+experiments show a flexible management strategy regarding daily integrated PAR level and 
+aerial CO2 concentration can be employed for the most economical lettuce production.  
+AUTHOR(S): Both, A.J., C.A. Chou, L.D. Albright, and R.W. Langhans. 1997.  
+TITLE: A microwave powered light source for plant irradiation.  
+WHERE: Acta Horticulturae 418:189-194.  
+ABSTRACT: A new high intensity electrodeless light source, powered by two microwave 
+generating units, was evaluated and compared with fluorescent and air- and water- cooled high 
+pressure sodium (HPS) lamps. Radiation measurements were taken in the following wavebands: 
+400-700 nm (photosynthetically active radiation or PAR), 700-800 nm (far red), 800-2,800 nm 
+(near infrared) and 2,800-50,000 nm (far infrared), for all four light sources. The distribution of 
+the radiation output of the microwave lamp over the various wavebands closely resembled the 
+output of a water-cooled HPS lamp, although the microwave lamp was capable of delivering 
+much higher light intensities. The relatively small amount of radiation emitted in the infrared 
+waveband makes the microwave lamp a promising light source for plant irradiation in growth 
+rooms (phytotrons).  
+AUTHOR(S): Both, A.J., L.D. Albright, R.W. Langhans, B.G. Vinzant, and P.N. Walker. 1997.  
+TITLE: Electric energy consumption and PPFi output of nine 400 watt high pressure sodium 
+luminaires and a greenhouse application of the results.  
+WHERE: Acta Horticulturae 418:195-202.  
+ABSTRACT: The PPFi (instantaneous photosynthetic photon flux, in micromol/sq. m/s) output 
+and electric energy consumption of nine different 400 watt high pressure sodium (HPS) 
+luminaires were measured at six mounting heights from 0.5 to 3.0 m in 0.5 m increments. 
+Differences in luminaire efficacy and PPFi distribution patterns were found, but too few 
+luminaires were tested to reach statistically valid conclusions. The most efficient luminaire 
+proved 25% more energy efficient than the least efficient luminaire. PPFi data from one of the 
+luminaires tested was used to design a research greenhouse which required uniform PPFi 
+distribution patterns at various PPFi levels.  
+AUTHOR(S): Both, A.J., L.D. Albright, R.W. Langhans, R.A. Reiser, and B.G. Vinzant. 1997.  
+TITLE: Hydroponic lettuce production influenced by integrated supplemental light levels in a 
+controlled environment agriculture facility: Experimental results.  
+
+PAGE 32
+` 
+© Cornell University CEA Program 2013 
+ 
+WHERE: Acta Horticulturae 418:45-51.  
+ABSTRACT: Bibb lettuce (Lactuca sativa L., cv. Ostinata) was grown in peat-vermiculite plugs 
+placed in a recirculating hydroponic (NFT) system. Supplemental lighting was used to reach 
+different PPFtarget levels in each of 35 treatments. A second order exponential polynomial was 
+developed to predict DW accumulation for PPFtarget levels between 8 and 22 mol m-2 d-1. 
+Little difference in DW production was noted between lettuce grown under daytime and 
+nighttime lighting. Tipburn was prevented using a fan blowing greenhouse air vertically down 
+onto the lettuce plants. Marketable (150 g FW) lettuce heads were produced in 24 days after 
+transplant while receiving an average PPFintegral of 17 mol/sq. m/d.  
+AUTHOR(S): Both, A.J., A.R. Leed, E. Goto, L.D. Albright, and R.W. Langhans. 1996.  
+TITLE: Greenhouse spinach production in a NFT system.  
+WHERE: Acta Horticulturae 440:187-192  
+ABSTRACT: Primed spinach (Spinacia oleracea L., cv. Nordic) seed was started in rockwool 
+slabs in a growth room for eight days before the seedlings were transplanted into a controlled 
+environment greenhouse equipped with five identical, but separate, NFT systems. The day and 
+night temperatures in the greenhouse were maintained at 24 and 18°C, respectively, with the 
+daytime starting at 06:00 and ending at 22:00 hr. A photoperiod of 16 hrs was maintained, to 
+prevent early bolting, and different target daily integrated light levels (PPF, in mol/sq. m/d) were 
+studied to observe dry weight production. HPS lamps were used as the supplemental light source. 
+Thirty-three days after seeding a final harvest was performed. Using the expolinear growth 
+equation, dry weight production can be predicted based solely on target daily integrated light 
+levels. Total chlorine residuals in the nutrient solution higher than 1 ppm were observed to be 
+toxic. Root disease (rot) in the plant crown was found to be caused by Fusarium. Several 
+remedies, including three biofungicides and potassium silicate, were tried but none proved to be 
+consistently successful.  
+AUTHOR(S): Both, A.J.; 1995.  
+TITLE: Dynamic simulation of supplemental lighting for greenhouse hydroponic lettuce 
+production.  
+WHERE: PHD Dissertation, Cornell University Libraries, Ithaca, NY 14853. 172 pp.  
+ABSTRACT: During an eight month period, hydroponic lettuce growth experiments, consisting 
+of 35 different supplemental lighting treatments, were conducted in five identical greenhouse 
+sections in order to: (1) determine how supplemental lighting can be used to ensure consistent 
+and timely year-round greenhouse lettuce production in New York State, and (2) provide 
+greenhouse growers and researchers with a computer simulation program to study the effects of 
+different daily integrated light levels, indoor temperature, and plant spacing on the growth and 
+development of lettuce. The daily integrated photosynthetically active radiation (PAR) was kept 
+constant during each of the treatments by supplementing the solar PAR with PAR from 400 Watt 
+high pressure sodium (HPS) lamps. Among treatments, daily PAR varied between 4 and 22 
+mol/sq. m/d. The indoor greenhouse environment was computer controlled and carbon dioxide 
+enrichment (up to 1000 ppm) was used during the light period, but only when no ventilation was 
+needed to maintain the temperature set point. The temperature was maintained at 24 and 18.8 deg 
+C during the light and dark periods respectively. During the first 11 days, the lettuce seedlings 
+were kept in a growth chamber under fluorescent lamps. After transplant, the plants remained 24 
+
+PAGE 33
+` 
+© Cornell University CEA Program 2013 
+ 
+days in the greenhouse. Maintaining a daily PAR of 17 mol/sq. m/d in the greenhouse resulted in 
+a marketable lettuce head with a fresh weight of 150 grams (nearly 7 grams of dry weight) at 35 
+days after seeding. Lettuce tipburn was prevented using an overhead fan which blew ambient air 
+downward onto the lettuce plants. The computer simulation program predicts dry weight 
+production based on environment conditions in the greenhouse and plant parameters extracted 
+from the literature. The universal crop growth model SUCROS87 was adjusted and incorporated 
+in the simulation program. Using long-term average daily solar radiation data collected for 
+Ithaca, NY, the simulation model successfully predicted dry weight production compared to 
+plant dry weights measured during growth trials which were performed at Cornell University. 
+The simulation program will be a helpful tool for commercial lettuce growers and future 
+research.  
+AUTHOR(S): Both, A.J. 1994.  
+TITLE: HID Lighting in Horticulture: a short review.  
+WHERE: Greenhouse Systems, Automation, Culture and Environment. International 
+Conference. Hyatt Regency Hotel, New Brunswick, NJ. July 20-22, 1994. Northeast Regional 
+Agricultural Engineering Service, Publication 72. Riley-Robb Hall, Cornell University, Ithaca, 
+NY 14853. pp. 208-222.  
+AUTHOR(S): Both, A.J., L.D. Albright, R.W. Langhans, B.G. Vinzant, and P.N. Walker. 1992.  
+TITLE: Research on energy consumption of HID Lighting.  
+WHERE: Proceedings of the 4th National CAEP Agricultural Demand-Side Management 
+Conference. Syracuse, NY. October 20-22, 1992. Northeast Regional Agricultural Engineering 
+Service, Publication 65. Riley-Robb Hall, Cornell University, Ithaca, NY 14853. pp. 125-134.  
+AUTHOR(S): Chiu, A.J. 1996.  
+TITLE: Computer control of shade and supplemental lights for greenhouse hydroponic 
+lettuce production.  
+WHERE: MEng Report. Department of Agricultural and Biological Engineering, Cornell 
+University, Ithaca, NY 14853. 44 pp.  
+ABSTRACT: The purpose of this project was to design and test a computer-controlled shade and 
+supplemental lighting system for hydroponic lettuce production. The code was based on a Pascal 
+algorithm, written by Dr. Louis D. Albright, whose work was a computer simulation study of this 
+study. The goal was to determine how well theoretical and actual computations agree, and to 
+control a physical system to achieve prescribed daily light integrals. The system consisted of a 
+PS/2 computer, interfaced to high pressure sodium lamps, a horizontal shade curtain, and a Li-
+Cor quantum light sensor. A limited number of experiments were completed to test the 
+algorithm's performance. The first set of experiments involved the use of an event recorder and 
+theoretical events. The second set of experiments, however, tested the actual operation of the 
+luminaires and the shade cloth. Difficulties were encountered in tuning the system for accurate 
+light control, because some code parameters and constants needed to be altered by empirical 
+means. The daily integrated photosynthetically active radiation (PAR) was achieved by 
+supplementing the solar PAR with that from 400 Watt high pressure sodium (HPS) lamps, and 
+by deploying the shade cloth to limit solar PAR on bright days. Both the operation of the lights 
+and shade were used to try to achieve the target PAR goal of 17 mols per square meter per day. 
+
+PAGE 34
+` 
+© Cornell University CEA Program 2013 
+ 
+Lettuce crops were not grown in the greenhouse area, since extensive studies have shown that an 
+accumulation goal of 17 mols per square meter per day is the optimum light level for quality 
+Ostinata lettuce production. Therefore, it was assumed that if the system was able to maintain 
+this desired daily PAR, then lettuce crops can be grown with this shade and lighting system. The 
+control system was reliable for short-term experimentation, but long-term reliability has yet to be 
+tested. Testing occurred during several days in the month of April. However, testing during the 
+summer months, the period of greatest light insolation, still needs to be performed.  
+AUTHOR(S): Ciolkosz, D.E., L.D. Albright, and J.C. Sager. 1998.  
+TITLE: Microwave lamp characterization.  
+WHERE: Journal of Life Support and Biosphere Science Vol. 5:00-00. 18 pp. In Press.  
+ABSTRACT: The operating properties of the SAA microwave lamp, developed by Fusion 
+Lighting Inc., were determined with reference to its usefulness in Bioregenerative Life Support 
+Systems (BLSS). Lamp flux density in several wavelength ranges, spectral output, and 
+temperature response (-10 to +40 deg C) were determined by mounting the lamp and sensors in a 
+controlled environment chamber. Lamp intensity distribution was also measured using a swing 
+arm apparatus with a 1m radius. A model was developed to characterize the intensity distribution 
+of the lamp as a function of lamp geometry and output properties. The lamp was found to 
+produce a spectral output similar to that of earlier models, but with a higher photosynthetic 
+output per lumen and per input watt. Radiant energy output was measured to be 0.399 radiant 
+watts per micromol/s PAR compared with 0.56 radiant watts per micromol/s PAR for high 
+pressure sodium lamps. Total lamp output dropped approximately 0.4% for every degree C rise 
+in ambient temperature, with little change in light quality. The intensity distribution of the lamp 
+was found to produce a fairly uniform flux density (+/- 22%) in a 40 degree cone from lamp 
+nadir. the advantages and drawbacks of this light source for use in BLSS are discussed.  
+AUTHOR(S): Ciolkosz, D.E. and J.C. Sager. 1998.  
+TITLE: Imaging of LED array flux densities.  
+WHERE: Journal of Life Support and Biosphere Science Vol. 5:00-00. 15 pp. In Press.  
+ABSTRACT: Arrays of light emitting diodes (LEDs) are being used in life science plant flight 
+experiments and show promise for use in Bioregenerative Life Support Systems (BLSS). 
+However, the small volume and short distances from the LED array necessary in these 
+applications create several unique problems. The discrete LEDs are small and the spatial non-
+uniformity of the lamps near the array results in significant irradiance variation on surfaces near 
+the array. These irradiance variations make it difficult to use traditional hand held sensors to 
+measure the light levels under the array accurately. The usefulness of rear projection video 
+camera imaging is investigated for the analysis of uniformity of irradiance from an LED array. 
+Irradiance measurements were taken at a high mounting height from the array using both a 400-
+700 nm quantum sensor and a video camera. Additionally, video images were recorded at 
+different mounting heights from the array. The rear projection imaging technique was suitable 
+for analyzing the irradiance from LED arrays. Comparison of the readings from the video image 
+and the sensor suggests that there is a non linear relationship between video image reading and 
+sensor value (R sq. = 0.884). These data also show that the average photosynthetically active 
+radiation level (PAR) does not change as mounting height varies, but that the spatial uniformity 
+
+PAGE 35
+` 
+© Cornell University CEA Program 2013 
+ 
+of the PAR does increase as mounting height increases. These results are consistent with 
+geometrical analyses of the system.  
+AUTHOR(S): Ciolkosz, D.E., and L.D. Albright. 1997.  
+TITLE: Evaluation of whole plant transpiration as affected by greenhouse air movement.  
+WHERE: ASAE paper No. 974029. ASAE, 2950 Niles Road, St. Joseph, MI 49085-9659, USA. 
+18 pp.  
+ABSTRACT: Investigations were conducted to determine the degree to which evaporation of 
+reverse osmosis treated water from petri dishes can be used to predict evapotranspiration in 
+hydroponic greenhouses and, in turn, to evaluate airflow systems for their ability to induce 
+evapotranspiration. The relationship between crop evapotranspiration and dish evaporation was 
+found to be linear, with an R sq. (adj) of 0.592. Adding CO2 concentration to the relationship 
+improved the R sq. (adj) to 0.895. Severity of tipburn also evinced a relationship with dish 
+evaporation rate, but as a step function. Dish evaporation rates greater than 2 cm per day resulted 
+in the least tipburn on the crops. The crop coefficient, Kc, varied in a manner consistent to that of 
+field crops, except for a sharp drop at the time of plant respacing. The pan coefficient, Kc, 
+showed no noticeable trends with respect to time, and had an average of 0.215. Side by side 
+comparisons of different air distribution systems suggested that air distribution has a large effect 
+on dish evaporation (and, hence, plant evapotranspiration) and that unit heaters placed in a 
+collision flow or shear flow configuration can achieve a greater level of uniformity of 
+evaporation than use of overhead turbulator fans. The application of this information to the 
+design of air distribution systems for greenhouses is discussed.  
+AUTHOR(S): Ciolkosz, D.E., L.D. Albright, and A.J. Both. 1998.  
+TITLE: Characterizing evapotranspiration in a greenhouse lettuce crop.  
+WHERE: Acta Horticulturae 456:255-261.  
+ABSTRACT: Tipburn, a physiological disorder of lettuce, has been linked to insufficient 
+evapotranspiration (ET). Better understanding of ET in greenhouse lettuce crops may be useful 
+as a management tool to control tipburn. A regression model is presented to characterize ET 
+from greenhouse lettuce (Lactuca sativa L., cv. "Vivaldi") based on data from twelve crops 
+grown in a nutrient film technique (NFT) system. Several CO2 concentrations and daily light 
+integrals were applied to the lettuce crops and the resulting daily ET integrals were measured. A 
+regression model was derived for daily ET as a function of growth rate and the resulting daily 
+and cumulative ET values were calculated and compared to measured values. ET rate was found 
+to vary linearly with growth rate (R sq. (adj) = 0.63) but higher CO2 levels were associated with 
+lesser values of the slope of the relationship. Modeled and measured data were in good 
+agreement even though relative humidity was not included in the model. An equation is 
+presented that may be useful to calculate daily ET targets that must be achieved to prevent 
+tipburn in hydroponic lettuce.  
+AUTHOR(S): Controlled Environment Agriculture Program. 1996.  
+TITLE: Controlled environment agriculture scoping study.  
+WHERE: Electric Power Research Institute Publication CR-107152. EPRI, 3412 Hillview 
+Avenue, Palo Alto, CA 94304. 70 pp.  
+
+PAGE 36
+` 
+© Cornell University CEA Program 2013 
+ 
+AUTHOR(S): Dalrymple, K. D. 1998.  
+TITLE: Study of the water-jacketed high pressure sodium lamp: bare lamp flux density 
+experiments, reflector design, and placement within a growth chamber.  
+WHERE: MEng Report. Department of Agricultural and Biological Engineering, Cornell 
+University, Ithaca, NY 14853. 120 pp.  
+ABSTRACT: Horticultural lighting systems are used in growth chambers to produce high flux 
+density, uniform lighting conditions for plant growth. However, infrared radiation (heat) 
+generated by these lighting systems must be removed from the growth chamber for temperature 
+control. Heat rejection via mechanically cooling growth chamber air can be costly. In water-
+jacketed lamps, water is circulated around the lamp as a mechanism for heat removal from the 
+lamps. A water-jacketed high-pressure sodium (HPS) lamp made by Bhalla Lighting, Inc. was 
+tested for light output. A photosynthetically active radiation (PAR) sensor was used to record 
+flux density readings at varying angles from 0 to 90 degrees along a path 1.0 m from the lamp. 
+Readings were taken along the front, sides, and back of the lamp. The inverse square law was 
+used to convert the flux density data into lamp PAR intensity distributions. The light intensity 
+distribution of the water-jacketed HPS lamp was compared to light intensity distributions of two 
+non-water-jacketed HPS lamps. Tests were also conducted to determine if lamp efficiency was 
+temperature dependent. Wattage through the ballast was measured for non-water-jacketed and 
+water-jacketed lamp situations. Light output and wattage of the water-jacketed lamp were less 
+than those of the non-water-jacketed lamps. Lamp intensity distributions were used to create a 
+luminaire data file for use in Photopia, a reflector design software package created by Lighting 
+Technologies, Inc. Water-jacketed HPS lamp and reflector designs were created using AutoCAD 
+R13 and then tested in Photopia. The most suitable luminaire (lamp and reflector combination) 
+was then used in Lumen Micro, another lighting program developed by Lighting Technologies, 
+Inc., to generate a lighting plan for a plant growth room at the Cornell University CEA 
+Demonstration Greenhouse Facility. The lighting grid was designed to deliver maximum light 
+uniformity at the plant growth surface. The advantages and disadvantages of water-jacketed HPS 
+lamps are discussed. Recommendations for further development of water-jacketed HPS lamps 
+are made. Useful practical advice is given on the use of the water-jacketed lamp in the Cornell 
+University CEA Demonstration Greenhouse Facility.  
+AUTHOR(S): Danish, W.E. 1994.  
+TITLE: A growers' guide to lettuce crop production using nutrient film technique in 
+controlled environment agriculture facilities.  
+WHERE: MPS Project Report. Cornell University Libraries, Ithaca, NY 14853. 68 pp.  
+ABSTRACT: The purpose of this project is to provide a summary of the present level of 
+technology in the production of lettuce in Controlled Environment Agriculture (CEA) and a step-
+by-step practical growers' guide to greenhouse lettuce crop production using nutrient film 
+technique. The CEA research program began several years ago at Cornell to develop and 
+demonstrate new technologies and cultural methods aimed at improving the profitability of 
+horticultural crop production in controlled environments. CEA is not a completely new idea, but 
+an optimization of all know elements affecting plant growth. When the usual environmental 
+factors for crop production are optimized, temperature, water, and nutrients, the limiting factor to 
+plant growth is light. Plants need light to grow, and in the North East growers must rely on 
+supplemental lighting during the winter months to produce a finished crop in a reasonable time. 
+
+PAGE 37
+` 
+© Cornell University CEA Program 2013 
+ 
+Now, the cost of electricity is the largest component of variable costs. This guide leads growers 
+through lettuce crop production using nutrient film technique. In order for CEA to be successful. 
+the grower must be vigilant in adherence to the recommended principles shown here. Without 
+the buffering advantage of a crop grown in soil, any mistake, however small, can be fatal to the 
+lettuce crop. For all this trouble, the rewards can be great. The lettuce can grow from seed to a 
+marketable 5 ounce head in just 35 days by following directions.  
+AUTHOR(S): de Villiers, D.S. 1997.  
+TITLE: Vegetable cultivar evaluation and crop selection for controlled environment 
+agriculture and advanced life support systems.  
+WHERE: MSc Thesis. Cornell University Libraries, Ithaca, NY 14853. 176 pp.  
+ABSTRACT: Cultivar evaluation for controlled environments is a lengthy and multifaceted 
+activity. The chapters of this thesis cover eight steps preparatory to yield trials, and the final step 
+of cultivar selection after data are collected. The steps are as follows: (1) Examination of the 
+literature on the crop cultivars to access the state of knowledge. (2) Selection of standard 
+cultivars with which to explore crop response to major growth factors and determine set points 
+for screening and, later, production. (3) Determination of practical growing techniques for the 
+crop in controlled environments. (4) Design of experiments for determination of crop responses 
+to the major growth factors, with particular emphasis on photoperiod, daily light integral and air 
+temperature. (5) Developing a way of measuring yield appropriate to the crop type by sampling 
+through the harvest period and calculating a productivity function. (6) Narrowing down the pool 
+of cultivars and breeding lines according to a set of criteria and breeding history. (7) 
+Determination of environmental set points for cultivar evaluation through calculating production 
+cost as a function of set points and size of target facility. (8) Design of screening and yield trial 
+experiments emphasizing efficient use of space. (9) Final evaluation of cultivars after data 
+collection, in terms of production cost and value to the consumer. For each of the steps, relevant 
+issues are addressed. In selecting standards to determine set points for screening, set points that 
+optimize cost of production for the standards may not be applicable to all cultivars. Production of 
+uniform and equivalent-sized seedlings is considered as a means of countering possible 
+differences in seed vigor. Issues of spacing and re-spacing are also discussed. In mapping crop 
+response to growth factors, it is proposed that a first set of experiments examine daylength 
+sensitivity and light intensity effects by holding daily light integral constant while varying 
+photoperiod and light intensity. A second set of experiments would vary daily light integral at a 
+fixed photoperiod appropriate to the crop to explore limits on productivity. Temperature would 
+be varied in both sets of experiments. For most vegetable crops, comparison of cultivars of 
+different maturity date requires discovery of the yield function over the harvest period, from 
+which can be ascertained when productivity is maximum. At least three harvests timed to bracket 
+the peak in productivity are advised. Arguments are presented that the most likely and feasible 
+source of superior materials for controlled environments will be from breeding lines currently 
+under evaluation. Fast screening procedures are proposed to ascertain plant characteristics other 
+than yield performance when information is lacking. Set points for yield trials need to be those 
+for production; appropriate set points cannot be determined without economic analysis of facility 
+cost, labor cost, and cost of supplying inputs. To economize on space needed for yield trials, I 
+have proposed use of opaque, reflective side walls between cultivars and sample harvest units to 
+replace guard rows and accommodate staggered harvests. The cost of production index (COPI) is 
+
+PAGE 38
+` 
+© Cornell University CEA Program 2013 
+ 
+the single most important criterion for cultivar evaluation. For commercial CEA, final selection 
+of cultivars requires market analysis additionally because the cheapest cultivar to produce may to 
+be the best seller. For space life support, post-harvest processing costs need to be included with 
+production costs. The value of superior quality and palatability in fostering well-being of 
+colonists needs to be weighed against additional cost in providing it. Crop selection for space 
+colonies is addressed in the introductory and penultimate chapters. It is argued that crop selection 
+should be guided from menu in addition to nutritional goals and minimization of cost.  
+AUTHOR(S): Goto, E., A.J. Both, L.D. Albright, R.W. Langhans, and A.R. Leed. 1996.  
+TITLE: Effect of dissolved oxygen concentration on lettuce growth in floating hydroponics.  
+WHERE: Acta Horticulturae 440:205-210.  
+ABSTRACT: Lettuce (Lactuca sativa L., cv. Ostinata) growth experiments were carried out to 
+study the effect of dissolved oxygen (DO) concentration on plant growth in a floating hydroponic 
+system. Pure O2 and N2 gas were supplied to the hydroponic system for precise DO control. The 
+system allowed for DO concentrations above the maximum possible saturation concentration 
+attainable when using compressed air. Eleven day old lettuce seedlings were grown for 24 days 
+under various DO concentrations: sub-saturated, saturated, and super-saturated. There was no 
+significant difference in fresh weight, shoot and root dry weight among the following DO 
+concentrations: 2.1 (25% of saturated at 24°C), 4.2 (50%), 8.4 (saturated), and 16.8 (200%) 
+mg/L. The critical DO concentration for vigorous lettuce growth was considered to be lower than 
+2.1 mg/L. Neither root damage nor delay of shoot growth was observed at any of the studied DO 
+concentrations.  
+AUTHOR(S): Goto, E.; Albright, L.D.; Langhans, R.W.; Leed, A.R. 1994.  
+TITLE: Plant spacing management in hydroponic lettuce production.  
+WHERE: ASAE paper 944574. ASAE, 2950 Niles Road, St. Joseph, MI 49085-9659. 13 pp.  
+ABSTRACT: Three different spacing options were tested in a hydroponic lettuce production 
+system. Two kinds of productivity and a growing area utilization efficiency factor were 
+introduced to compare practical spacing management with idealized spacing management for 
+individual days during a production period, and over the entire production.  
+AUTHOR(S): Langhans, R.W. 1994.  
+TITLE: Fluorescent and high intensity discharge lamp use in chambers and greenhouses.  
+WHERE: Proceedings of the International Lighting for Plants in Controlled Environments 
+Workshop. University of Wisconsin, Madison, WI. March 27 - 30, 1994. NASA Conference 
+Publication CP-3309. pp. 211-215.  
+AUTHOR(S): Lin, S.Y. 1995.  
+TITLE: Effects of seed hydration treatments, media moisture content, and inhibitors on 
+spinach (Spinacia oleracea L.) seed germination.  
+WHERE: MSc Thesis. Cornell University Libraries, Ithaca, NY 14853. 66 pp.  
+ABSTRACT: The pericarp of spinach (Spinacia oleracea L.) seed plays a major role in 
+germination. Excess water and inhibitors in the pericarp both may cause poor germination of 
+seeds. This research focused on optimal seed hydration treatments, the optimum range of media 
+moisture content, and temperatures on germination of spinach (cv. 'Nordic') seeds. The bio-
+
+PAGE 39
+` 
+© Cornell University CEA Program 2013 
+ 
+effects of inhibitors leached from the seeds were also investigated. Data were logarithmically 
+transformed and analyzed by analysis of variance and trend analysis. The spinach seeds were 
+primed under dark conditions in 30% polyethylene glycol (PEG) solutions at 15 deg C for 1 to 4 
+days, and germinated again under dark conditions at 15, 20, and 25 deg C for 7 days. 
+Germination performance was evaluated by final germination percentages, rate (T50), and 
+uniformity (T[90-10]). Interactions between PEG soak duration and germination temperature did 
+not reveal consistent trends. One day priming, which resulted in rapid germination and high 
+germination percentage, is recommended because less PEG is used and less time is consumed in 
+priming. In an alternative approach, spinach seeds were hydrated in reverse osmosis (RO) water 
+at 10 or 15 deg C for 24, 36, and 48 hours. The shortest hydration time of 24 hours was 
+recommended based on the improvement in uniformity of germination. Hydration treatments in 
+water were superior or equal to priming with respect to rate of germination. Spinach seeds were 
+sensitive to moisture during the germination stage, more seriously in wet conditions than dry 
+conditions. The range of blotter moisture was adjusted between 11 ml and 21 ml RO water per 
+container in the first study, but results indicated that amounts over 15 ml were too great for the 
+spinach seeds to germinate well. Therefore, the range of blotter moisture was between 6 ml and 
+15 ml in the second study, and the results demonstrated 6 ml was still enough for good 
+germination even though the blotters appeared dry. Seed germination performance indicated that 
+the addition of 9 to 12 ml RO water was the most effective for good germination. Seven bioassay 
+experiments were designed to investigate the effects of inhibitors in the spinach seeds. The seeds 
+were soaked in RO water at 5 to 25 deg C for varied times--6 hours, one, and two days. After the 
+seeds were soaked a certain time, the solutions were used to moisten broccoli ('Pirate'), and 
+lettuce ('Ostinata', 'Summertime', and 'Empire') seeds. The effects of the leachate were evaluated 
+by the final germination percentage and radicle growth of the broccoli or lettuce seeds. The 
+results of these experiments do not show a clear relationship between soaking temperature and 
+inhibitor removal. Overall, inhibitors leached from spinach seeds have a negligible or 
+inconsistent effect on germination or root growth of lettuce or broccoli.  
+AUTHOR(S): Mathieu, J.J., L.D. Albright, K. Kurata, and E. Goto. 1998.  
+TITLE: Whole crop simulation model of water and nutrient uptake within a recirculating 
+hydroponic system: a literature review. 2 pp.  
+AUTHOR(S): Reinhardt, W.W. 1994.  
+TITLE: Net energy analysis of vegetable crops.  
+WHERE: Presented at the 5th Annual CAEP Conference, May 3-5, Albany, NY. A Northeast 
+Regional Agricultural Engineering Service Publication. Riley-Robb Hall, Cornell University, 
+Ithaca, NY 14853. pp. 61-68.  
+ABSTRACT: This paper will define controlled environment agriculture (CEA) for the year-
+round production of fresh vegetables in New York State. The New York State Energy Research 
+and Development Authority (Energy Authority) is supporting CEA development because it is a 
+growing industry that will cause significant impacts on energy use and agricultural employment, 
+while avoiding the environmental emissions associated with conventional vegetable production. 
+CEA research at Cornell University (Ithaca, NY) is supported by the Energy Authority and the 
+State's electric utilities. Researchers are investigating energy management opportunities in the 
+operation of CEA facilities to minimize operating energy costs for growers and peak load growth 
+
+PAGE 40
+` 
+© Cornell University CEA Program 2013 
+ 
+for electric utility systems. Finally, this paper will evaluate and compare energy requirements to 
+grow fresh vegetables in New York, using CEA techniques like those being developed at 
+Cornell, with existing alternatives of field crops and greenhouse production grown off-season in 
+the South and West, or greenhouse production grown in Europe.  
+AUTHOR(S): Rerras, N. 1996.  
+TITLE: Neural network modeling of the greenhouse aerial environment.  
+WHERE: MSc Thesis. Cornell University Libraries, Ithaca, NY 14853. 89 pp.  
+ABSTRACT: Use of neural networks to model multi-input multi-output processes is becoming a 
+popular technique in modern control applications. In this thesis neural networks are considered 
+for modeling the short term response of the greenhouse aerial environment. Different neural 
+network architectures are considered such as multilayer feedforward networks and Elman 
+recurrent networks. Their performance is compared using data from a greenhouse simulation 
+model as well as actual greenhouse operational data. The methods are also compared to more 
+conventional modeling methods such as autoregressive moving average exogenous (ARMAX) 
+models. Suitable methods for implementation, training and testing are considered. Feedforward 
+neural networks proved more suitable for greenhouse environment modeling than Elman 
+networks. Feedforward networks also achieved better predictions than ARMAX models at the 
+expense of longer training. Elman networks provided fairly good predictions but needed 
+significantly longer training than feedforward networks. Neural network application in a 
+commercial greenhouse environment is hindered by their need for computing resources. 
+ARMAX models still present the most cost-effective alternative for modeling the greenhouse 
+environment, due to their modest demands in computing resources. Neural networks are feasible, 
+perform better, and will eventually become more attractive as advanced computing platforms 
+become more affordable.  
+AUTHOR(S): Setiawan, A. 1998.  
+TITLE: Applying pseudo-derivative-feedback algorithm to greenhouse temperature 
+control.  
+WHERE: MSc Thesis. Cornell University Libraries, Ithaca, NY 14853. 169 pp.  
+ABSTRACT: The Pseudo-Derivative-Feedback (PDF) control algorithm is applied to control 
+greenhouse air temperature. A forced-air hot water heating system and a pad and fan cooling 
+system are controlled by the PDF algorithm. Performance of the PDF control is compared to 
+Proportional-Integral (PI) control through simulation with an approximated dynamic system 
+model of the greenhouse air. The difficulties of time delays in a control system are discussed. 
+The importance of recognizing the effects of time delays on control system performance for both 
+PDF and PI control is demonstrated with a comparison between control systems with and 
+without the time delay. Additional experiments with PDF, PDF cascade, and PI control are 
+performed to compare the performance of each control scheme. The PDF cascade system 
+controls both heating-system water temperature and greenhouse air temperature. Results of 
+simulation and real-world experimentation show that PDF control has a better load handling 
+capability than PI control. Changes in a final-control-element, FCE (e.g., variation in the 
+temperature of the hot-water supply, or nonlinearity in the heating system valve), were best 
+handled by the PDF cascade control system.  
+
+PAGE 41
+` 
+© Cornell University CEA Program 2013 
+ 
+AUTHOR(S): Setiawan, A., L.D. Albright, and R.M. Phelan. 1998.  
+TITLE: Simulation of greenhouse air temperature control using PI and PDF algorithms.  
+WHERE: Proceedings of the first IFAC Workshop on Control Applications and Ergonomics in 
+Agriculture, Athens, Greece. June 15-17, 1998. pp. 111-116.  
+ABSTRACT: Pseudo-Derivative-Feedback (PDF) control is compared to PI control through 
+simulation using an approximated dynamic system thermal model of the greenhouse and through 
+experiment results. The effects of time delays on control system performance for both PDF and 
+PI control are demonstrated. Results showed PDF control to have a better load handling 
+capability than PI control. PDF control was exceptionally better than PI for systems without time 
+delay and significantly better for systems with time delay.  
+AUTHOR(S): Spinu, V.C., L.D. Albright, and R.W. Langhans. 1998.  
+TITLE: Electrochemical pH control in hydroponic systems.  
+WHERE: Acta Horticulturae 456:275-282.  
+ABSTRACT: This paper reports an innovative method based on electrochemistry to adjust the 
+pH in nutrient solutions used in hydroponics. The required quantity of H+ or OH- ions is 
+produced in-situ through electrolytic water decomposition. Because the direction and rate of 
+electrochemical reactions can be easily manipulated by controlling the polarity and voltage 
+applied between electrodes, the most important advantage of this method in comparison to 
+traditional pH control using chemicals is the possibility to accomplish accurate and reliable pH 
+control to within a narrow, preset pH range. Moreover, additional positive effects of improving 
+the quality of added raw water such as alkalinity control, reducing the concentration of sodium, 
+and water disinfection can be accomplished in the same electrolytic unit. Electrochemical 
+technology offers possibilities to eliminate the risk of pH control failures due to overdoses and 
+excludes the necessity of having reagent (acid and base) storage tanks and of handling these 
+hazardous materials. Important savings of reagents, dosage and mixing equipment, storage tanks 
+and improved environment and safety objectives can be realized. Available greenhouse space 
+can be used more efficiently.  
+AUTHOR(S): Spinu, V.C., and L.D. Albright. 1998.  
+TITLE: Electrotechnology for water conditioning: A simulation model.  
+WHERE: Acta Horticulturae 456:283-290.  
+ABSTRACT: This paper relates some aspects of an innovative electrotechnological approach 
+focused on improving water quality for horticultural use. Principal processes to condition water 
+for plant growth (related to alkalinity; mineralization; sodium; pH and disinfection) are 
+accomplished in a simple, low-cost, electrolytic unit, which can be affordable for individual 
+growers. Installing such a water conditioning unit directly in a greenhouse achieves additional 
+positive effects. One which makes this technology particularly useful in a greenhouse is the 
+evolution of pure CO2 as a result of bicarbonate ion decomposition. A simulation model has 
+been developed using MS EXCEL worksheets to predict the dynamics of all important processes 
+related to water treatment in the electrotechnological unit. This computer model establishes the 
+relationships among (1) design parameters such as the type, number and geometry of electrodes, 
+type of membrane, voltage level applied between electrodes, water flow rate through the 
+treatment chamber; (2) raw water quality parameters such as: total dissolved solids (TDS), 
+concentrations of principal ionic species (Na+, Ca2+, Mg2+, HCO3(-), SO4(2-), Cl-), alkalinity, 
+
+PAGE 42
+` 
+© Cornell University CEA Program 2013 
+ 
+hardness, pH, EC, temperature; (3) the same parameters for water after treatment; (4) regime and 
+efficiency parameters (electrical current applied, electricity and energy consumed per cubic 
+meter of treated water, current efficiency for TDS removal; and (5) quantities of by-products 
+derived from the processes accompanying operation of an electrolytic water conditioning unit 
+(O2, CO2, base solution). An analysis of the applicability and efficiency of this 
+electrotechnological approach for improving water quality from the main natural water sources 
+of Moldova was completed using this simulation model. The electrotechnology can contribute 
+efficiently to the successful development of intensive horticulture in Moldova and other regions 
+of the world.  
+AUTHOR(S): Stevenson, C.L. 1993.  
+TITLE: Consumer Preferences for Greenhouse Grown Bibb Lettuce: an Application of 
+Conjoint Analysis.  
+WHERE: MSc Thesis. Cornell University Libraries, Ithaca, NY 14853. 89 pp.  
+ABSTRACT: The purpose of this study is to analyze consumers' preferences for greenhouse 
+grown bibb lettuce. Consumers' preferences are elicited using a decompositional method of 
+preference structure measurement known as conjoint analysis. The research design includes the 
+product attributes packaging, price, and pesticide-free. Results are analyzed at the individual as 
+well as the market level. At the individual level, a main effects plus two-way interaction model is 
+estimated for each individual. At the market level, a main effects model is used to determine 
+whether purchase frequency of greenhouse grown bibb lettuce is related to consumers' 
+preferences for the products' attributes. At the individual level, the results indicate packaging has 
+a significant effect for 75% of the respondents; pesticide-free has a significant effect for 35% of 
+the respondents, and price has a significant effect for 23% of the respondents. There is a large 
+amount of heterogeneity in consumers' preferences for packaging at the individual level. 
+However, the majority of consumers prefer the plastic bag and dislike the crisper. Consumers are 
+split on their preferences for no packaging. More respondents have a significant interaction 
+between packaging and pesticide-free than between packaging and price or between pesticide-
+free and price. With the exception of the interaction between pesticide-free and the plastic bag, 
+there is a large amount of heterogeneity in the direction of the interaction effects. The interaction 
+between pesticide-free and plastic bag is positive for 72% of the respondents for whom this is a 
+significant interaction. At the market level, respondents in the frequent and moderate purchase 
+frequency groups have the same preferences for the attributes used in the design. Respondents in 
+the infrequent purchase frequency group are more price sensitive than the market average and 
+have a greater than average preference for the pesticide-free attribute. Respondents who never 
+purchase greenhouse grown bibb lettuce have a greater than average preference for no packaging 
+and a greater than average disutility for the crisper. Based on these results, the product, as it is 
+presently marketed in Binghamton and Vestal, is only the fifth most preferred product profile for 
+the frequent and moderate purchase frequency groups and the fourth and sixth most preferred 
+product profile for the infrequent and never purchase frequency groups. The product profile 
+packaged in the plastic bag with the lower price level and the pesticide-free label is the most 
+preferred profile for all purchase frequency groups. therefore, the results indicate the utility of 
+the product may be increased by changing the packaging type.  
+
+PAGE 43
+` 
+© Cornell University CEA Program 2013 
+ 
+AUTHOR(S): Thompson, H.C. 1997.  
+TITLE: Air and root temperature effects on growth of lettuce, Lactuca sativa, in deep-flow 
+hydroponic systems.  
+WHERE: MSc Thesis. Cornell University Libraries, Ithaca, NY 14853. 89 pp.  
+ABSTRACT: Lettuce production is often limited geographically by boundaries where air 
+temperature is outside the range possible for sufficient vegetative growth. This study, in 
+particular, addresses air temperature ranges above the normal growing temperature for 
+butterhead lettuce (Lactuca sativa L., cv. 'Ostinata'). The question of interest is whether lettuce 
+can be produced in warm air environments by cooling the root zone. Conversely, we examine if 
+cool air temperatures can be compensated for by increasing root zone temperatures. The 
+mechanism examined is control of temperature at the growing point. By creating a gradient of 
+temperatures between air and root environment, we examine how the temperature at the growing 
+point is affected, and, in turn, how the growth rate of that particular treatment is affected by the 
+temperature gradient, and the temperature at the growing point. Lettuce seedlings were 
+germinated in growth chambers and transplanted after eleven days into three hydroponic ponds 
+in a greenhouse. The crop grew in the ponds until final harvest 35 days after seeding. Each 
+greenhouse crop was grown at a constant air temperature. Daytime temperature set points were 
+centered on 24 deg C, the optimum temperature for lettuce growth. Air temperature set points 
+were 17 deg C (62.6 deg F), 24 deg C (75.2 deg F), and 31 deg C (87.8 deg F), and dropped 5 
+deg C during the night. Each of the three pond's nutrient solution was set to one of these daytime 
+set point temperatures (17, 24, and 31 deg C) for each crop. After a crop's final harvest, a new 
+crop was brought into a different greenhouse air temperature, and with the same three water 
+temperatures randomized among ponds. The study consisted of six experiments. The first three 
+experiments used each of the three air temperature set points, and the second three experiments 
+were replicates of the first set. Harvests were taken on days 14, 21, 28, and 35 and dry weights 
+measured. Temperatures at the growing point and at 1 and 2 cm depth in the soil plug were 
+measured with thermocouples and an infrared thermometer. Analysis was done using a split-plot 
+design with air temperature as the main treatment, pond water temperature as a sub-treatment, 
+and harvest day as a sub-sub-treatment. Dry weight was used as response variable. Air 
+temperature had a significant effect on the growth curves. Each air temperature produced a 
+significantly different rate of growth regardless of water temperature. The main effect of water 
+temperature on dry weight was significant. There was no statistical interaction between air and 
+water temperature. The optimal temperature for lettuce dry weight production was 24 deg C air 
+and 24 deg C water. The temperature at the growing point was not affected by the air/water 
+temperature gradient for most of the growth cycle. We found control of growth rate through 
+growing point temperature not possible, yet growth rate was influenced by air/water temperature 
+gradient. Root temperature greatly contributed to final dry weight and quality of the crop. 
+Growth curves were analyzed to find the date of harvest when differences among ponds within 
+one air temperature treatment became significant. All curves showed that differences were 
+notable by day 21 and significant in all treatments by day 28. A simple computer model was 
+written to calculate final dry weight from air and water temperature set points.  
+AUTHOR(S): Thompson, H.C., R.W. Langhans, A.J. Both, and L.D. Albright. 1998.  
+TITLE: Shoot and root temperature effects on growth of lettuce, Lactuca sativa, in a 
+floating hydroponic system.  
+
+PAGE 44
+` 
+© Cornell University CEA Program 2013 
+ 
+WHERE: Journal of the American Society for Horticultural Science 123(3):361-364.  
+ABSTRACT: Butterhead lettuce (Lactuca sativa L., cv. Ostinata) was used to study lettuce 
+production at varied shoot (air) and root (pond) temperatures. A floating hydroponic system was 
+used to study the influence of pond temperature on lettuce growth for 35 days. Pond water 
+temperature set points of 17, 24 and 31 deg C were used at air temperatures of 17/12, 24/19, and 
+31/26 deg C (day/night). Pond temperature affected plant dry mass, and air temperature 
+significantly affected growth over time. Maximum dry mass was produced at the 24/24 deg C 
+(air/pond temperature) treatment. Final dry mass at the 31/24 deg C treatment did not differ 
+significantly from the 24/24 deg C treatment. The 24 deg C pond treatment maintained market 
+quality lettuce head production in 31 deg C air. Using optimal pond temperature, lettuce 
+production was deemed acceptable at a variety of air temperatures outside the normal range, and 
+particularly at high air temperatures.  
+AUTHOR(S): Wheeler, E.F., L.D. Albright, R.M. Spanswick, L.P. Walker, and R.W. Langhans. 
+1998.  
+TITLE: Nitrate uptake kinetics in lettuce as influenced by light and nitrate nutrition.  
+WHERE: Transactions of the ASAE 41(3):859-867.  
+ABSTRACT: A mathematical relationship was developed which shows environmental 
+influences of light and nitrate nutrition on growth and nitrate uptake kinetics. Growth chamber 
+experiments provided data for model development and validation. Ion-specific macro-electrodes 
+determined nitrate depletion from circulating solutions in short-term kinetic tests. Lettuce 
+(Lactuca sativa L., cv. Ostinata) was grown under three light levels and three nutrient solution 
+nitrate contents which represented a range of adequate and inadequate environments. Larger, 
+faster-growing plants should have a larger demand for nitrate and hence larger uptake rates than 
+smaller, environmentally stressed plants. Results showed higher sustained levels of nitrate uptake 
+by larger plants. Neither the severity of stress under which a plant was grown nor the plant size 
+were the sole determinants of maximum potential uptake behavior, however. Increased light 
+level was related to an increased ability to transport nitrate on a short-term basis. Increased light 
+level was associated with increased maximum nitrate uptake rates (Vmax) as described by the 
+Michaelis-Menten relationship. The effects of environmental light and nitrate levels on nitrate 
+uptake was incorporated into a power relationship where the maximum uptake velocity was 
+determined in relation to the shoot growth rate.  
+AUTHOR(S): Wheeler, E.F., and L.D. Albright. 1995.  
+TITLE: Quantification of lettuce growth in relation to environmental stress.  
+WHERE: ASAE paper No. 954461. ASAE, 2950 Niles Road, St. Joseph, MI 49085-9659, USA. 
+25 pp.  
+ABSTRACT: The objective of this research was to determine how age, nitrate nutrition and light 
+level influenced growth and associated nitrate uptake rates over the commercial production 
+period of hydroponically grown lettuce. Three N levels were combined with three light zones for 
+nine treatments of lettuce in one growth chamber. Light level was varied from 135 to 375 
+micromol/sq. m/s and nitrate-nitrogen level was supplied at 0.04, 0.4 or 4.0 mM. Plants do not 
+respond linearly to light and nitrogen levels and these two environmental factors interact in ways 
+difficult to interpret. Treatments were compared to each other through an Environmental Growth 
+Factor (EGF). Shoot growth rate EGF ranked plants logically into more or less stressful 
+
+PAGE 45
+` 
+© Cornell University CEA Program 2013 
+ 
+environments. Low-light/low-nitrogen plants had the lowest EGF with values around 0.2, 
+meaning their growth rates were about 20% of the high-light/ high-nitrogen treatment growth 
+rates. Dry weight increase was best represented by an exponential polynomial having three 
+empirical parameters. When coefficient values were graphed and differentiated by light and 
+nitrogen levels, a relationship among the nine treatment parameters emerged. From the 
+relationships, growth curves can be constructed by interpolation for lettuce grown between the 
+specific light and nitrogen levels of this experiment. Biomass was partitioned to leaves and roots 
+differently, depending on environmental conditions to which the plant was exposed. Root masses 
+of low nitrogen-grown lettuce were particularly large, with root:shoot ratios approaching 1.0 
+under low light conditions. Root dry weight was influenced almost exclusively by the nitrogen 
+level in which the plants grew. Shoot dry weights were more indicative of plant responses to the 
+EGF.  
+AUTHOR(S): Wheeler, E.F. 1995.  
+TITLE: Nitrate uptake and plant growth as influenced by light and nitrate nutrition.  
+WHERE: PhD Dissertation. Cornell University Libraries, Ithaca, NY 14853. 340 pp.  
+ABSTRACT: Evaluation of the kinetics of nitrate uptake over a plant lifecycle, as influenced by 
+environmental factors, would fill a gap in our current understanding of nutrient assimilation and 
+assist in crop management. Many plant nutrient uptake models are purely empirical evaluations 
+based on Michaelis-Menten enzyme kinetics, which appear to fit the observed kinetic data but do 
+not accommodate the physiological mechanisms of nutrient uptake. Michaelis-Menten does 
+show the strong dependence of uptake rates on the nutrient content of the solution surrounding 
+plant roots. Since environmental conditions influence plant growth, and growth creates a demand 
+for nutrients, nitrate uptake should be related to environmental conditions. This research resulted 
+in the development of a Michaelis-Menten-based mathematical relationship which shows 
+environmental influences of light and nitrate nutrition on lettuce growth and N uptake. A growth 
+chamber was outfitted with three nutrient solutions where the major variable was nitrate content: 
+Low N, 0.04 mM; Medium N, 0.4 mM; High N, 4.0 mM. The chamber had lighting zones 
+representing High (350 micromol/sq. m/s), Medium (250 micromol/sq. m/s) and Low (150 
+micromol/sq. m/s). Each of the three N levels was present in each of the three light zones so that 
+nine environmental treatments were positioned in the chamber. Environmental conditions are 
+best related to a plant growth response. An Environmental Stress Factor (ESF) was proposed as a 
+means to quantify how stressful a combination of environmental factors was compared to 
+adequate or optimal conditions. Uptake rate was quantified into a predictive relationship for 
+lettuce grown under a range of light- and N-level environments. Environmental conditions were 
+incorporated into the Vmax term of the Michaelis-Menten kinetic equation. A power curve 
+relationship predicted the maximum uptake rate, Vmax, once environmental conditions were 
+specified. Lettuce maximum uptake rates (Vmax) were fairly consistent across the majority of 
+light- and N-level treatments. For Low N grown plants, the availability of adequate light allowed 
+the plants to at least double their maximum uptake rates.  
+AUTHOR(S): Wheeler, E.F., J. Kossowski, E. Goto, R.W. Langhans, G. White, L.D. Albright, 
+and D. Wilcox. 1995.  
+TITLE: Consideration in selecting crops for the human-rated life support system: a linear 
+programming model.  
+
+PAGE 46
+` 
+© Cornell University CEA Program 2013 
+ 
+WHERE: Adv. Space Res. 18(1/2):233-236.  
+ABSTRACT: A Linear Programming model has been constructed which aids in selecting 
+appropriate crops for CELLS (Controlled Ecological Life Support System) food production. A 
+team of Controlled Environment Agriculture (CEA) faculty, staff, graduate students and invited 
+experts representing more than a dozen disciplines, provided a wide range of expertise in 
+developing the model and the crop production program. The model incorporates nutritional 
+content and controlled-environment based production yields of carefully chosen crops into a 
+framework where a crop mix can be constructed to suit the astronauts' needs. The crew's 
+nutritional requirements can be adequately satisfied with only a few crops (assuming vitamin 
+mineral supplements are provided) but this will not be not satisfactory from a culinary 
+standpoint. This model is flexible enough that taste and variety driven food choices can be build 
+into the model.  
+AUTHOR(S): Wheeler, E.F., L.D. Albright, L.P. Walker, R.M. Spanswick, and R.W. Langhans. 
+1994.  
+TITLE: Plant growth and nitrogen uptake Part 1: Beyond the Michaelis-Menten 
+relationship.  
+WHERE: ASAE paper No. 947506. ASAE, 2950 Niles Road, St. Joseph, MI 49085-9659, USA. 
+15 pp.  
+AUTHOR(S): Wheeler, E.F., L.D. Albright, L.P. Walker, R.M. Spanswick, and R.W. Langhans. 
+1994.  
+TITLE: Plant growth and nitrogen uptake Part 2: Effects of light level and nitrate 
+nutrition.  
+WHERE: ASAE paper No. 947505. ASAE, 2950 Niles Road, St. Joseph, MI 49085-9659, USA. 
+14 pp 
+
+PAGE 47
+` 
+© Cornell University CEA Program 2013 
+ 
+Appendix 
+Stock Solutions  
+Two stock solutions are prepared which will be added separately to RO water and will supply 
+nutrients to the lettuce plants while in the pond area.  Two separate stock solutions are prepared 
+to prevent certain chemical reactions.  These chemical reactions will cause some of the 
+chemicals to form a precipitate and become inactive.  The precipitates will not form if mixed one 
+after another with a large volume of RO water.  
+STOCK A 
+These chemicals are added to 300 L of RO water 
+Calcium Nitrate 29160.0 g 
+Potassium Nitrate 6132.0 g 
+Ammonium Nitrate 840.0 g 
+Sprint 330 Iron - DTPA (10% Iron) 562.0 g 
+ 
+STOCK B 
+These chemicals are added to 300L of RO water 
+Potassium Nitrate 20378.0 g 
+Monopotassium Phosphate 8160.0 g 
+Potassium Sulfate 655.0 g 
+Magnesium Sulfate 7380.0 g 
+Manganese Sulfate*H2O (25% Mn) 25.6 g 
+Zinc Sulfate*H2O (35% Zn) 34.4 g 
+Boric Acid (17.5% B) 55.8 g 
+Copper Sulfate*5H2O (25% Cu) 5.6 g 
+Sodium Molybdate*2H2O (39% Mo) 3.6 g 
+Final Fertilizer Solution Concentrations 
+Macro-nutrients: Micro-nutrients: 
+N 8.9 millimol l-1 (125 ppm) Fe 16.8 micromol l-1 (0.94 ppm) 
+P 1.0 millimol l-1 ( 31 ppm) Mn 2.5 micromol l-1 (0.14 ppm) 
+K 5.5 millimol l-1 (215 ppm) B 15.0 micromol l-1 (0.16 ppm) 
+
+PAGE 48
+` 
+© Cornell University CEA Program 2013 
+ 
+Ca 2.1 millimol l-1 ( 84 ppm) Cu 0.4 micromol l-1 (0.03 ppm) 
+Mg 1.0 millimol l-1 ( 24 ppm) Zn 2.0 micromol l-1 (0.13 ppm) 
+S 1.1 millimol l-1 ( 35 ppm) Mo 0.3 micromol l-1 (0.03 ppm) 
+ 

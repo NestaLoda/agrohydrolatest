@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-09-22",
+  "parameters": [
+    {
+      "id": "hargreaves_coefficient",
+      "value": 0.0023,
+      "unit": "coefficient",
+      "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "source_locator": "Eq52",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Temperature-only fallback ET0; regional calibration required.",
+      "allowed_use": "Research ET0 estimate, not local validation.",
+      "locally_validated": false
+    },
+    {
+      "id": "hargreaves_temperature_offset_c",
+      "value": 17.8,
+      "unit": "degC",
+      "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "source_locator": "Eq52",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Ra must be equivalent evaporation mm/day.",
+      "allowed_use": "Tmean=(Tmin+Tmax)/2.",
+      "locally_validated": false
+    },
+    {
+      "id": "radiation_mj_to_equivalent_mm",
+      "value": 0.408,
+      "unit": "mm per MJ m-2",
+      "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "source_locator": "Eq20",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Energy-to-water equivalent under standard latent heat assumption.",
+      "allowed_use": "Multiply Ra MJ/m2/day by0.408 once beforeEq52.",
+      "locally_validated": false
+    },
+    {
+      "id": "solar_constant",
+      "value": 0.082,
+      "unit": "MJ m-2 min-1",
+      "source_url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "source_locator": "Eq21",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Astronomical extraterrestrial radiation, not measured surface radiation.",
+      "allowed_use": "Ra latitude/day calculation; polar day/night handling explicit.",
+      "locally_validated": false
+    },
+    {
+      "id": "barley_temperature_absolute_c",
+      "value": [
+        2,
+        40
+      ],
+      "unit": "degC",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1232",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "barley_temperature_optimal_c",
+      "value": [
+        15,
+        20
+      ],
+      "unit": "degC",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1232",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "barley_crop_cycle_days",
+      "value": [
+        90,
+        240
+      ],
+      "unit": "days",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1232",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "barley_soil_ph_absolute",
+      "value": [
+        6,
+        8
+      ],
+      "unit": "pH",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1232",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "barley_soil_depth_absolute_cm",
+      "value": [
+        50,
+        150
+      ],
+      "unit": "cm",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1232",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "potato_temperature_absolute_c",
+      "value": [
+        7,
+        30
+      ],
+      "unit": "degC",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1971",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "potato_temperature_optimal_c",
+      "value": [
+        15,
+        25
+      ],
+      "unit": "degC",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1971",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "potato_crop_cycle_days",
+      "value": [
+        90,
+        160
+      ],
+      "unit": "days",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1971",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "potato_soil_ph_absolute",
+      "value": [
+        4.2,
+        8.5
+      ],
+      "unit": "pH",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1971",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "potato_soil_depth_absolute_cm",
+      "value": [
+        20,
+        50
+      ],
+      "unit": "cm",
+      "source_url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1971",
+      "source_locator": "Ecology/Cultivation table",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Historical species-level ECOCROP envelope; not cultivar-specific growing-degree-day or daily frost model.",
+      "allowed_use": "Transparent first-pass candidate screen only; cannot set soil_suitable=true.",
+      "locally_validated": false
+    },
+    {
+      "id": "potato_tuber_growth_strongly_inhibited_below_c",
+      "value": 10,
+      "unit": "degC",
+      "source_url": "https://www.fao.org/4/i0500e/i0500e.pdf",
+      "source_locator": "Cultivation",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "General potato guidance, distinct from species absolute envelope7°C.",
+      "allowed_use": "Warning indicator; not universal lethal or absolute exclusion threshold.",
+      "locally_validated": false
+    },
+    {
+      "id": "barley_indicative_season_water_mm",
+      "value": [
+        450,
+        650
+      ],
+      "unit": "mm/crop cycle",
+      "source_url": "https://www.fao.org/4/s2022e/s2022e07.htm",
+      "source_locator": "Table14",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Indicative total crop water demand; climate-dependent; not netirrigation or waterallocation.",
+      "allowed_use": "Plausibility context; do not enforce lower bound on Arctic ETc.",
+      "locally_validated": false
+    },
+    {
+      "id": "potato_indicative_season_water_mm",
+      "value": [
+        500,
+        700
+      ],
+      "unit": "mm/crop cycle",
+      "source_url": "https://www.fao.org/4/s2022e/s2022e07.htm",
+      "source_locator": "Table14",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Indicative total crop water demand, not local Arctic demand.",
+      "allowed_use": "Plausibility context only.",
+      "locally_validated": false
+    },
+    {
+      "id": "lettuce_hydroponic_annual_yield",
+      "value": 41,
+      "unit": "kg/m2/year",
+      "source_url": "https://doi.org/10.3390/ijerph120606879",
+      "source_locator": "Table1; existing curated literature_parameters.json",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Yuma Arizona engineering/literature model; NOT Arctic operations. Annual accounting.",
+      "allowed_use": "Automatic external-reference technology scenario with explicit transfer label; not locally validated recommendation.",
+      "locally_validated": false
+    },
+    {
+      "id": "lettuce_hydroponic_water_intensity",
+      "value": 0.02,
+      "unit": "m3/kg",
+      "source_url": "https://doi.org/10.3390/ijerph120606879",
+      "source_locator": "Table1; existing curated literature_parameters.json",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Yuma Arizona engineering/literature model; NOT Arctic operations. Annual accounting.",
+      "allowed_use": "Automatic external-reference technology scenario with explicit transfer label; not locally validated recommendation.",
+      "locally_validated": false
+    },
+    {
+      "id": "lettuce_hydroponic_energy_intensity",
+      "value": 25,
+      "unit": "kWh/kg",
+      "source_url": "https://doi.org/10.3390/ijerph120606879",
+      "source_locator": "Table1; existing curated literature_parameters.json",
+      "checked_at": "2026-09-22",
+      "classification": "EXTERNAL_LITERATURE_PARAMETER",
+      "scope": "Yuma Arizona engineering/literature model; NOT Arctic operations. Annual accounting.",
+      "allowed_use": "Automatic external-reference technology scenario with explicit transfer label; not locally validated recommendation.",
+      "locally_validated": false
+    }
+  ],
+  "methods": {
+    "et0": "0.0023 * (Tmean+17.8) * sqrt(Tmax-Tmin) * (0.408*Ra_MJ)",
+    "polar_implementation": "clip(-tan(latitude)*tan(declination),-1,1) beforeacos; this is explicit physical polar day/night extension; do not interpret winter zero as total hydrological evaporation. Reject negative/nonfinite temperature range; negative estimatedET0 clipped0 andflagged.",
+    "thermal_screen": "Evaluate candidate-length rolling windows with explicit mean-temperature envelope; show screened_out or screening_pass_not_validated. This aggregation policy is ours, not an Ecocrop validated algorithm.",
+    "soil": "Unknown remainsunknown; climate pass cannot authorizeopenfield.",
+    "water_supply": "Do not infer usablewaterbudget from totalprecipitation. Can calculate resourceREQUIREMENT perunitcapacity or requiredsupply forselectedsystem withoutclaiming availability.",
+    "cycle_alignment": "Annual41kg/m2 lettuceyield cannot be paired silently with75day or130day scenario. Annual technology case or explicit productivity-scaling assumption required."
+  },
+  "data_driven_findings": {
+    "scope": "NASA ACCESS-CM2 v2.0 single2035 nearestgrid; derivedresearchstatistics, notsourcepublishedvalues",
+    "ssp245": {
+      "maximum_90day_mean_c": 3.366418956741111,
+      "longest_tmin_gt0_run_days": 45,
+      "days_tmean_ge10": 0
+    },
+    "ssp585": {
+      "maximum_90day_mean_c": 4.182192316138889,
+      "longest_tmin_gt0_run_days": 47,
+      "days_tmean_ge10": 0
+    }
+  },
+  "unresolved": [
+    "localcropyield",
+    "cultivarGDD",
+    "validatedfrostphenology",
+    "soil/drainage/activelayer",
+    "seasonalusablefreshwaterallocation",
+    "localCEAheatlightenergy",
+    "localET0calibration"
+  ],
+  "ecocrop_status_url": "https://www.fao.org/geospatial/data-and-tools/data-portals/ecocrop/"
+}

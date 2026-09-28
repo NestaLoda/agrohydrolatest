@@ -1,0 +1,48 @@
+{
+  "recorded_at_utc": "2026-09-22T22:29:17.639951+00:00",
+  "backend": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "353",
+    "time": "84.873",
+    "timestamp": "2026-09-23T01:18:08.962929+03:00",
+    "hostname": "bahademir"
+  },
+  "frontend": {
+    "passed": 23,
+    "failed": 0,
+    "completed_at": "2026-09-23T01:17:35.336846+03:00"
+  },
+  "build": {
+    "typecheck_and_vite": "passed",
+    "assets": [
+      {
+        "name": "index-D7AIM0dU.css",
+        "written_at": "2026-09-23T01:11:19.960339+03:00"
+      },
+      {
+        "name": "index-Wz_iA9FN.js",
+        "written_at": "2026-09-23T01:11:19.959347+03:00"
+      }
+    ]
+  },
+  "http": {
+    "contexts": 7,
+    "verified_at_utc": "2026-09-22T22:21:20.154974+00:00",
+    "synthetic_comparison": "passed"
+  },
+  "desktop": {
+    "recorded_checks": 13,
+    "completed_at_utc": "2026-09-22T22:22:00.590Z",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "mobile_tested": false,
+    "final_page_console_errors": 0,
+    "viewport_override_reset": true
+  },
+  "limits": "Tests validate implementation and stated invariants; they do not validate local Arctic production or field measurements."
+}

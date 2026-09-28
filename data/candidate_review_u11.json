@@ -1,0 +1,405 @@
+{
+  "schema_version": "1.0",
+  "contract": "U11 FINAL_PRODUCT_CONTRACT",
+  "reviewed_at": "2026-09-22",
+  "classification": "EXTERNAL_SOURCE_REVIEW",
+  "upstream_review_sha256": "926f64f4588eeec6bda0c2a3b94a0261189330e400e9dd6e395c4040205c4651",
+  "candidates": [
+    {
+      "id": "barley",
+      "name_tr": "Arpa",
+      "methods": [
+        "open_field"
+      ],
+      "selection_status": "first_portfolio",
+      "default_candidate": true,
+      "locally_validated": false,
+      "optimizer_parameter_ready": false,
+      "evidence": "Norveç Alta/Holt gerçek çeşit denemeleri.",
+      "growing_season": "Alta 2014: 98 gün; Holt 2015: 124 gün (Saana 131). Evrensel olgunlaşma eşiği değil.",
+      "yield_basis": "Alta 2014 Tiril 2.42 t kuru madde/ha; farklı çeşit/yıl/yer sonuçları değişir.",
+      "climate_requirements": "Erkenci çeşit, yerel sıcaklık toplamı ve hasat olgunluğu gerekir; GDD eşiği henüz kalibre değil.",
+      "frost_limit_c": null,
+      "water_demand": "FAO Kc mevcut; kuzey ET0 ve yerel fenoloji eksik.",
+      "energy_implications": "Islak hasadın kurutma enerjisi eklenmeli; yerel kWh/ha yok.",
+      "missing": [
+        "yerel çeşit",
+        "don/GDD eşiği",
+        "tarla ET0",
+        "kurutma/işleme enerjisi"
+      ],
+      "source_ids": [
+        "barley",
+        "fao"
+      ],
+      "gdd": {
+        "base_c": null,
+        "maturity_degree_days": null,
+        "status": "DATA_NEEDED",
+        "note": "NASA GDD5 göstergesi bu ürün için doğrulanmış eşik değildir."
+      },
+      "frost_sensitivity": {
+        "threshold_c": null,
+        "status": "DATA_NEEDED",
+        "note": "Çeşit, gelişme evresi ve maruziyet süresi doğrulanmalı."
+      },
+      "soil_constraint": {
+        "status": "DATA_NEEDED",
+        "note": "Açık tarla: drenaj/köklenme/aktif katman gerekir. CEA: tarla toprağı yerine sistem, su ve altyapı değerlendirilir."
+      },
+      "candidate_role": "research_candidate",
+      "automatic_filter_policy": "Evidence candidate, not local suitability certification. Missing climate/soil/water/energy stays unknown."
+    },
+    {
+      "id": "potato",
+      "name_tr": "Patates",
+      "methods": [
+        "open_field"
+      ],
+      "selection_status": "first_portfolio",
+      "default_candidate": true,
+      "locally_validated": false,
+      "optimizer_parameter_ready": false,
+      "evidence": "Tromsø 69.7°N kontrollü saksı deneyi; 24 saat doğal fotoperiyot.",
+      "growing_season": "86 günlük deney; tarla olgunlaşma takvimi değil.",
+      "yield_basis": "12 L saksı deneyi kg/ha verimi olarak taşınmaz.",
+      "climate_requirements": "Gullauge/Mandel 9–21°C denendi; yumru verimi optimumu yaklaşık 15°C. Bu aralık hayatta kalma/don eşiği değil.",
+      "frost_limit_c": null,
+      "water_demand": "FAO Kc mevcut; yerel sulama bütçesi eksik.",
+      "energy_implications": "Toprak hazırlığı, depolama ve don koruma enerjisi eksik.",
+      "missing": [
+        "yerel kg/ha",
+        "don limiti",
+        "toprak/aktif katman",
+        "yerel su/enerji"
+      ],
+      "source_ids": [
+        "potato",
+        "fao"
+      ],
+      "gdd": {
+        "base_c": null,
+        "maturity_degree_days": null,
+        "status": "DATA_NEEDED",
+        "note": "NASA GDD5 göstergesi bu ürün için doğrulanmış eşik değildir."
+      },
+      "frost_sensitivity": {
+        "threshold_c": null,
+        "status": "DATA_NEEDED",
+        "note": "Çeşit, gelişme evresi ve maruziyet süresi doğrulanmalı."
+      },
+      "soil_constraint": {
+        "status": "DATA_NEEDED",
+        "note": "Açık tarla: drenaj/köklenme/aktif katman gerekir. CEA: tarla toprağı yerine sistem, su ve altyapı değerlendirilir."
+      },
+      "candidate_role": "research_candidate",
+      "automatic_filter_policy": "Evidence candidate, not local suitability certification. Missing climate/soil/water/energy stays unknown."
+    },
+    {
+      "id": "lettuce",
+      "name_tr": "Marul",
+      "methods": [
+        "hydroponics",
+        "greenhouse"
+      ],
+      "selection_status": "first_portfolio",
+      "default_candidate": true,
+      "locally_validated": false,
+      "optimizer_parameter_ready": false,
+      "evidence": "Alaska NFT araştırması ve kutup kontrollü üretim örnekleri.",
+      "growing_season": "Çeşit ve sera çevrimine göre seçilecek.",
+      "yield_basis": "U8 3 kg/m²/çevrim USER SCENARIO; doğrulanmış kuzey verimi değil.",
+      "climate_requirements": "İç ortam sıcaklık/ışık kontrolü; dış hava uygunluğuyla eşitlenmez.",
+      "frost_limit_c": null,
+      "water_demand": "Arizona dış referansı 20 L/kg; Arctic yerel ölçümü değil.",
+      "energy_implications": "Arizona 25 kWh/kg dış referansı; Kuzeyde mevsim, ısı kaybı, LED ve atık ısıya göre değişir.",
+      "missing": [
+        "yerel çevrim",
+        "ısı/ışık modeli",
+        "enerji aralığı",
+        "su geri kazanım kaybı"
+      ],
+      "source_ids": [
+        "lettuce",
+        "energy",
+        "eden"
+      ],
+      "gdd": {
+        "base_c": null,
+        "maturity_degree_days": null,
+        "status": "DATA_NEEDED",
+        "note": "NASA GDD5 göstergesi bu ürün için doğrulanmış eşik değildir."
+      },
+      "frost_sensitivity": {
+        "threshold_c": null,
+        "status": "DATA_NEEDED",
+        "note": "Çeşit, gelişme evresi ve maruziyet süresi doğrulanmalı."
+      },
+      "soil_constraint": {
+        "status": "METHOD_DEPENDENT",
+        "note": "Açık tarla: drenaj/köklenme/aktif katman gerekir. CEA: tarla toprağı yerine sistem, su ve altyapı değerlendirilir."
+      },
+      "candidate_role": "research_candidate",
+      "automatic_filter_policy": "Evidence candidate, not local suitability certification. Missing climate/soil/water/energy stays unknown."
+    },
+    {
+      "id": "spinach",
+      "name_tr": "Ispanak",
+      "methods": [
+        "open_field",
+        "greenhouse"
+      ],
+      "selection_status": "reserve",
+      "default_candidate": false,
+      "locally_validated": false,
+      "optimizer_parameter_ready": false,
+      "evidence": "Fairbanks çeşit denemesi; Melody çeşidi iyi sonuç olarak kaydedilmiş.",
+      "growing_season": "30 Mayıs ekim–7 Temmuz hasat (2003 denemesi).",
+      "yield_basis": "Melody 1.90 lb/row-ft; sıra aralığı doğrulanmadan kg/m² yapılmaz.",
+      "climate_requirements": "Uzun gün/sapa kalkma çeşide bağlı; evrensel GDD/frost limiti yok.",
+      "frost_limit_c": null,
+      "water_demand": "Yerel su katsayısı yok.",
+      "energy_implications": "Kontrollü yöntemde ışık/ısı hesabı gerekiyor.",
+      "missing": [
+        "su katsayısı",
+        "alan dönüşümü",
+        "yerel çeşit"
+      ],
+      "source_ids": [
+        "alaska"
+      ],
+      "gdd": {
+        "base_c": null,
+        "maturity_degree_days": null,
+        "status": "DATA_NEEDED",
+        "note": "NASA GDD5 göstergesi bu ürün için doğrulanmış eşik değildir."
+      },
+      "frost_sensitivity": {
+        "threshold_c": null,
+        "status": "DATA_NEEDED",
+        "note": "Çeşit, gelişme evresi ve maruziyet süresi doğrulanmalı."
+      },
+      "soil_constraint": {
+        "status": "DATA_NEEDED",
+        "note": "Açık tarla: drenaj/köklenme/aktif katman gerekir. CEA: tarla toprağı yerine sistem, su ve altyapı değerlendirilir."
+      },
+      "candidate_role": "reserve_review_only",
+      "automatic_filter_policy": "Evidence candidate, not local suitability certification. Missing climate/soil/water/energy stays unknown."
+    },
+    {
+      "id": "arugula",
+      "name_tr": "Roka",
+      "methods": [
+        "hydroponics"
+      ],
+      "selection_status": "reserve",
+      "default_candidate": false,
+      "locally_validated": false,
+      "optimizer_parameter_ready": false,
+      "evidence": "EDEN ISS Antarktika kontrollü ortam; Arktik yerel tarla kanıtı değil.",
+      "growing_season": "Yüksek ışıkta ortalama 29 günlük çevrim.",
+      "yield_basis": "600 µmol/m²/s ışık: 5.49±0.40 kg/m²/çevrim; 8 çevrim.",
+      "climate_requirements": "Sistem 21/19°C gündüz/gece, 17 saat ışık; optimum/don eşiği değil.",
+      "frost_limit_c": null,
+      "water_demand": "Ürün bazlı net su yok.",
+      "energy_implications": "Işık seviyesi yüksek; sayısal ürün bazlı enerji ölçümü bu makalede yok.",
+      "missing": [
+        "su/enerji yoğunluğu",
+        "yerel sistem validasyonu"
+      ],
+      "source_ids": [
+        "eden"
+      ],
+      "gdd": {
+        "base_c": null,
+        "maturity_degree_days": null,
+        "status": "DATA_NEEDED",
+        "note": "NASA GDD5 göstergesi bu ürün için doğrulanmış eşik değildir."
+      },
+      "frost_sensitivity": {
+        "threshold_c": null,
+        "status": "DATA_NEEDED",
+        "note": "Çeşit, gelişme evresi ve maruziyet süresi doğrulanmalı."
+      },
+      "soil_constraint": {
+        "status": "METHOD_DEPENDENT",
+        "note": "Açık tarla: drenaj/köklenme/aktif katman gerekir. CEA: tarla toprağı yerine sistem, su ve altyapı değerlendirilir."
+      },
+      "candidate_role": "reserve_review_only",
+      "automatic_filter_policy": "Evidence candidate, not local suitability certification. Missing climate/soil/water/energy stays unknown."
+    },
+    {
+      "id": "basil",
+      "name_tr": "Fesleğen",
+      "methods": [
+        "hydroponics"
+      ],
+      "selection_status": "reserve",
+      "default_candidate": false,
+      "locally_validated": false,
+      "optimizer_parameter_ready": false,
+      "evidence": "EDEN ISS kutup CEA örneği.",
+      "growing_season": "121 gün, çoklu hasat; tek kısa çevrimle karıştırılmaz.",
+      "yield_basis": "7.30±0.93 kg/m²; 2 değerlendirilmiş çevrim.",
+      "climate_requirements": "Kontrollü ortam set noktaları; dış ortam toleransı değil.",
+      "frost_limit_c": null,
+      "water_demand": "Ürün bazlı net su yok.",
+      "energy_implications": "Yerel LED/ısı enerjisi ölçülmeli.",
+      "missing": [
+        "ürün bazlı su/enerji",
+        "yerel talep/amaç"
+      ],
+      "source_ids": [
+        "eden"
+      ],
+      "gdd": {
+        "base_c": null,
+        "maturity_degree_days": null,
+        "status": "DATA_NEEDED",
+        "note": "NASA GDD5 göstergesi bu ürün için doğrulanmış eşik değildir."
+      },
+      "frost_sensitivity": {
+        "threshold_c": null,
+        "status": "DATA_NEEDED",
+        "note": "Çeşit, gelişme evresi ve maruziyet süresi doğrulanmalı."
+      },
+      "soil_constraint": {
+        "status": "METHOD_DEPENDENT",
+        "note": "Açık tarla: drenaj/köklenme/aktif katman gerekir. CEA: tarla toprağı yerine sistem, su ve altyapı değerlendirilir."
+      },
+      "candidate_role": "reserve_review_only",
+      "automatic_filter_policy": "Evidence candidate, not local suitability certification. Missing climate/soil/water/energy stays unknown."
+    },
+    {
+      "id": "microgreens",
+      "name_tr": "Mikro filizler",
+      "methods": [
+        "hydroponics"
+      ],
+      "selection_status": "not_selected",
+      "default_candidate": false,
+      "locally_validated": false,
+      "optimizer_parameter_ready": false,
+      "evidence": "Bu odak taramada yerel yüksek enlem ve ortak su/enerji/verim paneli doğrulanmadı.",
+      "growing_season": "Tür ve hasat evresine özgü.",
+      "yield_basis": "Yok.",
+      "climate_requirements": "Tek bir ürün değil; tür seçilmeli.",
+      "frost_limit_c": null,
+      "water_demand": "Yok.",
+      "energy_implications": "Yok.",
+      "missing": [
+        "tür",
+        "birincil deney",
+        "su/enerji/verim"
+      ],
+      "source_ids": [],
+      "gdd": {
+        "base_c": null,
+        "maturity_degree_days": null,
+        "status": "DATA_NEEDED",
+        "note": "NASA GDD5 göstergesi bu ürün için doğrulanmış eşik değildir."
+      },
+      "frost_sensitivity": {
+        "threshold_c": null,
+        "status": "DATA_NEEDED",
+        "note": "Çeşit, gelişme evresi ve maruziyet süresi doğrulanmalı."
+      },
+      "soil_constraint": {
+        "status": "METHOD_DEPENDENT",
+        "note": "Açık tarla: drenaj/köklenme/aktif katman gerekir. CEA: tarla toprağı yerine sistem, su ve altyapı değerlendirilir."
+      },
+      "candidate_role": "reserve_review_only",
+      "automatic_filter_policy": "Evidence candidate, not local suitability certification. Missing climate/soil/water/energy stays unknown."
+    }
+  ],
+  "sources": {
+    "barley": {
+      "title": "NORA Northern Cereals final report (2016)",
+      "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf",
+      "locator": "Tables 3-2, 3-3; PDF pages 18, 21"
+    },
+    "potato": {
+      "title": "Mølmann & Johansen 2025, potato temperature experiment",
+      "url": "https://doi.org/10.1007/s11540-025-09854-0",
+      "locator": "Methods and Table 2"
+    },
+    "alaska": {
+      "title": "UAF Vegetable Variety Trials 2003",
+      "url": "https://www.uaf.edu/afes/publications/database/circulars/files/pdfs/C127.pdf",
+      "locator": "Radish and spinach table"
+    },
+    "lettuce": {
+      "title": "UAF Agricultural Experiment Station 2007",
+      "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf",
+      "locator": "PDF pages 24–25"
+    },
+    "eden": {
+      "title": "Zabel et al. 2020 EDEN ISS biomass production",
+      "url": "https://doi.org/10.3389/fpls.2020.00656",
+      "locator": "Tables 6–7; atmosphere section"
+    },
+    "fao": {
+      "title": "FAO-56 crop evapotranspiration",
+      "url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+      "locator": "Tables 11–12"
+    },
+    "energy": {
+      "title": "Barbosa et al. 2015 lettuce resource comparison",
+      "url": "https://doi.org/10.3390/ijerph120606879",
+      "locator": "Results; Arizona context"
+    },
+    "nasa": {
+      "title": "NASA NEX-GDDP-CMIP6 data access",
+      "url": "https://www.nccs.nasa.gov/data-collections/nex-gddp-cmip6/",
+      "locator": "Data access and subset example"
+    },
+    "permafrost": {
+      "title": "ESA CCI Permafrost data",
+      "url": "https://climate.esa.int/en/projects/permafrost/data/",
+      "locator": "Version 5 data products"
+    },
+    "hydrology": {
+      "title": "NVE Svalbard freshwater review",
+      "url": "https://www.nve.no/nytt-fra-nve/nyheter-tilsyn/ny-rapport-om-biodiversitet-i-ferskvann-pa-svalbard/",
+      "locator": "Main characteristics of freshwater in Svalbard"
+    },
+    "hydapi": {
+      "title": "NVE HydAPI documentation",
+      "url": "https://hydapi.nve.no/UserDocumentation/",
+      "locator": "Access to API; Stations; Observations"
+    },
+    "ocean": {
+      "title": "Copernicus Arctic physics reanalysis quality document",
+      "url": "https://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-ARC-QUID-002-003.pdf",
+      "locator": "Executive summary: daily 2D versus monthly 3D"
+    },
+    "ocean_catalog": {
+      "title": "Copernicus Arctic Ocean Physics Reanalysis services",
+      "url": "https://data.marine.copernicus.eu/product/ARCTIC_MULTIYEAR_PHY_002_003/services",
+      "locator": "Dataset identifiers"
+    },
+    "ro": {
+      "title": "Experimental SWRO membrane response to feed temperature",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1944398625001730",
+      "locator": "Abstract, 5–18 degrees C experiment"
+    }
+  },
+  "runtime_policy": {
+    "does_not_replace_pinned_crop_catalog": true,
+    "missing_is_not_zero": true,
+    "not_a_trained_ai_model": true,
+    "first_portfolio": [
+      "barley",
+      "potato",
+      "lettuce"
+    ],
+    "reserve": [
+      "spinach",
+      "arugula",
+      "basil"
+    ],
+    "not_selected": [
+      "microgreens"
+    ]
+  }
+}

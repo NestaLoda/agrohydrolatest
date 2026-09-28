@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partial" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <service name="partialnoncss" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <dataset name="MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2015_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2015_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2015_v2.0.nc">
+      <dataSize units="Mbytes">247.1</dataSize>
+      <date type="modified">2025-06-28T10:50:18.342Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2016_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2016_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2016_v2.0.nc">
+      <dataSize units="Mbytes">246.4</dataSize>
+      <date type="modified">2025-06-28T10:50:27.593Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2017_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2017_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2017_v2.0.nc">
+      <dataSize units="Mbytes">246.4</dataSize>
+      <date type="modified">2025-06-28T10:50:36.696Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2018_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2018_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2018_v2.0.nc">
+      <dataSize units="Mbytes">246.4</dataSize>
+      <date type="modified">2025-06-28T10:50:46.044Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2019_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2019_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2019_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-28T10:50:55.280Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2020_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2020_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2020_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-28T10:51:04.456Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2021_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2021_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2021_v2.0.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2025-06-28T10:51:13.602Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2022_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2022_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2022_v2.0.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2025-06-28T10:51:22.732Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2023_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2023_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2023_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-28T10:51:31.879Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2024_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2024_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2024_v2.0.nc">
+      <dataSize units="Mbytes">248.3</dataSize>
+      <date type="modified">2025-06-28T10:51:41.077Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2025_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2025_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2025_v2.0.nc">
+      <dataSize units="Mbytes">247.1</dataSize>
+      <date type="modified">2025-06-28T10:51:50.405Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2026_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2026_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2026_v2.0.nc">
+      <dataSize units="Mbytes">246.4</dataSize>
+      <date type="modified">2025-06-28T10:51:59.610Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2027_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2027_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2027_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-28T10:52:08.811Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2028_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2028_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2028_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-28T10:52:18.075Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2029_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2029_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2029_v2.0.nc">
+      <dataSize units="Mbytes">246.4</dataSize>
+      <date type="modified">2025-06-28T10:52:27.186Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2030_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2030_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2030_v2.0.nc">
+      <dataSize units="Mbytes">248.4</dataSize>
+      <date type="modified">2025-06-28T10:52:36.478Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2031_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2031_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2031_v2.0.nc">
+      <dataSize units="Mbytes">245.7</dataSize>
+      <date type="modified">2025-06-28T10:52:45.544Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2032_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2032_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2032_v2.0.nc">
+      <dataSize units="Mbytes">247.8</dataSize>
+      <date type="modified">2025-06-28T10:52:54.748Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2033_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2033_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2033_v2.0.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2025-06-28T10:53:03.962Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2034_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2034_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2034_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-28T10:53:13.116Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2035_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2035_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2035_v2.0.nc">
+      <dataSize units="Mbytes">246.4</dataSize>
+      <date type="modified">2025-06-28T10:53:22.221Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2036_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2036_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2036_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T10:53:31.415Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2037_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2037_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2037_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:53:40.564Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2038_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2038_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2038_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:53:49.706Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2039_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2039_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2039_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T10:53:58.934Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2040_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2040_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2040_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-28T10:54:08.278Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2041_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2041_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2041_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T10:54:17.884Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2042_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2042_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2042_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-28T10:54:27.015Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2043_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2043_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2043_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:54:36.315Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2044_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2044_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2044_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-28T10:54:45.465Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2045_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2045_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2045_v2.0.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2025-06-28T10:54:54.526Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2046_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2046_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2046_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:55:03.675Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2047_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2047_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2047_v2.0.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2025-06-28T10:55:12.761Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2048_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2048_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2048_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-28T10:55:21.926Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2049_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2049_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2049_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:55:31.128Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2050_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2050_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2050_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T10:55:40.283Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2051_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2051_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2051_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-28T10:55:49.429Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2052_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2052_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2052_v2.0.nc">
+      <dataSize units="Mbytes">249.5</dataSize>
+      <date type="modified">2025-06-28T10:55:58.656Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2053_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2053_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2053_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-28T10:56:07.872Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2054_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2054_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2054_v2.0.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2025-06-28T10:56:17.039Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2055_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2055_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2055_v2.0.nc">
+      <dataSize units="Mbytes">247.7</dataSize>
+      <date type="modified">2025-06-28T10:56:26.208Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2056_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2056_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2056_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:56:35.375Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2057_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2057_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2057_v2.0.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2025-06-28T10:56:44.540Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2058_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2058_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2058_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-28T10:56:53.660Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2059_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2059_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2059_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T10:57:02.852Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2060_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2060_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2060_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:57:12.013Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2061_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2061_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2061_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-28T10:57:21.193Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2062_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2062_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2062_v2.0.nc">
+      <dataSize units="Mbytes">248.2</dataSize>
+      <date type="modified">2025-06-28T10:57:30.484Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2063_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2063_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2063_v2.0.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2025-06-28T10:57:39.543Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2064_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2064_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2064_v2.0.nc">
+      <dataSize units="Mbytes">247.6</dataSize>
+      <date type="modified">2025-06-28T10:57:48.759Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2065_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2065_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2065_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-28T10:57:57.922Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2066_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2066_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2066_v2.0.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2025-06-28T10:58:07.053Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2067_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2067_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2067_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:58:16.220Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2068_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2068_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2068_v2.0.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2025-06-28T10:58:25.373Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2069_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2069_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2069_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-28T10:58:34.480Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2070_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2070_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2070_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-28T10:58:43.647Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2071_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2071_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2071_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:58:52.912Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2072_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2072_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2072_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T10:59:02.176Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2073_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2073_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2073_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-28T10:59:11.349Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2074_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2074_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2074_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-28T10:59:20.519Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2075_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2075_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2075_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T10:59:29.602Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2076_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2076_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2076_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-28T10:59:38.720Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2077_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2077_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2077_v2.0.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2025-06-28T10:59:47.864Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2078_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2078_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2078_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T10:59:56.954Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2079_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2079_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2079_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T11:00:06.920Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2080_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2080_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2080_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T11:00:16.029Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2081_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2081_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2081_v2.0.nc">
+      <dataSize units="Mbytes">245.4</dataSize>
+      <date type="modified">2025-06-28T11:00:25.161Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2082_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2082_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2082_v2.0.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2025-06-28T11:00:34.335Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2083_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2083_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2083_v2.0.nc">
+      <dataSize units="Mbytes">245.4</dataSize>
+      <date type="modified">2025-06-28T11:00:43.457Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2084_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2084_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2084_v2.0.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2025-06-28T11:00:52.579Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2085_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2085_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2085_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T11:01:01.856Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2086_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2086_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2086_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-28T11:01:11.050Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2087_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2087_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2087_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T11:01:20.161Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2088_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2088_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2088_v2.0.nc">
+      <dataSize units="Mbytes">247.5</dataSize>
+      <date type="modified">2025-06-28T11:01:29.341Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2089_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2089_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2089_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T11:01:38.472Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2090_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2090_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2090_v2.0.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2025-06-28T11:01:47.591Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2091_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2091_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2091_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T11:01:56.814Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2092_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2092_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2092_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T11:02:05.927Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2093_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2093_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2093_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-28T11:02:15.065Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2094_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2094_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2094_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-28T11:02:24.249Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2095_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2095_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2095_v2.0.nc">
+      <dataSize units="Mbytes">247.4</dataSize>
+      <date type="modified">2025-06-28T11:02:33.471Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2096_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2096_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2096_v2.0.nc">
+      <dataSize units="Mbytes">246.0</dataSize>
+      <date type="modified">2025-06-28T11:02:42.771Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2097_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2097_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2097_v2.0.nc">
+      <dataSize units="Mbytes">246.8</dataSize>
+      <date type="modified">2025-06-28T11:02:51.953Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2098_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2098_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2098_v2.0.nc">
+      <dataSize units="Mbytes">246.0</dataSize>
+      <date type="modified">2025-06-28T11:03:01.082Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2099_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2099_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2099_v2.0.nc">
+      <dataSize units="Mbytes">245.4</dataSize>
+      <date type="modified">2025-06-28T11:03:10.161Z</date>
+    </dataset>
+    <dataset name="tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2100_v2.0.nc" ID="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2100_v2.0.nc" urlPath="AMES/NEX/GDDP-CMIP6/MRI-ESM2-0/ssp585/r1i1p1f1/tasmax/tasmax_day_MRI-ESM2-0_ssp585_r1i1p1f1_gn_2100_v2.0.nc">
+      <dataSize units="Mbytes">246.1</dataSize>
+      <date type="modified">2025-06-28T11:03:21.995Z</date>
+    </dataset>
+  </dataset>
+</catalog>

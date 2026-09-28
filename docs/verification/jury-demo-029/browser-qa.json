@@ -1,0 +1,138 @@
+{
+  "stages": [
+    {
+      "stage": "01-konya-baseline",
+      "title": "KONYA — İLK PİLOT",
+      "overflow": false
+    },
+    {
+      "stage": "02-konya-water20",
+      "title": "SU KOŞULU DEĞİŞİYOR",
+      "overflow": false
+    },
+    {
+      "stage": "03-gediz-transfer",
+      "title": "TÜRKİYE — AYNI MOTOR",
+      "overflow": false
+    },
+    {
+      "stage": "04-future-change",
+      "title": "2026 MODEL YILI → GELECEK",
+      "overflow": false
+    },
+    {
+      "stage": "05-north-decision",
+      "title": "GELECEĞİN ÜRETİM VE SU YÖNETİMİ PLANI",
+      "overflow": false
+    },
+    {
+      "stage": "05b-future-year-change",
+      "title": "GELECEĞİN ÜRETİM VE SU YÖNETİMİ PLANI",
+      "overflow": false
+    },
+    {
+      "stage": "06-field",
+      "title": "KARARIN SAHADA SINANACAK GİRDİLERİ",
+      "overflow": false
+    },
+    {
+      "stage": "07-controlled-pilot",
+      "title": "KONTROLLÜ ÜRETİM DENEYİ",
+      "overflow": false
+    },
+    {
+      "stage": "08-continuity",
+      "title": "TEK ARAŞTIRMA HATTI",
+      "overflow": false
+    }
+  ],
+  "normal_run_id": "d01066b27c7cf869c066eeb3",
+  "api_calls": [
+    {
+      "path": "/api/simulate",
+      "region": "konya"
+    },
+    {
+      "path": "/api/simulate",
+      "region": "konya"
+    },
+    {
+      "path": "/api/simulate",
+      "region": "gediz_manisa"
+    },
+    {
+      "path": "/api/north/reference",
+      "year": 2051
+    },
+    {
+      "path": "/api/north/plan",
+      "year": 2051
+    },
+    {
+      "path": "/api/north/reference",
+      "year": 2051
+    },
+    {
+      "path": "/api/north/reference",
+      "year": 2076
+    },
+    {
+      "path": "/api/north/plan",
+      "year": 2076
+    },
+    {
+      "path": "/api/north/reference",
+      "year": 2076
+    },
+    {
+      "path": "/api/north/plan",
+      "year": 2026
+    },
+    {
+      "path": "/api/north/reference",
+      "year": 2026
+    },
+    {
+      "path": "/api/north/plan",
+      "year": 2036
+    },
+    {
+      "path": "/api/north/reference",
+      "year": 2036
+    },
+    {
+      "path": "/api/simulate",
+      "region": "konya"
+    },
+    {
+      "path": "/api/simulate",
+      "region": "gediz_manisa"
+    },
+    {
+      "path": "/api/simulate",
+      "region": "konya"
+    },
+    {
+      "path": "/api/simulate",
+      "region": "gediz_manisa"
+    },
+    {
+      "path": "/api/north/reference",
+      "year": 2051
+    },
+    {
+      "path": "/api/north/plan",
+      "year": 2051
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "pre_snapshot_unchanged": true,
+  "normal_scenario_restored": true,
+  "manual_override_restored": true,
+  "normal_result_restored": true,
+  "north_year_and_objective_restored": true,
+  "north_result_restored": true,
+  "autoplay_transition_verified": true,
+  "failure_fallback_verified": true
+}

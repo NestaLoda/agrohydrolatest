@@ -1,0 +1,126 @@
+[
+  {
+    "year": 2037,
+    "period": [
+      2037,
+      2037
+    ],
+    "temperature_c": {
+      "mean": -5.456164592534246,
+      "min": -6.850135740575341,
+      "max": -3.9739469553287674
+    },
+    "precipitation_mm": {
+      "mean": 554.0661676566666,
+      "min": 414.74945225,
+      "max": 763.23735522
+    },
+    "inflow_m3": [
+      0.9802535012,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      8.494747299733334,
+      12.574805024666665,
+      6.862539340266667,
+      2.934262691733333,
+      0.8098581657333335,
+      1.4213868494666666,
+      0.6641641290666668
+    ],
+    "totals": {
+      "area_m2": 100.0,
+      "production_kg": 4204.367499999999,
+      "water_m3": 14.131658286032655,
+      "heat_kwh_th": 2258.9013925259674,
+      "electricity_kwh": 117001.62242269018,
+      "equivalent_electricity_kwh": 119260.52381521615,
+      "stored_water_m3": 9.685371175086617,
+      "desalinated_m3": 4.44628711094604,
+      "freshwater_m3": 0.0,
+      "treatment_electricity_kwh": 13.364423104602576,
+      "treatment_heat_kwh_th": 0.0,
+      "protein_kg": 75.11620999999997,
+      "food_energy_kcal": 958341.5249999998,
+      "composition_covered_production_kg": 4204.367499999999,
+      "complete_composition_coverage": true,
+      "selected_production_output": 4204.3674999999985
+    },
+    "crop_outputs_kg": {
+      "arugula": 228.75,
+      "basil": 38.71749999999953,
+      "kohlrabi": 3649.4999999999995,
+      "lettuce": 47.599999999999994,
+      "radish": 54.599999999999994,
+      "swiss_chard": 185.2
+    },
+    "methods": [
+      "greenhouse",
+      "hydroponics"
+    ],
+    "climate_manifest_sha256": "b62efa60b3fcee94e6208fba3ab2aef77948fb4a82ba5683913b06d6191b11d6"
+  },
+  {
+    "year": 2072,
+    "period": [
+      2072,
+      2072
+    ],
+    "temperature_c": {
+      "mean": -1.446521775678506,
+      "min": -2.9728543182377045,
+      "max": 0.1440296528415304
+    },
+    "precipitation_mm": {
+      "mean": 614.6962003533332,
+      "min": 459.3698356,
+      "max": 745.4495687199999
+    },
+    "inflow_m3": [
+      1.8888675666666666,
+      2.6583460356,
+      1.3741189158666667,
+      0.35996122866666674,
+      0.6674215689333334,
+      14.3137382016,
+      4.7843519029333335,
+      3.2284354413333336,
+      3.7160228832,
+      2.7952096754666673,
+      4.883980191466667,
+      5.7876814046666665
+    ],
+    "totals": {
+      "area_m2": 100.0,
+      "production_kg": 4204.367499999999,
+      "water_m3": 14.251127627306053,
+      "heat_kwh_th": 1546.6284584306927,
+      "electricity_kwh": 118153.4151563192,
+      "equivalent_electricity_kwh": 119700.0436147499,
+      "stored_water_m3": 14.251127627306056,
+      "desalinated_m3": 0.0,
+      "freshwater_m3": 0.0,
+      "treatment_electricity_kwh": 0.0,
+      "treatment_heat_kwh_th": 0.0,
+      "protein_kg": 75.11620999999998,
+      "food_energy_kcal": 958341.5249999999,
+      "composition_covered_production_kg": 4204.367499999999,
+      "complete_composition_coverage": true,
+      "selected_production_output": 4204.367499999999
+    },
+    "crop_outputs_kg": {
+      "arugula": 228.75,
+      "basil": 38.717500000000015,
+      "kohlrabi": 3649.4999999999995,
+      "lettuce": 47.599999999999994,
+      "radish": 54.6,
+      "swiss_chard": 185.2
+    },
+    "methods": [
+      "greenhouse",
+      "hydroponics"
+    ],
+    "climate_manifest_sha256": "b62efa60b3fcee94e6208fba3ab2aef77948fb4a82ba5683913b06d6191b11d6"
+  }
+]

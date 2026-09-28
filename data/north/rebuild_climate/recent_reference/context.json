@@ -1,0 +1,901 @@
+{
+  "site_id": "longyearbyen",
+  "horizon_id": "recent",
+  "scenario_id": "recent",
+  "period": [
+    2015,
+    2025
+  ],
+  "years": 11,
+  "models": [
+    {
+      "model": "ERA5",
+      "member": "reanalysis",
+      "daily_path": "data/north/rebuild_climate/recent_reference/longyearbyen_recent_ERA5.csv.gz",
+      "daily_sha256": "957706e1441f3495b59a31c6ee6c3272aef2190beee0a95700a27d8e3683982c",
+      "years": 11,
+      "daily_rows": 4018,
+      "annual": [
+        {
+          "year": 2015,
+          "days": 365,
+          "mean_temperature_c": -4.347534246575343,
+          "gdd0_degree_days": 449.6,
+          "gdd5_degree_days": 64.5,
+          "frost_free_days": 100,
+          "frost_free_run_days": 84,
+          "growing_season_5c_run_days": 21,
+          "precipitation_mm": 496.1,
+          "shortwave_mj_m2": 2518.36,
+          "heating_degree_days_18c": 8156.8499999999985,
+          "summer_temperature_c": 4.4125000000000005
+        },
+        {
+          "year": 2016,
+          "days": 366,
+          "mean_temperature_c": -2.0222677595628413,
+          "gdd0_degree_days": 590.4,
+          "gdd5_degree_days": 83.5,
+          "frost_free_days": 132,
+          "frost_free_run_days": 78,
+          "growing_season_5c_run_days": 42,
+          "precipitation_mm": 550.2,
+          "shortwave_mj_m2": 2364.35,
+          "heating_degree_days_18c": 7328.15,
+          "summer_temperature_c": 4.714130434782609
+        },
+        {
+          "year": 2017,
+          "days": 365,
+          "mean_temperature_c": -4.473835616438357,
+          "gdd0_degree_days": 481.55000000000007,
+          "gdd5_degree_days": 42.400000000000006,
+          "frost_free_days": 118,
+          "frost_free_run_days": 82,
+          "growing_season_5c_run_days": 14,
+          "precipitation_mm": 377.70000000000005,
+          "shortwave_mj_m2": 2473.58,
+          "heating_degree_days_18c": 8202.95,
+          "summer_temperature_c": 3.8880434782608693
+        },
+        {
+          "year": 2018,
+          "days": 365,
+          "mean_temperature_c": -3.916164383561644,
+          "gdd0_degree_days": 443.84999999999997,
+          "gdd5_degree_days": 44.95,
+          "frost_free_days": 101,
+          "frost_free_run_days": 84,
+          "growing_season_5c_run_days": 21,
+          "precipitation_mm": 581.5,
+          "shortwave_mj_m2": 2278.27,
+          "heating_degree_days_18c": 7999.4,
+          "summer_temperature_c": 4.104347826086957
+        },
+        {
+          "year": 2019,
+          "days": 365,
+          "mean_temperature_c": -5.5804109589041095,
+          "gdd0_degree_days": 435.1,
+          "gdd5_degree_days": 60.95,
+          "frost_free_days": 95,
+          "frost_free_run_days": 82,
+          "growing_season_5c_run_days": 16,
+          "precipitation_mm": 323.6,
+          "shortwave_mj_m2": 2542.85,
+          "heating_degree_days_18c": 8606.849999999999,
+          "summer_temperature_c": 4.293478260869565
+        },
+        {
+          "year": 2020,
+          "days": 366,
+          "mean_temperature_c": -5.623497267759563,
+          "gdd0_degree_days": 558.45,
+          "gdd5_degree_days": 111.44999999999999,
+          "frost_free_days": 119,
+          "frost_free_run_days": 89,
+          "growing_season_5c_run_days": 25,
+          "precipitation_mm": 428.3,
+          "shortwave_mj_m2": 2363.2200000000003,
+          "heating_degree_days_18c": 8646.199999999999,
+          "summer_temperature_c": 5.136956521739131
+        },
+        {
+          "year": 2021,
+          "days": 365,
+          "mean_temperature_c": -4.842602739726027,
+          "gdd0_degree_days": 399.15,
+          "gdd5_degree_days": 28.900000000000006,
+          "frost_free_days": 98,
+          "frost_free_run_days": 66,
+          "growing_season_5c_run_days": 9,
+          "precipitation_mm": 365.2,
+          "shortwave_mj_m2": 2483.5,
+          "heating_degree_days_18c": 8337.55,
+          "summer_temperature_c": 3.5494565217391307
+        },
+        {
+          "year": 2022,
+          "days": 365,
+          "mean_temperature_c": -4.296438356164383,
+          "gdd0_degree_days": 624.0,
+          "gdd5_degree_days": 126.45,
+          "frost_free_days": 131,
+          "frost_free_run_days": 111,
+          "growing_season_5c_run_days": 39,
+          "precipitation_mm": 540.2,
+          "shortwave_mj_m2": 2283.7,
+          "heating_degree_days_18c": 8138.200000000001,
+          "summer_temperature_c": 5.530434782608695
+        },
+        {
+          "year": 2023,
+          "days": 365,
+          "mean_temperature_c": -3.947671232876713,
+          "gdd0_degree_days": 575.9999999999999,
+          "gdd5_degree_days": 156.24999999999997,
+          "frost_free_days": 98,
+          "frost_free_run_days": 92,
+          "growing_season_5c_run_days": 53,
+          "precipitation_mm": 573.2,
+          "shortwave_mj_m2": 2492.5600000000004,
+          "heating_degree_days_18c": 8010.9,
+          "summer_temperature_c": 5.8038043478260875
+        },
+        {
+          "year": 2024,
+          "days": 366,
+          "mean_temperature_c": -4.287158469945354,
+          "gdd0_degree_days": 685.25,
+          "gdd5_degree_days": 213.1,
+          "frost_free_days": 115,
+          "frost_free_run_days": 92,
+          "growing_season_5c_run_days": 45,
+          "precipitation_mm": 554.0,
+          "shortwave_mj_m2": 2385.21,
+          "heating_degree_days_18c": 8157.099999999999,
+          "summer_temperature_c": 6.451630434782608
+        },
+        {
+          "year": 2025,
+          "days": 365,
+          "mean_temperature_c": -3.7249315068493147,
+          "gdd0_degree_days": 617.55,
+          "gdd5_degree_days": 140.85,
+          "frost_free_days": 109,
+          "frost_free_run_days": 96,
+          "growing_season_5c_run_days": 46,
+          "precipitation_mm": 442.4,
+          "shortwave_mj_m2": 2515.4300000000003,
+          "heating_degree_days_18c": 7929.6,
+          "summer_temperature_c": 5.326086956521739
+        }
+      ],
+      "summary": {
+        "mean_temperature_c": -4.278410230760332,
+        "gdd0_degree_days": 532.809090909091,
+        "gdd5_degree_days": 97.57272727272726,
+        "frost_free_days": 110.54545454545455,
+        "frost_free_run_days": 86.9090909090909,
+        "growing_season_5c_run_days": 30.09090909090909,
+        "precipitation_mm": 475.67272727272723,
+        "shortwave_mj_m2": 2427.366363636364,
+        "heating_degree_days_18c": 8137.613636363636,
+        "summer_temperature_c": 4.837351778656127
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "mean_temperature_c": -10.859530791788858,
+          "mean_tmin_c": -12.80175953079179,
+          "mean_tmax_c": -8.917302052785924,
+          "precipitation_mm": 39.14545454545455,
+          "shortwave_mj_m2": 0.0,
+          "shortwave_daily_mj_m2": 0.0,
+          "heating_degree_days_18c": 894.6454545454544
+        },
+        {
+          "month": 2,
+          "mean_temperature_c": -10.986655948553054,
+          "mean_tmin_c": -13.050160771704178,
+          "mean_tmax_c": -8.92315112540193,
+          "precipitation_mm": 37.372727272727275,
+          "shortwave_mj_m2": 2.194545454545455,
+          "shortwave_daily_mj_m2": 0.07762057877813507,
+          "heating_degree_days_18c": 819.5318181818183
+        },
+        {
+          "month": 3,
+          "mean_temperature_c": -13.346627565982404,
+          "mean_tmin_c": -15.399120234604107,
+          "mean_tmax_c": -11.294134897360705,
+          "precipitation_mm": 36.436363636363645,
+          "shortwave_mj_m2": 91.09454545454545,
+          "shortwave_daily_mj_m2": 2.9385337243401763,
+          "heating_degree_days_18c": 971.7454545454547
+        },
+        {
+          "month": 4,
+          "mean_temperature_c": -9.58909090909091,
+          "mean_tmin_c": -11.562727272727273,
+          "mean_tmax_c": -7.615454545454546,
+          "precipitation_mm": 26.44545454545455,
+          "shortwave_mj_m2": 326.57909090909095,
+          "shortwave_daily_mj_m2": 10.885969696969697,
+          "heating_degree_days_18c": 827.6727272727272
+        },
+        {
+          "month": 5,
+          "mean_temperature_c": -3.3456011730205275,
+          "mean_tmin_c": -4.579472140762463,
+          "mean_tmax_c": -2.111730205278592,
+          "precipitation_mm": 28.127272727272725,
+          "shortwave_mj_m2": 586.8909090909091,
+          "shortwave_daily_mj_m2": 18.931964809384162,
+          "heating_degree_days_18c": 661.7136363636364
+        },
+        {
+          "month": 6,
+          "mean_temperature_c": 2.3613636363636363,
+          "mean_tmin_c": 1.3681818181818182,
+          "mean_tmax_c": 3.3545454545454545,
+          "precipitation_mm": 22.62727272727273,
+          "shortwave_mj_m2": 610.6072727272726,
+          "shortwave_daily_mj_m2": 20.353575757575758,
+          "heating_degree_days_18c": 469.15909090909093
+        },
+        {
+          "month": 7,
+          "mean_temperature_c": 6.573020527859238,
+          "mean_tmin_c": 5.2082111436950145,
+          "mean_tmax_c": 7.937829912023461,
+          "precipitation_mm": 37.59090909090909,
+          "shortwave_mj_m2": 443.33090909090913,
+          "shortwave_daily_mj_m2": 14.300997067448678,
+          "heating_degree_days_18c": 354.2363636363636
+        },
+        {
+          "month": 8,
+          "mean_temperature_c": 5.497800586510263,
+          "mean_tmin_c": 4.244868035190616,
+          "mean_tmax_c": 6.750733137829912,
+          "precipitation_mm": 55.33636363636364,
+          "shortwave_mj_m2": 261.6827272727273,
+          "shortwave_daily_mj_m2": 8.441378299120235,
+          "heating_degree_days_18c": 387.5681818181818
+        },
+        {
+          "month": 9,
+          "mean_temperature_c": 1.481969696969697,
+          "mean_tmin_c": 0.2078787878787879,
+          "mean_tmax_c": 2.756060606060606,
+          "precipitation_mm": 61.00909090909091,
+          "shortwave_mj_m2": 93.24545454545454,
+          "shortwave_daily_mj_m2": 3.1081818181818175,
+          "heating_degree_days_18c": 495.54090909090905
+        },
+        {
+          "month": 10,
+          "mean_temperature_c": -3.25483870967742,
+          "mean_tmin_c": -4.687976539589442,
+          "mean_tmax_c": -1.821700879765396,
+          "precipitation_mm": 41.69090909090909,
+          "shortwave_mj_m2": 11.740909090909089,
+          "shortwave_daily_mj_m2": 0.37873900293255136,
+          "heating_degree_days_18c": 658.9
+        },
+        {
+          "month": 11,
+          "mean_temperature_c": -7.002424242424243,
+          "mean_tmin_c": -8.884545454545455,
+          "mean_tmax_c": -5.12030303030303,
+          "precipitation_mm": 44.445454545454545,
+          "shortwave_mj_m2": 0.0,
+          "shortwave_daily_mj_m2": 0.0,
+          "heating_degree_days_18c": 750.0727272727272
+        },
+        {
+          "month": 12,
+          "mean_temperature_c": -9.317008797653958,
+          "mean_tmin_c": -11.33782991202346,
+          "mean_tmax_c": -7.296187683284457,
+          "precipitation_mm": 45.445454545454545,
+          "shortwave_mj_m2": 0.0,
+          "shortwave_daily_mj_m2": 0.0,
+          "heating_degree_days_18c": 846.8272727272728
+        }
+      ]
+    }
+  ],
+  "ensemble": {
+    "mean_temperature_c": {
+      "mean": -4.278410230760332,
+      "min": -4.278410230760332,
+      "max": -4.278410230760332
+    },
+    "gdd0_degree_days": {
+      "mean": 532.809090909091,
+      "min": 532.809090909091,
+      "max": 532.809090909091
+    },
+    "gdd5_degree_days": {
+      "mean": 97.57272727272726,
+      "min": 97.57272727272726,
+      "max": 97.57272727272726
+    },
+    "frost_free_days": {
+      "mean": 110.54545454545455,
+      "min": 110.54545454545455,
+      "max": 110.54545454545455
+    },
+    "frost_free_run_days": {
+      "mean": 86.9090909090909,
+      "min": 86.9090909090909,
+      "max": 86.9090909090909
+    },
+    "growing_season_5c_run_days": {
+      "mean": 30.09090909090909,
+      "min": 30.09090909090909,
+      "max": 30.09090909090909
+    },
+    "precipitation_mm": {
+      "mean": 475.67272727272723,
+      "min": 475.67272727272723,
+      "max": 475.67272727272723
+    },
+    "shortwave_mj_m2": {
+      "mean": 2427.366363636364,
+      "min": 2427.366363636364,
+      "max": 2427.366363636364
+    },
+    "heating_degree_days_18c": {
+      "mean": 8137.613636363636,
+      "min": 8137.613636363636,
+      "max": 8137.613636363636
+    },
+    "summer_temperature_c": {
+      "mean": 4.837351778656127,
+      "min": 4.837351778656127,
+      "max": 4.837351778656127
+    }
+  },
+  "monthly": [
+    {
+      "month": 1,
+      "mean_temperature_c": {
+        "mean": -10.859530791788858,
+        "min": -10.859530791788858,
+        "max": -10.859530791788858
+      },
+      "mean_tmin_c": {
+        "mean": -12.80175953079179,
+        "min": -12.80175953079179,
+        "max": -12.80175953079179
+      },
+      "mean_tmax_c": {
+        "mean": -8.917302052785924,
+        "min": -8.917302052785924,
+        "max": -8.917302052785924
+      },
+      "precipitation_mm": {
+        "mean": 39.14545454545455,
+        "min": 39.14545454545455,
+        "max": 39.14545454545455
+      },
+      "shortwave_mj_m2": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "heating_degree_days_18c": {
+        "mean": 894.6454545454544,
+        "min": 894.6454545454544,
+        "max": 894.6454545454544
+      }
+    },
+    {
+      "month": 2,
+      "mean_temperature_c": {
+        "mean": -10.986655948553054,
+        "min": -10.986655948553054,
+        "max": -10.986655948553054
+      },
+      "mean_tmin_c": {
+        "mean": -13.050160771704178,
+        "min": -13.050160771704178,
+        "max": -13.050160771704178
+      },
+      "mean_tmax_c": {
+        "mean": -8.92315112540193,
+        "min": -8.92315112540193,
+        "max": -8.92315112540193
+      },
+      "precipitation_mm": {
+        "mean": 37.372727272727275,
+        "min": 37.372727272727275,
+        "max": 37.372727272727275
+      },
+      "shortwave_mj_m2": {
+        "mean": 2.194545454545455,
+        "min": 2.194545454545455,
+        "max": 2.194545454545455
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 0.07762057877813507,
+        "min": 0.07762057877813507,
+        "max": 0.07762057877813507
+      },
+      "heating_degree_days_18c": {
+        "mean": 819.5318181818183,
+        "min": 819.5318181818183,
+        "max": 819.5318181818183
+      }
+    },
+    {
+      "month": 3,
+      "mean_temperature_c": {
+        "mean": -13.346627565982404,
+        "min": -13.346627565982404,
+        "max": -13.346627565982404
+      },
+      "mean_tmin_c": {
+        "mean": -15.399120234604107,
+        "min": -15.399120234604107,
+        "max": -15.399120234604107
+      },
+      "mean_tmax_c": {
+        "mean": -11.294134897360705,
+        "min": -11.294134897360705,
+        "max": -11.294134897360705
+      },
+      "precipitation_mm": {
+        "mean": 36.436363636363645,
+        "min": 36.436363636363645,
+        "max": 36.436363636363645
+      },
+      "shortwave_mj_m2": {
+        "mean": 91.09454545454545,
+        "min": 91.09454545454545,
+        "max": 91.09454545454545
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 2.9385337243401763,
+        "min": 2.9385337243401763,
+        "max": 2.9385337243401763
+      },
+      "heating_degree_days_18c": {
+        "mean": 971.7454545454547,
+        "min": 971.7454545454547,
+        "max": 971.7454545454547
+      }
+    },
+    {
+      "month": 4,
+      "mean_temperature_c": {
+        "mean": -9.58909090909091,
+        "min": -9.58909090909091,
+        "max": -9.58909090909091
+      },
+      "mean_tmin_c": {
+        "mean": -11.562727272727273,
+        "min": -11.562727272727273,
+        "max": -11.562727272727273
+      },
+      "mean_tmax_c": {
+        "mean": -7.615454545454546,
+        "min": -7.615454545454546,
+        "max": -7.615454545454546
+      },
+      "precipitation_mm": {
+        "mean": 26.44545454545455,
+        "min": 26.44545454545455,
+        "max": 26.44545454545455
+      },
+      "shortwave_mj_m2": {
+        "mean": 326.57909090909095,
+        "min": 326.57909090909095,
+        "max": 326.57909090909095
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 10.885969696969697,
+        "min": 10.885969696969697,
+        "max": 10.885969696969697
+      },
+      "heating_degree_days_18c": {
+        "mean": 827.6727272727272,
+        "min": 827.6727272727272,
+        "max": 827.6727272727272
+      }
+    },
+    {
+      "month": 5,
+      "mean_temperature_c": {
+        "mean": -3.3456011730205275,
+        "min": -3.3456011730205275,
+        "max": -3.3456011730205275
+      },
+      "mean_tmin_c": {
+        "mean": -4.579472140762463,
+        "min": -4.579472140762463,
+        "max": -4.579472140762463
+      },
+      "mean_tmax_c": {
+        "mean": -2.111730205278592,
+        "min": -2.111730205278592,
+        "max": -2.111730205278592
+      },
+      "precipitation_mm": {
+        "mean": 28.127272727272725,
+        "min": 28.127272727272725,
+        "max": 28.127272727272725
+      },
+      "shortwave_mj_m2": {
+        "mean": 586.8909090909091,
+        "min": 586.8909090909091,
+        "max": 586.8909090909091
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 18.931964809384162,
+        "min": 18.931964809384162,
+        "max": 18.931964809384162
+      },
+      "heating_degree_days_18c": {
+        "mean": 661.7136363636364,
+        "min": 661.7136363636364,
+        "max": 661.7136363636364
+      }
+    },
+    {
+      "month": 6,
+      "mean_temperature_c": {
+        "mean": 2.3613636363636363,
+        "min": 2.3613636363636363,
+        "max": 2.3613636363636363
+      },
+      "mean_tmin_c": {
+        "mean": 1.3681818181818182,
+        "min": 1.3681818181818182,
+        "max": 1.3681818181818182
+      },
+      "mean_tmax_c": {
+        "mean": 3.3545454545454545,
+        "min": 3.3545454545454545,
+        "max": 3.3545454545454545
+      },
+      "precipitation_mm": {
+        "mean": 22.62727272727273,
+        "min": 22.62727272727273,
+        "max": 22.62727272727273
+      },
+      "shortwave_mj_m2": {
+        "mean": 610.6072727272726,
+        "min": 610.6072727272726,
+        "max": 610.6072727272726
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 20.353575757575758,
+        "min": 20.353575757575758,
+        "max": 20.353575757575758
+      },
+      "heating_degree_days_18c": {
+        "mean": 469.15909090909093,
+        "min": 469.15909090909093,
+        "max": 469.15909090909093
+      }
+    },
+    {
+      "month": 7,
+      "mean_temperature_c": {
+        "mean": 6.573020527859238,
+        "min": 6.573020527859238,
+        "max": 6.573020527859238
+      },
+      "mean_tmin_c": {
+        "mean": 5.2082111436950145,
+        "min": 5.2082111436950145,
+        "max": 5.2082111436950145
+      },
+      "mean_tmax_c": {
+        "mean": 7.937829912023461,
+        "min": 7.937829912023461,
+        "max": 7.937829912023461
+      },
+      "precipitation_mm": {
+        "mean": 37.59090909090909,
+        "min": 37.59090909090909,
+        "max": 37.59090909090909
+      },
+      "shortwave_mj_m2": {
+        "mean": 443.33090909090913,
+        "min": 443.33090909090913,
+        "max": 443.33090909090913
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 14.300997067448678,
+        "min": 14.300997067448678,
+        "max": 14.300997067448678
+      },
+      "heating_degree_days_18c": {
+        "mean": 354.2363636363636,
+        "min": 354.2363636363636,
+        "max": 354.2363636363636
+      }
+    },
+    {
+      "month": 8,
+      "mean_temperature_c": {
+        "mean": 5.497800586510263,
+        "min": 5.497800586510263,
+        "max": 5.497800586510263
+      },
+      "mean_tmin_c": {
+        "mean": 4.244868035190616,
+        "min": 4.244868035190616,
+        "max": 4.244868035190616
+      },
+      "mean_tmax_c": {
+        "mean": 6.750733137829912,
+        "min": 6.750733137829912,
+        "max": 6.750733137829912
+      },
+      "precipitation_mm": {
+        "mean": 55.33636363636364,
+        "min": 55.33636363636364,
+        "max": 55.33636363636364
+      },
+      "shortwave_mj_m2": {
+        "mean": 261.6827272727273,
+        "min": 261.6827272727273,
+        "max": 261.6827272727273
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 8.441378299120235,
+        "min": 8.441378299120235,
+        "max": 8.441378299120235
+      },
+      "heating_degree_days_18c": {
+        "mean": 387.5681818181818,
+        "min": 387.5681818181818,
+        "max": 387.5681818181818
+      }
+    },
+    {
+      "month": 9,
+      "mean_temperature_c": {
+        "mean": 1.481969696969697,
+        "min": 1.481969696969697,
+        "max": 1.481969696969697
+      },
+      "mean_tmin_c": {
+        "mean": 0.2078787878787879,
+        "min": 0.2078787878787879,
+        "max": 0.2078787878787879
+      },
+      "mean_tmax_c": {
+        "mean": 2.756060606060606,
+        "min": 2.756060606060606,
+        "max": 2.756060606060606
+      },
+      "precipitation_mm": {
+        "mean": 61.00909090909091,
+        "min": 61.00909090909091,
+        "max": 61.00909090909091
+      },
+      "shortwave_mj_m2": {
+        "mean": 93.24545454545454,
+        "min": 93.24545454545454,
+        "max": 93.24545454545454
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 3.1081818181818175,
+        "min": 3.1081818181818175,
+        "max": 3.1081818181818175
+      },
+      "heating_degree_days_18c": {
+        "mean": 495.54090909090905,
+        "min": 495.54090909090905,
+        "max": 495.54090909090905
+      }
+    },
+    {
+      "month": 10,
+      "mean_temperature_c": {
+        "mean": -3.25483870967742,
+        "min": -3.25483870967742,
+        "max": -3.25483870967742
+      },
+      "mean_tmin_c": {
+        "mean": -4.687976539589442,
+        "min": -4.687976539589442,
+        "max": -4.687976539589442
+      },
+      "mean_tmax_c": {
+        "mean": -1.821700879765396,
+        "min": -1.821700879765396,
+        "max": -1.821700879765396
+      },
+      "precipitation_mm": {
+        "mean": 41.69090909090909,
+        "min": 41.69090909090909,
+        "max": 41.69090909090909
+      },
+      "shortwave_mj_m2": {
+        "mean": 11.740909090909089,
+        "min": 11.740909090909089,
+        "max": 11.740909090909089
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 0.37873900293255136,
+        "min": 0.37873900293255136,
+        "max": 0.37873900293255136
+      },
+      "heating_degree_days_18c": {
+        "mean": 658.9,
+        "min": 658.9,
+        "max": 658.9
+      }
+    },
+    {
+      "month": 11,
+      "mean_temperature_c": {
+        "mean": -7.002424242424243,
+        "min": -7.002424242424243,
+        "max": -7.002424242424243
+      },
+      "mean_tmin_c": {
+        "mean": -8.884545454545455,
+        "min": -8.884545454545455,
+        "max": -8.884545454545455
+      },
+      "mean_tmax_c": {
+        "mean": -5.12030303030303,
+        "min": -5.12030303030303,
+        "max": -5.12030303030303
+      },
+      "precipitation_mm": {
+        "mean": 44.445454545454545,
+        "min": 44.445454545454545,
+        "max": 44.445454545454545
+      },
+      "shortwave_mj_m2": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "heating_degree_days_18c": {
+        "mean": 750.0727272727272,
+        "min": 750.0727272727272,
+        "max": 750.0727272727272
+      }
+    },
+    {
+      "month": 12,
+      "mean_temperature_c": {
+        "mean": -9.317008797653958,
+        "min": -9.317008797653958,
+        "max": -9.317008797653958
+      },
+      "mean_tmin_c": {
+        "mean": -11.33782991202346,
+        "min": -11.33782991202346,
+        "max": -11.33782991202346
+      },
+      "mean_tmax_c": {
+        "mean": -7.296187683284457,
+        "min": -7.296187683284457,
+        "max": -7.296187683284457
+      },
+      "precipitation_mm": {
+        "mean": 45.445454545454545,
+        "min": 45.445454545454545,
+        "max": 45.445454545454545
+      },
+      "shortwave_mj_m2": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "shortwave_daily_mj_m2": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "heating_degree_days_18c": {
+        "mean": 846.8272727272728,
+        "min": 846.8272727272728,
+        "max": 846.8272727272728
+      }
+    }
+  ],
+  "dataset": "ERA5 via Open-Meteo",
+  "dataset_version": "retrieval-sha256",
+  "site": {
+    "label": "Longyearbyen / Svalbard",
+    "latitude": 78.2232,
+    "longitude": 15.6469,
+    "grid_latitude": 78.25,
+    "grid_longitude": 15.75,
+    "grid_elevation_m": 217.0
+  },
+  "classification": "SOURCED_REANALYSIS_NOT_FIELD_OBSERVATION",
+  "limitations": [
+    "2015–2025 is an 11-year recent reference, not a 30-year climate normal or a 2025 station observation.",
+    "ERA5 reanalysis and NASA bias-adjusted CMIP6 are different datasets/grids. Direct plan differences include dataset effects and cannot be attributed solely to climate change.",
+    "Single reanalysis member has no inter-model spread; equal min/max is not zero uncertainty.",
+    "Precipitation includes snow water equivalent, not accessible catchment flow or agricultural allocation.",
+    "No automatic bias correction or replacement of future NASA daily series was applied."
+  ],
+  "ensemble_method": "One ERA5 trajectory; min=max is the point estimate, not an uncertainty bound.",
+  "temperature_mean_method": "(daily Tmin + daily Tmax) / 2; same approximation as future model.",
+  "sources": [
+    "https://open-meteo.com/en/docs/historical-weather-api",
+    "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview"
+  ],
+  "change_from_historical": {
+    "mean_temperature_c": 3.651032442445059,
+    "gdd0_degree_days": 315.73438835375043,
+    "gdd5_degree_days": 94.34140743833588,
+    "frost_free_days": 53.36212121212121,
+    "frost_free_run_days": 64.84242424242424,
+    "growing_season_5c_run_days": 27.457575757575757,
+    "precipitation_mm": -54.99335297637117,
+    "shortwave_mj_m2": -1400.9850538091118,
+    "heating_degree_days_18c": -1333.157628157638,
+    "summer_temperature_c": 2.9044663875313237
+  },
+  "cross_dataset_check": {
+    "period": [
+      1995,
+      2014
+    ],
+    "era5_summary": {
+      "mean_temperature_c": -6.275557002769669,
+      "gdd0_degree_days": 380.3,
+      "gdd5_degree_days": 37.2625,
+      "frost_free_days": 91.7,
+      "frost_free_run_days": 72.5,
+      "growing_season_5c_run_days": 11.1,
+      "precipitation_mm": 405.18000000000006,
+      "shortwave_mj_m2": 2554.6665000000003,
+      "heating_degree_days_18c": 8866.564999999999,
+      "summer_temperature_c": 3.595570652173914
+    },
+    "nasa_minus_era5": {
+      "mean_temperature_c": -1.6538856704357219,
+      "gdd0_degree_days": -163.22529744465947,
+      "gdd5_degree_days": -34.03118016560862,
+      "frost_free_days": -34.516666666666666,
+      "frost_free_run_days": -50.43333333333334,
+      "growing_season_5c_run_days": -8.466666666666667,
+      "precipitation_mm": 125.48608024909834,
+      "shortwave_mj_m2": 1273.6849174454755,
+      "heating_degree_days_18c": 604.2062645212754,
+      "summer_temperature_c": -1.6626852610491105
+    },
+    "recent_minus_era5_historical": {
+      "mean_temperature_c": 1.9971467720093372,
+      "gdd0_degree_days": 152.50909090909096,
+      "gdd5_degree_days": 60.31022727272726,
+      "frost_free_days": 18.845454545454544,
+      "frost_free_run_days": 14.409090909090907,
+      "growing_season_5c_run_days": 18.990909090909092,
+      "precipitation_mm": 70.49272727272717,
+      "shortwave_mj_m2": -127.30013636363628,
+      "heating_degree_days_18c": -728.9513636363627,
+      "summer_temperature_c": 1.2417811264822132
+    },
+    "projection_adjustment_applied": false,
+    "classification": "COMPARABILITY_DIAGNOSTIC_NOT_VALIDATION"
+  },
+  "reference_policy": "Same-engine resource scenario under recent reanalysis; not observed present agriculture. Future-vs-recent deltas are cross-dataset scenario comparisons."
+}

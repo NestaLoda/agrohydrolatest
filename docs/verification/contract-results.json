@@ -1,0 +1,1613 @@
+{
+  "capacity": {
+    "run_id": "84c3ef655ab3f371c429ab29",
+    "status": "conditional",
+    "objective": {
+      "mode": "capacity",
+      "stages": [
+        "max_weighted_single_crop_capacity_fraction",
+        "min_water",
+        "min_energy"
+      ],
+      "normalization_kg": {
+        "barley": 6750.0,
+        "potato": 27000.0,
+        "lettuce": 1200.0
+      },
+      "priority_weights": {
+        "barley": 1.0,
+        "potato": 1.0,
+        "lettuce": 1.0
+      },
+      "balanced_floor": null,
+      "minima_policy": "Declared kg minima ignored for capacity exploration; area-share minima retained.",
+      "normalization_basis": "Single-crop resource-constrained upper potential, lower portfolio obligations excluded.",
+      "label": "Kaynak kapasitesini keşfet"
+    },
+    "optimized": {
+      "crops": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "area_ha": 0,
+          "area_share_pct": 0.0,
+          "production_kg": 0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.0,
+          "target_production_kg": 6750.0,
+          "target_achievement_fraction": 0.0,
+          "summary_reason": "Su kaynağı kapalı veya kapasitesi sıfır.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 0 kg; daha aşağı indirilemez.",
+            "Su kaynağı kapalı veya kapasitesi sıfır.",
+            "Hesaplanan brüt su gereksinimi 2000.0 m³/ha; verim girdisi 3000.0 kg/ha.",
+            "Tek ürün kaynak potansiyeli 6750.00 kg; karşılanan oran 0.0%. Bu bir talep hedefi değildir.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "area_ha": 1.0167488466130767,
+          "area_share_pct": 33.89162822043589,
+          "production_kg": 20334.976932261536,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 1.0167488466130767,
+          "target_production_kg": 27000.0,
+          "target_achievement_fraction": 0.7531472937874643,
+          "summary_reason": "Seçilen kaynaklarla hesaplanan üretim potansiyeli payı; kullanıcı tarafından verilmiş kg talebi değil.",
+          "reasons": [
+            "Alan 1.02 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 3333.3 m³/ha; verim girdisi 20000.0 kg/ha.",
+            "Tek ürün kaynak potansiyeli 27000.00 kg; karşılanan oran 75.3%. Bu bir talep hedefi değildir.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "area_ha": 0,
+          "area_share_pct": 0.0,
+          "production_kg": 1200.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.0,
+          "target_production_kg": 1200.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Seçilen kaynaklarla hesaplanan üretim potansiyeli payı; kullanıcı tarafından verilmiş kg talebi değil.",
+          "reasons": [
+            "Tek ürün kaynak potansiyeli 1200.00 kg; karşılanan oran 100.0%. Bu bir talep hedefi değildir.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 0.6,
+          "area_ha": 0.6,
+          "production_kg": 12000.0,
+          "water_m3": 2000.0,
+          "energy_kwh": 300.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "stored_water",
+          "capacity_unit": "ha",
+          "capacity_used": 0.15,
+          "area_ha": 0.15,
+          "production_kg": 3000.0,
+          "water_m3": 500.0,
+          "energy_kwh": 75.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "desalinated_seawater",
+          "capacity_unit": "ha",
+          "capacity_used": 0.26674884661307685,
+          "area_ha": 0.26674884661307685,
+          "production_kg": 5334.976932261537,
+          "water_m3": 889.1628220435896,
+          "energy_kwh": 9375.53798704808,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "method": "hydroponics",
+          "water_source": "desalinated_seawater",
+          "capacity_unit": "m2",
+          "capacity_used": 400.0,
+          "area_ha": null,
+          "production_kg": 1200.0,
+          "water_m3": 24.0,
+          "energy_kwh": 30249.46153846154,
+          "season_start": "2035-05-01",
+          "season_end": "2035-07-14"
+        }
+      ],
+      "totals": {
+        "open_field_area_ha": 1.0167488466130767,
+        "greenhouse_area_m2": 0,
+        "hydroponics_area_m2": 400.0,
+        "water_m3": 3413.1628220435896,
+        "energy_kwh": 39999.999525509615,
+        "unallocated_land_ha": 1.9832511533869233
+      },
+      "water_sources": [
+        {
+          "source_id": "freshwater",
+          "used_m3": 2000.0,
+          "capacity_m3": 2000.0,
+          "share_pct": 58.596677166503426
+        },
+        {
+          "source_id": "stored_water",
+          "used_m3": 500.0,
+          "capacity_m3": 500.0,
+          "share_pct": 14.649169291625856
+        },
+        {
+          "source_id": "reuse",
+          "used_m3": 0,
+          "capacity_m3": 0,
+          "share_pct": 0.0
+        },
+        {
+          "source_id": "desalinated_seawater",
+          "used_m3": 913.1628220435896,
+          "capacity_m3": 2000.0,
+          "share_pct": 26.754153541870718
+        }
+      ]
+    }
+  },
+  "balanced": {
+    "run_id": "f03ab2b9a36848d7113c0e7c",
+    "status": "conditional",
+    "objective": {
+      "mode": "balanced",
+      "stages": [
+        "max_min_single_crop_capacity_fraction",
+        "max_weighted_single_crop_capacity_fraction",
+        "min_water",
+        "min_energy"
+      ],
+      "normalization_kg": {
+        "barley": 6750.0,
+        "potato": 27000.0,
+        "lettuce": 1200.0
+      },
+      "priority_weights": {
+        "barley": 1.0,
+        "potato": 1.0,
+        "lettuce": 1.0
+      },
+      "balanced_floor": 0.4986702127659574,
+      "minima_policy": "Declared kg minima ignored for capacity exploration; area-share minima retained.",
+      "normalization_basis": "Single-crop resource-constrained upper potential, lower portfolio obligations excluded.",
+      "label": "Dengeli plan"
+    },
+    "optimized": {
+      "crops": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "area_ha": 1.1220079562234042,
+          "area_share_pct": 37.40026520744681,
+          "production_kg": 3366.023868670213,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 1.1220079562234042,
+          "target_production_kg": 6750.0,
+          "target_achievement_fraction": 0.49867020276595747,
+          "summary_reason": "Seçilen kaynaklarla hesaplanan üretim potansiyeli payı; kullanıcı tarafından verilmiş kg talebi değil.",
+          "reasons": [
+            "Alan 1.12 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 2000.0 m³/ha; verim girdisi 3000.0 kg/ha.",
+            "Tek ürün kaynak potansiyeli 6750.00 kg; karşılanan oran 49.9%. Bu bir talep hedefi değildir.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu, Arıtılmış deniz suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "area_ha": 0.6732047737340425,
+          "area_share_pct": 22.440159124468085,
+          "production_kg": 13464.09547468085,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.6732047737340425,
+          "target_production_kg": 27000.0,
+          "target_achievement_fraction": 0.49867020276595736,
+          "summary_reason": "Seçilen kaynaklarla hesaplanan üretim potansiyeli payı; kullanıcı tarafından verilmiş kg talebi değil.",
+          "reasons": [
+            "Alan 0.67 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 3333.3 m³/ha; verim girdisi 20000.0 kg/ha.",
+            "Tek ürün kaynak potansiyeli 27000.00 kg; karşılanan oran 49.9%. Bu bir talep hedefi değildir.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu, Arıtılmış deniz suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "area_ha": 0,
+          "area_share_pct": 0.0,
+          "production_kg": 598.4087433191539,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.0,
+          "target_production_kg": 1200.0,
+          "target_achievement_fraction": 0.4986739527659616,
+          "summary_reason": "Seçilen kaynaklarla hesaplanan üretim potansiyeli payı; kullanıcı tarafından verilmiş kg talebi değil.",
+          "reasons": [
+            "Tek ürün kaynak potansiyeli 1200.00 kg; karşılanan oran 49.9%. Bu bir talep hedefi değildir.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu, Arıtılmış deniz suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 1.0,
+          "area_ha": 1.0,
+          "production_kg": 3000.0,
+          "water_m3": 2000.0,
+          "energy_kwh": 500.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-12"
+        },
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "method": "open_field",
+          "water_source": "stored_water",
+          "capacity_unit": "ha",
+          "capacity_used": 0.12200795622340424,
+          "area_ha": 0.12200795622340424,
+          "production_kg": 366.0238686702127,
+          "water_m3": 244.01591244680847,
+          "energy_kwh": 61.00397811170212,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-12"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "stored_water",
+          "capacity_unit": "ha",
+          "capacity_used": 0.07679522626595746,
+          "area_ha": 0.07679522626595746,
+          "production_kg": 1535.9045253191491,
+          "water_m3": 255.98408755319153,
+          "energy_kwh": 38.39761313297873,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "desalinated_seawater",
+          "capacity_unit": "ha",
+          "capacity_used": 0.596409547468085,
+          "area_ha": 0.596409547468085,
+          "production_kg": 11928.1909493617,
+          "water_m3": 1988.0318248936169,
+          "energy_kwh": 20962.266338253274,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "method": "hydroponics",
+          "water_source": "desalinated_seawater",
+          "capacity_unit": "m2",
+          "capacity_used": 199.46958110638462,
+          "area_ha": null,
+          "production_kg": 598.4087433191539,
+          "water_m3": 11.968174866383077,
+          "energy_kwh": 15084.618554426539,
+          "season_start": "2035-05-01",
+          "season_end": "2035-07-14"
+        }
+      ],
+      "totals": {
+        "open_field_area_ha": 1.7952127299574467,
+        "greenhouse_area_m2": 0,
+        "hydroponics_area_m2": 199.46958110638462,
+        "water_m3": 4499.99999976,
+        "energy_kwh": 36646.286483924494,
+        "unallocated_land_ha": 1.2047872700425533
+      },
+      "water_sources": [
+        {
+          "source_id": "freshwater",
+          "used_m3": 2000.0,
+          "capacity_m3": 2000.0,
+          "share_pct": 44.44444444681481
+        },
+        {
+          "source_id": "stored_water",
+          "used_m3": 500.0,
+          "capacity_m3": 500.0,
+          "share_pct": 11.111111111703703
+        },
+        {
+          "source_id": "reuse",
+          "used_m3": 0,
+          "capacity_m3": 0,
+          "share_pct": 0.0
+        },
+        {
+          "source_id": "desalinated_seawater",
+          "used_m3": 1999.99999976,
+          "capacity_m3": 2000.0,
+          "share_pct": 44.44444444148148
+        }
+      ]
+    }
+  },
+  "demand": {
+    "run_id": "c017d5e471c581ae327d3ee5",
+    "status": "conditional",
+    "objective": {
+      "mode": "demand",
+      "stages": [
+        "max_capped_demand_achievement",
+        "min_water",
+        "min_energy"
+      ],
+      "normalization_kg": {
+        "barley": 3000.0,
+        "potato": 10000.0,
+        "lettuce": 1000.0
+      },
+      "priority_weights": {
+        "barley": 1.0,
+        "potato": 1.0,
+        "lettuce": 1.0
+      },
+      "balanced_floor": null,
+      "minima_policy": "Declared production minima retained.",
+      "normalization_basis": "User demand target",
+      "label": "Talebi karşıla"
+    },
+    "optimized": {
+      "crops": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "area_ha": 1.0,
+          "area_share_pct": 33.33333333333333,
+          "production_kg": 3000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 1.0,
+          "target_production_kg": 3000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 3000 kg; daha aşağı indirilemez.",
+            "Alan 1.00 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 2000.0 m³/ha; verim girdisi 3000.0 kg/ha.",
+            "Bu ürünün tam tarla hedefi 2000.0 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "area_ha": 0.5,
+          "area_share_pct": 16.666666666666664,
+          "production_kg": 10000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.5,
+          "target_production_kg": 10000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 10000 kg; daha aşağı indirilemez.",
+            "Alan 0.50 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 3333.3 m³/ha; verim girdisi 20000.0 kg/ha.",
+            "Bu ürünün tam tarla hedefi 1666.7 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "area_ha": 0,
+          "area_share_pct": 0.0,
+          "production_kg": 1000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.0,
+          "target_production_kg": 1000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Alan değişmedi; minimum üretim sınırı bağlayıcı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 1000 kg; daha aşağı indirilemez.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 1.0,
+          "area_ha": 1.0,
+          "production_kg": 3000.0,
+          "water_m3": 2000.0,
+          "energy_kwh": 500.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-12"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "stored_water",
+          "capacity_unit": "ha",
+          "capacity_used": 0.144,
+          "area_ha": 0.144,
+          "production_kg": 2880.0,
+          "water_m3": 480.0,
+          "energy_kwh": 72.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "desalinated_seawater",
+          "capacity_unit": "ha",
+          "capacity_used": 0.356,
+          "area_ha": 0.356,
+          "production_kg": 7120.0,
+          "water_m3": 1186.6666666666667,
+          "energy_kwh": 12512.48717948718,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "method": "hydroponics",
+          "water_source": "stored_water",
+          "capacity_unit": "m2",
+          "capacity_used": 333.3333333333333,
+          "area_ha": null,
+          "production_kg": 1000.0,
+          "water_m3": 19.999999999999996,
+          "energy_kwh": 25000.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-07-14"
+        }
+      ],
+      "totals": {
+        "open_field_area_ha": 1.5,
+        "greenhouse_area_m2": 0,
+        "hydroponics_area_m2": 333.3333333333333,
+        "water_m3": 3686.6666666666665,
+        "energy_kwh": 38084.48717948718,
+        "unallocated_land_ha": 1.5
+      },
+      "water_sources": [
+        {
+          "source_id": "freshwater",
+          "used_m3": 2000.0,
+          "capacity_m3": 2000.0,
+          "share_pct": 54.249547920434
+        },
+        {
+          "source_id": "stored_water",
+          "used_m3": 500.0,
+          "capacity_m3": 500.0,
+          "share_pct": 13.5623869801085
+        },
+        {
+          "source_id": "reuse",
+          "used_m3": 0,
+          "capacity_m3": 0,
+          "share_pct": 0.0
+        },
+        {
+          "source_id": "desalinated_seawater",
+          "used_m3": 1186.6666666666667,
+          "capacity_m3": 2000.0,
+          "share_pct": 32.18806509945751
+        }
+      ]
+    }
+  },
+  "water_priority": {
+    "run_id": "bd514e53207d46ec69d20a9c",
+    "status": "conditional",
+    "objective": {
+      "mode": "water_priority",
+      "stages": [
+        "max_capped_demand_achievement",
+        "min_water",
+        "min_energy"
+      ],
+      "normalization_kg": {
+        "barley": 3000.0,
+        "potato": 10000.0,
+        "lettuce": 1000.0
+      },
+      "priority_weights": {
+        "barley": 1.0,
+        "potato": 1.0,
+        "lettuce": 1.0
+      },
+      "balanced_floor": null,
+      "minima_policy": "Full enabled crop demand enforced.",
+      "normalization_basis": "User demand target",
+      "label": "Su öncelikli"
+    },
+    "optimized": {
+      "crops": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "area_ha": 1.0,
+          "area_share_pct": 33.33333333333333,
+          "production_kg": 3000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 1.0,
+          "target_production_kg": 3000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 3000 kg; daha aşağı indirilemez.",
+            "Alan 1.00 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 2000.0 m³/ha; verim girdisi 3000.0 kg/ha.",
+            "Bu ürünün tam tarla hedefi 2000.0 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "area_ha": 0.5,
+          "area_share_pct": 16.666666666666664,
+          "production_kg": 10000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.5,
+          "target_production_kg": 10000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 10000 kg; daha aşağı indirilemez.",
+            "Alan 0.50 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 3333.3 m³/ha; verim girdisi 20000.0 kg/ha.",
+            "Bu ürünün tam tarla hedefi 1666.7 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "area_ha": 0,
+          "area_share_pct": 0.0,
+          "production_kg": 1000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.0,
+          "target_production_kg": 1000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Alan değişmedi; minimum üretim sınırı bağlayıcı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 1000 kg; daha aşağı indirilemez.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 1.0,
+          "area_ha": 1.0,
+          "production_kg": 3000.0,
+          "water_m3": 2000.0,
+          "energy_kwh": 500.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-12"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "stored_water",
+          "capacity_unit": "ha",
+          "capacity_used": 0.144,
+          "area_ha": 0.144,
+          "production_kg": 2880.0,
+          "water_m3": 480.0,
+          "energy_kwh": 72.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "desalinated_seawater",
+          "capacity_unit": "ha",
+          "capacity_used": 0.356,
+          "area_ha": 0.356,
+          "production_kg": 7120.0,
+          "water_m3": 1186.6666666666667,
+          "energy_kwh": 12512.48717948718,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "method": "hydroponics",
+          "water_source": "stored_water",
+          "capacity_unit": "m2",
+          "capacity_used": 333.3333333333333,
+          "area_ha": null,
+          "production_kg": 1000.0,
+          "water_m3": 19.999999999999996,
+          "energy_kwh": 25000.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-07-14"
+        }
+      ],
+      "totals": {
+        "open_field_area_ha": 1.5,
+        "greenhouse_area_m2": 0,
+        "hydroponics_area_m2": 333.3333333333333,
+        "water_m3": 3686.6666666666665,
+        "energy_kwh": 38084.48717948718,
+        "unallocated_land_ha": 1.5
+      },
+      "water_sources": [
+        {
+          "source_id": "freshwater",
+          "used_m3": 2000.0,
+          "capacity_m3": 2000.0,
+          "share_pct": 54.249547920434
+        },
+        {
+          "source_id": "stored_water",
+          "used_m3": 500.0,
+          "capacity_m3": 500.0,
+          "share_pct": 13.5623869801085
+        },
+        {
+          "source_id": "reuse",
+          "used_m3": 0,
+          "capacity_m3": 0,
+          "share_pct": 0.0
+        },
+        {
+          "source_id": "desalinated_seawater",
+          "used_m3": 1186.6666666666667,
+          "capacity_m3": 2000.0,
+          "share_pct": 32.18806509945751
+        }
+      ]
+    }
+  },
+  "energy_priority": {
+    "run_id": "c0ca7283a439d882c9693161",
+    "status": "conditional",
+    "objective": {
+      "mode": "energy_priority",
+      "stages": [
+        "max_capped_demand_achievement",
+        "min_energy",
+        "min_water"
+      ],
+      "normalization_kg": {
+        "barley": 3000.0,
+        "potato": 10000.0,
+        "lettuce": 1000.0
+      },
+      "priority_weights": {
+        "barley": 1.0,
+        "potato": 1.0,
+        "lettuce": 1.0
+      },
+      "balanced_floor": null,
+      "minima_policy": "Full enabled crop demand enforced.",
+      "normalization_basis": "User demand target",
+      "label": "Enerji öncelikli"
+    },
+    "optimized": {
+      "crops": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "area_ha": 1.0,
+          "area_share_pct": 33.33333333333333,
+          "production_kg": 3000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 1.0,
+          "target_production_kg": 3000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 3000 kg; daha aşağı indirilemez.",
+            "Alan 1.00 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 2000.0 m³/ha; verim girdisi 3000.0 kg/ha.",
+            "Bu ürünün tam tarla hedefi 2000.0 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "area_ha": 0.5,
+          "area_share_pct": 16.666666666666664,
+          "production_kg": 10000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.5,
+          "target_production_kg": 10000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 10000 kg; daha aşağı indirilemez.",
+            "Alan 0.50 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+            "Hesaplanan brüt su gereksinimi 3333.3 m³/ha; verim girdisi 20000.0 kg/ha.",
+            "Bu ürünün tam tarla hedefi 1666.7 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "area_ha": 0,
+          "area_share_pct": 0.0,
+          "production_kg": 1000.0,
+          "current_area_ha": 0.0,
+          "delta_area_ha": 0.0,
+          "target_production_kg": 1000.0,
+          "target_achievement_fraction": 1,
+          "summary_reason": "Alan değişmedi; minimum üretim sınırı bağlayıcı.",
+          "reasons": [
+            "Minimum üretim kısıtı bağlayıcı: 1000 kg; daha aşağı indirilemez.",
+            "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 0.16666666666666663,
+          "area_ha": 0.16666666666666663,
+          "production_kg": 499.9999999999999,
+          "water_m3": 333.33333333333326,
+          "energy_kwh": 83.33333333333331,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-12"
+        },
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "method": "open_field",
+          "water_source": "stored_water",
+          "capacity_unit": "ha",
+          "capacity_used": 0.2499999981679988,
+          "area_ha": 0.2499999981679988,
+          "production_kg": 749.9999945039964,
+          "water_m3": 499.9999963359976,
+          "energy_kwh": 124.9999990839994,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-12"
+        },
+        {
+          "crop_id": "barley",
+          "name_tr": "Arpa",
+          "method": "open_field",
+          "water_source": "desalinated_seawater",
+          "capacity_unit": "ha",
+          "capacity_used": 0.5833333351653346,
+          "area_ha": 0.5833333351653346,
+          "production_kg": 1750.0000054960037,
+          "water_m3": 1166.6666703306691,
+          "energy_kwh": 12418.269269769717,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-12"
+        },
+        {
+          "crop_id": "potato",
+          "name_tr": "Patates",
+          "method": "open_field",
+          "water_source": "freshwater",
+          "capacity_unit": "ha",
+          "capacity_used": 0.5,
+          "area_ha": 0.5,
+          "production_kg": 10000.0,
+          "water_m3": 1666.6666666666667,
+          "energy_kwh": 250.0,
+          "season_start": "2035-05-01",
+          "season_end": "2035-09-07"
+        },
+        {
+          "crop_id": "lettuce",
+          "name_tr": "Marul",
+          "method": "hydroponics",
+          "water_source": "desalinated_seawater",
+          "capacity_unit": "m2",
+          "capacity_used": 333.3333333333333,
+          "area_ha": null,
+          "production_kg": 1000.0,
+          "water_m3": 19.999999999999996,
+          "energy_kwh": 25207.884615384613,
+          "season_start": "2035-05-01",
+          "season_end": "2035-07-14"
+        }
+      ],
+      "totals": {
+        "open_field_area_ha": 1.5,
+        "greenhouse_area_m2": 0,
+        "hydroponics_area_m2": 333.3333333333333,
+        "water_m3": 3686.6666666666665,
+        "energy_kwh": 38084.48721757166,
+        "unallocated_land_ha": 1.5
+      },
+      "water_sources": [
+        {
+          "source_id": "freshwater",
+          "used_m3": 2000.0,
+          "capacity_m3": 2000.0,
+          "share_pct": 54.249547920434
+        },
+        {
+          "source_id": "stored_water",
+          "used_m3": 499.9999963359976,
+          "capacity_m3": 500.0,
+          "share_pct": 13.562386880723261
+        },
+        {
+          "source_id": "reuse",
+          "used_m3": 0,
+          "capacity_m3": 0,
+          "share_pct": 0.0
+        },
+        {
+          "source_id": "desalinated_seawater",
+          "used_m3": 1186.6666703306691,
+          "capacity_m3": 2000.0,
+          "share_pct": 32.18806519884274
+        }
+      ]
+    }
+  },
+  "information": {
+    "baseline_run_id": "c017d5e471c581ae327d3ee5",
+    "classification": "SCENARIO_SENSITIVITY",
+    "parameters": [
+      {
+        "id": "freshwater",
+        "label": "Mevsimsel karasal tatlı su",
+        "base": 2000.0,
+        "unit": "m³",
+        "measurable": false,
+        "method": "Hidroloji, depolama, erişim ve tahsis kaydı",
+        "range_source": "USER_SCENARIO: mevcut bütçenin ±%20 stres aralığı; olasılık/güven aralığı değil.",
+        "trials": [
+          {
+            "value": 1600.0,
+            "status": "infeasible",
+            "run_id": "41762009137362da98a03de0",
+            "difference": {
+              "pattern_changed": true,
+              "feasibility_changed": true,
+              "allocation_l1_kg": null,
+              "resource_delta": {
+                "water_m3": null,
+                "energy_kwh": null,
+                "open_field_area_ha": null
+              },
+              "binding_changed": true,
+              "binding_before": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ],
+              "binding_after": []
+            },
+            "optimized": null
+          },
+          {
+            "value": 2400.0,
+            "status": "conditional",
+            "run_id": "6fcbbf6f55807e131d486a9b",
+            "difference": {
+              "pattern_changed": true,
+              "feasibility_changed": false,
+              "allocation_l1_kg": 4800.0,
+              "resource_delta": {
+                "water_m3": 0.0,
+                "energy_kwh": -4157.692307692305,
+                "open_field_area_ha": 0.0
+              },
+              "binding_changed": false,
+              "binding_before": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ],
+              "binding_after": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ]
+            },
+            "optimized": {
+              "crops": [
+                {
+                  "crop_id": "barley",
+                  "name_tr": "Arpa",
+                  "area_ha": 1.0,
+                  "area_share_pct": 33.33333333333333,
+                  "production_kg": 3000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 1.0,
+                  "target_production_kg": 3000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 3000 kg; daha aşağı indirilemez.",
+                    "Alan 1.00 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+                    "Hesaplanan brüt su gereksinimi 2000.0 m³/ha; verim girdisi 3000.0 kg/ha.",
+                    "Bu ürünün tam tarla hedefi 2000.0 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "area_ha": 0.5,
+                  "area_share_pct": 16.666666666666664,
+                  "production_kg": 10000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 0.5,
+                  "target_production_kg": 10000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 10000 kg; daha aşağı indirilemez.",
+                    "Alan 0.50 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+                    "Hesaplanan brüt su gereksinimi 3333.3 m³/ha; verim girdisi 20000.0 kg/ha.",
+                    "Bu ürünün tam tarla hedefi 1666.7 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                },
+                {
+                  "crop_id": "lettuce",
+                  "name_tr": "Marul",
+                  "area_ha": 0,
+                  "area_share_pct": 0.0,
+                  "production_kg": 1000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 0.0,
+                  "target_production_kg": 1000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Alan değişmedi; minimum üretim sınırı bağlayıcı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 1000 kg; daha aşağı indirilemez.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                }
+              ],
+              "allocations": [
+                {
+                  "crop_id": "barley",
+                  "name_tr": "Arpa",
+                  "method": "open_field",
+                  "water_source": "freshwater",
+                  "capacity_unit": "ha",
+                  "capacity_used": 1.0,
+                  "area_ha": 1.0,
+                  "production_kg": 3000.0,
+                  "water_m3": 2000.0,
+                  "energy_kwh": 500.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-12"
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "method": "open_field",
+                  "water_source": "freshwater",
+                  "capacity_unit": "ha",
+                  "capacity_used": 0.12,
+                  "area_ha": 0.12,
+                  "production_kg": 2400.0,
+                  "water_m3": 400.0,
+                  "energy_kwh": 60.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-07"
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "method": "open_field",
+                  "water_source": "stored_water",
+                  "capacity_unit": "ha",
+                  "capacity_used": 0.144,
+                  "area_ha": 0.144,
+                  "production_kg": 2880.0,
+                  "water_m3": 480.0,
+                  "energy_kwh": 72.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-07"
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "method": "open_field",
+                  "water_source": "desalinated_seawater",
+                  "capacity_unit": "ha",
+                  "capacity_used": 0.23600000000000002,
+                  "area_ha": 0.23600000000000002,
+                  "production_kg": 4720.0,
+                  "water_m3": 786.6666666666667,
+                  "energy_kwh": 8294.794871794873,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-07"
+                },
+                {
+                  "crop_id": "lettuce",
+                  "name_tr": "Marul",
+                  "method": "hydroponics",
+                  "water_source": "stored_water",
+                  "capacity_unit": "m2",
+                  "capacity_used": 333.3333333333333,
+                  "area_ha": null,
+                  "production_kg": 1000.0,
+                  "water_m3": 19.999999999999996,
+                  "energy_kwh": 25000.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-07-14"
+                }
+              ],
+              "totals": {
+                "open_field_area_ha": 1.5,
+                "greenhouse_area_m2": 0,
+                "hydroponics_area_m2": 333.3333333333333,
+                "water_m3": 3686.6666666666665,
+                "energy_kwh": 33926.794871794875,
+                "unallocated_land_ha": 1.5
+              },
+              "water_sources": [
+                {
+                  "source_id": "freshwater",
+                  "used_m3": 2400.0,
+                  "capacity_m3": 2400.0,
+                  "share_pct": 65.0994575045208
+                },
+                {
+                  "source_id": "stored_water",
+                  "used_m3": 500.0,
+                  "capacity_m3": 500.0,
+                  "share_pct": 13.5623869801085
+                },
+                {
+                  "source_id": "reuse",
+                  "used_m3": 0,
+                  "capacity_m3": 0,
+                  "share_pct": 0.0
+                },
+                {
+                  "source_id": "desalinated_seawater",
+                  "used_m3": 786.6666666666667,
+                  "capacity_m3": 2000.0,
+                  "share_pct": 21.33815551537071
+                }
+              ]
+            }
+          }
+        ],
+        "status": "ASSESSED",
+        "decision_impact": "DESEN / UYGULANABİLİRLİK DEĞİŞTİ"
+      },
+      {
+        "id": "energy",
+        "label": "Üretim dönemi enerji bütçesi",
+        "base": 40000.0,
+        "unit": "kWh",
+        "measurable": false,
+        "method": "Üretim tesisi ve enerji altyapısı kaydı",
+        "range_source": "USER_SCENARIO: bütçenin ±%20 stres aralığı.",
+        "trials": [
+          {
+            "value": 32000.0,
+            "status": "infeasible",
+            "run_id": "c867434df08177d138081143",
+            "difference": {
+              "pattern_changed": true,
+              "feasibility_changed": true,
+              "allocation_l1_kg": null,
+              "resource_delta": {
+                "water_m3": null,
+                "energy_kwh": null,
+                "open_field_area_ha": null
+              },
+              "binding_changed": true,
+              "binding_before": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ],
+              "binding_after": []
+            },
+            "optimized": null
+          },
+          {
+            "value": 48000.0,
+            "status": "conditional",
+            "run_id": "91a416fc72ede3ac5ae9977e",
+            "difference": {
+              "pattern_changed": false,
+              "feasibility_changed": false,
+              "allocation_l1_kg": 0.0,
+              "resource_delta": {
+                "water_m3": 0.0,
+                "energy_kwh": 0.0,
+                "open_field_area_ha": 0.0
+              },
+              "binding_changed": false,
+              "binding_before": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ],
+              "binding_after": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ]
+            },
+            "optimized": {
+              "crops": [
+                {
+                  "crop_id": "barley",
+                  "name_tr": "Arpa",
+                  "area_ha": 1.0,
+                  "area_share_pct": 33.33333333333333,
+                  "production_kg": 3000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 1.0,
+                  "target_production_kg": 3000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 3000 kg; daha aşağı indirilemez.",
+                    "Alan 1.00 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+                    "Hesaplanan brüt su gereksinimi 2000.0 m³/ha; verim girdisi 3000.0 kg/ha.",
+                    "Bu ürünün tam tarla hedefi 2000.0 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "area_ha": 0.5,
+                  "area_share_pct": 16.666666666666664,
+                  "production_kg": 10000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 0.5,
+                  "target_production_kg": 10000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 10000 kg; daha aşağı indirilemez.",
+                    "Alan 0.50 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+                    "Hesaplanan brüt su gereksinimi 3333.3 m³/ha; verim girdisi 20000.0 kg/ha.",
+                    "Bu ürünün tam tarla hedefi 1666.7 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                },
+                {
+                  "crop_id": "lettuce",
+                  "name_tr": "Marul",
+                  "area_ha": 0,
+                  "area_share_pct": 0.0,
+                  "production_kg": 1000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 0.0,
+                  "target_production_kg": 1000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Alan değişmedi; minimum üretim sınırı bağlayıcı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 1000 kg; daha aşağı indirilemez.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                }
+              ],
+              "allocations": [
+                {
+                  "crop_id": "barley",
+                  "name_tr": "Arpa",
+                  "method": "open_field",
+                  "water_source": "freshwater",
+                  "capacity_unit": "ha",
+                  "capacity_used": 1.0,
+                  "area_ha": 1.0,
+                  "production_kg": 3000.0,
+                  "water_m3": 2000.0,
+                  "energy_kwh": 500.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-12"
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "method": "open_field",
+                  "water_source": "stored_water",
+                  "capacity_unit": "ha",
+                  "capacity_used": 0.144,
+                  "area_ha": 0.144,
+                  "production_kg": 2880.0,
+                  "water_m3": 480.0,
+                  "energy_kwh": 72.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-07"
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "method": "open_field",
+                  "water_source": "desalinated_seawater",
+                  "capacity_unit": "ha",
+                  "capacity_used": 0.356,
+                  "area_ha": 0.356,
+                  "production_kg": 7120.0,
+                  "water_m3": 1186.6666666666667,
+                  "energy_kwh": 12512.48717948718,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-07"
+                },
+                {
+                  "crop_id": "lettuce",
+                  "name_tr": "Marul",
+                  "method": "hydroponics",
+                  "water_source": "stored_water",
+                  "capacity_unit": "m2",
+                  "capacity_used": 333.3333333333333,
+                  "area_ha": null,
+                  "production_kg": 1000.0,
+                  "water_m3": 19.999999999999996,
+                  "energy_kwh": 25000.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-07-14"
+                }
+              ],
+              "totals": {
+                "open_field_area_ha": 1.5,
+                "greenhouse_area_m2": 0,
+                "hydroponics_area_m2": 333.3333333333333,
+                "water_m3": 3686.6666666666665,
+                "energy_kwh": 38084.48717948718,
+                "unallocated_land_ha": 1.5
+              },
+              "water_sources": [
+                {
+                  "source_id": "freshwater",
+                  "used_m3": 2000.0,
+                  "capacity_m3": 2000.0,
+                  "share_pct": 54.249547920434
+                },
+                {
+                  "source_id": "stored_water",
+                  "used_m3": 500.0,
+                  "capacity_m3": 500.0,
+                  "share_pct": 13.5623869801085
+                },
+                {
+                  "source_id": "reuse",
+                  "used_m3": 0,
+                  "capacity_m3": 0,
+                  "share_pct": 0.0
+                },
+                {
+                  "source_id": "desalinated_seawater",
+                  "used_m3": 1186.6666666666667,
+                  "capacity_m3": 2000.0,
+                  "share_pct": 32.18806509945751
+                }
+              ]
+            }
+          }
+        ],
+        "status": "ASSESSED",
+        "decision_impact": "DESEN / UYGULANABİLİRLİK DEĞİŞTİ"
+      },
+      {
+        "id": "temperature",
+        "label": "Deniz kaynak suyu sıcaklığı",
+        "base": 10.0,
+        "unit": "°C",
+        "measurable": true,
+        "method": "PWN sıcaklık + derinlik/UTC/konum, referans CTD karşılaştırması",
+        "range_source": "LITERATURE_DOMAIN: bağlı arıtma ilişkisinin 5–18°C alanı; Arktik beklenen sıcaklık aralığı değildir.",
+        "trials": [
+          {
+            "value": 5.0,
+            "status": "infeasible",
+            "run_id": "92952a8cf47fcfbb80053c27",
+            "difference": {
+              "pattern_changed": true,
+              "feasibility_changed": true,
+              "allocation_l1_kg": null,
+              "resource_delta": {
+                "water_m3": null,
+                "energy_kwh": null,
+                "open_field_area_ha": null
+              },
+              "binding_changed": true,
+              "binding_before": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ],
+              "binding_after": []
+            },
+            "optimized": null
+          },
+          {
+            "value": 18.0,
+            "status": "conditional",
+            "run_id": "7c58997bc8a1999995a2bbe3",
+            "difference": {
+              "pattern_changed": false,
+              "feasibility_changed": false,
+              "allocation_l1_kg": 0.0,
+              "resource_delta": {
+                "water_m3": 0.0,
+                "energy_kwh": -3191.220512820517,
+                "open_field_area_ha": 0.0
+              },
+              "binding_changed": false,
+              "binding_before": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ],
+              "binding_after": [
+                "crop_min_output_barley",
+                "crop_min_output_lettuce",
+                "crop_min_output_potato",
+                "water_freshwater",
+                "water_stored_water"
+              ]
+            },
+            "optimized": {
+              "crops": [
+                {
+                  "crop_id": "barley",
+                  "name_tr": "Arpa",
+                  "area_ha": 1.0,
+                  "area_share_pct": 33.33333333333333,
+                  "production_kg": 3000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 1.0,
+                  "target_production_kg": 3000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 3000 kg; daha aşağı indirilemez.",
+                    "Alan 1.00 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+                    "Hesaplanan brüt su gereksinimi 2000.0 m³/ha; verim girdisi 3000.0 kg/ha.",
+                    "Bu ürünün tam tarla hedefi 2000.0 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "area_ha": 0.5,
+                  "area_share_pct": 16.666666666666664,
+                  "production_kg": 10000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 0.5,
+                  "target_production_kg": 10000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Seçilen kaynak ve yöntemlerle ürün hedefi karşılandı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 10000 kg; daha aşağı indirilemez.",
+                    "Alan 0.50 ha arttı; hedef karşılanması ve alan/su kısıtlarının birlikte çözümü.",
+                    "Hesaplanan brüt su gereksinimi 3333.3 m³/ha; verim girdisi 20000.0 kg/ha.",
+                    "Bu ürünün tam tarla hedefi 1666.7 m³ gerektirir; hedef ağırlığı 1. Çözücü yalnız ha başına suyu değil, bu hedeflerin karşılanmasını karşılaştırır.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                },
+                {
+                  "crop_id": "lettuce",
+                  "name_tr": "Marul",
+                  "area_ha": 0,
+                  "area_share_pct": 0.0,
+                  "production_kg": 1000.0,
+                  "current_area_ha": 0.0,
+                  "delta_area_ha": 0.0,
+                  "target_production_kg": 1000.0,
+                  "target_achievement_fraction": 1,
+                  "summary_reason": "Alan değişmedi; minimum üretim sınırı bağlayıcı.",
+                  "reasons": [
+                    "Minimum üretim kısıtı bağlayıcı: 1000 kg; daha aşağı indirilemez.",
+                    "Çözümde dolan su bütçeleri: Yerel tatlı su, Depolanmış yağmur/erime suyu. Tek başına nedensellik/duyarlılık katsayısı değildir."
+                  ]
+                }
+              ],
+              "allocations": [
+                {
+                  "crop_id": "barley",
+                  "name_tr": "Arpa",
+                  "method": "open_field",
+                  "water_source": "freshwater",
+                  "capacity_unit": "ha",
+                  "capacity_used": 1.0,
+                  "area_ha": 1.0,
+                  "production_kg": 3000.0,
+                  "water_m3": 2000.0,
+                  "energy_kwh": 500.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-12"
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "method": "open_field",
+                  "water_source": "stored_water",
+                  "capacity_unit": "ha",
+                  "capacity_used": 0.144,
+                  "area_ha": 0.144,
+                  "production_kg": 2880.0,
+                  "water_m3": 480.0,
+                  "energy_kwh": 72.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-07"
+                },
+                {
+                  "crop_id": "potato",
+                  "name_tr": "Patates",
+                  "method": "open_field",
+                  "water_source": "desalinated_seawater",
+                  "capacity_unit": "ha",
+                  "capacity_used": 0.356,
+                  "area_ha": 0.356,
+                  "production_kg": 7120.0,
+                  "water_m3": 1186.6666666666667,
+                  "energy_kwh": 9321.266666666666,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-09-07"
+                },
+                {
+                  "crop_id": "lettuce",
+                  "name_tr": "Marul",
+                  "method": "hydroponics",
+                  "water_source": "stored_water",
+                  "capacity_unit": "m2",
+                  "capacity_used": 333.3333333333333,
+                  "area_ha": null,
+                  "production_kg": 1000.0,
+                  "water_m3": 19.999999999999996,
+                  "energy_kwh": 25000.0,
+                  "season_start": "2035-05-01",
+                  "season_end": "2035-07-14"
+                }
+              ],
+              "totals": {
+                "open_field_area_ha": 1.5,
+                "greenhouse_area_m2": 0,
+                "hydroponics_area_m2": 333.3333333333333,
+                "water_m3": 3686.6666666666665,
+                "energy_kwh": 34893.26666666666,
+                "unallocated_land_ha": 1.5
+              },
+              "water_sources": [
+                {
+                  "source_id": "freshwater",
+                  "used_m3": 2000.0,
+                  "capacity_m3": 2000.0,
+                  "share_pct": 54.249547920434
+                },
+                {
+                  "source_id": "stored_water",
+                  "used_m3": 500.0,
+                  "capacity_m3": 500.0,
+                  "share_pct": 13.5623869801085
+                },
+                {
+                  "source_id": "reuse",
+                  "used_m3": 0,
+                  "capacity_m3": 0,
+                  "share_pct": 0.0
+                },
+                {
+                  "source_id": "desalinated_seawater",
+                  "used_m3": 1186.6666666666667,
+                  "capacity_m3": 2000.0,
+                  "share_pct": 32.18806509945751
+                }
+              ]
+            }
+          }
+        ],
+        "status": "ASSESSED",
+        "decision_impact": "DESEN / UYGULANABİLİRLİK DEĞİŞTİ"
+      },
+      {
+        "id": "salinity",
+        "label": "Deniz tuzluluğu / iletkenlik",
+        "base": null,
+        "unit": "",
+        "measurable": true,
+        "method": "Kalibre PWN iletkenlik/sıcaklık/basınç; uygun salinite dönüşümü",
+        "trials": [],
+        "status": "MODEL_LINK_NEEDED",
+        "decision_impact": "BİLİNMİYOR · SAYISAL BAĞLANTI YOK",
+        "range_source": "Arıtma/üretim tepkisi bağlı değil; duyarlılık etkisi uydurulmadı."
+      },
+      {
+        "id": "chemistry",
+        "label": "Kaynak suyu kimyası",
+        "base": null,
+        "unit": "",
+        "measurable": true,
+        "method": "İzinli derinlik numunesi; laboratuvar onaylı sınırlı analiz paneli",
+        "trials": [],
+        "status": "MODEL_LINK_NEEDED",
+        "decision_impact": "BİLİNMİYOR · SAYISAL BAĞLANTI YOK",
+        "range_source": "Arıtma/üretim tepkisi bağlı değil; duyarlılık etkisi uydurulmadı."
+      }
+    ],
+    "limitations": [
+      "Olasılıksal bilgi değeri, beklenen ekonomik fayda veya güven yüzdesi hesaplanmaz.",
+      "Yalnız iki uç nokta taranır; etkileşimleri ve aradaki tüm eşikleri kapsamaz.",
+      "Kapasite/dengeli amaçta tek-ürün potansiyelleri değişen kaynaklarla yeniden hesaplanır; amaç kuralı sabit, normalizasyon katsayıları sabit değildir.",
+      "Modelden modele senaryo deneyi gerçek saha ölçümü değildir.",
+      "Mevcut sıcaklık bağlantısı yerel deniz kaynağı ve arıtma senaryosuna koşulludur; karasal yıllık suyu değiştirmez."
+    ]
+  }
+}

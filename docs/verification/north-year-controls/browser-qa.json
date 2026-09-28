@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-23",
+  "checks": [
+    {
+      "area": "1250",
+      "basis": "Model önerisi · 1.250 m² planlama birimi · Hasat + su + enerji dengesiNeden bu ürünler?",
+      "case": "2037/custom-area/storage",
+      "climate": "2037 · kaynaklı iklim senaryosuSıcaklık farkı+2,5 °CYağış farkı+4%Donsuz dönem48 gün1995–2014’e göre · 3 model. Seçilen yılın senaryosu; ölçülmüş hava değil.",
+      "title": "2037 tarım ve su simülasyonu",
+      "water": "Yağış / karı depola%68,5Deniz suyunu arıt%31,5"
+    },
+    {
+      "calculateDisabled": true,
+      "case": "blank-year",
+      "invalid": "true",
+      "supportDisabled": true,
+      "year": ""
+    },
+    {
+      "calculateDisabled": true,
+      "case": "final-blank-year-not-running",
+      "invalid": "true",
+      "supportDisabled": true,
+      "year": ""
+    },
+    {
+      "case": "water-slider-final",
+      "dimensions": [
+        1280,
+        720,
+        1280,
+        720
+      ],
+      "pending": "Ayarlar değişti. Yeni öneriyi görmek için soldan “Simülasyonu çalıştır”.",
+      "water": "Yağış / kar toplama alanı100 m²Tasarım senaryosuSu deposu kapasitesi11 m³MANUAL OVERRIDE · kullanıcı senaryosuAyrılabilen tatlı su0 m³/yılTasarım senaryosu"
+    }
+  ],
+  "consoleErrors": [],
+  "mobileTest": false
+}

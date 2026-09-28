@@ -1,0 +1,94 @@
+ANA SOHBETE TESLİM — TEK ARAŞTIRMA ÇİZGİSİ
+TESLİM 009 — TÜRKİYE: SADE KONTROLLER + SU ODAKLI SİMÜLASYON | 22 Eylül 2026
+Çalışma alanı: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Önizleme: http://127.0.0.1:8011/#turkiye
+
+Bu dosya ana sohbete tek başına yüklenebilir veya içeriği yapıştırılabilir. Ayrıntı docs/BUILD_STATUS.md. Başka sohbete kendiliğinden mesaj gönderilmedi. Aynı proje/repo, .git yok; sıfırlama/yeni depo yok.
+
+TESLİM 009 — TÜRKİYE ARAYÜZ SON DÜZENLEMESİ | 22 Eylül 2026
+Bu tur kullanıcının hızlı/sınırlı Türkiye düzenlemesi tamamlandı; Kuzey'e yeni iş eklenmedi.
+- Sol panel Türkiye'de yalnız yönetim kontrolleri: açıklama paragrafları/gerekçe kutusu kaldırıldı, MANUAL OVERRIDE korunur. İklim senaryosu varsayılan açık.
+- Referans etiketi Mevcut; hesap düğmesi SİMÜLASYONU ÇALIŞTIR. Mevcut kaynak başlangıcını geri getirip öneriyi temizler.
+- Dokuz ikonlu hazır senaryo; Mükemmel yeni bir açık iyileştirme varsayımı: %95 randıman, ürün başına mevcut üretimin en az %80’i (daha yüksek mevcut minimum varsa korunur). Aynı bölgesel optimizer. Kâr/gelir artışı veya koşulsuz evrensel optimum iddiası yok. Tooltip ve sonuç notu varsayımları belirtir; kaynak veri değiştirilmez.
+- Simülasyondan sonra alt bölümde su kazanımı m³/%; başlangıç ve sonuç suyu; koşul etkisi ile desen etkisi ayrı. Negatif fark ek su ihtiyacı olarak gösterilir. Ölçülmüş tasarruf etiketi kullanılmaz. Trakya yalnız bilinen ürün alt toplamı, çeltik Veri eksik.
+- Sonuçta ve Veriler/grafikler sekmesinde yan yana SVG ürün payı/su grafikleri ve eski–yeni pay/üretim değişimi/su farkı tablosu. Sayılar gerçek run çıktısından çizilir; statik dekoratif resim değil. Kaynak ham verileri kapalı tabloda erişilebilir.
+- Konya pilotu sekmesi kaldırıldı; tarihsel rapor/veri dosyaları korunur. Gelişmiş parametreler düzenlenebilir; Türkiye için ilgisiz kontrollü üretim ve kullanılmayan talep/ağırlık alanları listeden çıkarıldı.
+DOĞRULAMA (bu tur): TypeScript/Vite son derlemesi başarılı; 9 tarayıcı kontrolü, konsol hatası yok. Beş bölgede yeni Mükemmel senaryosu gerçek API ile çalıştırıldı; minimum üretim sınırları ve mevcut başlangıca göre su azalması doğrulandı; Trakya kısmi. Konya sonucu 6.726.348.596 m³; başlangıç 8.807.758.056 m³; fark 2.081.409.460 m³ (%23,6). Bunun 1.854.264.854 m³ kısmı koşul/randıman, 227.144.606 m³ kısmı desen değişimi. Bunlar simülasyon, ölçüm değil.
+Backend değiştirilmedi; 167 testlik tam suite bu tur yeniden çalıştırılmadı. Son tam koşu 22 Eylül 2026 20:53:03 TSİ / TESLİM008 (167 geçti). Bu turun kanıtları docs/verification/turkey-polish/build.log, browser-qa.json, ideal-results.json, ideal-graphs.png. UI kontrol zamanı: 2026-09-22T18:12:16.012Z.
+Dosyalar: frontend/src/components/ScenarioLab.tsx, TurkeyOutcome.tsx (yeni), DecisionCanvas.tsx, AnalysisData.tsx; workspaces/Simulation.tsx; turkeyPresets.ts; instrument.css. docs/BUILD_STATUS.md ve ANA_CHAT_TESLIM.txt güncellendi.
+Sonraki somut adım: Kullanıcının yönlendirmesiyle Future North akışına geçmek. Yerel Arktik veri bağımlılıkları ve PWN sınırları aynen sürer.
+
+KORUNAN ARAŞTIRMA/KAYNAK DURUMU — 008 KAYDI
+Aşağıdaki önceki arayüz adları ve sekiz senaryo bilgisi yukarıdaki 009 değişiklikleriyle güncellendi. Bilimsel veriler ve backend durumu geçerlidir.
+
+YETKİLİ YÖN
+Yeni master + en yeni açık kullanıcı talimatları eskiden üstündür. Güncel istek kutuptan önce Türkiye'deki mevcut beş bölgeyi düzeltmek: referans gerçek kaynak başlangıcı, öneri bağımsız hesap. Tek çizgi Konya → Türkiye → Future North → PRE-TASE → TASE → aynı motorla POST → kontrollü pilot. PWN araçtır; ayrı ana proje değildir. Yaklaşık %8,7 tarihsel sonuç göreli su baskısıdır, ölçülmüş m³ tasarrufu değil.
+
+BU TUR TAMAMLANAN
+- Konya, Seyhan/Adana, Gediz/Manisa, GAP/Şanlıurfa ve Trakya/Edirne aynı bölgesel amaçla ayrı hesaplanıyor. Bölge açılışı kaynaklı mevcut desen + ayrı otomatik öneri; Referans düğmesi kaynak başlangıcını geri getirip eski öneriyi temizler. Hızlı bölge değişiminde tamamlanan ilk hesap ilgili bölgede korunur; kullanıcı düzenlemesi/Referans resetini geç gelen hesap ezmez.
+- Sekiz ikonlu senaryo: Referans, Su −%10, −%20, −%30, Kuraklık, Az yağış, Verimli sulama, Su +%10. Hepsi referanstan türetilir. Kuraklık su/yağış −%20, ET0 +%10; verimli sulama +10 yüzde puan randıman. Kullanıcı değişimleri MANUAL OVERRIDE; sonucu görmek için Hesapla.
+- Konya 2023 başlangıcı yeni resmî 2026 yayınının 2024 alan/üretim tablosuyla yenilendi. Manisa 2025 faaliyet raporu 2024 tablosuyla doğrulandı. Diğer üç ilin mevcut kaynakları 2024 verisi; daha güncel tam uyumlu tablo doğrulanmadı. Şanlıurfa 2026 haberindeki yuvarlak tek ürün/rekolte tahmini tüm desene karıştırılmadı.
+- Konya 2026 yayınının buğday/arpada hazır verim sütunu alan×üretimle tutarsız. Kaynak alan/üretim korunarak verim = ton×1000/ha türetildi; uyuşmazlık kaynak kaydında. 3,8 milyar m³ il su ifadesi seçili ürünler için tahsis olmadığı için otomatik bütçe yapılmadı.
+- Beş bölgeye 3.655 günlük 2024–2025 ERA5 satırı eklendi; sezonlar 2024 sonbahar/2025 üretim dönemi. Önceki 4.380 günlük 2022–2023 paket ve Kuzey kaynakları aynen ayrı durur. Yeni paket de her okumada ham SHA256 ve satır/değer/tarih üzerinden doğrulanır.
+- Güncel sıcaklık Open-Meteo model hava bilgisinden ayrı alınır; zaman damgası TSİ ve kaynak bağlantısı görünür. İstasyon ölçümü değildir; optimizasyona girmez. On dakikalık sunucu önbelleği, iki saatten eski sağlayıcı verisini reddetme, ağ yoksa veri alınamadı durumu; sezonluk çevrimdışı hesap devam eder. Ham yanıt ve kaynak anlık kaydı saklanır.
+
+BİLİMSEL ANLAM / SINIR
+Referans, il düzeyinde yayımlanmış seçili ürün alanları/üretimdir; bütün havzanın veya canlı 2026 ekilişinin sayımı değildir. Öneri mevcut üretime %100 tavan koymaz. Amaç sıralıdır: önce kullanılabilir ekili alanı en yükseğe çıkar, aynı alanı sağlayan çözümler içinde su gereğini en aza indir. Ürün başına varsayılan minimum mevcut üretimin %50’sidir; bu açık ve değiştirilebilir planlama tercihidir. Evrensel ekonomik/gıda güvenliği optimumu veya resmî tavsiye değildir. Farklı ürün kg’ları besin eşdeğeri sayılmaz.
+
+Su gereği günlük ERA5 + FAO-56 Kc/örnek takvim + depo hesabı / sulama randımanı ile türetilir. Başlangıç bütçesi mevcut desenin modellenmiş gereksinimidir, gerçek havza su tahsisi değildir. Sabit il ortalama verimi su-stres verim modeli değildir. Bütün seçili alanların tamamlama sulaması hesabı, gerçek sulu/kuru alan ayrımının yerine geçmez. Bölgesel yerel takvim, toprak, su tahsisi, sulu/kuru ekiliş, münavebe ve ekonomik/üretim gereksinimleri sağlandıkça öneri güçlendirilebilir. Su farkı ölçülmüş tasarruf değil, aynı senaryodaki iki desenin model farkıdır.
+
+Trakya çeltik ET dışı tava/sızma suyu eksik. Çeltik mevcut senaryo alanında tutulur; yalnız bilinen su gereği bulunan ürünler optimize edilir. Toplam su None/DATA NEEDED; bilinen alt toplam ayrı. Çeltik için gerekli su girdisi açıkça sağlanırsa tam hesaba katılır. Çelişen minimumlar sessizce gevşetilmez.
+
+BÖLGE BAŞINA HESAP
+| Bölge | Hesaplanan paylar | Modellenmiş su gereği farkı |
+|---|---|---|
+| konya | Buğday %75.46; Arpa %14.04; Dane mısır %6.35; Şeker pancarı %3.40; Patates %0.75 | 8.17% |
+| seyhan_adana | Buğday %71.64; Dane mısır %13.55; Ayçiçeği %12.54; Pamuk %2.27 | 9.02% |
+| gediz_manisa | Buğday %77.44; Arpa %12.56; Dane mısır %4.81; Pamuk %5.19 | 14.76% |
+| gap_sanliurfa | Buğday %71.44; Arpa %9.47; Pamuk %12.40; Dane mısır %6.70 | 8.70% |
+| trakya_edirne | Buğday %64.32; Ayçiçeği %19.58; Çeltik %15.04; Arpa %1.06 | 16.44% |
+
+DOĞRULAMA — SON GERÇEK KOŞULAR
+- Backend: 167 test, 0 hata/başarısızlık, 18.078 s; başlangıç 2026-09-22T20:53:03.596765+03:00. JUnit: verification/turkey-reference/tests.xml. Mevcut Starlette/AnyIO deprecation uyarısı sürüyor.
+- Son TypeScript/Vite derlemesi geçti: verification/turkey-reference/build.log. Son UI bölge geçişi ve TSİ düzeltmesi dahil.
+- Tarayıcı: 22 başarılı kontrol; 2026-09-22T17:57:28.111Z. Beş bölge, Referans, senaryo değerleri, kuraklık/randıman, kısmi çeltik, hızlı bölge geçişi; konsol hatası yok. Bu tur dar ekran yeniden ölçülmedi.
+- Beş bölge × sekiz senaryo: 40 gerçek API/LP koşusu, girdiler/çıktılar/run_id kayıtlı. Ayrıca bu varsayılan açık-tarla alt problemleri için ürün minimumları + kalan alanı en düşük su/ha ürününe tahsis eden bağımsız kapalı hesapla 40 optimum çapraz kontrol edildi. Maksimum alan farkı 0,012525 ha; LP’nin sıralı amaç sayısal toleransı. İlgili kayıtlar engine-results.json ve independent-optimum-check.json.
+
+DEĞİŞEN DOSYALAR
+backend/planning.py, planning_contracts.py, regional_scope.py, repository.py, current_weather.py, app.py;
+frontend/src/App.tsx, planning.ts, turkeyPresets.ts, ui.tsx, instrument.css, components/ScenarioLab.tsx, DecisionCanvas.tsx, SimulationResults.tsx, CurrentWeather.tsx;
+scripts/ingest_data.py, ingest_turkey_recent.py, refresh_turkey_baselines.py, record_turkey_reference.py;
+tests/test_turkey_reference.py, test_recent_turkey_data.py ve güncel veri/amaç beklentileri uyarlanan test_agriculture.py, test_data.py, test_lab_decisions.py, test_planning.py.
+Yeni kaynaklar: data/manifest_turkey_recent.json, data/processed/climate_turkey_recent.csv, 5 yeni ham ERA5/metadata, 2 yeni resmî PDF; data/agriculture/region_baselines.json ve manifest.json güncellendi. Eski tarım JSON/manifest data/agriculture/snapshots altında. Geçiş scripti yeniden çalıştırılıp arşivi ezmesin diye korumalı.
+
+KORUNAN KUZEY DURUMU — ÖNCEKİ 007 KAYDI
+GERÇEK HESAP ÖRNEĞİ — YEREL ARKTİK ÖNERİSİ DEĞİL
+NASA SSP245 2035 + açık mühendislik katsayıları + dengeli amaç: arpa 5699,44 kg / 1,90 ha; patates 0; marul 1013,23 kg / 337,74 m² hidroponik. Su 3819,89 m³; enerji yaklaşık 40000 kWh. Tatlı su 2000, depolanmış su 500, arıtılmış deniz suyu yaklaşık 1319,89 m³. Sayılar LP çıktısıdır; katsayıların yerel doğruluğu veya gerçek üretim kanıtı değildir. Su/enerji önceliği: 4559,55 kg arpa + 810,59 kg marul; 3055,91 m³ ve 26802,88 kWh. Eksiksiz girdiler/sonuçlar/run_id: docs/verification/rebuild/engine-results.json.
+
+SU GÜVENLİĞİ / BİLGİ DEĞERİ / TASE
+Fiziksel su → mevsim → erişim/depo → kalite → arıtma/enerji → kullanılabilir üretim suyu. Motor kaynak bütçesi/kalite/enerji/kapasiteyi kullanır; bu bütün hidrolojik zincirin veya optimum sezon/depo işletmesinin çözümü değildir.
+Açık senaryoda mevsimsel tatlı su, enerji ve deniz sıcaklığı uç koşuları deseni etkiliyor. Tatlı su/enerji ±%20 stres; sıcaklık 5/18°C arıtma bağıntısının destek alanı, Arktik sıcaklık tahmini değil. Bu deterministik duyarlılık; EVSI, ekonomik fayda veya güven yüzdesi değil. Salinite/kimya için sayısal karar bağlantısı yok.
+Karasal yıllık/mevsimsel su hacmi, iklim2050, verim ve permafrost PWN ile doğrudan ölçülmez. PWN hedefleri C/S, T, p/z, UTC, konum ve kalibrasyon/kalite. Model beklentisi fiziksel ölçümden önce dondurulur. Modelin doğru çıkması ve desenin değişmemesi geçerli sonuçlardır.
+İzinli numune: arka plan/gradient derinliği aday; sayı/derinlik/panel sabitlenmedi. δ18O/δ2H kaynak karakterizasyonu; yalnız kararı iyileştiren sınırlı kimya arıtma/üretim uyumu için aday. Uzman/laboratuvar, gemi/izin, koruma/taşıma gereksinimleri açık. Sabit derinlik ve gradient seçimi eşit örnek bütçesinde karşılaştırılabilir; AI zorunlu değil.
+Sefer sonrası numune veya ölçülen kimyadan açık SYNTHETIC/RECONSTRUCTED su → arıtma/koşullandırma → standart besin çözeltisi → kontrollü test. Su/enerji/EC/büyüme/biokütle/verim vekili ölçülür. Bu tüm Arktik tarımını doğrulamaz. Önerilen sera/hidroponik pilotun gerçek işletme verisi sonraki model iyileştirmesidir.
+
+GERÇEK EKSİKLER — TAMAMLANMIŞ SAYILMADI
+Tam otomatik yerel kaynaklı Future North üretim önerisi henüz yok. Varsayılan sonuç DATA NEEDED; tam sözleşmenin bu bilimsel kabulü açık. Yerel su tahsisi/mevsimsellik/depo/erişim/rakip kullanımlar, toprak/permafrost/aktif tabaka, dönemsel yield/sulama, sera ısı/ışık/enerji ve kaynak-temsil bağı eksik. Kaynaklı aday elemesi yalnız kısmi otomasyon. Yıllık Arizona hidroponik verileri kısa Arktik sezona sessizce kopyalanmadı. Gerçek eşlenmiş okyanus modeli/PWN/CTD ve kimyadan arıtma modeli bağlantısı henüz yok.
+
+
+PWN TEDARİK / FİZİKSEL DURUM — ÖNCEKİ İŞ KORUNUR
+DFR0300 K1 EC kit + ESP32 + DS18B20 + encoder + microSD; açık 3D başlık, ayrı taşıyıcı ip, yukarıda mesafe tekeri/kuru kutu. Kullanıcı 3D yazıcı erişimini doğruladı. SD elektriksel uyum, kitte standartlar, gerçek mekanik ölçüler ve stok/teslim teyidi açık. Parça alınmadı, sipariş verilmedi; fiziksel firmware/kalibrasyon/tank/Arktik deneyi bu tur yapılmadı.
+docs/PWN_V01_LINKLI_ALISVERIS.md/.txt, PWN_V01_TAM_MALZEME_LISTESI.md, PWN_V01_CIHAZ_TARIFI.md, docs/teslim/PWN_V01_YAPIM_PAKETI_01.zip ve konsept görsel korunur. Önceki fiyatlar kendi tarihli araştırma kaydıdır; bu tur yenilenmedi, kesin tüm cihaz bedeli diye kullanılmaz. Konsept CAD veya ürün fotoğrafı değildir.
+
+
+KAPSAM / SONRAKİ SOMUT ADIM
+Uygulamadaki beş veri bölgesi tamamlandı; 81 ilin tamamı veya bütün havza envanteri tamamlandı denmez. Türkiye'de resmî kaynak yılı 2024, sezon hava referansı 2024–2025. Canlı 2026 ekiliş sayımı doğrulanmadı. Yayımlanan veri, varsayım, hesap ve güncel model hava bilgisi ayrı etiketli.
+Yerel sulu/kuru ekiliş, mevsimlik gerçek su tahsisi, toprak/takvim ve üretim/münavebe ihtiyaçlarını kaynaklarıyla eklemek bir sonraki bilimsel iyileştirmedir. Kullanıcı Türkiye kontrolünü bitirdikten sonra Kuzey'e dönülecek.
+
+KISA TESLİM GEÇMİŞİ
+005: ortak çok ürün/yöntem/kaynak motoru, amaçlar, saha duyarlılığı.
+006/U12: Türkiye ilk hesap, Kuzey günlük iklim tanısı, cihaz yapım/alışveriş belgeleri.
+007: bilimsel simülatör UI rebuild; kaynaklı Kuzey elemesi; kapasite kaynak öncelikleri; PRE/POST kanıt sınırı. O tur 151 test ve 15 UI kontrolü.
+008: beş Türkiye bölgesinde mevcut referans/bağımsız öneri; sekiz senaryo; yeni resmî tablo ve ERA5 paketi; güncel hava bağlamı; 167 test, 22 UI kontrolü, 40 hesap + bağımsız optimum kontrolü.
+
+009: sade sol yönetim, Mevcut etiketi, dokuzuncu Mükemmel senaryo, su kazanımı ayrıştırması, karşılaştırmalı grafik/tablo, pilot sekmesi kaldırma.

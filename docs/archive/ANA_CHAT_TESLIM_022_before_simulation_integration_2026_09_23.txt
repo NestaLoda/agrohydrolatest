@@ -1,0 +1,240 @@
+TESLİM 022 — ÜRETİCİ DESTEĞİ / PAZARA ERİŞİM / FERİT SUNUM METİNLERİ
+Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+Çalışan adres: http://127.0.0.1:8011/#north · Türkiye ve Kuzey üst çubuk: Üreticiye geçiş
+
+# Üreticiye geçiş — uygulanan devam modeli
+
+23 Eylül 2026 · TESLİM 022
+
+Ferit Bora'nın kullanıcı tarafından iletilen fikri, **Desenden Dengeye Üretici Destek ve Pazara Erişim Programı** olarak araştırıldı ve projeye eklendi. Sürekli teknik destek, karşılaştırılabilir ekipman teklifleri/indirim, alıcı bağlantısı ve uygun sigorta kapsamına erişim ayrı sorumluluklardır. Mevcut bir sigorta, gelir garantisi, ortaklık veya alım taahhüdü oluşturulmadı. Fikrin katkı sahibi ve tarihi araştırma notunda korunur.
+
+## Uygulanan yazılım
+
+Türkiye ve Kuzey ekranlarının bağlam çubuğunda **Üreticiye geçiş** düğmesi var. Ana bilimsel simülasyon uzatılmadan açılan panelde üç bölüm bulunuyor: nasıl işler, destek simülasyonu, yaygınlaştırma planı. Hesap formu ve sonuç ayrı kayar; masaüstü kullanım doğrulandı, telefon testi yapılmadı.
+
+Yeni `POST /api/producer-support/scenario` yıllık tek ürün/aynı fiyatlı ürün grubu için kullanıcı girdileriyle hesap yapar. Kayıp sonrası ürün alıcı kapasitesiyle sınırlanır; fazlası satılmış sayılmaz. Yıllık gelir, işletme gideri, kurulum bedelinin yıllık payı, ekipman indirimi ve hizmet bedeli ayrıdır. Destekli/desteksiz karşılaştırmada aynı miktar, fiyat ve alıcı kapasitesi korunur. Desteğin verimi yükselttiği veya yeni müşteri yarattığı varsayılmaz.
+
+Başabaş fiyatı/miktarı, alıcısı planlanmamış ürün, dört stres durumu ve somut eylemler hesaplanır. Üretim −%20, fiyat −%20, işletme gideri +%20 ve birleşik stres olasılık değildir. Negatif denge kırmızı, pozitif denge yeşil; olumlu sonuç yatırım onayı değildir. Vergi, kredi/finansman, enflasyon, tahsilat zamanı ve paranın zaman değeri modellenmez. Kurulum tutarını yıllara yaymak ilk yatırım nakdini ortadan kaldırmaz.
+
+Form başlangıçta boştur. Açıkça yüklenen öğretici örnek varsayımsal olarak etiketlenir. Boş, negatif, geçersiz ve sonlu olmayan girdiler reddedilir. Girdi değişince eski sonuç işaretlenir ve güncel sonuç indirme kapatılır. Girdiler, kaynak notu ve sonuç JSON indirilebilir; panel kapatıldığında geçici form sıfırlanır. Belge inceleme, imzalı sözleşme doğrulama, üretici hesabı veya kalıcı ticari kayıt sistemi henüz uygulanmadı. Tüm sonuçlarda USER_SCENARIO, contracts_verified=false, investment_recommendation=false vardır.
+
+Bilimsel optimizer ve üretim desenleri bu katmandan bağımsızdır. Kuzey modelindeki kg, satış geliri olarak otomatik aktarılmadı. Su/enerji/ürün hesabı, PRE–POST sınırları ve kaynaklı veriler korundu.
+
+## Araştırma ve metinler
+
+- `docs/URETICI_DESTEK_MODELI.md`: resmî kaynaklı kapsam, program ve para akışı, alım/dağıtımın finansman ve stok yükü, üretici hakları, pilot ölçütleri.
+- `docs/FERIT_SUNUM_VE_CALISMA_METINLERI.md`: 30 ve 90 saniyelik anlatım, beş slayt ve konuşma notları, proje paragrafı, kısa uygulama metinleri, Ferit'in çalışma çıktıları, tedarikçi/alıcı/sigortacı soruları, jüri yanıtları.
+- `data/producer_support/research/manifest.json`: 23 Eylül 2026'da indirilen dört resmî kaynak, URL, UTC, yerel ham dosya ve SHA-256. TARSİM 2026 sera şartları, gelir koruma sayfası, Bakanlık tip sözleşme sayfası ve SEDDK kuruluş listesi arşivlendi. Bunlar gerçek ortaklık/uygunluk kanıtı değildir.
+
+TARSİM sera şartlarında teminatlı risk → teknik donanım hasarı → ürün kaybı bağlantısı ile genel arıza/iş durması istisnaları ayrıdır. Mevcut gelir koruma sayfası buğday, arpa ve çavdarı tanımlar. Türkiye mevzuatı Arktik tesise otomatik uygulanmaz. İşbirliği ve teminat ancak yetkili tarafların yazılı değerlendirmesiyle somutlaşabilir. Araştırma notlarında doğrudan resmî bağlantılar vardır.
+
+## Doğrulama — 23 Eylül 2026
+
+Tam backend paketi: **548 test, 0 hata, 0 başarısız, 0 atlanan**; 65,353 saniye, başlangıç 14:50:39 +03. Bunun 90 testi yeni hesap/validasyon/stres paketi. TypeScript ve Vite üretim derlemesi başarılı. Mevcut Starlette/AnyIO deprecated-alias uyarısı test hatası değildir.
+
+Canlı API öğretici örneğinde 1.000 kg hasat, %10 kayıp, 800 kg alıcı kapasitesi, 50 TL/kg, 30.000 TL işletme, 40.000 TL kurulum, %15 indirim, 5 yıl ve 1.000 TL/yıl hizmet ile destek olmadan 2.000 TL, destekle 2.200 TL yıllık denge; 100 kg alıcısı planlanmamış ürün; birleşik streste −15.000 TL bulundu. Bunlar tamamen varsayımsal yazılım kontrol sayılarıdır. Hizmet 10.000 TL olunca denge −6.800 TL ve program bedeli uyarısı görüldü. Boş API kaydı 422 ile reddedildi.
+
+Masaüstü 1280×720: Kuzey/Türkiye girişleri, panel sekmeleri, örnek hesabı, negatif sonuç, stres grafikleri, değişen girdide eski sonuç uyarısı ve Escape ile kapatma denetlendi. Kanıtlar: `docs/verification/producer-support/` içindeki test XML/log, build log, API JSON, ekran görüntüleri ve browser-qa.json. Gerçek ölçüm/teklif/kontrat oluşturulmadı; dışarıya mesaj gönderilmedi.
+
+## Fiziksel ve dış bağımlılıklar
+
+PWN kalibrasyonu ve izinli TASE ölçümü/numunesi; kullanım amacına uygun uzman laboratuvar paneli; yerel yağış/kar toplama, su erişimi, zemin ve enerji koşulları; kontrollü üretimde gerçek su/enerji/satılabilir hasat. Bunlar saha/pilot kanıtı gerektirir. Sefer tek başına 2050 iklimini, yıllık karasal suyu veya üretici kazancını doğrulamaz.
+
+Yaygınlaştırma için ayrıca yazılı ekipman teklifleri, gerçek alıcı ihtiyacı, ödeme ve kalite şartları, yetkili sigorta yanıtı ve işletme finansmanı gerekir. İlk somut adım: Ferit'in metin dosyasındaki teklif–alıcı–sigorta çalışma paketini gerçek bilgilerle doldurmak; üretim pilotunun kapsamını ölçümden önce kesinleştirmek. Sonuçlar uygunsa küçük ölçekli uygulama, ardından kanıta dayalı yaygınlaştırma.
+
+
+KISA TESLİM GEÇMİŞİ
+022: Üretici destek devam modeli, hesap, kaynak araştırması, Ferit metinleri; 548 test doğrulandı.
+021: ERA5 yakın dönem, üretim amacı, günlük depo, enerji/güç ve gerçek numune/pilot kayıt akışı.
+
+ÖNCEKİ BİLİMSEL TEMEL — 021
+Aşağıdaki bölümlerin tarihli ölçüm sınırları geçerlidir. Son yazılım doğrulaması üstteki 022 kaydıdır.
+
+TESLİM 021 — BEŞ PC GELİŞTİRMESİ / SAHAYA HAZIR DOĞRULAMA AKIŞI
+23 Eylül 2026. Aynı mevcut proje: C:\Users\bahao\OneDrive\Belgeler\2204devrim; .git yok.
+Çalışan adres: http://127.0.0.1:8011/#north
+
+GÜNCEL İSTEK VE SONUÇ
+Kullanıcı beş iyileştirmeyi uygulamamızı, bilgisayarda yapılabilecek işleri tamamlamamızı ve fiziksel/saha işlerini ayırmamızı istedi. Güncel veri edinildi; üretim amacı, depo/enerji ve doğrulama kodu uygulandı ve test edildi. Sonraki bölüm paketleri ve sınırlarını tek başına açıklar. Kendi saha ölçümümüz veya üretim pilotu yapılmış sayılmaz.
+
+KORUNAN ARAŞTIRMA VE VARLIKLAR
+Konya → Türkiye → geleceğin üretim ve su yönetimi → PRE → TASE kanıtı → aynı motorla POST → kontrollü pilot tek araştırmadır. PWN saha aracı, sera/hidroponik pilot doğrulama ortamıdır.
+NASA v2 üç GCM (ACCESS-CM2, MPI-ESM1-2-HR, MRI-ESM2-0), 1995–2014/2021–2040/2041–2060/2081–2100, SSP245/585 ve ham/provenans korunuyor:1680NetCDF,153399model-gün,613596değer. Buna yeni ERA5 katmanı eklendi. EDEN ISS2018 altı kontrollü ürünün nicel analoğudur. Arpa/patates/buğday iklim araştırma adaylarıdır; yerel zemin/verim doğrulanmadan açık tarla alanı verilmez. MOSJ/zemin kanıtları korunur. Gerçek TOPAZ profili, parsel/enerji/su tahsisi, kendi PWN profili ve pilot ölçümü hâlâ beklenir.
+Türkiye bu tur değişmedi: Konya, Seyhan/Adana, Gediz/Manisa, GAP/Şanlıurfa, Trakya/Edirne. Kaynaklı2024tarım/2024–2025hava; canlı2026ekiliş iddiası yok. Ana su yüzdesi kaynak başlangıcına göre, ürün değişiminin ek etkisi ayrıca. Tarihsel%8,7 göreli su baskısıdır, ölçülmüş m³ değildir.
+Koyu yeşil bağımsız sol panel, açık karar alanı, su→ürün/yöntem→kanıt sırası korunur. Kontrollerden sonra düğmeyle simülasyon; yalnız Kuzey ilk varsayılanında otomatik hesap. Ayrıntılar açılır. Son masaüstü890×898, dış sayfa taşması yok. Telefon testi yapılmadı.
+
+# Bilgisayar tarafındaki beş geliştirme
+
+23 Eylül 2026 · TESLİM021. Bu dosya uygulanmış yazılımı, kaynaklı veriyi, koşullu hesabı ve henüz yapılmamış fiziksel işleri ayırır.
+
+## 1. Yakın dönem ve gelecek
+
+2015–2025 için 4.018 eksiksiz ERA5 günlük Tmin/Tmax/yağış/kısa dalga radyasyonu kaydı edinildi. Open-Meteo üzerinden kaynak URL, UTC, ham dosya ve SHA-256 arşivlendi; 1995–2025'in 11.323 günü aynı sağlayıcıyla tarihsel kontrol için tutuldu. ERA5 yeniden analizdir; kendi istasyonumuz veya gerçek ekiliş değildir. On bir yıllık yakın dönem, 30 yıllık iklim normali diye adlandırılmaz.
+
+Aynı ürün–yöntem–sezon motorunda yeni `recent` dönemi çalışır. Ana kıyas yakın dönem → seçilen gelecektir. Tarihsel NASA 1995–2014 seçeneği aynı model ailesinde kıyas için korunur. Alan, amaç, üretim analoğu ve altyapı eşit tutulur.
+
+Kritik sınır: NASA ve ERA5 aynı tarihsel dönemde bile farklıdır. NASA tarihsel hücresi ERA5'e göre yaklaşık 1,65°C daha soğuk ve yıllık kısa dalga radyasyonu yaklaşık 1.274 MJ/m² daha yüksektir. Yakın ERA5 → gelecek NASA farkı yalnız ısınmaya atfedilemez; veri ailesi/hücre etkisini de taşır. Arayüz bunu söyler. Otomatik, doğrulanmamış bir bias düzeltmesi uygulanmadı. Bu ayrım seferin iklim projeksiyonunu bütünüyle doğrulayabileceği anlamına gelmez.
+
+Kaynak: [Open-Meteo tarihsel hava API](https://open-meteo.com/en/docs/historical-weather-api). Tam kayıt `data/north/rebuild_climate/recent_reference/README.md` ve manifesttedir.
+
+## 2. Ürün seçiminin açık amacı
+
+Kullanıcı artık taze ürün miktarı, bitkisel protein veya besin enerjisi hedefi seçebilir. Altı ürünün ham yenebilir besin bileşimi Norveç Matvaretabellen resmî API'sinden kaynak kimlikleriyle arşivlendi. Bir kg yenebilir ürün için 100 g katsayısı onla çarpılır; protein gramı/kg dönüşümü ayrı açıktır. Yenebilir kısım ikinci kez düşülmez.
+
+Aynı LP önce seçilen çıktının en yüksek değerini bulur; %95'ini koruyarak su–enerji uçları arasındaki en büyük normalize kaybı azaltır. Varsayılan her etkin ürüne %5 alan politikası korunur ve ayarlanabilir. Gizli besin ağırlıkları, keyfî fiyat/talep veya önceden verilen ürün miktarları yoktur. Kaynak önceliği modları seçilen amaçla bulunan dengeli planın ürün miktarlarını korur.
+
+Gerçek varsayılan 2050/SSP245/100 m² hesabında taze ürün hedefi alabaşa %75 alan, protein ve besin enerjisi hedefleri rokaya %75 alan verir; diğer beş ürün %5'er tabandadır. Bu, hedefin kararı gerçekten değiştirdiğini gösterir; bir ürünün evrensel üstünlüğünü kanıtlamaz. Ham protein, sindirilebilir protein değildir; besin enerjisi kcal, tesis elektriği kWh değildir. Bu bir dengeli diyet, yerel pazar talebi veya kâr optimizasyonu değildir. Ekonomi için yerel güvenilir fiyat/işletme maliyeti/talep hâlâ gerekir.
+
+Kaynak: [Matvaretabellen API](https://www.matvaretabellen.no/en/api/). `data/north/food_composition.json`, ham API ve üretim betiği yeniden üretilebilir kayıt olarak tutulur. Besin dosyası ve yeni motor modülü PRE sürüm hash'ine dahil edildi; eski PRE yeni motorla sessizce çalıştırılmaz.
+
+## 3. Günlük su, depo ve yedek hesabı
+
+Mevcut yağış/kar erimesi–çatı toplama hesabının gerçek günlük sırası kullanılır. Hesaplanmış ürün/yöntem planı sabitken, sınanan kaydın döngüsel işletiminde yağış/kar ile talebi karşılayacak en küçük depo sequent-peak kümülatif açık hesabıyla bulunur. Dönem sonu/başı birlikte işlenir. Toplam toplama talebi karşılamıyorsa sonuç `None`: hiçbir sonlu depo su yaratmaz.
+
+Bu depo hesabı ilk doldurmayı dışlar; ilk dönem boş depo sonucu eski günlük güvenlik analizinde ayrıca kalır. Belediye suyunun yıllık toplamı keyfî günlere dağıtılmaz. Mevcut depo için %100, %75 ve %50 toplama stresleri; ortalama/en yüksek yıllık yedek, yoğun gün ve aralıksız yedek gün sayısı hesaplanır. Yüzdeler gerçekleşme olasılığı değildir. Arıtma debisi veya yerel su tahsisi doğrulanmış sayılmaz.
+
+Varsayılan 2050 taze ürün planında seçilen depo 10 m³, üç kaydın tamamı için hesaplanan döngüsel depo yaklaşık 10,865 m³; seçilen depoyla en yoğun gündeki yedek 46,6 L/gündür. Sonuç değişen üretim hedefi/koşulla tekrar hesaplanır. Çatı, kar birikimi, don, toplama verimi, kalite kayıpları ve parsel erişimi yerel ölçüm/uzmanlık gerektirir. Bu sonuç bir tesis uygulama projesi veya garanti değildir.
+
+## 4. Enerji tüketimi ve güç
+
+Üretim elektriği artık ışık, pompa, fan, nem alma ve soğutma olarak aynı fiziksel hesaptan ayrılır. Isı/COP ve arıtma elektriğiyle toplam kapanışı denetlenir. Varsayılan plan: ışık 70.232; pompa157; fan1.602; nem alma22.303; soğutma23.179; ısı elektrik karşılığı1.896; arıtma0,375 kWh/yıl. Yuvarlanmamış toplam119.368,894 kWh/yıl.
+
+Aylık işletim grafiği ve en yoğun ay eklenmiştir. Günlük hava verisinden yeniden kurulan saatlik ısı/elektrik azamileri hesaplanır; seçili seçeneklerin ayrı azamileri toplanarak ihtiyatlı işletim güç taraması verilir. Varsayılan yaklaşık25,8 kW. Bu gerçek eşzamanlı pik ölçümü değildir. Arıtma çalışma debisi/saatleri, başlangıç akımı, yedekleme, boş tesis don koruması ve bağlantı koşulları ayrıca tasarlanmalıdır. Aylık grafik RO ön ısıtmasının dağılımını içermez; yıllık toplam içerir.
+
+Yıllık enerji sınırı LP'de sert kısıttır. Yeni beyan edilen elektrik gücü alanı ayrıca tarama yapar; gücü aşabilecek tasarım için uyarı üretir, henüz LP güç kısıtı değildir. Yerel sağlayıcı kapasitesi otomatik keşfedilmiş veya onaylanmış sayılmaz.
+
+## 5. Numune ve kontrollü pilot
+
+`Saha + üretim testi → Ölçüm kayıtları` alanında karar bağlantılı saha listesi ve boş CSV/JSON şemaları indirilebilir. Numune girişi kaynak türü, zaman/konum, izin/teslim zinciri, kalibrasyon, yöntem, ölçüm belirsizliği ve uzman tarafından kaynaklı kullanım sınırlarını içerir. Birim uyuşmazlığı, eksik ölçüm ve sınırı kesen belirsizlik ayrı sonuç verir. Kontrolleri geçmek tüm tarımsal uygunluk/içilebilirlik onayı değildir.
+
+Pilot beklentisi ölçümden önce değişmez hash'li kayıtla dondurulur. Gerçek gözlem aynı alan/süre/protokol/su kaynağı/arıtma kapsamıyla karşılaştırılır. Yeni su, elektrik, ayrı ısı ve taze hasat farkları ve kg başına yoğunluklar hesaplanır. Eksik/gelecekte/sentetik gözlem reddedilir. Yeniden oluşturulmuş kaynak suyu gerçek fiziksel pilotta kullanılabilir; Arktik'ten alınmış su diye sunulmaz. Kalite kabulü gönderenin belge beyanıdır; yazılım bağımsız laboratuvar değildir.
+
+Numune/pilot incelemesi otomatik katsayı değiştirmez. Mevcut PWN PRE/POST yolu yalnız eşleşmiş kaynak T/S ve desteklenen arıtma girdilerini aynı motorda günceller. Gelecek iklim, karasal su, zemin ve verim buradan değişmez. Numune paneli, adet/derinlik/hacim ve kontrol/tekrar sayısı uzmanlarca belirlenir.
+
+## Sunumda söyleyeceğimiz
+
+“Bilgisayarda geleceğin iklim ve kaynak koşullarını simüle ederek hangi üretim sistemini ve su stratejisini kurmamız gerektiğini hesaplıyoruz. Sonra bu kararı etkileyen belirsizlikleri belirliyoruz. Seferin gerçek zaman ve konumundaki suyu modelin ne kadar doğru temsil ettiğini ve o kaynak suyunun kullanım/arıtma özelliklerini sınamak için sahada ölçüm yapıp izinli numune almamız gerekiyor. Bu kanıtları destekledikleri girdilere işleyip aynı motoru tekrar çalıştıracağız. Desenin değişmemesi de geçerli bir sonuçtur.”
+
+Yerel zemin, bütün yıl karasal su ve enerji tahsisi ayrıca araştırılacaktır; deniz profili bunların yerine geçmez. Longyearbyen bir araştırma/hesap bağlamıdır, teyit edilmiş sefer istasyonu değildir. Sefer rotası ve gözlemin üretim senaryosundaki kaynakla bağı belgelenmeden doğrudan aktarım yapılmaz. Pilotun kendisi sefer sonrası başka uygun kontrollü ortamda yapılabilir; bütün gelecek tarımı seferde yetiştirme vaadi yoktur.
+
+## Sahada / fiziksel çalışmada kalanlar
+
+1. Gerçek sefer istasyonu/rota/izin ve numune laboratuvar protokolünü kesinleştirmek.
+2. Uygun aralıkta kalibre C/T/p cihazıyla UTC/konum/QC içeren gerçek profil; bağımsız referansla kontrol. Mevcut düşük aralıklı TDS PoC deniz CTD'si değildir.
+3. Kaynağı ayrı kayıtlı izinli su örneklerini analiz etmek; tuzluluk ve karar sorusuyla gerekçeli kimya. Deniz örneği kar/yağış suyunu temsil etmez.
+4. Ayrı yerel çalışma ile toplama/depo/erişim/tahsis, zemin ve enerji kapasitesini doğrulamak.
+5. Arıtılmış/koşullandırılmış örnek veya açıkça yeniden oluşturulmuş suyla kontrollü üretim pilotu; gerçek su, enerji, bitki ve arıza kayıtları.
+
+Yazılım hazırlığı bu fiziksel işleri yapılmış saymaz. Test ve API kayıtları `docs/verification/north-completion/`, ayrıntılı saha protokolü `docs/NORTH_VALIDATION_WORKFLOW.md` içindedir.
+
+
+DOĞRULAMA — BU TUR ÇALIŞTIRILAN
+Tam backend: 2026-09-23T11:15:37.082017+03:00; 75.983s; 458 test geçti;0hata/başarısız/atlanan. Gerçek NASA/ERA5,LP/su kapanışı,besin amaçları,depo,güç,PRE/POST,numune/pilot sınırları test edildi. Sentetik fixture gerçek gözlem diye saklanmadı. Starlette/AnyIO deprecation uyarısı test başarısızlığı değildir.
+TypeScript+Vite üretim derlemesi başarılı;frontend/dist güncel. API:2026-09-23T08:21:27.073852+00:00;3üretim hedefi,5dönem,boş plan,düşük güç beyanı,doğrulama endpoint'leri ve eksik numune422 reddi geçti.
+Gerçek masaüstü:yakın/tarihsel referans,protein hedefinde roka,ERA5 yakın dönem,depo/enerji/güç,besin çıktıları,ölçüm kayıt masası ve boşJSONreddi görüldü. Son konsol boş;varsayılan2050/taze ürüne dönüldü. Mobil test yok. Önceki018'in23frontend testi ayrı yeniden çalıştırılmadı;eski tarihiyle kalır.
+Kanıtlar docs/verification/north-completion/: backend-tests.xml/log,build.log,api-summary.json,plan-*.json,timeline.json,browser-qa.json ve ekran görüntüleri. scripts/verify_north_completion.py gerçekAPI denetimini tekrar eder.
+
+DOSYALAR
+Backend güncellenen: north_climate,north_timeline,north_contracts,north_optimizer,north_planning,north_resources,north_api,north_field,app. Yeni:north_production_purpose.py,north_infrastructure.py,north_validation.py.
+Frontend:NorthConsole,NorthSimulation,NorthDecisionStory,NorthEnergyExplanation,north-console.css,dist. Yeni:NorthInfrastructure,NorthProductionPurpose,NorthValidationDesk.tsx.
+Veri:recent_reference,food_composition,validation_templates. Betikler:ingest_north_recent_reference,build_north_food_composition,verify_north_completion.py. Geçici düzenleme betikleri kaldırıldı. Ayrıntılı yeni belgeler:NORTH_PC_COMPLETION_021 veNORTH_VALIDATION_WORKFLOW.
+
+SONRAKİ SOMUT ADIM
+İzinli sefer istasyonu/rota,laboratuvar protokolü ve gözlemle üretim su kaynağının bağı netleşince ölçümden önce güncel model beklentili PRE hazırlanmalı. Yerel tahsis/enerji/zemin ve gerçek fiziksel pilot ayrıca yapılmalı. Bunlar bilgisayarda sayı üretilerek tamamlanamaz. Kaynaklı yerel ekonomi/talep,veri ailelerinin karşılaştırılabilirliği ve ayrıntılı arıtma/güç ekipmanı tasarımı da açık araştırmalardır.
+
+KISA TESLİM GEÇMİŞİ
+021:güncel yeniden analiz,besin amaçları,günlük depo/güç ve ölçüm kayıt altyapısı.
+020:sabit tarihsel referans,su örneği ve enerji anlatımı;tam önceki dosya docs/archive/ANA_CHAT_TESLIM_020_before_five_packages_2026_09_23.txt.
+019:su yönetimi öncelikli ekran;018:simülasyon etkileşimi;017:çeşitlilik/karar anlatımı;016:üretim-su motoru;015veöncesi:Türkiye akışı. Eski testler arşiv veBUILD geçmişinde tarihlidir. AşağıdakiPWNtedarik notları byte-for-byte korundu;son tarihli not kendi alanında geçerlidir.
+
+
+PWN TEDARİK / FİZİKSEL İLERLEME — TARİHLİ EKLER
+PWN TEDARİK EKİ — 22 EYLÜL 2026
+Kullanıcının Kartal'dan alabileceği DFR0300 ve Direnc.net alternatifleri araştırıldı. Güncel kaynaklı dosya: docs/PWN_KARTAL_TEDARIK.md.
+DFR0300: Gümrük Sepeti Dudullu 5.500 TL, sayfada sıfır/stok 1/mağazadan teslim; tam kit içeriği teyit edilecek. Direnc.net aynı DFR0300 K1 8.124,83 TL, sepete ekle. Robotistan'da doğrulanmış DFR0300 sayfası bulunamadı; TDS/pH muadil sayılmadı.
+Direnc güncel resmî adresi Yukarı Dudullu Eser Sokak 7/A Ümraniye; eski Maltepe adresi kullanılmayacak. Elden teslim telefonla teyitsiz. Robotistan Başakşehir için internetten sipariş/ödeme ve Ofisten Teslim Al seçeneği var.
+Direnc ESP32-WROOM32D 377,76; DS18B20 58,12 (stok teyidi); SD modülü 29,06; breadboard 55,21; iki jumper paketi ayrı ayrı 49,40 TL. Bu altı kalem toplamı 618,95 TL, hesap; tüm cihaz bedeli değil. Direnc encoder kategoride tükendi; önceki Robotistan seçeneği korundu.
+ÖNEMLİ FİYAT DÜZELTMESİ: Önceki Emes 1.950 TL EC ilanıyla aynı sitenin 8.900 TL kit ilanı arasında açıklanmamış fark var. Eski 3.423,50 TL ana parça toplamı kesin bütçe değildir. docs/PWN_V01_LINKLI_ALISVERIS.md başına güncelleme eklendi; eski PDF yeniden üretilmedi, fiyatları yeni tedarik dosyasıyla birlikte okunmalı.
+Doğrulama: web satıcı fiyat/adres/teslimat sayfaları araştırıldı; telefonla stok ayırtılmadı, satın alma yapılmadı. Elektriksel/fiziksel test yapılmadı; yukarıdaki yazılım testleri bu tedarik işi kapsamında yeniden çalıştırılmadı.
+Sonraki somut adım: DFR0300 tam kit içeriği ve elden teslimi satıcıya teyit ettirip ana parçaları tedarik etmek; usta gerçek kart/kablo/mil ölçülerine göre montajı eşleştirecek.
+
+PWN DİRENC AĞIRLIKLI SEPET — 22 EYLÜL 2026
+Kullanıcı Direnc.net’te alınabilenlerin oradan alınacağı senaryoyu seçti. Güncel satın alma listesi docs/PWN_DIRENC_SEPETI.md ve .txt. DFR0300 dahil 7 ana Direnc kalemi 8.743,78 TL; Robotistan encoder ve yeni 16 GB kart eklenince 9.726,11 TL ara toplam. Küçük elektronik, USB, sarf, mekanik, olası kalibrasyon eksiği ve kargo hariç; tüm cihaz fiyatı değil. Adetli küçük parça ve atölye tamamlama listesi dosyada.
+Önceki tedarik dosyasındaki Gümrük Sepeti önceliği artık seçili senaryo değil; alternatif kaynak olarak kalır. Bu iş önceki aynı gün kaynak kontrollerinin listelenmesi ve toplam hesabıdır; yeniden web stok sorgusu, sipariş, donanım veya yazılım testi yapılmadı.
+Sonraki adım: Direnc’te DFR0300 kit içeriğini, DS18B20 stoğunu ve elden teslimi teyit edip listeyi yapacak kişiye iletmek.
+
+PWN BÜTÇE REVİZYONU — 22 EYLÜL 2026
+En yeni kullanıcı kısıtı: yaklaşık 4.000 TL yalnız sensör/kart/algılayıcılara; mekanik ve montaj okulda. Önceki DFR0300’lı 9.726,11 TL ara toplamlı Direnc sepeti artık güncel öneri değildir.
+Yeni öneri dosyası: docs/PWN_4000TL_ANA_PARCA_PLANI.md. Direnc analog TDS probu+kartı 261,53 TL ve ADS1115 309,77 TL bu tur webden doğrulandı. ESP32, DS18B20, SD modülü/bellek, encoder ile ana toplam 2.018,57 TL; bu kalemlerin diğer fiyatları aynı gün önceki kontrolden. İsteğe bağlı pH 1.046,12 TL (stok/prob içeriği teyitsiz), eklenirse 3.064,69 TL; ilk öneri pH olmadan temel profili çalıştırmak. Mekanik/sarf/kargo/kalibrasyon hariç.
+Bilimsel kapsam açıkça daraltıldı: düşük tuzluluklu kontrollü su kolonunda sıcaklık/derinlik ve iletkenliğe dayalı TDS sensör sinyali. DFR0300 muadili, deniz suyu EC’si veya salinite cihazı olarak sunulmaz. Ham voltaj kaydı, aralık/sıcaklık/standartla doğrulama öncelikli; EC birimi ancak kalibrasyonla. Eski 12,88 mS/cm kalibrasyon standardı yeni aralığa otomatik taşınmaz. Eski “TDS almayın” genellemesi düzeltildi: daraltılmış PoC için kullanılabilir.
+Satın alma, fiziksel ölçüm ve kod değişikliği yok; uygulama testleri yeniden çalıştırılmadı. Sonraki adım: kutu içeriği/stok kontrolü ve okulda düşük aralıklı sensör yanıtının fiziksel doğrulaması.
+
+PWN ENCODER ÇIKARILDI — 22 EYLÜL 2026 SON DÜZELTME
+Kullanıcı 600 TL encoderin çıkarılmasını ve derinliğin okulda başka yöntemle çözülmesini istedi. Yöntem henüz tanımlı değil. docs/PWN_4000TL_ANA_PARCA_PLANI.md güncellendi: altı ana parça 1.410,26 TL; opsiyonel pH dahil 2.456,38 TL. Önceki encoderli toplamlar tarihsel kaldı. Mekanik okulda.
+DFRobot SEN0244 için canlı Robot Sepeti sayfası 1.198,66 TL ve 7–12 iş günü tedarik gösteriyor. Ucuz TDS yerine SEN0244 olursa 2.347,39 TL; pH ile 3.393,51 TL. Dokümantasyon avantajı; aralık/doğruluk iyileşmesi iddiası yok. Kısa takvim nedeniyle önerilen hemen kurulabilir yol yerel TDS ile başlamak. Stok/kutu içeriği ve pH entegrasyonu teyit gerektirir. Sipariş, kod veya fiziksel test yapılmadı.
+
+## Güncel öncelik — iletkenlik, pH sepet dışında
+
+22 Eylül 2026: Kullanıcı TDS/EC sensöründe en çok 1.000 TL, tercihen Direnc; pH'a 1.000 TL harcamak istemiyor. Encoder ve pH güncel öneri sepetinden çıkarıldı. Önceki pH'lı toplamlar yalnız alternatif hesaplarıdır.
+
+Yeni bulunan seçenek: DFRobot SEN0244, E-komponent'te KDV dahil 829,55 TL. https://www.e-komponent.com/dfrobot-sen0244-gravity-analog-tds-sensor-meter-for-arduino . Canlı sayfa 140 adet YURT DIŞI stok, 7–10 iş günü ve tahmini kargoya teslim 1–6 Ekim 2026 gösteriyor. Bu elden/yerel stok değildir. Üretici kitinde prob bulunur; satıcı teknik tablosu Board(s), Cable(s) dediği için prob dahil tam SEN0244 kutusu teyit edilmeli. SEN0244 üretici dokümantasyonu avantajıdır, yayınlanmış aralığı/doğruluğu ucuz seçeneğe göre daha iyi değildir (0–1000 ppm, ±%10 tam ölçek). Direnc'te 1.000 TL altında doğrulanmış daha yüksek performanslı EC/TDS kitine ulaşılamadı.
+
+Bu 829,55 TL kit mevcut 261,53 TL TDS yerine alınırsa altı ana parça 1.978,28 TL. İkisi birlikte alınmaz. Hızlı temin gerekirse mevcut yerel TDS'li altı parça 1.410,26 TL korunur.
+
+pH yerine ilgili ek işlev önerisi: DS3231 gerçek zaman saati, Direnc 174,35 TL: https://www.direnc.net/arduino-i2c-ds3231-real-time-clock-rtc-modulu . İnternetsiz tarih/saat kaydı için; yeni su parametresi ölçmez. Stok gösterimi üst/alt sayfada tutarsız, teyit gerekli. Uygun yedek pil ve modülün şarj devresi uyumu usta tarafından seçilecek; pil dahil varsayılmaz. SEN0244 + temel parçalar + RTC = 2.152,63 TL; yerel ucuz TDS + temel parçalar + RTC = 1.584,61 TL. Kargo/kalibrasyon/pil hariç. ADS1115 16 bit olması sensörü 16 bit doğrulukta yapmaz. Kalan bütçe yeni gereksiz kanal yerine EC standardı/referans doğrulamasına önceliklendirilecek. Gerçek su ölçümü/satın alma yok.
+
+SON PWN SEPETİ TEKLEŞTİRİLDİ — 22 EYLÜL 2026
+Güncel doğrudan paylaşılabilir dosya: docs/PWN_SON_ALISVERIS.txt. Seçilen hızlı temin yönü: Direnc TDS + ESP32 + DS18B20 + ADS1115 + SD modülü ve Robotistan 16 GB kart; 1.410,26 TL. DS3231 koşullu ek, dahil olursa 1.584,61 TL. Önceki SEN0244/pH/encoder sepetleri güncel alım listesi değil. Kalibrasyon/pil/kargo hariç; okul sarfı ve henüz tanımlanmamış haricî derinlik yöntemi dosyada ayrıldı. Fiyatlar son konuşmadaki kaynak kontrollerinden; bu tur tekrar sorgu, sipariş, fiziksel veya yazılım testi yapılmadı. Sonraki adım: bu listeyi ustaya verip stok/kutu içeriğini ve okulun sağlayacağı kalibrasyon/bağlantı malzemelerini tamamlamak.
+
+DİRENC BELLEK VE TAMAMLAMA — 22 EYLÜL 2026
+Güncel tek alım dosyası docs/PWN_SON_ALISVERIS.txt. Direnc SanDisk Ultra 16 GB microSDHC canlı sayfa 1.046,12 TL KDV dahil/sepete ekle; https://www.direnc.net/sandisk-ultra-16gb-80mb . Önceki Robotistan belleğine göre 672,10 TL pahalı. Tam Direnc altı parça 2.082,36 TL; RTC dahil 2.256,71 TL. Mevcut bellekle sırasıyla 1.036,24 / 1.210,59 TL. Diğer fiyatlar bu tur yenilenmedi. Kalibrasyon/pil/kargo/sarf hariç.
+Mantıklı ekler okul stoğundan 1 kayıt butonu, 2 durum LED'i/dirençleri; USB veri/güç ve gerektiğinde kart okuyucu, pull-up/header/RTC pili kontrolü dosyaya eklendi. Yeni su sensörü yok. Kod veya fiziksel doğrulama yapılmadı, sipariş yok. Sonraki adım ustanın okul stoklarını eşleştirip gerçek sepeti tamamlaması.
+
+HOCA LİSTESİ BAĞLANTILARI — 22 EYLÜL 2026
+Yeni dosya docs/HOCA_LISTESI_IKI_MAGAZA.txt: hocanın 12 kalemi için Direnc/Robotistan bağlantıları. M10 ve Atlas EC doğrulanamadı; M8N ayrı alternatif olarak etiketlendi. Su basıncı adayı derinlik için seçilmedi. Bu araştırma alım kararı değil; encoder yeniden eklenmedi. Pi mevcutsa yeniden alım yok; Pi kayıt kartıyla ayrı SD modülü gerekmeyebilir. Fiyat/stokların hepsi bu tur yeniden kontrol edilmedi, fiziksel/yazılım testi yok. Sonraki adım hocayla Pi adaptör/kart mevcudunu ve gerçekten alınacak alt kümeyi eşleştirmek.
+
+HOCA LİSTESİ FİYATLANDIRILDI — 22 EYLÜL 2026
+İki mağazanın ürün fiyatları yeniden webden kontrol edilip docs/HOCA_LISTESI_IKI_MAGAZA.txt dosyasına eklendi. Robotistan ADS1115 133,79 TL, bellek 374,02 TL; Direnc karşılıkları 309,77 ve 1.046,12 TL. Robotistan RTC 204,55 TL fakat tükendi; Direnc M8N 813,65 TL stok yok. Tam tablo kaynak ürün bağlantılarıyla dosyada. Bu karşılaştırma, yeni satın alma kararı değil. Fiziksel/yazılım testleri yapılmadı; sonraki adım okul stoğuna göre alınacak alt kümeyi seçmek.
+
+Pİ MEVCUT — 23 EYLÜL 2026
+Kullanıcı Pi mevcut, adaptör/depolama muhtemelen mevcut dedi. Güncel alım docs/PWN_SON_ALISVERIS.txt olarak yeniden sadeleştirildi: TDS 261,53 + Robotistan ADS1115 133,79 + Direnc DS18B20 58,12 = 453,44 TL; opsiyonel Direnc RTC 174,35 ile 627,79 TL. Son kontrol fiyatları, yeniden sorgulanmadı. Pi/ESP32/ayrı SPI SD modülü/yeni bellek-adaptör mevcutlar uygunsa alınmayacak. Adaptör ve kart kesin kullanıcı teyidi değil; okulda kontrol edilecek. Kalibrasyon/pil/kargo/sarf hariç. Kod, fiziksel test ve sipariş yok. Sonraki adım okul mevcudunu kontrol edip üç temel sensör/kartı temin etmek.
+
+KULLANICI SON PARÇA SEÇİMİ — 23 EYLÜL 2026
+GPS ve encoder kullanıcı isteğiyle yeniden listeye eklendi. ADS1115, DS18B20 ve stokta olmayan DS3231 yazıldı. Pi/breadboard/jumper/depolama mevcut; su basıncı yok. docs/PWN_SON_ALISVERIS.txt güncel: Robotistan GPS M8N 720,10 + encoder 608,31 + ADS1115 133,79 + DS18B20 75,52 = 1.537,72 TL; stokta olmayan RTC 204,55 dahil 1.742,27 TL. M8N, M10 değildir. TDS son mesajda geçmedi, önceki aday olarak ayrı korundu: 261,53 TL; dahil olursa RTC ile 2.003,80 TL. Fiyatlar önceki kontrollerden; tekrar web/cihaz testi ve sipariş yok. Sonraki adım bu listeyle stok ve montaj uyumunu tamamlamak.
+
+İLETKENLİK ANA LİSTEYE EKLENDİ — 23 EYLÜL 2026
+Kullanıcı isteğiyle Direnc TDS probu+ölçüm kartı 261,53 TL ana alıma eklendi. Güncel liste: GPS M8N, 600 darbe encoder, ADS1115, DS18B20, TDS ve stokta olmayan DS3231 RTC. RTC hariç 1.799,25 TL; RTC dahil 2.003,80 TL. docs/PWN_SON_ALISVERIS.txt güncellendi. Önceki fiyatlar kullanıldı; yeni fiyat sorgusu, sipariş veya fiziksel test yok. Kalibrasyon/kargo/pil hariç; TDS düşük aralıklı PoC, deniz suyu EC/CTD değildir.
+
+HOCANIN FİZİKSEL GÖSTERİM PLANI — 23 EYLÜL 2026
+Kaynak: kullanıcının aktardığı İlkay Hoca mesajları; yapılmış iş/ölçüm değildir.
+Öneriler: PET şişelerden dikey su kolonu; suya tuzlu çözelti ekleyerek gerçek sensör yanıtı gösterme; GPS için dışarıda gösterim; mevcut powerbank kullanımı; gerçek parça boyutlarıyla CAD/3D baskı; başlangıçta eldeki Lego tank dişlileri; kurumda 3 yazıcıyla yaklaşık 24 saat baskı beklentisi. Yazıcı/dişli mevcudu hoca beyanı, 24 saat süre tahmini.
+Uygulama ayrımları: Başlangıç suyu otomatik sıfır tuzluluk kabul edilmeyecek, başlangıç sensör değeri kaydedilecek. TDS 0–1000 ppm aralığı aşılmadan küçük adımlarla seyreltilmiş tuz çözeltisi kullanılacak; fazla konsantre tuz sensörü doyurabilir. Karıştırılmış suya tuz ekleme zamana bağlı tepki gösterimidir, tek başına derinlikle değişen tabaka/haloklin kanıtı değildir. Derinlik ayrıca cetvel/işaretli ip ile encoder karşılaştırılarak gösterilebilir; su kolonu kendi başına derinliği ölçmez. PET birleşimleri su dolu sızdırmazlık/sağlamlık kontrolünden geçecek, kuru elektronik ayrı tutulacak.
+GPS açık gökyüzünde yeni ve geçerli konum/tarih-saat verisiyle gösterilecek; kapalı ortamda hiç veri üretemez genellemesi yerine uydu kilidi/konum geçerliliği kontrol edilecek. Geçersiz veya eski konum güncel ölçüm sayılmayacak.
+Powerbank: mevcut olan kullanılabilir ancak herhangi biri garanti değil; Raspberry Pi 4 için uygun USB-C 5 V/3 A besleme (resmî öneri 5,1 V/3 A) ve kablo kontrol edilecek. Okulda önce masa adaptörüyle test, sonra powerbank ile sensör/kayıt açıkken düşük voltaj veya yeniden başlama kontrolü. Yeni powerbank satın alımı henüz gerekmiyor, mevcut cihazın uygunluğu açık bağımlılık.
+Kaynak: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/ ; sensör aralığı önceki Direnc TDS ürün kaydından.
+CAD baskısı için önce gerçek parça/kablo/konnektör boyutları ölçülecek. Önce tek kritik montaj parçasının uyumu, ardından yazıcılara dağıtılmış baskı önerilir. Lego dişli geçici mekanizma, derinlik doğruluğu kalibrasyonla belirlenecek.
+Kod/cihaz ölçümü/satın alma yapılmadı. Sonraki somut adım: parça ve güç kontrolü, masaüstü sensör okuması, gerçek ölçülere göre gövde baskısı ve iki ayrı demo (tuz ekleme tepkisi / derinlik ve dışarıda GPS).
+
+DİRENC ALTI PARÇA KONTROLÜ — 23 EYLÜL 2026
+Kullanıcının son altı kalemlik listesi Direnc.net ürün sayfalarında yeniden kontrol edildi. TDS 261,53 TL, ADS1115 309,77 TL ve su geçirmez DS18B20 58,12 TL sayfalarda ana ürün bölümünde “Sepete Ekle” gösteriyor. GPS için NEO-M8N modülü 813,65 TL fakat sayfada açıkça “Stokta Yok” yazıyor; Robotistan'daki kartla birebir aynı form faktörü değil. 600 darbeli E6B2-CWZ6C encoder 678,04 TL ve DS3231 RTC 174,35 TL sayfaları var, fakat ana ürün bölümünde “Sepete Ekle” yok; alt sayfa şablonundaki buton stok kanıtı sayılmadı. Bunların alınabilirliği mağazadan teyit edilmeli. Robotistan'a göre ADS1115 ve encoder Direnc'te pahalı, DS18B20 daha ucuz. TDS ürün aralığı 0–1000 ppm olduğundan yoğun tuzlu/deniz suyu ölçüm cihazı olarak sunulmayacak. Kaynaklar: https://www.direnc.net/arduino-tds-sivi-iletkenlik-ve-kalite-sensoru ; https://www.direnc.net/neo-m8n-arduino-gps-shield ; https://www.direnc.net/rotary-encoder-e6b2-cwz6c-600-pulse ; https://www.direnc.net/ads1115-16-bit-i2c-4-kanal-modul ; https://www.direnc.net/ds18b20-sicaklik-sensoru-su-gecirmez ; https://www.direnc.net/arduino-i2c-ds3231-real-time-clock-rtc-modulu . Bu kontrol sipariş veya fiziksel stok teyidi değildir; ölçüm/test yapılmadı. Sonraki adım: stok belirsiz iki kalemi telefonla/mağazadan teyit edip, GPS'i stoklu satıcıdan almak.
+
+YAKIN MAĞAZADAN TESLİM ARAŞTIRMASI — 23 EYLÜL 2026
+Kullanıcı altı parçanın Kartal/Maltepe/Kadıköy yakınında kesin mağaza teslimini istedi. Web araştırmasında bu altı parçanın tamamını yakın bir noktada mevcut ve bugün teslim edilebilir olarak doğrulayan kaynak bulunamadı. ÖNEMLİ ADRES DÜZELTMESİ: Direnc arama önbelleği Maltepe/Zümrütevler gösterse de bugün açılan güncel resmî iletişim sayfası Yukarı Dudullu, Eser Sokak No:7/A, Ümraniye ve 0850 450 47 47 gösteriyor: https://www.direnc.net/iletisim . Eski Maltepe adresine kullanıcı yönlendirilmeyecek. Güncel Direnc ödeme/teslimat sayfası mağazadan teslimi açıkça doğrulamıyor; 1–3 iş günü kargo hazırlığını anlatıyor: https://www.direnc.net/odeme-ve-teslimat . Bu yüzden fiziksel teslim seçeneği ve aynı gün hazır olma telefonda/sipariş adımında teyit edilmeli. Yakın alternatif Robot Meraklısı Kadıköy Sahrayı Cedit'te adres/telefon yayımlıyor ancak istenen altı parça ve mağazadan teslim doğrulanmadı: https://robotmeraklisi.com/shop/ . REQASMART Maltepe'de mağazadan teslimi resmen sunuyor fakat bu altı parçanın mevcut olduğu bulunmadı: https://www.reqasmart.com/sayfa/kargo-ve-teslimat . Robotistan ofisten teslimi açıkça sunuyor fakat Başakşehir'de; online ödeme ve sipariş önkoşulu var: https://www.robotistan.com/kargo-ve-teslimat ; https://www.robotistan.com/iletisim . Robotparca.com gibi Kadıköy diye görünen fakat açık mağaza adresi/gerçekçi fiyat ve stok doğrulaması bulunmayan siteler alım tavsiyesine dahil edilmeyecek. Sonraki somut adım: yakınlık zorunluysa Direnc'e teslim noktası ve üç sepete eklenebilen parça için aynı gün mağaza stoğunu telefonla sormak; altı parçanın tümü zorunluysa satıcıdan yazılı stok/teslim onayı almadan yola çıkmamak. Sipariş veya telefon teyidi yapılmadı.
+ 
+SEPETTEKİ SEN0546 SICAKLIK/NEM SENSÖRÜ — 23 EYLÜL 2026
+Kullanıcı Direnc sepetini paylaştı: 2 adet TDS (523,06 TL KDV dahil), 1 adet DFRobot SEN0546 I2C paslanmaz sıcaklık/nem sensörü (802,02 TL KDV dahil), 1 adet ADS1115 (309,77 TL KDV dahil); sepet 1.634,85 TL kargo ücretsiz. SEN0546 üretici tanımında 0–100% bağıl nem ve hava/çevre sıcaklığı sensörü; suya daldırılabilir/IP dereceli olduğu belirtilmiyor. Paslanmaz çelik gövde su geçirmezlik kanıtı değildir. Su kolonunun sıcaklığı için uygun diye alınmamalı. Kaynaklar: https://www.direnc.net/i2c-paslanmaz-sicaklik-ve-nem-sensoru-kablolu ; https://wiki.dfrobot.com/sen0546/ . Kullanıcı beyanı: Direnc'teki önceki DS18B20 stokta kalmamış. Satıcı sayfası buna karşın 58,12 TL/sepete ekle gösteriyor; canlı sepet kullanıcının güncel stok gözlemi öncelikli. Alternatif: Robotistan su geçirmez DS18B20 75,52 TL ve sepete ekle gösteriyor: https://www.robotistan.com/su-gecirmez-ds18b20-dijital-isi-sensoru . SEN0546 çıkarılıp bu alınırsa ürün toplamı 908,35 TL, farklı mağaza kargo koşulları hariç. 2 TDS alınabilir, ancak her biri 0–1000 ppm; deney tuz yoğunluğu bu aralıkta tutulmalı. Sipariş verilmedi, fiziksel ölçüm yapılmadı.
+ 
+İKİ SEPET GÖRSEL KONTROLÜ — 23 EYLÜL 2026
+Kaynak: kullanıcının bu tur paylaştığı iki sepet ekran görüntüsü. Direnc sepetinde 2 adet Arduino TDS prob+ölçüm kartı ve 1 adet ADS1115 var; önceki yanlış SEN0546 sıcaklık/nem sensörü çıkarılmış. Robotistan sepetinde 1 adet su geçirmez DS18B20 var (75,52 TL). Görsellerde görünen ürünler PWN laboratuvar PoC'inin iki TDS kanalı + su sıcaklığı için işlevsel ana sensör alt kümesidir; bunlar tek başına GPS, encoder/derinlik, RTC veya mekanik/güç düzenini karşılamaz. KDV dahil ürün hesapları önceki güncel sayfa fiyatlarına göre: 2×261,53 + 309,77 + 75,52 = 908,35 TL; iki mağazanın olası kargosu hariç. DS18B20 için 4,7 kΩ veri hattı pull-up direnci okul stoğunda kontrol edilmeli. İki TDS kartının iki analog çıkışı ADS1115'in iki ayrı kanalına bağlanabilir; Raspberry Pi ile çalışmak için ADS1115'in I2C bağlantısı ve 3,3 V seviye sınırı kurulumda kontrol edilecek. Sepet görüntüsü satın alma/teslim kanıtı değildir; henüz fiziksel ölçüm veya yazılım testi raporlanmadı.
+ 
+ROBOTİSTAN SEPETİNE EK ÖNERİ — 23 EYLÜL 2026
+Kullanıcının mevcut sepetinde su geçirmez DS18B20 var. Güncel Robotistan ürün sayfaları: GPS GY-GPSV3 NEO-8M/M8N 720,10 TL sepete ekle (https://www.robotistan.com/ublox-gy-gpsv3-neo-8m-m8n-antenli-gps-modulu), 600 darbe NPN açık kollektör encoder 608,31 TL sepete ekle (https://www.robotistan.com/doner-encoder-600d), 4,7 kΩ direnç 0,24 TL sepete ekle (https://www.robotistan.com/14w-4k7-direnc-paketi-10-adet). Önceki Exa önbelleğinde encoder stok yok deniyordu fakat bugün açılan ürün sayfasında sepete ekle gösteriyor; gerçek stok ödeme aşamasında teyit edilmeli. Seçilen GPS dışarıda konum/zaman gösterimi, encoder seçilen mekanik sarma düzeninde göreli derinlik göstergesi içindir. DS18B20 için 4,7 kΩ pull-up gerekir; okulda yoksa eklenmeli. Mevcut Robotistan DS18B20 (75,52) + GPS + encoder + direnç = 1.404,17 TL ürün toplamı, kargo hariç. RTC stok dışı ve bu kısa demo için zorunlu değil; Pi depolaması/adaptör, jumper/breadboard ve powerbank mevcut kullanıcı/okul koşullarına göre yeniden alınmayacak. Encoder 5–24 V beslemeli NPN çıkışlı olduğundan Pi 3,3 V GPIO'ya doğrudan 5 V verilmemeli; bağlantı yetkin kişiyle doğrulanacak. Sipariş/test yapılmadı.
+ 
+PWN EK ÖLÇÜM ÖNERİSİ — 23 EYLÜL 2026
+Kullanıcı Robotistan'dan ilave ölçüm sensörü sordu. Bilimsel öncelik: ikinci su geçirmez DS18B20 (Robotistan ürün kodu 13104, güncel sayfa 75,52 TL), böylece iki TDS/iletkenlik kanalının bulunduğu iki seviyede eşzamanlı su sıcaklığı da ölçülür. Bu yeni tür parametre eklemez; iki noktalı TDS+sıcaklık profili ve sıcaklık etkisini değerlendirme imkânı verir. Kaynak: https://www.robotistan.com/su-gecirmez-ds18b20-dijital-isi-sensoru . Robotistan'da uygun ve stoklu bulanıklık sensörü doğrulanamadı; pH, çözünmüş oksijen, su seviye/akış veya toprak nemi bu ilk dikey su kolonu deneyinin temel sorusuna maliyet/kanıt açısından öncelikli değil. TDS deniz tuzluluğunu veya gerçek CTD kalitesinde iletkenlik ölçümünü sağlamaz. İkinci DS18B20 opsiyonel ama anlamlı; toplam Robotistan sepetine +75,52 TL. Sipariş/deney yapılmadı.
+
+DS18B20 BAĞLANTI NETLEŞTİRMESİ — 23 EYLÜL 2026
+Mini DS18B20 Sıcaklık Sensörü Kartı, mevcut su geçirmez DS18B20 probunu çalıştırmak için gereken yardımcı kart değildir; kartın üzerinde ayrı bir DS18B20 sensörü ve direnç bağlantıları bulunur. Bu nedenle PWN su sıcaklığı probu için sepete eklenmeyecek. Su geçirmez prob Raspberry Pi GPIO'ya veri/güç/toprak üzerinden bağlanır; veri ile 3,3 V arasına 4,7 kΩ pull-up direnç gerekir (okulda varsa ayrıca satın almak gerekmez). İkinci sıcaklık noktası istenirse ikinci su geçirmez prob alınır. Kaynaklar: https://www.robotistan.com/mini-ds18b20-sicaklik-sensoru-karti ; https://www.robotistan.com/su-gecirmez-ds18b20-dijital-isi-sensoru . Bağlantı ve ölçüm henüz fiziksel olarak doğrulanmadı.
+
+PWN EK PARÇA ÖNCELİĞİ — 23 EYLÜL 2026
+Ek sensör satın alma önceliği düşük. Mevcut Direnc TDS modülünün resmî ürün aralığı 0–1000 ppm ve doğruluğu ±%10 F.S. (25 °C); bu nedenle yoğun tuz/deniz suyu ile test edilmemeli, düşük derişimli kontrollü çözelti hazırlanmalı. Bilimsel kanıtı en çok güçlendiren ek ihtiyaç uygun referans/kalibrasyon çözeltisi ve mümkünse ödünç alınacak bağımsız EC/TDS metre ile karşılaştırmadır. Robotistan'daki 4,7 kΩ direnç paketi su geçirmez DS18B20 bağlantısı için gerekebilir; okulda varsa ayrıca satın alınmaz: https://www.robotistan.com/14w-4k7-direnc-paketi-10-adet . İkinci su geçirmez DS18B20 üst-alt eşzamanlı ölçüm için opsiyonel, ilk sürümün çalışması için zorunlu değildir. Bulanıklık veya pH sensörü, mevcut berrak su+tuz kolonunda temel soruya ek kanıt vermeyeceği için önerilmez. Kaynaklar: https://www.direnc.net/arduino-tds-sivi-iletkenlik-ve-kalite-sensoru ; https://wiki.dfrobot.com/sen0244 . Direnc modülü DFRobot ürününe benzer görünse de kalibrasyon yazılımı/donanım eşdeğerliği fiziksel testle doğrulanmadı; DFRobot dokümanı genel teknik dayanak olarak kullanıldı. Yeni alışveriş veya fiziksel test yapılmadı.

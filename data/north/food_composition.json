@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "retrieved_on": "2026-09-23",
+  "provider": "Norwegian Food Safety Authority / Matvaretabellen",
+  "documentation_url": "https://www.matvaretabellen.no/en/api/",
+  "basis": "Per 100 g raw edible food; food energy is distinct from facility electricity.",
+  "classification": "SOURCED_FOOD_COMPOSITION / MODELED_TRANSFER_TO_POLAR_YIELD",
+  "raw_files": [
+    {
+      "path": "data/north/food_composition/foods.json",
+      "url": "https://www.matvaretabellen.no/api/en/foods.json",
+      "sha256": "89b8f5f494a79731bf7d8d98065ee66c55263ccdbb519e7c87941218be6c948d"
+    },
+    {
+      "path": "data/north/food_composition/nutrients.json",
+      "url": "https://www.matvaretabellen.no/api/en/nutrients.json",
+      "sha256": "15a95f0ebd0682daa293685203dad9aaa28b07df4e9b943ca03269161fbefd91"
+    },
+    {
+      "path": "data/north/food_composition/sources.json",
+      "url": "https://www.matvaretabellen.no/api/en/sources.json",
+      "sha256": "71917dadc84a5218bb3a78327cda6945c48eb6b2e72e4ee7fbf0c23ab7f6778d"
+    }
+  ],
+  "crops": [
+    {
+      "crop_id": "lettuce",
+      "food_id": "06.058",
+      "food_name": "Lettuce leaves, Norwegian, raw",
+      "url": "https://www.matvaretabellen.no/en/lettuce-leaves-norwegian-raw/",
+      "protein_g_per_100g_edible": 1.2,
+      "food_kcal_per_100g_edible": 11,
+      "protein_source_id": "202",
+      "food_energy_source_id": "MI0115",
+      "original_edible_percent": 94,
+      "mapping_status": "SPECIES_RAW_EDIBLE_ANALOGUE",
+      "limitation": "Not cultivar-specific Arctic composition. Existing yield is edible fresh mass; edible percentage is NOT applied a second time. No post-harvest/cooking loss or protein digestibility correction."
+    },
+    {
+      "crop_id": "arugula",
+      "food_id": "06.100",
+      "food_name": "Salad, rocket, raw",
+      "url": "https://www.matvaretabellen.no/en/salad-rocket-raw/",
+      "protein_g_per_100g_edible": 3.3,
+      "food_kcal_per_100g_edible": 25,
+      "protein_source_id": "420h",
+      "food_energy_source_id": "MI0115",
+      "original_edible_percent": 100,
+      "mapping_status": "SPECIES_RAW_EDIBLE_ANALOGUE",
+      "limitation": "Not cultivar-specific Arctic composition. Existing yield is edible fresh mass; edible percentage is NOT applied a second time. No post-harvest/cooking loss or protein digestibility correction."
+    },
+    {
+      "crop_id": "radish",
+      "food_id": "06.054",
+      "food_name": "Radish, Norwegian, raw",
+      "url": "https://www.matvaretabellen.no/en/radish-norwegian-raw/",
+      "protein_g_per_100g_edible": 0.7,
+      "food_kcal_per_100g_edible": 16,
+      "protein_source_id": "202",
+      "food_energy_source_id": "MI0115",
+      "original_edible_percent": 94,
+      "mapping_status": "SPECIES_RAW_EDIBLE_ANALOGUE",
+      "limitation": "Not cultivar-specific Arctic composition. Existing yield is edible fresh mass; edible percentage is NOT applied a second time. No post-harvest/cooking loss or protein digestibility correction."
+    },
+    {
+      "crop_id": "kohlrabi",
+      "food_id": "06.086",
+      "food_name": "Kohlrabi, raw",
+      "url": "https://www.matvaretabellen.no/en/kohlrabi-raw/",
+      "protein_g_per_100g_edible": 1.7,
+      "food_kcal_per_100g_edible": 23,
+      "protein_source_id": "460e",
+      "food_energy_source_id": "MI0115",
+      "original_edible_percent": 46,
+      "mapping_status": "SPECIES_RAW_EDIBLE_ANALOGUE",
+      "limitation": "Not cultivar-specific Arctic composition. Existing yield is edible fresh mass; edible percentage is NOT applied a second time. No post-harvest/cooking loss or protein digestibility correction."
+    },
+    {
+      "crop_id": "swiss_chard",
+      "food_id": "06.092",
+      "food_name": "Leaf beet, mangold, raw",
+      "url": "https://www.matvaretabellen.no/en/leaf-beet-mangold-raw/",
+      "protein_g_per_100g_edible": 1.8,
+      "food_kcal_per_100g_edible": 21,
+      "protein_source_id": "460e",
+      "food_energy_source_id": "MI0115",
+      "original_edible_percent": 92,
+      "mapping_status": "SPECIES_RAW_EDIBLE_ANALOGUE",
+      "limitation": "Not cultivar-specific Arctic composition. Existing yield is edible fresh mass; edible percentage is NOT applied a second time. No post-harvest/cooking loss or protein digestibility correction."
+    },
+    {
+      "crop_id": "basil",
+      "food_id": "06.111",
+      "food_name": "Basil, fresh",
+      "url": "https://www.matvaretabellen.no/en/basil-fresh/",
+      "protein_g_per_100g_edible": 3.2,
+      "food_kcal_per_100g_edible": 23,
+      "protein_source_id": "460g",
+      "food_energy_source_id": "MI0115",
+      "original_edible_percent": 64,
+      "mapping_status": "SPECIES_RAW_EDIBLE_ANALOGUE",
+      "limitation": "Not cultivar-specific Arctic composition. Existing yield is edible fresh mass; edible percentage is NOT applied a second time. No post-harvest/cooking loss or protein digestibility correction."
+    }
+  ]
+}

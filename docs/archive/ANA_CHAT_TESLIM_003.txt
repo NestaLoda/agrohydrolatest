@@ -1,0 +1,224 @@
+ANA SOHBETE TESLİM — 2204-D → TÜRKİYE → FUTURE NORTH / TASE-VII
+Teslim: 003 | Güncelleme: 22 Eylül 2026 | Yazılım: 0.3.0
+Çalışma alanı: C:\Users\bahao\OneDrive\Belgeler\2204devrim
+
+Bu dosya ana sohbete tek başına yüklenebilir veya içeriği yapıştırılabilir. Güncel durumu ve önceki teslimlerin geçerli sonuçlarını birleştirir. Ayrıntılı teknik durum docs/BUILD_STATUS.md'dir. Buradaki yerel dosyalara diğer sohbetin kendiliğinden erişebildiği varsayılmaz.
+
+EN GÜNCEL EK — TÜRKİYE'DEN SUNUM PROTOTİPİ MALZEMELERİ / 22 Eylül 2026
+Kullanıcı Türkiye'den temin ederek kendi yapacağı sunum prototipi için liste istedi. Öneri: DFR0300 K1 ECkit+ESP32 30pin+DS18B20+600darbe encoder+SD. Emes Robotik'te ECkit1.950TL/SepeteEkle görüldü; fiziksel stok, çıkış tarihi ve tam kutu/standart içeriği henüz teyit edilmedi. Diğer doğrudan ürün sayfalarıyla listelenen çekirdek toplam3.443,62TL. Önceki USD dönüşümlü toplam yerine bu yerel teklif adayı kullanılabilir; ürünler satın alınmadı.
+Kolon/stand/kafes/ölçüm tekeri/ip/kutu/güç/kablo/direnç ve çözelti malzemeleri ayrıca listelendi. Bu atölye kalemleri için1.000–2.000TL pay yalnız planlama tahmini; toplam5–6binTL hazırlık hedefi kesin satıcı teklifi değil. ADS1115 isteğe bağlı309,77TL. Yaklaşık50–70cm tank önerisi, mevcut1mprob kabloları ve rahat mekanik için; ölçüler prob geldiğinde kesinleşir.
+K1'in önerilen1–15mS/cm ve0–40°C aralığında güçlü tabaka prensip deneyi hedeflenir. ECkartının0–3,4V çıkışı için ESP32ADC uyarlaması;5V beslemeli NPN encoder için3,3V mantık pull-up kontrolü gerekir. Eski pin planı gerçek30pinkarta kontrolsüz aktarılmaz. YerelCSV, homojen/tabakalı tekrar, derinlikgrafiği başarı çıktısıdır; fiziksel yapılmadı ve kalibrasyonsuz sayıya gerçekEC denmez.
+Öğretmene verilecek ayrıntılı liste:docs/PWN_TURKIYE_ALISVERIS_V01.md. YerliECkaynağı:https://www.emesrobotik.com/urun/dfrobot-gravity-elektriksel-iletkenlik-ec-sensoru-kiti-k-1-dfr0300 . Üretici teknik sınırları:https://www.dfrobot.com/product-1123.html . Bu tur kod/donanım/test değişmedi;120test ve13browser sonucu önceki22Eylül doğrulamasıdır.
+
+SON EK — HAZIR PWN DONANIMI ARAŞTIRMASI / 22 Eylül 2026
+Kullanıcı hazır cihaz veya sensör alıp kendi sistemini üzerine kurma seçeneğini sordu. Üretici kaynakları incelendi. İki yol var: hazır EC sensör kiti + kendi kayıt/mekanik/analiz sistemi; veya hazır CTD profil cihazı + kendi veri/karar entegrasyonu. Bu bir satın alma kararı değil; DIY planı iptal edilmedi.
+DFRobot DFR0300-H K10:79,90USD;10–100mS/cm,0–40°C; tank aralığı uygunsa EC alt sistemi adayı, tam CTD değil. Atlas K10 kit:242,99USD; tam PWN maliyeti değil. CastAway-CTD:100m profil/GPS/kayıt/CSV; devam kontrolünde YSI ABD görünümünde7.800USD (US Only) okundu; Türkiye teslim teklifi değil. Valeport SWiFT CTD:500m sınıfı tam profil cihazı; açık fiyat görülmedi. Türkiye stok/vergiler/kargo/teslim veya ödünç erişimi doğrulanmadı; satın alma/iletişim yapılmadı.
+Öneri: sensör imalatını zorunlu başarı ölçütü yapmadan, uygun hazır ölçüm donanımıyla kendi protokolümüz, analizimiz ve karar bağlantımızı geliştirmek. Önce erişilebilir ödünç/referans cihaz ve yerel sensör kiti değerlendirilir. Mevcut importer marka CSV'siyle henüz sınanmadı; örnek dosya gelince adaptör gerekir. Şerif Efe ekibinin resmî okul duyurusu hava aracı+veri analizini doğruluyor; hazır drone satın alma ayrıntısını doğrulamıyor.
+Kullanıcı bütçe seçmek yerine tüm fiyatları istedi. Ek aday DFRobot K1:69,90USD.48,82TL/USD karşılaştırma kuruyla K1~3.413TL,K10~3.901TL,Atlas~11.863TL,CastAway~380.796TL (ithal ücretler hariç). Valeport/RBR güncel açık fiyat doğrulanamadı; teklif gerekir. Yerel örnek ESP32+DS18B20+optik encoder+16GBSD+SDmodülü toplamı1.496,23TL. Listelenen elektronik alt toplamları K1~4.909TL,K10~5.397TL,Atlas~13.359TL; kolon/mekanik/güç/sarf ve ithalat masrafları hariç, nihai cihaz bütçesi değil. Bütçe ya da satın alma kararı hâlâ verilmedi.
+Ayrıntı ve bağlantılar:docs/PWN_READY_MADE_OPTIONS.md.
+Kaynaklar:https://www.dfrobot.com/product-1797.html ; https://atlas-scientific.com/kits/conductivity-k-10-kit/ ; https://www.ysi.com/castaway-ctd ; https://www.valeport.co.uk/products/swift-ctd/ .
+Bu ek yalnız araştırmadır; uygulama0.3.0, fiziksel cihaz durumu ve önceki test tarihleri değişmedi. Testler bu araştırma turunda yeniden çalıştırılmadı.
+
+KANIT SINIFLARI
+Kullanıcı beyanı/talimatı: yarışma geçmişi, proje yönü, mülakat hedefi.
+Kaynaklı veri: resmî tarım istatistikleri, reanaliz, dış iklim modeli, literatür; kendi ölçümümüz değil.
+Hesap/simülasyon: su gereği, LP önerileri, gösterim saha çifti.
+Plan/konsept: fiziksel PWN, gelecek saha çalışması, sera işletimi, AI/risk.
+Gerçek yeni fiziksel ölçüm: bu teslim itibarıyla YOK.
+
+1. BU PAKETİN AMACI VE SONUCU
+
+Kullanıcının CORE ENGINE CORRECTION — RESTORE THE ORIGINAL SIMULATION DNA (U8) talimatı uygulandı. Proje baştan kurulmadı; mevcut yeni codebase'de aynı motorla Türkiye ürün deseni ve gelecekte kuzey üretim sistemi deseni hesaplanıyor. Kullanıcı bölgeyi seçiyor, mevcut ürünü/alanı görüyor, su veya başka girdiyi değiştiriyor ve önerilen yeni alan/üretim desenini alıyor.
+
+Önceki optimizer tek marul hedefinin yöntem/su kaynağı tahsisini çözüyordu; Konya'nın ürün alanı değişimi fikrini ana üründe taşımıyordu. Beş bölge harita karşılaştırması yararlıydı ama mevcut→önerilen ürün deseni üretmiyordu. Tek marul yolu eski API uyumluluğu olarak korundu; ana UI artık çok ürünlü /api/simulate kullanıyor. U7 dashboard yönü korunurken gezinme dört alana sadeleşti.
+
+2. DEĞİŞMEYEN HİKÂYE VE TALİMAT ÖNCELİĞİ
+
+Ana soru: İklim değişikliğiyle kuzeye genişleyen iklimsel üretim potansiyelinin ne kadarı su ve enerji bakımından uygulanabilir; hangi üretim sistemi bunu mümkün kılar?
+Konya pilot → Türkiye transferi → gelecekte kuzey → su güvenliği → üretim sistemi deseni → Arktik gözlem → uygun veriyle kalibrasyon → sürdürülebilir üretim sınırı.
+Karar birimi ürün + yöntem + kaynak + dönem + su/enerji koşullarıdır. İklimsel uygunluk sürdürülebilir üretim uygunluğu değildir.
+
+Eski Konya raporu bilimsel predecessor ve geçmişte yapılanın kaynağıdır. Yaklaşık %8,7 göreli model azalması ölçülmüş m³ tasarruf değildir. Eski Konya yazılımı yeni uygulamanın codebase'i değildir.
+
+U8 güncel motor/ürün önceliği; U7 dashboard ilkesi; U6 IMPLEMENTATION UNLOCK kodlama izni; U5 FINAL MASTER SYNC bilimsel çerçeve. Eski TXT araştırma/karar günlüğüdür; terk edilmiş fikirler güncel yönün önüne geçmez. Bu tur eski bütün TXT yeniden okunmuş gibi sunulmaz; önceki okuma ve kaynak kayıtları korundu, U8 metni tamamen okundu.
+
+Kullanıcının aktarımı: Ali Baha Demir 2204-D Su Yönetimi Türkiye 1.'liği ekibinde; ayrıca 2204-C Türkiye 2.'liği geçmişi var. Kutup ilgisinin davetle başlamadığı anlatılır; 2204-D baştan Arktik için yapılmış gibi anlatılmaz. Üç mektup aynı bilimsel hikâye ve farklı gerçek kişisel rollerle yazılacak. Görüşülmeyen araştırmacı danışman gösterilmez.
+
+TASE-VII bağlamı:2027 Barents Denizi, deniz üstü, yaklaşık 20–40 gün, rota hava/buz/lojistiğe bağlı. Araştırma kara çıkışına bağımlı değil. Kullanıcının önceki tarih bilgisi mülakat 30 Eylül 2026, formlar 48 saat önce; kesin saat ayrıca kontrol edilecek, iç teslim hedefi 27 Eylül. Bu tarih kullanıcı bağlamıdır; bu tur yeni resmî teyit yapılmadı.
+
+3. YENİ ORTAK SİMÜLATÖR MİMARİSİ
+
+React/TypeScript/Vite + FastAPI + SciPy HiGHS + SQLite provenans. Yerel MapLibre ve grafikler korunuyor.
+GET /api/planning-context: kaynaklı bölge deseni, ürün katalogu, açık başlangıç varsayımları.
+POST /api/simulate: hem Türkiye hem Kuzey aynı motor ve veri sözleşmesi.
+POST /api/pattern-field-update: aynı senaryonun yalnız eşleşen kaynak suyu sıcaklığı değişerek önce/sonra hesabı.
+
+Karar değişkeni x[ürün, yöntem, kaynak]. Açık tarla birimi ha; sera/hidroponik m² yetiştirme yüzeyi. Üretim ilgili birimde verimle hesaplanır. Su kaynağı seçimi alan değişkenlerinin kaynağa göre ayrılmasıyla çözülür. Her ürünün kullanıcı seçili dönemi tahsis satırlarında gösterilir; ekim tarihini veya ikinci ürün sırasını optimizer kendisi aramaz.
+
+Amaç sırası:
+(1) Her ürünün kendi hedefine göre en fazla%100 karşılama oranlarının öncelik ağırlıklı toplamını artır.
+(2) Aynı hedef başarısını koruyarak suyu azalt.
+(3) Bütün enerji katsayıları biliniyorsa enerji gereğini azalt.
+Farklı ürün kg'ları ortak beslenme veya ekonomik değer sayılmaz. Hedefler ve öncelikler kullanıcı tercihidir. Ürün minimumları alan/pay/su/enerji kısıtlarıyla birlikte korunur; uygulanamaz koşulda sahte öneri çıkmaz.
+
+4. EDİNİLEN TÜRKİYE RESMÎ BAŞLANGIÇ VERİSİ
+
+Beş il,21 ürün kaydı. Dört özgün PDF ve bir DOCX indirildi; özgün baytlar SHA256 adlarıyla saklandı. İl ile havza sınırı, veri yılı ile rapor baskı yılı ayrı.
+Konya 2023: buğday, arpa, dane mısır, şeker pancarı, patates; toplam seçili ekiliş 1.280.141,4 ha.
+Adana 2024: buğday, dane mısır, ayçiçeği, pamuk;294.433,3 ha.
+Manisa 2024: buğday, arpa, dane mısır, kütlü pamuk;150.966,5 ha.
+Şanlıurfa 2024: buğday, arpa, pamuk, dane mısır;790.896 ha.
+Edirne 2024: buğday, yağlık ayçiçeği, çeltik, arpa;323.327,6 ha.
+
+Bunlar seçilmiş ürünlerin ekiliş toplamlarıdır. Bütün il tarımı, havza istatistiği, benzersiz fiziksel arazi veya aynı anda kullanılabilir alan değildir. İkinci ürün aynı parseli yeniden sayabilir. Başlangıç alan kapasitesinin bu toplama eşitlenmesi açık senaryo varsayımıdır. Mevcut motor parsel ardışıklığı çözmez.
+Verim=üretim_ton*1000/alan_ha; DERIVED_FROM_OFFICIAL_STATISTICS etiketi. Sabit taşınan il ortalaması, yerel potansiyel verim değildir.
+
+5. ÜRÜN BİLGİ TABANI
+
+Dokuz ürün: buğday, arpa, dane mısır, şeker pancarı, pamuk, ayçiçeği, çeltik, patates, marul.
+FAO-56 Tablo 11/12'den dört gelişim aşaması ve Kc örnekleri; gelişme/son aşamada doğrusal geçiş. Örneklerin coğrafyası, kaynak aralıkları ve seçilen katsayı notları korunur. Bunlar yerel kalibrasyon değil dış literatür örneğidir.
+GDD/don/ısı/toprak/tuzluluk eşikleri yeterli yerel dayanak yoksa null/boş. Eksik veri uygun demek değildir. Açık tarla Kc hidroponiğe uygulanmaz.
+
+6. ÜRÜNE ÖZGÜ SU HESABI
+
+Türkiye: gerçek günlük ERA5 ET₀ × aşama Kc = ETc. Yağış ve toprak deposuyla karşılanamayan ET, zamanında tamamlayıcı sulama varsayımı altında net gereksinim olur. Brüt su=m³/ha=net_mm*10/sulama_verimi. Alanla çarpılarak toplam kaynak suyu gereği bulunur.
+Depo kapasitesi 60 mm, başlangıç 30 mm, randıman 0,75 ve örnek takvim kullanıcı varsayımlarıdır. Yağış/ET₀ çarpanları manuel stres deneyidir, SSP sonucu değildir. Model su stresine bağlı gerçekleşen verimi hesaplamaz.
+Çeltikte tava/perkolasyon/ek su bilinmediğinden ETc toplam sulama gibi sunulmaz. Net su girdisi yokken seçenek kapalıdır; minimum üretim şartı da korununca Edirne senaryosu uygulanamaz çıkabilir. Bu eksik veri bilinçli görünürdür.
+Kuzeyde gelecek ET₀/kar-erime paketi yoktur; dönemlik net sulama açık kullanıcı girdisidir.
+
+7. ÇALIŞAN KONYA MEVCUT → ÖNERİLEN DESEN ÖRNEĞİ
+
+Bu bölüm yeni motorun simülasyonudur; eski yarışma sonucu veya saha başarısı değildir.
+Başlangıç mevcut desen:
+Buğday 596.686,6 ha; arpa 385.201,1 ha; dane mısır 185.505,4 ha; şeker pancarı 101.947,3 ha; patates 10.801 ha.
+Referans koşullarda modellenmiş brüt gereksinim 6.057.388.879,81 m³. Başlangıç su bütçesi bu hesaba eşitlenir; resmî tahsis değildir.
+Suyu%20 azalt düğmesiyle bütçe 4.845.911.096,01 m³ olur.
+Öneri:
+Buğday 298.343,30 ha; arpa 355.914,775 ha; dane mısır 185.505,4 ha; pancar 101.947,3 ha; patates 10.801 ha.
+Önerilen ekili alan 952.511,775 ha; atanmayan 327.629,625 ha.
+Ürünlerin başlangıç üretiminin en az%50'si korunur; buğday bu sınıra ulaşır. Diğer girdiler aynıyken Şanlıurfa'da farklı desen bulunur; pamuk ve buğday alanı azalır.
+
+Buğdayın azalışı hektar başına en susuz ürün sıralaması değildir. Eşit ağırlıklı normalize ürün hedeflerini tamamlama ve minimum üretim kısıtlarının sonucudur. Alan ve üretim azalabildiği için aynı çıktıyla%20 tasarruf denmez. Min ekili oranı ve ürün hedefi değiştirilince karar değişir; fazla sıkı kısıtta çözüm bulunamayabilir.
+
+8. MANUEL SENARYO GERÇEKTEN ÇALIŞIYOR
+
+Bölge, su kaynakları/hacimleri, randıman, ET₀/yağış, arazi, yöntem kapasiteleri, enerji, ürün alanı/verimi/minmax pay/min üretim/hedef/öncelik, takvim ve açık uygunluk varsayımları düzenlenir. Dokuzluk katalogdan yeni ürün eklenebilir; başlangıç alanı 0, verimi/uygunluğu bilinmiyor olarak gelir. Eksik veri sessizce varsayılmaz.
+Tarayıcı kontrolünde Konya'ya ayçiçeği eklendi, verim girildi: bilinmeyen uygunlukta elendi. İklim/zemin açıkça uygun varsayılınca önerilen desende ayçiçeği üretimi oluştu. Resmî baseline 0 ha olarak kaldı. Girdi değişince eski sonuç görünür biçimde işaretlenir; yeniden hesap ve JSON dışa aktarma var.
+Küsuratlı otomatik su bütçesinin HTML step doğrulamasıyla submit'i engelleyebildiği sorun düzeltildi.
+
+9. KUZEY ADAYLARI VE GERÇEK HESAP ÇIKTISI
+
+İlk portföy arpa+patates+marul. Arpa için NIBIO Holt/Tromsø çalışması, patates için Tromsø kontrollü fotoperiyot/sıcaklık deneyi, marul için UAF NFT araştırması adaylık dayanağıdır. Bunlar Longyearbyen'de doğrulanmış açık tarla uygunluğu değildir.
+Varsayılan kuzeyde iklim/zemin bilinmiyor; arpa ve patates açık tarlası bloke edilir ve pozitif minimumları nedeniyle tam portföy çözülemez.
+
+Ayrı “Uygun saha varsayımıyla portföy dene” örneği:
+Dönem 2035-05-01 başlayan tek döngü;2030–2049 dış iklim bağlamı ayrı.
+Açık alan 3 ha; hidroponik kapasite 400 m²; enerji 40.000 kWh.
+Arpa minimum/hedef 3.000 kg, verim 3.000 kg/ha, net 150 mm.
+Patates minimum/hedef 10.000 kg, verim 20.000 kg/ha, net 250 mm.
+Marul minimum/hedef 1.000 kg, hidroponik verim 3 kg/m² (kullanıcı döngü varsayımı).
+Arpa/patates enerji 500 kWh/ha; marul 0,02 m³/kg ve 25 kWh/kg dış çalışmadan aktarılan örnek; yerel sera ölçümü değil.
+ÇIKTI:1 ha arpa 3.000 kg;0,5 ha patates 10.000 kg;333,333 m² hidroponik marul 1.000 kg. Su 3.686,667 m³; enerji 38.084,487 kWh; atanmayan açık alan 1,5 ha. Bütün ürün minimumları korunur.
+
+10. YÖNTEM VE SU KAYNAĞI TAHSİSİ
+
+Yukarıdaki aynı çözümde yerel tatlı su 2.000 m³, depolanmış su 500 m³, arıtılmış deniz suyu 1.186,667 m³; yeniden kullanım 0. Sezonlar ve yöntemler tahsis tablosunda görünür.
+Arpa/patates açık tarla; marul hidroponik. Sera seçeneği veri sözleşmesinde var, fakat kapasite/katsayı/uygunluk olmadan sonuç üretmez. Açık tarla hektarı ile kontrollü yetiştirme yüzeyi tek alan yüzdesine dönüştürülmez. Su kalitesi bilinmiyorsa kaynak kendiliğinden uygun sayılmaz. Enerji bütçesi aktifken bilinmeyen enerji katsayısı olan seçenek kullanılmaz.
+
+11. ARKTİK GÖZLEM ÖNCESİ/SONRASI AYNI MOTOR
+
+PWN ana proje değil, saha gözlem katmanıdır. Yerinde profil tam zaman/konumdaki gerçek kaynak suyu fiziksel durumunu karşılaştırmaya yarar. Deniz freshwater sinyali tarla suyu veya yıllık tatlı su hacmi değildir.
+Eşleştirme: konum+UTC+derinlik+sıcaklık tanımı. Geçerliyse aynı ürünler/hedefler/kısıtlar sabit kalır, yalnız kaynak suyu sıcaklığı yenilenir ve /api/simulate motoru iki kez çalışır.
+Yukarıdaki kuzey senaryosunda kaynak 10°C iken 38.084,487 kWh ile koşullu çözüm;5°C olduğunda 40.000 kWh sınırı altında çözüm yok. Bu sıcaklık çifti AÇIK SİMÜLASYONDUR. Zaman 24 saat kaydırıldığında sonrası hesap yapılmaz. Kararın değişmemesi de geçerli sonuçtur.
+
+Kullanılan arıtma ilişkisi 5–18°C kaynak aralığı dışında uzatılmaz. Tek çift model kalibrasyonu veya otomatik güven yüzdesi üretmez. Tam tuzluluk/arıtma hesabı ve kıyı su alma noktası temsil bağı ayrıca geliştirilecek.
+Gerçek dış gözlem yolu kayıtlı ham kaynak/provenans, kalite, UTC/GPS, basınçtan derinlik ve in-situ sıcaklık ister. Bu yola ait test fixture'ları fiziksel sefer gözlemi değildir. Deniz modeli profili otomatik indirme henüz bağlı değil.
+
+12. HİDROPONİK/SERA DEVAMI VE ÜRÜN SÜREKLİLİĞİ
+
+Plan: kuzey üretim sistemi planlama → küçük hidroponik/sera deney döngüsü → gerçek sıcaklık/EC/su/enerji/hasat kaydı → tahmin/gerçek farkı → uygun bağımsız veriyle kalibrasyon → başka bölge/yönteme transfer.
+Canlı sera kontrolü, sensör otomasyonu, ekonomik işletme veya eğitilmiş AI bu teslimde kurulmadı. AI ancak klasik baseline'a doğrulanmış katkı verirse kullanılacak. Risk/sigorta yolu daha sonraki karar destek araştırması; aktüeryal fiyatlama, poliçe veya ticari risk ürünü hazır değil. Ayrıntılar HYDROPONIC_GREENHOUSE_PATH, FUTURE_RISK_AND_SCALING, PROJECT_CONTINUITY belgelerinde.
+
+13. ARAYÜZ VE KORUNAN AKIŞLAR
+
+Dört ana alan:
+#simulation — Planlama/Simülasyon: bölge ve mod, mevcut/önerilen desen, düzenlenebilir girdiler. Varsayılan Konya. Bölge karşılaştırması, kısa pilot ve kuzey iklim kanıtı alt paneller.
+#pattern — Ürün Deseni/Karar: aynı seçili senaryonun sonucu, yöntem/kaynak/sezon, bağlayıcı kısıt, nedenler ve kayıt.
+#pwn — Saha/PWN: profil/CSV ve aynı motorla saha öncesi/sonrası.
+#evidence — Kanıt/Veri; her yerden kanıt çekmecesi.
+Kalıcı bölge/mod, sonuç özeti, bölgeye göre oturum/girdi korunması. Harita ana sonuç yerine ikincil karşılaştırmada. Kaynak/provenans, eski optimizer API'leri, iklim dosyaları ve PWN import atılmadı.
+
+14. DOSYALAR VE DOĞRULAMA
+
+Yeni/güncel çekirdek:
+backend/planning.py; backend/planning_contracts.py; backend/app.py; backend/contracts.py.
+data/agriculture/crops.json; region_baselines.json; manifest.json; raw/.
+frontend/src/App.tsx; planning.ts; api.ts; ui.tsx; components/ScenarioEditor.tsx, PatternComparison.tsx, SimulationResults.tsx; workspaces/Simulation.tsx, PatternField.tsx; ortak stil.
+tests/test_agriculture.py; tests/test_planning.py; scripts/simulator_smoke.cjs.
+
+U8'in istediği 9 belge mevcut:
+CROP_PATTERN_ENGINE.md
+TURKIYE_REGIONAL_SIMULATOR.md
+FUTURE_NORTH_SIMULATOR.md
+FUTURE_NORTH_CROP_SET.md
+PATTERN_CONSTRAINTS.md
+FIELD_TO_PATTERN_UPDATE.md
+HYDROPONIC_GREENHOUSE_PATH.md
+FUTURE_RISK_AND_SCALING.md
+PROJECT_CONTINUITY.md
+
+Güncellenen temel belgeler:
+SCIENTIFIC_ARCHITECTURE.md; FUTURE_PRODUCTION_MODEL.md; PRODUCT_REFOCUS.md; DEMO_PLAN.md; INTERVIEW_STORY.md; JURY_QA.md; BUILD_STATUS.md; PROJECT_SOURCE_OF_TRUTH.md; DECISIONS.md; DATA_REQUIREMENTS.md; DATA_ACCESS_LOG.md; README.md ve bu kümülatif teslim.
+
+Son doğrulama 22 Eylül 2026:
+120 backend/veri/API testi geçti,13,06 s;1 Starlette/AnyIO deprecation uyarısı. Önceki 99 test+6 tarımverisi+15 ortakmotor.
+React/TypeScript/Vite 0.3.0 üretim derlemesi geçti.
+13 tarayıcı etkileşim kontrolü 16:51 TSİ'de geçti; dört alan 1440 ve 390 px'te yatay sayfa taşması yok. Sayfa hatası/başarısız HTTP/dış HTTP(S) isteği sıfır. Dış kaynak linkini açmak çevrimdışı testin parçası değil.
+Rapor:docs/verification/simulator-smoke.json.
+Görseller:simulator-turkiye.png,simulator-north.png,simulator-field.png,simulator-mobile.png aynı klasörde.
+Önceki0.2dashboard-smoke.json ve0.1browser-smoke.json tarihsel kayıt olarak kaldı; güncel test diye sunulmaz.
+
+15. DEMO-READY / HÂLÂ AÇIK
+
+Demo-ready: Konya→%20 su→yeni desen ve gerekçe; Şanlıurfa aynı motor/farklıveri; manuelürün; açık varsayımlı üç ürün Kuzey; aynı motor saha girdisi etkisi; PWN CSV/profil; provenans.
+Yerel adres http://127.0.0.1:8000/; scripts/start.ps1 ile tekrar başlatılır. Bu internete yayımlanmış ürün değil. Git deposu henüz başlatılmadığından commit/PR yok.
+
+Gerçek bilimsel açıklar:
+- İl tarım istatistiği + nokta ERA5 + farklı yıl, mekânsal/zamansal transfer varsayımıdır. Yerel çeşit/takvim/kuru-sulu/parsel/ikinci ürün/verim doğrulaması eksik.
+- Su bütçesi DSİ tahsisi değil; başlangıç model gereğine eşitlenmiş senaryo. Güvenilir kaynak ve çevresel kullanım payı bulunmalı.
+- Kuzeyde tek EC_Earth 3 P_HR,1995–2014/2030–2049 toplam 14.610 gün. 2041–2060 seçimli SSP/ensemble paketi hazır değil. Etiket değişikliği veri getirmez. Gelecek ET₀/kar/akış/soil/permafrost ve tam sera enerji zinciri henüz yok.
+- 6 noktada 2022–2023 toplam 4.380 ERA5 günü korunuyor; bu istasyon ölçümü veya iklim normali değil.
+- Üretim hedefleri/beslenme, çevresel baskı ve maliyet tam ortak amaç fonksiyonu olarak kurulmadı. Mevcut hedef karşılama LP'si bu geniş hedeflerin ilk hesap katmanıdır.
+- PWN v 0.1 fiziksel olarak yapılmadı; firmware kartla derlenmedi; gerçek tank/Arktik ölçümü yok. 9 v 0.1 belgesi/24 kalemBOM/öğretmenbrief'i ve 6 Arcticv 1 konseptbelgesi hazır; gerçek CAD/referansCTDvalidasyonu yok.
+- Sensor hassasiyeti, referans CTD, deployment, numune ve analiz paneli KARE/TASE/uzman geri bildirimiyle belirlenecek. δ18 O/δ2 H ve iyon paneli zorunlu kilitli değil.
+- Sıcaklık kaynak/arıtma etkisi dar bir örnek; tüm sürdürülebilirlik sınırını veya seferin bütün olası katkılarını doğrulamıyor.
+- Kişisel mektuplar için öğrencilerin gerçek görev/yetkinlik bilgileri gerekiyor. Dışarıya mesaj gönderilmedi.
+
+16. SONRAKİ SOMUT ADIM VE KISA TESLİM GEÇMİŞİ
+
+Yeni özellik sayısını artırmak yerine:
+1) Öğretmenlerle kart/sensör/analogdevre/kolon seçimi ve BOM'u netleştirmek.
+2) Homojen kontrol+tabakalı su deneyinden ilk gerçek CSV'yi almak, mevcut importer/gradient ile karşılaştırmak.
+3) Bir Türkiye benchmark'ında yerel takvim/sulu-kuru alan ve güvenilir su kapasitesini kaynaklandırmak.
+4) Metadata'sı tam kaynaklı denizmodeli–gözlem çiftiyle saha bağlantısını tamamlamak; sonra doğru çeşit/ET₀/enerji verisiyle Kuzey varsayımlarını daraltmak.
+
+Geçmiş:
+- İlk dokümantasyon: yüklenen proje/TXT/çağrı/motivasyon/strateji, çelişkiler ve bilimsel kaynak çerçevesi. Tarihsel belgeler korunuyor.
+- TESLİM001: greenfield ilk çalışan 0.1,3 nokta 2.190 ERA5 günü,55 test; donanım/öğretmen hazırlığı. Fiziksel cihaz yoktu.
+- TESLİM002:0.2dashboard,5Türkiye+Kuzey4.380ERA5günü,14.610günKuzeymodeli,99test/9browserkontrol. Tekmarul/5alan artık ana ürün yönü değil. Önceki tam teslim docs/archive/ANA_CHAT_TESLIM_002.txt.
+- TESLİM003:0.3 ortakçok ürün motoru,5 il 21 resmîsatır,9 ürün bilgi tabanı,4 alan,120 test/13 browserkontrol. Fiziksel ölçüm hâlâ yok.
+
+KAYNAK REHBERİ
+Eski tarihsel iddialar: orijinal agrohydroraporu (5).pdf; sunum ayrı anlatı kaydı. Yerelde korunan rapor data/references/konya_original_report.pdf. Kaynak kodları docs/PROJECT_SOURCE_OF_TRUTH.md ve docs/EVIDENCE_MAP.md üzerinden izlenir.
+Bu teslimde yeni resmî kaynaklar ve dönemleri:
+- Konya / veri 2023: https://konya.tarimorman.gov.tr/Belgeler/kitap/%C4%B0l_Tar%C4%B1m_ve_Orman_haziran_24_v3_2024.pdf
+- Adana / veri 2024: https://adana.tarimorman.gov.tr/Belgeler/Strateji_Adana_2025_Yili_Faaliyet_Raporu.pdf
+- Manisa / veri 2024: https://manisa.tarimorman.gov.tr/Belgeler/Brifing%202024/Brifing2024.pdf
+- Şanlıurfa / veri 2024: https://sanliurfa.tarimorman.gov.tr/Lists/SolMenu/Attachments/85/2025%20YILI%20%C5%9EANLIURFA%20%C4%B0L%20TARIM%20VE%20ORMAN%20M%C3%9CD%C3%9CRL%C3%9C%C4%9E%C3%9C%20FAAL%C4%B0YET%20RAPORU.docx
+- Edirne / veri 2024: https://edirne.tarimorman.gov.tr/Belgeler/Edirne%20%C4%B0l%20Tar%C4%B1m%20ve%20Orman%20M%C3%BCd%C3%BCrl%C3%BC%C4%9F%C3%BC%202025%20Y%C4%B1l%C4%B1%20Faaliyet%20Raporu.pdf
+
+Ürün su yöntemi: FAO-56 Bölüm6,Tablo11–12 https://www.fao.org/4/X0490E/x0490e0b.htm
+Kuzey adayları: kaynak URL'leri ve deney sınırları docs/FUTURE_NORTH_CROP_SET.md içinde; sayısal kayıt data/agriculture/crops.json.
+Marul kaynak karşılaştırması: Barbosa vd.2015 https://doi.org/10.3390/ijerph120606879 — Arizona bağlamı; Kuzey ölçümü değil.
+Kuzey modelpaketi/kapsamı: docs/NORTH_DATA_PLAN.md; data manifestleri. Open-Meteo tarihsel veri https://open-meteo.com/en/docs/historical-weather-api ve CC BY4.0/serviskoşulları https://open-meteo.com/en/terms.
+Bu dosyadaki hesap örneklerinin kaynağı backend/planning.py ve22Eylül2026test/browserkayıtlarıdır; dış yayın sonucu gibi atfedilmez.

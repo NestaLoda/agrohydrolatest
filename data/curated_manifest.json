@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "datasets": [
+    {
+      "dataset_id": "xu_2026_external_frontier",
+      "provider": "Xu et al., Communications Earth & Environment, 2026",
+      "source_url": "https://www.nature.com/articles/s43247-026-03702-w",
+      "version": "Published 2026-05-30; DOI 10.1038/s43247-026-03702-w",
+      "access_date": "2026-09-22",
+      "temporal_resolution": "30-year future period from external study",
+      "spatial_resolution": "30 to 83 degrees North; seven-crop aggregate, not a Longyearbyen prediction",
+      "units": {
+        "mean_northward_climate_frontier_shift_km": "km"
+      },
+      "variables": [
+        "mean_northward_climate_frontier_shift_km"
+      ],
+      "license": "Original source terms apply; only limited cited factual parameter extraction here",
+      "access_limits": "Read through web search/open; not downloaded original model arrays",
+      "classification": "FUTURE SCENARIO",
+      "content_sha256": "5d157353c9936edae159eed065a0444e9bc9ce5788976d6c2afd815479772f71",
+      "hash_scope": "canonical JSON of curated record, NOT original publisher response",
+      "local_raw_path": null,
+      "local_processed_path": "data/literature_parameters.json#future_frontier"
+    },
+    {
+      "dataset_id": "fao56_wheat_reference",
+      "provider": "FAO, Allen et al. 1998, Irrigation and Drainage Paper 56",
+      "source_url": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+      "version": "FAO-56, 1998; Chapter 6 Tables 11 and 12",
+      "access_date": "2026-09-22",
+      "temporal_resolution": "source-specific example parameters or historical report",
+      "spatial_resolution": "generic FAO agronomic reference, not a local field",
+      "units": {
+        "kc": "dimensionless",
+        "growth_stage_days": "days"
+      },
+      "variables": [
+        "kc",
+        "growth_stage_days"
+      ],
+      "license": "Original source terms apply; only limited cited factual parameter extraction here",
+      "access_limits": "Read through web search/open; not downloaded original model arrays",
+      "classification": "EXTERNAL LITERATURE PARAMETER",
+      "content_sha256": "cf36f9afb5a3699481e639cc464af27f1f494bb3f0f9d627712380073f3f4c6f",
+      "hash_scope": "canonical JSON of curated record, NOT original publisher response",
+      "local_raw_path": null,
+      "local_processed_path": "data/literature_parameters.json#wheat_fao56"
+    },
+    {
+      "dataset_id": "barbosa_2015_table1",
+      "provider": "Barbosa et al. 2015, IJERPH",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4483736/",
+      "version": "2015 Table 1; source table and method section inspected 2026-09-22",
+      "access_date": "2026-09-22",
+      "temporal_resolution": "Annual modeled production accounting",
+      "spatial_resolution": "Yuma, Arizona, USA",
+      "units": {
+        "yield": "kg/m2/y",
+        "water": "L/kg/y",
+        "energy": "kJ/kg/y"
+      },
+      "variables": [
+        "yield",
+        "water",
+        "energy"
+      ],
+      "license": "CC BY 4.0",
+      "access_limits": "Read through web search/open; not downloaded original model arrays",
+      "classification": "EXTERNAL LITERATURE MODEL RESULT",
+      "content_sha256": "a9a7f0ff83ced315c565183ea6e408774c9d37a8707d61fa97aeb328e2e8d4fb",
+      "hash_scope": "canonical JSON of curated record, NOT original publisher response",
+      "local_raw_path": null,
+      "local_processed_path": "data/literature_parameters.json#lettuce_method_comparison"
+    },
+    {
+      "dataset_id": "seyhan_wheat_demonstration_2020",
+      "provider": "Adana İl Tarım ve Orman Müdürlüğü",
+      "source_url": "https://adana.tarimorman.gov.tr/Haber/697/Seyhan-Ilce-Tarim-Ve-Orman-Mudurlugu-Bugday-Cesit-Verim-Demonstrasyonu-Kurdu",
+      "version": "Official news 2020-06-23",
+      "access_date": "2026-09-22",
+      "temporal_resolution": "source-specific example parameters or historical report",
+      "spatial_resolution": "Camuzcu, Seyhan; one demonstration field",
+      "units": {},
+      "variables": [],
+      "license": "Original source terms apply; only limited cited factual parameter extraction here",
+      "access_limits": "Read through web search/open; not downloaded original model arrays",
+      "classification": "EXTERNAL OBSERVATION",
+      "content_sha256": "5f4f0409a84f6f09567229630146d14ef4e31726f23e8c18534d75bb9c560530",
+      "hash_scope": "canonical JSON of curated record, NOT original publisher response",
+      "local_raw_path": null,
+      "local_processed_path": "data/literature_parameters.json#seyhan_crop_evidence"
+    }
+  ]
+}

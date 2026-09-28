@@ -1,0 +1,127 @@
+{
+  "verified_at": "2026-09-22T23:13:05.468227+03:00",
+  "via": "HTTP local running backend 8011",
+  "cases": [
+    {
+      "region": "konya",
+      "scenario": "hot_dry",
+      "delta_c": 2,
+      "rainfall_factor": 0.8,
+      "status": "conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": 10018648268.648373,
+      "recommended_water_m3": 8807757967.002575,
+      "area_ha": 1163691.2192800723,
+      "run_id": "117a04d48ce18023fbebfeed"
+    },
+    {
+      "region": "konya",
+      "scenario": "cool_wet",
+      "delta_c": -1,
+      "rainfall_factor": 1.1,
+      "status": "conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": 8202312948.957667,
+      "recommended_water_m3": 7415071947.930957,
+      "area_ha": 1252477.9874752199,
+      "run_id": "42b3b4d52f471567b76408b9"
+    },
+    {
+      "region": "seyhan_adana",
+      "scenario": "hot_dry",
+      "delta_c": 2,
+      "rainfall_factor": 0.8,
+      "status": "conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": 2225476617.8881316,
+      "recommended_water_m3": 1974161910.2362418,
+      "area_ha": 278331.1132737233,
+      "run_id": "7332f16f200691c701aeaa22"
+    },
+    {
+      "region": "seyhan_adana",
+      "scenario": "cool_wet",
+      "delta_c": -1,
+      "rainfall_factor": 1.1,
+      "status": "conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": 1855186123.4393,
+      "recommended_water_m3": 1657437143.7148225,
+      "area_ha": 294433.297055667,
+      "run_id": "42f18fb2c2145c27ed61e68f"
+    },
+    {
+      "region": "gediz_manisa",
+      "scenario": "hot_dry",
+      "delta_c": 2,
+      "rainfall_factor": 0.8,
+      "status": "conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": 1026762382.2841152,
+      "recommended_water_m3": 902503275.2116873,
+      "area_ha": 141483.49858516498,
+      "run_id": "7f3c6645eaff6ddb90b936b3"
+    },
+    {
+      "region": "gediz_manisa",
+      "scenario": "cool_wet",
+      "delta_c": -1,
+      "rainfall_factor": 1.1,
+      "status": "conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": 869410633.0546572,
+      "recommended_water_m3": 731431545.4510951,
+      "area_ha": 141483.49858516498,
+      "run_id": "bbb2352971ae3d93f60eec71"
+    },
+    {
+      "region": "gap_sanliurfa",
+      "scenario": "hot_dry",
+      "delta_c": 2,
+      "rainfall_factor": 0.8,
+      "status": "conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": 10585437882.839619,
+      "recommended_water_m3": 9806155555.172203,
+      "area_ha": 790895.99209104,
+      "run_id": "b3c6d725ff20d2c9c18a8267"
+    },
+    {
+      "region": "gap_sanliurfa",
+      "scenario": "cool_wet",
+      "delta_c": -1,
+      "rainfall_factor": 1.1,
+      "status": "conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": 9565886611.570463,
+      "recommended_water_m3": 8663036643.36476,
+      "area_ha": 790895.99209104,
+      "run_id": "b635b33ef4923caa4113eb5b"
+    },
+    {
+      "region": "trakya_edirne",
+      "scenario": "hot_dry",
+      "delta_c": 2,
+      "rainfall_factor": 0.8,
+      "status": "partial_conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": null,
+      "recommended_water_m3": null,
+      "area_ha": 317235.61149736436,
+      "run_id": "b7c65b2af7c35f8a993d03e0"
+    },
+    {
+      "region": "trakya_edirne",
+      "scenario": "cool_wet",
+      "delta_c": -1,
+      "rainfall_factor": 1.1,
+      "status": "partial_conditional",
+      "source_areas_and_water_unchanged": true,
+      "current_water_m3": null,
+      "recommended_water_m3": null,
+      "area_ha": 323327.59725302993,
+      "run_id": "d6b3c84dc39894c03f1bad6a"
+    }
+  ],
+  "passed": 10
+}

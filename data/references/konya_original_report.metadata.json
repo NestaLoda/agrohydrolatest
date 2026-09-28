@@ -1,0 +1,10 @@
+{
+  "dataset_id": "konya_original_report",
+  "classification": "OUR HISTORICAL RESULT",
+  "provider": "User-provided team report",
+  "source_path": "C:/Users/bahao/Downloads/agrohydroraporu (5).pdf",
+  "local_raw_path": "data/references/konya_original_report.pdf",
+  "content_sha256": "03f28610bba115a290db841795b603eb137293b5c3536171953cd51f303d7968",
+  "access_date": "2026-09-22",
+  "license": "User-provided; redistribution permission not inferred"
+}

@@ -1,0 +1,2305 @@
+{
+  "verified_at_utc": "2026-09-22T22:21:20.154974+00:00",
+  "contexts": [
+    {
+      "horizon": "historical",
+      "scenario": "ssp245",
+      "period": [
+        1995,
+        2014
+      ],
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.0,
+        "production_kg": 3398.1663736270557,
+        "water_m3": 23.03893312314013,
+        "heat_kwh_th": 16882.655920258218,
+        "electricity_kwh": 120407.81877865794,
+        "equivalent_electricity_kwh": 137290.47469891616,
+        "stored_water_m3": 14.35625366344904,
+        "desalinated_m3": 8.68267945969109,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 26.097955234443717,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "provenance": {
+        "engine_version": "north-monthly-lexicographic-1",
+        "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+        "evidence_sha256": {
+          "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+          "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+          "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+          "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+          "planning_code": "2b06e2f03b475a5728bbe8203914e7d681f1ab8795ee938b9308098888d00a99",
+          "candidate_code": "6143a2c263f07bacd9916106d74655ce90964e7ab249e72634b78e5e37d24b53"
+        },
+        "sources": {
+          "EDEN_ISS_2018": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+            "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+            "period": "2018-02-07/2018-11-20",
+            "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+            "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+            "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+            "url": "https://doi.org/10.3389/fpls.2020.00656"
+          },
+          "FAO56": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+            "locator": "Tables 11 and 12",
+            "period": "1998 publication",
+            "spatial_scope": "Multi-region reference examples",
+            "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+            "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+            "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+          },
+          "NORA_2016": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+            "locator": "Tables 3-2 and 3-3",
+            "period": "2014 and 2015 trials",
+            "spatial_scope": "Alta and Holt, northern Norway",
+            "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+            "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+            "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf"
+          },
+          "POTATO_TROMSO_2025": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": null,
+            "period": "2020 experiment; 2025 publication",
+            "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+            "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+            "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+            "url": "https://doi.org/10.1007/s11540-025-09854-0"
+          },
+          "UAF_GDD_2022": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+            "locator": null,
+            "period": "2022 publication",
+            "spatial_scope": "Alaska",
+            "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+            "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+            "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/"
+          },
+          "UAF_HYDROPONIC_2007": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": "pp.24–25",
+            "period": "2007",
+            "spatial_scope": "Alaska, recirculating NFT lettuce",
+            "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+            "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+            "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf"
+          },
+          "XU_2026": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+            "locator": null,
+            "period": "1980–2010; 2041–2070; 2071–2100",
+            "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+            "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+            "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+            "url": "https://doi.org/10.1038/s43247-026-03702-w"
+          }
+        },
+        "resource_evidence_path": "data/north/resource_evidence.json",
+        "uncertainty": "Deterministic bounded reruns; no probability/confidence intervals.",
+        "sensitivity_threshold": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+        "temperature_approximation": "21/19°C day/night targets, 17h flat light schedule preserving published ramp-integrated DLI. Daily outdoor weather reconstructed hourly, not hourly observation.",
+        "normalization": "Single growing layer, 100 m² default; cultivated area != complete facility footprint.",
+        "season_policy": "May–September / March–October / annual engineering schedules, not projected natural growing seasons.",
+        "capacity_policy": "No local energy/land permit/water right assumed. Optional explicit resource ceilings only."
+      }
+    },
+    {
+      "horizon": "near",
+      "scenario": "ssp245",
+      "period": [
+        2021,
+        2040
+      ],
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.00000000000003,
+        "production_kg": 3398.166419475524,
+        "water_m3": 23.038933909838512,
+        "heat_kwh_th": 14404.274404454583,
+        "electricity_kwh": 121162.88884450949,
+        "equivalent_electricity_kwh": 135567.16324896406,
+        "stored_water_m3": 15.590178378935677,
+        "desalinated_m3": 7.448755530902837,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 22.389089600773247,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "provenance": {
+        "engine_version": "north-monthly-lexicographic-1",
+        "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+        "evidence_sha256": {
+          "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+          "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+          "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+          "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+          "planning_code": "2b06e2f03b475a5728bbe8203914e7d681f1ab8795ee938b9308098888d00a99",
+          "candidate_code": "6143a2c263f07bacd9916106d74655ce90964e7ab249e72634b78e5e37d24b53"
+        },
+        "sources": {
+          "EDEN_ISS_2018": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+            "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+            "period": "2018-02-07/2018-11-20",
+            "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+            "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+            "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+            "url": "https://doi.org/10.3389/fpls.2020.00656"
+          },
+          "FAO56": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+            "locator": "Tables 11 and 12",
+            "period": "1998 publication",
+            "spatial_scope": "Multi-region reference examples",
+            "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+            "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+            "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+          },
+          "NORA_2016": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+            "locator": "Tables 3-2 and 3-3",
+            "period": "2014 and 2015 trials",
+            "spatial_scope": "Alta and Holt, northern Norway",
+            "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+            "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+            "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf"
+          },
+          "POTATO_TROMSO_2025": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": null,
+            "period": "2020 experiment; 2025 publication",
+            "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+            "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+            "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+            "url": "https://doi.org/10.1007/s11540-025-09854-0"
+          },
+          "UAF_GDD_2022": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+            "locator": null,
+            "period": "2022 publication",
+            "spatial_scope": "Alaska",
+            "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+            "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+            "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/"
+          },
+          "UAF_HYDROPONIC_2007": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": "pp.24–25",
+            "period": "2007",
+            "spatial_scope": "Alaska, recirculating NFT lettuce",
+            "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+            "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+            "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf"
+          },
+          "XU_2026": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+            "locator": null,
+            "period": "1980–2010; 2041–2070; 2071–2100",
+            "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+            "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+            "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+            "url": "https://doi.org/10.1038/s43247-026-03702-w"
+          }
+        },
+        "resource_evidence_path": "data/north/resource_evidence.json",
+        "uncertainty": "Deterministic bounded reruns; no probability/confidence intervals.",
+        "sensitivity_threshold": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+        "temperature_approximation": "21/19°C day/night targets, 17h flat light schedule preserving published ramp-integrated DLI. Daily outdoor weather reconstructed hourly, not hourly observation.",
+        "normalization": "Single growing layer, 100 m² default; cultivated area != complete facility footprint.",
+        "season_policy": "May–September / March–October / annual engineering schedules, not projected natural growing seasons.",
+        "capacity_policy": "No local energy/land permit/water right assumed. Optional explicit resource ceilings only."
+      }
+    },
+    {
+      "horizon": "near",
+      "scenario": "ssp585",
+      "period": [
+        2021,
+        2040
+      ],
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.0,
+        "production_kg": 3398.166453965933,
+        "water_m3": 23.038933933492416,
+        "heat_kwh_th": 14233.400509856288,
+        "electricity_kwh": 121227.49722558567,
+        "equivalent_electricity_kwh": 135460.89773544195,
+        "stored_water_m3": 15.325587632884615,
+        "desalinated_m3": 7.713346300607801,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 23.184383046219963,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "provenance": {
+        "engine_version": "north-monthly-lexicographic-1",
+        "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+        "evidence_sha256": {
+          "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+          "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+          "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+          "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+          "planning_code": "2b06e2f03b475a5728bbe8203914e7d681f1ab8795ee938b9308098888d00a99",
+          "candidate_code": "6143a2c263f07bacd9916106d74655ce90964e7ab249e72634b78e5e37d24b53"
+        },
+        "sources": {
+          "EDEN_ISS_2018": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+            "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+            "period": "2018-02-07/2018-11-20",
+            "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+            "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+            "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+            "url": "https://doi.org/10.3389/fpls.2020.00656"
+          },
+          "FAO56": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+            "locator": "Tables 11 and 12",
+            "period": "1998 publication",
+            "spatial_scope": "Multi-region reference examples",
+            "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+            "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+            "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+          },
+          "NORA_2016": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+            "locator": "Tables 3-2 and 3-3",
+            "period": "2014 and 2015 trials",
+            "spatial_scope": "Alta and Holt, northern Norway",
+            "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+            "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+            "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf"
+          },
+          "POTATO_TROMSO_2025": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": null,
+            "period": "2020 experiment; 2025 publication",
+            "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+            "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+            "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+            "url": "https://doi.org/10.1007/s11540-025-09854-0"
+          },
+          "UAF_GDD_2022": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+            "locator": null,
+            "period": "2022 publication",
+            "spatial_scope": "Alaska",
+            "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+            "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+            "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/"
+          },
+          "UAF_HYDROPONIC_2007": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": "pp.24–25",
+            "period": "2007",
+            "spatial_scope": "Alaska, recirculating NFT lettuce",
+            "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+            "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+            "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf"
+          },
+          "XU_2026": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+            "locator": null,
+            "period": "1980–2010; 2041–2070; 2071–2100",
+            "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+            "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+            "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+            "url": "https://doi.org/10.1038/s43247-026-03702-w"
+          }
+        },
+        "resource_evidence_path": "data/north/resource_evidence.json",
+        "uncertainty": "Deterministic bounded reruns; no probability/confidence intervals.",
+        "sensitivity_threshold": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+        "temperature_approximation": "21/19°C day/night targets, 17h flat light schedule preserving published ramp-integrated DLI. Daily outdoor weather reconstructed hourly, not hourly observation.",
+        "normalization": "Single growing layer, 100 m² default; cultivated area != complete facility footprint.",
+        "season_policy": "May–September / March–October / annual engineering schedules, not projected natural growing seasons.",
+        "capacity_policy": "No local energy/land permit/water right assumed. Optional explicit resource ceilings only."
+      }
+    },
+    {
+      "horizon": "mid",
+      "scenario": "ssp245",
+      "period": [
+        2041,
+        2060
+      ],
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.00000000000001,
+        "production_kg": 3398.1664743759416,
+        "water_m3": 23.03893428370086,
+        "heat_kwh_th": 12260.792855612508,
+        "electricity_kwh": 121883.08656090696,
+        "equivalent_electricity_kwh": 134143.87941651946,
+        "stored_water_m3": 18.818253727371772,
+        "desalinated_m3": 4.220680556329095,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 12.686306425261336,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "provenance": {
+        "engine_version": "north-monthly-lexicographic-1",
+        "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+        "evidence_sha256": {
+          "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+          "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+          "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+          "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+          "planning_code": "2b06e2f03b475a5728bbe8203914e7d681f1ab8795ee938b9308098888d00a99",
+          "candidate_code": "6143a2c263f07bacd9916106d74655ce90964e7ab249e72634b78e5e37d24b53"
+        },
+        "sources": {
+          "EDEN_ISS_2018": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+            "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+            "period": "2018-02-07/2018-11-20",
+            "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+            "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+            "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+            "url": "https://doi.org/10.3389/fpls.2020.00656"
+          },
+          "FAO56": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+            "locator": "Tables 11 and 12",
+            "period": "1998 publication",
+            "spatial_scope": "Multi-region reference examples",
+            "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+            "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+            "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+          },
+          "NORA_2016": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+            "locator": "Tables 3-2 and 3-3",
+            "period": "2014 and 2015 trials",
+            "spatial_scope": "Alta and Holt, northern Norway",
+            "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+            "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+            "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf"
+          },
+          "POTATO_TROMSO_2025": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": null,
+            "period": "2020 experiment; 2025 publication",
+            "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+            "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+            "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+            "url": "https://doi.org/10.1007/s11540-025-09854-0"
+          },
+          "UAF_GDD_2022": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+            "locator": null,
+            "period": "2022 publication",
+            "spatial_scope": "Alaska",
+            "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+            "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+            "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/"
+          },
+          "UAF_HYDROPONIC_2007": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": "pp.24–25",
+            "period": "2007",
+            "spatial_scope": "Alaska, recirculating NFT lettuce",
+            "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+            "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+            "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf"
+          },
+          "XU_2026": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+            "locator": null,
+            "period": "1980–2010; 2041–2070; 2071–2100",
+            "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+            "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+            "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+            "url": "https://doi.org/10.1038/s43247-026-03702-w"
+          }
+        },
+        "resource_evidence_path": "data/north/resource_evidence.json",
+        "uncertainty": "Deterministic bounded reruns; no probability/confidence intervals.",
+        "sensitivity_threshold": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+        "temperature_approximation": "21/19°C day/night targets, 17h flat light schedule preserving published ramp-integrated DLI. Daily outdoor weather reconstructed hourly, not hourly observation.",
+        "normalization": "Single growing layer, 100 m² default; cultivated area != complete facility footprint.",
+        "season_policy": "May–September / March–October / annual engineering schedules, not projected natural growing seasons.",
+        "capacity_policy": "No local energy/land permit/water right assumed. Optional explicit resource ceilings only."
+      }
+    },
+    {
+      "horizon": "mid",
+      "scenario": "ssp585",
+      "period": [
+        2041,
+        2060
+      ],
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.00000000000001,
+        "production_kg": 3398.16648029343,
+        "water_m3": 23.03893438523704,
+        "heat_kwh_th": 11621.71428916752,
+        "electricity_kwh": 122249.51614970635,
+        "equivalent_electricity_kwh": 133871.23043887387,
+        "stored_water_m3": 19.279615077945042,
+        "desalinated_m3": 3.7593193072920044,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 11.299570305360234,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "provenance": {
+        "engine_version": "north-monthly-lexicographic-1",
+        "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+        "evidence_sha256": {
+          "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+          "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+          "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+          "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+          "planning_code": "2b06e2f03b475a5728bbe8203914e7d681f1ab8795ee938b9308098888d00a99",
+          "candidate_code": "6143a2c263f07bacd9916106d74655ce90964e7ab249e72634b78e5e37d24b53"
+        },
+        "sources": {
+          "EDEN_ISS_2018": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+            "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+            "period": "2018-02-07/2018-11-20",
+            "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+            "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+            "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+            "url": "https://doi.org/10.3389/fpls.2020.00656"
+          },
+          "FAO56": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+            "locator": "Tables 11 and 12",
+            "period": "1998 publication",
+            "spatial_scope": "Multi-region reference examples",
+            "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+            "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+            "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+          },
+          "NORA_2016": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+            "locator": "Tables 3-2 and 3-3",
+            "period": "2014 and 2015 trials",
+            "spatial_scope": "Alta and Holt, northern Norway",
+            "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+            "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+            "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf"
+          },
+          "POTATO_TROMSO_2025": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": null,
+            "period": "2020 experiment; 2025 publication",
+            "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+            "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+            "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+            "url": "https://doi.org/10.1007/s11540-025-09854-0"
+          },
+          "UAF_GDD_2022": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+            "locator": null,
+            "period": "2022 publication",
+            "spatial_scope": "Alaska",
+            "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+            "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+            "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/"
+          },
+          "UAF_HYDROPONIC_2007": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": "pp.24–25",
+            "period": "2007",
+            "spatial_scope": "Alaska, recirculating NFT lettuce",
+            "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+            "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+            "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf"
+          },
+          "XU_2026": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+            "locator": null,
+            "period": "1980–2010; 2041–2070; 2071–2100",
+            "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+            "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+            "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+            "url": "https://doi.org/10.1038/s43247-026-03702-w"
+          }
+        },
+        "resource_evidence_path": "data/north/resource_evidence.json",
+        "uncertainty": "Deterministic bounded reruns; no probability/confidence intervals.",
+        "sensitivity_threshold": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+        "temperature_approximation": "21/19°C day/night targets, 17h flat light schedule preserving published ramp-integrated DLI. Daily outdoor weather reconstructed hourly, not hourly observation.",
+        "normalization": "Single growing layer, 100 m² default; cultivated area != complete facility footprint.",
+        "season_policy": "May–September / March–October / annual engineering schedules, not projected natural growing seasons.",
+        "capacity_policy": "No local energy/land permit/water right assumed. Optional explicit resource ceilings only."
+      }
+    },
+    {
+      "horizon": "late",
+      "scenario": "ssp245",
+      "period": [
+        2081,
+        2100
+      ],
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.00000000000003,
+        "production_kg": 3398.1664910336785,
+        "water_m3": 23.03578071133033,
+        "heat_kwh_th": 10367.343053118377,
+        "electricity_kwh": 122700.99620052228,
+        "equivalent_electricity_kwh": 133068.33925364065,
+        "stored_water_m3": 23.035780711330336,
+        "desalinated_m3": 0.0,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 0.0,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "provenance": {
+        "engine_version": "north-monthly-lexicographic-1",
+        "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+        "evidence_sha256": {
+          "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+          "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+          "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+          "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+          "planning_code": "2b06e2f03b475a5728bbe8203914e7d681f1ab8795ee938b9308098888d00a99",
+          "candidate_code": "6143a2c263f07bacd9916106d74655ce90964e7ab249e72634b78e5e37d24b53"
+        },
+        "sources": {
+          "EDEN_ISS_2018": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+            "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+            "period": "2018-02-07/2018-11-20",
+            "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+            "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+            "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+            "url": "https://doi.org/10.3389/fpls.2020.00656"
+          },
+          "FAO56": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+            "locator": "Tables 11 and 12",
+            "period": "1998 publication",
+            "spatial_scope": "Multi-region reference examples",
+            "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+            "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+            "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+          },
+          "NORA_2016": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+            "locator": "Tables 3-2 and 3-3",
+            "period": "2014 and 2015 trials",
+            "spatial_scope": "Alta and Holt, northern Norway",
+            "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+            "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+            "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf"
+          },
+          "POTATO_TROMSO_2025": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": null,
+            "period": "2020 experiment; 2025 publication",
+            "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+            "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+            "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+            "url": "https://doi.org/10.1007/s11540-025-09854-0"
+          },
+          "UAF_GDD_2022": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+            "locator": null,
+            "period": "2022 publication",
+            "spatial_scope": "Alaska",
+            "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+            "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+            "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/"
+          },
+          "UAF_HYDROPONIC_2007": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": "pp.24–25",
+            "period": "2007",
+            "spatial_scope": "Alaska, recirculating NFT lettuce",
+            "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+            "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+            "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf"
+          },
+          "XU_2026": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+            "locator": null,
+            "period": "1980–2010; 2041–2070; 2071–2100",
+            "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+            "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+            "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+            "url": "https://doi.org/10.1038/s43247-026-03702-w"
+          }
+        },
+        "resource_evidence_path": "data/north/resource_evidence.json",
+        "uncertainty": "Deterministic bounded reruns; no probability/confidence intervals.",
+        "sensitivity_threshold": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+        "temperature_approximation": "21/19°C day/night targets, 17h flat light schedule preserving published ramp-integrated DLI. Daily outdoor weather reconstructed hourly, not hourly observation.",
+        "normalization": "Single growing layer, 100 m² default; cultivated area != complete facility footprint.",
+        "season_policy": "May–September / March–October / annual engineering schedules, not projected natural growing seasons.",
+        "capacity_policy": "No local energy/land permit/water right assumed. Optional explicit resource ceilings only."
+      }
+    },
+    {
+      "horizon": "late",
+      "scenario": "ssp585",
+      "period": [
+        2081,
+        2100
+      ],
+      "status": "conditional",
+      "totals": {
+        "area_m2": 100.0,
+        "production_kg": 3398.1665506566633,
+        "water_m3": 54.719461469476,
+        "heat_kwh_th": 63752.512400518644,
+        "electricity_kwh": 60423.15834616555,
+        "equivalent_electricity_kwh": 124175.67074668419,
+        "stored_water_m3": 51.79855574530085,
+        "desalinated_m3": 2.9209057241751477,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 8.779509503655623,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "provenance": {
+        "engine_version": "north-monthly-lexicographic-1",
+        "climate_manifest_sha256": "dbdbb8cb2ff959d6fb8574b522428fdc8d4a8f22eb4c7ecafe228c6ee5dec69b",
+        "evidence_sha256": {
+          "resources": "4d0eb252f8735de2ccc175593af2d67517e2d52b3841d2fcf759bf863cc9eabd",
+          "crops": "2c058d4c6e10154e3f512f6a3df398013bd193bdd0ff31b8d3985a0dc613c6da",
+          "ground": "87557bb5732e2ae100e6e84c25fb4c83e7b0bc732d8389590d904407228f0b5f",
+          "resource_code": "ead15542dbe46af343a9345fef6819819b7a3333b4822e93279050473d86a791",
+          "planning_code": "2b06e2f03b475a5728bbe8203914e7d681f1ab8795ee938b9308098888d00a99",
+          "candidate_code": "6143a2c263f07bacd9916106d74655ce90964e7ab249e72634b78e5e37d24b53"
+        },
+        "sources": {
+          "EDEN_ISS_2018": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "CONTROLLED_POLAR_ANALOGUE",
+            "locator": "Tables 3, 6, 7, 9; Illumination and Environmental Conditions",
+            "period": "2018-02-07/2018-11-20",
+            "spatial_scope": "Neumayer III, Antarctica; 12.5 m² cultivated area",
+            "title": "Zabel et al. (2020), Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+            "transfer_limitation": "Closed aeroponic growth at enriched CO2; not observed Svalbard yield. Replicate min/max is not a predictive confidence interval. Nursery, aisles and utility space are additional.",
+            "url": "https://doi.org/10.3389/fpls.2020.00656"
+          },
+          "FAO56": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_AGRONOMIC_REFERENCE",
+            "locator": "Tables 11 and 12",
+            "period": "1998 publication",
+            "spatial_scope": "Multi-region reference examples",
+            "title": "FAO Irrigation and Drainage Paper 56 Chapter 6",
+            "transfer_limitation": "Kc relates open-field ET to reference ET under standard unstressed conditions. Not controlled-environment makeup water; calendars are regional examples.",
+            "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+          },
+          "NORA_2016": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_FIELD_ANALOGUE",
+            "locator": "Tables 3-2 and 3-3",
+            "period": "2014 and 2015 trials",
+            "spatial_scope": "Alta and Holt, northern Norway",
+            "title": "NIBIO Northern Cereals, New Markets for a Changing Environment, Final Report",
+            "transfer_limitation": "Trial dry-matter yield is not fresh-vegetable yield, a climatic threshold or a guarantee for Svalbard.",
+            "url": "https://www.nibio.no/prosjekter/northern-cereals--new-markets-for-a-changing-environment/_/attachment/inline/9b22f769-3666-463e-bcca-4c058231fc5d:1167bdffe36f245bedb4dcfa9c70a4a87315e953/NORA%20Northern%20Cereals%20Final%20Report.pdf"
+          },
+          "POTATO_TROMSO_2025": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": null,
+            "period": "2020 experiment; 2025 publication",
+            "spatial_scope": "Tromsø 69.7°N, controlled 12 L pots",
+            "title": "Mølmann and Johansen (2025), Influence of Growth Temperature on Development and Yield in a Medium Late and a Late Scandinavian Cultivar of Potato",
+            "transfer_limitation": "86-day pot experiment at 9–21°C under natural 24 h photoperiod; 15°C optimum is not a universal threshold. No pot-to-field area yield conversion.",
+            "url": "https://doi.org/10.1007/s11540-025-09854-0"
+          },
+          "UAF_GDD_2022": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "OFFICIAL_REGIONAL_EXTENSION",
+            "locator": null,
+            "period": "2022 publication",
+            "spatial_scope": "Alaska",
+            "title": "University of Alaska Fairbanks IARC, crop heat-unit explanation",
+            "transfer_limitation": "Approximate barley maturity target; cultivar and moisture dependent, not a Svalbard calibrated phenology model.",
+            "url": "https://uaf-iarc.org/2022/02/03/climate-change-could-enable-alaska-to-grow-more-of-its-own-food-now-is-the-time-to-plan-for-it/"
+          },
+          "UAF_HYDROPONIC_2007": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "NORTHERN_CONTROLLED_ANALOGUE",
+            "locator": "pp.24–25",
+            "period": "2007",
+            "spatial_scope": "Alaska, recirculating NFT lettuce",
+            "title": "UAF Agricultural and Forestry Experiment Station 2007 research report",
+            "transfer_limitation": "Supports a method precedent, not transferred Arctic energy or yield coefficients.",
+            "url": "https://www.uaf.edu/afes/publications/database/variety-trials/files/pdfs/AES-2007.pdf"
+          },
+          "XU_2026": {
+            "accessed_on": "2026-09-23",
+            "evidence_level": "PUBLISHED_ENSEMBLE_MODEL",
+            "locator": null,
+            "period": "1980–2010; 2041–2070; 2071–2100",
+            "spatial_scope": "Northern Hemisphere 30–83°N; 5 arc-minute analysis grid",
+            "title": "Xu et al. (2026), Northern permafrost represents a limit on the northward shift of climatically feasible agricultural frontiers under future warming",
+            "transfer_limitation": "MaxEnt climatic suitability is not an agricultural allocation or construction approval. This application does not reproduce their trained models.",
+            "url": "https://doi.org/10.1038/s43247-026-03702-w"
+          }
+        },
+        "resource_evidence_path": "data/north/resource_evidence.json",
+        "uncertainty": "Deterministic bounded reruns; no probability/confidence intervals.",
+        "sensitivity_threshold": "SENSITIVE if area reallocation > max(0.01 m²,0.1% area), feasibility changes, harvest or equivalent energy >5%, or desalinated source change >5% total water. Explicit reporting thresholds, not significance tests.",
+        "temperature_approximation": "21/19°C day/night targets, 17h flat light schedule preserving published ramp-integrated DLI. Daily outdoor weather reconstructed hourly, not hourly observation.",
+        "normalization": "Single growing layer, 100 m² default; cultivated area != complete facility footprint.",
+        "season_policy": "May–September / March–October / annual engineering schedules, not projected natural growing seasons.",
+        "capacity_policy": "No local energy/land permit/water right assumed. Optional explicit resource ceilings only."
+      }
+    }
+  ],
+  "synthetic_comparison": {
+    "classification": "SIMULATION_EXPLANATORY",
+    "before": {
+      "status": "conditional",
+      "allocations": [
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "lettuce",
+          "cycles": 9,
+          "electricity_kwh_m2": 1246.6752230912457,
+          "heat_kwh_th_m2": 12.74631010442215,
+          "id": "lettuce:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Marul",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              907.4122640150141,
+              1246.6752230912457,
+              1781.4691610259003
+            ],
+            "fresh_makeup_m3_m2": [
+              0.05317835909819363,
+              0.14013887358136995,
+              0.4114859705996322
+            ],
+            "heat_kwh_th_m2": [
+              15.876531994955016,
+              12.74631010442215,
+              10.844247910194
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 907.4122640150141,
+              "central": 1246.6752230912457,
+              "high": 1781.4691610259003
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.05317835909819363,
+              "central": 0.14013887358136995,
+              "high": 0.4114859705996322
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.844247910194,
+              "central": 12.74631010442215,
+              "high": 15.876531994955016
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018",
+            "UAF_HYDROPONIC_2007"
+          ],
+          "water_active_day_m3_m2": 0.00038367932534255964,
+          "water_monthly_m3_m2": [
+            0.011894059085619352,
+            0.010838940940927312,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352
+          ],
+          "yield_kg_m2": 21.419999999999998,
+          "yield_range_kg_m2": {
+            "central": 21.419999999999998,
+            "high": 31.5,
+            "low": 13.5
+          },
+          "area_m2": 16.666665666666667,
+          "share_pct": 16.666665666666667,
+          "production_kg": 356.99997857999995,
+          "water_m3": 2.335647752883959,
+          "heat_kwh_th": 212.43848899405907,
+          "electricity_kwh": 20777.919138178873
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "arugula",
+          "cycles": 15,
+          "electricity_kwh_m2": 1246.6752230912457,
+          "heat_kwh_th_m2": 12.74631010442215,
+          "id": "arugula:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Roka",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              907.4122640150141,
+              1246.6752230912457,
+              1781.4691610259003
+            ],
+            "fresh_makeup_m3_m2": [
+              0.05317835909819363,
+              0.14013887358136995,
+              0.4114859705996322
+            ],
+            "heat_kwh_th_m2": [
+              15.876531994955016,
+              12.74631010442215,
+              10.844247910194
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 907.4122640150141,
+              "central": 1246.6752230912457,
+              "high": 1781.4691610259003
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.05317835909819363,
+              "central": 0.14013887358136995,
+              "high": 0.4114859705996322
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.844247910194,
+              "central": 12.74631010442215,
+              "high": 15.876531994955016
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.00038367932534255964,
+          "water_monthly_m3_m2": [
+            0.011894059085619352,
+            0.010838940940927312,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352
+          ],
+          "yield_kg_m2": 45.75,
+          "yield_range_kg_m2": {
+            "central": 45.75,
+            "high": 65.1,
+            "low": 28.05
+          },
+          "area_m2": 16.666665666666667,
+          "share_pct": 16.666665666666667,
+          "production_kg": 762.49995425,
+          "water_m3": 2.335647752883959,
+          "heat_kwh_th": 212.43848899405907,
+          "electricity_kwh": 20777.919138178873
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "radish",
+          "cycles": 16,
+          "electricity_kwh_m2": 1011.7546129926143,
+          "heat_kwh_th_m2": 672.5909510591217,
+          "id": "radish:greenhouse:annual",
+          "method": "greenhouse",
+          "name": "Turp",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              831.7392127215544,
+              1011.7546129926143,
+              1262.777917485974
+            ],
+            "fresh_makeup_m3_m2": [
+              0.43404970265402987,
+              0.6787561072190362,
+              1.1632682438614697
+            ],
+            "heat_kwh_th_m2": [
+              543.9250526320467,
+              672.5909510591217,
+              1063.6695056293033
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 831.7392127215544,
+              "central": 1011.7546129926143,
+              "high": 1262.777917485974
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.43404970265402987,
+              "central": 0.6787561072190362,
+              "high": 1.1632682438614697
+            },
+            "heat_kwh_th_m2": {
+              "low": 543.9250526320467,
+              "central": 672.5909510591217,
+              "high": 1063.6695056293033
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.0018583329424203582,
+          "water_monthly_m3_m2": [
+            0.05760832121503114,
+            0.052497905623375155,
+            0.05760832121503114,
+            0.05574998827261078,
+            0.05760832121503114,
+            0.05574998827261078,
+            0.05760832121503114,
+            0.05760832121503114,
+            0.05574998827261078,
+            0.05760832121503114,
+            0.05574998827261078,
+            0.05760832121503114
+          ],
+          "yield_kg_m2": 29.12,
+          "yield_range_kg_m2": {
+            "central": 29.12,
+            "high": 51.36,
+            "low": 17.6
+          },
+          "area_m2": 16.666662304691236,
+          "share_pct": 16.666662304691236,
+          "production_kg": 485.3332063126088,
+          "water_m3": 11.312598826266475,
+          "heat_kwh_th": 11209.846250493492,
+          "electricity_kwh": 16862.572469961473
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "kohlrabi",
+          "cycles": 6,
+          "electricity_kwh_m2": 1313.7683987903913,
+          "heat_kwh_th_m2": 12.07153974706237,
+          "id": "kohlrabi:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Alabaş",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              959.7080532770528,
+              1313.7683987903913,
+              1869.496206914902
+            ],
+            "fresh_makeup_m3_m2": [
+              0.054409961720658664,
+              0.1430245763190289,
+              0.41837081910878515
+            ],
+            "heat_kwh_th_m2": [
+              15.282547003629631,
+              12.07153974706237,
+              10.28969144944989
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 959.7080532770528,
+              "central": 1313.7683987903913,
+              "high": 1869.496206914902
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.054409961720658664,
+              "central": 0.1430245763190289,
+              "high": 0.41837081910878515
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.28969144944989,
+              "central": 12.07153974706237,
+              "high": 15.282547003629631
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.00039157994885428884,
+          "water_monthly_m3_m2": [
+            0.012138978414482946,
+            0.011062133555133653,
+            0.012138978414482946,
+            0.011747398465628658,
+            0.012138978414482946,
+            0.011747398465628658,
+            0.012138978414482946,
+            0.012138978414482946,
+            0.011747398465628658,
+            0.012138978414482946,
+            0.011747398465628658,
+            0.012138978414482946
+          ],
+          "yield_kg_m2": 48.66,
+          "yield_range_kg_m2": {
+            "central": 48.66,
+            "high": 63.480000000000004,
+            "low": 34.44
+          },
+          "area_m2": 16.666665666666667,
+          "share_pct": 16.666665666666667,
+          "production_kg": 810.9999513399999,
+          "water_m3": 2.3837427956259054,
+          "heat_kwh_th": 201.19231704616644,
+          "electricity_kwh": 21896.138666071456
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "swiss_chard",
+          "cycles": 4,
+          "electricity_kwh_m2": 1246.6752230912457,
+          "heat_kwh_th_m2": 12.74631010442215,
+          "id": "swiss_chard:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Pazı",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              907.4122640150141,
+              1246.6752230912457,
+              1781.4691610259003
+            ],
+            "fresh_makeup_m3_m2": [
+              0.05317835909819363,
+              0.14013887358136995,
+              0.4114859705996322
+            ],
+            "heat_kwh_th_m2": [
+              15.876531994955016,
+              12.74631010442215,
+              10.844247910194
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 907.4122640150141,
+              "central": 1246.6752230912457,
+              "high": 1781.4691610259003
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.05317835909819363,
+              "central": 0.14013887358136995,
+              "high": 0.4114859705996322
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.844247910194,
+              "central": 12.74631010442215,
+              "high": 15.876531994955016
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.00038367932534255964,
+          "water_monthly_m3_m2": [
+            0.011894059085619352,
+            0.010838940940927312,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352
+          ],
+          "yield_kg_m2": 37.04,
+          "yield_range_kg_m2": {
+            "central": 37.04,
+            "high": 45.12,
+            "low": 29.4
+          },
+          "area_m2": 16.666665666666667,
+          "share_pct": 16.666665666666667,
+          "production_kg": 617.3332962933333,
+          "water_m3": 2.335647752883959,
+          "heat_kwh_th": 212.43848899405907,
+          "electricity_kwh": 20777.919138178873
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "basil",
+          "cycles": 3,
+          "electricity_kwh_m2": 1246.6752230912457,
+          "heat_kwh_th_m2": 12.74631010442215,
+          "id": "basil:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Fesleğen",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              907.4122640150141,
+              1246.6752230912457,
+              1781.4691610259003
+            ],
+            "fresh_makeup_m3_m2": [
+              0.05317835909819363,
+              0.14013887358136995,
+              0.4114859705996322
+            ],
+            "heat_kwh_th_m2": [
+              15.876531994955016,
+              12.74631010442215,
+              10.844247910194
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 907.4122640150141,
+              "central": 1246.6752230912457,
+              "high": 1781.4691610259003
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.05317835909819363,
+              "central": 0.14013887358136995,
+              "high": 0.4114859705996322
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.844247910194,
+              "central": 12.74631010442215,
+              "high": 15.876531994955016
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.00038367932534255964,
+          "water_monthly_m3_m2": [
+            0.011894059085619352,
+            0.010838940940927312,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352
+          ],
+          "yield_kg_m2": 21.9,
+          "yield_range_kg_m2": {
+            "central": 21.9,
+            "high": 24.660000000000004,
+            "low": 19.11
+          },
+          "area_m2": 16.666670666666654,
+          "share_pct": 16.666670666666654,
+          "production_kg": 365.0000875999997,
+          "water_m3": 2.335648453578325,
+          "heat_kwh_th": 212.43855272560944,
+          "electricity_kwh": 20777.92537155497
+        }
+      ],
+      "totals": {
+        "area_m2": 100.00000000000001,
+        "production_kg": 3398.1664743759416,
+        "water_m3": 23.03893428370086,
+        "heat_kwh_th": 12260.792855612508,
+        "electricity_kwh": 121883.08656090696,
+        "equivalent_electricity_kwh": 134143.87941651946,
+        "stored_water_m3": 18.818253727371772,
+        "desalinated_m3": 4.220680556329095,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 12.686306425261336,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "capture_m3": 2.152874666566667,
+          "stored_water_used_m3": 1.9553920566521819,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.19748260991448507,
+          "spill_m3": 0.0,
+          "demand_m3": 1.9553920566521819
+        },
+        {
+          "month": 2,
+          "capture_m3": 1.2810750193600002,
+          "stored_water_used_m3": 1.4785576292744853,
+          "desalinated_m3": 0.30337222880371195,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.7819298580781977
+        },
+        {
+          "month": 3,
+          "capture_m3": 0.45062557867333336,
+          "stored_water_used_m3": 0.45062557867333336,
+          "desalinated_m3": 1.5047664779788485,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.9553920566521819
+        },
+        {
+          "month": 4,
+          "capture_m3": 0.10366752667333332,
+          "stored_water_used_m3": 0.10366752667333332,
+          "desalinated_m3": 1.7886473668610359,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.8923148935343694
+        },
+        {
+          "month": 5,
+          "capture_m3": 1.33149766614,
+          "stored_water_used_m3": 1.33149766614,
+          "desalinated_m3": 0.6238944826854982,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.955392148825498
+        },
+        {
+          "month": 6,
+          "capture_m3": 16.942279075693335,
+          "stored_water_used_m3": 1.8923149827343528,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 15.049964092958982,
+          "demand_m3": 1.892314982734353
+        },
+        {
+          "month": 7,
+          "capture_m3": 11.084831154526666,
+          "stored_water_used_m3": 1.9553921488254984,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 9.129439005701169,
+          "demand_m3": 1.955392148825498
+        },
+        {
+          "month": 8,
+          "capture_m3": 5.1611802076933335,
+          "stored_water_used_m3": 1.9553921488254984,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 3.205788058867835,
+          "demand_m3": 1.955392148825498
+        },
+        {
+          "month": 9,
+          "capture_m3": 3.9079590772133335,
+          "stored_water_used_m3": 1.8923149827343528,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 2.0156440944789806,
+          "demand_m3": 1.892314982734353
+        },
+        {
+          "month": 10,
+          "capture_m3": 2.9102098638800005,
+          "stored_water_used_m3": 1.9553920566521819,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.9548178072278186,
+          "demand_m3": 1.9553920566521819
+        },
+        {
+          "month": 11,
+          "capture_m3": 2.156225409986667,
+          "stored_water_used_m3": 1.8923148935343692,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.08023353075218198,
+          "spill_m3": 0.1836769857001157,
+          "demand_m3": 1.8923148935343694
+        },
+        {
+          "month": 12,
+          "capture_m3": 1.8751585258999999,
+          "stored_water_used_m3": 1.9553920566521819,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.9553920566521819
+        }
+      ],
+      "crop_outputs_kg": {
+        "arugula": 762.49995425,
+        "basil": 365.0000875999997,
+        "kohlrabi": 810.9999513399999,
+        "lettuce": 356.99997857999995,
+        "radish": 485.33330421333335,
+        "swiss_chard": 617.3332962933333
+      },
+      "balanced_crop_outputs_kg": {
+        "arugula": 762.49995425,
+        "basil": 364.99997809999996,
+        "kohlrabi": 810.9999513399999,
+        "lettuce": 356.99997857999995,
+        "radish": 485.33330421333335,
+        "swiss_chard": 617.3335185333339
+      },
+      "fairness_fraction": 0.16666666666666666,
+      "objective": "balanced",
+      "production_retention": 1.0,
+      "binding_constraints": [
+        "Yetiştirme alanı"
+      ],
+      "resource_constraints": [
+        {
+          "name": "Yetiştirme alanı",
+          "used": 100.00000000000001,
+          "limit": 100.0,
+          "slack": 0.0,
+          "unit": "m²",
+          "binding": true,
+          "reported_as_binding": true
+        },
+        {
+          "name": "Karasal su tahsisi",
+          "used": 0.0,
+          "limit": 0.0,
+          "slack": 0.0,
+          "unit": "m³",
+          "binding": true,
+          "reported_as_binding": false
+        },
+        {
+          "name": "Depolama hacmi",
+          "used": 0.19748260991448507,
+          "limit": 10.0,
+          "slack": 9.802517390085516,
+          "unit": "m³",
+          "binding": false,
+          "reported_as_binding": false
+        }
+      ],
+      "solver": {
+        "name": "SciPy / HiGHS",
+        "version": "north-monthly-lexicographic-1",
+        "max_equality_residual": 1.7763568394002505e-15
+      },
+      "policy": "Dengeli: her ürünün tek başına alan potansiyelinin en küçük payını büyüt; sonra toplam normalize üretimi büyüt; ardından enerjiyi ve suyu azalt. Su/enerji önceliği: dengeli ürün miktarlarının seçilen payını koru. Besin, gelir veya talep optimumu değildir."
+    },
+    "after": {
+      "status": "conditional",
+      "allocations": [
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "lettuce",
+          "cycles": 9,
+          "electricity_kwh_m2": 1246.6752230912457,
+          "heat_kwh_th_m2": 12.74631010442215,
+          "id": "lettuce:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Marul",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              907.4122640150141,
+              1246.6752230912457,
+              1781.4691610259003
+            ],
+            "fresh_makeup_m3_m2": [
+              0.05317835909819363,
+              0.14013887358136995,
+              0.4114859705996322
+            ],
+            "heat_kwh_th_m2": [
+              15.876531994955016,
+              12.74631010442215,
+              10.844247910194
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 907.4122640150141,
+              "central": 1246.6752230912457,
+              "high": 1781.4691610259003
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.05317835909819363,
+              "central": 0.14013887358136995,
+              "high": 0.4114859705996322
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.844247910194,
+              "central": 12.74631010442215,
+              "high": 15.876531994955016
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018",
+            "UAF_HYDROPONIC_2007"
+          ],
+          "water_active_day_m3_m2": 0.00038367932534255964,
+          "water_monthly_m3_m2": [
+            0.011894059085619352,
+            0.010838940940927312,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352
+          ],
+          "yield_kg_m2": 21.419999999999998,
+          "yield_range_kg_m2": {
+            "central": 21.419999999999998,
+            "high": 31.5,
+            "low": 13.5
+          },
+          "area_m2": 16.666665666666667,
+          "share_pct": 16.666665666666667,
+          "production_kg": 356.99997857999995,
+          "water_m3": 2.335647752883959,
+          "heat_kwh_th": 212.43848899405907,
+          "electricity_kwh": 20777.919138178873
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "arugula",
+          "cycles": 15,
+          "electricity_kwh_m2": 1246.6752230912457,
+          "heat_kwh_th_m2": 12.74631010442215,
+          "id": "arugula:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Roka",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              907.4122640150141,
+              1246.6752230912457,
+              1781.4691610259003
+            ],
+            "fresh_makeup_m3_m2": [
+              0.05317835909819363,
+              0.14013887358136995,
+              0.4114859705996322
+            ],
+            "heat_kwh_th_m2": [
+              15.876531994955016,
+              12.74631010442215,
+              10.844247910194
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 907.4122640150141,
+              "central": 1246.6752230912457,
+              "high": 1781.4691610259003
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.05317835909819363,
+              "central": 0.14013887358136995,
+              "high": 0.4114859705996322
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.844247910194,
+              "central": 12.74631010442215,
+              "high": 15.876531994955016
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.00038367932534255964,
+          "water_monthly_m3_m2": [
+            0.011894059085619352,
+            0.010838940940927312,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352
+          ],
+          "yield_kg_m2": 45.75,
+          "yield_range_kg_m2": {
+            "central": 45.75,
+            "high": 65.1,
+            "low": 28.05
+          },
+          "area_m2": 16.666665666666667,
+          "share_pct": 16.666665666666667,
+          "production_kg": 762.49995425,
+          "water_m3": 2.335647752883959,
+          "heat_kwh_th": 212.43848899405907,
+          "electricity_kwh": 20777.919138178873
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "radish",
+          "cycles": 16,
+          "electricity_kwh_m2": 1011.7546129926143,
+          "heat_kwh_th_m2": 672.5909510591217,
+          "id": "radish:greenhouse:annual",
+          "method": "greenhouse",
+          "name": "Turp",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              831.7392127215544,
+              1011.7546129926143,
+              1262.777917485974
+            ],
+            "fresh_makeup_m3_m2": [
+              0.43404970265402987,
+              0.6787561072190362,
+              1.1632682438614697
+            ],
+            "heat_kwh_th_m2": [
+              543.9250526320467,
+              672.5909510591217,
+              1063.6695056293033
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 831.7392127215544,
+              "central": 1011.7546129926143,
+              "high": 1262.777917485974
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.43404970265402987,
+              "central": 0.6787561072190362,
+              "high": 1.1632682438614697
+            },
+            "heat_kwh_th_m2": {
+              "low": 543.9250526320467,
+              "central": 672.5909510591217,
+              "high": 1063.6695056293033
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.0018583329424203582,
+          "water_monthly_m3_m2": [
+            0.05760832121503114,
+            0.052497905623375155,
+            0.05760832121503114,
+            0.05574998827261078,
+            0.05760832121503114,
+            0.05574998827261078,
+            0.05760832121503114,
+            0.05760832121503114,
+            0.05574998827261078,
+            0.05760832121503114,
+            0.05574998827261078,
+            0.05760832121503114
+          ],
+          "yield_kg_m2": 29.12,
+          "yield_range_kg_m2": {
+            "central": 29.12,
+            "high": 51.36,
+            "low": 17.6
+          },
+          "area_m2": 16.666662305051577,
+          "share_pct": 16.666662305051577,
+          "production_kg": 485.33320632310193,
+          "water_m3": 11.312598826511058,
+          "heat_kwh_th": 11209.846250735854,
+          "electricity_kwh": 16862.572470326053
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "kohlrabi",
+          "cycles": 6,
+          "electricity_kwh_m2": 1313.7683987903913,
+          "heat_kwh_th_m2": 12.07153974706237,
+          "id": "kohlrabi:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Alabaş",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              959.7080532770528,
+              1313.7683987903913,
+              1869.496206914902
+            ],
+            "fresh_makeup_m3_m2": [
+              0.054409961720658664,
+              0.1430245763190289,
+              0.41837081910878515
+            ],
+            "heat_kwh_th_m2": [
+              15.282547003629631,
+              12.07153974706237,
+              10.28969144944989
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 959.7080532770528,
+              "central": 1313.7683987903913,
+              "high": 1869.496206914902
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.054409961720658664,
+              "central": 0.1430245763190289,
+              "high": 0.41837081910878515
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.28969144944989,
+              "central": 12.07153974706237,
+              "high": 15.282547003629631
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.00039157994885428884,
+          "water_monthly_m3_m2": [
+            0.012138978414482946,
+            0.011062133555133653,
+            0.012138978414482946,
+            0.011747398465628658,
+            0.012138978414482946,
+            0.011747398465628658,
+            0.012138978414482946,
+            0.012138978414482946,
+            0.011747398465628658,
+            0.012138978414482946,
+            0.011747398465628658,
+            0.012138978414482946
+          ],
+          "yield_kg_m2": 48.66,
+          "yield_range_kg_m2": {
+            "central": 48.66,
+            "high": 63.480000000000004,
+            "low": 34.44
+          },
+          "area_m2": 16.666665666666667,
+          "share_pct": 16.666665666666667,
+          "production_kg": 810.9999513399999,
+          "water_m3": 2.3837427956259054,
+          "heat_kwh_th": 201.19231704616644,
+          "electricity_kwh": 21896.138666071456
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "swiss_chard",
+          "cycles": 4,
+          "electricity_kwh_m2": 1246.6752230912457,
+          "heat_kwh_th_m2": 12.74631010442215,
+          "id": "swiss_chard:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Pazı",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              907.4122640150141,
+              1246.6752230912457,
+              1781.4691610259003
+            ],
+            "fresh_makeup_m3_m2": [
+              0.05317835909819363,
+              0.14013887358136995,
+              0.4114859705996322
+            ],
+            "heat_kwh_th_m2": [
+              15.876531994955016,
+              12.74631010442215,
+              10.844247910194
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 907.4122640150141,
+              "central": 1246.6752230912457,
+              "high": 1781.4691610259003
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.05317835909819363,
+              "central": 0.14013887358136995,
+              "high": 0.4114859705996322
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.844247910194,
+              "central": 12.74631010442215,
+              "high": 15.876531994955016
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.00038367932534255964,
+          "water_monthly_m3_m2": [
+            0.011894059085619352,
+            0.010838940940927312,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352
+          ],
+          "yield_kg_m2": 37.04,
+          "yield_range_kg_m2": {
+            "central": 37.04,
+            "high": 45.12,
+            "low": 29.4
+          },
+          "area_m2": 16.666665666666667,
+          "share_pct": 16.666665666666667,
+          "production_kg": 617.3332962933333,
+          "water_m3": 2.335647752883959,
+          "heat_kwh_th": 212.43848899405907,
+          "electricity_kwh": 20777.919138178873
+        },
+        {
+          "active_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "classification": "MODELED_ENGINEERING_REQUIREMENT / POLAR_YIELD_ANALOGUE",
+          "crop_id": "basil",
+          "cycles": 3,
+          "electricity_kwh_m2": 1246.6752230912457,
+          "heat_kwh_th_m2": 12.74631010442215,
+          "id": "basil:hydroponics:annual",
+          "method": "hydroponics",
+          "name": "Fesleğen",
+          "resource_configurations": {
+            "electricity_kwh_m2": [
+              907.4122640150141,
+              1246.6752230912457,
+              1781.4691610259003
+            ],
+            "fresh_makeup_m3_m2": [
+              0.05317835909819363,
+              0.14013887358136995,
+              0.4114859705996322
+            ],
+            "heat_kwh_th_m2": [
+              15.876531994955016,
+              12.74631010442215,
+              10.844247910194
+            ]
+          },
+          "resource_ranges": {
+            "electricity_kwh_m2": {
+              "low": 907.4122640150141,
+              "central": 1246.6752230912457,
+              "high": 1781.4691610259003
+            },
+            "fresh_makeup_m3_m2": {
+              "low": 0.05317835909819363,
+              "central": 0.14013887358136995,
+              "high": 0.4114859705996322
+            },
+            "heat_kwh_th_m2": {
+              "low": 10.844247910194,
+              "central": 12.74631010442215,
+              "high": 15.876531994955016
+            }
+          },
+          "season": "annual",
+          "source_ids": [
+            "EDEN_ISS_2018"
+          ],
+          "water_active_day_m3_m2": 0.00038367932534255964,
+          "water_monthly_m3_m2": [
+            0.011894059085619352,
+            0.010838940940927312,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352,
+            0.011510379760276792,
+            0.011894059085619352
+          ],
+          "yield_kg_m2": 21.9,
+          "yield_range_kg_m2": {
+            "central": 21.9,
+            "high": 24.660000000000004,
+            "low": 19.11
+          },
+          "area_m2": 16.666670666666654,
+          "share_pct": 16.666670666666654,
+          "production_kg": 365.0000875999997,
+          "water_m3": 2.335648453578325,
+          "heat_kwh_th": 212.43855272560944,
+          "electricity_kwh": 20777.92537155497
+        }
+      ],
+      "totals": {
+        "area_m2": 100.00000000000001,
+        "production_kg": 3398.166474386435,
+        "water_m3": 23.038934283880913,
+        "heat_kwh_th": 12260.792855852798,
+        "electricity_kwh": 121882.08944995629,
+        "equivalent_electricity_kwh": 134142.88230580906,
+        "stored_water_m3": 18.81825372747726,
+        "desalinated_m3": 4.220680556403653,
+        "freshwater_m3": 0.0,
+        "treatment_electricity_kwh": 11.689195885864315,
+        "treatment_heat_kwh_th": 0.0
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "capture_m3": 2.152874666566667,
+          "stored_water_used_m3": 1.955392056667463,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.19748260989920396,
+          "spill_m3": 0.0,
+          "demand_m3": 1.955392056667463
+        },
+        {
+          "month": 2,
+          "capture_m3": 1.2810750193600002,
+          "stored_water_used_m3": 1.4785576292592042,
+          "desalinated_m3": 0.3033722288329189,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.7819298580921235
+        },
+        {
+          "month": 3,
+          "capture_m3": 0.45062557867333336,
+          "stored_water_used_m3": 0.45062557867333336,
+          "desalinated_m3": 1.5047664779941297,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.955392056667463
+        },
+        {
+          "month": 4,
+          "capture_m3": 0.10366752667333332,
+          "stored_water_used_m3": 0.10366752667333332,
+          "desalinated_m3": 1.7886473668758243,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.8923148935491578
+        },
+        {
+          "month": 5,
+          "capture_m3": 1.33149766614,
+          "stored_water_used_m3": 1.33149766614,
+          "desalinated_m3": 0.6238944827007794,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.9553921488407795
+        },
+        {
+          "month": 6,
+          "capture_m3": 16.942279075693335,
+          "stored_water_used_m3": 1.8923149827491412,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 15.049964092944194,
+          "demand_m3": 1.8923149827491414
+        },
+        {
+          "month": 7,
+          "capture_m3": 11.084831154526666,
+          "stored_water_used_m3": 1.9553921488407795,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 9.129439005685887,
+          "demand_m3": 1.9553921488407795
+        },
+        {
+          "month": 8,
+          "capture_m3": 5.1611802076933335,
+          "stored_water_used_m3": 1.9553921488407795,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 3.205788058852554,
+          "demand_m3": 1.9553921488407795
+        },
+        {
+          "month": 9,
+          "capture_m3": 3.9079590772133335,
+          "stored_water_used_m3": 1.8923149827491412,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 2.015644094464192,
+          "demand_m3": 1.8923149827491414
+        },
+        {
+          "month": 10,
+          "capture_m3": 2.9102098638800005,
+          "stored_water_used_m3": 1.955392056667463,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.9548178072125375,
+          "demand_m3": 1.955392056667463
+        },
+        {
+          "month": 11,
+          "capture_m3": 2.156225409986667,
+          "stored_water_used_m3": 1.8923148935491576,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.08023353076746309,
+          "spill_m3": 0.1836769856700462,
+          "demand_m3": 1.8923148935491578
+        },
+        {
+          "month": 12,
+          "capture_m3": 1.8751585258999999,
+          "stored_water_used_m3": 1.955392056667463,
+          "desalinated_m3": 0.0,
+          "freshwater_m3": 0.0,
+          "storage_end_m3": 0.0,
+          "spill_m3": 0.0,
+          "demand_m3": 1.955392056667463
+        }
+      ],
+      "crop_outputs_kg": {
+        "arugula": 762.49995425,
+        "basil": 365.0000875999997,
+        "kohlrabi": 810.9999513399999,
+        "lettuce": 356.99997857999995,
+        "radish": 485.33330421333335,
+        "swiss_chard": 617.3332962933333
+      },
+      "balanced_crop_outputs_kg": {
+        "arugula": 762.49995425,
+        "basil": 364.99997809999996,
+        "kohlrabi": 810.9999513399999,
+        "lettuce": 356.99997857999995,
+        "radish": 485.33330421333335,
+        "swiss_chard": 617.3335185333339
+      },
+      "fairness_fraction": 0.16666666666666666,
+      "objective": "balanced",
+      "production_retention": 1.0,
+      "binding_constraints": [
+        "Yetiştirme alanı"
+      ],
+      "resource_constraints": [
+        {
+          "name": "Yetiştirme alanı",
+          "used": 100.00000000000001,
+          "limit": 100.0,
+          "slack": 0.0,
+          "unit": "m²",
+          "binding": true,
+          "reported_as_binding": true
+        },
+        {
+          "name": "Karasal su tahsisi",
+          "used": 0.0,
+          "limit": 0.0,
+          "slack": 0.0,
+          "unit": "m³",
+          "binding": true,
+          "reported_as_binding": false
+        },
+        {
+          "name": "Depolama hacmi",
+          "used": 0.19748260989920396,
+          "limit": 10.0,
+          "slack": 9.802517390100796,
+          "unit": "m³",
+          "binding": false,
+          "reported_as_binding": false
+        }
+      ],
+      "solver": {
+        "name": "SciPy / HiGHS",
+        "version": "north-monthly-lexicographic-1",
+        "max_equality_residual": 4.440892098500626e-16
+      },
+      "policy": "Dengeli: her ürünün tek başına alan potansiyelinin en küçük payını büyüt; sonra toplam normalize üretimi büyüt; ardından enerjiyi ve suyu azalt. Su/enerji önceliği: dengeli ürün miktarlarının seçilen payını koru. Besin, gelir veya talep optimumu değildir."
+    },
+    "changes": {
+      "area_reallocated_m2": 3.603428666565378e-10,
+      "area_expanded_m2": 3.603446430133772e-10,
+      "area_reduced_m2": 0.0,
+      "changed_pattern": false,
+      "feasibility_changed": false,
+      "status_before": "conditional",
+      "status_after": "conditional",
+      "electricity_delta_kwh": -0.9971109506732319,
+      "heat_delta_kwh_th": 2.402903191978112e-07,
+      "equivalent_electricity_delta_kwh": -0.9971107103920076,
+      "water_delta_m3": 1.800515292416094e-10,
+      "water_source_deltas_m3": {
+        "stored_water_m3": 1.0548717455094447e-10,
+        "desalinated_m3": 7.455813744172701e-11,
+        "freshwater_m3": 0.0
+      },
+      "binding_constraints_before": [
+        "Yetiştirme alanı"
+      ],
+      "binding_constraints_after": [
+        "Yetiştirme alanı"
+      ],
+      "message": "Üretim dağılımı değişmedi. Bu da geçerli bir sonuç; enerji ve su farkını ayrıca inceleyin."
+    },
+    "synthetic_inputs": {
+      "source_temperature_c": 5.0,
+      "salinity_g_kg": 32.0
+    },
+    "unchanged_inputs": [
+      "future_climate",
+      "terrestrial_water",
+      "soil",
+      "crop_yield",
+      "crop_water",
+      "objective",
+      "constraints"
+    ],
+    "limits": [
+      "Sentetik kaynak senaryosu; gerçek saha ölçümü veya model doğrulaması değildir.",
+      "PRE/POST motor aynıdır; dağılımın değişmemesi geçerli sonuçtur."
+    ]
+  }
+}

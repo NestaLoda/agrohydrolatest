@@ -1,0 +1,1161 @@
+
+PAGE 1
+ 
+ 
+MERCATOR OCEAN  
+INTERNATIONAL 
+2 avenue de l’Aérodrome de Montaudran, 31400 Toulouse, FRANCE 
+Tél : +33 5 61 39 38 02 - Fax : +33 5 61 39 38 99 
+Société civile de droit français au capital de 2 000 000 € - 522 911 577 RCS Toulouse - SIRET 522 911 577 00024 
+1 
+marine.copernicus.eu 
+mercator-ocean.eu 
+ 
+ 
+ 
+ 
+  
+Contributors : Jiping Xie (NERSC), Laurent Bertino (NERSC).  
+ 
+Approval Date : November 2025 
+For Arctic Ocean Physical Reanalysis Product 
+ 
+ARCTIC_MULTIYEAR_PHY_002_003 
+ 
+Issue: 1.0  
+PRODUCT USER MANUAL 
+
+
+PAGE 2
+ 
+ 
+ 
+2 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+RECORD TABLE 
+  
+Issue Date § Description of Change Author Validated By 
+1.0 2025-05-28 All Initial version transferred from PUM 
+all V5.2 J. Xie L. Bertino 
+      
+
+PAGE 3
+ 
+ 
+ 
+3 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+TABLE OF CONTENTS 
+RECORD TABLE ............................................................................................................ 2 
+GLOSSARY AND ABBREVIATIONS ............................................................................... 4 
+DATA ACCESS ............................................................................................................. 5 
+1) INTRODUCTION .................................................................................................. 6 
+a) Summary ................................................................................................................ 6 
+b) Polar projections ................................................................................................... 6 
+c) Vertical coordinates ............................................................................................ 7 
+2) DESCRIPTION OF THE PRODUCT SPECIFICATION ............................................. 9 
+a)      Production System Description .......................................................................... 9 
+b) Dataset details .................................................................................................... 12 
+c) Additional information on some parameters ................................................ 14 
+d)      Processing information ...................................................................................... 15 
+e) Catalogue updating ......................................................................................... 17 
+f) Time and ensemble averaging ........................................................................ 17 
+g) Product use and impact ................................................................................... 18 
+3) FILE FORMAT .................................................................................................... 19 
+4) FILES NOMENCLATURE .................................................................................... 19 
+4.1 FILE SIZE ................................................................................................................ 21 
+4.2 STRUCTURE OF FILES ............................................................................................ 21 
+5) REFERENCES ..................................................................................................... 22 
+6) ANNEX ............................................................................................................. 23 
+  
+
+PAGE 4
+ 
+ 
+ 
+4 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+GLOSSARY AND ABBREVIATIONS 
+ 
+ 
+MFC Monitoring and Forecasting Centre 
+TAC Thematic Assembly Center 
+ECMWF European Centre for Medium Range Weather forecast 
+GLO Global 
+HYCOM Hybrid Coordinates Ocean Model 
+NRT Near Real Time 
+MY Multi Year 
+PUM Product User Manual 
+QUID Quality Information Document 
+CMEMS Copernicus Marine Environment Monitoring Service 
+NetCDF Network Common Data Form 
+CF Climate Forecast (convention for NetCDF) 
+MDS Marine Data Store 
+FORECAST An assessment of the future state of the ocean variables made 
+using numerical models. 
+HINDCAST 
+An assessment of the past state of the ocean variables made 
+using numerical models with or without data assimilation. 
+Simulations and analyses are hindcasts.  
+SIMULATION  An hindcast done without data assimilation. 
+REP Reprocessed observations  
+  
+ 
+  
+
+PAGE 5
+ 
+ 
+ 
+5 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+DATA ACCESS 
+ 
+ 
+After registration, you will be able to download our data. To assist you, our HelpCenter 
+is available, and more specifically its section about download. 
+Information on operational issues on products and services can be found on our User 
+Notification Service. If needed, you can contact us . 
+ 
+Note that in the case of Arctic products, subsetting selected areas or variables will 
+return data interpolated to regular Lat-Lon projection instead of the Polar 
+stereographic projection indicated below, vector variables are rotated accordingly 
+from x- and y- directions to Eastwards and Northwards components. This re-projection 
+is smoothing slightly the results and increases slightly the land mask. Other solutions are 
+being investigated.  
+  
+
+PAGE 6
+ 
+ 
+ 
+6 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+1)  INTRODUCTION 
+a) Summary 
+This guide describes the data product files from the Arctic Monitoring and Forecasting Centre, 
+outlines the available data services for accessing them, and provides instructions on how to utilize 
+the files and services. 
+ 
+ARCTIC_MULTIYEAR_PHY_002_003 is the reanalysis product of the Arctic Monitoring and 
+Forecasting Center, and is composed of 3D, daily (monthly and yearly also) mean fields of 
+temperature, salinity, sea surface height, zonal velocity, meridional velocity , sea ice 
+concentration, sea ice thickness, and sea ice velocity.  
+ 
+ 
+b) Polar projections  
+All products are interpolated onto the same polar stereographic output grid, although 
+at different resolutions. HYCOM uses a staggered Arakawa C grid but all variables are 
+defined at the center of the output grid cell after interpolation.  
+The same projection is used for all Arctic MFC grids on a spherical Earth, following this 
+definition under the proj4 projection library: (Beware, this is not the WGS84 ellipsoid 
+reference).  
+ projection_stereo:proj4 = "+units=m +proj=stere +a=6378273.0 +b=6378273.0 +lon_0=-
+45.0 +lat_0=90.0 +lat_ts=90.0 +ellps=sphere" ; 
+This polar stereographic projection also defines the reference direction of vectors 
+(current and sea ice velocity), which should therefore be rotated if the data is 
+reprojected to a Lat-Long or any other grid.  
+In ArcGIS and QGIS softwares, the x- and y- coordinates units should be converted 
+from 100 km to meters.  
+ 
+A simple Python code can be used to rotate vectors to Northward and Eastward 
+directions:  
+import numpy as np 
+import cartopy.crs as ccrs 
+import cartopy.feature as cfeature 
+from cartopy.crs import Projection 
+from netCDF4 import Dataset 
+ 
+# load data (grid and ocean velocities) 
+with Dataset("20250501_dm-metno-MODEL-topaz5-ARC-b20250505-fv02.0.nc") as 
+ds: 
+ vx = ds["vxo"][0] 
+ vy = ds["vyo"][0] 
+ x = ds["x"][:] 
+ y = ds["y"][:] 
+ lon = ds["longitude"][:] 
+ lat = ds["latitude"][:] 
+spd = np.hypot(vx, vy) 
+x2d, y2d = np.meshgrid(x, y) 
+ 
+
+PAGE 7
+ 
+ 
+ 
+7 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+# Define projections 
+proj_stere = ccrs.Stereographic(central_latitude=90, 
+true_scale_latitude=90, 
+                             central_longitude=-45, 
+globe=ccrs.Globe(semimajor_axis=6378273, semiminor_axis=6378273)) 
+proj_geo = ccrs.PlateCarree()  # lon-lat 
+ 
+# transform velocities from stereographic projection to lon-lat 
+usi, vsi  = proj_geo.transform_vectors(proj_stere, x2d, y2d, vx, vy) 
+ 
+# transform velocities back from lon-lat to stereographic projection 
+vx_, vy_  = proj_stere.transform_vectors(proj_geo, lon, lat, u, v) 
+ 
+c) Vertical coordinates 
+ 
+All ARCTIC ocean products – except the sea ice product - are computed on a hybrid 
+vertical coordinate. This is a combination of isopycnal (constant density levels) in the 
+open, stratified ocean, terrain-following coordinates in shallow coastal areas and z-
+levels in the mixed layer or unstratified deep ocean. See figure below 
+(http://www.hycom.org/hycom/overview). 
+ 
+Figure 1 Vertical section of nitrates and vertical levels. Shading indicates concentrations, thin lines 
+indicate layer interfaces. The coordinates revert from isopycnal to z-levels in the mixed layer. 
+ 
+The PHY products are interpolated to 40 unevenly  spaced vertical levels: .( 0, 2, 4, 6, 
+10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 125, 150, 175, 200, 250, 300, 350, 400, 450, 
+500, 600, 700, 800, 900, 1000, 1200, 1400, 1600, 1800, 2000, 2500, 3000, 3500, 4000 
+meters)  
+ 
+The vertical interpolation method from hybrid layers to fixed levels is a cubic spline 
+honouring the following constraints: 
+
+
+PAGE 8
+ 
+ 
+ 
+8 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+- Conservation of the mean value in each layer  
+- Continuity and derivability of the value at each layer interface 
+- Vertical derivatives at the uppermost and lowermost model layers.  
+The cubic splines may overshoot in areas of strong vertical gradients. Future product 
+upgrades will use linear interpolation by default.  
+The model isopycnic layers can become thin at the bottom of the water column 
+(called outcropping of the layers) and are removed from the interpolation, resulting in 
+a few bottom grid cells being masked intermittently as land cells. If this issue turns out 
+problematic, for example for downscaling, a turnaround is to apply the masked values 
+constantly to the pixels where the flickering occurs. We will provide a definitive fix to 
+this issue in a future upgrade of the system.  
+ 
+  
+
+PAGE 9
+ 
+ 
+ 
+9 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+2)  DESCRIPTION OF THE PRODUCT SPECIFICATION  
+a)      Production System Description  
+The ARC MFC reanalysis uses the TOPAZ4b system based on an advanced sequential 
+data assimilation method (the Ensemble Kalman Filter, EnKF) in its deterministic flavour 
+(DEnKF, Sakov and Oke, 2009) and the Hybrid Coordinate Ocean Model (HYCOM 
+version 2.2.37) coupled with a single category version of the CICE model.  
+ 
+ARCTIC (180°W-180°E; 63N – 90°N): polar stereographic grid, 609x881 cells 
+ 
+This product is regional with a native grid based on conformal mapping and a very 
+even spatial resolution. It is provided on a standard polar stereographic grid at 12.5 
+km resolution. All parameters are interpolated from the native Arakawa C grid 
+model to the same output grid. Vertical interpolation is also applied to the 3D 
+variables in hybrid z-isopycnic layers.  
+ 
+Vertical grid 50 hybrid layers 
+ 
+System Name TOPAZ4b 
+Model version 
+ 
+HYCOM v2.2.37 (ocean)  
+CICE 3 (sea ice)  
+Horizontal output 
+Resolution  
+12.5 km     
+Vertical output 
+Resolution 
+40 Z levels 
+Interpolation method Horizontally: bilinear, vertically: linear  
+Coupling N/A (subroutine) 
+Sea Ice Model CICE 3 with NERSC 1-layer thermodynamics.  
+Bathymetry GEBCO08 
+Initial conditions WOA18 followed by 20 years of spinup.  
+
+
+PAGE 10
+ 
+ 
+ 
+10 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+Lateral boundary 
+conditions  
+WOA18 Climatology.  
+0.7 Sv of inflow of Pacific waters imposed in Bering Strait.  
+Atmospheric forcings Source: ECMWF ERA5 
+Frequency: 6-hourly 
+Resolution: 25 km 
+Other: Completion of solar radiation daily cycle  
+Tidal constituents None  
+Rivers Climatology based on ECMWF reanalysis and the TRIP 
+hydrological model.  
+Greenland mass loss from GRACE (GrIS CCI project). 35 
+terminal glaciers.  
+Data Assimilation 
+scheme 
+EnKF (100 dynamic members)   
++ Use of “super-observations” for high-resolution 
+observations  
++ asynchronous (FGAT) assimilation of altimeter tracks and 
+sea ice drift  
+Assimilated 
+observations 
+L4 SST (OSTIA), SIC (OSI SAF), SLA (AVISO), T/S profiles 
+(CORA database), Sea ice drift (OSI SAF), Sea ice 
+thickness (CS2SMOS, October to April only, after 2010), SSS 
+(SMOS Arctic+ Salinity, BEC, after 2010)  
+Mean SSH from CNES-CLS18 
+Post-processing Bias-corrected Sea Ice Thickness prior to 2010 by AI. 
+Trained on two model runs with and without assimilation of 
+CS2SMOS. Details in Edel et al. (2025).   
+ 
+Observations that are assimilated by TOPAZ4 include along-track Sea Level Anomalies 
+(SLA) from satellite altimeters, Sea Surface Temperature (SST) from Operational Sea 
+Surface Temperature and Sea Ice Analysis (OSTIA), in situ temperature and salinity 
+from hydrographic cruises and moorings, ice concentrations (SIC) from OSI-SAF, the 
+CS2SMOS ice thickness data from seaice.de and Sea Surface Salinity (SSS) from the 
+Barcelona Expert Center, based on the SMOS satellite. The system uses a 7-day 
+assimilation cycle and assimilates the gridded SST and SIC for the day of the analysis; 
+and along-track SLA, ice thickness and in-situ T and S for the week prior to the day of 
+the analysis.  
+Quality control procedures and preprocessing steps include a range check and 
+horizontal superobing. The details for each observation type follow. 
+The altimetry data used for assimilation are the along- track SLA 
+(SEALEVEL_GLO_PHY_L3_MY_008_062) from Sentinel-6A, Jason-3, Sentinel-3A, HY-2A, 
+Saral/AltiKa, Cryosat-2, Jason-2, Jason-1, T/P, ENVISAT, GFO, ERS1/2 provided by 
+Collecte Localisation Satellites from September 1992 to 2017. These data are 
+geophysically corrected for tides, inverse barometer, tropospheric, and ionospheric 
+signals [Le Traon and Ogor, 1998; Dorandeu and Le Traon, 1999]. The mean sea 
+surface heights are referenced to the CNES-LEGOS Mean Dynamic Topography from 
+Rio et al. 2018. The oceanographic signal is less accurate near the coast because of 
+pollution by land and in shallow waters due to inaccuracies of the global tidal model 
+that is used to de-alias the along-track altimeter observations. Therefore, we only 
+retain data located both in water deeper than 200 m and at least 50 km away from 
+the coast. The observation error is a combination of instrumental and representation 
+error, where the instrumental error is set as recommended by the provider (3 or 4cm 
+
+PAGE 11
+ 
+ 
+ 
+11 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+depending on the satellite), and the representation error accounts for sub-grid 
+variability of observations. Little is known about the latter and we assume that this error 
+is larger in the more dynamical areas [Oke and Sakov, 2008]. Thus, a proxy based on 
+the model variance for the period 1993-1999 scaled by a factor of 0.7 is used. The 
+observations are assimilated asynchronously [Sakov et al., 2010] by using daily 
+snapshots of the ensemble SLA fields. 
+The SST data assimilated is from OSTIA [OSTIA Stark et al., 2007], a CMEMS product. The 
+data set was included from June 1991 at horizontal resolution of approximately 6km, 
+and is free of diurnal variation. It is a foundation SST product that combines data from 
+infrared sensors (AVHRR and AATSR), microwave sensors (AMSR-E and TMI), and in situ 
+data from ships and surface drifting buoys. From the initial data set, the values 
+retained include those that are within a realistic range (i.e. ∈ [-1.9, 45]◦ C) and away 
+from the ice edge (mask provided with OSTIA data). The observation error estimated 
+by the provider is purposely overestimated by a factor 2.5 to account for the 
+representation error.  
+ 
+Temperature (T) and salinity (S) profiles from research cruises that are assimilated from 
+January 1991 onwards were from the Coriolis data centre at Ifremer. Unlike SLA data, 
+in situ temperature and salinity data are not assimilated asynchronously but are 
+instead assumed to correspond to the analysis time, even though they spanned the 
+week preceding the analysis time. Profiles of T and S are checked for hydrostatic 
+stability, and observations within each profile are superobed vertically to retain a 
+maximum of one super-observation per layer, based on the layer structure of the first 
+ensemble member. The forecast at each observation for each ensemble member is 
+calculated by linearly interpolating between the adjacent layers of each member to 
+the depth of the observation. The scientific cruise data from the World Ocean Atlas 
+[WOA05 Levitus et al., 2005, WOA09], ICES, IOPAS, IMR, AARI, Ocean Weather Station 
+Mike, NABOS, NPI, North Pole Environment Observatory, the TRACTOR project, MMBI, 
+LOGS are also assimilated after being manually quality checked (A. Korablev and A. 
+Smirnov, pers. 20ocal.). A total of 3.000.000 observations are assimilated.  
+ 
+The SIC data is obtained from SSMIS at the Sea Ice TAC (OSI-SAF data). It is computed 
+with the ESA CCI sea ice concentration algorithm. The gridded data was assimilated 
+since 1991, at a resolution of 25 km. The spatial coverage is almost complete. TOPAZ4 
+assimilates the SIC data on the day of each analysis. The observation error standard 
+deviation is set to 10% at the start of the reanalysis and is increased to account for 
+larger errors near the ice edge and to reduce over-fitting at these locations. The error 
+variance is: σ2obs = 0.01 + (0.5 − |0.5 − c|)2, where c is the observed SIC.  
+ 
+The sea ice drift (SIUV) product is provided by OSI-455 from OSISAF 
+(10.15770/EUM_SAF_OSI_0012; daily product); After 2019 the OSI-SAF product 405-c is 
+assimilated. The Lagrangian drift data is obtained at a resolution of 75 km by a 
+continuous cross-correlation  algorithm from passive microwave satellite data (AMSR-
+E, SSM/I, SSMIS, and AMSR2). It is available year-round but does not provide 
+information close to the ice edge. The 1-day drift is short enough to avoid severe loss 
+of data near the coast that occurs in the composites computed over longer periods. 
+The data is available from 1991 to 2020 but we only used it in the winter months since 
+1999. The provider specified an averaged uncertainty (24 hours displacement in both 
+vector components) of about 2.5 km per day. We increased the observation error to 7 
+km per day to account for representation error. Because the sea ice drift data is 
+
+PAGE 12
+ 
+ 
+ 
+12 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+Lagrangian, the corresponding observation operator is nonlinear. The model 
+equivalent 1-day drift is computed for each ensemble member and each grid cell of 
+the satellite data product. The initial positions are advected 24 hours forward, using 
+the daily averages for interpolation of the ice velocities and a 2nd order Runge-Kutta 
+method for the Lagrangian trajectories. The final displacements are computed on the 
+observations grid.  
+ 
+The ice thickness product is the weekly merged CS2SMOS dataset from AWI (Ricker et 
+al. 2017), combining thin sea ice measurements from the ESA SMOS mission to the 
+thick sea ice retrievals from another ESA mission CryoSAT2. The merged product is 
+assembled on a weekly basis and contains mapping errors as uncertainty estimates. 
+An additional uncertainty has therefore been added to account for retrieval errors 
+increasing linearly as a function of thickness. Sea ice thickness is only available in 
+Winter (end of October to early April). Prior to CS2SMOS (pre-2010), an AI-based 
+correction is calculated based on two model runs with and without assimilation of 
+CS2SMOS. The procedure is described in Edel et al. (2025). The ice thickness is 
+provided with and without correction. The corrected values are identical to the 
+uncorrected values post-2010. 
+ 
+The Sea Surface Salinity is the 9-days averaged Level-4 SMOS product from BEC, CSIC 
+developed as part of the ESA Arctic+Salinity project (Version 3.1). An uncertainty is 
+provided as part of the dataset and exaggerated in areas of fresh water following Xie 
+et al. (2019). The OSSE using the SSS product in Xie et al. (2023) in the Arctic shows that 
+the biases and the root-mean-squared differences (RMSD) of SSS are reduced by 10 % 
+up to 50 % depending on areas, and the Arctic freshwater content (FWC) and its 
+seasonal cycle are modified by the assimilation of the SSS products. The observation 
+error variance is increased as a decreasing function of salinity σ2obs = max{σ2int, 
+[0.6+1/(1+exp((sss-16)/5))]2}, where σ2int is the instrumental error variance specified by 
+the data provider. 
+ 
+b) Dataset details 
+ 
+Product Lines ARCTIC_MULTIYEAR_PHY_002_003 
+Geographical 
+coverage 
+Arctic     
+Datasets:  
+cmems_mod_arc_phy_my_topaz4_P1D-m 
+cmems_mod_arc_phy_my_topaz4_P1M  
+cmems_mod_arc_phy_my_topaz4_P1Y 
+cmems_mod_arc_phy_my_mflux_P1D-m 
+cmems_mod_arc_phy_my_mflux_P1M-m 
+cmems_mod_arc_phy_my_hflux_P1D-m 
+cmems_mod_arc_phy_my_hflux_P1M-m 
+Product Type Reanalysis  
+Update frequency Twice yearly  
+Ensemble  Average of 100 members  
+Available time series 1991- Y-1   
+Target delivery time First Monday in the months  
+
+PAGE 13
+ 
+ 
+ 
+13 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+Temporal resolution 
+(respective datasets) 
+Daily mean 
+Monthly mean 
+Yearly mean 
+ 
+ 
+Datasets: cmems_mod_arc_phy_my_topaz4_P1D-m 
+cmems_mod_arc_phy_my_topaz4_P1M  
+cmems_mod_arc_phy_my_topaz4_P1Y 
+Contains the 3D variables  
+Variable Unit Name in file Standard name 
+Surface velocity in x-
+direction of polar 
+stereographic grid 
+Surface velocity in y-
+direction of polar 
+stereographic grid 
+m/s 
+m/s 
+vxo 
+vyo 
+sea_water_x_velocity 
+sea_water_y_velocity 
+Sea Surface Height m  zos  sea_surface_height_above
+_geoid 
+Temperature degrees_C thetao sea_water_potential_temp
+erature 
+Salinity 1e-3  so sea_water_salinity 
+Sea Ice Concentration 1  siconc sea_ice_area_fraction 
+Sea Ice Thickness m   sithick sea_ice_thickness 
+Sea Ice Thickness corrected m sithick_corr sea_ice_thickness 
+Surface snow thickness m  sisnthick surface_snow_thickness 
+sea floor depth below sea 
+level 
+m model_dept
+h 
+sea_floor_depth_below_se
+a_level 
+Ice drift x-direction velocity m/s  vxsi sea_ice_x_velocity 
+Ice drift y-direction velocity m/s  vysi sea_ice_y_velocity 
+ocean_barotropic_streamfu
+nction 
+m3 s-1  stfbaro ocean_barotropic_streamf
+unction 
+ocean mixed layer 
+thickness 
+m  mlotst 
+  
+ocean_mixed_layer_thickn
+ess_defined_by_sigma_the
+ta 
+bottom temperature degrees_C  bottomT 
+ 
+sea_water_potential_temp
+erature_at_sea_floor 
+ 
+ 
+Datasets: cmems_mod_arc_phy_my_mflux_P1D-m 
+cmems_mod_arc_phy_my_mflux_P1M-m  
+ 
+Contain the 2D variables  
+Variable Unit Name in file Standard name 
+Surface wind stress in x-
+direction of polar 
+stereographic grid 
+N/m2 
+ 
+tauuo 
+ 
+surface_downward_x_stress 
+ 
+Surface wind stress in y-
+direction of polar 
+stereographic grid 
+N/m2 tauvo surface_downward_y_stress 
+ 
+
+PAGE 14
+ 
+ 
+ 
+14 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+Datasets: cmems_mod_arc_phy_my_hflux_P1D-m 
+cmems_mod_arc_phy_my_hflux_P1M-m  
+ 
+Contain the 2D variables  
+Variable Unit Name in file Standard name 
+net downward shortwave 
+heat flux on stereographic 
+grid 
+W/m2 
+ 
+rsntds 
+ 
+net_downward_shortwave_f
+lux_at_sea_water_surface 
+ 
+surface downward heat 
+flux in sea water 
+ 
+W/m2 hfds surface_downward_heat_flu
+x_in_sea_water 
+ 
+ 
+ 
+c) Additional information on some parameters 
+mlotst 
+[m] 
+ocean_mixed_layer_thickness_defined_by_sigma_theta. It is the depth 
+where the density increase compared to density at 10 m depth 
+corresponds to a temperature decrease of 0.2°C in local surface 
+conditions (θ10m, S10m, P0= 0 db, surface pressure) 
+ 
+zos [m] 
+sea_surface_height_above_geoid. The geoid is a surface of constant 
+geopotential with which mean sea level would coincide if the ocean 
+were at rest. The parameter “zos” is the difference between the actual 
+sea surface height at any given time and place, and that which it would 
+have if the ocean were at rest.  
+ 
+bottomT 
+[deg C)  
+The sea_water_potential_temperature_at_sea_floor is interpolated 
+vertically at 10 meters above the seabed. As a result, it will appear 
+discontinuous at the transition between two isopycnic layers.  
+  
+
+PAGE 15
+ 
+ 
+ 
+15 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+d)      Processing information 
+ 
+TOPAZ4b uses version 2.2.37 of HYCOM.  
+The TOPAZ4b implementation of HYCOM uses: the tracer and continuity equation 
+solved with the second order flux corrected transport [FCT2, Iskandarani et al., 2005; 
+Zalesak, 1979]; the turbulent mixing sub-model from the Goddard Institute for Space 
+Studies [Canuto et al., 2002]; the vertical remapping for fixed and non-isopycnal 
+coordinate layers with the Weighted Essentially Non-Oscillatory (WENO) piecewise 
+parabolic scheme; the short wave radiation penetration with varying exponential 
+decay depending on the Jerlov water type [Halliwell, 2004]; and biharmonic viscosity. 
+ 
+The model is coupled to a one thickness category sea ice model with elastic-viscous-
+plastic (EVP) rheology [Hunke and Dukowicz, 1997]; its thermodynamics are described 
+in Drange et al. [1996] with a correction of heat fluxes for sub- grid scale ice thickness 
+heterogeneities following Fichefet and Morales Maqueda [1997]. The sea ice strength 
+is set to 27500 N.m−2. The advection of ice tracers (concentration, ice thickness, snow 
+depth, first year ice fraction and ice age) is calculated using a 3rd order WENO 
+scheme [Jiang and Shu, 1996], with a 2nd order Runge-Kutta time discretisation. The 
+coupling (exchange of stress, heat, salinity) with the ocean is done on the HYCOM 
+Arakawa C-grid every 3 hours.  
+The model domain covers the North Atlantic and Arctic basins (see Figure 2), with the 
+horizontal model grid created by a conformal mapping with the poles shifted to the 
+opposite side of the globe to achieve a quasi-homogeneous grid size [Bentsen et al., 
+1999]. The grid has 880 × 800 horizontal grid points, with approximately 12-16 km grid 
+spacing in the whole domain. This is eddy-permitting resolution for low and middle 
+latitudes, but is too coarse to properly resolve all the mesoscale variability in the 
+Arctic, where the Rossby radius is as small as 1-2 km. 
+ 
+The model uses 50 hybrid layers. The top five target densities are purposely low to 
+force them to remain z-coordinates. The minimum z-level thickness of the top layer is 2 
+m, while the maximum z-layer thickness is 450 m, to resolve the deep mixed layer in the 
+Sub-Polar Gyre and Nordic Seas. The model bathymetry is interpolated from the 
+General Bathymetric Chart of the Oceans database (GEBCO) at 1-minute resolution. 
+The model is initialized in 1973 using climatology from the World Atlas of 2018 [WOA18, 
+Locarnini et al., 2006; Antonov et al., 2006]. At the lateral boundaries, model fields are 
+relaxed towards the same monthly climatology. The model includes an additional 
+barotropic inflow of 0.7 Sv through the Bering Strait, representing the inflow of Pacific 
+water, with seasonal variations [Ness et al. 2010]. This inflow is balanced by an outflow 
+at the southern boundary of the domain in the Atlantic Ocean. 
+ 
+Forcing: For the reanalysis experiment presented in this paper, TOPAZ is forced at the 
+ocean surface with fluxes derived from 6-hourly atmospheric fluxes from ERA5 that has 
+a resolution of 0.25◦. The atmospheric fields from ERA5 include: precipitation, dew 
+point temperature, total cloud cover, air temperature at 2 m, sea level pressure, wind 
+speed at 10 m and long wave radiation at the sea surface. The incoming shortwave 
+radiation is computed every 3h from synoptic cloud fields, and the wind stress is 
+derived from 10 m winds, estimated as in Large and Pond [1981]. The surface fluxes 
+are forced with a bulk formula parameterisation [Kara, 2000]. 
+ 
+
+PAGE 16
+ 
+ 
+ 
+16 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+The value of river discharge is poorly known because the observation array for river 
+flows is sparse. A monthly climatological discharge is estimated by applying the run-off 
+estimates from ERA-interim to the Total Runoff Integrating Pathways [TRIP, Oki and Sud, 
+1998] over the 20-year reanalysis period (1989-2009). The mass loss from the Greenland 
+Ice Sheet has been included using a linear regression on the ESA GrIS CCI gravity data 
+and distributed onto 30 terminal glaciers around Greenland. Rivers in HYCOM are 
+treated as a negative salinity flux with an additional mass exchange. 
+ The remaining inaccuracies in the evaporation and run-off are constrained using 
+relaxation towards climatology. However, relaxation can have a detrimental impact 
+on some regions – particularly where strong fronts occur and/or they are misplaced 
+(e.g., Gulf Stream). In such places the water mass distribution is bimodal, and the 
+relaxation towards an average estimate reduces the sharpness of fronts. To avoid this 
+problem, relaxation is only activated when the difference between the climatology 
+and the model is less than 0.5 PSU (Mats Bentsen, BCCR, pers. comm.). 
+ 
+Data assimilation 
+TOPAZ4b uses the DEnKF, that was developed by Sakov and Oke [2008a].  
+TOPAZ4 uses a simple, non-adaptive, distance-based localization method known as 
+“local analysis” [Evensen, 2003; Sakov and Bertino, 2011]. With this method, a local 
+analysis is computed for one horizontal grid point at a time, using observations from a 
+spatial window around it. TOPAZ4 uses smooth localization that yields spatially 
+continuous analyses. The smoothing is implemented by multiplying local ensemble 
+anomalies, or perturbations, by a quasi-Gaussian, isotropic, distance dependent 
+localization function [Gaspari and Cohn, 1999].  
+The localization radius, beyond which the ensemble-based covariance between two 
+points is artificially reduced to zero, is uniform in space and is set to 300 km. This 
+corresponds to an e1/2-folding radius of about 90 km. The localisation radius is larger 
+for in situ profiles than satellite data (600 km rather than 300 km effective radius) 
+The analysis is performed in the model grid space. The instances of negative layer 
+thickness or ice concentration, should they occur, are corrected in a post-processing 
+procedure. The next cycle is restarted from the analysis in a straightforward manner; 
+without using incremental update or nudging. 
+The DA code is publicly available. It can be accessed from 
+https://github.com/nansencenter/enkf-topaz  
+ 
+History of the reanalysis 
+The initial ensemble is generated so that it contains variability both in the interior of the 
+ocean and at surface. The initial ensemble is generated from 20 model snapshots 
+taken from a long model run at a similar time of the year. The initial ensemble is 
+integrated for 40 days to damp instabilities that result from the perturbations. 
+After generating the initial ensemble the DA system is spun up during a period of 1 
+year, for the calendar year of 1990. In order to limit the impact from an abrupt start of 
+DA, the observation error variance is at first purposely overestimated and gradually 
+decreased to the realistic level over a period of one year, starting from a factor of 8 
+and reducing to 1 at the end of the year 1990 for an official start of the reanalysis in 
+1991.  
+The assimilation cycle is weekly, similarly to the real-time system, but more observations 
+are assimilated in delayed mode  
+In the second half of 2004, the impact of T/S profiles assimilation on sea ice was 
+removed, thereby “decoupling” partially the sea ice and ocean data assimilation. This 
+
+PAGE 17
+ 
+ 
+ 
+17 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+was intended to avoid the appearance of noise in the sea ice thickness when Ice-
+tethered profilers (ITPs) are introduced in the Arctic.  
+Prior to CS2SMOS (pre-2010), an AI-based correction is calculated based on two 
+model runs with and without assimilation of CS2SMOS. The procedure is described in 
+Edel et al. (2025). The ice thickness is provided with and without correction. The values 
+are identical post-2010. 
+ 
+e) Catalogue updating 
+The previous year Y-1 is first updated in July each year using NRT inputs, then a second 
+time in November using the REP inputs.  
+ 
+f) Time and ensemble averaging 
+All variables provided are 100-members ensemble averages.  
+Daily averages are centered at 12:00 UTC.  
+Monthly averages are centered at the middle of the months. Yearly averages are 
+calculated from the daily files to avoid nonlinear misrepresentations, such as those in 
+the mixed layer depth.    
+  
+
+PAGE 18
+ 
+ 
+ 
+18 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+g) Product use and impact  
+The TOPAZ4b reanalysis is intended to address the broadest range of users in the 
+Nordic Seas and Arctic. It utilizes multivariate data assimilation with the EnKF, so users 
+can expect all hindcast variables to be accurate to a reasonable degree and 
+consistent with one another, including the sea ice edge and ocean variables 
+affected by sea ice. The data assimilation software is designed to avoid too sharp 
+data assimilation increments.  
+The HYCOM ocean model uses the K-Parameter Profile (KPP) mixing scheme, 
+which limits the mixing of warm Atlantic waters to the surface of the Central Arctic. This 
+should be advantageous for users running stand-alone sea ice forecasts.  
+ 
+  
+
+PAGE 19
+ 
+ 
+ 
+19 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+3) FILE FORMAT 
+The products are stored using the NetCDF format.  
+ 
+To know more about the NetCDF format, please follow this link:  
+What is the format of Copernicus Marine products ? NetCDF 
+ 
+To understand the differences between netCDF and Zarr, please consult this article: 
+how-to-choose-between-netcdf-and-zarr-format-using-the-toolbox   
+ 
+4)  FILES NOMENCLATURE  
+Information about nomenclature of files when downloaded can be found in this 
+article: “How is defined the nomenclature of Copernicus Marine data? | Copernicus 
+Marine Help Center” 
+ 
+The ARC MFC products have been set up through different phases of Copernicus 
+Marine and the file and dataset naming conventions have changed in the meantime. 
+As a result, Table 1 below provides a summary of the various files currently available on 
+the CMEMS server.  
+ 
+Table 1: Multiple datasets in the Multiyear product (N.B., here the date of 20250415 
+indicates the product creation time and can be varied depending on when the data 
+is created again.)  
+ 
+Product Name Dataset Name File Name 
+ARCTIC_MULTIYEAR_PH
+Y_002_003 
+cmems_mod_arc_phy_
+my_topaz4_P1D-m 
+NERSC-MODEL-TOPAZ4B-ARC_dm-
+12km_20241126_20250415.fv2.0.nc 
+cmems_mod_arc_phy_
+my_topaz4_P1M 
+NERSC-MODEL-TOPAZ4B-ARC_mm-
+12km_20240115_20250415.fv2.0.nc 
+cmems_mod_arc_phy_
+my_topaz4_P1Y 
+NERSC-MODEL-TOPAZ4B-ARC_ym-
+12km_20240101_20250415.fv2.0.nc 
+cmems_mod_arc_phy_
+my_mflux_P1D-m 
+NERSC-MODEL-TOPAZ4B-ARC_mm-
+12km_20241215_20250415_MFLUX.fv
+2.0.n 
+cmems_mod_arc_phy_
+my_mflux_P1M-m 
+NERSC-MODEL-TOPAZ4B-ARC_dm-
+12km_20241216_20250415_MFLUX.fv
+2.0.nc 
+cmems_mod_arc_phy_
+my_hflux_P1D-m 
+NERSC-MODEL-TOPAZ4B-ARC_dm-
+12km_20241217_20250415_HFLUX.fv2
+.0.nc 
+cmems_mod_arc_phy_
+my_hflux_P1M-m 
+NERSC-MODEL-TOPAZ4B-ARC_mm-
+12km_20240615_20250415_HFLUX.fv2
+.0.nc 
+ 
+ 
+ 
+
+PAGE 20
+ 
+ 
+ 
+20 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+An exhaustive description of the files nomenclature when downloaded through the 
+web portal is available here : Files Nomenclature and Format 
+ 
+  
+
+PAGE 21
+ 
+ 
+ 
+21 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+4.1 FILE SIZE  
+ 
+DATASET NAME NAME OF FILE DIMENSION 
+[GB] 
+cmems_mod_arc_phy_my_t
+opaz4_P1D-m 
+NERSC-MODEL-TOPAZ4B-ARC_dm-
+12km_20241126_20250415.fv2.0.nc 
+0.06 
+cmems_mod_arc_phy_my_t
+opaz4_P1M 
+NERSC-MODEL-TOPAZ4B-ARC_mm-
+12km_20240115_20250415.fv2.0.nc 
+0.06 
+cmems_mod_arc_phy_my_t
+opaz4_P1Y 
+NERSC-MODEL-TOPAZ4B-ARC_ym-
+12km_20240101_20250415.fv2.0.nc 
+0.06 
+cmems_mod_arc_phy_my_
+mflux_P1D-m 
+NERSC-MODEL-TOPAZ4B-ARC_mm-
+12km_20241215_20250415_MFLUX.fv2.0.n 
+0.003 
+cmems_mod_arc_phy_my_
+mflux_P1M-m 
+NERSC-MODEL-TOPAZ4B-ARC_dm-
+12km_20241216_20250415_MFLUX.fv2.0.n
+c 
+0.003 
+cmems_mod_arc_phy_my_
+hflux_P1D-m 
+NERSC-MODEL-TOPAZ4B-ARC_dm-
+12km_20241217_20250415_HFLUX.fv2.0.n
+c 
+0.003 
+cmems_mod_arc_phy_my_
+hflux_P1M-m 
+NERSC-MODEL-TOPAZ4B-ARC_mm-
+12km_20240615_20250415_HFLUX.fv2.0.n
+c 
+0.003 
+4.2 STRUCTURE OF FILES 
+Examples of the header of output NetCDF files are inserted in annex, for each dataset.  
+
+PAGE 22
+ 
+ 
+ 
+22 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+5) REFERENCES 
+Edel, L., Xie, J., Korosov, A., Brajard, J., and Bertino, L. (2025). Reconstruction of Arctic sea ice 
+thickness (1992–2010) based on a hybrid machine learning and data assimilation 
+approach, The Cryosphere, 19, 731–752, https://doi.org/10.5194/tc-19-731-2025. 
+Xie, J., Raj, R. P., Bertino, L., Samuelsen, A., & Wakamatsu, T. (2019). Evaluation of Arctic Ocean surface 
+salinities from the Soil Moisture and Ocean Salinity (SMOS) mission against a regional reanalysis 
+and in situ data. Ocean Science, 15, 1191–1206,. https://doi.org/10.5194/os-2018-163 
+Xie, J., Raj, R. P., Bertino, L., Martínez, J., Gabarró, C., and Catany, R.: Assimilation of sea surface salinities 
+from SMOS in an Arctic coupled ocean and sea ice reanalysis, Ocean Sci., 19, 269–287, 
+https://doi.org/10.5194/os-19-269-2023 , 2023. 
+ 
+Quality Information Documents. 
+https://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-ARC-QUID-002-003.pdf 
+ 
+ 
+  
+
+PAGE 23
+ 
+ 
+ 
+23 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+6) ANNEX 
+a. Structure and semantics of NetCDF map files 
+ 
+Sample file: 
+netcdf NERSC-MODEL-TOPAZ4B-ARC-RAN_dm-12km_20080926_20250428.fv2.0 { 
+dimensions: 
+ time = UNLIMITED ; // (1 currently) 
+ y = 881 ; 
+ x = 609 ; 
+ depth = 40 ; 
+variables: 
+ double time(time) ; 
+  time:long_name = "forecast time" ; 
+  time:units = "hour since 1950-1-1T00:00:00Z" ; 
+ float bottomT(time, y, x) ; 
+  bottomT:_FillValue = -1.e+12f ; 
+  bottomT:cell_methods = "area: mean" ; 
+  bottomT:coordinates = "longitude latitude" ; 
+  bottomT:grid_mapping = "stereographic" ; 
+  bottomT:long_name = "Sea floor potential temperature" ; 
+  bottomT:missing_value = -1.e+12f ; 
+  bottomT:standard_name = 
+"sea_water_potential_temperature_at_sea_floor" ; 
+  bottomT:units = "degrees_C" ; 
+ float depth(depth) ; 
+  depth:long_name = "depth" ; 
+  depth:units = "m" ; 
+  depth:standard_name = "depth" ; 
+  depth:positive = "down" ; 
+  depth:axis = "Z" ; 
+ float latitude(y, x) ; 
+  latitude:standard_name = "latitude" ; 
+  latitude:units = "degrees_north" ; 
+ float longitude(y, x) ; 
+  longitude:standard_name = "longitude" ; 
+  longitude:units = "degrees_east" ; 
+ float mlotst(time, y, x) ; 
+  mlotst:_FillValue = -1.e+12f ; 
+  mlotst:cell_methods = "area: mean" ; 
+  mlotst:coordinates = "longitude latitude" ; 
+  mlotst:grid_mapping = "stereographic" ; 
+  mlotst:missing_value = -1.e+12f ; 
+  mlotst:standard_name = 
+"ocean_mixed_layer_thickness_defined_by_sigma_theta" ; 
+  mlotst:units = "m" ; 
+ float model_depth(y, x) ; 
+  model_depth:_FillValue = -1.e+12f ; 
+  model_depth:cell_methods = "area: mean" ; 
+
+PAGE 24
+ 
+ 
+ 
+24 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+  model_depth:coordinates = "longitude latitude" ; 
+  model_depth:grid_mapping = "stereographic" ; 
+  model_depth:missing_value = -1.e+12f ; 
+  model_depth:standard_name = "sea_floor_depth_below_sea_level" ; 
+  model_depth:units = "meter" ; 
+ float siconc(time, y, x) ; 
+  siconc:_FillValue = -1.e+12f ; 
+  siconc:cell_methods = "area: mean" ; 
+  siconc:coordinates = "longitude latitude" ; 
+  siconc:grid_mapping = "stereographic" ; 
+  siconc:missing_value = -1.e+12f ; 
+  siconc:standard_name = "sea_ice_area_fraction" ; 
+  siconc:units = "1" ; 
+ float sisnthick(time, y, x) ; 
+  sisnthick:_FillValue = -1.e+12f ; 
+  sisnthick:cell_methods = "area: mean where sea_ice" ; 
+  sisnthick:coordinates = "longitude latitude" ; 
+  sisnthick:grid_mapping = "stereographic" ; 
+  sisnthick:missing_value = -1.e+12f ; 
+  sisnthick:standard_name = "surface_snow_thickness" ; 
+  sisnthick:units = "m" ; 
+ float sithick(time, y, x) ; 
+  sithick:_FillValue = -1.e+12f ; 
+  sithick:cell_methods = "area: mean where sea_ice" ; 
+  sithick:coordinates = "longitude latitude" ; 
+  sithick:grid_mapping = "stereographic" ; 
+  sithick:missing_value = -1.e+12f ; 
+  sithick:standard_name = "sea_ice_thickness" ; 
+  sithick:units = "m" ; 
+ float so(time, depth, y, x) ; 
+  so:_FillValue = -1.e+12f ; 
+  so:cell_methods = "area: mean" ; 
+  so:coordinates = "longitude latitude" ; 
+  so:grid_mapping = "stereographic" ; 
+  so:long_name = "Salinity" ; 
+  so:missing_value = -1.e+12f ; 
+  so:standard_name = "sea_water_salinity" ; 
+  so:units = "1e-3" ; 
+ int stereographic ; 
+  stereographic:grid_mapping_name = "polar_stereographic" ; 
+  stereographic:latitude_of_projection_origin = 90. ; 
+  stereographic:longitude_of_projection_origin = -45. ; 
+  stereographic:scale_factor_at_projection_origin = 1. ; 
+  stereographic:straight_vertical_longitude_from_pole = -45. ; 
+  stereographic:earth_radius = 6378273. ; 
+  stereographic:proj4 = "+proj=stere +lon_0=-45 +lat_0=90 +k=1 +R=6378273 
++no_defs" ; 
+  stereographic:false_easting = 0. ; 
+  stereographic:false_northing = 0. ; 
+ float stfbaro(time, y, x) ; 
+
+PAGE 25
+ 
+ 
+ 
+25 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+  stfbaro:_FillValue = -1.e+12f ; 
+  stfbaro:cell_methods = "area: mean" ; 
+  stfbaro:coordinates = "longitude latitude" ; 
+  stfbaro:grid_mapping = "stereographic" ; 
+  stfbaro:missing_value = -1.e+12f ; 
+  stfbaro:standard_name = "ocean_barotropic_streamfunction" ; 
+  stfbaro:units = "m3 s-1" ; 
+ float thetao(time, depth, y, x) ; 
+  thetao:_FillValue = -1.e+12f ; 
+  thetao:cell_methods = "area: mean" ; 
+  thetao:coordinates = "longitude latitude" ; 
+  thetao:grid_mapping = "stereographic" ; 
+  thetao:long_name = "Sea Temperature" ; 
+  thetao:missing_value = -1.e+12f ; 
+  thetao:standard_name = "sea_water_potential_temperature" ; 
+  thetao:units = "degrees_C" ; 
+ float vxo(time, depth, y, x) ; 
+  vxo:_FillValue = -1.e+12f ; 
+  vxo:cell_methods = "area: mean" ; 
+  vxo:coordinates = "longitude latitude" ; 
+  vxo:grid_mapping = "stereographic" ; 
+  vxo:missing_value = -1.e+12f ; 
+  vxo:standard_name = "sea_water_x_velocity" ; 
+  vxo:units = "m s-1" ; 
+ float vxsi(time, y, x) ; 
+  vxsi:_FillValue = -1.e+12f ; 
+  vxsi:cell_methods = "area: mean where sea_ice" ; 
+  vxsi:coordinates = "longitude latitude" ; 
+  vxsi:grid_mapping = "stereographic" ; 
+  vxsi:missing_value = -1.e+12f ; 
+  vxsi:standard_name = "sea_ice_x_velocity" ; 
+  vxsi:units = "m s-1" ; 
+ float vyo(time, depth, y, x) ; 
+  vyo:_FillValue = -1.e+12f ; 
+  vyo:cell_methods = "area: mean" ; 
+  vyo:coordinates = "longitude latitude" ; 
+  vyo:grid_mapping = "stereographic" ; 
+  vyo:missing_value = -1.e+12f ; 
+  vyo:standard_name = "sea_water_y_velocity" ; 
+  vyo:units = "m s-1" ; 
+ float vysi(time, y, x) ; 
+  vysi:_FillValue = -1.e+12f ; 
+  vysi:cell_methods = "area: mean where sea_ice" ; 
+  vysi:coordinates = "longitude latitude" ; 
+  vysi:grid_mapping = "stereographic" ; 
+  vysi:missing_value = -1.e+12f ; 
+  vysi:standard_name = "sea_ice_y_velocity" ; 
+  vysi:units = "m s-1" ; 
+ float x(x) ; 
+  x:axis = "X" ; 
+
+PAGE 26
+ 
+ 
+ 
+26 Product User Manual for Arctic PHY, ICE and BGC products 
+© EU Copernicus Marine Service – Public   
+CMEMS-ARC-PUM-002-ALL 
+Issue 1.0 – November 2025 
+  x:standard_name = "projection_x_coordinate" ; 
+  x:units = "100  km" ; 
+ float y(y) ; 
+  y:standard_name = "projection_y_coordinate" ; 
+  y:axis = "Y" ; 
+  y:units = "100  km" ; 
+ float zos(time, y, x) ; 
+  zos:_FillValue = -1.e+12f ; 
+  zos:cell_methods = "area: mean" ; 
+  zos:coordinates = "longitude latitude" ; 
+  zos:grid_mapping = "stereographic" ; 
+  zos:long_name = "Sea surface height" ; 
+  zos:missing_value = -1.e+12f ; 
+  zos:standard_name = "sea_surface_height_above_geoid" ; 
+  zos:units = "m" ; 
+ float sithick_corr(time, y, x) ; 
+  sithick_corr:long_name = "Sea Ice Thickness corrected" ; 
+  sithick_corr:_FillValue = -1.e+12f ; 
+  sithick_corr:standard_name = "sea_ice_thickness" ; 
+  sithick_corr:cell_methods = "area: mean where sea_ice" ; 
+  sithick_corr:missing_value = -1.e+12f ; 
+  sithick_corr:units = "m" ; 
+  sithick_corr:grid_mapping = "stereographic" ; 
+  sithick_corr:coordinates = "longitude latitude" ; 
+ 
+// global attributes: 
+  :institution = "NERSC, Jahnebakken 3, N-5007 Bergen, Norway" ; 
+  :source = "NERSC-HYCOM model fields" ; 
+  :references = "https://doi.org/10.48670/moi-00007" ; 
+  :field_type = "Files based on file type nersc_daily" ; 
+  :Conventions = "CF-1.4" ; 
+  :field_date = "2008-09-26" ; 
+  :title = "Arctic Ocean Physics Reanalysis, 12.5km daily mean" ; 
+} 
+ 

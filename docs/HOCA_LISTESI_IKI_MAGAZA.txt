@@ -1,0 +1,80 @@
+HOCANIN LİSTESİ — İKİ MAĞAZA BAĞLANTILARI
+22 Eylül 2026
+Bu karşılaştırma satın alma sepeti değildir. Ürün sayfası bulunması fiziksel stok/uyumluluk garantisi değildir. Yeni fiyat teklifi hazırlanmadı. Önceki turlarda bulunan linkler ile bu tur aranan Pi/ADC/RTC/GPS/basınç bağlantıları birleştirildi.
+
+Raspberry Pi 4 (4GB örnek)
+Direnc: https://www.direnc.net/raspberry-pi-4-model-b-4gb-en
+Robotistan: https://www.robotistan.com/raspberry-pi-4-4gb
+
+DS18B20 su geçirmez
+Direnc: https://www.direnc.net/ds18b20-sicaklik-sensoru-su-gecirmez
+Robotistan: https://www.robotistan.com/su-gecirmez-ds18b20-dijital-isi-sensoru
+
+ADS1115
+Direnc: https://www.direnc.net/ads1115-16-bit-i2c-4-kanal-modul
+Robotistan: https://www.robotistan.com/ads1115-16-bit-4-channels-adc
+
+600 PPR encoder (birebir aynı model değil)
+Direnc: https://www.direnc.net/rotary-encoder-e6b2-cwz6c-600-pulse
+Robotistan: https://www.robotistan.com/doner-encoder-600d
+
+GPS: M10 bulunamadı; M8N inceleme alternatifi
+Direnc: https://www.direnc.net/neo-m8n-arduino-gps-shield
+Robotistan: https://www.robotistan.com/ublox-gy-gpsv3-neo-8m-m8n-antenli-gps-modulu
+
+DS3231 RTC
+Direnc: https://www.direnc.net/arduino-i2c-ds3231-real-time-clock-rtc-modulu
+Robotistan: https://www.robotistan.com/ds3231-hassas-rtc-ve-24c32-hafiza-karti
+
+microSD modülü
+Direnc: https://www.direnc.net/arduino-micro-sd-kart-modulu
+Robotistan: https://www.robotistan.com/mikro-sd-kart-modulu-1
+
+16 GB microSD
+Direnc: https://www.direnc.net/sandisk-ultra-16gb-80mb
+Robotistan: https://www.robotistan.com/micro-sd-kart-16gb
+
+Dişi-erkek jumper
+Direnc: https://www.direnc.net/40-adet-disi-erkek-jumper-20cm-1
+Robotistan: https://www.robotistan.com/40-pin-ayrilabilen-disi-erkek-m-f-jumper-kablo-200-mm
+
+Breadboard
+Direnc: https://www.direnc.net/tekli-breadboard
+Robotistan: https://www.robotistan.com/breadboard
+
+Su basınç sensörü (derinlik için onaylanmadı)
+Direnc: https://www.direnc.net/analog-su-basinc-sensoru
+Robotistan: https://www.robotistan.com/basinc-pusula (kategori, ürün değil)
+
+Atlas EC
+Direnc: Doğrulanmış ilan bulunamadı
+Robotistan: Doğrulanmış ilan bulunamadı
+
+NOTLAR
+Pi 4 okulda mevcutsa yeniden alınmaz; adaptör/işletim sistemi kartı kontrol edilir. Pi kendi kartına kayıt yaparsa ayrı SPI microSD modülü gerekmez. Pi yönü öneri, kurulmuş sistem değil.
+Encoder kullanıcı tarafından daha önce çıkarıldı; burada hocanın listesini karşılaştırmak için bulunuyor, yeniden sepete eklenmedi. Direnc encoder önceki kontrolde kategoride tükendi.
+M8N, M10 ile aynı model/nesil değildir; pin/arayüz/anten ve ihtiyaç uyumu teyit edilmeden doğrudan ikame sayılmaz.
+Direnc SEN0257 0–1,6 MPa su basıncı adayıdır; sığ kolon/deniz suyu derinlik sensörü olarak seçilmedi. Robotistan basınç bağlantısı yalnız kategori. YF-S201 akış sensörüdür, basınç ölçümü için seçilmemeli.
+Atlas EC için iki mağazada doğrulanmış ilan bulunamadı; başka marka EC'ye Atlas adı verilmedi.
+TDS bütçe alternatifi (Atlas muadili değil): https://www.direnc.net/arduino-tds-sivi-iletkenlik-ve-kalite-sensoru . Düşük aralıklı PoC için önceki aday.
+Direnc 16 GB önceki canlı kontrol 1.046,12 TL; Robotistan 374,02 TL önceki kontrolden. Sırf tek mağaza için pahalı belleğe geçilmesi önerilmiyor. Bu tur fiyatlar yeniden karşılaştırılmadı.
+Sipariş, donanım veya yazılım testi yapılmadı.
+
+
+FİYAT TABLOSU — 22 EYLÜL 2026 YENİDEN WEB KONTROLÜ
+KDV dahil sayfa fiyatları, kargo hariç. Sepete ekle fiziksel stok garantisi değildir.
+Malzeme | Direnc.net | Robotistan
+Raspberry Pi 4 4GB | 7.380,93 TL (açılan İngilizce sayfada stok yok) | 6.657,22 TL
+DS18B20 | 58,12 TL (stok teyidi) | 75,52 TL
+ADS1115 | 309,77 TL | 133,79 TL (İngilizce ürün sayfası)
+600 PPR encoder | 678,04 TL (stok teyidi; önceki kategori tükendi) | 608,31 TL
+GPS M8N alternatifi, M10 değil | 813,65 TL (stok yok) | 720,10 TL
+DS3231 RTC | 174,35 TL (stok teyidi) | 204,55 TL (tükendi)
+microSD modülü | 29,06 TL | 41,62 TL
+16 GB microSD bellek | 1.046,12 TL | 374,02 TL
+40’lı dişi-erkek jumper | 49,40 TL | 51,12 TL
+830 breadboard | 55,21 TL | 61,10 TL
+Su basınç sensörü | SEN0257 1.848,14 TL | Ürün seçilmedi; kategori fiyatı yok
+Atlas EC | İlan bulunamadı | İlan bulunamadı
+
+Pi okulda varsa maliyeti 0 TL kabul edilir, satış fiyatları karşılaştırma içindir. Encoder/GPS/basınç bu tabloyla otomatik satın alma listesine dönmedi. Pi yönünde kendi kartına kayıt varsa ek SD modülü gerekmez. ADC markaları ve encoder modelleri birebir eşdeğer kalite kanıtı değildir. Bellekte Robotistan, ADC'de Robotistan daha düşük sayfa fiyatı gösteriyor. DS3231 Robotistan stokta olmadığı için ucuz alternatif seçimi yalnız fiyata göre yapılmaz.

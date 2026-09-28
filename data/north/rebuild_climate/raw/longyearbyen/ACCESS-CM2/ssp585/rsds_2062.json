@@ -1,0 +1,33 @@
+{
+  "site_id": "longyearbyen",
+  "model": "ACCESS-CM2",
+  "scenario": "ssp585",
+  "variable": "rsds",
+  "year": 2062,
+  "url": "https://ds.nccs.nasa.gov/thredds/ncss/grid/AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2062_v2.0.nc?var=rsds&north=78.125&south=78.125&west=15.625&east=15.625&time_start=2062-01-01T00%3A00%3A00Z&time_end=2062-12-31T23%3A59%3A59Z&accept=netcdf3&addLatLon=true",
+  "catalog_path": "AMES/NEX/GDDP-CMIP6/ACCESS-CM2/ssp585/r1i1p1f1/rsds/rsds_day_ACCESS-CM2_ssp585_r1i1p1f1_gn_2062_v2.0.nc",
+  "accessed_at_utc": "2026-09-23T13:00:25.003002+00:00",
+  "sha256": "c5148b585403b74ebcd279896132476e754afeae2537e9763e2bb27c12bbbbea",
+  "local_path": "data/north/rebuild_climate/raw/longyearbyen/ACCESS-CM2/ssp585/rsds_2062.nc",
+  "bytes": 7456,
+  "day_count": 365,
+  "units": "W m-2",
+  "grid": {
+    "latitude": 78.125,
+    "longitude": 15.625
+  },
+  "attributes": {
+    "version": "2.0",
+    "variant_label": "r1i1p1f1",
+    "cmip6_source_id": "ACCESS-CM2",
+    "cmip6_institution_id": "CSIRO-ARCCSS",
+    "cmip6_license": "CC-BY-SA 4.0",
+    "source": "BCSD",
+    "creation_date": "Sat Nov 16 07:29:50 PST 2024",
+    "tracking_id": "57e95547-c85d-46c2-b47a-1f4ad7b754b6",
+    "resolution_id": "0.25 degree",
+    "calendar": "proleptic_gregorian"
+  },
+  "classification": "SOURCED_CLIMATE_MODEL",
+  "previous_failed_attempts": []
+}

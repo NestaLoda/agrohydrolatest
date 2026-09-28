@@ -1,0 +1,63 @@
+{
+  "verified_at": "2026-09-22T20:16:10.048Z",
+  "desktop_only": true,
+  "checks": [
+    {
+      "check": "Climate first; crop edit closed; 9 visible presets; Calculate visible",
+      "passed": true
+    },
+    {
+      "check": "Hot dry changes climate only, source field unchanged; live budget pressure red",
+      "passed": true,
+      "details": "Ürün deseni simülasyonu\nCANLI SENARYO\nŞematik alan dağılımı ΔT +2°C · yağış −%20\nCanlı seçim\nSon öneri\nMevcut\n1.252.478 ha\nBuğday\n%50,9\nArpa\n%28,1\nEkili alan\n1.252.478 ha\nSeçilen · canlı\n1.252.478 ha\nBuğday\n%50,9\nArpa\n%28,1\nEkili alan\n1.252.478 ha\nBuğday\n%50,9\nArpa\n%28,1\nDane mısır\n%12,7\nŞeker pancarı\n%6,8\nPatates\n%1,5\nCanlı seçimin su gereği\n10.018.648.269 m³\nEtkin senaryo bütçesi: 8.807.758.056 m³\nBütçe açığı: 1.210.890.213,1 m³ · deseni yeniden simüle edin\n%100 sınırı\n%113,7\nBütçe aşılıyor\n%0\n%200\nSu bütçesi baskısı\nSuya etkisi · ürün katkıları ve değişim"
+    },
+    {
+      "check": "Old recommendation is neutral and uses its frozen zero-temperature context",
+      "passed": true,
+      "details": "Karar vericiye eylem\nÖNCEKİ KOŞU · yeniden simüle edin\n\nÖnceki koşunun eylem özeti · Desen değişiminden 719.291.142 m³ (%8,2) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nHedef alan\nÖnceki koşu hedefleri: Arpa alanını azaltın: 351.752,2 → 175.876,1 ha (%14); Buğday alanını artırın: 637.882,8 → 945.180,4 ha (%75,5).\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 5.884, Arpa 6.963 m³/ha; Arpa üretim alt sınırında.\nÖnce ne yapmalı?\nGirdiler değişti; bu hedefleri yeni senaryoya uygulamadan önce simülasyonu yeniden çalıştırın."
+    },
+    {
+      "check": "Hot/dry optimizer produces real hectare targets and binding production action",
+      "passed": true,
+      "details": "Karar vericiye eylem\nKARAR DESTEĞİ\n\nDaha az su gerektiren desen · Desen değişiminden 1.210.890.302 m³ (%12,1) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nHedef alan\nArpa alanını azaltın: 351.752,2 → 175.876,1 ha (%14); Buğday alanını artırın: 637.882,8 → 856.393,6 ha (%68,4).\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 7.067, Arpa 7.720 m³/ha; Arpa üretim alt sınırında.\nÖnce ne yapmalı?\nMevcut seçimde 1.210.890.213,1 m³ açık var; Arpa için 445.953.500 kg üretim tabanı bağlayıcı; bu tabanı değiştirmeden alanı önerinin altına indirmeyin."
+    },
+    {
+      "check": "Favorable cool/wet condition lowers live water and shows budget-within",
+      "passed": true
+    },
+    {
+      "check": "Optional crop edit changes field but next climate choice preserves user crop quantities",
+      "passed": true
+    },
+    {
+      "check": "Trakya rice missing water keeps gauge neutral and gives conditional action",
+      "passed": true,
+      "details": "Karar vericiye eylem\nKISMİ ÖNERİ\n\nKısmi karar · su verisi eksik · Bilinen ürünlerde 223.878.010 m³ (%16,4) daha az su · aynı koşullardaki mevcut senaryoya göre model hesabı.\n\nHedef alan\nAyçiçeği alanını azaltın: 126.606 → 63.303 ha (%19,6); Buğday alanını artırın: 141.242 → 207.969,5 ha (%64,3).\nNeden?\nÜretim alt sınırları içinde önce ekili alan korunur, sonra su azaltılır; Buğday 3.327, Ayçiçeği 6.754 m³/ha; Ayçiçeği üretim alt sınırında.\nÖnce ne yapmalı?\nÇeltik alanını şimdilik koruyun; net su gereğini tamamlamadan toplam su yeterliliği kararı vermeyin."
+    },
+    {
+      "check": "seyhan_adana climate-first default and calculated decision",
+      "passed": true
+    },
+    {
+      "check": "gediz_manisa climate-first default and calculated decision",
+      "passed": true
+    },
+    {
+      "check": "gap_sanliurfa climate-first default and calculated decision",
+      "passed": true
+    },
+    {
+      "check": "North default remains separate sourced-climate planning flow; no Turkey temperature override",
+      "passed": true
+    },
+    {
+      "check": "Latest hot/dry action explicitly states area left unassigned under budget",
+      "passed": true
+    },
+    {
+      "check": "Final desktop baseline restored with no browser console errors",
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

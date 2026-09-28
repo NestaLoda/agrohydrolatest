@@ -1,0 +1,58 @@
+{
+  "verified_at": "2026-09-22",
+  "checks": [
+    "6 NetCDF SHA records",
+    "365 unique daily times per scenario",
+    "all four cells finite",
+    "Tmin <= Tmax in all cells/days",
+    "nonnegative precipitation",
+    "explicit unit conversions"
+  ],
+  "source_files": 6,
+  "raw_grid_values": 8760,
+  "point_rows": 730,
+  "scenarios": [
+    {
+      "scenario": "ssp245",
+      "model": "ACCESS-CM2",
+      "year": 2035,
+      "classification": "EXTERNAL_FUTURE_SCENARIO_SINGLE_MODEL_YEAR",
+      "latitude": 78.125,
+      "longitude": 15.625,
+      "days": 365,
+      "annual_precipitation_mm": 590.6622314453125,
+      "annual_mean_temperature_c": -4.997379779815674,
+      "gdd_base_5_c": 41.18836975097656,
+      "frost_free_days": 70,
+      "longest_frost_free_run_days": 45,
+      "gdd_base_note": "5\u00b0C is an analysis convention, NOT a validated crop-specific threshold.",
+      "limitations": [
+        "One model year is not a climatology, ensemble or suitable SSP ranking.",
+        "Air temperature and total precipitation are not marine source water or usable freshwater allocation.",
+        "No ET0 calculation or local soil/crop calibration."
+      ],
+      "production_input": false
+    },
+    {
+      "scenario": "ssp585",
+      "model": "ACCESS-CM2",
+      "year": 2035,
+      "classification": "EXTERNAL_FUTURE_SCENARIO_SINGLE_MODEL_YEAR",
+      "latitude": 78.125,
+      "longitude": 15.625,
+      "days": 365,
+      "annual_precipitation_mm": 679.9996948242188,
+      "annual_mean_temperature_c": -4.143542766571045,
+      "gdd_base_5_c": 18.535751342773438,
+      "frost_free_days": 110,
+      "longest_frost_free_run_days": 47,
+      "gdd_base_note": "5\u00b0C is an analysis convention, NOT a validated crop-specific threshold.",
+      "limitations": [
+        "One model year is not a climatology, ensemble or suitable SSP ranking.",
+        "Air temperature and total precipitation are not marine source water or usable freshwater allocation.",
+        "No ET0 calculation or local soil/crop calibration."
+      ],
+      "production_input": false
+    }
+  ]
+}
