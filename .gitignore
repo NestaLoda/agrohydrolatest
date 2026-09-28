@@ -18,4 +18,9 @@ presentation/.build/
 data/north/derived_plans/
 data/north/frozen_runs/
 data/north/validation_records/
+data/raw/current_weather/
+data/metadata/snapshots/weather_*.json
 
+
+.vercel
+.env*

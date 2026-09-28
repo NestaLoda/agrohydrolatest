@@ -34,14 +34,14 @@ def current_weather(region_id):
             raise ValueError('Sağlayıcı zaman damgası güncel değil.')
         sha = digest(raw)
         path = f'data/raw/current_weather/{region_id}_{sha}.json'
-        immutable_write(writable_path(path), raw)
+        immutable_write(writable_path(path, local_root=ROOT), raw)
         result = {'status':'available','region_id':region_id,'temperature_c':value,
             'valid_at':stamp.isoformat(),'retrieved_at':now.isoformat(),
             'classification':'MODEL_NOWCAST','source_url':url,'provider':'Open-Meteo',
             'sha256':sha,'local_raw_path':path,'used_in_optimizer':False,
             'storage_scope':'ephemeral' if SERVERLESS else 'local_persistent',
             'note':'Güncel model hava bilgisi; istasyon ölçümü veya sezonluk iklim yerine geçmez.'}
-        snapshot = writable_path(f'data/metadata/snapshots/weather_{region_id}_{sha}.json')
+        snapshot = writable_path(f'data/metadata/snapshots/weather_{region_id}_{sha}.json', local_root=ROOT)
         if not snapshot.exists():
             immutable_write(snapshot,json.dumps(result,ensure_ascii=False,sort_keys=True).encode('utf-8'))
         _cache[region_id] = (now,result)
