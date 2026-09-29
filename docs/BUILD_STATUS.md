@@ -1,3 +1,172 @@
+TESLİM 037 — SONUÇLARIN ALTINDA ETKİLEŞİMLİ KARAR GRAFİKLERİ
+29 Eylül 2026 · Yerel üretim derlemesi tamamlandı
+
+GÜNCEL DURUM
+Kullanıcı alt analizlerde jüriye okunur ve güçlü görseller istedi. 036'nın açık analiz akışı korunarak mevcut gerçek sonuçlara bağlı grafikler eklendi; model veya veri değiştirilmedi.
+
+DEĞİŞENLER
+- Türkiye: Ürün payları görünümünde hesap öncesi seçim ve öneriyi bağlayan nokta grafiği; ortak alan yüzdesi ekseni, açık/kapalı işaretler, doğrudan önce→sonra ve yüzde puan etiketleri. Aynı panelin Su farkı görünümünde seçilen−önerilen m³ değerleri sıfır merkezli çizilir: azalış sağda, artış solda. Eksik kapsam sıfır yapılmaz; ekilmeyen alan açıklaması korunur.
+- Kuzey: 12 aylık depodan kullanılan/tatlı su/arıtılmış deniz katkıları yığılmış sütunlarda, yeni su talebi aynı m³ eksenindeki kesikli çizgi ve elmas işaretlerde. Ay düğmeleriyle talep ve kaynak miktarları okunur. Ay sonu depo stoku ayrı, sıfır tabanlı alt grafiktedir; kaynak toplamına eklenmez.
+- Enerji: Mevcut elektrik eşdeğeri bileşenlerinden halka grafik; toplam MWh/yıl ve en büyük tüketim kaleminin gerçek payı. Ayrıntılı kWh değerleri ve açıklamalar korunur. Enerji panelinin iç kaydırma sınırı kaldırıldı.
+- Yeni veri dönüşümleri yalnız sunum katmanıdır. Backend/optimizasyon, iklim, PRE/POST, PDF üretimi, gerçek ölçüm ve kaynak kayıtları değiştirilmedi. Bilimsel grafik ölçeği/eksik veri ilkeleri scientific-visualization becerisinden uygulandı; arayüz grafikleri mevcut React/SVG yapısındadır.
+
+BU TUR DOĞRULAMA — 29.09.2026
+- npm run build --prefix frontend: başarılı, son CSS/metin düzeltmesinden sonra yeniden derlendi.
+- node --experimental-strip-types --test frontend/tests/*.test.ts: 27/27 geçti. Yeni iki test su farkının işaretini/eksikliği ve aylık kaynak toplamının toplama/depo stokunu ikinci kez saymamasını denetler.
+- git diff --check -- frontend: geçti.
+- Gerçek tarayıcı: Konya su sınırı −%20 hesabı, ürün payları↔su farkı geçişi; buğdayın artan su ihtiyacı negatif, diğer azalışlar pozitif gösterildi. Kuzey 2026/SSP245/100 m² hesabı; Haziran ve Ekim ay seçimleri, enerji halkası ve açıklamaları kontrol edildi.
+- 1280×720 ve 1440×900 CSS masaüstünde her iki grafik alanı kontrol edildi; yatay taşma ve konsol hatası yok. Enerji içeriği overflow:visible. Geçici viewport ayarı kaldırıldı. Mobil test yapılmadı.
+- Bu tur backend testleri, PDF indirme ve tam Jüri turu yeniden çalıştırılmadı. Önceki teslimlerin sonuçları tarihsel doğrulamadır.
+
+DOSYALAR
+Yeni: frontend/src/components/DecisionVisuals.tsx; frontend/src/components/decision-visuals.css; frontend/src/decisionVisualData.ts; frontend/tests/decisionVisualData.test.ts.
+Düzenlenen: frontend/src/components/TurkeyDecisionCanvas.tsx; frontend/src/workspaces/NorthConsole.tsx; frontend/src/workspaces/NorthEnergyExplanation.tsx; yerel frontend/dist; docs/BUILD_STATUS.md; docs/ANA_CHAT_TESLIM.txt.
+Görsel kanıt: docs/verification/decision-visuals-037/ altında Türkiye su farkı/ürün payları, Kuzey aylık su ve enerji ekran görüntüleri. Dosya adları CSS test boyutlarını belirtir; yerel tarayıcı yakalaması host ölçeklemesi içerebilir.
+
+SINIRLAR
+Grafikler model hesabıdır; gerçek tasarruf, kâr, hasat veya saha doğrulaması iddiası yok. Aylık plan, günlük su güvenliği garantisi değildir. Enerji dağılımı yerelde mevcut enerji kapasitesi değildir. Ürünlere kaynak düzeyinden hayali su payı dağıtılmadı. Canlı yayın/deploy yapılmadı; yerel uygulama derlendi ve test edildi. Sonraki somut adım mevcut grafiklerle mülakat gösterimini incelemektir.
+
+--- ÖNCEKİ TESLİMLER / TARİHSEL NOTLAR ---
+
+TESLİM 036 — ÖZETİN ALTINDA AÇIK ANALİZ AKIŞI
+29 Eylül 2026 · Yerel uygulamada tamamlandı
+
+GÜNCEL İSTEK / KARAR
+Kullanıcı 035 düzenlemesinin içerikleri fazla kapattığını belirtti: “aşağıya doğru ver yine bilgileri”. Bu son talimat doğrultusunda ilk görünümdeki büyük sonuçlar korunurken alt analizler açık akışa alındı. Eski “bütün ayrıntılar kapalı” tercihi bu kapsamda güncellendi. Yeni ekran veya bilimsel hesap eklenmedi.
+
+DEĞİŞİKLİKLER
+- Türkiye: Tarla görselinin altında su miktarları, başlangıç/seçim/öneri karşılaştırması, ürünlerin su katkıları ve su değişimi grafiği açık. Devamında ürün payları/suya etki grafikleri doğrudan görünür. Mevcut 10 grafikli analiz laboratuvarı varsayılan açık; grafik seçimi ve SVG indirme korunuyor. Ekonomi girdileri ve ham hesap kayıtları isteğe bağlı.
+- Kuzey: Üstteki su + üretim özeti korunuyor. Altında su akışı ve aylık toplama/talep grafiği, günlük model sınamaları, ürün/yöntem/sezon tablosu, enerji dağılımı/açıklaması ve karar duyarlılıkları varsayılan açık. Bölümler istenirse kapanır; kısayollar ilgili bölümü açıp oraya kaydırır.
+- Aylık su, üretim ve enerji alt bölümlerinde iç içe dikey kaydırma kaldırıldı. Su akış şeması okunur ölçüye büyütüldü. Geniş zaman karşılaştırması, aday/kanıt ayrıntıları yalnız açıldığında yüklenir. Sol kontrol paneli ve hesap düğmesi korunur.
+- Kaynak, veri, hedef/kısıt, optimizasyon, PRE/POST, PDF üretimi, PWN/numune/pilot kayıtları değiştirilmedi. Veriler hesap/senaryo olmaya devam eder; gerçek saha ölçümü üretilmedi.
+
+BU TUR DOĞRULAMA — 29.09.2026
+- npm run build --prefix frontend: başarılı; TypeScript + Vite. Son CSS düzeltmesi sonrasında üretim derlemesi yeniden alındı.
+- node --experimental-strip-types --test frontend/tests/*.test.ts: 25/25 geçti.
+- git diff --check -- frontend: geçti.
+- Gerçek tarayıcı, 1328×898 masaüstü: Konya su sınırı −%20 senaryosu çalıştırıldı; %20 daha az model su gereği ve %85,9 ekili alan görüldü. Su hesabı, karşılaştırmalı grafikler ve 10 grafik seçicisi açık.
+- Kuzey 2026 SSP245 / 100 m² hesabı yüklendi; su/üretim/enerji/duyarlılık açık. Su bölümü kapatılıp kısayolla yeniden açıldı. İç panellerin max-height:none / overflow:visible olduğu doğrulandı. Yatay sayfa taşması yok; tarayıcı konsolunda hata yok.
+- Bu tur backend testleri, PDF indirme, tam Jüri turu ve 1280×720 / 1440×900 tekrarları çalıştırılmadı; 035 sonuçları tarihsel doğrulamadır. Telefon testi yapılmadı.
+
+DOSYALAR
+frontend/src/components/LivePattern.tsx
+frontend/src/components/TurkeyDecisionCanvas.tsx
+frontend/src/components/TurkeyAnalysisExplorer.tsx
+frontend/src/workspaces/NorthConsole.tsx
+frontend/src/workspaces/NorthSimulation.tsx
+frontend/src/workspaces/NorthEnergyExplanation.tsx
+frontend/src/result-focus.css
+Yerel frontend/dist üretim derlemesi; docs/BUILD_STATUS.md; docs/ANA_CHAT_TESLIM.txt.
+Görsel kanıt: docs/verification/result-detail-036/turkiye-analiz.png, kuzey-su-analizi.png, kuzey-enerji.png.
+
+SINIRLAR / TESLİM DURUMU
+Yalnız yerel arayüz düzenlendi; canlı yayın/deploy yapılmadı. Kullanıcının önceki “açılmıyor” geri bildiriminin cihazındaki görünür pencere tarafı kesin çözümlenmiş sayılmıyor; bizim yerel HTTP ve tarayıcı erişimimiz çalıştı. Gerçek Arktik ölçümü, numune, yerel tahsis/enerji doğrulaması ve kontrollü üretim ölçümleri saha bağımlılığı olmaya devam ediyor. Bu düzenleme tamamlandı; incelenecek güncel görünüm 036'dır. Önceki teslimler aşağıda tarihsel olarak korunur.
+
+--- ÖNCEKİ TESLİMLER / TARİHSEL NOTLAR ---
+
+TESLİM 035 — TÜRKİYE / KUZEY SONUÇLARININ GÖRSEL ÖNCELİK DÜZENLEMESİ
+29 Eylül 2026 · Uygulandı · Yerel üretim derlemesi http://127.0.0.1:8011
+
+GÜNCEL DURUM
+Kullanıcı önce sonuçların jüri için sadeleştirilmesini değerlendirmemizi, sonra “her şeye izin veriyorum go” ile uygulamamızı istedi. Mevcut iki sonuç ekranı yenilendi. Yeni uygulama, ayrı dashboard veya bilimsel model kurulmadı. Aşağıdaki öneri aşaması tarihsel nottur; bu 035 teslimi uygulanmış güncel durumdur. 034'ün 20 PNG sunum çıktısı korunuyor.
+
+DEĞİŞEN DENEYİM
+Türkiye: Hesaba bağlı artır/azalt kararı en üstte. Kaynak başlangıcına göre su değişimi, üretime ayrılan alan ve gerçek su sınırı kadranı büyük gösteriliyor. Su azalırken ekilmeyen alan görünür; Konya su −%20 testinde %20 daha az modellenmiş ihtiyaç ile %14,1 ekilmeyen alan birlikte okunuyor. Mevcut→önerilen tarla korunuyor. Desen değişiminin ek su etkisi ayrı karşılaştırma noktasıyla açılır hesapta. Grafik, ekonomi ve kanıtlar isteğe bağlı; PDF ilk görünümde. Sol düğme SİMÜLASYONU ÇALIŞTIR olarak adlandırıldı.
+Kuzey: Yeni su, model hasadı ve enerji üstte üç büyük sonuç. Kaynak payları/miktarları belirgin mavi dağılımda; kritik ay açıkça en yüksek YEDEK SU GEREĞİ olarak tanımlı. Aylık kaynak/talep grafiği ve gerekçeler açılır. Ürün payı ve kg/yıl okunur; ürün satırı açılınca alan, yöntem ve yeni su görülür. Yöntem dağılımı ilk görünümde. Enerji kWh→MWh dönüşümü yalnız sunum birimidir; elektrik eşdeğeri olduğu ve yerel enerji sınırı yoksa bu eksik açıkça görünür. Rapor üstte; destek/enerji ayrıntıları ikincil.
+Jüri Modu mevcut sonuç bileşenlerini kullanıyor. Ek düzeltme: “etkin sınır” vitrini sıfır kapasiteli kullanılmayan serayı seçmiyor, pozitif kapasitede bağlayıcı kısıtı gösteriyor.
+
+BU TUR ÇALIŞTIRILAN DOĞRULAMA — 29.09.2026
+- npm run build --prefix frontend: başarılı (TypeScript + Vite).
+- node --experimental-strip-types --test frontend/tests/*.test.ts: 25/25 geçti. Yeni 2 test enerji birim dönüşümünün miktarı korumasını ve eksik/NaN/negatif değerin sıfır yapılmamasını sınar.
+- Pytest iki çağrıda toplam 164/164 geçti: test_north_decision_story, test_north_optimizer, test_north_field_rebuild, test_north_validation, test_turkey_reference, test_decision_reports, test_planning, test_planning_objectives. Starlette/anyio mevcut deprecation uyarısı var, başarısız test yok.
+- Gerçek /api/north/plan: önceki 28 Eylül 2051 SSP245 / 100 m² / dengeli isteği tekrar çalıştırıldı. Önceki plan toplamları tolerans içinde aynı, tüm tahsisler birebir aynı; yıllık ve aylık yeni su kapanışı doğrulandı. numerical-regression.json kaydı mevcut.
+- Tarayıcı: 1280×720 ve 1440×900 CSS masaüstü. Türkiye gerçek su −%20 simülasyonu; Kuzey 2026/2051; su ayrıntısı ve ürün satırı; her iki tarafta değişen girdinin eski sonuç/PDF koruması; sekiz Jüri adımı ve 2051 oturumuna dönüş doğrulandı. Yatay taşma yok. 1280×720'de Türkiye tarlası y=690, Kuzey yöntemleri y=697, su eylemleri y=705 içinde.
+- Kuzey PDF UI isteği sunucu günlüğünde HTTP 200; PDF içerik/regresyon testleri geçti. IAB otomasyonunun native download olayı zaman aşımına uğradı; son indirilen dosyanın dosya sistemine yazılması tarayıcı tarafından doğrulanamadı. PDF üretim kodu değiştirilmedi.
+- Son tarayıcı konsolunda hata yok. git diff --check -- frontend geçti. Telefon testi yapılmadı.
+
+KORUNAN BİLİMSEL SINIRLAR
+Backend, veri, donanım, iklim katsayıları, optimizasyon hedef/kısıtları ve PRE/POST kayıt kuralları değiştirilmedi. Sonuçlar koşullu model hesabıdır; ölçüm, kâr garantisi veya kanıtlanmış yerel üretim değildir. Yeniden dolaşan su dış kaynak olarak toplanmıyor. Ürünlere sahte kaynak tahsisi yok. Yedek gereği nihai karşılanamayan talep diye sunulmuyor. Enerji kapasitesi bilinmiyorsa yeterli ilan edilmiyor. PWN/numune/pilot verisi üretilmedi, PRE kaydı yazılmadı.
+
+DOSYALAR
+frontend/src/result-focus.css (yeni)
+frontend/src/resultPresentation.ts (yeni)
+frontend/tests/resultPresentation.test.ts (yeni)
+frontend/src/main.tsx
+frontend/src/JuryDemo.tsx
+frontend/src/components/DecisionReportButton.tsx
+frontend/src/components/LivePattern.tsx
+frontend/src/components/ScenarioLab.tsx
+frontend/src/components/TurkeyDecisionCanvas.tsx
+frontend/src/components/TurkeyDecisionSupport.tsx
+frontend/src/workspaces/Simulation.tsx
+frontend/src/workspaces/NorthSimulation.tsx
+frontend/src/workspaces/NorthWaterStrategy.tsx
+Derlenmiş frontend/dist (yerel build); docs/BUILD_STATUS.md; docs/ANA_CHAT_TESLIM.txt.
+Kanıtlar docs/verification/result-focus-035/: turkiye-1280x720.png, turkiye-1440x900.png, north-1280x720.png, north-1440x900.png, north-water-detail.png, jury-field.png, browser-qa.json, numerical-regression.json. PNG'ler gerçek tarayıcı yakalamasıdır; host ölçeklemesi nedeniyle dış koyu çerçeve içerebilir, isimler CSS görünüm ölçüleridir.
+
+AÇIK BAĞIMLILIK / SONRAKİ SOMUT ADIM
+Uygulama yerelde çalışır; bu tur commit/push/deploy yapılmadı. Önceki incelemede kayıtlı Vercel adresi 404 dönmüştü; canlı yayın onarımı bu düzenlemenin kapsamına alınmadı. Gerçek yerel su tahsisi/enerji kapasitesi, Arktik ölçümü/numunesi ve kontrollü üretim ölçümleri hâlâ saha bağımlılığıdır. Bu arayüz paketi kapatıldı; sonraki adım mevcut yerel akışla mülakat provasıdır.
+
+--- ÖNCEKİ TESLİMLER / TARİHSEL NOTLAR ---
+
+TESLİM 034 — BİLİMSEL VERİ / MODEL / TASE ENTEGRASYONLU 20 PNG
+28 Eylül 2026 · 19 ana slayt + 1 ek · Doğrudan built-in image_gen
+
+GÜNCEL KULLANILACAK SUNUM
+Son ek master talimat uygulandı. 20 sayfanın tamamı metinleri ve görselleriyle image_gen kullanılarak yeniden üretildi. Güncel klasör presentation/imagegen_science_v2/slides; dosyalar slide_01.png–slide_20.png. 01–19 ana sunum, 20 önceki TASE araştırmaları ekidir. Tek paket: presentation/imagegen_science_v2/AgroHydro_19_Slayt_1_Ek_PNG.zip. 033’ün 17 PNG seti korunur fakat güncel sunum bu yeni settir. PDF/PPTX üretilmedi.
+
+BU TUR DEĞİŞEN İÇERİK
+Konya tarihsel göreli baskı modeli ve %8,7 sınırı; Türkiye ERA5/FAO-56/günlük toprak su dengesi/HiGHS zinciri; kuzeye iklimsel sınır kayması ve permafrost; depolama/kalite/enerji içeren su zinciri; yeni veri omurgası (09); güncel Kuzey hesap şeması (11); gerçek motor senaryosu (12); önceki TASE araştırmaları (13/20); v0.1 ve Arktik hedefinin ayrımı (14); ayrı fiziksel numune (15); EDEN ISS dış analoğu ve henüz ölçülmemiş deney (16); aynı motorla PRE/POST döngüsü (17) eklendi/güçlendirildi. Ekip rolleri kullanıcı beyanıdır.
+
+DOĞRULANAN AYRIMLAR
+Tarihsel Konya 2023 ile güncel beş il başlangıcının 2024 yılı karıştırılmadı. 1.680 NetCDF / 153.399 model-gün / 613.596 değer, dönemsel paketin sayılarıdır; bütün güncel arşivin toplamı değildir. Ayrı yıllık 2026–2100 paketinde 1.800 dosya kaydı vardır. MOSJ 1998–2024 / 27 kayıt / 218 cm, yaklaşık 20 km uzaktaki gözlemdir; parsel onayı değil. ESA CCI metadata, SoilGrids yerel değer eksikliği korunur. Kuzey nicel çekirdek: 6 ürün × 2 yöntem × 3 sezon = 36 seçenek; açık tarla nicel plana sahte eklenmedi. Model eğitilmiş AI diye sunulmadı.
+
+GERÇEK SENARYO — BU TUR YENİDEN ÇALIŞTIRILDI
+Mevcut plan_north / summarize_decision, 2051 SSP245 / 100 m² / dengeli / taze ürün isteğiyle 28.09.2026 tarihinde yeniden çalıştırıldı; motor/katsayı/kısıt değiştirilmedi. Hasat 4204,3675 kg/yıl; yeni su 14,204993 m³/yıl; depolanmış yağış/kar katkısı aynı miktar; tatlı su ve arıtılmış deniz tahsisi 0. Elektrik 117605,4455 kWh/yıl, ısı 1625,816 kWh_th/yıl; COP=1 ile 119231,2615 kWh elektrik eşdeğeri. Enerji üst sınırı tanımlı değil. Alabaş %75, diğer beş ürün %5’er; hidroponik %94,6 / sera %5,4 alan payı. Mayıs yaklaşık 1,2 m³ günlük depo kontrolünün en yüksek aylık yedek gereği; nihai karşılanamayan talep veya asgari depo tasarımı değildir. Boş depo başlangıç etkisi belirtilir. İstek/yanıt evidence/scenario_request.json ve scenario_result.json içinde.
+
+ÖNCEKİ TASE KAYNAKLARI
+TÜBİTAK 19.07.2024 TASE-IV haberi, DEÜ 30.07.2024 dönüş haberi ve güncel akademik personel sayfası bu tur yeniden okundu. İncili: tabakalar/termoklin/haloklin; Dondurur: Svalbard tatlı su girişleri/akıntılar, yaklaşık 90 m kolon; Biçer: sertifikalı algılayıcılarla WMO esaslı deniz meteorolojisi. Bunlar danışmanımız değildir; yöntem bağlantıları bizim çıkarımımızdır. 90 m PWN derinlik hedefi değildir. Kaynak URL’leri evidence/verification.json içinde. FAO su kalitesi kaynağı yeniden okundu. Xu 2026 sayıları önceki doğrulanmış sunum kaynak kaydından korunur; bu revizyondaki Nature doğrudan açılışı yönlendirme nedeniyle başarısızdır.
+
+GÖRSEL ÜRETİM VE KANIT SINIRI
+20 ayrı ana üretim, 09/11/17/20 için dört image_gen düzeltmesi yapıldı. Orijinaller 1672×941, teslimler 1920×1080; kod yalnız oran koruyan raster boyutlandırma ve paketleme yaptı. Yazı veya sahne kodla çizilmedi. PWN, su numunesi, deney, çevre ve harita görselleri temsili AI çizimleridir; gerçek fotoğraf/ölçüm kanıtı değildir. Slayt10 gerçek uygulama ekranını referans alan image_gen görsel anlatımıdır; birebir screenshot değildir. Grafik çubuk uzunlukları raster illüstrasyondur; sayısal etiketler esas alınır. Gerçek Arktik profil, fiziksel numune, laboratuvar ve pilot su/enerji/hasat ölçümleri henüz yok; sıfır ölçüm uydurulmadı.
+
+DOĞRULAMA — YALNIZ BU TUR
+20/20 PNG dosyası, 1920×1080 ölçüsü, 20 ZIP girdisi/CRC bütünlüğü geçti. Görseller tek tek incelendi; kapsam dışı SSP/ürün/açık tarla, su kaynak bağlantısı ve meteoroloji etiketi düzeltildi. Mevcut Kuzey motoru yeniden çalıştırıldı; 36 seçenek, yıllık su kaynak kapanışı, elektrik/ısı eşdeğeri, dönemsel iklim paket sayıları ve bölgesel başlangıç yılları kontrol edildi. Sonuçlar image_checks.json ve evidence/verification.json içinde. Uygulama regresyon testleri/build bu tur çalıştırılmadı; önceki tarihli sonuçlar yeni test diye sunulmaz. Bilimsel motor, arayüz, PRE/POST ve saha kayıtları değiştirilmedi.
+
+DOSYALAR
+presentation/imagegen_science_v2/{slides,originals,evidence}, generation_manifest.json, image_checks.json ve PNG ZIP; presentation/.build/package_science_v2.mjs, finalize_science_v2.py; yeniden hesaplanan presentation/assets/slide_10_request.json ve slide_10_result.json; presentation/PRESENTATION_MANIFEST.md, STYLE_TOKENS.json; docs/ANA_CHAT_TESLIM.txt ve BUILD_STATUS.md.
+
+DURUM
+İstenen 19 ana + 1 ek görsel tamamlandı. Fiziksel saha/numune/deney doğrulaması plan olarak kalır. Sonraki kullanım: ana 19 görseli sırayla sunmak, 20’yi yöntem soruları için ek olarak açmak.
+
+---
+ÖNCEKİ TESLİM KAYITLARI — tarihsel durum; güncel sunum yukarıdaki 034 setidir.
+
+TESLİM 033 — DOĞRUDAN GÖRSEL ÜRETİM ARACIYLA 17 SLAYT
+28 Eylül 2026 · Kullanıcının yöntem düzeltmesi uygulandı
+
+GÜNCEL KULLANILACAK GÖRSELLER
+Kullanıcı 032’deki kodla çizilmiş PNG yaklaşımını reddetti; görsel üretim yeteneğinin kullanılmasını açıkça istedi. Bu tur 17 slaydın tamamı built-in image_gen ile, metinleri ve sahneleri dahil doğrudan raster olarak yeniden üretildi. Güncel seri: presentation/imagegen/slides/slide_01.png–slide_17.png. Tek paket: presentation/imagegen/AgroHydro_Gorsel_Uretim_17_PNG.zip (yalnız 17 PNG). Önceki presentation/slides kod çizimleri tarihsel taslaktır; son teslim değildir.
+
+ÜRETİM / SINIRLAR
+17 ayrı image_gen üretimi yapıldı; kapaktaki hatalı harita kaldırıldı, hidroponik akış okları düzeltildi, 2051 alan dağılım çubuğu yüzdeleri açık metinle gösterilecek şekilde değiştirildi. Bunlar da image_gen düzenlemesidir. Araç orijinalleri 1672×941; orijinaller imagegen/originals altında korundu. 1920×1080 teslim için yalnız oran koruyan raster boyutlandırma uygulandı. Kodla sahne, yazı, grafik veya kart çizilmedi. Yeni PDF/PPTX üretilmedi. generation_manifest_final.json kullanılan bütün üretim promptlarını, düzeltmeleri ve araç çıktı yollarını içerir.
+
+KAYNAKLI SAYILAR / TEMSİLİ GÖRSELLER
+032’de doğrulanan Konya %8,7 göreli baskı sonucu, kaynaklı 331/739 km iklimsel sınır kayması ve gerçek 2051 motor çıktıları kullanıldı; model bu tur yeniden tasarlanmadı veya yeniden çalıştırılmadı. Su 14,2 m³/yıl, deniz tahsisi 0, seçili depo 10 m³, günlük Mayıs yedek kontrolü 1,2 m³; alabaş %75 ve diğer beş ürün %5; hidroponik %94,6/sera %5,4; 4204 kg/yıl model hasadı;119,2 MWh/yıl elektrik eşdeğeri. Kapalı devre suyu ikinci kez kaynak sayılmadı.
+Fotoğraf hissindeki sahneler, cihaz, düzenek, laboratuvar ve coğrafi çizimler AI üretimi temsili anlatımdır; gerçekleşmiş saha/deney fotoğrafı değildir. PWN şematik, Arktik sürüm hedefi ayrı; numune ayrı işlem; deneyde “Henüz ölçülmedi” korunur. Slayt09 gerçek uygulama ekranını referans alarak image_gen ile hazırlanmış görsel anlatımdır, değişmeden alınmış yeni bir ekran görüntüsü diye kullanılmamalıdır. Ekip portresi/sertifikası üretilmedi; rol ve başarılar ekip beyanıdır. Stil içinde görülen yaprak/damla motifleri resmî kurum logosu değildir.
+
+DOĞRULAMA — BU TUR
+17/17 görsel üretim çıktısı ve dosya varlığı, 17/17 PNG 1920×1080 ölçüsü ve ZIP bütünlüğü doğrulandı. Her araç çıktısı içerik/yazı/görsel ilişkisi bakımından incelendi; 01/10/14 düzeltildi. Native SVG metin taşma testi bu yeni raster sette uygulanmadı; 032’nin SVG testleri bu sete aktarılmaz. PNG'ler image_checks.json ile kayıtlı. Backend testleri/build bu tur çalıştırılmadı; önceki 030/032 tarihlerine ait kontroller geçerlidir. Ana uygulama, bilimsel motor, veri katsayıları ve PRE/POST kayıtları değiştirilmedi.
+
+DOSYALAR
+presentation/imagegen/slides/*, originals/*, generation_manifest_final.json, image_checks.json, AgroHydro_Gorsel_Uretim_17_PNG.zip; presentation/.build/package_imagegen.mjs (yalnız boyutlandırma), record_imagegen_delivery.py (paket/kayıt); presentation/PRESENTATION_MANIFEST.md, STYLE_TOKENS.json; docs/ANA_CHAT_TESLIM.txt ve BUILD_STATUS.md.
+
+GÖREV DURUMU
+Görsel üretim aracıyla 17 ayrı PNG teslimi tamamlandı. Gerçek Arktik su ölçümü/numunesi, laboratuvar protokolü ve kontrollü üretim deneyi ilerideki fiziksel araştırma kapsamıdır.
+
+---
+TARİHSEL 032 — ÖNCEKİ KODLA ÇİZİM YAKLAŞIMI KULLANICI TARAFINDAN 033 İLE DEĞİŞTİRİLDİ:
+
 TESLİM 033 — GITHUB / VERCEL YAYINI · 28 EYLÜL 2026
 
 Üretim: https://agrohydrolatest.vercel.app · Depo: https://github.com/NestaLoda/agrohydrolatest . main otomatik Vercel dağıtımına bağlı. Python 3.12 API + Vite statik arayüz dağıtımı Ready; uygulama commit'i 8ce12b6. Ayrıntılı operasyon kaydı docs/DEPLOYMENT.md, kümülatif teslim docs/ANA_CHAT_TESLIM.txt.

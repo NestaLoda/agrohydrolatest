@@ -67,7 +67,7 @@ export default function JuryDemo({overview,benchmarks,onContext,onExit}:{overvie
   const northTotals=obj(obj(northPlan?.plan).totals),northStory=obj(northPlan?.decision_story),northProduction=obj(northStory.production)
   const northMethods=list(northProduction.methods)
   const changedCrops=before&&after?JSON.stringify(list(before.crops).map(c=>[c.id,Math.round(n(c.share_pct)*10)]))!==JSON.stringify(list(after.crops).map(c=>[c.id,Math.round(n(c.share_pct)*10)])):false
-  const binding=result?.constraints.find(c=>c.binding)
+  const binding=result?.constraints.find(c=>c.binding&&c.capacity>0)
   const waterBefore=result?.current.totals.water_m3,waterAfter=result?.optimized?.totals.water_m3
 
   const facts=stepIndex===0?[["KAYNAKLI DESEN",String(context?.region.year||'—')],["BÖLGE",str(context?.region.name)||'Konya']]

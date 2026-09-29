@@ -72,9 +72,10 @@ export default function TurkeyDecisionSupport({context,result,stale=false}:Props
 
   return <section className={`turkey-decision-support verdict-${tone}`} aria-label="Karar desteği">
     <header className="decision-support-heading"><h2><Icon name={tone==='bad'?'close':tone==='good'?'check':'compare'} size={17}/> Karar vericiye eylem</h2><small className="decision-support-status">{stale?'ÖNCEKİ SENARYO':plan?partial?'SINIRLI KAPSAM':'HESAPLANAN ÖNERİ':'HEDEFLER UYUŞMUYOR'}</small></header>
-    <p className="decision-support-summary"><strong className="decision-support-verdict">{verdict}</strong> · {summary}</p>
-    <ul><li><strong>Hangi payı değiştirmeli?</strong>{recommendation}</li><li><strong>Neden?</strong>{reason}</li><li><strong>Neyi korumalı?</strong>{action}</li></ul>
+    <p className="decision-primary-action">{recommendation}</p>
+    <p className="decision-guardrail"><Icon name={tone==='bad'?'close':'source'} size={14}/>{action}</p>
     <details className="decision-action-details"><summary>Detaylı eylem hesabı</summary>
+      <p className="decision-support-summary"><strong className="decision-support-verdict">{verdict}</strong> · {summary}</p><p><b>Neden bu karar?</b> {reason}</p>
       <p>Karşılaştırma aynı koşunun seçilen ve önerilen deseni arasındadır. {String(context.region.year)} yılı il kayıtları başlangıç dayanağıdır; su ve üretim sonuçları model hesabıdır.</p>
       <p>{partial?'Hesabı tamamlanan ürünlerde ':''}Seçilen su: {number(currentWater,1)} m³ · Önerilen su: {number(plannedWater,1)} m³ · Sulama suyu sınırı: {number(budget,1)} m³{pressure.status==='over'?` · Seçilen desenin eksik kalan suyu: ${number(pressure.deficitM3,1)} m³`:''}.</p>
       {plan?<div className="table-scroll"><table><thead><tr><th>Ürün</th><th>Seçilen → önerilen alan</th><th>Birim alan su ihtiyacı</th><th>Korunacak en az / seçilen üretim</th></tr></thead><tbody>{plan.crops.map(c=>{

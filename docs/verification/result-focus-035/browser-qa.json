@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-29",
+  "method": "Cua browser UI on local production build; desktop only",
+  "viewports_css_px": [
+    [
+      1280,
+      720
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "checks": {
+    "turkey_real_water20_optimizer": "PASS",
+    "turkey_water_change_and_unplanted_area_visible": "PASS: 20% less model water, 85.9% planted, 14.1% unplanted",
+    "turkey_field_bottom_1280x720": 689.828125,
+    "turkey_field_bottom_1440x900": 705.875,
+    "north_methods_bottom_1280x720": 697.375,
+    "north_water_advice_bottom_1280x720": 704.953125,
+    "north_methods_bottom_1440x900": 707.765625,
+    "horizontal_overflow_both_desktops": false,
+    "turkey_stale_result_and_disabled_pdf": "PASS",
+    "north_stale_pdf": "PASS",
+    "north_2051_sources": "14.2 m3 stored precipitation; no desalination allocation shown",
+    "north_crop_drilldown": "75 m2 Alabas, hydroponics, 10.7 m3/y new water in 2026 run; no per-crop source allocation fabricated",
+    "north_critical_definition": "Daily replay monthly average maximum backup requirement; not final unmet demand",
+    "jury_8_steps_and_exit_restore": "PASS; 2051 normal scenario restored",
+    "jury_binding_label_after_fix": "Yerel tatli su; zero-capacity greenhouse no longer featured",
+    "north_pdf_ui_request": "HTTP 200 in local server log; native download event timed out in IAB automation, downloaded file not verified",
+    "final_browser_console_errors": []
+  },
+  "screenshots_note": "Native in-app browser screenshots; filenames identify tested CSS viewport, capture may include host scaling/background.",
+  "automated_tests": {
+    "frontend_node": {
+      "passed": 25,
+      "command": "node --experimental-strip-types --test frontend/tests/*.test.ts"
+    },
+    "backend_pytest": {
+      "passed": 164,
+      "files": [
+        "test_north_decision_story.py",
+        "test_north_optimizer.py",
+        "test_north_field_rebuild.py",
+        "test_north_validation.py",
+        "test_turkey_reference.py",
+        "test_decision_reports.py",
+        "test_planning.py",
+        "test_planning_objectives.py"
+      ]
+    },
+    "production_build": "PASS",
+    "frontend_diff_check": "PASS"
+  }
+}

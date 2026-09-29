@@ -8,6 +8,8 @@ import NorthValidationDesk from './NorthValidationDesk'
 import {FieldResearchSummary,ControlledPilotPanel} from './NorthFieldPanels'
 import NorthProductionPurpose from './NorthProductionPurpose'
 import {ClimateInputs,NorthSimulation} from './NorthSimulation'
+import NorthEnergyExplanation from './NorthEnergyExplanation'
+import {NorthWaterVisual} from '../components/DecisionVisuals'
 import {FutureTimeline,ClimateFrontier,WaterSecurity,FieldChips,waterLabel} from './NorthDecisionStory'
 
 const currentYear=new Date().getFullYear()
@@ -29,9 +31,12 @@ export default function NorthConsole({fieldRequested=0,onFieldChange,onProducer,
   const areaValid=areaDraft.trim()!==''&&Number.isFinite(Number(areaDraft))&&Number(areaDraft)>=1&&Number(areaDraft)<=10000
   const [submitted,setSubmitted]=useState<Request>(startRequest)
   const [request,setRequest]=useState<Request>(startRequest),[result,setResult]=useState<JsonRecord|null>(null),[busy,setBusy]=useState(true),[error,setError]=useState('')
-  const [detail,setDetail]=useState(''),[field,setField]=useState(false),[manual,setManual]=useState<string[]>([]),[nonce,setNonce]=useState(0)
-  const detailRef=useRef<HTMLDivElement|null>(null)
-  useEffect(()=>{if(detail)detailRef.current?.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth",block:"nearest"})},[detail])
+  const [expanded,setExpanded]=useState<string[]>(['water','production','energy','sensitivity']),[field,setField]=useState(false),[manual,setManual]=useState<string[]>([]),[nonce,setNonce]=useState(0)
+  const detailRefs=useRef<Record<string,HTMLDetailsElement|null>>({})
+  function focusDetail(id:string){
+    setExpanded(previous=>previous.includes(id)?previous:[...previous,id])
+    detailRefs.current[id]?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'})
+  }
   const controller=useRef<AbortController|null>(null)
   const onPlanResultRef=useRef(onPlanResult)
   useEffect(()=>{onPlanResultRef.current=onPlanResult},[onPlanResult])
@@ -62,9 +67,21 @@ export default function NorthConsole({fieldRequested=0,onFieldChange,onProducer,
       {(dirty||busy&&result)&&<div className="ns-pending" role="status">{busy?'Simülasyon çalışıyor; son tamamlanan sonuç gösteriliyor.':'Ayarlar değişti. Yeni öneriyi görmek için soldan “Simülasyonu çalıştır”.'}</div>}
       {error&&<div className="north-error" role="alert">{error}<button onClick={simulate}>Yeniden dene</button></div>}
       {!result&&!error?<div className="north-loading"><Icon name="north" size={35}/><b>İklim → ürünler → su → üretim</b><span>İlk simülasyon hazırlanıyor.</span></div>:result&&<>
-        <NorthSimulation stale={dirty||busy} onProducer={onProducer} result={result} onDetail={id=>setDetail(detail===id?'':id)}/>
-        <div className="north-detail-tabs" aria-label="Plan ayrıntıları">{[['production','seed','Üretim tablosu'],['time','north','Dönem analizi'],['water','water','Su analizi'],['energy','energy','Enerji hesabı'],['sensitivity','compare','Kararı ne değiştirir?'],['crops','seed','Adaylar'],['evidence','source','Kanıt / hesap']].map(([id,icon,label])=><button key={id} aria-expanded={detail===id} onClick={()=>setDetail(detail===id?'':id)}><Icon name={icon} size={15}/>{label}<span>{detail===id?'−':'+'}</span></button>)}</div>
-        {detail&&<div ref={detailRef} className="north-detail-content">{detail==='production'&&<ProductionTable allocations={allocations}/ >}{detail==='time'&&<FutureTimeline request={obj(result.request)}/ >}{detail==='water'&&<><StorageDesign result={result}/><WaterFlow totals={totals}/><WaterSecurity story={obj(result.decision_story)}/><MonthlyWater rows={list(plan.monthly)} reliability={list(result.daily_reliability)}/></>}{detail==='energy'&&<EnergyDetail result={result}/ >}{detail==='sensitivity'&&<Sensitivity rows={sensitivity}/ >}{detail==='crops'&&<><ClimateFrontier candidates={obj(result.candidates)}/><CandidateDetails rows={candidates}/></>}{detail==='evidence'&&<EvidenceDetail result={result}/ >}</div>}
+        <NorthSimulation stale={dirty||busy} onProducer={onProducer} result={result} onDetail={focusDetail}/>
+        <NorthWaterVisual result={result}/>
+        <header className="result-analysis-heading"><span>SONUCUN AYRINTILARI{dirty||busy?' · ÖNCEKİ SENARYO':''}</span><h2>Su, üretim ve enerji hesabının devamı</h2><p>Yukarıdaki planın aylık su dengesi, üretim takvimi ve karar gerekçeleri.</p></header>
+        <nav className="north-detail-tabs" aria-label="Plan ayrıntılarına git">{[['water','water','Su analizi'],['production','seed','Üretim tablosu'],['energy','energy','Enerji hesabı'],['sensitivity','compare','Kararı ne değiştirir?'],['time','north','Dönem analizi'],['crops','seed','Adaylar'],['evidence','source','Kanıt / hesap']].map(([id,icon,label])=><button key={id} onClick={()=>focusDetail(id)}><Icon name={icon} size={15}/>{label}<span>↓</span></button>)}</nav>
+        <div className="result-analysis-stack">{[['water','Aylık su dengesi ve depolama'],['production','Üretim miktarları, yöntemler ve sezonlar'],['energy','Enerji ihtiyacı ve altyapı'],['sensitivity','Karar gerekçeleri ve belirsizlikler'],['time','Gelecek dönemlerin karşılaştırması'],['crops','İklim adayları ve kaynak filtresi'],['evidence','Veri kaynakları ve hesap kaydı']].map(([id,label])=><details key={id} ref={node=>{detailRefs.current[id]=node}} open={expanded.includes(id)} onToggle={e=>{const open=e.currentTarget.open;setExpanded(previous=>open?previous.includes(id)?previous:[...previous,id]:previous.includes(id)?previous.filter(value=>value!==id):previous)}} className={`result-analysis-section north-analysis-${id}`}>
+          <summary>{label}</summary>{expanded.includes(id)&&<div className="north-detail-content">
+            {id==='water'&&<><WaterFlow totals={totals}/><MonthlyWater rows={list(plan.monthly)} reliability={list(result.daily_reliability)}/><details><summary>Depo tasarımı ve su güvenliği gerekçeleri</summary><StorageDesign result={result}/><WaterSecurity story={obj(result.decision_story)}/></details></>}
+            {id==='production'&&<div className="table-scroll"><ProductionTable allocations={allocations}/></div>}
+            {id==='energy'&&<><NorthEnergyExplanation result={result}/><details><summary>Isıtma, elektrik gücü ve model aralıkları</summary><EnergyDetail result={result}/></details></>}
+            {id==='sensitivity'&&<Sensitivity rows={sensitivity}/>}
+            {id==='time'&&<FutureTimeline request={obj(result.request)}/>}
+            {id==='crops'&&<><ClimateFrontier candidates={obj(result.candidates)}/><CandidateDetails rows={candidates}/></>}
+            {id==='evidence'&&<EvidenceDetail result={result}/>}
+          </div>}
+        </details>)}</div>
         <div className="ns-field-research"><div><Icon name="sensor" size={21}/><span><b>Bu modeli sahada güçlendireceğiz.</b><small>Yağış/karı depolama planı → izinli su numunesinde tuzluluk ve kullanılabilirlik → uygun girdileri güncelle → aynı simülasyonu yeniden çalıştır.</small></span></div><button onClick={()=>setField(true)}>Saha + üretim testi <Icon name="arrow" size={14}/></button><FieldChips/></div>
       </>}
     </section>{field&&<FieldDialog request={(result?.request as Request)||submitted} result={result} onClose={()=>setField(false)}/>}

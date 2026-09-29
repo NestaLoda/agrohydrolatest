@@ -2,7 +2,7 @@ import {useState} from 'react'
 import {Icon} from '../ui'
 import './decision-report.css'
 
-export default function DecisionReportButton({kind,request,disabled=false}:{kind:'turkiye'|'north';request:unknown;disabled?:boolean}){
+export default function DecisionReportButton({kind,request,disabled=false,compact=false}:{kind:'turkiye'|'north';request:unknown;disabled?:boolean;compact?:boolean}){
   const [busy,setBusy]=useState(false),[error,setError]=useState('')
   async function download(){
     setBusy(true);setError('')
@@ -15,5 +15,5 @@ export default function DecisionReportButton({kind,request,disabled=false}:{kind
       document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30_000)
     }catch(e){setError(e instanceof Error?e.message:String(e))}finally{setBusy(false)}
   }
-  return <section className={`decision-report-action ${kind}`} aria-label="Karar verici raporu"><div><span>KARAR VERİCİ ÇIKTISI</span><h3>{kind==='turkiye'?'Mevcut desen → uygulanabilir öneri':'Su + üretim + saha doğrulaması'}</h3><p>Ürün oranları, su hesabı, somut eylemler ve bilimsel sınırlar tek raporda.</p></div><button type="button" disabled={disabled||busy} onClick={()=>void download()}><Icon name="source" size={17}/>{busy?'PDF hazırlanıyor…':'Karar raporunu indir · PDF'}</button>{error&&<small role="alert">{error}</small>}</section>
+  return <section className={`decision-report-action ${kind}${compact?' compact-report':''}`} aria-label="Karar verici raporu">{!compact&&<div><span>KARAR VERİCİ ÇIKTISI</span><h3>{kind==='turkiye'?'Mevcut desen → uygulanabilir öneri':'Su + üretim + saha doğrulaması'}</h3><p>Ürün oranları, su hesabı, somut eylemler ve bilimsel sınırlar tek raporda.</p></div>}<button type="button" disabled={disabled||busy} title={disabled?'Girdiler değişti; rapor için simülasyonu yeniden çalıştırın.':'Bu senaryonun ürün, su ve karar analizini indir.'} onClick={()=>void download()}><Icon name="source" size={17}/>{busy?'PDF hazırlanıyor…':'Karar raporunu indir · PDF'}</button>{error&&<small role="alert">{error}</small>}</section>
 }

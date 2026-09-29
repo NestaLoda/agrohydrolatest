@@ -122,7 +122,7 @@ function makeCharts(context:PlanningContext,r:SimulationResult):Chart[]{
 }
 
 export default function TurkeyAnalysisExplorer({context,result}:Props){
-  const [selected,setSelected]=useState('areas'),[opened,setOpened]=useState(false),chartRef=useRef<HTMLDivElement>(null)
+  const [selected,setSelected]=useState('areas'),[opened,setOpened]=useState(true),chartRef=useRef<HTMLDivElement>(null)
   const charts=makeCharts(context,result),chart=charts.find(c=>c.id===selected)||charts[0]
   function download(){
     const svg=chartRef.current?.querySelector('svg')
@@ -133,7 +133,7 @@ export default function TurkeyAnalysisExplorer({context,result}:Props){
     const anchor=document.createElement('a');anchor.href=url;anchor.download=`${result.request.region_id}-${chart.id}-${result.run_id.slice(0,10)}.svg`;anchor.click()
     setTimeout(()=>URL.revokeObjectURL(url),1000)
   }
-  return <details className="turkey-analysis-explorer" onToggle={e=>setOpened(e.currentTarget.open)}>
+  return <details open={opened} className="turkey-analysis-explorer" onToggle={e=>setOpened(e.currentTarget.open)}>
     <summary><Icon name="layers" size={16}/> Analiz laboratuvarı · {charts.length} grafik</summary>
     {opened&&<div className="analysis-explorer-body"><div className="analysis-explorer-toolbar"><label>Grafik<select aria-label="Analiz grafiği" value={chart.id} onChange={e=>setSelected(e.target.value)}>{charts.map(c=><option key={c.id} value={c.id}>{c.label}</option>)}</select></label><button type="button" onClick={download} disabled={!!chart.empty}>SVG indir</button></div>
       <div className="analysis-explorer-title"><h3>{chart.title}</h3><span>Son koşu · {result.run_id.slice(0,8)}</span></div>

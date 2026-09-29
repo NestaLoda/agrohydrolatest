@@ -5,8 +5,8 @@ import './north-simulation.css'
 import './north-decision-pass.css'
 import ProducerRecommendation, {contextFromNorth,type ProducerContext} from '../components/ProducerRecommendation'
 import NorthWaterStrategy from './NorthWaterStrategy'
-import NorthEnergyExplanation from './NorthEnergyExplanation'
 import DecisionReportButton from '../components/DecisionReportButton'
+import {annualEnergy} from '../resultPresentation'
 
 const n=(v:unknown)=>typeof v==='number'?v:0
 const s=(v:unknown)=>typeof v==='string'?v:''
@@ -38,26 +38,33 @@ export function NorthSimulation({result,onDetail,onProducer,stale=false}:{result
   const request=obj(result.request),plan=obj(result.plan),totals=obj(plan.totals),story=obj(result.decision_story),production=obj(story.production)
   const crops=list(production.crops),methods=list(production.methods),area=n(request.area_m2)
   const allocations=list(plan.allocations)
+  const energy=annualEnergy(totals.equivalent_electricity_kwh)
   const cropWater=(id:unknown)=>{const rows=allocations.filter(a=>a.crop_id===id);return rows.length&&rows.every(a=>typeof a.water_m3==='number')?rows.reduce((sum,a)=>sum+n(a.water_m3),0):null}
   const risk=list(story.actions).find(a=>a.id==='sensitivity')
   const selectedLabel=request.target_year?String(request.target_year):({recent:'Yakın dönem',historical:'Tarihsel',near:'2030',mid:'2050',late:'2090'} as Record<string,string>)[s(request.horizon_id)]
   if(!crops.length)return <div className="ns-no-plan" role="status"><Icon name="water"/><h2>Bu koşullarda üretim kurulamıyor.</h2><p>Soldan su kaynaklarını, enerji sınırını ve etkin ürünleri gözden geçirip simülasyonu yeniden çalıştırın.</p></div>
   return <>
+    <div className="result-command-bar"><span>{stale?'ÖNCEKİ SENARYONUN SONUCU':'SEÇİLEN KOŞULLARDA HESAPLANAN PLAN'}</span><DecisionReportButton compact kind="north" request={request} disabled={stale}/></div>
+    <div className="north-result-metrics" aria-label="Üretim ve su planının temel sonuçları">
+      <div className="metric-water"><span><Icon name="water" size={16}/> Yeni su ihtiyacı</span><strong>{number(totals.water_m3,1)} <small>m³/yıl</small></strong><small>Üretime dışarıdan sağlanan su</small></div>
+      <div className="metric-production"><span><Icon name="seed" size={16}/> Hesaplanan hasat</span><strong>{number(totals.production_kg,0)} <small>kg/yıl</small></strong><small>{number(area,0)} m² planlama alanında</small></div>
+      <div className="metric-energy"><span title="Elektrik tüketimi + ısı ihtiyacı / COP. Birim dönüşümü: 1 MWh = 1.000 kWh."><Icon name="energy" size={16}/> Enerji · elektrik eşdeğeri</span><strong>{number(energy.value,1)} <small>{energy.unit}</small></strong><small>{request.energy_limit_kwh==null?'Yerel enerji sınırı tanımlı değil':'Tanımlı sınırla karşılaştırılan ihtiyaç'}</small></div>
+    </div>
     <div className="ns-decision-grid">
       <NorthWaterStrategy result={result} onDetail={onDetail}/>
       <div className="ns-production-panel"><div className="ns-production-link"><span><Icon name="seed" size={16}/><b>B · ÖNERİLEN ÜRETİM PLANI</b></span><span>Hedef: {({fresh_mass:'taze ürün',protein:'bitkisel protein',food_energy:'besin enerjisi'} as Record<string,string>)[s(request.production_purpose)]||'taze ürün'}</span></div>
         <div className="ns-main-grid">
-          <section className="ns-crops"><header><h3><Icon name="seed" size={17}/>Önerilen ürün deseni <abbr title="Hangi ürünün ne kadar üretileceğini gösteren dağılım." aria-label="Ürün deseni: hangi ürünün ne kadar üretileceğini gösteren dağılım">ⓘ</abbr></h3><span>Alan payı · model hasadı</span></header><div className="ns-field" role="img" aria-label={crops.map(c=>`${s(c.name)} yüzde ${number(n(c.area_m2)/area*100)}`).join(', ')}>{crops.map(c=><i key={s(c.crop_id)} style={{width:`${n(c.area_m2)/area*100}%`,backgroundColor:cropColors[s(c.crop_id)]||'#577c51'}} title={`${s(c.name)} · alan payı %${number(n(c.area_m2)/area*100)}`}/>)}{n(totals.area_m2)<area-.01&&<i className="ns-unused" style={{width:`${(1-n(totals.area_m2)/area)*100}%`}} title="Kullanılmayan alan"/>}</div><div className="ns-crop-list">{crops.map(c=><div key={s(c.crop_id)}><i style={{background:cropColors[s(c.crop_id)]||'#577c51'}}/><b>{s(c.name)}</b><strong>%{number(n(c.area_m2)/area*100)}</strong><span>{number(c.area_m2)} m² · {number(c.production_kg,0)} kg/yıl · {cropWater(c.crop_id)===null?'Yeni su hesaplanmadı':`${number(cropWater(c.crop_id),1)} m³/yıl yeni su`} · {(Array.isArray(c.methods)?c.methods:[]).map(m=>methodNames[String(m)]).join(' + ')}</span></div>)}</div><button className="ns-inline" onClick={()=>onDetail('production')}>Ürün × yöntem × sezon ayrıntısı <Icon name="arrow" size={13}/></button></section>
-          <section className="ns-methods"><header><h3><Icon name="greenhouse" size={17}/>Üretim yöntemleri <abbr title="Hidroponik: bitkilerin toprak yerine besin içeren suyla yetiştirildiği yöntem." aria-label="Hidroponik yöntemi açıklaması">ⓘ</abbr></h3></header>{methods.map(m=><div className={`ns-method ${s(m.id)}`} key={s(m.id)}><div><span>{methodNames[s(m.id)]}</span><b>%{number(n(m.area_m2)/area*100)} alan</b></div><div className="ns-track"><i style={{width:`${n(m.area_m2)/area*100}%`}}/></div></div>)}<p>Su kaynağı tesis toplamında tahsis edilir; ürünlere ayrı kaynak payı yazılmaz. Enerji gereği: {number(totals.equivalent_electricity_kwh,0)} kWh/yıl elektrik eşdeğeri.</p><button className="ns-inline" onClick={()=>onDetail('crops')}>Açık tarla adayları ve zemin sınırı <Icon name="arrow" size={13}/></button></section>
+          <section className="ns-crops"><header><h3><Icon name="seed" size={17}/>Önerilen ürün deseni <abbr title="Hangi ürünün ne kadar üretileceğini gösteren dağılım." aria-label="Ürün deseni: hangi ürünün ne kadar üretileceğini gösteren dağılım">ⓘ</abbr></h3><span>Alan payı · model hasadı</span></header><div className="ns-field" role="img" aria-label={crops.map(c=>`${s(c.name)} yüzde ${number(n(c.area_m2)/area*100)}`).join(', ')}>{crops.map(c=><i key={s(c.crop_id)} style={{width:`${n(c.area_m2)/area*100}%`,backgroundColor:cropColors[s(c.crop_id)]||'#577c51'}} title={`${s(c.name)} · alan payı %${number(n(c.area_m2)/area*100)}`}/>)}{n(totals.area_m2)<area-.01&&<i className="ns-unused" style={{width:`${(1-n(totals.area_m2)/area)*100}%`}} title="Kullanılmayan alan"/>}</div><div className="ns-crop-list">{crops.map(c=><details className="ns-crop-compact" key={s(c.crop_id)}><summary><span className="ns-crop-heading"><i style={{background:cropColors[s(c.crop_id)]||'#577c51'}}/><b>{s(c.name)}</b><strong>%{number(n(c.area_m2)/area*100)}</strong><em>{number(c.production_kg,0)} <small>kg/yıl</small></em></span><span className="ns-crop-track"><i style={{width:`${n(c.area_m2)/area*100}%`,background:cropColors[s(c.crop_id)]||'#577c51'}}/></span></summary><p>{number(c.area_m2)} m² · {(Array.isArray(c.methods)?c.methods:[]).map(m=>methodNames[String(m)]).join(' + ')} · {cropWater(c.crop_id)===null?'Yeni su hesaplanmadı':`${number(cropWater(c.crop_id),1)} m³/yıl yeni su`}. Su kaynağı tesis toplamında tahsis edilir.</p></details>)}</div><button className="ns-inline" onClick={()=>onDetail('production')}>Ürün × yöntem × sezon ayrıntısı <Icon name="arrow" size={13}/></button></section>
+          <section className="ns-methods"><header><h3><Icon name="greenhouse" size={17}/>Üretim yöntemleri <abbr title="Hidroponik: bitkilerin toprak yerine besin içeren suyla yetiştirildiği yöntem." aria-label="Hidroponik yöntemi açıklaması">ⓘ</abbr></h3></header>{methods.map(m=><div className={`ns-method ${s(m.id)}`} key={s(m.id)}><div><span>{methodNames[s(m.id)]}</span><b>%{number(n(m.area_m2)/area*100)} alan</b></div><div className="ns-track"><i style={{width:`${n(m.area_m2)/area*100}%`}}/></div></div>)}<button className="ns-inline" onClick={()=>onDetail('crops')}>Açık tarla adayları ve zemin sınırı <Icon name="arrow" size={13}/></button></section>
         </div>
       </div>
     </div>
     <ReferenceChange request={request}/>
     <div className="ns-pilot-note"><Icon name="energy" size={16}/><span><b>{obj(obj(result.infrastructure).energy).power_screen_status==='DESIGN_REVIEW'?'Elektrik gücü sınırını doğrula.':obj(risk?.metrics).id==='yield'?'Ölçekleme öncesi pilot verisi gerekli.':s(risk?.title)||'Yerel üretim koşullarını doğrula.'}</b> Su kaynağı, arıtma ve gerçek enerji/hasat kaydı uygulama kararı için gerekli.</span><button onClick={()=>onDetail('sensitivity')}>Kararın sınırları ↗</button></div>
-    <DecisionReportButton kind="north" request={request} disabled={stale}/>
-    <ProducerRecommendation context={contextFromNorth(result)} stale={stale} onOpen={onProducer}/>
-    <NorthEnergyExplanation result={result}/>
+
+
     {!request.target_year&&<EvolutionSummary request={request} label={selectedLabel}/>}
+    <details className="result-secondary"><summary>Uygulama koşulları ve destek seçenekleri</summary><ProducerRecommendation context={contextFromNorth(result)} stale={stale} onOpen={onProducer}/></details>
     <div className="ns-basis"><span><Icon name="source" size={13}/>Model önerisi · {number(area,0)} m² planlama birimi · {request.objective==='balanced'?'Hasat + su + enerji dengesi':request.objective==='water'?'Su önceliği':'Enerji önceliği'}</span><button onClick={()=>onDetail('evidence')}>Neden bu ürünler?</button></div>
   </>
 }

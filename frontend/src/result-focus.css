@@ -1,0 +1,177 @@
+/* Result hierarchy: decision, visible tradeoff, real comparison, optional audit. */
+.result-command-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0 10px;min-height:34px}
+.result-command-bar>span{font-size:10px;font-weight:700;letter-spacing:1px;color:#557268}
+.decision-report-action.compact-report{padding:0;margin:0;border:0;background:none;flex:none}
+.decision-report-action.compact-report button{font-size:12px;padding:9px 13px;white-space:nowrap}
+.decision-report-action.compact-report>small{max-width:300px}
+.result-secondary{border-top:1px solid #cddbd2;padding:11px 0;margin:0;color:#466356}
+.result-secondary>summary{font-size:12px;font-weight:600;cursor:pointer}
+.result-secondary[open]>summary{margin-bottom:12px}
+.analysis-canvas .turkey-decision-support{padding:12px 15px;margin:0 0 12px;border-radius:8px;border:1px solid #bccfbc;border-left:4px solid #488367;background:#edf3e9}
+.analysis-canvas .turkey-decision-support.verdict-bad{background:#f9ece7;border-color:#d9b1a1;border-left-color:#b76349}
+.analysis-canvas .turkey-decision-support.verdict-neutral{background:#eef0eb;border-color:#cbd3ca;border-left-color:#869a8a}
+.analysis-canvas .decision-support-heading{margin:0 0 4px}
+.analysis-canvas .decision-support-heading h2{font-size:11px;text-transform:uppercase;letter-spacing:.7px;margin:0}
+.analysis-canvas .decision-primary-action{font-size:clamp(18px,1.65vw,24px);font-weight:650;line-height:1.3;letter-spacing:-.35px;color:#204d39;margin:7px 0}
+.analysis-canvas .verdict-bad .decision-primary-action{color:#914831}
+.analysis-canvas .decision-guardrail{display:flex;align-items:start;gap:6px;font-size:12px;line-height:1.4;margin:5px 0;color:#596e5b}
+.decision-guardrail svg{flex:none;margin-top:2px}
+.analysis-canvas .decision-action-details{margin:6px 0 0;padding:0;border:0}
+.analysis-canvas .decision-action-details>summary{font-size:11px;cursor:pointer}
+.analysis-canvas .live-pattern{margin-bottom:8px;padding-bottom:8px}
+.analysis-canvas .live-heading{margin-bottom:6px}
+.analysis-canvas .live-heading h2{font-size:17px;font-weight:650}
+.analysis-canvas .field-toolbar{margin:0 0 4px}
+.analysis-canvas .climate-story{font-size:12px;margin:3px 0 10px}
+.live-pattern .live-water-heading.with-pressure{display:grid;grid-template-columns:1.25fr 1fr 160px;gap:16px;padding:13px 17px;margin:0 0 13px;border:1px solid #c5d9d8;border-left:4px solid #398296;border-radius:7px;background:#e7f0f0}
+.live-pattern .live-water-readout>span,.result-land-readout>span{display:flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:.5px;line-height:1.3}
+.live-pattern .live-water-readout>.result-big-number,.result-land-readout>strong{display:block;font-size:40px;font-weight:650;line-height:1.1;letter-spacing:-1.4px;font-variant-numeric:tabular-nums;margin:6px 0;color:#226c83}
+.result-land-readout{border-left:1px solid #c2d2c8;padding-left:18px}
+.result-land-readout>strong{color:#356646}
+.live-water-readout>b,.result-land-readout>b{display:block;font-size:13px;line-height:1.4}
+.live-pattern .live-water-readout>small,.result-land-readout>small{display:block;font-size:10px;line-height:1.5;margin-top:3px;color:#62766b}
+.live-pattern .water-pressure-gauge{width:160px;margin:0;max-width:none}
+.live-pattern .water-pressure-gauge svg{width:100%;max-height:120px}
+.analysis-canvas .farm-comparison{gap:12px}
+.analysis-canvas .crop-farm figcaption>span{font-size:13px;font-weight:700}
+.analysis-canvas .crop-farm figcaption small{font-size:10px}
+.analysis-canvas .planted-field{height:112px}
+.analysis-canvas .plot-label b{font-size:13px}
+.analysis-canvas .plot-label small{font-size:13px}
+.analysis-canvas .live-legend{margin:9px 0;gap:5px 13px}
+.analysis-canvas .live-legend button{font-size:12px}
+.analysis-canvas .farm-readout,.analysis-canvas .field-unassigned-note{font-size:11px}
+.analysis-canvas .live-water-details>summary{font-size:12px;cursor:pointer}
+.result-inline-warning{font-size:12px;color:#944b32;background:#f8e9e0;border-left:3px solid #b66843;padding:8px 10px;border-radius:3px}
+.north-console .north-canvas{padding:18px 24px}
+.north-console .north-canvas-heading h1{font-size:23px;line-height:1.2}
+.north-console .north-plan-context{font-size:11px;margin-top:6px}
+.north-result-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-block:1px solid #cfdbd3;padding:13px 0;margin:0 0 15px;gap:20px}
+.north-result-metrics>div{min-width:0;border-right:1px solid #d4ddd3;padding-right:10px}
+.north-result-metrics>div:last-child{border:0}
+.north-result-metrics span{display:flex;gap:7px;align-items:center;font-size:12px;font-weight:650}
+.north-result-metrics strong{display:block;font-size:34px;line-height:1.1;font-weight:650;letter-spacing:-1px;font-variant-numeric:tabular-nums;margin:7px 0 5px}
+.north-result-metrics strong small{font-size:12px;font-weight:500;letter-spacing:0;white-space:nowrap}
+.north-result-metrics>div>small{font-size:10px;color:#61776c;display:block}
+.metric-water{color:#216f8e}.metric-production{color:#2d704c}.metric-energy{color:#986922}
+.ns-decision-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:15px}
+.ns-decision-grid>.nw-strategy,.ns-decision-grid>.ns-production-panel{padding:14px;border-radius:9px;box-shadow:none}
+.ns-decision-grid .nw-strategy{background:#eaf2f3;border-color:#bbd5dd}
+.ns-decision-grid .nw-strategy>header span,.ns-production-panel .ns-production-link span b{font-size:10px;letter-spacing:.6px}
+.ns-decision-grid .nw-strategy h2{font-size:18px;margin-top:5px}
+.ns-decision-grid .nw-strategy>header button{font-size:11px}
+.nw-flow{margin:15px 0 10px}
+.nw-flow-stack{height:44px;display:flex;overflow:hidden;border-radius:6px;background:#dce5e4;gap:2px}
+.nw-flow-stack>span{display:flex;justify-content:center;align-items:center;color:white;min-width:0;transition:width .35s ease}
+.nw-flow-stack b{font-size:20px;font-weight:650}
+.nw-strategy .stored_precipitation{background:#32869c}.nw-strategy .allocated_freshwater{background:#5faebd}.nw-strategy .desalinated_seawater{background:#345b97}
+.nw-flow-destination{display:flex;align-items:center;gap:6px;font-size:11px;color:#467487;margin-top:5px;justify-content:flex-end}
+.nw-source-summary{gap:9px;padding:5px 0 12px}
+.nw-source-summary>b{display:none}
+.nw-source-summary>div{font-size:12px;gap:6px}
+.nw-source-summary strong{font-size:15px}.nw-source-summary strong small{display:none}
+.nw-source-summary i{height:10px;width:10px}
+.nw-critical-callout{display:flex;gap:10px;align-items:center;padding:11px;background:#f4ead5;border:1px solid #e0cba2;border-radius:6px;color:#7e5e26;margin:2px 0 8px}
+.nw-critical-callout>div{flex:1}.nw-critical-callout span{font-size:9px;letter-spacing:.5px;font-weight:700;display:block}
+.nw-critical-callout strong{font-size:22px;line-height:1.2;display:block;margin-top:3px}.nw-critical-callout>b{font-size:24px;font-variant-numeric:tabular-nums}.nw-critical-callout small{font-size:12px}
+.nw-month-detail>summary,.nw-assumptions>summary{font-size:11px;cursor:pointer;color:#497383}
+.nw-month-detail[open]{margin:12px 0}.nw-assumptions{margin-top:10px}
+.ns-decision-grid .nw-months{height:110px}.ns-decision-grid .nw-month-columns{height:88px}
+.ns-decision-grid .nw-month-columns>.nw-demand-bar,.ns-decision-grid .nw-source-stack{width:9px}
+.ns-decision-grid .nw-months>div>span,.nw-legend span,.nw-critical-definition{font-size:10px}
+.nw-advice{padding-top:10px;margin-top:10px}.nw-advice>b{font-size:12px;margin-bottom:5px}
+.nw-advice details{padding:6px 0}.nw-advice summary{font-size:12px;line-height:1.4}.nw-advice summary span{font-size:10px}.nw-advice p{font-size:11px}
+.ns-decision-grid .nw-caption{font-size:11px;line-height:1.5}
+.ns-production-panel .ns-main-grid h3{font-size:15px}
+.ns-production-panel .ns-main-grid header>span{font-size:10px}
+.ns-production-panel .ns-field{height:24px;margin:9px 0 12px}
+.ns-production-panel .ns-crop-list{display:grid;grid-template-columns:1fr 1fr;gap:11px 14px}
+.ns-production-panel .ns-crop-list>div{display:block;padding:0 0 8px;min-width:0}
+.ns-crop-heading{display:flex;gap:5px;align-items:center}
+.ns-crop-heading>i{height:8px;width:8px;border-radius:2px;flex:none}
+.ns-production-panel .ns-crop-heading>b{font-size:13px}.ns-production-panel .ns-crop-heading>strong{font-size:18px;margin-left:auto;font-variant-numeric:tabular-nums}
+.ns-crop-track{height:5px;border-radius:3px;background:#e4e9de;overflow:hidden;margin:5px 0}
+.ns-crop-track>i{display:block;height:100%;transition:width .35s ease}
+.ns-production-panel .ns-crop-output>b{display:block;font-size:15px;font-variant-numeric:tabular-nums}.ns-crop-output small{font-size:10px;font-weight:400}
+.ns-production-panel .ns-crop-output>span{display:block;font-size:10px;white-space:normal;overflow:visible;line-height:1.3;margin-top:3px;color:#617b68}
+.ns-crop-list details{margin-top:4px}.ns-crop-list details>summary{font-size:10px;color:#63836d;cursor:pointer}
+.ns-production-panel .ns-crop-list details>span{display:block;font-size:11px;white-space:normal;line-height:1.4;margin:5px 0}
+.ns-production-panel .ns-inline{font-size:11px;margin-top:6px}
+.ns-production-panel .ns-methods{padding-top:10px;margin-top:9px}.ns-production-panel .ns-method>div:first-child{font-size:11px}.ns-production-panel .ns-method b{font-size:12px}.ns-production-panel .ns-track{height:7px;margin:5px 0}
+.north-console .ns-change{padding:10px 13px}.north-console .ns-change small{font-size:10px}
+.north-console .ns-pilot-note{font-size:11px;margin:10px 0}.north-console .ns-basis{font-size:10px}
+@media(min-width:1100px) and (max-width:1350px){
+  .north-console{grid-template-columns:320px minmax(0,1fr)}.north-console .north-canvas{padding:15px 18px}
+  .north-result-metrics{gap:12px;padding:10px 0;margin-bottom:12px}.north-result-metrics strong{font-size:30px}
+  .ns-decision-grid{gap:10px}.ns-decision-grid>.nw-strategy,.ns-decision-grid>.ns-production-panel{padding:11px}
+  .ns-production-panel .ns-crop-list{gap:7px 10px}.ns-production-panel .ns-crop-list>div{padding-bottom:5px}
+  .nw-advice summary{font-size:11px}.nw-advice details{padding:5px 0}.nw-flow{margin:10px 0 7px}
+  .live-pattern .live-water-heading.with-pressure{grid-template-columns:1.2fr 1fr 135px;gap:10px;padding:10px 13px}
+  .live-pattern .water-pressure-gauge{width:135px}.live-pattern .live-water-readout>.result-big-number,.result-land-readout>strong{font-size:34px}
+}
+@media(prefers-reduced-motion:reduce){.nw-flow-stack>span,.ns-crop-track>i{transition:none}}
+
+/* One readable row per crop; the row itself opens amount/method/water details. */
+.ns-production-panel .ns-crop-list{display:grid;grid-template-columns:1fr 1fr;gap:4px 15px}
+.ns-production-panel .ns-crop-list .ns-crop-compact{margin:0;padding:6px 0;border:0;border-bottom:1px solid #e1e6d9}
+.ns-crop-compact>summary{display:block;list-style:none;cursor:pointer}
+.ns-crop-compact>summary::-webkit-details-marker{display:none}
+.ns-crop-compact>summary:focus-visible{outline:2px solid #35866b;outline-offset:3px}
+.ns-production-panel .ns-crop-compact .ns-crop-heading{display:grid;grid-template-columns:8px 1fr 48px;gap:3px 6px;align-items:center}
+.ns-production-panel .ns-crop-compact .ns-crop-heading strong{margin:0;text-align:right;font-size:18px}
+.ns-crop-heading em{grid-column:2/4;font-style:normal;font-size:15px;font-weight:650;text-align:left}
+.ns-crop-heading em small{font-size:10px;font-weight:400}
+.ns-production-panel .ns-crop-compact .ns-crop-track{display:block;margin:4px 0 0;height:4px}
+.ns-production-panel .ns-crop-compact p{font-size:12px;line-height:1.5;white-space:normal;margin:8px 0;color:#546e5a}
+.ns-production-panel .ns-methods{padding-top:7px;margin-top:7px}
+.ns-production-panel .ns-methods header{margin:0}
+.ns-production-panel .ns-methods .ns-method{padding:0;margin:4px 0}
+.ns-production-panel .ns-methods .ns-method>div{margin:0;padding:0}
+.ns-production-panel .ns-methods .ns-track{margin:3px 0;height:6px}
+.ns-production-panel .ns-field{height:13px;margin:7px 0}
+.nw-strategy details{padding-top:0}
+.nw-strategy .nw-advice details{padding:5px 0}
+.north-result-metrics .metric-energy>small{color:#87632d}
+.north-console .result-command-bar{min-height:30px;margin:0 0 5px}
+.north-console .north-result-metrics{padding:10px 0;margin-bottom:12px}
+.north-console .north-canvas-heading{margin-bottom:5px}
+.north-console .north-eyebrow{display:none}
+.north-console .north-result-metrics{padding:7px 0}
+.north-result-metrics strong{margin:4px 0}
+.ns-production-panel .ns-field{display:none}
+.analysis-canvas:has(.turkey-decision-support) .live-heading{display:none}
+.analysis-canvas .decision-action-details>summary{padding:0;margin:0;line-height:16px}
+.analysis-canvas .planted-field{height:104px}
+.north-console .ns-methods .ns-inline{font-size:10px}
+
+/* Summary first; calculations and charts continue openly below it. */
+.result-analysis-heading{border-top:2px solid #b8cdbf;padding-top:24px;margin:28px 0 18px}
+.result-analysis-heading>span{font-size:10px;font-weight:700;letter-spacing:1.3px;color:#587866}
+.result-analysis-heading h2{font-size:22px;line-height:1.3;color:#244f3d;margin:7px 0}
+.result-analysis-heading p{font-size:13px;line-height:1.6;color:#657b6d;margin:0}
+.result-analysis-stack{display:grid;gap:18px}
+.result-analysis-section{background:#fafbf6;border:1px solid #cddbd1;border-radius:9px;padding:18px 20px;scroll-margin-top:20px;min-width:0}
+.result-analysis-section>summary,.result-analysis-section>h3{font-size:16px;font-weight:650;line-height:1.5;color:#315941;margin:0;cursor:pointer}
+.result-analysis-section>h3{cursor:default;margin-bottom:16px}
+.result-analysis-section[open]>summary{padding-bottom:15px;border-bottom:1px solid #dde5dc;margin-bottom:16px}
+.north-console .result-analysis-section .north-detail-content{padding:0;margin:0;border:0;background:none;min-width:0;max-height:none;overflow:visible}
+.north-console .result-analysis-section p,.north-console .result-analysis-section small{line-height:1.65}
+.north-console .result-analysis-section h3{font-size:16px;margin:16px 0 12px}
+.north-console .result-analysis-section td,.north-console .result-analysis-section th{font-size:12px;padding:10px 12px}
+.north-analysis-water{border-top:3px solid #458aa0}
+.north-analysis-production{border-top:3px solid #50815a}
+.north-analysis-energy{border-top:3px solid #c39a49}
+.north-analysis-sensitivity{border-top:3px solid #91a096}
+.north-console .result-analysis-section .north-water-flow{max-width:680px;margin:0 auto 20px}
+.north-console .result-analysis-section .north-water-flow svg{width:100%;height:auto;max-height:240px}
+.north-console .result-analysis-section .north-water-flow>small{font-size:12px}
+.north-console .result-analysis-section .north-monthly{margin-top:16px}
+.north-console .result-analysis-section .north-energy-explanation{margin:0;border:0;background:transparent}
+.analysis-canvas .live-water-details[open]{margin-top:22px;padding:18px 20px;border:1px solid #c9dce0;border-top:3px solid #458aa0;border-radius:8px;background:#edf4f4}
+.analysis-canvas .live-water-details>summary{font-size:16px;font-weight:650;color:#28677a}
+.analysis-canvas .live-water-details p{font-size:12px;line-height:1.65}
+.analysis-canvas .turkey-analysis-explorer{margin:20px 0;border-radius:8px}
+.analysis-canvas .turkey-analysis-explorer>summary{font-size:15px;padding:16px}
+.analysis-canvas .result-analysis-section .outcome-chart figcaption{font-size:14px}
+.analysis-canvas .result-analysis-section .outcome-charts{gap:24px}
+@media(prefers-reduced-motion:reduce){.result-analysis-section{scroll-behavior:auto}}
