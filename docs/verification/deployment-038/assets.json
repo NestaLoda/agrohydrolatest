@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-09-29T22:21:10.722087+00:00",
+  "url": "https://agro-hydro.vercel.app",
+  "checks": [
+    {
+      "asset": "/assets/index-CBzRPP1w.js",
+      "sha256": "2426172439f5ceeefbf434dd4731183a52dad2f7098c1bd70230752d081dd2ec",
+      "matches_local_build": true
+    },
+    {
+      "asset": "/assets/index-uP80J6kT.css",
+      "sha256": "8647171eff15cabe393eeb28175677575843b77da7915c8c93dbd31d3137f365",
+      "matches_local_build": true
+    }
+  ],
+  "passed": true
+}

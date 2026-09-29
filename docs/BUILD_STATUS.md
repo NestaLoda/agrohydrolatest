@@ -1,3 +1,11 @@
+TESLİM 038 — GÜNCEL VERCEL YAYINI · 30 EYLÜL 2026
+
+035–037 arayüzü a25f773 commit'iyle GitHub main üzerinden Vercel'de yayımlandı. Güncel adres https://agro-hydro.vercel.app ; agrohydrolatest.vercel.app artık 404, aşağıdaki eski adresler tarihseldir. Projenin mevcut alan adı ayarı korundu. Uygulama verisi, backend, model/katsayılar ve kalıcı saha kayıtları değiştirilmedi; sunum dosyaları bu web yayınına dahil edilmedi.
+
+30 Eylül yeni doğrulaması: TypeScript/Vite build 85 modül başarılı; 27/27 frontend testi ve frontend diff kontrolü geçti. Vercel Ready; canlı JS/CSS SHA-256 değerleri son yerel build ile aynı. Güncel alanda 18 HTTP/API kontrolü (Türkiye ve Kuzey hesapları, referanslar, iki geçerli 2 sayfalık PDF, kalıcı kayıt için beklenen 409) geçti. Kanıt: docs/verification/deployment-038/. Bu tur yeni görsel tarayıcı/PDF incelemesi, mobil veya tam backend testi yapılmadı. Son tam backend 581/581 sonucu 28 Eylül/033; son masaüstü grafik QA 29 Eylül/037. Kaynak/senaryo/gerçek ölçüm ayrımı ve kalıcı saha kaydı için yerel uygulama gerekliliği sürer. Ayrıntılı kümülatif durum docs/ANA_CHAT_TESLIM.txt.
+
+--- ÖNCEKİ TESLİMLER / TARİHSEL NOTLAR ---
+
 TESLİM 037 — SONUÇLARIN ALTINDA ETKİLEŞİMLİ KARAR GRAFİKLERİ
 29 Eylül 2026 · Yerel üretim derlemesi tamamlandı
 

@@ -1,3 +1,41 @@
+TESLİM 038 — SUNUM ARKA PLANI
+30 Eylül 2026
+
+GÜNCEL YÖN
+Kullanıcı Canva düzenlemesini iptal etti; 15 slaytlık metin akışı sohbet içinde verildi. Eski Canva finali korunmuştur; ayrı çalışma kopyasındaki kısmi düzenlemeler tamamlanmış sunum değildir. Güncel istek her slaytta kullanılacak tek arka plan görselidir.
+
+BU TUR
+Yerleşik image_gen ile koyu petrol/zümrüt, metinsiz, ortası sade ve kenarları hafif topoğrafya/su çizgili arka plan üretildi. Dosya: presentation/assets/agrohydro-slide-background-v1.png. Üretim istemi aynı klasörde .prompt.txt olarak kayıtlıdır.
+
+DOĞRULAMA
+PNG açılabilirliği ve gerçek boyutu 1672×941 piksel olarak kontrol edildi; yaklaşık 16:9. 1920×1080 olduğu iddia edilmez. Görsel üretim çıktısı incelendi; metin/logo yok, içerik alanı sade. Model, uygulama veya veri değiştirilmedi; uygulama testleri yeniden çalıştırılmadı. 037 testleri 29 Eylül tarihli tarihsel sonuçlardır.
+
+SONRAKİ KULLANIM
+Kullanıcı görseli Canva'da arka plan olarak uygulayıp slaytları kendisi hazırlayacak. Canva düzenlemesini sürdürme yetkisi bu teslimle varsayılmaz.
+
+--- ÖNCEKİ TESLİMLER / TARİHSEL NOTLAR ---
+TESLİM 038 — GÜNCEL UYGULAMANIN VERCEL YAYINI
+30 Eylül 2026 · Europe/Istanbul
+
+GÜNCEL DURUM
+035–037'de yerelde tamamlanan sonuç ekranları, açık analiz akışı ve etkileşimli karar grafikleri GitHub main dalına gönderildi ve Vercel üretim ortamında yayımlandı. Uygulama commit'i a25f77391504d09f222a03f8f6a6b99da4359ab2. Güncel canlı adres: https://agro-hydro.vercel.app . Depo: https://github.com/NestaLoda/agrohydrolatest . Vercel projesi agrohydrolatest; dağıtım dpl_GnPdaadTE9bbhf3LKRL4BmfwBJKt, Ready. Projede önceden değiştirilmiş alan adı korundu; eski agrohydrolatest.vercel.app adresi artık geçerli değil (404). Aşağıdaki önceki teslimlerdeki eski adres ve “henüz yayımlanmadı” ifadeleri tarihsel kayıttır.
+
+BU TUR YAPILANLAR / DOSYALAR
+Mevcut frontend/src değişiklikleri, iki yeni frontend test dosyası, 035–037 doğrulama kanıtları ve teslim belgeleri sürüm kontrolüne alındı. Türkiye karar özetleri/ürün payı ve su farkı grafikleri; Kuzey su, üretim, aylık kaynak/talep ve enerji grafikleri canlı sürüme taşındı. Yeni özellik veya bilimsel katsayı eklenmedi. presentation altındaki bağımsız sunum değişiklikleri bu web yayınının parçası değildir; dosyalar yerelde korundu. Yayın kanıtı: docs/verification/deployment-038/api-smoke.json, assets.json, turkiye.pdf, north.pdf.
+
+YENİ DOĞRULAMA — 30 EYLÜL 2026, TÜRKİYE SAATİ
+npm run build --prefix frontend başarılı: 85 modül. node --experimental-strip-types --test frontend/tests/*.test.ts: 27/27 geçti. git diff --check -- frontend geçti. Vercel üretim dağıtımı Ready; canlı JavaScript ve CSS'nin SHA-256 değerleri yerel son derlemeyle birebir eşleşti (index-CBzRPP1w.js / index-uP80J6kT.css).
+Güncel canlı alanda 18 HTTP kontrolü geçti: ana sayfa, sağlık/kaynak/iklim uçları, Konya ve Gediz hesapları, Kuzey 2051 planı ve referans hesabı, iki PDF ve bulutta kalıcı kayıt için beklenen 409. PDF'ler indirildi, geçerli PDF ve ikişer sayfa olduğu denetlendi; bu tur sayfalar yeniden görsel incelenmedi. Yeni tarayıcı/masaüstü görsel turu veya mobil test yapılmadı. Son grafik masaüstü kontrolleri 29 Eylül/037'ye aittir. Backend değişmedi; tam 581 test bu tur yeniden çalıştırılmadı, son tam sonucu 28 Eylül/033'tür. JSON kanıtındaki UTC tarih 29 Eylül 22:21, Türkiye yerel saati 30 Eylül 01:21'dir.
+
+KAYNAK / HESAP / ÖLÇÜM SINIRI
+Kaynaklı veriler ve bilimsel model korunur. Canlı 2051/SSP245/100 m² koşullu hesabı 14,204993 m³ yeni su, 4204,3675 kg model hasadı ve 119231,2615 kWh elektrik eşdeğeri verdi; gerçek ölçüm değildir. Bu tur yeni saha/PWN/numune/pilot verisi üretilmedi. Bulutta kalıcı PWN/PRE–POST kaydı desteklenmez; yerel uygulama gerekir. Gerçek saha ve kontrollü deney bağımlılıkları sürer.
+
+SONRAKİ SOMUT ADIM / TESLİM
+Yayın işi tamamlandı; https://agro-hydro.vercel.app üzerinden güncel arayüz kullanılabilir. Bu kümülatif dosyayı ana sohbete yükleyebilir veya içeriğini yapıştırabilirsin. Başka sohbete otomatik mesaj gönderilmedi.
+Kısa geçmiş: 038 güncel Vercel yayını; 037 etkileşimli grafikler; 036 açık alt analizler; 035 sonuçların görsel önceliği; 033 ilk GitHub/Vercel yayını.
+
+--- ÖNCEKİ TESLİMLER / TARİHSEL NOTLAR ---
+
 TESLİM 037 — SONUÇLARIN ALTINDA ETKİLEŞİMLİ KARAR GRAFİKLERİ
 29 Eylül 2026 · Yerel üretim derlemesi tamamlandı
 
